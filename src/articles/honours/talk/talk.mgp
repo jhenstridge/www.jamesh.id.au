@@ -1,0 +1,185 @@
+%include "default.mgp"
+%page
+%nodefault
+%size 7, font "standard", fore "red", back "white", vgap 20
+
+%center
+
+GASP: A Computing Framework For Markov Chain Monte Carlo Spatial Problems
+
+%size 4, fore "black"
+James Henstridge
+james@daa.com.au
+
+%page
+
+Overview
+
+	An example with mathematical model
+	Description of GASP
+	Demonstration
+
+%page
+
+Example
+
+	positions of pine trees
+%center
+%image "pines.eps"
+%leftfill
+
+%page
+
+Point Processes
+
+	Point processes are processes of configurations of points in the plane
+	Probability of a configuration defined by density function
+
+%page
+
+Strauss Process
+
+	The Strauss Process is a model for looking at point clustering patterns.
+%center
+%image "strauss-eqn.eps" 0 300 300 1
+%leftfill
+	Difficult to generate instances of the probability density function directly
+	Need some other method to generate these configurations
+
+%page
+
+Simulation Point Processes
+
+	Iterative algorithms are used to simulate the point processes.
+	Compare producing a random ordering for a pack of cards vs. shuffling the pack.
+	One such algorithm is the Metropolis-Hastings Algorithm
+		propose a change to the configuration
+		calculate probability of accepting the change
+		make a random decision whether to accept the change
+		if we accept, apply the change to the configuration.
+		repeat
+
+%page
+
+GASP
+
+	I designed it as a framework to implement such simulations
+		(Generating Algorithms for Spatial Patterns)
+	Can be used for algorithms  similar to Metropolis-Hastings
+	Written with the GAP package.
+		computer algebra package
+		freely available
+		interactive
+
+%page
+
+GASP Simulation Framework
+
+%center
+%image "simulate-flowchart-1.eps"
+
+%page
+
+GASP Simulation Framework
+
+%center
+%image "simulate-flowchart-2.eps"
+
+%page
+
+GASP Simulation Framework
+
+%center
+%image "simulate-flowchart-3.eps"
+
+%page
+
+GASP Simulation Framework
+
+%center
+%image "simulate-flowchart-4.eps"
+
+%page
+
+GASP Simulation Framework
+
+%center
+%image "simulate-flowchart-5.eps"
+
+%page
+
+GASP Simulation Framework
+
+%center
+%image "simulate-flowchart-6.eps"
+
+%page
+
+The Change Log
+
+	Most algorithms work with changes to the configuration
+	Changes are interesting when analysing a simulation.
+	sufficient to reproduce simulation
+	Allows us to create more detailed logs
+
+%page
+
+Applications of the Change Log
+
+	Replay the simulation at high speed, pausing for certain occurences.
+	Looking at runs of rejections.
+	plot trajectories of:
+		number of points
+		a derived `score' for the configuration
+
+%page
+
+Example
+
+%fore "red"
+	config := PointConfiguration(0,0,300,300);
+%fore "black"
+	propose := CreateSimpleFlipPropose(1/2);
+	check := CreateStraussCheck(1/900, 9/10, 15);
+	GUISimulate(config, "Strauss", 300, 300, propose, check);
+
+%page
+
+Example
+
+	config := PointConfiguration(0,0,300,300);
+%fore "red"
+	propose := CreateSimpleFlipPropose(1/2);
+%fore "black"
+	check := CreateStraussCheck(1/900, 9/10, 15);
+	GUISimulate(config, "Strauss", 300, 300, propose, check);
+
+%page
+
+Example
+
+	config := PointConfiguration(0,0,300,300);
+	propose := CreateSimpleFlipPropose(1/2);
+%fore "red"
+	check := CreateStraussCheck(1/900, 9/10, 15);
+%fore "black"
+	GUISimulate(config, "Strauss", 300, 300, propose, check);
+
+%page
+
+Example
+
+	config := PointConfiguration(0,0,300,300);
+	propose := CreateSimpleFlipPropose(1/2);
+	check := CreateStraussCheck(1/900, 9/10, 15);
+%fore "red"
+	GUISimulate(config, "Strauss", 300, 300, propose, check);
+%fore "black"
+
+%page
+
+Conclusion
+
+	Implement new algorithms
+	Submit as official share package for GAP
+	Extend functionality
