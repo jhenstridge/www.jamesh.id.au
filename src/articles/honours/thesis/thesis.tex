@@ -1,0 +1,109 @@
+\documentclass[12pt,a4paper]{book}  % -*- mode: latex; mode: auto-fill -*-
+
+%pdftex stuff ...
+\newif\ifpdf
+\ifx\pdfoutput\undefined
+  \pdffalse
+\else
+  \pdfoutput=1
+  \pdftrue
+\fi
+
+\ifpdf
+  \usepackage[pdftex]{graphicx}
+  \pdfcompresslevel=9
+\else
+  \usepackage{graphicx}
+\fi
+
+\usepackage{fancyhdr}
+\usepackage{listings}
+
+\lstdefinelanguage{Gap}%
+  {keywords={while,for,in,do,od,repeat,until,if,then,else,elif,fi,
+      function,end,local,return,true,false,rec,quit,break,not,gap},%
+  sensitive=true,%
+  commentline={\#},%
+  blankstring=true,%
+  indent=2em,%
+%  frame=tlbr,%
+  stringizer=[b]{"'}%
+}%
+\lstset{language=Gap,basicstyle=\small}
+
+\newcommand{\GAP}{\textsf{GAP}}
+\newcommand{\gap}{\textsf{GAP}}
+\newcommand{\XGAP}{\textsf{XGAP}}
+\newcommand{\GASP}{GASP}
+\newcommand{\gasp}{GASP}
+\newcommand{\abstractname}{Abstract}
+\newenvironment{abstract}{\section{Abstract}}{}
+\def\abstract{\section*{\centering\abstractname}}
+\def\endabstract{\medbreak}
+\newenvironment{acknowledgements}%
+   {\renewcommand{\abstractname}{Acknowledgements}%
+    \begin{abstract}}
+   {\end{abstract}}
+
+\title{
+   GASP: A Computing Framework For Markov Chain Monte Carlo Spatial Problems
+   \footnote{Submitted in partial fulfilment 
+   of the requirements for the Bachelor 
+   of Science degree with Honours at the 
+   University of Western Australia}
+}
+\date{October 2000}
+\author{James Henstridge}
+
+\begin{document}
+
+\ifpdf
+  \DeclareGraphicsExtensions{.png,.pdf}
+\else
+  \DeclareGraphicsExtensions{.eps}
+\fi
+
+\maketitle
+
+\begin{abstract}
+In the area of Markov Chain Monte Carlo spatial problems, not many
+general purpose simulation systems exist.  The GASP package is a
+framework for writing simulations.  GASP stands for
+\emph{\textbf{G}enerating \textbf{A}lgorithms for \textbf{S}patial
+\textbf{P}atterns}.  It is designed to handle as many
+different problems as possible.  A number of algorithms are
+distributed with the GASP framework, including a simulation of the
+Strauss Process using the Metropolis-Hastings Algorithm.
+
+GASP includes a graphical user interface that aids visualisation of an
+algorithm, and sophisticated logging capabilities which allow for
+detailed post-simulation analysis.  It is implemented as a share
+package for the computer algebra system \GAP.
+\end{abstract}
+
+\begin{acknowledgements}
+\noindent Thank you to my supervisors Adrian Baddeley and Alice
+Niemeyer.
+
+\noindent Thank you to Alexander Hulpke for information about \GAP.
+
+\noindent Thank you to Ute Hahn for background information on some of the
+algorithms I considered.
+\end{acknowledgements}
+
+
+\tableofcontents
+
+\include{intro}
+\include{background}
+\include{why-gap}
+\include{user-desc}
+\include{implementation}
+\include{conclusion}
+
+%% the bibliography
+%\nocite{*}
+\bibliography{thesis}
+\bibliographystyle{plain}
+
+\end{document}

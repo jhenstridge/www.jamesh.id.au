@@ -1,0 +1,444 @@
+% -*- mode: latex; mode: auto-fill -*-
+\chapter{Background of Class of Problems}
+
+\newtheorem{algorithm}{Algorithm}
+
+Some knowledge of the underlying probability theory is required to
+fully understand the purpose and functionality of the software we
+developed.  So we will first look at some of the basic concepts and a
+few problems that relate to the program.  Some of the background
+material in this chapter can be found in \emph{Spatial Statistics}
+\cite{spatial-stats}.
+
+\section{Markov Chains}
+
+\subsection{Basics}
+
+A Markov Chain is a system with a number of possible states, and
+probabilistic rules for moving between those states.  As we move
+through time, we make transitions between states.  There are rules
+that govern to which state we can move from the current one.  The
+restriction on the rules is that given the entire past series of
+states $X_1, X_2, \ldots, X_t$, the choice of next state $X_{t+1}$
+only depends on the current state $X_t$.
+
+We can represent the probabilities for moving from a given state $X_t$
+to each of the other states in the system by the vector $P_t =
+(p_{t1}, p_{t2}, \ldots, p_{tn})$, where $p_{ti}$ is the probability
+of moving from state $X_t$ to state $X_i$.  We can collect the
+probability vectors for transitions from each state into a matrix:
+\begin{equation}
+\mathbf{P} = \left(\begin{array}{c}
+P_1 \\
+P_2 \\
+\vdots \\
+P_n
+\end{array}\right)
+\end{equation}
+
+
+\noindent This matrix, known as the \emph{transition probability
+matrix}, is \emph{stochastic}.  That is the sum of the entries in each
+row is one (as the rows represent the complete set of probabilities
+for moving to any state in the state space).
+
+If the current state is randomly distributed in the state space
+according to the probability row vector $\pi_t$, we can get the
+distribution for the next state by right multiplication by
+$\mathbf{P}$:
+\begin{equation}
+\pi_{t+1} = \pi_t \mathbf{P}
+\end{equation}
+
+\noindent Similarly, we can get the distribution for the state after that
+by multiplying the probability distribution vector by $\mathbf{P}$ again.
+
+Some systems will converge towards an \emph{limiting} distribution as
+they progress in time.  This distribution is often denoted $\pi$.  The
+limiting distribution's definition is as expected:
+\begin{equation}
+\pi = \lim_{i \to \infty}\pi_0 \mathbf{P}^i
+\end{equation}
+
+
+%XXXX
+\noindent If such a limit exists, then under certain circumstances
+$\pi$ is an equilibrium distribution, in which case it satisfies
+\begin{equation}
+\pi = \pi \mathbf{P}
+\end{equation}
+
+
+\noindent This corresponds to the simple linear system $\pi(\mathbf{P}
+- \mathbf{I}) = 0$, which can be solved to find the possible
+equilibrium distributions for the system.
+
+\subsection{The Monte Carlo Method}
+
+The \emph{Monte Carlo} method is a method of solving problems using
+random numbers.  We can apply these ideas when simulating a Markov
+Chain system \cite{mcmc-in-practice}.
+
+If we know the state transition probability matrix $\mathbf{P}$ for a
+system, it is possible to simulate a Markov Chain.  The algorithm
+proceeds as follows:
+
+\begin{algorithm}[Monte Carlo]
+\ 
+
+\begin{enumerate}
+\item Pick an initial state $X_0$.
+
+\item Given that the current state $X_t=x$, we generate the next state
+$y$ from the random probability distribution $P(X_{t+1}=y) = p_{xy}$,
+or the $y$th column of the $x$th row of the transition probability
+matrix $\mathbf{P}$.
+
+\item Having picked the new state $X_{t+1}$, we go to step 2 and
+repeat to generate the next state.
+\end{enumerate}
+\end{algorithm}
+
+
+\subsection{Problems}
+
+Of course, Algorithm 1 is not practicable in all situations.  Some
+possible problems are:
+
+\begin{itemize}
+\item the state transition matrix $\mathbf{P}$ is not known, or would
+be too expensive to calculate.  In this case, we would still need to
+know the rule for calculating the next state.
+\item the number of possible states in the system is infinite or very
+large (for example, the states may represent the positioning of some
+points on the plane).
+\end{itemize}
+
+In these cases, we might not be able to find the equilibrium
+distribution for the system just by solving a system of linear
+equations, or may not get a useful result.  However, we may be able to
+simulate the system, which is another way to get the desired
+information.
+
+\section{Using Simulation to Generate Distributions}
+
+For some probability distributions, it is not clear how to generate
+instances of the distribution directly.  Instead, we sometimes use an
+iterative Markov Chain based algorithm that will converge to the
+desired distribution as equilibrium.
+
+This is similar to shuffling cards in order to randomise their order.
+We know the distribution that we want -- we just need to find a
+`shuffling' algorithm that will get us to that distribution.  One such
+algorithm is the Metropolis-Hastings Algorithm.
+
+\subsection{Metropolis-Hastings Algorithm}
+
+The \emph{Metropolis-Hastings} algorithm is a Markov Chain system that
+can be used to generate a realisation of a given equilibrium
+distribution.
+
+It uses the idea that if the probability of the transition from state
+$x$ to state $y$, is the same as for the transition $y \to x$, then
+the equilibrium distribution will be maintained.  This is known as
+\emph{detailed balance}, as expressed in Equation
+\ref{eq:detailed-balance}.
+\begin{equation}\label{eq:detailed-balance}
+\mathbf{P}(X_t = x\ \mathbf{and}\ X_{t+1} = y) =
+   \mathbf{P}(X_t = y\ \mathbf{and}\ X_{t+1} = x)
+\end{equation}
+
+
+\noindent It is achieved using the algorithm described below.  It
+consists of a proposal step and an acceptance step.
+
+\begin{algorithm}[Metropolis-Hastings]
+\ 
+
+\begin{enumerate}
+\item An initial state $x$ is chosen.
+\item proposal: a transition $x \to y$ is proposed.  The transition is
+chosen randomly according to some predefined random method with
+probability $p_{prop}(x \to y)$.
+\item acceptance check: the probability of accepting this transition
+$p_{acc}(x \to y)$ is calculated.  With probability $p_{acc}(x \to
+y)$, we move to state $y$.  Otherwise we stay at $x$.
+\item go to step 2 and repeat.
+\end{enumerate}
+
+According to these rules, the probability that the next state
+($x_{i+1}$) will be $y$, given the current state ($x_i$) is $x$, is:
+\begin{equation}\label{eq:p-trans-def}
+p_{trans}(x \to y) = p_{prop}(x \to y) p_{acc}(x \to y)
+\end{equation}
+\end{algorithm}
+
+\noindent Applying the fact that $\mathbf{P}(A\ \mathbf{and}\ B) =
+\mathbf{P}(A\ |\ B) \mathbf{P}(B)$ to both sides of Equation
+\ref{eq:detailed-balance} and substituting $p_{trans}(x \to y)$ we
+get:
+\begin{equation}
+p_{trans}(x \to y) \mathbf{P}(X_t = x) =
+   p_{trans}(y \to x) \mathbf{P}(X_t = y)
+\end{equation}
+
+\noindent Substituting from Equation \ref{eq:p-trans-def}:
+\begin{equation}
+p_{acc}(x \to y) p_{prop}(x \to y) \mathbf{P}(X_t = x) =
+   p_{acc}(y \to x) p_{prop}(y \to x) \mathbf{P}(X_t = y)
+\end{equation}
+
+\noindent And rearranging, we get:
+\begin{equation}
+\frac{p_{acc}(x \to y)}{p_{acc}(y \to x)} =
+  \frac{p_{prop}(y \to x) \mathbf{P}(X_t = y)}{
+        p_{prop}(x \to y) \mathbf{P}(X_t = x)}
+\end{equation}
+
+\noindent We need to choose values $p_{acc}(x \to y)$ and $p_{acc}(y
+\to x)$ that will satisfy equation.  The ratio $\frac{p_{acc}(x \to
+y)}{p_{acc}(y \to x)}$ is known as \emph{Green's Ratio}, or $R_{x \to
+y}$.  The probabilities $\mathbf{P}(X_i = y)$ and $\mathbf{P}(X_i =
+x)$ are given in the desired equilibrium distribution.  The proposal
+probabilities $p_{prop}(x \to y)$ and $p_{prop}(y \to x)$ were chosen
+as part of the algorithm.  Hence, we can calculate $R_{x \to y}$.
+
+For the Metropolis-Hastings algorithm, we set $p_{acc}(x \to y)$ as:
+
+\begin{equation}
+p_{acc}(x \to y) = \min(\{R_{x \to y}, 1\})
+\end{equation}
+
+
+\noindent In the case that $R_{x \to y} > 1$, $R_{y \to x} = 1 / R_{x
+\to y} < 1$, so $\frac{p_{acc}(x \to y)}{p_{acc}(y \to x)} =
+\frac{1}{1 / R_{x \to y}} = R_{x \to y}$.  When $R_{x \to y} < 1$, we
+get $\frac{p_{acc}(x \to y)}{p_{acc}(y \to x)} = \frac{R_{x \to y}}{1}
+= R_{x \to y}$.  So this definition of $p_{acc}(x \to y)$ is
+consistent.  For a system with an infinite number of states, we can
+use the corresponding probability densities in place of the discrete
+measures, and the same argument applies.
+
+Of course, the Metropolis-Hastings Algorithm does not guarantee that
+we will converge on the desired equilibrium distribution.  Even in the
+case where it does converge, it does not give any indication when we
+have converged to the desired equilibrium distribution.
+
+
+\subsection{The Metropolis-Hastings Algorithm and Point Processes}
+\label{sect:mh-points}
+
+Point processes are spatial models of a collection of points governed
+by some probability density \cite{markov-point-processes-2}.  Each
+state of the system is a configuration of points within some region
+(or window) of the plane.  It can be very difficult to realise the
+process directly, so we use an algorithm that will converge to the
+desired distribution, such as the Metropolis-Hastings algorithm.
+
+For the proposal part of the algorithm, we will limit the possible
+state transitions allowed to (a) adding a new point in a random
+location within the window $W$, and (b) removing an existing point.
+All other transitions are assigned a probability of zero.  We will
+assign equal probability to adding and removing a point (unless the
+configuration is empty, in which case only an addition is possible).
+
+We represent the state by the set of points on the plane
+$\mathbf{x} = \{ x_1, \ldots, x_n \}$.  The probability density of the
+proposal to add a particular point $y$ to the configuration somewhere
+in the window of area $|W|$ is $p_{prop}(\mathbf{x} \to \mathbf{x}\cup
+\{y\}) = \frac{1}{2} \frac{1}{|W|}$.  Similarly, the probability of
+proposing to remove a particular point $y$ is $p_{prop}(\mathbf{x} \to
+\mathbf{x}\backslash \{y\}) = \frac{1}{2} \frac{1}{n(\mathbf{x})}$
+where $n(\mathbf{x})$ is the number of points in the set $\mathbf{x}$.
+
+Hence, for adding a point, Green's Ratio becomes:
+\begin{equation}
+  R_{\mathbf{x} \to \mathbf{x} \cup \{y\}} = \frac{|W|}{n(\mathbf{x})
+  + 1} \frac{f(\mathbf{x} \cup \{y\})}{f(\mathbf{x})}
+\end{equation}
+
+\noindent and for removing a point, we have:
+\begin{equation}
+  R_{\mathbf{x} \to \mathbf{x} \backslash \{y\}} =
+  \frac{n(\mathbf{x})}{|W|} \frac{f(\mathbf{x} \backslash
+  \{y\})}{f(\mathbf{x})}
+\end{equation}
+
+\noindent where $f(\mathbf{x})$ is the density function for the
+equilibrium distribution.
+
+Hence, the acceptance probability $p_{acc}$ used will be $\min(R_{\mathbf{x} \to
+\mathbf{x} \cup \{y\}}, 1)$ or $\min(R_{\mathbf{x} \to \mathbf{x}
+\backslash \{y\}}, 1)$ respectively.
+
+
+\section{The Strauss Process}\label{sect:strauss-process}
+
+The \emph{Strauss Process} \cite{strauss-process} is an example of a
+point process that can be simulated using the Metropolis-Hastings
+algorithm.  The density function for the Strauss Process is:
+\begin{equation}\label{eq:strauss-process}
+f(\mathbf{x}) = \alpha \beta^{n(\mathbf{x})} \gamma^{s(\mathbf{x})}
+\end{equation}
+
+\noindent where $\mathbf{x}$ and $n(\mathbf{x})$ are defined as in
+Section \ref{sect:mh-points}, and $s(\mathbf{x})$ is defined as the
+number of `close' pairs of points separated by no more than a given
+distance $r$.
+
+The symbols in the density function of Equation
+\ref{eq:strauss-process} are:
+\begin{description}
+\item[$\alpha$] is a constant to normalise the function to ensure that it
+is a density function.
+\item[$\beta$] is a parameter that measures the `intensity' .  It
+affects the number of points we would expect to find in the
+configuration.
+\item[$\gamma$] is the \emph{interaction} parameter:
+  \begin{itemize}
+  \item If $\gamma = 1$, then the density function does not depend on
+  neighbour relationships.
+  \item If $0 < \gamma < 1$, then larger spacing of the points is
+  favoured, as large $s(\mathbf{x})$ gives small
+  $\gamma^{s(\mathbf{x})}$.
+  \item If $\gamma > 1$, close clustering of a large number of points
+  leads to a very large $\gamma^{s(\mathbf{x})}$.  In fact, with
+  $\gamma > 1$, we cannot find an $\alpha$ to normalise the density, so
+  a Strauss Process does not exist for this case.
+  \end{itemize}
+\end{description}
+
+In order to simulate the Strauss Process using the Metropolis-Hastings
+algorithm, we must calculate the acceptance probabilities for proposed
+states.  For this, we need to know Green's Ratio $R_{\mathbf{x_1} \to
+\mathbf{x_2}}$, which required the calculation of the ratio
+$f(\mathbf{x_2})/f(\mathbf{x_1})$.  This ratio is:
+\begin{equation}
+\frac{f(\mathbf{x_2})}{f(\mathbf{x_1})} =
+  \frac{\alpha \beta^{n(\mathbf{x_2})} \gamma^{s(\mathbf{x_2})}}
+       {\alpha \beta^{n(\mathbf{x_1})} \gamma^{s(\mathbf{x_1})}} =
+  \beta^{n(\mathbf{x_2}) - n(\mathbf{x_1})}
+  \gamma^{s(\mathbf{x_2}) - s(\mathbf{x_1})}
+\end{equation}
+
+
+In the case of adding a point, $n(\mathbf{x} \cup \{y\}) -
+n(\mathbf{x}) = 1$, and for removing a point, $n(\mathbf{x} \backslash
+\{y\}) - n(\mathbf{x}) = -1$.  It is also fairly obvious that
+$s(\mathbf{x} \cup \{y\}) - s(\mathbf{x})$ is the number of
+points in $\mathbf{x}$ that are at most a distance of $r$ from the new
+point $y$.  We will denote this number $s(\mathbf{x}, y)$.  We can see
+that $s(\mathbf{x} \backslash \{y\}) - s(\mathbf{x}) = -s(\mathbf{x},
+y)$ if we do not count $y$ when calculating $s(\mathbf{x}, y)$.
+
+This is enough information to calculate the Green's Ratio for both
+adding and removing points, and hence the acceptance probabilities for
+the proposals:
+
+\begin{itemize}
+\item add point:
+\begin{equation}
+  R_{\mathbf{x} \to \mathbf{x} \cup \{y\}} =
+   \frac{|W| \beta \gamma^{s(\mathbf{x}, y)}}{n(\mathbf{x}) + 1}
+\end{equation}
+
+\item remove point:
+\begin{equation}
+  R_{\mathbf{x} \to \mathbf{x} \backslash \{y\}} =
+    \frac{n(\mathbf{x})}{|W| \beta \gamma^{s(\mathbf{x}, y)}}
+\end{equation}
+
+\end{itemize}
+
+\section{The Widom-Rowlinson Bivariate Process}\label{sect:widom-rowlinson}
+
+The \emph{Widom-Rowlinson Bivariate Process} \cite{widom-rowlinson} is
+another process based on configurations of points that we consider.
+It can be thought of as a simulation of two different types of
+particles (`red' and `black') in some region of the plane, and
+particles of opposite type cannot get closer than some predefined
+distance $r$.  I refer to this process as the Red-Black process in
+later chapters.
+
+In this system, we introduce the concept of \emph{marking} the points
+in the configuration.  A mark is an attribute of the point that is
+associated with a point.  In many problems, we may think of a mark as
+a colour for an object.  Of course, for some systems, we may have more
+than one non mutually exclusive mark for a point.
+
+The configuration in this process is made up of two collections of
+points inside the simulation window.  One collection is all the
+\emph{red} points and one is the \emph{black} points.  The algorithm
+uses parameters $\mu$ and $\nu$ as means per unit area of Poisson
+distributions for the two collections of points.
+
+The algorithm for this process can be represented as a two phase
+process:
+\begin{algorithm}[Widom-Rowlinson]
+\ 
+
+\begin{enumerate}
+\item remove all the black points from the configuration.
+\item we pick a random number using a Poisson distribution of mean
+$\nu$ times the area of the window.  This is the number of new
+black points we propose to add to the system.
+\item for each of the points we propose to add, we choose a random
+location for the point within the simulation region.  If the point is
+no closer than $r$ to any of the red points, then we add it to the
+configuration.  Otherwise, the point is discarded.
+\item now repeat for the red points, using $\mu$ as the Poisson mean.
+\end{enumerate}
+\end{algorithm}
+
+This process is then repeated.  As the reader can see, we end up with
+two collections of points separated by the distance $r$.  The
+distribution of black points in all parts of the simulation window
+with no red point closer than $r$ is Poisson distributed with a mean
+$\nu$ times the area of this region.  Similarly, the red points are
+Poisson distributed in the region defined by the black points.
+
+Once the simulation has completed, we may only be interested in one of
+the collections of points.
+
+Once again, we are left with the question of when the simulation is
+`finished'.
+
+\section{Glossary}\label{sect:glossary}
+
+Some of the terms introduced in this chapter are used later on when
+describing the software and the simulation algorithms we implemented.
+The important ones are listed below.
+
+\begin{description}
+\item[limiting distribution] is the probability distribution that the
+system moves toward as the simulation continues.  Such a distribution
+may not exist for a particular Markov Chain.
+\item[Monte Carlo method] is a method of solving deterministic
+problems using random numbers.
+\item[Metropolis-Hastings algorithm] is an algorithm used to implement
+a \\Markov Chain system that will converge on a desired probability
+distribution as the equilibrium distribution.
+\item[configuration] refers to the arrangement of objects, along with
+any other state information that represents the state in the
+algorithm.
+\item[configuration objects] (or just objects) are the objects that
+make up the configuration.  In many of the problems, these are just
+points, but in others they may be lines or objects of some other
+shape.
+\item[marks] are some attributes assigned to an object.  In some
+problems, we may want to group the objects in the configuration.  We
+do this by adding marks to the objects.  These may be multi valued
+(such as the colour of the object), or boolean valued.  An object may
+carry more than one mark.
+\item[proposals] refer to changes proposed to be made to a
+configuration.  This is the first part of the Metropolis-Hastings
+algorithm.
+\item[acceptance] is the act of accepting a proposal, and modifying
+the state of the configuration accordingly.
+\item[rejection] is the act of discarding a proposal and leaving the
+configuration in its existing state.
+\end{description}
+
+
+%\emph{XXXX any more terms worth mentioning in the glossary? XXXX}
+

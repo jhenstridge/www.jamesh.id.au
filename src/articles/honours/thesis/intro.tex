@@ -1,0 +1,114 @@
+% -*- mode: latex; mode: auto-fill -*-
+
+\chapter{Introduction}
+
+\section{Aims}
+
+In this project, I looked at the problem of implementing a framework
+for simulating processes related to spatial statistics using
+algorithms such as the Metropolis-Hastings algorithm.
+
+The aim of the project was to produce a framework that could handle as
+many different algorithms in the class as possible, while remaining
+simple enough to be understood and easy to use.  The result is the
+GASP package \cite{gasp-source}, which stands for
+\emph{\textbf{G}enerating \textbf{A}lgorithms for \textbf{S}patial
+\textbf{P}atterns}.
+
+\section{The Choice of Language}
+
+Simulations of this type often require a lot of computation, so have
+traditionally been implemented in languages such as C or C++, due to
+the speed and flexibility they give.  Using such a language has
+drawbacks:
+
+\begin{itemize}
+\item a program would be written specifically for a particular
+problem, so may require substantial modification to cover a different
+problem.
+\item knowledge of the C language, which includes many details, such
+as memory management, that are not directly related to the problem.
+This significantly raises the barrier for someone wanting to use such
+a program.  Also, C is perceived as being difficult to learn, which
+reduces the value of a system which is aimed at mathematicians.
+\item as C is a compiled language, it takes more effort to make a
+change to the algorithm, which can slow down development.
+\end{itemize}
+
+Rather than having many programs, each implementing their own
+algorithm, it would be better to have a framework from which many
+different algorithms could be explored with.  That was the aim of
+my project.
+
+An interpreted language was chosen because of reduced development
+overhead, allowing more rapid experimentation and implementation of
+new algorithms.
+
+\section{\GAP}
+
+The language chosen for the implementation was \GAP{} \cite{gap-www}.
+While \GAP{} was originally designed for work with group theory, a
+number of its features made it an interesting choice for this class of
+problem.
+
+While S-Plus \cite{s-plus} may be considered the obvious choice of
+language, it suffers from some problems when used to run simulations
+that take a long time.  Problems related to instability and memory
+leaks are magnified during long runs, which may lead to loss of data
+if the interpreter crashes.  Also, to someone who does not already
+know S-Plus, the syntax can be difficult to learn.
+
+Like S-Plus, \GAP{} is an interpreted language.  Its syntax was
+designed with mathematicians in mind, so is quite easy for a new user
+to pick up.  \GAP{} has some object oriented features, which were used
+when implementing the GASP framework.
+
+As well as having the rapid development advantages of interpreted
+languages, \GAP{} also has interactive debugging features, and support
+for designing graphical user interfaces that consist of menus and
+geometric shapes drawn on a canvas.
+
+Using \GAP{}'s ability to pass functions as arguments to other
+functions, GASP allows the user to hook into many different parts of
+the simulation framework.
+
+\section{The Change Log}
+
+All the algorithms that I considered involved transitions between
+different states of a configuration of some type of object such as
+points in the plane.  Quite often, it is these transitions, or changes
+in the configuration, that are interesting.
+
+In the GASP framework, these changes form an important part of the
+simulation.  Borrowing some ideas from the undo capabilities found in
+some software, all changes made to the configuration are encapsulated
+inside objects that hold all information to apply and revert the
+change in state.
+
+As the amount of memory required to encode these these changes is
+generally smaller than the amount required for the configuration
+itself, it was feasible to log a lot more information about what
+happened during the simulation than with systems where the complete
+state of the configuration was logged.  This unique feature of GASP
+gives users the ability to analyse a simulation much more effectively,
+even after the simulation has completed.
+
+\section{Chapter Guide}
+
+The second chapter gives a brief overview of the mathematics behind
+some of the problems that the GASP framework covers.
+
+The third chapter covers the features of \GAP{} that were useful when
+designing GASP, and more detailed reasons why it was chosen as the
+language to implement GASP in.
+
+The fourth chapter is an introduction to the functionality provided by
+the GASP framework.  This chapter is aimed at users who are interested
+in using the existing functionality in GASP, rather than extending it
+to handle new algorithms.
+
+The fifth chapter looks at the implementation of the framework, and
+how to extend its functionality -- both the algorithms that are
+supported and the types of configurations that can be used in
+simulations.
+

@@ -1,0 +1,473 @@
+\documentclass[12pt,a4paper]{book}  % -*- mode: latex; mode: auto-fill -*-
+\usepackage{epsfig}
+\usepackage{listings}
+
+\begin{document}
+
+\lstdefinelanguage{Gap}%
+  {keywords={while,for,in,do,od,repeat,until,if,then,else,elif,fi,
+      function,end,local,return,true,false,rec,quit,break},%
+  sensitive=true,%
+  commentline={\#},%
+  blankstring=true,%
+  indent=2em,%
+%  frame=tlbr,%
+  stringizer=[b]{"'}%
+}%
+\lstset{language=Gap}
+
+\title{Simulation system chapter}
+\author{James Henstridge}
+
+\chapter{Simulation System}
+
+
+\section{Background}
+
+When designing the simulation system for gasp, the main goal was to
+have a framework that would cover most simulations that people were
+likely to try while being easy to use, and minimize the work the
+user needed to do.
+
+Most of the simulations we looked at followed the following general
+loop for its iterations shown in Figure \ref{fig:flowchart}
+
+\begin{figure}
+\label{fig:flowchart}
+\centering
+\epsfig{file=simulate-flowchart.eps,width=4in}
+\caption{Simulation flow of control}
+\end{figure}
+
+The main simulation specific to note in the general algorithm are:
+
+\begin{itemize}
+\item The representation for the state
+\item The rules used to propose a new state
+\item The rule used to calculate the acceptance probability for the
+new state.
+\end{itemize}
+
+For example, in the Strauss process, the state is the collection of
+points in the configuration.  The proposal rules are to choose at
+random between creating a new point and deleting an existing point.
+The rule for calculating acceptance probability is as normal.
+
+The design of the simulation system followed this model fairly
+closely.
+
+\section{The Configuration}
+
+The configuration object represents the current state of the system.
+It is mainly a collection of the objects that make up the state.  In
+order to give maximum flexibility to the framework, I made the
+Configuration object an abstract base type -- you need to create a
+subtype in order to actually use the simulator.  This allows changes
+to the way a configuration is implemented without affecting
+surrounding code.
+
+\begin{lstlisting}{}
+# the picture object configuration ...
+DeclareCategory("IsConfiguration", IsObject);
+BindGlobal("ConfigurationFamily",
+           NewFamily("ConfigurationFamily",
+           IsConfiguration));
+\end{lstlisting}
+
+The configuration is composed of objects.  In the same way, we create
+an abstract type for these objects.  The name PictureObject was chosen
+because Object is already taken as the base category in GAP.  The
+objects in the configuration may be points, lines, discs or something
+else.
+
+\begin{lstlisting}{}
+# declarations of the picture object type ...
+DeclareCategory("IsPictureObject", IsObject);
+BindGlobal("PictureObjectFamily",
+           NewFamily("PictureObjectFamily",
+           IsPictureObject));
+\end{lstlisting}
+
+As these types are abstract, we need some standard ways to manipulate
+the configuration and perform some simple calculations on the objects
+or the whole configuration.  These are implemented through GAP
+operations.
+
+\subsection{PictureObject Operations}
+
+One of the main calculations we want to perform on the objects in the
+configuration is calculation of the distance between two objects.
+As the released versions of GAP at the time of writing had no square
+root support for floating point numbers, the choice was made that the
+operation should return the squared distance between the two:
+
+\begin{lstlisting}{}
+DeclareOperation("SquareDistance",
+                 [ IsPictureObject,
+                   IsPictureObject ]);
+\end{lstlisting}
+
+As a number of the algorithms use the idea of marking objects in the
+configuration as part of the simulation, a standard API is provided
+for this:
+
+\begin{lstlisting}{}
+DeclareOperation("AddMark", [ IsPictureObject,
+                              IsString ]);
+DeclareOperation("DelMark", [ IsPictureObject,
+                              IsString ]);
+DeclareOperation("HasMark", [ IsPictureObject,
+                              IsString ]);
+\end{lstlisting}
+
+As most PictureObject types will be implemented as objectified
+records, standard implementations of these operations are provided.
+All that is required is that the constructor for the object sets the
+attribute marks to an empty list.  If the internal structure of the
+object does not match these assumptions, alternative implementations
+of these operations can be provided with the PictureObject type.
+
+The marks API provides a way to set boolean flags on an object.  Some
+mark names may have special meanings.  For example, using colour names
+as the mark names may be used to colour the object when visualising
+the simulation.
+
+Also, in order to visualise the configuration, we need some way to
+draw the PictureObject.  This is handled by the DrawObject operation:
+
+\begin{lstlisting}{}
+DeclareOperation("DrawObject", [ IsPictureObject,
+                                 IsGraphicSheet ]);
+\end{lstlisting}
+
+The second argument is a standard XGAP graphic sheet object.  The
+DrawObject operation should return the XGAP object that was placed on
+the GraphicSheet, so that it can be further manipulated
+(eg. recolouring the object, deleting it, etc).
+
+Additional operations may be added for specific object types to help
+in particular simulations without much trouble.  It is also fairly
+easy to add new standard operations, although the amount of work
+required to add new operations increases with the number of object
+types.
+
+\subsection{Configuration Operations}
+
+We would also like to make the implementation of the algorithms in a
+simulation independent of the actual implementation of the
+configuration as well as the objects.
+
+The configuration is basically a set of objects, holds some
+information about the bounds for displaying the configuration, and may
+be some extra state information for the simulation.
+
+The first couple of operations on the Configuration are for adding and
+removing objects in the configuration:
+
+\begin{lstlisting}{}
+DeclareOperation("AddObject", [ IsConfiguration,
+                                IsPictureObject ]);
+DeclareOperation("DelObject", [ IsConfiguration,
+                                IsPictureObject ]);
+\end{lstlisting}
+
+Most calculations can easily be performed if we have a list of the
+objects in the configuration.  But for some representations creating a
+list of objects may be time fairly time consuming.  Also, some of the
+calculations we want to do on may be more efficient with the
+configuration's native representation.
+
+For instance, the configuration may `bin' the objects into different
+lists which can make for faster distance calculations.  Or it might
+sort the objects based on some mark, to speed up calculations that
+look for objects with a particular mark.
+
+For this reason, we need some standard operations to perform these
+calculations so that the most efficient way of completing them for a
+particular Configuration representation.  Currently, the following
+operations are defined:
+
+\begin{lstlisting}{}
+DeclareOperation("ConfigWindowArea",
+                 [ IsConfiguration ]);
+DeclareOperation("CountObjects",
+                 [ IsConfiguration ]);
+DeclareOperation("CountObjectsWithMark",
+                 [ IsConfiguration, IsString ]);
+DeclareOperation("GetObjectsWithMark",
+                 [ IsConfiguration, IsString ]);
+DeclareOperation("CloseObjects",
+                 [ IsConfiguration, IsPictureObject,
+                   IsScalar ]);
+DeclareOperation("CloseObjectsWithMark",
+                 [ IsConfiguration, IsPictureObject,
+                   IsScalar, IsString ]);
+\end{lstlisting}
+
+These operations perform the following actions:
+
+\begin{description}
+\item[ConfigWindowArea] returns the size of the window in which the
+objects are placed.
+\item[CountObjects] counts the objects in the configuration.
+\item[CountObjectsWithMark] counts the objects in the configuration
+for which a particular mark has been set.
+\item[GetObjectsWithMark] returns a list of the objects with a
+particular mark set.
+\item[CloseObjects] counts the objects in the configuration that are
+within a certain distance from the given object.
+\item[CloseObjectsWithMark] similar to \emph{CloseObjects}, except it only
+examines objects with a particular mark set.
+\end{description}
+
+We also want some way to pick a random object in the configuration.
+This is handled by the \emph{ChooseRandomObject} operation:
+
+\begin{lstlisting}{}
+DeclareOperation("RandomNewObject",
+                 [ IsConfiguration, IsFunction ]);
+\end{lstlisting}
+
+Next, to aid in the visualisation, we have a \emph{DrawConfiguration}
+operation:
+
+\begin{lstlisting}{}
+DeclareOperation("DrawConfiguration",
+               [ IsConfiguration, IsGraphicSheet ]);
+\end{lstlisting}
+
+Lastly, the algorithms need some way to create new objects to add to
+the configuration.  So we have another operation to create a new
+object:
+
+\begin{lstlisting}{}
+DeclareOperation("RandomNewObject",
+                 [ IsConfiguration, IsFunction ]);
+\end{lstlisting}
+
+The second argument is a function that should return a random number
+between zero and one.  This allows the person implementing the
+algorithm to experiment with different random number distributions.
+If you just want a uniform distribution, you can pass in the following
+function:
+
+\begin{lstlisting}{}
+RandRat := function()
+    return Random([0 .. 10000])/10000;
+end;
+\end{lstlisting}
+
+\section{Basic Simulation Algorithm}
+
+Now the flow of the simulation can be represented as pseudo code like
+so:
+
+\begin{lstlisting}{}
+local cnf, prob, iter;
+
+cnf := CreateConfiguration();
+for iter in [ 1 .. num_iterations ] do
+  ProposeChangeToConfiguration(cnf);
+  prob:= ProbabilityOfAcceptingChange(cnf);
+  if RandomNumBetween0and1() <= prob then
+    AcceptChange(cnf);
+  else
+    UndoChange(cnf);
+  fi;
+od;
+\end{lstlisting}
+
+So we need some way of handling changes to the configuration in such a
+way that they can be backed out if the proposed state is not accepted.
+This leads on to the development of the idea of Change objects.
+
+\section{Change Objects}
+
+The two methods of handling the management of changes to the
+configuration that I looked at were:
+
+\begin{itemize}
+\item not making changes to the configuration until (and only if) the
+change is accepted.  This is fairly simple to implement, but means
+that the user supplied code that handles the probability calculation
+must take both the old state and the proposed change when performing
+the calculation.
+\item encapsulate the changes in some form of object which knows how
+to apply and revert itself to the configuration.  This means that the
+probability calculation function can be passed the new state, which
+may make calculations easier.
+\end{itemize}
+
+I decided to use the second option, as it gives more flexibility, and
+makes implementing some other features a lot easier.  For instance, by
+keeping track of the changes made to the configuration, we can travel
+back in time if we wish.  It is also very similar to one of the
+patterns that is comonly used to implement undo in many computer
+applications.
+
+These change objects only require a very simple API.  The only actions
+they need to perform is to apply or revert themselves on a
+Configuration object.
+
+\begin{lstlisting}{}
+DeclareCategory("IsChange", IsObject);
+BindGlobal("ChangeFamily",
+           NewFamily("ChangeFamily", IsChange));
+
+DeclareOperation("ApplyChange", [ IsChange,
+                           IsConfiguration ]);
+DeclareOperation("RevertChange", [ IsChange,
+                           IsConfiguration ]);
+\end{lstlisting}
+
+It is also very useful if these Change objects implement the
+\emph{PrintObj} operation so that we can simply \emph{Print()} them to
+a file.  As with most GAP objects, the output of the \emph{PrintObj}
+operation should be the function call used to construct the object.
+
+As most simulations will want to perform fairly simple changes to the
+Configuration.  For this reason, a number of standard Change objects
+are made available.  This does not inhibit the creation of new types
+of Changes, but does make things easier for the user if these changes
+are appropriate.
+
+\begin{lstlisting}{}
+AddObjectChange := function(picobj);
+DelObjectChange := function(picobj);
+ReplaceObjectChange := function(addobj, delobj);
+ReplaceMultipleObjectsChange :=
+     function(addobjlist, delobjlist);
+\end{lstlisting}
+
+These standard change objects are implemented in terms of the
+\emph{AddObject} and \emph{DelObject} methods, so can be used with any
+configuration and object types.
+
+With the definition of the change objects, we can now more clearly
+define the \emph{ProposeChangeToConfiguration}
+\emph{ProbabilityOfAcceptingChange} functions.
+
+\begin{description}
+\item[ProposeChangeToConfiguration] is a function that takes the
+configuration as its argument and returns a Change object representing
+the proposed change to the configuration.
+\item[ProbabilityOfAcceptingChange] is a function that takes the
+configuration and proposed change as arguments and returns the
+probability of accepting the change.
+\end{description}
+
+So the user need only provide an initial configuration plus a proposal
+and acceptance probability calculating function and the rest should be
+the same for all simulations.
+
+Using the fact that GAP allows you to pass functions as arguments to a
+function, the main loop of the simulator can be wrapped up in a
+function that takes this information as arguments.
+
+%% XXXX change this for the new finish checking code
+\begin{lstlisting}{}
+Simulate := function(cnf, iter, propose, check, fd);
+\end{lstlisting}
+
+The first argument is the initial configuration for the system.  The
+second is the number of iterations to run through.  The third and
+forth arguments are the proposal and acceptance checking functions
+mentioned above.  The last argument is a file name or output stream
+object that a log of the simulation will be written to.
+
+Posible options for \emph{fd} are \emph{OutputTextNone()} which
+discards all logging information, \emph{OutputTextUser()} to write the
+log to the user's terminal and \emph{OutputTextFile(``file name'',
+true)} to write the log to a file.  Note that using
+\emph{OutputTextFile} will result in better performance than just
+passing in the string name, as it will mean GAP only has to open the
+log file once.
+
+Note that as the simulation doesn't save any state between iterations
+except in the Configuration object, calling \emph{Simulate} once with
+a count of 20 iterations is equivalent to two calls with 10
+iterations.
+
+This means that it is possible to build a function that updates an
+XGAP \emph{GraphicSheet} every $n$ iterations by repeatedly calling
+\emph{Simulate} with an iteration count of $n$ and then drawing the
+configuration.
+
+\section{Standard Algorithms}
+
+Quite often the user will want to perform a number of simulations with
+slightly different parameters to the algorithm.  It is a pain to have
+to type out the function body for the algorithm, changing just a few
+numbers in the process.  Also, it could become a source of error, if
+the user mistypes the algorithm.
+
+The closure support in GAP can help a lot with this.  Closures are
+basically the combination of a function and its environment.  When a
+function returns another function, it is creating a closure.  When the
+returned function is executed, the environment it sees will be the one
+where it was defined.
+
+This means that it can access local variables of the function in which
+it was defined, even though that function had returned.
+
+Using closures, we can write functions that return functions
+implementing a particular algorithm using the user's desired
+parameters.
+
+As an example, take the case of a proposal function that chooses to
+add an object with probability $p$ and remove a random object with
+otherwise.  Rather than making the user type out this common function
+again each time a change to $p$ is made, we provide the following
+`factory' function:
+
+\begin{lstlisting}{}
+CreateSimpleFlipPropose := function(prob)
+    return function(cnf)
+        local rn, point;
+
+        rn := RandRat();
+        if rn >= prob and CountObjects(cnf) > 0 then
+            point := ChooseRandomObject(cnf);
+            return DelObjectChange(point);
+        else
+            point := RandomNewObject(cnf, RandRat);
+            return AddObjectChange(point);
+        fi;
+    end;
+end;
+\end{lstlisting}
+
+Similar functions can be provided for other common cases.  Even in the
+case of a particular algorithm, using `factory' functions like
+this is beneficial, as it reduces code duplication.
+
+A number of factories for common algorithms are provided in the
+algorithms.gi file.  It is expected that this list will grow in the
+future.
+
+\section{Visualisation}
+
+\emph{XXXX - write about the visualisation stuff here}
+
+\section{Logging}
+
+As a simulation is run, a log of what happens is created (provided you
+don't use \emph{OutputTextNone()}).  The \emph{Simulate} function
+writes out information about the proposed changes and whether they
+were accepted or not.
+
+After the simulation has run through (or if there is a crash while the
+simulation is running), this log can be used to reconstruct the state
+at any point throughout the simulation.  Thus, it can be used to
+collect useful statistics, such as the number of points in the
+configuration with respect to time, accept/reject ratios.  The
+proportions of particular changes being picked and others.
+
+As the string handling functions in GAP are fairly minimal, some of
+these functions are probably best implemented in some other language,
+such as perl or python.
+
+I plan to write some simple scripts to generate graphs of some for
+some of these statistics.
+
+\end{document}

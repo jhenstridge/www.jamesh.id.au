@@ -1,0 +1,24 @@
+% -*- mode: latex; mode: auto-fill -*-
+
+\chapter{Conclusion}
+
+The GASP package should prove to be a useful tool for simulation of
+spatial statistical processes.  The package is designed to be as
+extendable as possible, I expect that it will become more useful in
+the future as more algorithms are added to the library accompanying
+GASP.
+
+In hindsight, it may have been a better decision to choose a different
+language.  Parts of the framework that required floating point support
+could only be tested by people who had access to the development
+version of \GAP, as there are no publicly released versions of \GAP{}
+with floating point support.  Once the next version of \GAP{} is
+released, this barrier will be removed.
+
+If GASP is too slow to run a simulation, \GAP{} comes with a \GAP{} to
+C translator, which can increase the speed of a program.
+Alternatively, GASP can be used to explore an algorithm, before using
+another program to perform a longer simulation.
+
+I plan to add some more features to GASP and submit it as a share
+package for \GAP.

@@ -1,0 +1,372 @@
+% -*- mode: latex; mode: auto-fill -*-
+\chapter{Features of \GAP}
+
+\section{Requirements}
+
+When deciding on what language to use for the simulation system, there
+were a number of features that we were looking for.  
+
+\subsection{Features}
+
+When choosing the language to implement GASP in, there were a number
+of required and desired features we looked for:
+
+\begin{itemize}
+\item \textbf{The language must allow rapid development}.  It is
+important that the language be quick to use, so that end users of GASP
+can easily experiment with the algorithms they are working on.  This
+requirement is most easily met by using an interpreted language.
+\item \textbf{must be easy to learn and have a clear syntax}.
+Ideally, it should be very easy for a new user to start extending GASP
+to handle new algorithms.  Also, programs written in the language
+should be easy for others to be able to read without a full knowledge
+of the language.
+\item \textbf{must be fast and stable}.  Programs written in the language must
+run fast.  Stable means that programs written in the language
+should not crash half way through a simulation, causing all
+information up to that point to be lost.
+\item \textbf{should have some graphics capabilities}.  It
+would be nice to be able to design a graphical user interface to run a
+simulation in.
+\item \textbf{should make it easy to debug programs}.  The language
+should make it easy to debug errors.  That is, when an error occurs,
+rather than just exiting, it would be nice if it were possible to find
+out what went wrong.  This feature is more important to people trying
+to extend the GASP package, rather than those using existing
+algorithms.
+\end{itemize}
+
+
+\subsection{The Choice of Language}
+
+The \GAP{} language was chosen because it met these criteria.  S-Plus
+was not chosen because it has had problems with long running
+programs in the past, where its memory consumption would increase with
+time, and S-Plus occasionally crashes under some conditions.
+
+Another language that was considered was Python \cite{python}.  Python
+shares a number of these desirable features with \GAP, but during
+tests it was found to be slower than \GAP.  This is most likely caused
+by the different types of memory management performed by the two
+languages.  Also, the graphical capabilities of \GAP{} are more
+convenient for use in GASP than those available for Python.
+
+A more detailed summary of the relevant features of \GAP{} follows in
+the next section.
+
+
+\section{Relevant Features of \GAP}
+
+The aim of this section is to highlight some of the features of the
+system \GAP{}, which we used to develop GASP.  This section is not
+intended to be a substitute for the \GAP{} documentation or as a
+tutorial for the language.  Rather, it should familiarise the reader
+with some of the basic concepts that we use in the remaining chapters.
+
+\GAP{} stands for \emph{Groups}, \emph{Algorithms} and
+\emph{Programming}.  Development started in 1985 at Lehrstuhl D f\"ur
+Mathematik, RWTH-Aachen by a group led by Professor Joachim
+Neub\"user.  Since then it has gone through a number of rewrites, and
+is now maintained by an international group of developers coordinated
+from Saint Andrews.  Although it was not specifically designed for the
+types of statistical problems we considered, a number of its features
+made it a very useful tool for our project.  \GAP{} is freely
+available from the program's web site \cite{gap-www}.
+
+Once installed, \GAP{} can be started from the shell prompt with the
+following command:
+
+\begin{verbatim}
+$ gap
+\end{verbatim}
+%$ this dollar sign is to not confuse the syntax highlighting
+
+This will start up \GAP{}, and print a \texttt{gap>} prompt where you can
+enter \GAP{} commands to execute.
+
+\subsection{General Description}
+
+\GAP{} was designed as a language for use by mathematicians, so has a
+syntax that corresponds fairly simply to written mathematics.  This reduces
+the perceived learning curve required to use the system, which could
+be a deciding factor for a new user when considering whether or not to
+use GASP.
+
+\GAP{} consists of a number of components centered around a small
+kernel which is written in C.  The kernel is implemented in the main
+\GAP{} executable, and is comprises:
+\begin{description}
+\item[Language] - the parser for the \GAP{} language combined with the
+interpreter which is responsible for executing \GAP{} programs.  This
+also includes the base of the \GAP{} object model, as described in
+Section \ref{sect:gap-object-model}.
+\item[Memory management] - the code that handles all memory allocation
+and deallocation in \GAP.  \GAP{} uses a form of garbage collection,
+so users do not have to concern themselves with explicitely allocating
+or freeing memory in their program.
+\item[Selected objects and operations] - a number of functions and
+data types which are impossible or very inefficient to implement in
+the \GAP{} language.  These include implementations of the base data
+types such as integers, lists and some other data types, along with
+some of the basic operations for those types.
+\end{description}
+
+On top of this kernel are the standard library, some data sets and the
+documentation.  The standard library takes the primitives defined
+inside the kernel and builds them up to create data types that can be
+used to work on various mathematical problems.
+
+There are a number of data sets (the small groups library, etc)
+distributed with \GAP{}, which can be accessed from the language.  These
+are not relevant to the problems we are interested in here.
+
+\GAP{} contains a builtin documentation system, so the interpreter can
+extract a section from a specially formated \TeX{} documentation file
+for a particular function.  This is then displayed to the user, the
+format depending on the way \GAP{} was invoked.  This yields a very
+simple way to provide both online help for the functions in \GAP{},
+and produce a high quality typeset version of the library reference.
+
+In addition to the standard library, \GAP{} provides a way for any
+user to contribute packages known as \emph{share packages} to be used.
+The use of share packages makes it very easy to package together a
+number of functions and data structures together for distribution.
+Official share packages are refereed.
+
+For GASP, most of the standard library and all the data sets were not
+used.  However, a lot of the infrastructure these components were
+built on was used.
+
+
+\subsection{Interpreted Nature}
+
+\GAP{} is an interpreted language.  If a language is not interpreted,
+a user writes a program, then compiles the program to machine code,
+executes the program to test it, and debugs it if any errors occur.
+If errors are found, the user must recompile and test the application
+again.  With an interpreted language however, the compile stage of the
+normal \texttt{write $\to$ compile $\to$ test $\to$ debug} cycle gets
+removed, which speeds up development.
+
+\GAP{} is also \emph{interactive}. This means that a user can enter
+a command at the \texttt{gap>} prompt, \GAP{} evaluates the command
+and prints the result.  This is the usual \texttt{read $\to$ eval
+$\to$ print} loop found in many interpreted languages such as python
+or the UNIX shell.
+
+Often, interactive languages reduce the experimentation part of the
+development process down to just \texttt{test $\to$ debug}.  The above
+simplification of the development cycle leads to fast experimentation
+and fast development when combined with the fact that memory
+management can be ignored.
+
+Of course, the interpreted nature of \GAP{} can lead to less than
+optimal speed.  In most cases, the tradeoff against shorter
+development time is sensible.  In the cases it is not sensible, a
+\GAP{} to C translator is available that allows compilation of \GAP{}
+code for extra speed.
+
+
+\subsection{\GAP{} Features}
+
+As well as the many features related to group theory, \GAP{} contains
+many features found in most general purpose languages.  Many of these
+were necessary to build up the mathematical features of the language.
+These include a number of data types including some aggregate data
+types, and many of the normal control structures found in most
+programming languages.
+
+
+\subsubsection{Basic Data types}
+
+As well as the more specialised group theory types found in the
+standard library, there are a number of general purpose types.  These
+include integer, rational and floating point numbers.  Integers and
+rational numbers convert to an arbitrary precision representation
+if they grow too large.
+
+At the time of writing, the floating point support is not well
+integrated into the \GAP{} system.  While it is possible to perform
+binary operations on two floats, sometimes an error occurs when the
+same operation is applied to a float and a non-float.  Also, not all
+functions accept a float where some other type of number is
+expected due to these problems.  It is expected that these problems
+will be resolved in the future.
+
+In addition to these basic types, \GAP{} provides a number of aggregate
+data types.  The main ones are lists and records.
+
+Lists in \GAP{} can be \emph{heterogeneous}.  That is, a list can contain
+elements of more than one type.  Lists can be expanded and contracted
+as needed at runtime using the \texttt{Append} and \texttt{RemoveSet}
+functions.  You can perform complex indexing operations on a list.
+For example, if we have a list initialised as
+\verb|list := [7,8,9,10,42,11]|, then the expression
+\verb|list{[1,3,5]}| returns a list containing the first,
+third and fifth elements of the initial list, which is \verb|[7,9,42]|.
+
+Records in \GAP{} are similar to \texttt{struct}s in C or
+\texttt{record}s in Pascal.  They provide a way to group a number of named
+variables together.
+
+These aggregate data types can be nested to produce more complex types
+as required.  \GAP{} also provides a way to \emph{objectify} lists and
+records, which gives you even more control over how they are handled.
+This is covered in the next section.
+
+
+\subsubsection{Control Structures}
+
+\GAP{} provides many of the standard control structures found in most
+languages.  These include the standard \texttt{if .. then .. else
+.. end if} conditional statements, as well as statements to iterate
+over the members of a list.  There are also the more general
+\texttt{while} and \texttt{repeat .. until} loops.
+
+For more information, see the \GAP{} reference manual \cite{gap-ref}.
+
+\subsection{The \GAP{} Object Model}\label{sect:gap-object-model}
+
+\GAP{} provides the ability to create hierarchies of types similar to what
+is found in many object oriented languages.  We can create instances
+of these types by \emph{objectifying} records or lists.
+
+The main reason for creating these objectified types is \GAP{}'s
+operation system.  Operations are analogous to methods in most object
+oriented languages and provide a way of creating \emph{polymorphic}
+functions.  That is, functions that perform different actions
+depending on the types of the arguments.
+
+\GAP{} also provides the ability to overload the standard operators.
+This means that you can implement the standard operators such as $+$,
+$-$, $*$, $=$ and $\le$ for any new object types created in \GAP{}.
+Operator overloading in \GAP{} uses the operations system described
+above.  This means that we can provide different implementations of
+the operations depending on the types of the operands.
+
+Although \GAP{} appears to be purely procedural, the combination of
+objectified types and operations gives as much power as found in more
+traditional object oriented languages.  The difference in syntax is
+not expected to be a problem, as most users of GASP will probably not
+have much experience in object oriented languages to start with.
+
+
+\subsection{Functions}
+
+\GAP{} treats functions like any other variables.  They can be passed as
+an argument to another function, or returned from a function.  In
+fact, the usual way of defining a new function is through an
+assignment to a variable.
+
+Similar to functions in languages like Pascal, a \GAP{} function has
+access to the variables in the environment where it was defined.  If
+we define one function within the body of another function, it will
+have access to the local variables of the enclosing function as well
+as those in the \emph{global name space}.  A \emph{name space} refers
+to a mapping between variable names and their corresponding values.
+Usually a particular name space is only used in certain contexts, but
+variables in the global name space are available from all parts of the
+program.
+
+When combining access to the defining environment of a function with
+passing function variables as arguments to other functions, it is not
+quite clear what a language should do.  Consider the following
+fragment of \GAP{} code:
+
+\begin{lstlisting}{}
+g := function()
+    local i, h;
+    i := 0;
+    h := function();
+        i := i + 1;
+        return i;
+    end;
+    return h;
+end;
+f := g();
+\end{lstlisting}
+
+This creates the function \texttt{f}.  When we exit from the call of
+\texttt{g}, the local variables that make up the environment in which
+the function \texttt{h} was defined are preserved.  The other common
+behaviour in this situation is to not give the function \texttt{f}
+access to \texttt{g}'s local variables, or not preserve their values
+across calls to \texttt{g}.  \GAP's behaviour was very convenient when
+writing parts of GASP.
+
+Successive calls to \texttt{f} will result in a series of positive
+integers being returned.  If we create another copy of \texttt{f} by
+calling \texttt{g} again, the series returned by the copy will be
+independent of the first \texttt{f}.  In effect, each \texttt{f} has a
+copy of the variable \texttt{i}.
+
+Such an \texttt{f} is known as a \emph{closure}.  That is, it is a
+combination of the function and the environment it was defined in.
+
+We used this functionality fairly extensively inside GASP.
+
+
+\subsection{\XGAP}
+
+\XGAP{} is a combination of a share package for \GAP{} along with a
+wrapper front end that provides graphical capabilities using the X
+Window System.  \XGAP{} can be started by running the \texttt{xgap}
+command.  This will open an X window for the console and load up the
+share package part of \XGAP{}.
+
+The \texttt{xgap} share package provides the ability to create
+\emph{graphic sheets} which act like a canvas on which various
+geometric figures such as rectangles, lines and circles can be drawn.
+These graphic sheets handle all redraws for the canvas, so a program
+does not need to worry about redrawing the shapes after the canvas
+gets obscured.  \XGAP{} also provides the capability to save the
+contents of a graphic sheet to an encapsulated PostScript (EPS) file
+which can then be printed or included in a document, as I have done so
+in Figure \ref{fig:red-black-output}.
+
+Graphic sheets can also take mouse input from the user, which is
+passed back to the program, and add extra menu items to the menu bar at
+the top of the graphic sheet.
+
+\XGAP{} opens a new window when you ask for help on a particular
+topic, and provides some cross referencing support so you can click on
+other topic names in the help window.
+
+We use \XGAP{}'s graphics abilities for visualisation in GASP.
+
+
+\subsection{More Information}
+
+This section is not meant to be a complete description of the \GAP{}
+system.  Comprehensive documentation is distributed with the \GAP{}
+system, consisting of tutorial, programming, extension and reference
+manuals and online help.  The tutorial \cite{gap-tut} and reference
+\cite{gap-ref} manuals are good places to start learning about \GAP{}.
+
+Online help is available for almost all \GAP{} functions by typing
+\texttt{?}\textsl{function\-name} at the \texttt{gap>} prompt.  \GAP{} also
+supports tab completion, which can be used to find appropriate
+functions.  By typing in part of a function name, and pressing the
+\texttt{tab} key, either the name is completed or a list of
+names matching what was typed is listed.
+
+\subsection{Problems With \GAP}
+
+When working with \GAP{}, there were a few problems that surfaced.
+The first was the lack of floating point support in the released
+version.  For work on GASP, I was able to obtain the unreleased
+development version of \GAP{}, which has some floating point support
+built in.  As floating point support is not very well integrated, into
+\GAP{} at present, its use inside GASP has been quite limited.
+
+The other problem with \GAP{} is the lack of multiple global name
+spaces.  This prevents the programmer from creating functions that are
+private to a particular share package.  Although this did not cause
+any big problems when developing GASP, it means that people extending
+GASP have to be careful not to use function names that may be used in
+other \GAP{} packages, as it may produce unpredictable results.
+Multiple global name space support is another feature that is planned
+for \GAP{} in the future.
+
+Although \GAP{} has a number of problems, overall it proved to be a
+useful tool to use as a base for GASP.
