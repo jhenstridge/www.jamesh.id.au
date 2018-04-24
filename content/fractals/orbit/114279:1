@@ -1,0 +1,22 @@
+<html>
+  <head><title>Orbit Fractals</title></head>
+  <body bgcolor="ffffff">
+    <H1>Orbit Fractals</H1>
+    Orbit fractals are formed by choosing a starting point, and repeatedly
+    applying a transformation, or orbit formula, to it, and plotting the
+    subsequent points.  This is how most of the orbit fractals in this
+    section work, with the exception of fractal popcorn.  It applies the
+    orbit formula for more than one starting point.  In fact, it applies it
+    for every tenth pixel (I know that this is different from how Fractint
+    does it, but doesn't it look a lot nicer? :)
+    <hr>
+    | <a href="../">Contents</a>
+    | <a href="popcorn.html">Next</a>
+    |
+
+    <br>Copyright &copy; 1996, James Henstridge
+    <br>Please send comments or corrections to
+    <a href="mailto:james@daa.com.au">james@daa.com.au</a>
+
+  </body>
+</html>

@@ -1,0 +1,44 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-AU" xml:lang="en-AU">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Accessibility Framework and Python (continued)</title>
+<link rel="up" title="Index" href="index.html" />
+<link rel="prev" title="Introduction" href="slide16.html" />
+<link rel="next" title="Event Listeners" href="slide18.html" />
+<link rel="stylesheet" type="text/css" href="slides.css" /><link rel="stylesheet" type="text/css" href="custom.css" />
+<style type="text/css" media="screen, projection" id="screen-style">
+      html, body { font-size: 24pt; }
+    </style>
+<script type="text/javascript" src="slides.js"></script>
+</head>
+<body>
+<div id="content">
+<h1>Accessibility Framework and Python (continued)</h1>
+
+      <p>Iterating over the children of an accessible is trivial.  The
+      following code lists the currently running accessible
+      applications:</p>
+
+      <pre class="programlisting">
+for i in range(desktop.childCount):
+    child = desktop.getChildAtIndex(i)
+    print child.name
+    child.unref()</pre>
+
+      <p>If we have an accessible corresponding to an entry field,
+      queryInterface() can be used to use the
+      <tt>Accessibility::Text</tt> methods on it:</p>
+      <pre class="programlisting">
+text = accessible.queryInterface('IDL:Accessible/Text:1.0')
+print text.getText(0, text.characterCount)</pre>
+
+    
+</div>
+<div id="navfooter">
+<span id="slidenumber">Slide 17 / 21</span>
+<a id="prev" title="Introduction" href="slide16.html">Prev</a>
+<a id="next" title="Event Listeners" href="slide18.html">Next</a>
+</div>
+</body>
+</html>

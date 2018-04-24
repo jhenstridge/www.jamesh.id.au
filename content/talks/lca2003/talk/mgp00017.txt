@@ -1,0 +1,14 @@
+
+Merge Example
+
+  file1.ui                          file2.ui
+Root                              Root
+  menu                              menu
+    submenu: FileMenu                 submenu: FileMenu
+      menuitem: Open                    separator
+    placeholder: TestPlaceholder        menuitem: Quit
+    submenu: HelpMenu                 placeholder: TestPlaceholder
+      menuitem: About                   submenu: EditMenu
+  dockitem: toolbar1                      menuitem: Cut
+    toolitem: NewButton             dockitem: toolbar1
+                                      toolitem: OpenButton

@@ -1,0 +1,40 @@
+<?xml version="1.0"?> <?emacs -*- mode: nxml -*- ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Cubic Mandelbrot/Julia Set</title>
+    <meta name="description" content="This is an applet that draws cubic Mandelbrot and Julia Sets.  Written by James Henstridge." />
+    <meta name="keywords" content="java, applet, fractal, mandelbrot, julia" />
+  </head>
+  <body>
+    <h1>Cubic Mandelbrot/Julia Set</h1>
+
+    <div class="fractal">
+      <applet code="Mandel3.class" height="340" width="400">
+        <hr />
+        <p>If your browser supported Java, You would see a nice
+        fractal here.</p>
+        <hr />
+      </applet>
+    </div>
+    
+    <p>Most of the properties of this fractal are common with the
+    Classic Mandelbrot Set, and the applet works identically, so there
+    is not much to explain about it.  The only difference is in its
+    calculation formula:</p>
+
+    <div class="equation">z<sub>n + 1</sub> =
+    z<sub>n</sub><sup>3</sup> + c</div>
+
+    <p>As you can see, the only difference is in the power of z.  Also you
+    will notice that all the Julia Sets of this type will have rotational
+    symetry of order 3, instead of 2.</p>
+
+    <div class="navigation">
+      <a href="Mandel.html">&lt;&lt;&lt; Previous</a>
+      | <a href="../">Contents</a>
+      | <a href="Mandel4.html">Next &gt;&gt;&gt;</a>
+    </div>
+  </body>
+</html>

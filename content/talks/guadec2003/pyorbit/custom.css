@@ -1,0 +1,51 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+body {
+    background: url('background.png') no-repeat center;
+}
+
+#content li::-moz-list-bullet {
+    color: red;
+    list-style: disc;
+}
+
+#content ul ul li::-moz-list-bullet {
+    color: blue;
+    list-style: square;
+}
+
+/* add a bit of padding after paragraphs */
+p {
+    margin-bottom: 0.5em;
+}
+
+/* padding between top level list elements */
+#content > ul > li {
+    margin-top: 0.5em;
+}
+#content > ul > li:first-node {
+    margin-top: 0;
+}
+
+p, #content > ul > li {
+    font-size: 110%;
+}
+
+#content {
+    font-face: Bitstream Vera Sans, sans serif;
+}
+
+#notes {
+    font-face: Bitstream Vera Serif, sans serif;
+}
+
+pre.programlisting {
+    font-size: 85%;
+    margin-left: 5em;
+    margin-right: 5em;
+    padding: 0.5em;
+    clear: both;
+    color: black;
+    background-color: #eeeeff;
+    border: solid 2px #aaaaff;
+}

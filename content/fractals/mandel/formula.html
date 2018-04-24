@@ -1,0 +1,57 @@
+<?xml version="1.0"?> <?emacs -*- mode: nxml -*- ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>How the Formula is Used</title>
+  </head>
+  <body>
+    <h1>How the Formula is Used</h1>
+    
+    <p>The formula used by the Complex Number Fractal Generator can be
+    thought of as a function <var>f(z, c)</var>.  It is used to
+    transform <var>z</var>, like so:</p>
+
+    <div class="equation">z<sub>n + 1</sub> = f(z<sub>n</sub>, c)</div>
+
+    <p>and is iterated until the modulus (absolute value or size) of
+    <var>z</var> is greater than 2.  The point is then coloured
+    according to how many iterations it took to escape.  This part of
+    the routine is common to both Mandelbrot Sets and Julia Sets.  The
+    diference is in the definitions of <var>c</var> and <var>z</var>.
+    In a Mandelbrot Set, the initial value of <var>z</var> is 0, and
+    the initial value of <var>c</var> is the point on the complex
+    plane, while in a julia set, <var>z</var>'s initial value is the
+    point on the complex plane and <var>c</var> is some constant.
+    This means that there is only one Mandelbrot Set for a formula,
+    while there is an infinite number of Julia Sets.  In fact, each
+    value of <var>c</var> for a Julia Set, corresponds to a point on
+    the Mandelbrot Set.  Points that are inside the Mandelbrot Set
+    (the black bit) will give connected Julia Sets, while points
+    outside will give disconnected sets, and points on the edge (eg. 0
+    + 1i) will give Julia Sets with no area.</p>
+
+    <p>Some formulas for implemented fractals are:</p>
+
+    <table>
+      <tr valign="middle">
+        <td>Mandel: </td>
+        <td><div class="equation">f(z, c) = z<sup>2</sup> + c</div></td>
+      </tr>
+      <tr valign="middle">
+        <td>Mandel3: </td>
+        <td><div class="equation">f(z, c) = z<sup>3</sup> + c</div></td>
+      </tr>
+      <tr valign="middle">
+        <td>Mandel4: </td>
+        <td><div class="equation">f(z, c) = z<sup>4</sup> + c</div></td>
+      </tr>
+    </table>
+    
+    <div class="navigation">
+      <a href="intro.html">&lt;&lt;&lt; Previous</a>
+      | <a href="../">Contents</a>
+      | <a href="Mandel.html">Next &gt;&gt;&gt;</a>
+    </div>
+  </body>
+</html>

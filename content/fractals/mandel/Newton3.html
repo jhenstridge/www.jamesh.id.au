@@ -1,0 +1,49 @@
+<?xml version="1.0"?> <?emacs -*- mode: nxml -*- ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Newton-Raphson type Fractal</title>
+    <meta name="description" content="This applet draws a fractal created by applying the Newton-Raphson method to the equation x^3 = 1" />
+    <meta name="keywords" content="java, applet, fractal, newton, raphson" />
+  </head>
+  <body>
+    <h1>Newton-Raphson type Fractal</h1>
+
+    <div class="fractal">
+      <applet code="Newton3.class" height="340" width="400">
+        <hr />
+        <p>If your browser supported Java, You would see a nice
+        fractal here.</p>
+        <hr />
+      </applet>
+    </div>
+
+    <p>This fractal is created by trying to solve the equation
+    x<sup>3</sup> = 1, using the Newton-Raphson method.  This involves
+    defining the function f(x) = x<sup>3</sup> - 1, and using it in an
+    iterative formula which should converge to zero, thus finding a
+    value of x which is a solution to the first equation.  This
+    formula is:</p>
+
+    <div class="equation">x<sub>n+1</sub> = x<sub>n</sub> - f(x) /
+     f'(x)</div>
+
+    <p>Where f'(x) is the derivative of f(x).This fractal applies the
+    formula to each point on the complex plain, and colours it
+    according to how many iterations are required for f(x) to converge
+    (approximately) to zero.  In the fractal, the bottoms of the
+    basins (boring regions of the fractal) are actually solutions of
+    the origional equation.</p>
+
+    <p>Since this fractal doesn't have a julia set equivalent, I made
+    the julia set of this fractal do the same type of fractal but on
+    the equation x<sup>3</sup> = c.</p>
+
+    <div class="navigation">
+      <a href="Phoenix.html">&lt;&lt;&lt; Previous</a>
+      | <a href="../">Contents</a>
+    </div>
+  </body>
+</html>
+

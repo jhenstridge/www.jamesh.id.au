@@ -1,0 +1,53 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-AU" xml:lang="en-AU">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>EggToolbar History</title>
+<link rel="up" title="Index" href="index.html" />
+<link rel="prev" title="Introduction" href="slide3.html" />
+<link rel="next" title="EggToolbar Features" href="slide5.html" />
+<link rel="stylesheet" type="text/css" href="slides.css" /><link rel="stylesheet" type="text/css" href="custom.css" />
+<style type="text/css" media="screen, projection" id="screen-style">
+      html, body { font-size: 24pt; }
+    </style>
+<script type="text/javascript" src="slides.js"></script>
+</head>
+<body>
+<div id="content">
+<h1>EggToolbar History</h1>
+
+      <ul>
+        <li>Existing GtkToolbar acts quite different to most
+        containers.</li>
+        <ul>
+          <li>children are usually created while adding to the
+          parent.</li>
+	  <li>All interfaces for manipulating buttons work with child
+          indices.</li>
+	  <ul>
+	    <li>a pain to keep track of if you are removing or
+	    inserting items.</li>
+	  </ul>
+	  <li>Some desired toolbar layouts are impossible.</li>
+	  <ul>
+	    <li>Right aligned items.</li>
+	    <li>items that expand (such as the location bar in a web
+	    browser).</li>
+	  </ul>
+        </ul>
+	<li>BonoboToolbar also has its problems:</li>
+	<ul>
+	  <li>It was written due to limitations of GtkToolbar.</li>
+	  <li>It is not exposed directly to the programmer.</li>
+	  <li>It acts subtly different to GtkToolbar.</li>
+	</ul>
+      </ul>
+    
+</div>
+<div id="navfooter">
+<span id="slidenumber">Slide 4 / 19</span>
+<a id="prev" title="Introduction" href="slide3.html">Prev</a>
+<a id="next" title="EggToolbar Features" href="slide5.html">Next</a>
+</div>
+</body>
+</html>

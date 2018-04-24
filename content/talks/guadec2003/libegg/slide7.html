@@ -1,0 +1,42 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-AU" xml:lang="en-AU">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Existing Menu/Toolbar API</title>
+<link rel="up" title="Index" href="index.html" />
+<link rel="prev" title="Introduction" href="slide6.html" />
+<link rel="next" title="Problems With the Existing API" href="slide8.html" />
+<link rel="stylesheet" type="text/css" href="slides.css" /><link rel="stylesheet" type="text/css" href="custom.css" />
+<style type="text/css" media="screen, projection" id="screen-style">
+      html, body { font-size: 24pt; }
+    </style>
+<script type="text/javascript" src="slides.js"></script>
+</head>
+<body>
+<div id="content">
+<h1>Existing Menu/Toolbar API</h1>
+
+      <ul>
+        <li>Code for creating menus looks a bit like this:</li>
+        <ul>
+          <li>Create GtkMenuBar</li>
+          <li>Add GtkMenuItems for toplevel menus, and attach GtkMenus
+          to them.</li>
+          <li>Add GtkMenuItems to the GtkMenus</li>
+          <li>Attach callbacks to the "activate" signal of the menu
+          items</li>
+          <li>Repeat for sub-menus ...</li>
+        </ul>
+        <li>Toolbars are similar, although no sub-menus.</li>
+	<li>The GtkItemFactory code can help here, but it is
+	essentially a short hand for the above.</li>
+      </ul>
+    
+</div>
+<div id="navfooter">
+<span id="slidenumber">Slide 7 / 19</span>
+<a id="prev" title="Introduction" href="slide6.html">Prev</a>
+<a id="next" title="Problems With the Existing API" href="slide8.html">Next</a>
+</div>
+</body>
+</html>

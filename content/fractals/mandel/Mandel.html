@@ -1,0 +1,92 @@
+<?xml version="1.0"?> <?emacs -*- mode: nxml -*- ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Classic Mandelbrot/Julia Set</title>
+    <meta name="description" content="This is an applet that draws classic Mandelbrot and Julia Sets.  Written by James Henstridge." />
+    <meta name="keywords" content="java, applet, fractal, mandelbrot, julia" />
+  </head>
+  <body>
+    <h1>Classic Mandelbrot/Julia Set</h1>
+
+    <div class="fractal">
+      <applet code="Mandel.class" height="340" width="400">
+        <hr />
+        <p>If your browser supported Java, You would see a nice
+        fractal here.</p>
+        <hr />
+      </applet>
+    </div>
+
+    <p>The Mandelbrot Set is probably one of the most well known
+    fractals, and probably one of the most widely implemented fractal
+    in fractal plotting programs.  It was originally discovered by
+    Benoit B. Mandelbrot, hence the name.  It is produced by the
+    formula</p>
+
+    <div class="equation">z<sub>n+1</sub> = z<sub>n</sub><sup>2</sup>
+    + c</div>
+
+    <p>where z and c are complex numbers, z<sub>0</sub> = 0, and c is
+    a point on the plain.  The formula is iterated until
+    |z<sub>n</sub>| (the magnitude of z) is greater than or equal to
+    the bailout value 2.  Then the pixel that c corresponds to is
+    coloured according to the number of iterations that occured before
+    the process bailed out.  The uninteresting black area of the image
+    is the actual Mandelbrot Set.  It consists of all the values for c
+    where |z<sub>n</sub>| never got larger than 2.  Of course this
+    area is impossible to comute accurately, so this program decides
+    to colour black all pixels for which |z<sub>n</sub>| never gets
+    larger than 2 for a given number of iterations (256).</p>
+
+    <p>It is amazing that such a simple formula can produce such an
+    interesting picture.  If you zoom into the image (click zoom and
+    drag out an area on the image) you will find sections that look
+    the same as portions of the image at other zooms.  This infinite
+    level of detail is common to all fractals and makes them so
+    facinating.  If you find that the image is too blocky for your
+    liking, you can change the resolution by choosing a different
+    number from the list box on the left of the controls (The smaller
+    the number, the smaller the pixels will be) and press the redraw
+    button.</p>
+
+    <p>By now you are probably getting bored of this fractal, but
+    don't change to a different one yet; there is still an infinite
+    number of Julia Sets to look at.  Julia Sets are produced with the
+    same formula as the Mandelbrot set, but the starting values are
+    different.  That is c is some constant, and z<sub>0</sub> is the
+    starting point on the plane.  From this definition, you can see
+    that there is an infinite number of Julia Sets; one for each value
+    of c.  In fact, there is a Julia Set that corresponds to each
+    point on complex plane.  There is an interesting relationship
+    between the Mandelbrot Set and the Julia Sets.  In a way, you can
+    think of the Mandelbrot Set as an index for the Julia Sets.  For
+    values of c that are inside the Mandelbrot Set, you will get
+    connected Julia Sets.  That is all the black regions are
+    connected.  Conversely, those values of c outside the Mandelbrot
+    Set, you get unconnected sets.</p>
+
+    <p>Because of this relationship, I have written the applet so you
+    can switch over to a Julia Set by just clicking on the "Switch
+    (M&lt;-&gt;J)" button and clicking on part of the set.  You will
+    notice that the coordinates of the pointer are displayed on the
+    status line during selection.  To get back to the Mandelbrot Set,
+    just click on the button again.</p>
+
+    <p>By thinking of the Mandelbrot Set as an index for Julia Sets,
+    the question comes up about what happens if a point on the edge of
+    the Mandelbrot Set is chosen as the value of c.  The answer is you
+    get a null set.  That is there should be no black section.  If you
+    have trouble finding a point on the edge of the set, try the point
+    (0, 1).  This is one of the few points on the edge of the
+    Mandelbrot Set with rational coordinates which is why I name it.
+    Have fun exploring!</p>
+
+    <div class="navigation">
+      <a href="formula.html">&lt;&lt;&lt; Previous</a>
+      | <a href="../">Contents</a>
+      | <a href="Mandel3.html">Next &gt;&gt;&gt;</a>
+    </div>
+  </body>
+</html>

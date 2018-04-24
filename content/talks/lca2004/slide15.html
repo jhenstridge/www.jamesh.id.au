@@ -1,0 +1,45 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-AU" xml:lang="en-AU">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Events</title>
+<link rel="up" title="Index" href="index.html" />
+<link rel="prev" title="Introduction" href="slide14.html" />
+<link rel="next" title="Using the Accessibility Framework from Python" href="slide16.html" />
+<link rel="stylesheet" type="text/css" href="slides.css" /><link rel="stylesheet" type="text/css" href="custom.css" />
+<style type="text/css" media="screen, projection" id="screen-style">
+      html, body { font-size: 24pt; }
+    </style>
+<script type="text/javascript" src="slides.js"></script>
+</head>
+<body>
+<div id="content">
+<h1>Events</h1>
+
+      <p>The accessibility registry can also be used to listen for and
+      create events.</p>
+      <p>The <tt>registerGlobalEventListener()</tt> method can be used
+      to register an event listener object to receive events of a
+      particular type.  When such an event occurs, the listener's
+      <tt>notifyEvent()</tt> method will be invoked.</p>
+      <ul>
+	<li>events include "<tt>focus:</tt>", "<tt>mouse:button</tt>",
+	"<tt>object:state-changed</tt>",
+	"<tt>object:text-changed</tt>".</li>
+      </ul>
+      <p>To generate keyboard and mouse events, we call the registry's
+      <tt>getDeviceEventController()</tt> method to get an
+      <tt>Accessible::DeviceEventController</tt> object.</p>
+
+      <p>The <tt>generateKeyboardEvent()</tt> and
+      <tt>generateMouseEvent()</tt> methods on this object are used to
+      synthesise the events.</p>
+    
+</div>
+<div id="navfooter">
+<span id="slidenumber">Slide 15 / 21</span>
+<a id="prev" title="Introduction" href="slide14.html">Prev</a>
+<a id="next" title="Using the Accessibility Framework from Python" href="slide16.html">Next</a>
+</div>
+</body>
+</html>

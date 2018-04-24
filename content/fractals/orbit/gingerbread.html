@@ -1,0 +1,43 @@
+<?xml version="1.0"?> <?emacs -*- mode: nxml -*- ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>A Fractal Gingerbreadman</title>
+    <meta name="description" content="This is an applet that draws a fractal gingerbreadman.  Written by James Henstridge." />
+    <meta name="keywords" content="java, applet, fractal, orbit, gingerbread" />
+  </head>
+  <body>
+    <h1>A Fractal Gingerbreadman</h1>
+
+    <div class="fractal">
+      <applet code="gingerbread.class" height="300" width="400">
+	<param name="bgcolour" value="ffffff" />
+        <hr />
+        <p>If your browser supported Java, You would see a nice
+        fractal here.</p>
+        <hr />
+      </applet>
+    </div>
+
+    <p>This is a fractal gingerbreadman.  It is also an orbital type
+    of fractal, but unlike popcorn, the orbital formula is only
+    applied to one starting point to create the image.  This formula
+    is:</p>
+
+    <div class="equation">x<sub>n + 1</sub> = 1 - y<sub>n</sub> +
+    |x<sub>n</sub>|<br /> y<sub>n + 1</sub> = x<sub>n</sub></div>
+
+    <p>This fractal uses x<sub>0</sub> = -0.1 and y<sub>0</sub> = 0.
+    These values can be changed by setting the parameters
+    <var>xstart</var> and <var>ystart</var> in
+    <var>&lt;param&gt;</var> tags, although these don't change the
+    image much, and sometimes make it less interesting.</p>
+
+    <div class="navigation">
+      <a href="popcorn.html">&lt;&lt;&lt; Previous</a>
+      | <a href="../">Contents</a>
+      | <a href="hopalong.html">Next &gt;&gt;&gt;</a>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,61 @@
+<?xml version="1.0"?> <!--*- mode: nxml -*-->
+<page xmlns="http://www.daa.com.au/~james/menu-ns"
+      href="" label="Home">
+  <page href="software/" label="Software">
+    <page href="software/pygtk/" label="PyGTK">
+      <page href="http://www.async.com.br/faq/pygtk/" label="FAQ" />
+      <page href="http://www.daa.com.au/pipermail/pygtk/" label="List Archive" />
+      <page href="http://www.moeraki.com/pygtktutorial/pygtk2tutorial/index.html" label="Tutorial" />
+    </page>
+    <page href="software/pygimp/" label="Gimp-Python" />
+    <page href="software/libglade/" label="Libglade" />
+    <page href="software/jhbuild/" label="JHBuild" />
+    <page href="software/fontilus/" label="Fontilus" />
+    <page href="software/nautilus-rpm/" label="Nautilus RPM" />
+    <hiddenpage href="software/gnorpm/" label="GnoRPM" />
+    <hiddenpage href="software/www-sql/" label="www-sql" />
+  </page>
+  <page href="talks/" label="Talks">
+    <page href="talks/guadec2000/dia-0.html" label="GUADEC 2000: Dia" />
+    <page href="talks/guadec2000/python-0.html" label="GUADEC 2000: PyGTK" />
+    <page href="talks/guadec2001/html/" label="GUADEC 2001: PyGTK" />
+    <page href="talks/guadec2002/html/" label="GUADEC 2002: PyGTK" />
+    <page href="talks/lca2003/talk/" label="LCA 2003: EggMenu" />
+    <page href="talks/guadec2003/libegg/" label="GUADEC 2003: Egg*" />
+    <page href="talks/guadec2003/pyorbit/" label="GUADEC 2003: PyORBit" />
+    <page href="talks/lca2004/" label="LCA 2004: Scripting" />
+  </page>
+  <page href="articles/" label="Articles">
+    <page href="articles/libxml-sax/libxml-sax.html" label="LibXML SAX interface" />
+    <page href="articles/mailman-spamassassin/" label="Mailman/SpamAssassin" />
+  </page>
+  <page href="fractals/" label="Fractals">
+    <page href="fractals/ifs/intro.html" label="IFS fractals">
+      <hiddenpage href="fractals/ifs/javaifs.html" label="Applet Information" />
+      <page href="fractals/ifs/triangle.html" label="Sierpinski Triangle" />
+      <page href="fractals/ifs/fern.html" label="Fern" />
+      <page href="fractals/ifs/spiral.html" label="Spiral" />
+      <page href="fractals/ifs/dragon.html" label="Dragon" />
+      <hiddenpage href="fractals/ifs/formula.html" title="Formula" />
+    </page>
+    <page href="fractals/mandel/intro.html" label="Mandelbrot">
+      <hiddenpage href="fractals/mandel/formula.html" title="Formula" />
+      <page href="fractals/mandel/Mandel.html" label="Mandelbrot set" />
+      <page href="fractals/mandel/Mandel3.html" label="Cubic Mandelbrot" />
+      <page href="fractals/mandel/Mandel4.html" label="Quartic Mandelbrot" />
+      <page href="fractals/mandel/Phoenix.html" label="Phoenix Set" />
+      <page href="fractals/mandel/Newton3.html" label="Newton Set" />
+    </page>
+    <page href="fractals/orbit/intro.html" label="Orbit Fractals">
+      <page href="fractals/orbit/popcorn.html" label="Popcorn" />
+      <page href="fractals/orbit/gingerbread.html" label="Gingerbread" />
+      <page href="fractals/orbit/hopalong.html" label="Hopalong" />
+      <page href="fractals/orbit/threeply.html" label="Three Ply" />
+      <page href="fractals/orbit/quadruptwo.html" label="Quadrup Two" />
+      <page href="fractals/orbit/inv_julia.html" label="Inverse Julia" />
+    </page>
+  </page>
+  <page href="photos/" label="Photos" />
+  <page href="http://blogs.gnome.org/jamesh" label="Diary" />
+  <!--<page href="links.html" label="Links" notree="yes" /> -->
+</page>

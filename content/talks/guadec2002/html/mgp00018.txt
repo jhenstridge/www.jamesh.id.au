@@ -1,0 +1,19 @@
+
+Generators
+
+Rewriting tasks to be run by the main loop as idle tasks is tedious and error prone.
+Use generators!
+
+        from __future__ import generators
+        import gtk
+
+        def task_generator():
+            for i in range(100):
+                print i
+                yield gtk.TRUE # yield control to main loop
+            yield gtk.FALSE    # task complete
+
+        gtk.idle_add(task_generator().next)
+
+State saved automatically between invocations of idle function.
+

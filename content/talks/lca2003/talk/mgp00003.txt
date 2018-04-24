@@ -1,0 +1,7 @@
+
+What is EggMenu?
+
+A new menu and toolbar handling API
+Currently in development
+Will hopefully land in GTK 2.4
+

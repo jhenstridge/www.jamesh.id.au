@@ -1,0 +1,42 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-AU" xml:lang="en-AU">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>PyORBit Skeletons</title>
+<link rel="up" title="Index" href="index.html" />
+<link rel="prev" title="Introduction" href="slide11.html" />
+<link rel="next" title="Simple Scripting Example" href="slide13.html" />
+<link rel="stylesheet" type="text/css" href="slides.css" /><link rel="stylesheet" type="text/css" href="custom.css" />
+<style type="text/css" media="screen, projection" id="screen-style">
+      html, body { font-size: 24pt; }
+    </style>
+<script type="text/javascript" src="slides.js"></script>
+</head>
+<body>
+<div id="content">
+<h1>PyORBit Skeletons</h1>
+
+      <ul>
+	<li>Follows the standard Python mapping.</li>
+	<li>Like the client side stubs, skeletons are generated at
+	runtime.</li>
+	<ul>
+	  <li>As with stubs, <tt>IInterface</tt> data is used to generate
+	  the skeleton</li>
+	</ul>
+	<li>ORBit2 allows a servant to provide an "implementation
+	finder" function responsible for finding the implementation of
+	a method.</li>
+	<li>ORBit2 passes arguments to the servant in the same format
+	given to <tt>ORBit_small_invoke_stub()</tt>, so we can reuse
+	the same marshaling code.</li>
+      </ul>
+    
+</div>
+<div id="navfooter">
+<span id="slidenumber">Slide 12 / 16</span>
+<a id="prev" title="Introduction" href="slide11.html">Prev</a>
+<a id="next" title="Simple Scripting Example" href="slide13.html">Next</a>
+</div>
+</body>
+</html>

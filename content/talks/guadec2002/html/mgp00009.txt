@@ -1,0 +1,14 @@
+
+Building Interfaces with Libglade
+
+Write interface in glade
+Write program logic in Python
+Use libglade to hook up program logic to GUI:
+        import gtk.glade
+
+        xml = gtk.glade.XML('filename.glade')
+        xml.signal_autoconnect({'funcname': func, ...})
+        gtk.main()
+
+See Christian Egli's talk for more details
+

@@ -1,0 +1,8 @@
+
+Incompatibilities with Stable PyGTK
+
+No procedural API
+All types are implemented as Python 2.2 new style types.
+Gtk and Gdk prefixes removed from types (see next slide)
+Threading support not quite working
+

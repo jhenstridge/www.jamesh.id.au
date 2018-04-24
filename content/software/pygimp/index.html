@@ -1,0 +1,142 @@
+<?xml version="1.0"?> <?emacs -*- mode: nxml -*- ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Gimp-Python</title>
+  </head>
+  <body>
+    <img src="gimp-python.jpeg" alt="" /><br />
+
+    <h1>Gimp-Python</h1>
+
+    <p>Gimp-Python is a package that allows people to write plug-ins
+    for <a href="http://www.gimp.org">The Gimp</a> in the <a
+    href="http://www.python.org">Python programming language</a>
+    rather than Script-Fu (Scheme), Perl, Tcl or C.</p>
+
+    <p>The newest version, 0.4, has support for both gimp 1.0 and gimp
+    1.1.  Unlike previous versions, this one does not use Tkinter, but
+    instead uses the <a
+    href="http://www.daa.com.au/~james/pygtk/">PyGTK package</a> which
+    is a set of bindings for the <a href="http://www.gtk.org">GTK+
+    widget set</a>.  The reason for changing over from Tkinter was to
+    get a more consistent look and feel, and for the extra widgets
+    (color and font selectors for instance).</p>
+
+    <p>Gimp-Python provides an almost complete wrapper for the libgimp
+    plug-in library, including support for tiles and pixel regions.
+    This means that you can use it to do just about everything that is
+    possible in C, but you get all the benefits of python.  You do not
+    have to worry about freeing data structures, and there are some
+    other benefits (such as tiles automatically having the dirty flag
+    set when you modify them).  As an example of this power, there is
+    a translation of the whirl and pinch plug-in included with the
+    package.</p>
+
+    <p>The gimp-python wrapper for libgimp is an object oriented one,
+    where many of the operations on images, drawables, channels and
+    layers become methods or attributes of those particular types.</p>
+
+    <p>Gimp-Python also offers the benefits of script-fu through the
+    gimpfu module.  With this module, you need only write the plug-in
+    function, make a call to register(), and gimpfu takes care of the
+    GUI (if the plug-in was called interactively), handle the run_mode
+    parameter, and save parameter defaults between invocations.  This
+    makes writing plug-ins very easy, while not restricting what they
+    can do.</p>
+
+    <p>Among the sample plug-ins, there is a console plug-in.  This
+    plug-in is similar to the script-fu console plug-in, and allows
+    you to experiment with gimp-python interactively, and
+    programatically modify your images.</p>
+
+    <h2>Documentation</h2>
+
+    <p>There is some documentation for gimp-python in docbook SGML
+    format.  The package contains an HTML conversion as well.  Here is
+    an online copy of the documentation:</p>
+
+    <ul>
+      <li><a href="pygimp.html">Gimp-Python Documentation (HTML)</a></li>
+      <li><a href="pygimp.sgml">Gimp-Python Documentation (DocBook SGML)</a></li>
+    </ul>
+
+    <h2>Download</h2>
+
+    <p>You can download the source for this package at <a
+    href="ftp://ftp.daa.com.au/pub/james/pygimp/">ftp://ftp.daa.com.au/pub/james/pygimp/</a>.
+    There is also some older versions available in the GIMP plug-in
+    registry, but I have fogotten the password I used there, so the
+    version there is out of date.</p>
+
+    <h2>Example</h2>
+
+    <p>Here is an example of a gimp-python plug-in.  It is a
+    translation of the script-fu clothify plug-in.  It is also
+    included in the gimp-python package.</p>
+
+<pre class="programlisting">
+<b>from</b> gimpfu <b>import</b> *
+
+have_gimp11 = gimp.major_version &gt; 1 <b>or</b> \
+	      gimp.major_version == 1 <b>and</b> gimp.minor_version &gt;= 1
+
+<b>def</b> python_clothify(timg, tdrawable, bx=9, by=9,
+		    azimuth=135, elevation=45, depth=3):
+	bx = 9 ; by = 9 ; azimuth = 135 ; elevation = 45 ; depth = 3
+	width = tdrawable.width
+	height = tdrawable.height
+	img = gimp.image(width, height, RGB)
+	layer_one = gimp.layer(img, "X Dots", width, height, RGB_IMAGE,
+			       100, NORMAL_MODE)
+	img.disable_undo()
+	<b>if</b> have_gimp11:
+		pdb.gimp_edit_fill(layer_one)
+	<b>else:</b>
+		pdb.gimp_edit_fill(img, layer_one)
+	img.add_layer(layer_one, 0)
+	pdb.plug_in_noisify(img, layer_one, 0, 0.7, 0.7, 0.7, 0.7)
+	layer_two = layer_one.copy()
+	layer_two.mode = MULTIPLY_MODE
+	layer_two.name = "Y Dots"
+	img.add_layer(layer_two, 0)
+	pdb.plug_in_gauss_rle(img, layer_one, bx, 1, 0)
+	pdb.plug_in_gauss_rle(img, layer_two, by, 0, 1)
+	img.flatten()
+	bump_layer = img.active_layer
+	pdb.plug_in_c_astretch(img, bump_layer)
+	pdb.plug_in_noisify(img, bump_layer, 0, 0.2, 0.2, 0.2, 0.2)
+	pdb.plug_in_bump_map(img, tdrawable, bump_layer, azimuth,
+			     elevation, depth, 0, 0, 0, 0, TRUE, FALSE, 0)
+	gimp.delete(img)
+
+register(
+	"python_fu_clothify",
+	"Make the specified layer look like it is printed on cloth",
+	"Make the specified layer look like it is printed on cloth",
+	"James Henstridge",
+	"James Henstridge",
+	"1997-1999",
+	"&lt;Image&gt;/Python-Fu/Alchemy/Clothify",
+	"RGB*, GRAY*",
+	[
+		(PF_INT, "x_blur", "X Blur", 9),
+		(PF_INT, "y_blur", "Y Blur", 9),
+		(PF_INT, "azimuth", "Azimuth", 135),
+		(PF_INT, "elevation", "elevation", 45),
+		(PF_INT, "depth", "Depth", 3)
+	],
+	[],
+	python_clothify)
+
+main()
+</pre>
+
+    <p>In this simple example, the GUI is automatically generated by
+    gimpfu module.  Only the plug-in function and the call to
+    register() needed to be written by the plug-in author.</p>
+
+  </body>
+</html>
+

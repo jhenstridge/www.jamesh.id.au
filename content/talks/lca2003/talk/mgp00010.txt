@@ -1,0 +1,11 @@
+
+Example: GtkTreeModel/GtkTreeView
+
+Was developed as a new tree widget for GTK 2.0
+Initially developed as a standalone module in CVS
+Design looked at existing widgets that performed the same task
+Java Swing
+Qt
+Initial implementation reviewed on gtk-devel-list
+After design issues found during review were fixed, moved to GTK.
+

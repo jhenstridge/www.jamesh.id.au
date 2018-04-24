@@ -1,0 +1,14 @@
+
+New Features (continued)
+
+Single wrapper per GObject.
+Setting attributes on a python wrapper will actually work as expected.
+New defs format used to generate bindings
+Common format used by many gtk 2.0 bindings, including C++, Guile
+Provides more information 
+start of reference documentation
+currently uses structure from defs files, and content from C reference docs.
+Can define new types in Python
+create and override signals
+create object properties
+

@@ -1,0 +1,59 @@
+<?xml version="1.0"?> <?emacs -*- mode: nxml -*- ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Inverse Julia Set</title>
+    <meta name="description" content="This is an applet that draws the classic julia set using the inverse julia set method.  Written by James Henstridge." />
+    <meta name="keywords" content="java, applet, fractal, orbit, julia, inverse" />
+  </head>
+  <body>
+    <h1>Inverse Julia Set</h1>
+    
+    <div class="fractal">
+      <applet code="inv_julia.class" height="300" width="400">
+	<param name="bgcolour" value="ffffff" />
+      </applet>
+    </div>
+
+    <p>This applet draws standard Julia Sets in a non standard, but
+    quicker way.  To understand this method, first lets look at the
+    standard method.  Using the standard method, if the point you are
+    calculating the colour for is inside the set, then it will stay
+    inside the set, no matter how many times you apply the iterative
+    formula.  In other words, that point is 'attracted' to the Julia
+    Set.  Points outside the set, however, rapidly increase in
+    magnitude after subsequent iterations.  That is, they are
+    'attracted' to infinity.  Either way, by applying the iterative
+    formula, the point is 'repelled' from the edge of the set.</p>
+
+    <p>But what if we used the inverse of the formula?  Then no matter
+    where we started, this inverse formula would move towards the edge
+    of the Julia Set, and away from the interior of the set, and
+    infinity.  This in effect gives us a tracing of the boundary of
+    the Julia Set.</p>
+
+    <p>Unfortunately, the inverse of the Julia Set function is z =
+    plus or minus square root of (z - c).  (I will use real HTML when
+    MATH tags are properly supported) As you can see this is not a
+    true function, since it has two values, but instead forms a binary
+    tree.  That is, after n iterations, we have 2<sup>n</sup> values
+    of z.  By using a recursive function, it is easy to walk through
+    this binary tree and plot the function.</p>
+
+    <p>If you want to plot a different Julia Set, wait till the
+    current one is finished (a copyright message apears on the status
+    line), then click somewhere on the applet.  To make the selection
+    of starting point easier, The coordinates of the mouse are
+    displayed on the status bar.  Some values you might want to try
+    are (-0.74543, 0.11301) and (0, 1).</p>
+
+    <p>Note: The algorithm for this applet was swiped from fractint, as a
+    lot are, but the code is all my own.</p>
+
+    <div class="navigation">
+      <a href="quadruptwo.html">&lt;&lt;&lt; Previous</a>
+      | <a href="../">Contents</a>
+    </div>
+  </body>
+</html>

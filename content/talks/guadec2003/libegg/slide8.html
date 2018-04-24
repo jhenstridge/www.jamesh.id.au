@@ -1,0 +1,46 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-AU" xml:lang="en-AU">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Problems With the Existing API</title>
+<link rel="up" title="Index" href="index.html" />
+<link rel="prev" title="Introduction" href="slide7.html" />
+<link rel="next" title="Actions" href="slide9.html" />
+<link rel="stylesheet" type="text/css" href="slides.css" /><link rel="stylesheet" type="text/css" href="custom.css" />
+<style type="text/css" media="screen, projection" id="screen-style">
+      html, body { font-size: 24pt; }
+    </style>
+<script type="text/javascript" src="slides.js"></script>
+</head>
+<body>
+<div id="content">
+<h1>Problems With the Existing API</h1>
+
+      <ul>
+        <li>Menu structure defined by code</li>
+        <ul>
+          <li>if you want to rearrange menu structure, you need to
+          rearrange the code</li>
+          <ul>
+            <li>sometimes causes problems with signal connections,
+            etc</li>
+          </ul>
+        </ul>
+        <li>To enable or disable a user action, you must alter the
+        state of the GtkMenuItem or toolbar button.</li>
+        <ul>
+          <li>if you have multiple ways of performing the action, you
+          need to alter all widgets.</li>
+        </ul>
+        <li>Doesn't even attempt to handle things like menu
+        merging</li>
+      </ul>
+    
+</div>
+<div id="navfooter">
+<span id="slidenumber">Slide 8 / 19</span>
+<a id="prev" title="Introduction" href="slide7.html">Prev</a>
+<a id="next" title="Actions" href="slide9.html">Next</a>
+</div>
+</body>
+</html>

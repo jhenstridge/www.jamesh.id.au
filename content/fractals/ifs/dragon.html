@@ -1,0 +1,43 @@
+<?xml version="1.0"?> <?emacs -*- mode: nxml -*- ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Dragon</title>
+    <meta name="description" content="This is an applet that draws a fractal dragon.  Written by James Henstridge." />
+    <meta name="keywords" content="java, applet, fractal, iterated function system, IFS, dragon" />
+  </head>
+  <body>
+    <h1>Dragon</h1>
+
+    <div class="fractal">
+      <applet code="ifs.class" height="300" width="400">
+        <param name="bgcolour" value="ffffff" />
+        <param name="top"      value="11.0" />
+        <param name="bottom"   value="-1.0" />
+        <param name="left"     value="-8.0" />
+        <param name="right"    value="8.0" />
+  
+        <param name="lines" value="2" />
+        <param name="line0" value="0.824074 0.281428 -0.212346 0.864198 -1.882290 -0.110607 0.787473" />
+        <param name="line1" value="0.088272 0.520988 -0.463889 -0.377778  0.785360  8.095795 0.212527" />
+        <hr />
+        <p>If your browser supported Java, You would see a nice
+        fractal here.</p>
+        <hr />
+      </applet>
+    </div>
+
+    <p>In this applet, it is harder to see the self similarity between
+    parts of the image and the whole.  But it is easier to see the
+    similarities between different parts of the image.  The reason for
+    the less obvious similarities is that this image has only two
+    functions instead of three or four.</p>
+
+    <div class="navigation">
+      <a href="spiral.html">&lt;&lt;&lt; Previous</a>
+      | <a href="../">Contents</a>
+      | <a href="formula.html">Next &gt;&gt;&gt;</a>
+    </div>
+  </body>
+</html>

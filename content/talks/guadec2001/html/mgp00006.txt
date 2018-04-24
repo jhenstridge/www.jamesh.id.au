@@ -1,0 +1,10 @@
+
+ExtensionClass
+
+Types defined in an extension module are not classes (they can't be subclassed)
+ExtensionClass is a module that allows creation of extension types that behave like classes
+Written by Digital Creations, and used in Zope
+Allowed OOP interface to be implemented in extension module -- less python code.
+Version used with pygtk has some modifications
+changes not merged back into official source (not for lack of trying).
+

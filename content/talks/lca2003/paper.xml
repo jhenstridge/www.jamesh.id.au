@@ -1,0 +1,608 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN"
+    "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd">
+ 
+<article id="index">
+  <articleinfo>
+    <title>EggMenu</title>
+    <authorgroup>
+      <author>
+	<firstname>James</firstname>
+	<surname>Henstridge</surname>
+	<affiliation>
+	  <address>
+            <email>james@daa.com.au</email>
+          </address>
+	</affiliation>
+      </author>
+    </authorgroup>
+
+    <copyright>
+      <year>2003</year>
+      <holder>James Henstridge</holder>
+    </copyright>
+
+    <!--
+    <legalnotice>
+      <para>Permission is granted to copy, distribute and/or modify
+      this document under the terms of the <citetitle>GNU Free
+      Documentation License</citetitle>, Version 1.1 or any later
+      version published by the Free Software Foundation with no
+      Invariant Sections, no Front-Cover Texts, and no Back-Cover
+      Texts. You may obtain a copy of the <citetitle>GNU Free
+      Documentation License</citetitle> from the Free Software
+      Foundation by visiting <ulink type="http"
+      url="http://www.fsf.org">their Web site</ulink> or by writing
+      to: Free Software Foundation, Inc., 59 Temple Place - Suite 330,
+      Boston, MA 02111-1307, USA.</para>
+    </legalnotice>
+    -->
+
+    <abstract>
+      <para><emphasis>EggMenu</emphasis> is a new menu and toolbar API
+      being developed for inclusion in GTK 2.4.  It aims to provide a
+      simple but powerful API that can be used by both simple and
+      complex applications.</para>
+
+      <para>The API is also designed to be extensible, so that it can
+      be used in component systems like Bonobo, and extended to handle
+      new types of menu items or toolbar items.</para>
+    </abstract>
+  </articleinfo>
+
+  <section id="gnome-development-process">
+    <title>Gnome Development Process</title>
+
+    <para>The methodology used to extend the Gnome Development
+    Platform has changed a lot since the inception of the project.
+    Whereas almost anything could be added to the platform in the
+    early days, we now have a more structured process that allows new
+    APIs to be tested and reviewed before migrating into the
+    development platform.</para>
+
+    <section id="dev-process-history">
+      <title>History</title>
+
+      <para>In the pre-1.0 days of Gnome, the evolution of the
+      development platform was driven by what individual hackers were
+      interested in.  While this lead to a lot of good code that
+      formed the foundation of early versions of Gnome, it also
+      produced a fair amount of poor quality widgets and APIs.</para>
+
+      <para>This was not a large problem back then because the APIs
+      could be fixed as easily as they had been added.  As the Gnome
+      platform stabilised, we had less and less opportunity to fix
+      mistakes in the API.</para>
+
+      <para>Luckily, a lot of the immature or poor quality APIs were
+      removed or fixed before the Gnome 1.0 release.  There was
+      another round of janitorial work for the Gnome 2.0 development
+      platform release, but the job certainly isn't over.</para>
+    </section>
+
+    <section id="dev-process-present">
+      <title>Present</title>
+
+      <para>Because of Gnome's guarantees of stability in the
+      development platform, it makes a lot of sense to make sure that
+      immature or badly designed interfaces are not added to stable
+      libraries.  Things that go in the stable development library
+      will generally need to stay there for a number of years, which
+      can be a big problem for some APIs.</para>
+
+      <para>Since mature, stable interfaces do not spring out of
+      nothing, we needed a process to allow new code to be
+      developed, reviewed and tested in applications.  This has
+      included the introduction of the <abbrev>GEP</abbrev> process,
+      and the testing of new code in unstable prototype
+      libraries.</para>
+
+      <para><abbrev>GEP</abbrev> stands for <quote>Gnome Enhancement
+      Proposal</quote>.  The process is modelled after <quote>Python
+      Enhancement Proposals</quote> (<abbrev>PEPs</abbrev>) and
+      <quote>TCL Improvement Proposals</quote>
+      (<abbrev>TIPs</abbrev>).  This involves writing up a document
+      detailing the requirements of an interface and posting it for
+      public review.  People who are interested provide feedback which
+      is used to update the <abbrev>GEP</abbrev>.  This document is
+      then used as a guide for development of the implementation.
+      Further updates can be made as the code matures.</para>
+
+      <para>The <filename>libegg</filename> library has also been
+      created to prototype code and interfaces that will move to the
+      development platform when mature.  The guidelines for inclusion
+      in libegg are designed to encourage the maturation of the
+      code:</para>
+
+      <itemizedlist>
+	<listitem>
+	  <simpara>All features will move down to a library in the
+	  stable development platform when ready.  The code must only
+	  depend on existing dependencies of the target platform
+	  library.</simpara>
+	</listitem>
+	<listitem>
+	  <simpara>All features must be "sponsored" by the maintainer
+	  of the target library.  Features without support do not go
+	  in <filename>libegg</filename>.</simpara>
+	</listitem>
+	<listitem>
+	  <simpara>As soon as the code has been shipped in the stable
+	  development platform, it gets removed from
+	  <filename>libegg</filename>.</simpara>
+	</listitem>
+	<listitem>
+	  <simpara>Interfaces use an <function>egg_</function> prefix,
+	  rather than the one of the target platform library.  When
+	  the code is moved, the functions get renamed.</simpara>
+	</listitem>
+	<listitem>
+	  <simpara>The <abbrev>API</abbrev> and/or
+	  <abbrev>ABI</abbrev> of <filename>libegg</filename> can
+	  change at any point.</simpara>
+	</listitem>
+	<listitem>
+	  <simpara>All of <filename>libegg</filename> will always
+	  depend on the latest stable branches of platform libraries,
+	  rather than the development branches.</simpara>
+	</listitem>
+      </itemizedlist>
+    </section>
+  </section>
+
+  <section id="egg-menu">
+    <title>EggMenu</title>
+
+    <para>Development of some new features targeted at GTK and Gnome
+    2.4 are currently moving through this process.  This paper is
+    about a new menu and toolbar API called
+    <emphasis>EggMenu</emphasis>.</para>
+
+    <section id="menu-history">
+      <title>Existing Menu/Toolbar API</title>
+
+      <para>When writing applications against the existing menu API in
+      GTK, the code would follow the structure of your menus.  For
+      example, the code may be structured as follows:</para>
+
+      <itemizedlist>
+	<listitem>
+	  <simpara>create <classname>GtkMenuBar</classname>.</simpara>
+	</listitem>
+	<listitem>
+	  <simpara>create <quote>File</quote>
+	  <classname>GtkMenuItem</classname>.</simpara>
+	</listitem>
+	<listitem>
+	  <simpara>create a <classname>GtkMenu</classname> and attach
+	  it to the <quote>File</quote> menu item.</simpara>
+	</listitem>
+	<listitem>
+	  <simpara>create menu items and add them to the
+	  <quote>File</quote>
+	  <classname>GtkMenu</classname>.</simpara>
+	</listitem>
+	<listitem>
+	  <simpara>attach callbacks to each menu item</simpara>
+	</listitem>
+      </itemizedlist>
+
+      <para>The <classname>GtkItemFactory</classname> interface is
+      also available that streamlines the above steps, but it is
+      essentially the same procedure.  Building toolbars is a similar
+      process.</para>
+
+      <para>This setup has a number of problems though:</para>
+
+      <itemizedlist>
+	<listitem>
+	  <simpara>How do I disable the <quote>Save</quote> item?
+	  Often a user interface will have multiple ways to perform an
+	  action (menu item, toolbar button, etc).  If you want to
+	  disable the action, you will want to disable every widget that
+	  can be used to perform the action.</simpara>
+	</listitem>
+	<listitem>
+	  <simpara>Rearranging menus is fairly involved, as it
+	  requires code modifications.  This is a problem if you want
+	  to support rearranging menus.</simpara>
+	</listitem>
+      </itemizedlist>
+
+      <para>The libbonoboui library provides many of these features
+      but has a few disadvantages:</para>
+
+      <itemizedlist>
+	<listitem>
+	  <simpara>Requires the application to use
+	  <acronym >CORBA</acronym>, which puts some developers
+	  off.</simpara>
+	</listitem>
+	<listitem>
+	  <simpara>API is quite different to the GTK one, which means
+	  that developers wishing to move their applications from GTK
+	  only to GNOME will need to rewrite their menu code.  This is
+	  even more of a problem for developers who wish to support
+	  both GNOME and GTK only compiles (possibly for Windows
+	  support).</simpara>
+	</listitem>
+      </itemizedlist>
+
+      <para><emphasis>EggMenu</emphasis> is intended as an API that
+      provides the features needed by advanced applications, only
+      depends on other parts of GTK, and should be extensible enough
+      to be usable by component systems like Bonobo.</para>
+    </section>
+
+    <section id="actions">
+      <title>Actions</title>
+
+      <para>Actions are one of the core concepts of
+      <emphasis>EggMenu</emphasis>.  An action is an object that
+      bundles the following:</para>
+
+      <itemizedlist>
+	<listitem><simpara>a name</simpara></listitem>
+	<listitem><simpara>a menu label</simpara></listitem>
+	<listitem><simpara>a toolbar label (optional)</simpara></listitem>
+	<listitem><simpara>an icon</simpara></listitem>
+	<listitem><simpara>a keyboard shortcut</simpara></listitem>
+	<listitem><simpara>a callback</simpara></listitem>
+	<listitem><simpara>state (sensitive, visible,
+	etc)</simpara></listitem>
+      </itemizedlist>
+
+      <para>An action essentially represents something that the user
+      can perform, along with some information about how it should
+      be presented in the interface.  Interfaces are provided to
+      create menu items and toolbar items:</para>
+
+<programlisting><![CDATA[
+#include <libegg/menu/egg-action.h>
+
+GtkWidget *egg_action_create_menu_item   (EggAction *action);
+GtkWidget *egg_action_create_tool_item   (EggAction *action);
+]]></programlisting>
+
+      <para>A program can create any number of menu items and toolbar
+      items for an action.  The menu/toolbar item will mirror the
+      label, icon, keyboard shortcut and state of the action.  When
+      you change any of the properties on the action, the menu/toolbar
+      items will change to match.  Activating any of the menu/toolbar
+      items will execute the callbacks attached to the action.</para>
+
+      <para>This provides a simple way of disabling or enabling an
+      action, as described in the previous section.  By changing the
+      sensitive state of the action, all the related menu/toolbar
+      items will be disabled to match.</para>
+
+      <para>As with menu items and toolbar items,
+      <emphasis>EggMenu</emphasis> supports multiple types of actions.
+      At the moment the following types are included in the
+      library:</para>
+
+      <variablelist>
+	<varlistentry>
+	  <term><classname>EggAction</classname></term>
+	  <listitem>
+	    <simpara>roughly equivalent to the classic
+	    <classname>GtkMenuItem</classname>.</simpara>
+	  </listitem>
+	</varlistentry>
+	<varlistentry>
+	  <term><classname>EggToggleAction</classname></term>
+	  <listitem>
+	    <simpara>equivalent to a
+	    <classname>GtkCheckMenuItem</classname>.  Has an "active"
+	    state specifying whether the action has been checked or
+	    not.</simpara>
+	  </listitem>
+	</varlistentry>
+	<varlistentry>
+	  <term><classname>EggRadioAction</classname></term>
+	  <listitem>
+	    <simpara>Similar to
+	    <classname>GtkRadioMenuItem</classname>.  A number of
+	    <classname>EggRadioAction</classname> actions can be
+	    linked together so that only one may be active at any one
+	    time.</simpara>
+	  </listitem>
+	</varlistentry>
+      </variablelist>
+
+      <para>An application can easily implement new types of actions.
+      For instance, a word processor might want to implement a font
+      selection action that displays as a drop down list on the
+      toolbar, and a menu item that pops up a font selector when on a
+      menu.</para>
+    </section>
+
+    <section id="action-groups">
+      <title>Action Groups</title>
+
+      <para>Most actions in an application should only be available to the
+      user in certain situations.  Some possible ways to categorise
+      actions include:</para>
+
+      <itemizedlist>
+	<listitem>
+	  <simpara>Global actions that should be available in every
+	  context, such as "Quit", "New" and "Open".</simpara>
+	</listitem>
+	<listitem>
+	  <simpara>Actions that act on a particular document in a
+	  multiple document application.  For instance,
+	  "Save".</simpara>
+	</listitem>
+	<listitem>
+	  <simpara>Actions that are only valid in particular editing
+	  modes.  For instance, a word processor may have a set of
+	  commands that can only be performed when editing a
+	  table.</simpara>
+	</listitem>
+      </itemizedlist>
+
+      <para><emphasis>EggMenu</emphasis> uses
+      <classname>EggActionGroup</classname> objects to hold related
+      actions.  The action group acts like a dictionary mapping action
+      names to the action objects themselves.  The API for using an
+      action group is as follows:</para>
+
+<programlisting><![CDATA[
+EggActionGroup *egg_action_group_new           (const gchar *name);
+ 
+const gchar    *egg_action_group_get_name      (EggActionGroup *action_group);
+EggAction      *egg_action_group_get_action    (EggActionGroup *action_group,
+                                                const gchar *action_name);
+GList          *egg_action_group_list_actions  (EggActionGroup *action_group);
+void            egg_action_group_add_action    (EggActionGroup *action_group,
+                                                EggAction *action);
+void            egg_action_group_remove_action (EggActionGroup *action_group,
+                                                EggAction *action);
+]]></programlisting>
+
+      <para>Action groups are used to add and remove sets of user
+      actions from the user interface when used with the menu merging
+      system.</para>
+    </section>
+
+    <section id="ui-merging">
+      <title>UI Merging</title>
+
+      <para>The concept of actions in a toolkit is quite useful in its
+      own right.  When combined with a menu and toolbar merging
+      system, we get a very powerful API.</para>
+
+      <para>Menu merging is handled by the
+      <classname>EggMenuMerge</classname> object.  This class holds a
+      tree of nodes that represent the menus and toolbars of the
+      application.  <acronym>XML</acronym> files can be loaded and
+      unloaded to add and remove items from the user interface.</para>
+
+      <section id="ui-xml">
+	<title>UI XML Files</title>
+
+	<para>The XML files used by <emphasis>EggMenu</emphasis> use a
+        subset of the Bonobo UI format.  An example UI file is shown
+        below:</para>
+
+	<programlisting><![CDATA[<?xml version="1.0"?>
+<Root>
+  <menu>
+    <submenu name="FileMenu" verb="StockFileMenuAction">
+      <menuitem name="Open" />
+    </submenu>
+    <submenu name="HelpMenu">
+      <menuitem name="About" />
+    </submenu>
+  </menu>
+</Root>]]></programlisting>
+
+        <para>When the above XML file is loaded by a
+        <classname>EggMenuMerge</classname> object, the resulting tree
+        will look a lot like the DOM representation of the tree.  Each
+        node in the tree is assigned a name according to the following
+        rules:</para>
+
+	<orderedlist>
+	  <listitem>
+	    <simpara>If the element has a <property>name</property>
+            attribute, it will be used as the node's name.</simpara>
+	  </listitem>
+	  <listitem>
+	    <simpara>otherwise, the element name (Root, menu, submenu,
+	    etc) will be used.</simpara>
+	  </listitem>
+	</orderedlist>
+
+	<para>Menu items, menus and toolbar items also have an action
+        associated with them, which is given in the
+        <property>verb</property> attribute.  If no
+        <property>verb</property> attribute is given, then the node's
+        name is used instead.  The action is used to work out what
+        label and icon the menu item should have, along with handling
+        callbacks when the menu item is selected.</para>
+
+	<para>After loading the XML file into the
+	<classname>EggMenuMerge</classname> object, an idle function
+	is queued to actually build the menus.  This is where the
+	actual widgets get created.  The action names are looked up in
+	one or more <classname>EggActionGroup</classname>'s associated
+	with the <classname>EggMenuMerge</classname> object.</para>
+
+      </section>
+
+      <section id="multiple-ui-files">
+	<title>Merging Multiple UI Files</title>
+
+	<para>When multiple XML files are loaded, more than one file
+        may reference a particular node name.  In this case,
+        <classname>EggMenuMerge</classname> makes note of this (to aid
+        in demerging part of the UI), and the top most action will be
+        used.</para>
+
+        <para>To get a better feeling for how merging works, consider
+        the following two trees:</para>
+
+	<figure>
+	  <title>file1.ui</title>
+	  <programlisting><![CDATA[Root
+    menu
+        submenu: FileMenu
+            menuitem: Open
+        placeholder: TestPlaceholder
+        submenu: HelpMenu
+            menuitem: About
+    dockitem: toolbar1
+        toolitem: NewButton]]></programlisting>
+	</figure>
+	<figure>
+	  <title>file2.ui</title>
+	  <programlisting><![CDATA[Root
+    menu
+        submenu: FileMenu
+            separator
+            menuitem: Quit
+        placeholder: TestPlaceholder
+            submenu: EditMenu
+                menuitem: Cut
+    dockitem: toolbar1
+        toolitem: OpenButton]]></programlisting>
+	</figure>
+
+	<para>When <filename>file2.ui</filename> is merged on top of
+        <filename>file1.ui</filename>, we get the following node
+        tree:</para>
+
+	<figure>
+	  <title>Merged UI</title>
+	  <programlisting><![CDATA[Root
+    menu
+        submenu: FileMenu
+            menuitem: Open
+            separator
+            menuitem: Quit
+        placeholder: TestPlaceholder
+            submenu: EditMenu
+                menuitem: Cut
+        submenu: HelpMenu
+            menuitem: About
+    dockitem: toolbar1
+        toolitem: NewButton
+        toolitem: OpenButton]]></programlisting>
+	</figure>
+
+	<para>The important things to note here are:</para>
+
+	<itemizedlist>
+	  <listitem>
+	    <simpara>New nodes are appended to the end of their parent
+	    node.  This will often result in different merged menus if
+	    you perform the merge in a different order.  In practise,
+	    this isn't much of a problem, since most apps have a base
+	    menu layout and then want to merge something on
+	    top.</simpara>
+	  </listitem>
+	  <listitem>
+	    <simpara>Placeholders are another type of container.  They
+	    are used in cases where simply appending menu items does
+	    not give the desired layout.  For the purposes of menu
+	    merging, placeholders are treated as submenus, except that
+	    the child nodes are displayed inside the placeholder's
+	    parent.</simpara>
+	  </listitem>
+	</itemizedlist>
+      </section>
+
+      <section id="demergin-ui-files">
+	<title>Demerging UI Files</title>
+
+	<para>Demerging is a simpler process than merging.  While
+	merging, each node in the <classname>EggMenuMerge</classname>
+	object is tagged with the UI files that it was referenced
+	by.  The demerge process goes something like this:</para>
+
+	<orderedlist>
+	  <listitem>
+	    <simpara>All nodes in the tree are iterated over, and if
+	    they are tagged by the target UI file, then that tag is
+	    removed.</simpara>
+	  </listitem>
+	  <listitem>
+	    <simpara>If a node is no longer tagged by any UI files, or
+	    the action name it uses changes, then the node is marked
+	    as dirty.</simpara>
+	  </listitem>
+	</orderedlist>
+
+	<para>An idle is queued to do the final cleanup.  For any node
+	that is no longer referenced by any UI file, the corresponding
+	widget is destroyed, and the node is deleted.  For nodes that
+	have changed their action, the widget is updated to reflect
+	the change.</para>
+
+	<para>An idle function is used to reduce the number of changes
+	when the application removes one UI file and adds another one
+	to the user interface.</para>
+      </section>
+    </section>
+
+    <section id="the-future">
+      <title>The Future</title>
+
+      <para>There is still work to be done on
+      <emphasis>EggMenu</emphasis>.  Some developers are experimenting
+      with the code in larger applications (such as Mr Project), which
+      will helped highlight portions of the API that need work.</para>
+
+      <para>Another feature that has been requested but not yet
+      implemented is the ability to dynamically add a menu item to the
+      user interface without having to generate an XML string (which
+      is what Bonobo requires you to do).  The proposed method of
+      handling this is:</para>
+
+      <orderedlist>
+	<listitem>
+	  <simpara>Call an API to create a merge "tag".  This tag
+	  would be similar to the ones created when loading a UI file,
+	  and could be used to demerge the created menu items
+	  later.</simpara>
+	</listitem>
+	<listitem>
+	  <simpara>Call an function that creates a named node using a
+	  particular action, referenced by the previously created
+	  tag.</simpara>
+	</listitem>
+      </orderedlist>
+
+      <para>This provides a convenient API for creating dynamic
+      entries, while allowing them to be handled the same as any other
+      UI file (for the purposes of merging, demerging, etc).</para>
+
+      <para><emphasis>EggMenu</emphasis> will also need to go through
+      the GEP standardisation process as part of consideration for
+      inclusion in GTK 2.4.</para>
+    </section>
+  </section>
+
+  <section id="related-links">
+    <title>Related Links</title>
+
+    <variablelist>
+      <varlistentry>
+	<term>Source code</term>
+	<listitem>
+	  <simpara><ulink
+	  url="http://cvs.gnome.org/lxr/source/libegg/libegg/menu/">http://cvs.gnome.org/lxr/source/libegg/libegg/menu/</ulink></simpara>
+	</listitem>
+      </varlistentry>
+      <varlistentry>
+	<term>GEP List</term>
+	<listitem>
+	  <simpara><ulink
+	  url="http://developer.gnome.org/gep/list.html">http://developer.gnome.org/gep/list.html</ulink></simpara>
+	</listitem>
+      </varlistentry>
+    </variablelist>
+  </section>
+</article>

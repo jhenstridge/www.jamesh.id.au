@@ -1,0 +1,42 @@
+<?xml version="1.0"?> <?emacs -*- mode: nxml -*- ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Spiral</title>
+    <meta name="description" content="This is an applet that draws a fractal spiral.  Written by James Henstridge." />
+    <meta name="keywords" content="java, applet, fractal, iterated function system, IFS, spiral" />
+  </head>
+  <body>
+    <h1>Spiral</h1>
+
+    <div class="fractal">
+      <applet code="ifs.class" height="300" width="400">
+        <param name="bgcolour" value="ffffff" />
+        <param name="top"      value="11.0" />
+        <param name="bottom"   value="-1.0" />
+        <param name="left"     value="-8.0" />
+        <param name="right"    value="8.0" />
+  
+        <param name="lines" value="3" />
+        <param name="line0" value=" 0.787879 -0.424242 0.242424 0.859848  1.758647 1.408065 0.895652" />
+        <param name="line1" value="-0.121212  0.257576 0.151515 0.053030 -6.721654 1.377236 0.052174" />
+        <param name="line2" value=" 0.181818 -0.136364 0.090909 0.181818  6.086107 1.568035 0.052174" />
+        <hr />
+        <p>If your browser supported Java, You would see a nice
+        fractal here.</p>
+        <hr />
+      </applet>
+    </div>
+
+    <p>This is another interesting fractal.  As you can see, the
+    double spiral is made up of more double spirals, which are in turn
+    made of more double spirals, and so on.</p>
+    
+    <div class="navigation">
+      <a href="fern.html">&lt;&lt;&lt; Previous</a>
+      | <a href="../">Contents</a>
+      | <a href="dragon.html">Next &gt;&gt;&gt;</a>
+    </div>
+  </body>
+</html>

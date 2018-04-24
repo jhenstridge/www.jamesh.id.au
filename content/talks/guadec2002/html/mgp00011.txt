@@ -1,0 +1,9 @@
+
+Mapping From Old to New Names
+
+gtk.Gtk* -> gtk.*
+gtk.Gdk* -> gtk.gdk.*
+GTK.* -> gtk.* (constants)
+GDK.* -> gtk.gdk.* (constants)
+libglade.GladeXML -> gtk.glade.XML
+

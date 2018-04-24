@@ -1,0 +1,369 @@
+<?xml version="1.0"?>
+<s:slideset xmlns="http://www.w3.org/1999/xhtml"
+            xmlns:s="http://www.oscom.org/2003/SlideML/1.0/"
+            xml:lang="en-AU">
+  <s:metadata>
+    <s:title>PyORBit</s:title>
+    <s:subtitle>an ORBit2 binding for Python</s:subtitle>
+
+    <s:authorgroup>
+      <s:author>
+	<s:givenname>James</s:givenname>
+	<s:familyname>Henstridge</s:familyname>
+	<s:email>james@daa.com.au</s:email>
+      </s:author>
+    </s:authorgroup>
+
+    <s:confgroup>
+      <s:conftitle>GUADEC 2003</s:conftitle>
+      <s:address>Dublin, Ireland</s:address>
+    </s:confgroup>
+
+    <s:abstract>
+      <p>PyORBit is a new Python binding for the ORBit2 CORBA ORB.  It
+      was developed in response to the needs of the gnome-python
+      package.  It makes heavy use of the ORBit::IModule interfaces in
+      ORBit2.  This allows us to efficiently build stubs at runtime
+      from type-libs, rather than having to generate stub source files
+      ahead of time.</p>
+    </s:abstract>
+  </s:metadata>
+
+  <s:slide lang="en-AU">
+    <s:title>Introduction</s:title>
+    <s:content>
+      <p>PyORBit is a Python binding for ORBit2</p>
+
+      <ul>
+	<li>Was written for use by the Python bindings for Gnome.</li>
+	<ul>
+	  <li>Should be useful on its own too though.</li>
+	</ul>
+	<li>Aims to follow the standard Python Language Mapping for
+	CORBA.</li>
+	<li>Uses ORBit2 type information to generate client stubs and
+	server skeletons.</li>
+      </ul>
+    </s:content>
+    <s:notes>
+      <ul>
+	<li>Python Language Mapping: <a
+	href="http://www.omg.org/cgi-bin/doc?formal/02-09-07">http://www.omg.org/cgi-bin/doc?formal/02-09-07</a></li>
+      </ul>
+    </s:notes>
+  </s:slide>
+
+  <s:slide>
+    <s:title>History</s:title>
+    <s:content>
+      <p>ORBit 0.5.x bindings:</p>
+      <ul>
+	<li>orbit-python</li>
+	<ul>
+	  <li>Written by Jason Tackaberry</li>
+	  <li>Took ideas from Owen Taylor's Perl bindings</li>
+	  <li>Generated stubs and skeletons at runtime by parsing
+	  IDL</li>
+	  <li>Was the basis for Johan Dahlin's 1.x Bonobo bindings</li>
+	</ul>
+      </ul>
+      <p>ORBit2 bindings:</p>
+      <ul>
+	<li>orbit2-python</li>
+	<ul>
+	  <li>A minimal port of orbit-python by Johan.</li>
+	  <li>Used by earlier releases of the Gnome 2 Python
+	  bindings.</li>
+	  <li>Did not take advantage of many of ORBit2's newer
+	  features.</li>
+	  <li>Manually marshaled data to and from GIOP buffers.</li>
+	</ul>
+      </ul>
+    </s:content>
+  </s:slide>
+
+  <s:slide>
+    <s:title>PyORBit</s:title>
+    <s:content>
+      <p>Due to a number of shortcomings in orbit2-python, I started
+      looking at doing a new binding that better suited the needs of
+      the Gnome Python bindings.  Some features include:</p>
+      <ul>
+	<li>Make use of ORBit2 type-code information.</li>
+	<li>Can generate stubs from ORBit2 type-libs, parsing IDL or by
+	introspection.</li>
+	<li>Can marshal from Python representation to and from C
+	representation.</li>
+	<ul>
+	  <li>C code can invoke methods on in-process Python
+	  objects.</li>
+	  <li>Python code can invoke methods on in-process C
+	  objects.</li>
+	</ul>
+	<li>Makes use of new features in Python 2.2.</li>
+	<li>About 33% smaller than orbit-python.</li>
+      </ul>
+    </s:content>
+  </s:slide>
+
+  <s:slide>
+    <s:title>Type Codes</s:title>
+    <s:content>
+      <p>In the CORBA framework, type codes are used to represent the
+      various types of data that that can be transmitted.  They hold
+      all the information the ORB needs to marshal and transmit data
+      over the wire plus some metadata.</p>
+      <p>This includes most of the information that a language binding
+      needs to marshal data:</p>
+      <ul>
+	<li>fundamental type of data</li>
+	<li>for enumerations, the list of value names.</li>
+	<li>for structures and unions, the list of field names and types.</li>
+	<li>for sequences and arrays, the type of the items.</li>
+      </ul>
+      <p>Unfortunately, type codes do not provide much information
+      about interfaces.</p>
+    </s:content>
+  </s:slide>
+
+  <s:slide>
+    <s:title>ORBit2 Interface Information</s:title>
+    <s:content>
+      <p>ORBit2 introduces a new way to represent information about
+      interfaces through the use of the <tt>IInterface</tt> type:</p>
+
+      <pre class="programlisting">struct IInterface {
+  TypeCode tc;
+  sequence&lt;IMethod&gt; methods;
+  sequence&lt;string&gt; base_interfaces;
+};</pre>
+
+      <p>The fields are:</p>
+      <ul>
+	<li>The type code for this interface.</li>
+	<li>a sequence of structures describing the interface's
+	methods.</li>
+	<li>a sequence of base interface names.</li>
+      </ul>
+    </s:content>
+  </s:slide>
+
+  <s:slide>
+    <s:title>ORBit2 Interface Information</s:title>
+    <s:content>
+      <p>IMethod structures contain the following:</p>
+      <ul>
+	<li>name of method</li>
+	<li>names and types of arguments, along with flags (in, out,
+	inout).</li>
+	<li>The type code for the return type.</li>
+      </ul>
+    </s:content>
+  </s:slide>
+
+  <s:slide>
+    <s:title>How to Get Interface Information</s:title>
+    <s:content>
+      <p>ORBit2 provides a number of ways to obtain interface
+      information:</p>
+      <ul>
+	<li><b>Type libraries:</b> these are shared libraries containing the
+	IInterface structures for a set of interfaces as static data.
+	Can be loaded with the <tt>ORBit_small_get_iinterface()</tt>
+	function.</li>
+	<li><b>IDL files:</b> ORBit2 provides an API to read in an IDL
+	file and return interface information in the
+	<tt>IInterface</tt> format.</li>
+	<li><b>Introspection:</b> servers implemented using ORBit2
+	automatically provide an <tt>ORBit_get_iinterface</tt>
+	method.  This can be invoked to retrieve interface information
+	about a particular server.</li>
+      </ul>
+      <p>PyORBit can use any of these methods to get interface
+      information.</p>
+    </s:content>
+  </s:slide>
+
+  <s:slide>
+    <s:title>Method Invocation</s:title>
+    <s:content>
+      <ul>
+	<li>Method invocation goes through the
+	<tt>ORBit_small_invoke_stub()</tt> function.</li>
+	<ul>
+	  <li>Takes an <tt>IMethod</tt> structure that describes how
+	  to perform the method invocation.</li>
+	  <li>Is responsible for marshaling the argument vector from
+	  C layout to a GIOP buffer for remote invocations.</li>
+	  <li>For local invocations, no marshaling required.</li>
+	</ul>
+	<li>For language bindings, it is only necessary to implement
+	functions to marshal to and from the language's native format
+	and C format.</li>
+	<ul>
+	  <li>For local calls to C servers, ORBit2 can pass the values
+	  directly to the server.</li>
+	  <li>For remote calls, there are two translations, but this
+	  gets lost in the noise.</li>
+	</ul>
+      </ul>
+    </s:content>
+  </s:slide>
+
+  <s:slide>
+    <s:title>Comparison with Interface Repository</s:title>
+    <s:content>
+      <p>CORBA standard defines an interface repository
+      service.</p>
+      <ul>
+	<li>Never supported well by ORBit</li>
+      </ul>
+      <p>Some benefits of ORBit's approach include:</p>
+      <ul>
+	<li>No need for a separate server to hold interface info.</li>
+	<li>No need to prime the interface repository with IDL before
+	use.</li>
+	<li>Interface information can be retrieved directly from
+	servers.</li>
+      </ul>
+      <p>If interface repository support is desired, it should be
+      possible to implement as a bridge that generates
+      <tt>IInterface</tt> structures from the information in the
+      repository.</p>
+    </s:content>
+  </s:slide>
+
+  <s:slide>
+    <s:title>PyORBit Stubs and Skeletons</s:title>
+    <s:content>
+      <ul>
+	<li>Like its predecessor, PyORBit generates stubs and skeletons
+        at runtime.</li>
+	<li>However, PyORBit doesn't hook <tt>__import__</tt>.</li>
+	<ul>
+	  <li>You must manually load type-libs or IDL.</li>
+	  <li>Some modules may automatically load up type-libs, such as
+	  <tt>bonobo</tt>.</li>
+	</ul>
+      </ul>
+    </s:content>
+  </s:slide>
+
+  <s:slide>
+    <s:title>PyORBit Stubs</s:title>
+    <s:content>
+      <ul>
+	<li>Stubs are new style Python classes.</li>
+	<li>CORBA methods are represented by a "CORBA method"
+	type.</li>
+	<ul>
+	  <li>wraps a <tt>IMethod</tt>.</li>
+	  <li>Acts as a descriptor, as with standard methods.</li>
+	</ul>
+	<li>Provides automatically generated doc strings, so that
+	<tt>help()</tt> works.</li>
+      </ul>
+    </s:content>
+  </s:slide>
+
+  <s:slide>
+    <s:title>PyORBit Skeletons</s:title>
+    <s:content>
+      <ul>
+	<li>Follows the standard Python mapping.</li>
+	<li>Like the client side stubs, skeletons are generated at
+	runtime.</li>
+	<ul>
+	  <li>As with stubs, <tt>IInterface</tt> data is used to generate
+	  the skeleton</li>
+	</ul>
+	<li>ORBit2 allows a servant to provide an "implementation
+	finder" function responsible for finding the implementation of
+	a method.</li>
+	<li>ORBit2 passes arguments to the servant in the same format
+	given to <tt>ORBit_small_invoke_stub()</tt>, so we can reuse
+	the same marshaling code.</li>
+      </ul>
+    </s:content>
+  </s:slide>
+
+  <s:slide>
+    <s:title>Simple Scripting Example</s:title>
+    <s:content>
+      <p>In this example, we will use PyORBit to tell the running
+      Nautilus process to open a window at a particular location.</p>
+
+      <p>First we need to get the IOR of the Nautilus shell.  We could
+      use the Gnome Python bindings for this, but to reduce the amount
+      of magic, I'll use the standard <tt>activation-client</tt>
+      program.</p>
+
+      <pre class="programlisting"><b>$</b> activation-client -s "iid == 'OAFIID:Nautilus_Shell'"
+Query spec is "iid == 'OAFIID:Nautilus_Shell'"
+Activation ID "OAFAID:[OAFIID:Nautilus_Factory,james,example.net]" RESULT_OBJECT
+IOR:01daffbf17000000...
+<b>$</b></pre>
+    </s:content>
+  </s:slide>
+
+  <s:slide>
+    <s:title>Simple Scripting Example</s:title>
+    <s:content>
+      <p>First we start Python:</p>
+
+      <pre class="programlisting">
+<b>&gt;&gt;&gt;</b> import ORBit
+<b>&gt;&gt;&gt;</b> import CORBA
+<b>&gt;&gt;&gt;</b> orb = CORBA.ORB_init()</pre>
+
+      <p>Now we create an object reference from the IOR (which will
+      also generate a stub for the Nautilus::Shell interface):</p>
+
+      <pre class="programlisting"><b>&gt;&gt;&gt;</b> shell = orb.string_to_object('IOR:01daffbf17000000...')</pre>
+
+      <p>Now we can call methods on the object reference:</p>
+
+      <pre class="programlisting"><b>&gt;&gt;&gt;</b> shell.open_windows(['fonts:///'], '')</pre>
+
+    </s:content>
+  </s:slide>
+
+  <s:slide>
+    <s:title>More Advanced Scripting Example</s:title>
+    <s:content>
+      <p>Nautilus metadata monitoring: <a
+      href="metadata-demo.py">metadata-demo.py</a>.</p>
+      <ul>
+	<li>Uses the <tt>Nautilus::MetafileFactory</tt>
+	interface.</li>
+	<ul>
+	  <li>This is a private interface, subject to change</li>
+	</ul>
+	<li>Loading interface data from typelibs or from IDL
+	files.</li>
+	<li>Implements the Nautilus::MetafileMonitor interface.</li>
+	<li>Asks for metadata change notification for files in the
+	home directory.</li>
+	<li>Prints the list of emblems for files that change.</li>
+      </ul>
+    </s:content>
+  </s:slide>
+
+  <s:slide>
+    <s:title>Future</s:title>
+    <s:content>
+      <ul>
+	<li>Further development of the CORBA related Gnome bindings.</li>
+	<li>Custom interfaces on Bonobo components.</li>
+	<li>Integrate better with threaded applications.</li>
+	<ul>
+	  <li>Looking at the new Python 2.3 threading APIs.</li>
+	</ul>
+      </ul>
+    </s:content>
+  </s:slide>
+
+</s:slideset>
+
+<!--  LocalWords:  Bonobo
+ -->

@@ -1,0 +1,8 @@
+
+Todo
+
+complete bindings for all GTK APIs
+improve code generator
+documentation
+Gnome 2.0 bindings
+wait til bindings are more complete

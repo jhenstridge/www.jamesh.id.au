@@ -1,0 +1,10 @@
+
+Unicode
+
+Python 1.6 and 2.0 introduce unicode string type
+if a function expecting a normal string gets passed a unicode string, it gets converted to the "default" character encoding
+PyGTK sets default character encoding to UTF-8 at startup
+you can pass unicode strings to PyGTK functions/methods, and they will be handled by GTK correctly
+Following code will work as expected:
+w = gtk.GtkLabel(u'2\u03D6r')
+

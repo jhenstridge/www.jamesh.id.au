@@ -1,0 +1,10 @@
+
+A Simple PyGTK Program (continued)
+
+Simple obvious mapping from C API to object oriented API.
+Can connect any callable python object as a signal handler
+Widgets act as normal python class instances
+can set/get attributes on the widget objects.
+can even subclass widgets (see next slide)
+No casting
+

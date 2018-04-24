@@ -1,0 +1,13 @@
+
+New Features
+
+Support for new text widget
+Based on Tk text widget, so provides a useful upgrade path from Tkinter
+Doesn't suck like GtkText
+New Tree widget
+Full support for use of GtkTreeView, GtkTreeStore and GtkListStore
+Limited support for defining new tree models.
+Unicode support
+Text handling in GTK now handled by Pango.  UTF-8 used as internal encoding.
+Python unicode strings get automatically recoded to UTF-8
+

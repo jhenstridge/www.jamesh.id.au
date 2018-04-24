@@ -1,0 +1,10 @@
+
+What Still Needs To Be Done For 2.0 Release
+
+Finish off gtk bindings
+Some infrastructure issues need to be solved (threading, etc)
+Check coverage
+Parity with stable
+GNOME library bindings
+ORBit2 bindings (Johan Dahlin)
+Wrap more GNOME libraries

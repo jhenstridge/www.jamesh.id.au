@@ -1,0 +1,10 @@
+
+New GDK Targets
+
+GTK 1.2 has only an X11 backend
+GTK 2.0 introduces multiple backends
+PyGTK can be compiled with any of these backends
+tested with x11 and linux-fb
+should work with win32 as well
+Considering adding support for runtime selection of backend
+

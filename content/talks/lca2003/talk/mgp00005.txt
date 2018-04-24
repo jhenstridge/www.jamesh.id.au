@@ -1,0 +1,8 @@
+
+Pre-1.0 Gnome Development
+
+Development driven by what hackers were interested in
+Many people with check in privileges, but no strong standards for what to check in to the development platform (other than "doesn't break the build").
+Resulted in a lot of good ideas along with many bad ideas
+Was not a great platform to recommend other people base apps 
+

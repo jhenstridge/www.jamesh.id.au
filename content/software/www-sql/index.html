@@ -1,0 +1,86 @@
+<?xml version="1.0"?> <?emacs -*- mode: nxml -*- ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>The WWW-SQL Home Page</title>
+  </head>
+  <body>
+    <h1>The WWW-SQL Home Page</h1>
+
+    <h2>Introduction</h2>
+
+    <p>This page contains information about WWW-SQL, which is a
+    program written by me (<a href="mailto:james@daa.com.au">James
+    Henstridge</a>).  It is used to display information from MySQL or
+    PostgreSQL databases in web pages.  It does this with a simple
+    embeded scripting language.  The commands are embedded in special
+    HTML tags, so it should be passible to edit the document with an
+    HTML editor.  The tags are evaluated when the page is loaded, so
+    the resultant page will be HTML compliant (assuming the original
+    was mostly compliant).</p>
+
+    <h2>Mailing List</h2>
+
+    <p>There is a mailing list for discussion of www-sql.  You can
+    subscribe at the lists web page at <a
+    href="http://www.daa.com.au/mailman/listinfo/www-sql">
+    http://www.daa.com.au/mailman/listinfo/www-sql</a>.</p>
+
+    <h2>Current Version</h2>
+
+    <p>The current version is 0.5.7.  It doesn't add any new features
+    if you don't use the new scanner.  If you have been testing it,
+    you will find support for while loops.  Here is the relevant
+    section of the Changelog:</p>
+
+<pre>
+www-sql-0.5.7:  17-November-1998
+        - Fixed a small inconsistency between the new and old scanners, so
+          that the new one recognises &lt;!SQL as well as &lt;!sql.
+        - Made the new scanner the default for compiles.  You can use the old
+          input scanner with the --without-new-scanner argument to configure.
+        - Added a sentance to the ftime function documentation to clarify that
+          the offset is given in seconds.
+        - Now AFFECTED_ROWS and INSERT_ID are set for failed queries (to 0 and
+          -1 respectively).
+        - Added the uinclude command.  It is identical to the include command,
+          except that it is executed unconditionally (even if shielded by an
+          if statement).  This may be more useful to some people.
+</pre>
+
+    <p>You can also review the complete <a href="Changelog">Changelog</a>.</p>
+
+    <h2>Documentation</h2>
+
+    <p>At the moment, the only documentation is the manual distributed
+    with the source.  An <a href="www-sql.html">online version</a>
+    exist on this web site.</p>
+
+    <h2>The Source</h2>
+
+    <p>The source can be obtained from a number of sites:</p>
+    <ul>
+      <li><a href="ftp://ftp.daa.com.au/pub/james/www-sql">ftp://ftp.daa.com.au/pub/james/www-sql</a> (Australia)</li>
+      <li><a href="ftp://sunsite.unc.edu/pub/Linux/apps/database/www">ftp://sunsite.unc.edu/pub/Linux/apps/database/www</a> (America, and mirrors)</li>
+      <li><a href="ftp://www.tcx.se/pub/mysql/Contrib">ftp://www.tcx.se/pub/mysql/Contrib</a> (Sweden)</li>
+    </ul>
+
+    <h2>Related Links</h2>
+
+    <ul>
+      <li><a href="http://www.tcx.se/">MySQL by TcX DataKonsult AB</a>
+      - you need this to use www-sql.  It is free unless you sell
+      products which use it.</li>
+
+      <li><a href="http://Hughes.com.au/">Hughes Technologies</a> -
+      the creators of mSQL, and W3-mSQL (the program whose interface
+      this is based on), both of which are commercial.</li>
+
+      <li><a href="http://www.postgresql.org/">PostgreSQL Homepage</a>
+      - a free database with a pretty good web front end :)</li>
+    </ul>
+
+  </body>
+</html>
+

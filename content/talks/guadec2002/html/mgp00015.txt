@@ -1,0 +1,22 @@
+
+Adding Signals
+
+import gobject, gtk
+
+class MyWidget(gtk.Widget):
+    __gsignals__ = {
+        'mysignal': (gobject.SIGNAL_RUN_FIRST,
+                     None, (int,))
+    }
+
+    ...
+
+    def do_mysignal(self, intarg):
+        print 'Integer argument:', intarg
+
+gobject.type_register(MyWidget)
+
+w = MyWidget()
+w.connect('mysignal', function)
+w.emit('mysignal', 42)
+

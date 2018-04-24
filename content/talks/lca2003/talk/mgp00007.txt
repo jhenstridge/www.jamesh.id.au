@@ -1,0 +1,11 @@
+
+2.x platform
+
+Major upgrade to GTK (3 years in development)
+Taken as an opportunity to fix many of the problems in the interface that could not be fixed without breaking compatibility.
+Harder guarantees of binary compatibility
+Within a minor series (2.0.x, 2.2.x, etc), forward and backward binary compatibility is maintained
+Has required us to develop new ways to introduce APIs
+adding a bad API may mean managing that API for years
+libegg is part of the new development process
+

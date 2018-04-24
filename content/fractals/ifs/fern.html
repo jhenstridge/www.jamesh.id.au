@@ -1,0 +1,45 @@
+<?xml version="1.0"?> <?emacs -*- mode: nxml -*- ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Fern</title>
+    <meta name="description" content="This is an applet that draws a fractal fern.  Written by James Henstridge." />
+    <meta name="keywords" content="java, applet, fractal, iterated function system, IFS, fern" />
+  </head>
+  <body>
+    <h1>Fern</h1>
+
+    <div class="fractal">
+      <applet code="ifs.class" height="300" width="400">
+        <param name="bgcolour" value="ffffff" />
+        <param name="top"    value="11.0" />
+        <param name="bottom" value="-1.0" />
+        <param name="left"   value="-8.0" />
+        <param name="right"  value="8.0" />
+  
+        <param name="lines" value="4" />
+        <param name="line0" value=" 0.0   0.0   0.0  0.16 0.0 0.0  0.01" />
+        <param name="line1" value=" 0.85  0.04 -0.04 0.85 0.0 1.6  0.85" />
+        <param name="line2" value=" 0.2  -0.26  0.23 0.22 0.0 1.6  0.07" />
+        <param name="line3" value="-0.15  0.28  0.26 0.24 0.0 0.44 0.07" />
+        <hr />
+        <p>If your browser supported Java, You would see a nice
+        fractal here.</p>
+        <hr />
+      </applet>
+    </div>
+
+    <p>This is another example of an IFS fractal.  As you can see each leaf
+    of the fern is in fact the same as the full fern.  This infinite level
+    of self similarity is what gives this image its fractal dimension.  Apart
+    from the Sierpinski Gasket, the fern is probably the most well known of
+    this style of fractal.</p>
+
+    <div class="navigation">
+      <a href="triangle.html">&lt;&lt;&lt; Previous</a>
+      | <a href="../">Contents</a>
+      | <a href="spiral.html">Next &gt;&gt;&gt;</a>
+    </div>
+  </body>
+</html>

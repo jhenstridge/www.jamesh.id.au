@@ -1,0 +1,13 @@
+
+The Rewrite
+
+Chose to rewrite bindings
+use ExtensionClass
+new defs file format
+new code generator
+remove the procedural interface
+add evil hack to give single wrapper per object
+Was not possible to keep compatibility with all the changes.
+decide to target binding at GTK 2.0
+abandoned ExtensionClass based GTK 1.2 binding available on extension-class-branch branch
+

@@ -1,0 +1,53 @@
+#!/bin/sh
+
+MMHOME=/var/mailman
+SAHOME=/var/lib/spamassassin
+
+list=$1
+shift
+
+HOME=$SAHOME/$list.prefs
+export HOME
+
+if [ ! -d $HOME ]; then
+    echo "Prefs for list $list not found"
+    exit 1
+fi
+
+if $MMHOME/bin/list_lists -b | grep -q $list > /dev/null 2>&1; then
+    :
+else
+    echo "Mailing list $list not found"
+    exit 1
+fi
+
+tmpmbox=`mktemp ${TMPDIR:-/tmp}/mmlearn.mbox.XXXXXX`
+
+# create an mbox file of all the held messages
+PYTHONPATH=$MMHOME:$MMHOME/pythonlib python -c "
+import os
+import pickle
+import email
+from Mailman.mm_cfg import DATA_DIR
+
+mbox = open('$tmpmbox', 'w')
+
+files = [ file for file in os.listdir(DATA_DIR)
+          if file.startswith('heldmsg-$list') ]
+for f in files:
+    filename = os.path.join(DATA_DIR, f)
+    if filename.endswith('.pck'):
+        msg = pickle.load(open(filename, 'rb')).as_string(unixfrom=True)
+    else:
+        msg = open(filename, 'r').read()
+    mbox.write(msg)
+    if msg[-1] != '\n': mbox.write('\n')
+    mbox.write('\n')
+mbox.close()
+"
+
+sa-learn --showdots --spam --mbox $tmpmbox
+rm -f $tmpmbox
+
+chown -R spamassassin.spamassassin $HOME
+

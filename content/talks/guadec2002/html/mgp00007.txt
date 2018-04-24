@@ -1,0 +1,17 @@
+
+C to Python Mapping
+
+Most of the GTK C API maps to Python fairly easily:
+gtk_foo_* (functions) -> gtk.Foo.* (methods)
+gtk_foo_new -> gtk.Foo.__init__ (constructor)
+gtk_* -> gtk.* (functions)
+Similar for Pango, ATK and GDK APIs:
+pango_* -> pango module
+atk_* -> atk module
+gdk_* -> gtk.gdk module
+glade_* (libglade) -> gtk.glade module
+Pango functions in pango module
+ATK functions in atk module
+GDK functions in gtk.gdk module
+libglade functions in gtk.glade module
+

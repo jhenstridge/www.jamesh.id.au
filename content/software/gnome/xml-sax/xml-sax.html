@@ -1,0 +1,637 @@
+<!DOCTYPE HTML PUBLIC "-//Norman Walsh//DTD DocBook HTML 1.0//EN">
+<HTML
+><HEAD
+><TITLE
+>Using the SAX Interface of LibXML</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet"><LINK
+REL="NEXT"
+TITLE="Implementing a SAX Based Parser"
+HREF="implementing.html"></HEAD
+><BODY
+><DIV
+CLASS="ARTICLE"
+><DIV
+CLASS="TITLEPAGE"
+><H1
+CLASS="TITLE"
+>Using the SAX Interface of LibXML</H1
+><P
+CLASS="AUTHOR"
+><I
+>James Henstridge</I
+></P
+><DIV
+CLASS="AFFILIATION"
+><P
+CLASS="LITERALLAYOUT"
+>	&nbsp;&nbsp;<TT
+CLASS="EMAIL"
+>&#60;<A
+HREF="mailto:james@daa.com.au"
+>james@daa.com.au</A
+>&#62;</TT
+><br>
+	</P
+></DIV
+><DIV
+CLASS="ABSTRACT"
+><P
+>Most users of the libxml (aka gnome-xml) library tend to
+      use the DOM style tree interface for reading documents.  This is
+      generally quite an easy interface to use, but can use quite a
+      bit of memory.  An alternative is to use the SAX interface in
+      libxml, which is a port of the Simple API for XML library for
+      Java.</P
+><P
+>This article is aimed at people who understand and have
+      used the libxml DOM style interface and want to explore the SAX
+      interface.  Some examples are biased toward use in GTK+/GNOME
+      programming.</P
+></DIV
+><HR></DIV
+><DIV
+CLASS="TOC"
+><DL
+><DT
+><B
+>Table of Contents</B
+></DT
+><DT
+><A
+HREF="xml-sax.html#INTRODUCTION"
+>Introduction and Concepts</A
+></DT
+><DT
+><A
+HREF="implementing.html"
+>Implementing a SAX Based Parser</A
+></DT
+><DT
+><A
+HREF="conclusion.html"
+>Conclusion</A
+></DT
+></DL
+></DIV
+><DIV
+CLASS="SECT1"
+><H1
+CLASS="SECT1"
+><A
+NAME="INTRODUCTION"
+>Introduction and Concepts</A
+></H1
+><P
+>Most people will agree that the most intuitive
+    representation for arbitrary XML data is a tree.  Libxml provides
+    a nice API to construct a tree from an XML file, which makes it
+    very easy to use.  But in some cases, the tree representation does
+    not match the internal representation you wish to use in your
+    program, so it may not be the best choice.  You may end up using
+    libxml to construct the tree, extracting the data and then throw
+    away the tree.</P
+><P
+>In these cases libxml's SAX API may be a better choice.
+    Note that there are a few drawbacks to the use of this API
+    though:</P
+><P
+></P
+><UL
+><LI
+><P
+>SAX parsers generally require you to write a bit more
+	code than the DOM interface.</P
+></LI
+><LI
+><P
+>Unless you build a DOM style tree from your
+	application's internal representation for the data, you can't
+	as easily write the XML file back to disk.  This is not a
+	concern if your program only reads XML files, and does not
+	write them.</P
+></LI
+><LI
+><P
+>You may have to redesign or rethink your file loading
+	routines.</P
+></LI
+></UL
+><P
+>It is not all bad however.  There are benefits to the use of
+    the SAX API:</P
+><P
+></P
+><UL
+><LI
+><P
+>The DOM tree is not constructed, so there are
+	potentially less memory allocations.</P
+></LI
+><LI
+><P
+>If you convert the data in the DOM tree to another
+	format, the SAX API may help remove the intermediate
+	step.</P
+></LI
+><LI
+><P
+>If you do not need all the XML data in memory, the SAX
+	API allows you to process the data as it is parsed.</P
+></LI
+></UL
+><DIV
+CLASS="SECT2"
+><H2
+CLASS="SECT2"
+><A
+NAME="INTRO-SAX"
+>The SAX Interface</A
+></H2
+><P
+>As you know, the DOM style interface (ie. what is returned
+      by <TT
+CLASS="FUNCTION"
+><B
+>xmlParseFile</B
+></TT
+> or
+      <TT
+CLASS="FUNCTION"
+><B
+>xmlParseMemory</B
+></TT
+>) produces a tree of xmlNode
+      structures that can then be walked to extract the data.</P
+><P
+>The SAX interface works quite differently on the other
+      hand.  You instead pass a number of callback routines to the
+      parser in a <SPAN
+CLASS="STRUCTNAME"
+>xmlSAXHandler</SPAN
+> structure.
+      The parser will then parse the document and call the appropriate
+      callback when certain conditions occur.</P
+><P
+>Some of the more useful callbacks are
+      <TT
+CLASS="FUNCTION"
+><B
+>startDocument</B
+></TT
+>,
+      <TT
+CLASS="FUNCTION"
+><B
+>endDocument</B
+></TT
+>,
+      <TT
+CLASS="FUNCTION"
+><B
+>startElement</B
+></TT
+>,
+      <TT
+CLASS="FUNCTION"
+><B
+>endElement</B
+></TT
+>, <TT
+CLASS="FUNCTION"
+><B
+>getEntity</B
+></TT
+>
+      and <TT
+CLASS="FUNCTION"
+><B
+>characters</B
+></TT
+>.  Most of these are quite
+      self explanatory.  The <TT
+CLASS="FUNCTION"
+><B
+>characters</B
+></TT
+> callback
+      is called when characters outside a tag are parsed.</P
+><P
+>As you can see, the code for a SAX style parser seems
+      almost inside out, when compared with the DOM style tree method.
+      For this reason, a state machine aproach is useful.</P
+><P
+>It is interesting to note that the
+      <TT
+CLASS="FUNCTION"
+><B
+>xmlParseFile</B
+></TT
+> function and friends are all
+      implemented in terms of the SAX interface, so no power is lost
+      by using this interface.</P
+></DIV
+><DIV
+CLASS="SECT2"
+><H2
+CLASS="SECT2"
+><A
+NAME="INTRO-EXAMPLES"
+>Some Examples</A
+></H2
+><P
+>To give you some idea of where SAX may be useful, some
+      examples may help.</P
+><DIV
+CLASS="SECT3"
+><H3
+CLASS="SECT3"
+><A
+NAME="NUMBER-ARRAY"
+>An Array of Numbers</A
+></H3
+><P
+>Consider an XML document structured like follows:</P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="PROGRAMLISTING"
+>&#60;?xml version="1.0"?&#62;
+&#60;array&#62;
+  &#60;number&#62;0&#60;/number&#62;
+  &#60;number&#62;1&#60;/number&#62;
+  ...
+  &#60;number&#62;42&#60;/number&#62;
+&#60;/array&#62;</PRE
+></TD
+></TR
+></TABLE
+><P
+>The file describes an array of numbers.  In this case,
+	the most appropriate data structure to represent the
+	information as would be an array -- not a tree.  By using the
+	SAX interface, we can write the numbers directly to an array
+	rather than using the DOM tree as an intermediate
+	format.</P
+><P
+>As I said earlier, state machines make using the SAX
+	interface much easier.  At any one time, you are in one state.
+	The <TT
+CLASS="FUNCTION"
+><B
+>startElement</B
+></TT
+> and
+	<TT
+CLASS="FUNCTION"
+><B
+>endElement</B
+></TT
+> callbacks cause the
+	state to change.  You will also want to perform some other
+	actions during state changes -- in this case, build the
+	array.</P
+><P
+>For this example, we can use four states:</P
+><P
+></P
+><TABLE
+BORDER="0"
+><TR
+><TD
+>START</TD
+></TR
+><TR
+><TD
+>INSIDE_ARRAY</TD
+></TR
+><TR
+><TD
+>INSIDE_NUMBER</TD
+></TR
+><TR
+><TD
+>FINISH</TD
+></TR
+></TABLE
+><P
+></P
+><P
+>In the <TT
+CLASS="FUNCTION"
+><B
+>startDocument</B
+></TT
+> callback, we
+	would initialise any variables that are required during
+	parsing.  This would include the array to hold the numbers (a
+	glib <SPAN
+CLASS="STRUCTNAME"
+>GArray</SPAN
+> would be useful), and a
+	buffer to hold character data (a glib
+	<SPAN
+CLASS="STRUCTNAME"
+>GString</SPAN
+> is a good choice here).  It
+	would also set the initial state to START.  the
+	<TT
+CLASS="FUNCTION"
+><B
+>endDocument</B
+></TT
+> callback, we can free these
+	variables (we would leave the array though).</P
+><P
+>The interesting code is in the
+	<TT
+CLASS="FUNCTION"
+><B
+>startElement</B
+></TT
+> and
+	<TT
+CLASS="FUNCTION"
+><B
+>endElement</B
+></TT
+> callbacks.  What they do will
+	depend on the current state, and the element name that is
+	being opened or closed.</P
+><P
+>For the array example, the
+	<TT
+CLASS="FUNCTION"
+><B
+>startElement</B
+></TT
+> function would act as
+	follows:</P
+><P
+></P
+><UL
+><LI
+><P
+>If we are in the START state and the element name is
+	    array, then change to the INSIDE_ARRAY state.  Any other
+	    names would be an error</P
+></LI
+><LI
+><P
+>If we are in the INSIDE_ARRAY state, and the element
+	    name is number, change to the INSIDE_NUMBER state.  We
+	    would also zero the character data buffer.  Any other
+	    element would be an error in this state.</P
+></LI
+><LI
+><P
+>If we are in the INSIDE_NUMBER or FINISH states, it
+	    is an error.</P
+></LI
+></UL
+><P
+>The <TT
+CLASS="FUNCTION"
+><B
+>characters</B
+></TT
+> function would
+	append the character data to the buffer if it was in the
+	INSIDE_NUMBER state.  If it is in any other states, the data
+	could be discarded.</P
+><P
+>The <TT
+CLASS="FUNCTION"
+><B
+>endElement</B
+></TT
+> function would act
+	as follows:</P
+><P
+></P
+><UL
+><LI
+><P
+>If we are in the INSIDE_NUMBER state, the character
+	    data buffer should hold the number.  We convert the string
+	    to an integer and append it to the array.  We then change
+	    to the INSIDE_ARRAY state.</P
+></LI
+><LI
+><P
+>If we are in the INSIDE_ARRAY state, change to the
+	    FINNISH state.</P
+></LI
+><LI
+><P
+>If we are in the START or FINNISH states, an error
+	    has occured</P
+></LI
+></UL
+><P
+>Note that we know what to do in the
+	<TT
+CLASS="FUNCTION"
+><B
+>endElement</B
+></TT
+> function even without looking
+	at the element name.  By using a state machine model like
+	this, we can narrow down the number of possible element names,
+	which reduces string comparisons as well.</P
+></DIV
+><DIV
+CLASS="SECT3"
+><H3
+CLASS="SECT3"
+><A
+NAME="LARGE-XML-FILE"
+>Large Repetitive XML Files</A
+></H3
+><P
+>Sometimes we have XML files with many subtrees of the
+	same format describing different things.  An example of this
+	is the <TT
+CLASS="FILENAME"
+>fullIndex.rdf.gz</TT
+>.  The file
+	contains repeating sections like follows:</P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+WIDTH="100%"
+><TR
+><TD
+><PRE
+CLASS="PROGRAMLISTING"
+>  ...
+  &#60;RDF:Description about="ftp://rpmfind.net/linux/redhat/redhat-6.0/i386/RedHat/RPMS/emacs-X11-20.3-15.i386.rpm"&#62;
+    &#60;RPM:Name&#62;emacs-X11&#60;/RPM:Name&#62;
+    &#60;RPM:Summary&#62;The Emacs text editor for the X Window System.&#60;/RPM:Summary&#62;
+  &#60;/RDF:Description&#62;
+  &#60;RDF:Description about="ftp://rpmfind.net/linux/Mandrake/6.0/Mandrake/RPMS/emacs-el-20.3-14mdk.i586.rpm"&#62;
+    &#60;RPM:Name&#62;emacs-el&#60;/RPM:Name&#62;
+    &#60;RPM:Summary&#62;The sources for elisp programs included with Emacs.&#60;/RPM:Summary&#62;
+  &#60;/RDF:Description&#62;
+  ...</PRE
+></TD
+></TR
+></TABLE
+><P
+>One operation that we might want to do is to search for
+	a package by name.  For this type of operation, at any one
+	time, we are only concerned with one subtree in the document
+	-- the others need not be in memory.  For this reason, a SAX
+	based parser would be a good idea.</P
+><P
+>With the DOM tree aproach, the memory usage of the
+	program will increase as the size of the index file increases.
+	With the SAX based aproach, the memory usage should be fairly
+	constant despite changes in the size of the index.</P
+><P
+>This benefit is particularly useful when parsing XML
+	documents of sizes similar to the RDF dumps of the <A
+HREF="http://www.dmoz.org"
+TARGET="_top"
+>Open Directory Project</A
+>.  The
+	overhead of the DOM tree can become unacceptable when parsing
+	35 megabyte XML files.</P
+><P
+>For a working example of this sort of situation, see the
+	XML parser in <A
+HREF="http://cvs.gnome.org/lxr/source/gnorpm/find/search.c"
+TARGET="_top"
+><TT
+CLASS="FILENAME"
+>/gnorpm/find/search.c</TT
+></A
+>.</P
+></DIV
+><DIV
+CLASS="SECT3"
+><H3
+CLASS="SECT3"
+><A
+NAME="SIMPLE-TREE-EXAMPLE"
+>Simple Tree Structures</A
+></H3
+><P
+>Sometimes it may make sense to use the SAX interface
+	even if the data in the XML file is inherently tree
+	based.</P
+><P
+>The DOM style interface of libxml is designed to be able
+	to represent any well formed XML document.  But the save
+	format of most applications generally uses only a subset of
+	XML.  For instance, GLADE does not use attributes for any
+	elements, so you could argue that the support for attributes
+	in the DOM interface is bloat when used with GLADE.</P
+><P
+>Since the XML you are reading in has some known
+	constraints, it is usually possible to store the information
+	in more compact structures.</P
+><P
+>I am looking at implementing something like this in
+	libglade.  In this situation, the changeover looks like it
+	will decrease the memory requirements of the internal
+	structures by a factor of four, and has increased the speed of
+	the parser slightly.</P
+><P
+>You can look at the source for the new libglade SAX
+	based parser at <A
+HREF="http://cvs.gnome.org/lxr/source/libglade/test/saxp.c"
+TARGET="_top"
+><TT
+CLASS="FILENAME"
+>/libglade/test/saxp.c</TT
+></A
+>.  There is
+	also a diagram that describes the transitions between the
+	different states in the parser at <A
+HREF="http://cvs.gnome.org/lxr/source/libglade/test/states.dia"
+TARGET="_top"
+><TT
+CLASS="FILENAME"
+>/libglade/test/states.dia</TT
+></A
+>.</P
+><P
+>In this particular type of situation, it is worth
+	spending a bit more time deciding between DOM style and SAX
+	interfaces.  If you keep with the DOM interface, your program
+	will probably use a bit more memory, but it has the advantage
+	that you can modify the tree, and then write the XML file back
+	to disk with a single function call.  If you switch over to a
+	different representation, you will need to either convert the
+	information to the DOM style tree representation and then dump
+	it to a file, or write your own output routines.</P
+><P
+>Another deciding factor is laziness.  If you use the SAX
+	interface, you will need to write some parsing code.  On the
+	other hand, the DOM interface does this for you.</P
+><P
+>In the libglade case, memory usage and speed were
+	considered important, and the XML data did not have to be
+	written back to a file, so choice of a SAX parser was
+	relatively easy.</P
+></DIV
+></DIV
+></DIV
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>&nbsp;</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+>&nbsp;</TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="implementing.html"
+>Next</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>&nbsp;</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+>&nbsp;</TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>Implementing a SAX Based Parser</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

@@ -1,0 +1,16 @@
+
+GnomeLamp (continued)
+
+Usability problems:
+not obvious what the widget is, does or represents
+I18N problems:
+new_with_color() and set_color() are bad, because different colours have different meanings to people.
+set_type() has the potential for localisation
+Accessibility problems:
+colours is not a good medium to communicate information to people
+blind users, colour blind users, etc.
+The set_color() variant does not follow desktop theme.
+There are almost always better ways to provide information
+
+http://www.xach.com/bjp/
+

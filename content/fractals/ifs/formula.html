@@ -1,0 +1,69 @@
+<?xml version="1.0"?> <?emacs -*- mode: nxml -*- ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Formula Used for in IFS Fractal Applet</title>
+  </head>
+  <body>
+    <h1>Formula Used in the IFS Fractal Applet</h1>
+
+    <p>The IFS Fractal Applet generates fractals from an IFS (Iterated
+    Function System).  The function system is set up from a number of
+    lines of IFS code. These lines are in the form of 7 real numbers.
+    To explain what these numbers do, we will look at a single line of
+    IFS code like</p>
+    
+    <pre class="programlisting">&lt;param name="line0"
+       value="a b c d e f g" /&gt;</pre>
+    
+    <p>These numbers are converted to a matrix equation to find the
+    next point to draw by looking at the previous one. For example, to
+    get from the point (x, y) to the next point, (X, Y), the following
+    equation would be used:</p>
+
+    <table align="center" cellspacing="0" cellpadding="3">
+      <tr valign="middle">
+        <td rowspan="2" style="font-size: 200%">(</td>
+        <td>X</td>
+        <td rowspan="2" style="font-size: 200%">)</td>
+        <td rowspan="2">=</td>
+        <td rowspan="2" style="font-size: 200%">(</td>
+        <td>a</td>
+        <td>b</td>
+        <td rowspan="2" style="font-size: 200%">)</td>
+        <td rowspan="2" style="font-size: 200%">(</td>
+        <td>x</td>
+        <td rowspan="2" style="font-size: 200%">)</td>
+        <td rowspan="2">+</td>
+        <td rowspan="2" style="font-size: 200%">(</td>
+        <td>e</td>
+        <td rowspan="2" style="font-size: 200%">)</td>
+      </tr>
+      <tr valign="middle">
+        <td>Y</td>
+        <td>c</td>
+        <td>d</td>
+        <td>y</td>
+        <td>f</td>
+      </tr>
+    </table>
+
+    <p>By now you may be wondering what the number <var>g</var> was
+    for.  It is the probability that this particular transformation
+    will occur.  This means that the sum of the <var>g</var> values of
+    all the lines of IFS code should equal 1.0 exactly.  In this way,
+    we bring a bit of randomness into the decision on where the next
+    point will be.</p>
+    
+    <p>By iterating this process, and plotting each new point, for a
+    given set of lines of IFS code, certain shapes always seem to
+    form, reguardless of the starting point or the random number
+    generator's seed.</p>
+
+    <div class="navigation">
+      <a href="dragon.html">&lt;&lt;&lt; Previous</a>
+      | <a href="../">Contents</a>
+    </div>
+  </body>
+</html>

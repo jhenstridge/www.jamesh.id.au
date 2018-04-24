@@ -1,0 +1,29 @@
+body {
+  background-color: #e8e5e8;
+  font-family: Verdana, Helvetica Arial, sans-serif;
+  font-size: 150%;
+
+  background-image: url(python.gif);
+  background-position: top left;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+a, a:link, a:visited {
+  color: #770000;
+}
+
+h1 {
+  font-size: 250%;
+  margin: 0 0 0 70px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 200%;
+  font-weight: bold;
+}
+
+tt {
+  font-family: Courier;
+}

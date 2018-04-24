@@ -1,0 +1,49 @@
+<?xml version="1.0"?> <?emacs -*- mode: nxml -*- ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Fractal Popcorn</title>
+    <meta name="description" content="This is an applet that draws Pickover's Fractal Popcorn.  Written by James Henstridge." />
+    <meta name="keywords" content="java, applet, fractal, orbit, pickover, popcorn" />
+  </head>
+  <body>
+    <h1>Fractal Popcorn</h1>
+
+    <div class="fractal">
+      <applet code="popcorn.class" height="300" width="400">
+	<param name="bgcolour" value="ffffff" />
+	<param name="top"      value="3.0" />
+	<param name="bottom"   value="-3.0" />
+	<param name="left"     value="-4.0" />
+	<param name="right"    value="4.0" />
+        <hr />
+        <p>If your browser supported Java, You would see a nice
+        fractal here.</p>
+        <hr />
+      </applet>
+    </div>
+
+    <p>This applet generates Clifford Pickover's fractal popcorn.
+    This fractal is produced through the iteration of a set of
+    functions on a starting ordered pair (x, y) and plotting the
+    subsequent points found through the iteration process.  For this
+    particular fractal, the functions are:</p>
+
+    <div class="equation">x<sub>n + 1</sub> = x<sub>n</sub> - h *
+    sin(y<sub>n</sub> + tan(3y<sub>n</sub>))<br /> y<sub>n + 1</sub> =
+    y<sub>n</sub> - h * sin(x<sub>n</sub> + tan(3x<sub>n</sub>))</div>
+
+    <p>For this fractal, the value of h is set at 0.05. The iterative
+    process is applied to every tenth pixel, with each iteration being
+    plotted.  The default number of iterations is 50, but this can be
+    changed by setting the <var>dots</var> parameter in a
+    <var>&lt;param&gt;</var> tag.</p>
+
+    <div class="navigation">
+      <a href="intro.html">&lt;&lt;&lt; Previous</a>
+      | <a href="../">Contents</a>
+      | <a href="gingerbread.html">Next &gt;&gt;&gt;</a>
+    </div>
+  </body>
+</html>

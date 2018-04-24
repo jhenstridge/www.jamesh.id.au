@@ -1,0 +1,47 @@
+<?xml version="1.0"?> <?emacs -*- mode: nxml -*- ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Phoenix Set</title>
+    <meta name="description" content="This is an applet that draws Phoenix Sets.  Written by James Henstridge." />
+    <meta name="keywords" content="java, applet, fractal, phoenix" />
+  </head>
+  <body>
+    <h1>Phoenix Set</h1>
+
+    <div class="fractal">
+      <applet code="Phoenix.class" height="340" width="400">
+        <hr />
+        <p>If your browser supported Java, You would see a nice
+        fractal here.</p>
+        <hr />
+      </applet>
+    </div>
+
+    <p>This ugly fractal is the Mandelbrot set equivalent for the
+    Phoenix set.  It is here only so you can look at the more
+    beautiful Julia set equilalents, or Phoenix Sets.  (Hint: try c =
+    (0.56667, -0.5))</p>
+
+    <p>The formula for the Phoenix Sets and its Mandelbrot equivalent
+    is</p>
+
+    <div class="equation">z<sub>n + 1</sub> =
+    z<sub>n</sub><sup>2</sup> + Re(c) + Im(c) * z<sub>n - 1</sub>
+    </div>
+
+    <p>The sugested value of c to use to get a Phoenix Set gives the
+    same image as the phoenix curve originally discovered by Shigehiro
+    Ushiki.  Unfortunately this set doesn't have the same
+    Mandelbrot/Julia Set properties as the classic Mandelbrot Set.
+    That is values of c inside the black area will not nesessarily
+    give a connected set and vice versa.</p>
+
+    <div class="navigation">
+      <a href="Mandel4.html">&lt;&lt;&lt; Previous</a>
+      | <a href="../">Contents</a>
+      | <a href="Newton3.html">Next &gt;&gt;&gt;</a>
+    </div>
+  </body>
+</html>

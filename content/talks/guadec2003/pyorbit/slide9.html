@@ -1,0 +1,44 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-AU" xml:lang="en-AU">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Comparison with Interface Repository</title>
+<link rel="up" title="Index" href="index.html" />
+<link rel="prev" title="Introduction" href="slide8.html" />
+<link rel="next" title="PyORBit Stubs and Skeletons" href="slide10.html" />
+<link rel="stylesheet" type="text/css" href="slides.css" /><link rel="stylesheet" type="text/css" href="custom.css" />
+<style type="text/css" media="screen, projection" id="screen-style">
+      html, body { font-size: 24pt; }
+    </style>
+<script type="text/javascript" src="slides.js"></script>
+</head>
+<body>
+<div id="content">
+<h1>Comparison with Interface Repository</h1>
+
+      <p>CORBA standard defines an interface repository
+      service.</p>
+      <ul>
+	<li>Never supported well by ORBit</li>
+      </ul>
+      <p>Some benefits of ORBit's approach include:</p>
+      <ul>
+	<li>No need for a separate server to hold interface info.</li>
+	<li>No need to prime the interface repository with IDL before
+	use.</li>
+	<li>Interface information can be retrieved directly from
+	servers.</li>
+      </ul>
+      <p>If interface repository support is desired, it should be
+      possible to implement as a bridge that generates
+      <tt>IInterface</tt> structures from the information in the
+      repository.</p>
+    
+</div>
+<div id="navfooter">
+<span id="slidenumber">Slide 9 / 16</span>
+<a id="prev" title="Introduction" href="slide8.html">Prev</a>
+<a id="next" title="PyORBit Stubs and Skeletons" href="slide10.html">Next</a>
+</div>
+</body>
+</html>

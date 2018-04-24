@@ -1,0 +1,133 @@
+<?xml version="1.0"?> <?emacs -*- mode: nxml -*- ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Java Fractals</title>
+    <meta name="description"
+     content="This page contains java applets to generate a number of
+     different fractals, written by James Henstridge.  These include an IFS
+     fractal generator, Mandelbrot Sets and Julia Sets using a variety of
+     different formulas." />
+  </head>
+  <body background="images/fract-bg.gif"
+        style="background: url('images/fract-bg.gif')">
+    <h1>Java Fractals</h1>
+    
+    <p>This site contains some fractals I have written, implemented
+    through Java Applets.  The Mandelbrot Set fractal applet is not
+    complete, so it doesn't include documentation or source code.  If
+    you do not have a browser that supports Java (not just JavaScript
+    like Netscape for Windows 3.1), I advise you to get one (such as
+    HotJava or Netscape 2 or 3 for Win95/WinNT/Unix/Mac) or go to a
+    site which has the fractals in GIF or JPEG files.  If your browser
+    does support Java, then you will see that the applets are loaded
+    much faster than equal size GIF images.</p>
+    
+    <p><strong>Update - </strong> As well as the new look, I have
+    removed the old mandel0 applet, since it has been superceded by
+    the Classic Mandelbrot/Julia Set applet.  Also the code has been
+    moved to the end of this contents page to make rest of the site
+    look more user friendly.  You will also notice that I have added a
+    section on orbit fractals that contains six new applets.</p>
+    
+    <ol>
+      <li><strong><big>IFS Fractals</big></strong>
+        <ul>
+          <li><a href="ifs/intro.html">What is an IFS fractal</a></li>
+          <li><a href="ifs/javaifs.html">My Java IFS Applet</a></li>
+          <li>Some IFS fractals
+            <ul>
+              <li><a href="ifs/triangle.html">Sierpinski Triangle</a></li>
+              <li><a href="ifs/fern.html">Fern</a></li>
+              <li><a href="ifs/spiral.html">Spirals</a></li>
+              <li><a href="ifs/dragon.html">Dragon</a></li>
+            </ul>
+          </li>
+          <li><a href="ifs/formula.html">IFS Formula</a></li>
+        </ul>
+      </li>
+      <li><strong><big>Complex Number Fractals</big></strong>
+        <p><strong>Update</strong> - These fractals now work with
+        Windows.  Also, if they worked for you before, they will
+        prbably run faster with more colours.  (If you are interested
+        in what changed, I have switched over to using an
+        ImageProducer interface)</p>
+
+        <p>If you want a better resolution, select a different pixel
+        size from the list box (1 is best), and press the redraw
+        button.</p>
+
+        <ul>
+          <li><a href="mandel/intro.html">What Does This Applet Do</a></li>
+          <li><a href="mandel/formula.html">How the Formula is Used</a></li>
+          <li>Different Sets:
+            <ul>
+              <li><a href="mandel/Mandel.html">Classic Mandelbrot/Julia Set</a></li>
+              <li><a href="mandel/Mandel3.html">Cubic Mandelbrot/Julia Set</a></li>
+              <li><a href="mandel/Mandel4.html">Quartic Mandelbrot/Julia Set</a></li>
+              <li><a href="mandel/Phoenix.html">Phoenix Set</a></li>
+              <li><a href="mandel/Newton3.html">Newton-Raphson type Fractal</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li><strong><big>Orbit Fractals</big></strong>
+        <ul>
+          <li><a href="orbit/intro.html">Orbit Fractals Introduction</a></li>
+          <li><a href="orbit/popcorn.html">Fractal Popcorn</a></li>
+          <li><a href="orbit/gingerbread.html">Fractal Gingerbreadman</a></li>
+          <li><a href="orbit/hopalong.html">Hopalong Orbit Fractal</a></li>
+          <li><a href="orbit/threeply.html">Three Ply Orbit Fractal</a></li>
+          <li><a href="orbit/quadruptwo.html">Quadrup Two Orbit Fractal</a></li>
+          <li><a href="orbit/inv_julia.html">Inverse Julia Set Fractal</a></li>
+        </ul>
+      </li>
+      <li><strong><big>Code</big></strong>
+        <p>Code for all my fractal applets</p>
+        <ul>
+          <li><a href="ifs/ifs.java">IFS Applet Code</a></li>
+          <li><a href="mandel0/Mandel0.java">Mandel0 Applet Code</a> - 
+                    My first attempt at a Mandelbrot Set applet.</li>
+          <li>Complex Number Fractal Code
+            <ul>
+              <li><a href="mandel/Cmplx.java">Complex Number Library</a></li>
+              <li><a href="mandel/Controls.java">Controls</a></li>
+              <li><a href="mandel/FracPanel.java">Fractal Panel</a></li>
+              <li><a href="mandel/Mandel.java">Mandelbrot Fractal Applet</a></li>
+              <li><a href="mandel/Mandel3.java">Mandel3 Fractal Applet</a></li>
+              <li><a href="mandel/Mandel4.java">Mandel4 Fractal Applet</a></li>
+              <li><a href="mandel/Phoenix.java">Phoenix Fractal Applet</a></li>
+              <li><a href="mandel/Newton3.java">Newton-Raphson Fractal Applet</a></li>
+            </ul>
+          </li>
+          <li>Orbit Fractal Code
+            <ul>
+              <li><a href="orbit/popcorn.java">Popcorn Applet</a></li>
+              <li><a href="orbit/gingerbread.java">Gingerbread Applet</a></li>
+              <li><a href="orbit/hopalong.java">Hopalong Applet</a></li>
+              <li><a href="orbit/threeply.java">Threeply Applet</a></li>
+              <li><a href="orbit/quadruptwo.java">Quadruptwo Applet</a></li>
+              <li><a href="orbit/inv_julia.java">Inverse Julia Set Applet</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ol>
+    
+    <h2>Acknowledgements</h2>
+
+    <p>The pages and applets on this site were developed on computers
+    owned by <a href="http://www.daa.com.au/">Data Analysis Australia</a>,
+    and I would like to thank them for allowing me to publish them on
+    their server.</p>
+    
+    <p>The compiler used was the <a
+    href="http://www.blackdown.org/java-linux.html">Linux port</a> of
+    <a href="http://java.sun.com/">Sun's JDK 1.0.1</a>.</p>
+    
+    <p>If you like this page please send me mail at
+    <a href="mailto:james@daa.com.au">&lt;james@daa.com.au&gt;</a>, and
+    tell your friends about this site.</p>
+  </body>
+</html>

@@ -1,0 +1,486 @@
+<?xml version="1.0"?>
+<s:slideset xmlns="http://www.w3.org/1999/xhtml"
+            xmlns:s="http://www.oscom.org/2003/SlideML/1.0/"
+            xml:lang="en-AU">
+  <s:metadata>
+    <s:title>EggToolbar and EggMenu</s:title>
+    <!-- <s:subtitle></s:subtitle> -->
+
+    <s:authorgroup>
+      <s:author>
+        <s:givenname>James</s:givenname>
+        <s:familyname>Henstridge</s:familyname>
+        <s:email>james@daa.com.au</s:email>
+      </s:author>
+    </s:authorgroup>
+
+    <s:confgroup>
+      <s:conftitle>GUADEC 2003</s:conftitle>
+      <s:address>Dublin, Ireland</s:address>
+    </s:confgroup>
+
+    <s:abstract>
+      <p>EggMenu is a new menu and toolbar handling system intended as
+      a successor to the current GtkItemFactory, GnomeUIInfo and
+      Bonobo UI handler APIs.  This talk will discuss some of the
+      design decisions, and some info on using the EggMenu APIs.</p>
+
+      <p>EggToolbar is a replacement for the original GtkToolbar.</p>
+    </s:abstract>
+  </s:metadata>
+
+  <s:slide>
+    <s:title>Introduction</s:title>
+    <s:content>
+      <ul>
+        <li>What are they?</li>
+        <li>EggMenu in depth.</li>
+        <ul>
+          <li>Comparison with existing APIs.</li>
+	  <li>Some concepts used by the system.</li>
+          <li>Description.</li>
+        </ul>
+      </ul>
+    </s:content>
+  </s:slide>
+
+  <s:slide>
+    <s:title>What Are They?</s:title>
+    <s:content>
+      <p>EggToolbar:</p>
+      <ul>
+        <li>A new toolbar implementation for GTK.</li>
+        <li>Aims to be mostly backward compatible with the existing
+        GtkToolbar and the BonoboUIToolbar.</li>
+      </ul>
+      <p>EggMenu:</p>
+      <ul>
+        <li>A new menu and toolbar handling API.</li>
+        <li>Action based.</li>
+      </ul>
+      <p>Both will hopefully land in GTK 2.4.</p>
+    </s:content>
+  </s:slide>
+
+  <s:slide>
+    <s:title>Why Target GTK?</s:title>
+    <s:content>
+      <ul>
+        <li>While some people would like to see all GTK application
+        developers use Gnome libraries, this probably won't happen
+        soon for a number of reasons:</li>
+        <ul>
+          <li>Portability to Windows.</li>
+	  <li>Limit number of dependencies.</li>
+	</ul>
+	<li>Adding new features at the wrong conceptual level to
+        encourage application developers doesn't seem to work.</li>
+	<li>Need a better strategy.</li>
+	<ul>
+	  <li>Provide a good set of APIs in GTK for people to
+	  use.</li>
+	  <li>Make those APIs extensible so that Gnome (and others)
+	  can add some value.</li>
+	</ul>
+	<li>This has the following benefits:</li>
+	<ul>
+	  <li>GTK only application developers can also use the best of
+	  our APIs.</li>
+	  <li>If they want to use some Gnome libraries, they don't
+	  need to rewrite half their application.</li>
+	</ul>
+      </ul>
+    </s:content>
+  </s:slide>
+
+  <s:slide>
+    <s:title>EggToolbar History</s:title>
+    <s:content>
+      <ul>
+        <li>Existing GtkToolbar acts quite different to most
+        containers.</li>
+        <ul>
+          <li>children are usually created while adding to the
+          parent.</li>
+	  <li>All interfaces for manipulating buttons work with child
+          indices.</li>
+	  <ul>
+	    <li>a pain to keep track of if you are removing or
+	    inserting items.</li>
+	  </ul>
+	  <li>Some desired toolbar layouts are impossible.</li>
+	  <ul>
+	    <li>Right aligned items.</li>
+	    <li>items that expand (such as the location bar in a web
+	    browser).</li>
+	  </ul>
+        </ul>
+	<li>BonoboToolbar also has its problems:</li>
+	<ul>
+	  <li>It was written due to limitations of GtkToolbar.</li>
+	  <li>It is not exposed directly to the programmer.</li>
+	  <li>It acts subtly different to GtkToolbar.</li>
+	</ul>
+      </ul>
+    </s:content>
+  </s:slide>
+
+  <s:slide>
+    <s:title>EggToolbar Features</s:title>
+    <s:content>
+      <ul>
+	<li>Primarily written to provide features needed by the new
+	menu code.</li>
+	<li>Designed to provide an API backward compatible with
+	GtkToolbar.</li>
+	<ul>
+	  <li>If you never use any of the new APIs, it should act
+	  almost identical to the old API.</li>
+	  <li>If you do use some of the new interfaces, some of the
+	  obscure parts of the old API will change.</li>
+	</ul>
+	<li>All toolbar child widgets are EggToolItems.</li>
+	<ul>
+	  <li>Items can be added and removed like normal widgets.</li>
+	  <li>Some intelligence has been moved to the items, so that
+	  they are responsible for following the style of the
+	  toolbar.</li>
+	</ul>
+	<li>Items can be right aligned. (eg. throbbers)</li>
+	<li>Items can expand to fill available space. (eg. location bars)</li>
+	<li>Overflow is handled.</li>
+      </ul>
+    </s:content>
+  </s:slide>
+
+  <s:slide>
+    <s:title>Why a New Menu Handling API?</s:title>
+    <s:content>
+      <ul>
+	<li>Existing menu API is insufficient for advanced
+	programs.</li>
+	<li>Bonobo addresses this to an extent, but has some
+	issues:</li>
+        <ul>
+	  <li>API differs to the GTK one, so significant effort must
+          be made to port to Gnome.</li>
+	  <li>Requires use of CORBA, which some people don't like for
+          some reason.</li>
+        </ul>
+	<li>We want an API in GTK that:</li>
+        <ul>
+	  <li>satisfies the requirements of larger applications.</li>
+          <li>satisfies needs of larger applications</li>
+          <li>simple to use so that it doesn't look too heavy for
+          small applications</li>
+          <li>flexible enough that it can be extended to do what
+          component systems and compound document systems need it
+          to</li>
+        </ul>
+      </ul>
+    </s:content>
+  </s:slide>
+
+  <s:slide>
+    <s:title>Existing Menu/Toolbar API</s:title>
+    <s:content>
+      <ul>
+        <li>Code for creating menus looks a bit like this:</li>
+        <ul>
+          <li>Create GtkMenuBar</li>
+          <li>Add GtkMenuItems for toplevel menus, and attach GtkMenus
+          to them.</li>
+          <li>Add GtkMenuItems to the GtkMenus</li>
+          <li>Attach callbacks to the "activate" signal of the menu
+          items</li>
+          <li>Repeat for sub-menus ...</li>
+        </ul>
+        <li>Toolbars are similar, although no sub-menus.</li>
+	<li>The GtkItemFactory code can help here, but it is
+	essentially a short hand for the above.</li>
+      </ul>
+    </s:content>
+  </s:slide>
+
+  <s:slide>
+    <s:title>Problems With the Existing API</s:title>
+    <s:content>
+      <ul>
+        <li>Menu structure defined by code</li>
+        <ul>
+          <li>if you want to rearrange menu structure, you need to
+          rearrange the code</li>
+          <ul>
+            <li>sometimes causes problems with signal connections,
+            etc</li>
+          </ul>
+        </ul>
+        <li>To enable or disable a user action, you must alter the
+        state of the GtkMenuItem or toolbar button.</li>
+        <ul>
+          <li>if you have multiple ways of performing the action, you
+          need to alter all widgets.</li>
+        </ul>
+        <li>Doesn't even attempt to handle things like menu
+        merging</li>
+      </ul>
+    </s:content>
+  </s:slide>
+
+  <s:slide>
+    <s:title>Actions</s:title>
+    <s:content>
+      <ul>
+        <li>Represent something the user can do</li>
+        <ul>
+          <li>a callback (or more than one)</li>
+          <li>a label to use in menu items</li>
+          <li>maybe a shorter label for toolbar buttons</li>
+          <li>an icon</li>
+          <li>state (sensitivity, visibility, etc)</li>
+        </ul>
+        <li>Can create an arbitrary number of menu items and toolbar
+        buttons for an action</li>
+        <ul>
+          <li>properties and state of menu/toolbar items mirror the
+          action they represent</li>
+          <li>set action to disabled -> all widgets representing the
+          action are disabled</li>
+        </ul>
+        <li>Different types of actions (extensible)</li>
+      </ul>
+    </s:content>
+  </s:slide>
+
+  <s:slide>
+    <s:title>Action Groups</s:title>
+    <s:content>
+      <ul>
+        <li>Actions are grouped together into groups of related
+        actions</li>
+        <ul>
+          <li>actions that should be available in the same
+          context</li>
+          <li>global actions: quit, new, open, etc</li>
+          <li>document specific actions: save</li>
+          <li>mode specific: actions needed when in a particular
+          mode</li>
+          <ul>
+            <li>table editing in a word processor</li>
+            <li>drawing layer in a spreadsheet</li>
+          </ul>
+        </ul>
+        <li>Simple apps may have one action group</li>
+        <li>Complex apps will have multiple groups.</li>
+      </ul>
+    </s:content>
+  </s:slide>
+
+  <s:slide>
+    <s:title>UI Merging (continued)</s:title>
+    <s:content>
+      <ul>
+        <li>Orthogonal to actions</li>
+        <ul>
+          <li>(some toolkits have actions, but do not provide a menu
+          merge API).</li>
+        </ul>
+        <li>Used to overlay a set of menu/tool items onto another set,
+        and demerge them later.</li>
+        <li>A tree of menus and toolbars is maintained, with names
+        attached to nodes.</li>
+        <li>Nodes map to actions</li>
+        <ul>
+          <li>if action is provided by multiple action groups, top
+          action group wins</li>
+        </ul>
+        <li>Menu layouts described by XML files</li>
+        <ul>
+          <li>based on a subset of the Bonobo UI format</li>
+          <li>translatable strings kept out of the XML file</li>
+        </ul>
+      </ul>
+    </s:content>
+  </s:slide>
+
+  <s:slide>
+    <s:title>Merge Example</s:title>
+    <s:content>
+      <table width="95%" border="1" align="center">
+        <tr>
+          <th width="50%">file1.ui</th>
+          <th width="50%">file2.ui</th>
+        </tr>
+        <tr>
+          <td valign="top">
+            <pre>Root
+  menu
+    submenu: FileMenu
+      menuitem: Open
+    placeholder: TestPlaceholder
+    submenu: HelpMenu
+      menuitem: About
+  dockitem: toolbar1
+    toolitem: NewButton</pre>
+          </td>
+          <td valign="top">
+            <pre>Root
+  menu
+    submenu: FileMenu
+      separator
+      menuitem: Quit
+    placeholder: TestPlaceholder
+      submenu: EditMenu
+        menuitem: Cut
+  dockitem: toolbar1
+    toolitem: OpenButton</pre>
+          </td>
+        </tr>
+      </table>
+    </s:content>
+  </s:slide>
+
+  <s:slide>
+    <s:title>Merged UI</s:title>
+    <s:content>
+      <pre>Root
+  menu
+    submenu: FileMenu
+      menuitem: Open
+      separator
+      menuitem: Quit
+    placeholder: TestPlaceholder
+      submenu: EditMenu
+        menuitem: Cut
+    submenu: HelpMenu
+      menuitem: About
+  dockitem: toolbar1
+    toolitem: NewButton
+    toolitem: OpenButton</pre>
+    </s:content>
+  </s:slide>
+
+  <s:slide>
+    <s:title>UI Merging (continued)</s:title>
+    <s:content>
+      <ul>
+        <li>Nodes merged based on names</li>
+        <ul>
+          <li>if node has no name, the node type is used as the
+          name</li>
+        </ul>
+        <li>New nodes appended to containers</li>
+        <ul>
+          <li>there is a flag to prepend instead</li>
+        </ul>
+        <li>Placeholders are "virtual containers" used to add
+        ordering</li>
+      </ul>
+    </s:content>
+  </s:slide>
+
+  <s:slide>
+    <s:title>Putting it into Practise</s:title>
+    <s:content>
+      <p>Creating an action:</p>
+      <pre class="programlisting">
+action = g_object_new(EGG_TYPE_ACTION,
+                      "name", "quit",
+                      "label", _("Quit"),
+                      "tooltip", _("Quits the application"),
+                      "stock_id", GTK_STOCK_QUIT,
+                      NULL);</pre>
+
+      <p>Creating an action group:</p>
+      <pre class="programlisting">
+action_group = egg_action_group_new("base_actions");
+egg_action_group_add_action(action_group, action);</pre>
+    </s:content>
+  </s:slide>
+
+  <s:slide>
+    <s:title>Putting it into Practise (continued)</s:title>
+    <s:content>
+      <p>Creating the <tt>EggMenuMerge</tt> object:</p>
+      <pre class="programlisting">
+merge = egg_menu_merge_new();
+egg_menu_merge_insert_action_group(merge, action_group, 0);</pre>
+
+      <p>Adding some menus:</p>
+      <pre class="programlisting">
+merge_id = egg_menu_merge_add_ui_from_file(merge, "menus.ui", &amp;err);</pre>
+
+      <p>Getting the menu bar:</p>
+      <pre class="programlisting">
+menubar = egg_menu_merge_get_widget(merge, "Root/menu");</pre>
+
+      <p>Removing menu items:</p>
+      <pre class="programlisting">
+egg_menu_merge_remove_ui(merge, merge_id);</pre>
+    </s:content>
+  </s:slide>
+
+  <s:slide>
+    <s:title>Accelerators</s:title>
+    <s:content>
+      <p>Accelerators are handled by the GTK accelerator map.</p>
+      <ul>
+	<li>All actions are assigned an accelerator path of the
+	form:
+	<pre class="programlisting">
+&lt;Actions&gt;/<i>group-name</i>/<i>action-name</i></pre>
+	</li>
+	<li>A shortcut is associated with this accelerator path.</li>
+	<li>All menu and toolbar items take on this accelerator
+	path.</li>
+	<li>The GTK accel map code makes sure that the correct
+	shortcut displays next to the menu item.</li>
+      </ul>
+      <p>This has the following benefits:</p>
+      <ul>
+	<li>Two user interface elements representing the same action
+	can be activated with the same keyboard shortcut.</li>
+	<li>If dynamic shortcut editing is turned on, it will work
+	correctly for EggMenu based menus.</li>
+      </ul>
+    </s:content>
+  </s:slide>
+
+  <s:slide>
+    <s:title>Accessibility Concerns</s:title>
+    <s:content>
+      <ul>
+	<li>Hasn't been investigated much so far.</li>
+	<li>We have the ability to provide a lot more information to
+	accessibility tools compared to the older menu system:</li>
+	<ul>
+	  <li>If two widgets in the UI will perform the same action,
+	  we could make that relation explicit.</li>
+	  <li>As an alternative to navigating all the menus, an AT
+	  could provide a way to trigger actions directly.</li>
+	</ul>
+      </ul>
+    </s:content>
+  </s:slide>
+
+  <s:slide>
+    <s:title>EggMenu To Do</s:title>
+    <s:content>
+      <ul>
+        <li>API for adding dynamic menu items.  Will probably look
+        like this:</li>
+        <ul>
+          <li>create a merge ID.</li>
+	  <li>manually create a node in the menu tree using that merge
+	  ID.</li>
+        </ul>
+        <li>Get more apps to test EggMenu API</li>
+        <ul>
+	  <li>Find out what is needed.</li>
+          <li>Make things more robust.</li>
+        </ul>
+      </ul>
+    </s:content>
+  </s:slide>
+
+</s:slideset>

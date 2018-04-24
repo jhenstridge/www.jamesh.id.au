@@ -1,0 +1,15 @@
+
+New Defs Format
+
+Defs files are used by language bindings as prototypes for functions provided by the library
+composed of s-expressions
+used by Guile, Python, Perl and PHP gtk+ bindings
+Old defs format lacks some useful information
+only defines object heirachy, and functions
+doesn't link functions to classes as methods
+New defs format has more information
+original specification by Havoc
+makes class <-> method relationships explicit
+more type information
+Takes guess work out of code generation
+

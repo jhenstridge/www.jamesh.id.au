@@ -1,0 +1,75 @@
+html, body {
+  font-family: sans-serif;
+  color: black;
+  background-color: white;
+}
+
+pre.programlisting {
+  margin-left: 5em;
+  margin-right: 5em;
+  padding: 0.5em;
+  clear: both;
+
+  color: black;
+  background-color: #eeeeff;
+  border: solid 1px #aaaaff;
+}
+
+hr {
+  width: 80%;
+  border: 0px;
+  background-color: #7f7f7f;
+}
+
+div#menu {
+  float: right;
+
+  margin: 1em;
+  border: 1px solid black;
+  padding: 0.75em;
+  -moz-border-radius: 0.75em;
+
+  color: black;
+  background-color: white;
+}
+
+div#menu ul {
+  padding-left: 1em;
+  margin: 0em;
+
+  list-style-type: square;
+}
+
+div.bottombar {
+  text-align: center;
+  clear: both;
+}
+
+div.credits {
+  text-align: center;
+}
+
+div.navigation {
+  margin-left: 25%;
+  margin-right: 25%;
+  padding: 0.25em;
+  clear: both;
+
+  text-align: center;
+  color: black;
+  background-color: #dfdfdf;
+}
+
+div.fractal {
+  float: left;
+  margin-right: 1em;
+  margin-bottom: 1em;
+}
+
+div.equation {
+  font-family: serif;
+  font-style: italic;
+  font-size: 150%;
+  text-align: center;
+  padding: 0.25em;
+}

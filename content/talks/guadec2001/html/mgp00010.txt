@@ -1,0 +1,10 @@
+
+GTK 2.0
+
+Base object system moved to glib
+base type is now GObject
+more flexible signal emission system
+UTF-8 as internal encoding for user visible strings
+New GDK targets (framebuffer, win32)
+New widgets
+

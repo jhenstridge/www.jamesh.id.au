@@ -1,0 +1,89 @@
+<?xml version="1.0"?> <?emacs -*- mode: nxml -*- ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Libglade</title>
+  </head>
+  <body>
+    <h1>Libglade</h1>
+
+    <p>Libglade is a library that performs a similar job to the C
+    source output routines in the <a
+    href="http://glade.gnome.org/">GLADE user interface builder</a>.
+    Whereas GLADE's output routines create C source code that must be
+    compiled, libglade builds the interface from an XML file (GLADE's
+    save format) at runtime.  This can allow modifying the user
+    interface without recompiling.</p>
+
+    <p>Libglade can also automatically connect signal handlers in the
+    user interface.  It does this by matching handler names specified
+    in the glade file with symbols in the executable looked up with
+    the gmodule library (this requires that applications be linked
+    with the <kbd>--export-dynamic</kbd> flag).</p>
+
+    <p>A minimal libglade program in C looks like this:</p>
+
+<pre class="programlisting">
+#include &lt;gtk/gtk.h&gt;
+#include &lt;glade/glade.h&gt;
+
+void
+some_handler(GtkWidget *widget)
+{
+    /* a handler referenced by the glade file.  Must not be static
+     * so that it appears in the global symbol table. */
+}
+
+int
+main(int argc, char **argv)
+{
+    GladeXML *xml;
+    GtkWidget *widget;
+
+    gtk_init(&amp;argc, &amp;argv);
+    xml = glade_xml_new("<var>filename.glade</var>", NULL, NULL);
+
+    /* get a widget (useful if you want to change something) */
+    widget = glade_xml_get_widget(xml, "<var>widgetname</var>");
+
+    /* connect signal handlers */
+    glade_xml_signal_autoconnect(xml);
+
+    gtk_main();
+
+    return 0;
+}
+</pre>
+
+    <p>There are also <a href="../pygtk/">Python
+    bindings</a> for libglade.  This makes a nice rapid application
+    development system.  The Python equivalent of the above program
+    is:</p>
+
+<pre class="programlisting">
+<b>import</b> gtk
+<b>import</b> gtk.glade
+
+<b>def</b> some_handler(widget):
+    <b>pass</b>
+
+xml = gtk.glade.XML('<var>filename.glade</var>')
+widget = xml.get_widget('<var>widgetname</var>')
+xml.autoconnect({
+  'some_handler': some_handler
+})
+gtk.main()
+</pre>
+
+    <h2>Downloads</h2>
+
+    <p>Libglade can be downloaded from ftp.gnome.org or its
+    mirrors:</p>
+
+    <ul>
+      <li><a href="http://ftp.gnome.org/pub/GNOME/sources/libglade/2.0/">http://ftp.gnome.org/pub/GNOME/sources/libglade/2.0/</a></li>
+    </ul>
+
+  </body>
+</html>

@@ -1,0 +1,503 @@
+<?xml version="1.0"?>
+<s:slideset xmlns="http://www.w3.org/1999/xhtml"
+            xmlns:s="http://www.oscom.org/2003/SlideML/1.0/"
+            xml:lang="en-AU">
+  <s:metadata>
+    <s:title>Remote Control and Scripting of Gnome Applications with
+    Python</s:title>
+ 
+    <s:authorgroup>
+      <s:author>
+        <s:givenname>James</s:givenname>
+        <s:familyname>Henstridge</s:familyname>
+        <s:email>james@daa.com.au</s:email>
+      </s:author>
+    </s:authorgroup>
+ 
+    <s:confgroup>
+      <s:conftitle>linux.conf.au 2004</s:conftitle>
+      <s:address>Adelaide, Australia</s:address>
+    </s:confgroup>
+  </s:metadata>
+
+  <s:slide>
+    <s:title>Introduction</s:title>
+    <s:content>
+      <p>What can be done on Windows</p>
+      <p>Possible solutions available for Linux desktops</p>
+      <p>Scripting with the Gnome Accessibility Interface</p>
+      <p>Future directions.</p>
+    </s:content>
+  </s:slide>
+
+  <s:slide>
+    <s:title>Remote Control on Windows</s:title>
+    <s:content>
+      <p>Many large applications expose their document model via
+      COM</p>
+      <ul>
+	<li>unified interface for in-process and out of process method
+	invocations.</li>
+      </ul>
+      <p>Once a language has a COM binding, it has access to the COM
+      objects on the machine.</p>
+      <ul>
+	<li>no need for a specialised language specific interface for
+	each application.</li>
+	<li>apps only need to expose their interfaces once.</li>
+      </ul>
+      <p>Real power due to its ubiquity</p>
+    </s:content>
+  </s:slide>
+
+  <s:slide>
+    <s:title>Remote Control of GUI Apps on Linux</s:title>
+    <s:content>
+      <p>No ubiquitous standard like COM</p>
+      <p>There are KDE allows some scriptability with DCOP</p>
+
+      <p>Some Gnome apps have CORBA interfaces for some of their
+      functionality.</p>
+      <ul>
+	<li>not many apps do this, and not much is exposed.</li>
+      </ul>
+
+      <p>Gnome Accessibility framework provides an other way to script
+      applications.</p>
+      <ul>
+	<li>controls the user interface rather than the data model
+	though</li>
+	<li>Gives some level of control over all many apps</li>
+      </ul>
+    </s:content>
+  </s:slide>
+
+  <s:slide>
+    <s:title>Why is the Accessibility Framework Interesting?</s:title>
+    <s:content>
+      <p>An accessibility tool is used in place of the standard input
+      or output of a program.</p>
+      <ul>
+	<li>Needs to understand what the UI is displaying.</li>
+	<li>Needs to get notification of various application events.
+	  <ul>
+	    <li>focus changes, keyboard input, window manager events,
+	    etc.</li>
+	  </ul>
+	</li>
+	<li>Generate keyboard and mouse events.</li>
+      </ul>
+      <p>Accessibility tool requirements overlap with those of remote
+      control or scripting.</p>
+      <p>There are laws in various countries requiring government
+      purchases of software to favour accessible solutions, so it is
+      in the best interest of companies selling Gnome to make sure it
+      works.</p>
+    </s:content>
+  </s:slide>
+
+  <s:slide>
+    <s:title>Gnome Accessibility Stack</s:title>
+    <s:content>
+      <table class="border" align="center">
+	<tr>
+	  <td colspan="2" style="background: #faa">
+	    <b>Accessibility<br />tools</b>
+	  </td>
+	  <td colspan="2" style="background: #aaf">
+	    <b>Accessibility<br />Registry</b>
+	  </td>
+	</tr>
+	<tr style="background: black; color: white">
+	  <td colspan="4">
+	    <small><b>CORBA IPC</b></small>
+	  </td>
+	</tr>
+	<tr>
+	  <td colspan="3" width="66%" style="background: #afa">
+	    <b>AT-SPI</b>
+	    (libatk-bridge.so)
+	  </td>
+	  <td rowspan="2" style="background: #ffa">
+	    <b>Java a11y Bridge</b>
+	  </td>
+	</tr>
+	<tr style="background: #afa">
+	  <td colspan="3"><b>ATK</b></td>
+	</tr>
+	<tr>
+	  <td width="33%" style="background: #afa"><b>GAIL</b></td>
+	  <td colspan="2" style="background: #aaa">
+	    <b>KDE Accessibility Bridge</b>
+	  </td>
+	  <td rowspan="2" style="background: #ffa">
+	    <b>Swing</b>
+	  </td>
+	</tr>
+	<tr>
+	  <td style="background: #afa"><b>GTK</b></td>
+	  <td colspan="2" style="background: #aaa"><b>Qt</b></td>
+	</tr>
+      </table>
+    </s:content>
+  </s:slide>
+
+  <s:slide>
+    <s:title>Gnome Accessibility Stack (continued)</s:title>
+    <s:content>
+      <p>ATK</p>
+      <ul>
+	<li>In process.</li>
+	<li>Maintains a tree of objects that describe the user
+	interface.</li>
+	<li>Application authors can add information to this tree.</li>
+      </ul>
+      <p>libatk-bridge.so</p>
+      <ul>
+	<li>In process.</li>
+	<li>Implements the AT-SPI CORBA interfaces, exposing the
+	information ATK maintains.</li>
+      </ul>
+      <p>Accessibility Registry</p>
+      <ul>
+	<li>Accessible applications register with the registry.</li>
+	<li>Allows a11y tools to find applications.</li>
+	<li>Allows a11y tools to register global event listeners.</li>
+      </ul>
+    </s:content>
+  </s:slide>
+
+  <s:slide>
+    <s:title>Enabling the Accessibility Framework</s:title>
+    <s:content>
+      <p>By default, the Gnome accessibility framework is
+      disabled.</p>
+
+      <p>In order to turn it on, from the Applications menu, choose
+      <b>Desktop Preferences</b>, then <b>Accessibility</b> and then
+      <b>Assistive Technology Preferences</b>.  Check the "enable
+      assistive technologies" check box and then log out and back in
+      again.</p>
+
+      <p>Applications should now provide the AT-SPI interfaces and
+      connect to the accessibility registry.</p>
+    </s:content>
+  </s:slide>
+
+  <s:slide>
+    <s:title>Implementation Details</s:title>
+    <s:content>
+      <p>AT-SPI CORBA interface is made up of Bonobo components.</p>
+      <p>A11y tools find the registry using Bonobo activation.</p>
+      <p>Scripting languages with CORBA bindings can make use of the
+      framework with little or no extras.</p>
+      <ul>
+	<li>Python will be used in the examples, making use of
+	PyORBit.</li>
+      </ul>
+    </s:content>
+  </s:slide>
+
+  <s:slide>
+    <s:title>Bonobo</s:title>
+    <s:content>
+      <p>Bonobo is a component system that draws ideas from COM.</p>
+      <p>Components are made up of collections of interfaces tied
+      together using aggregation</p>
+      <ul>
+	<li>As opposed to being a single object using multiple
+        inheritance.</li> 
+      </ul>
+      <p>Each interface on the component derives from
+      <tt>Bonobo::Unknown</tt></p>
+      <p><tt>Bonobo::Unknown</tt> consists of three methods:</p>
+      <ul>
+	<li><tt>ref()</tt> and <tt>unref()</tt> for memory
+	management.</li>
+	<li><tt>queryInterface()</tt> for discovering other interfaces
+	in the component.</li>
+      </ul>
+    </s:content>
+  </s:slide>
+
+  <s:slide>
+    <s:title>Bonobo Activation</s:title>
+    <s:content>
+      <p>The Bonobo activation framework is used to find server
+      implementations based on the results of queries.</p>
+      <p>Queries can be performed based on:</p>
+      <ul>
+	<li>the unique identifier of a component implementation.</li>
+	<li>what interfaces the component implements.</li>
+	<li>arbitrary properties associated with the component.
+	  <ul>
+	    <li>eg. human readable name, description, supported mime
+	    types.</li>
+	  </ul>
+	</li>
+      </ul>
+      <p>If the matching component isn't currently running, Bonobo
+      activation can activate a new instance.</p>
+      <ul>
+	<li>For out of process components, the component will be
+	forked and executed.</li>
+	<li>For in process components, the component is opened with
+	<tt>dlopen()</tt> and constructed.</li>
+      </ul>
+    </s:content>
+  </s:slide>
+
+  <s:slide>
+    <s:title>Scripting Languages</s:title>
+    <s:content>
+      <p>Rather than needing special support for the accessibility
+      framework, a scripting language only needs a CORBA binding and
+      be able to activate components with Bonobo activation.</p>
+
+      <p>Python can be used for this purpose using the <b>pyorbit</b>
+      and <b>gnome-python</b> packages.</p>
+
+      <p>Unlike some Python ORBs, pyorbit takes advantage of ORBit's
+      introspection features, allowing it to load up interfaces at
+      runtime.  This can happen in one of three ways:</p>
+
+      <ul>
+	<li>a type library can be loaded, which contains information
+	about a related set of interfaces.</li>
+	<li>IDL files can be parsed at runtime to create interface
+	info.</li>
+	<li>If you connect to a server implemented with ORBit, pyorbit
+	can download the interface info from it.</li>
+      </ul>
+
+    </s:content>
+  </s:slide>
+
+  <s:slide>
+    <s:title>Accessibility Data Model</s:title>
+    <s:content>
+      <p>To use the accessibility framework, you first need to
+      get a reference to the registry.  This can be done by activating
+      the identifier <tt>OAFIID:Accessibility_Registry:1.0</tt>.</p>
+
+      <p>The registry's <tt>getDesktop()</tt> method can be used to
+      get access to the desktop(s) in the login session.</p>
+
+      <p>The desktop object is the root of a tree of
+      <tt>Accessible</tt> objects, with applications as the
+      children.</p>
+
+      <p>Application accessibles have window frames as children.</p>
+    </s:content>
+  </s:slide>
+
+  <s:slide>
+    <s:title>Accessibles</s:title>
+    <s:content>
+      <p>Accessible objects provide the following:</p>
+      <ul>
+	<li>A name and description</li>
+	<li>The "role" of the accessible.</li>
+	<li>A list of child accessibles.  Can be accessed using the
+	  <tt>getChildAtIndex()</tt> method.</li>
+	<li>Relationships to other accessibles.</li>
+	<li>A set of currently active states for the accessible.</li>
+      </ul>
+
+      <p>In addition, an accessible may implement additional
+      accessibility interfaces.  The role attribute may indicate that
+      the accessible supports certain other interfaces.</p>
+    </s:content>
+  </s:slide>
+
+  <s:slide>
+    <s:title>Specialised Interfaces</s:title>
+    <s:content>
+      <p><tt>queryInterface()</tt> can be used to discover the
+      additional interfaces of the accessible.</p>
+
+      <table align="center" border="">
+	<tr>
+	  <td>Action</td>
+	  <td>Actions that can be invoked on the accessible.</td>
+	</tr>
+	<tr>
+	  <td>Component</td>
+	  <td>A "widget"</td>
+	</tr>
+	<tr>
+	  <td>Text and EditableText</td>
+	  <td>Text contained in the accessible.</td>
+	</tr>
+	<tr>
+	  <td>Hypertext</td>
+	  <td>URLs found in the accessible.</td>
+	</tr>
+	<tr>
+	  <td>Image</td>
+	  <td>Image information.</td>
+	</tr>
+	<tr>
+	  <td>Selection</td>
+	  <td>Option list style behaviour</td>
+	</tr>
+	<tr>
+	  <td>Stream</td>
+	  <td>Retrieve content in various formats.</td>
+	</tr>
+	<tr>
+	  <td>Table</td>
+	  <td>A table of other accessibles.</td>
+	</tr>
+	<tr>
+	  <td>Value</td>
+	  <td>A range value.</td>
+	</tr>
+      </table>
+    </s:content>
+  </s:slide>
+
+  <s:slide>
+    <s:title>Events</s:title>
+    <s:content>
+      <p>The accessibility registry can also be used to listen for and
+      create events.</p>
+      <p>The <tt>registerGlobalEventListener()</tt> method can be used
+      to register an event listener object to receive events of a
+      particular type.  When such an event occurs, the listener's
+      <tt>notifyEvent()</tt> method will be invoked.</p>
+      <ul>
+	<li>events include "<tt>focus:</tt>", "<tt>mouse:button</tt>",
+	"<tt>object:state-changed</tt>",
+	"<tt>object:text-changed</tt>".</li>
+      </ul>
+      <p>To generate keyboard and mouse events, we call the registry's
+      <tt>getDeviceEventController()</tt> method to get an
+      <tt>Accessible::DeviceEventController</tt> object.</p>
+
+      <p>The <tt>generateKeyboardEvent()</tt> and
+      <tt>generateMouseEvent()</tt> methods on this object are used to
+      synthesise the events.</p>
+    </s:content>
+  </s:slide>
+
+  <s:slide>
+    <s:title>Using the Accessibility Framework from Python</s:title>
+    <s:content>
+      <p>The following is the boilerplate code needed to start using
+      the a11y interfaces.</p>
+      <pre class="programlisting">
+import ORBit
+import bonobo, gnome
+
+ORBit.load_typelib('Accessibility')
+gnome.init('list-apps', '0.0')
+ 
+REGISTRY_IID = 'OAFIID:Accessibility_Registry:1.0'
+registry = bonobo.activation.activate("iid == '%s'" % REGISTRY_IID)</pre>
+      <p>We can then get a reference to the desktop with:</p>
+      <pre class="programlisting">
+desktop = registry.getDesktop(0)</pre>
+    </s:content>
+  </s:slide>
+
+  <s:slide>
+    <s:title>Accessibility Framework and Python (continued)</s:title>
+    <s:content>
+      <p>Iterating over the children of an accessible is trivial.  The
+      following code lists the currently running accessible
+      applications:</p>
+
+      <pre class="programlisting">
+for i in range(desktop.childCount):
+    child = desktop.getChildAtIndex(i)
+    print child.name
+    child.unref()</pre>
+
+      <p>If we have an accessible corresponding to an entry field,
+      queryInterface() can be used to use the
+      <tt>Accessibility::Text</tt> methods on it:</p>
+      <pre class="programlisting">
+text = accessible.queryInterface('IDL:Accessible/Text:1.0')
+print text.getText(0, text.characterCount)</pre>
+
+    </s:content>
+  </s:slide>
+
+  <s:slide>
+    <s:title>Event Listeners</s:title>
+    <s:content>
+      <p>Listening for events requires the creation of a CORBA
+      servant:</p>
+
+      <pre class="programlisting">
+import Accessibility__POA
+class MyListener(Accessibility__POA.EventListener):
+    def ref(self): pass
+    def unref(self): pass
+    def queryInterface(self, repo_id):
+        if repo_id == 'IDL:Accessibility/EventListener:1.0':
+            return self._this()
+        else:
+            return None
+
+    def notifyEvent(self, event):
+        print event.source.getRoleName()
+
+listener = MyListener()
+objref = listener._this()
+listener._default_POA().the_POAManager.activate()</pre>
+    </s:content>
+  </s:slide>
+
+  <s:slide>
+    <s:title>Examples</s:title>
+    <s:content>
+      <dl>
+	<dt><b><a href="list-apps.py">list-apps.py</a></b></dt>
+	<dd>Lists all the accessible apps currently running.</dd>
+	<dt><b><a href="dump-tree.py">dump-tree.py</a></b></dt>
+	<dd>dumps the accessible tree for a particular app.</dd>
+	<dt><b><a href="follow-focus.py">follow-focus.py</a></b></dt>
+	<dd>Prints information about the currently focused
+	application.</dd>
+	<dt><b><a href="spell-check.py">spell-check.py</a></b></dt>
+	<dd>suggests corrections for mis-spellings found in text
+	accessibles.</dd>
+	<dt><b><a
+	href="open-nautilus.py">open-nautilus.py</a></b></dt>
+	<dd>performs the "open" aciton on the first icon found.</dd>
+      </dl>
+    </s:content>
+  </s:slide>
+
+  <s:slide>
+    <s:title>Other Ideas</s:title>
+    <s:content>
+      <p>Use the <tt>Accessibility::EditableText</tt> interface to
+      provide a universal spelling correction program, rather than
+      simply identifying mistakes.</p>
+      <p>Monitor hyperlinks in focused accessible, and suggest actions
+      (similar to klipper and the selection).</p>
+      <p>Test suites for the GUI of applications.</p>
+    </s:content>
+  </s:slide>
+
+  <s:slide>
+    <s:title>Conclusion</s:title>
+    <s:content>
+      <p>Will we eventually get a desktop-neutral scripting
+      system?</p>
+      <ul>
+	<li>D-BUS might be the answer.</li>
+      </ul>
+      <p>For full document model scripting, things need to be easy to
+      implement.</p>
+      <ul>
+	<li>Implementing CORBA interfaces in C is non trivial.</li>
+	<li>COM has the benefit of being ubiquitous on Windows, so the
+	cost/benefits ratio is different.</li>
+      </ul>
+    </s:content>
+  </s:slide>
+</s:slideset>

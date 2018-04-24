@@ -1,0 +1,47 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-AU" xml:lang="en-AU">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Scripting Languages</title>
+<link rel="up" title="Index" href="index.html" />
+<link rel="prev" title="Introduction" href="slide10.html" />
+<link rel="next" title="Accessibility Data Model" href="slide12.html" />
+<link rel="stylesheet" type="text/css" href="slides.css" /><link rel="stylesheet" type="text/css" href="custom.css" />
+<style type="text/css" media="screen, projection" id="screen-style">
+      html, body { font-size: 24pt; }
+    </style>
+<script type="text/javascript" src="slides.js"></script>
+</head>
+<body>
+<div id="content">
+<h1>Scripting Languages</h1>
+
+      <p>Rather than needing special support for the accessibility
+      framework, a scripting language only needs a CORBA binding and
+      be able to activate components with Bonobo activation.</p>
+
+      <p>Python can be used for this purpose using the <b>pyorbit</b>
+      and <b>gnome-python</b> packages.</p>
+
+      <p>Unlike some Python ORBs, pyorbit takes advantage of ORBit's
+      introspection features, allowing it to load up interfaces at
+      runtime.  This can happen in one of three ways:</p>
+
+      <ul>
+	<li>a type library can be loaded, which contains information
+	about a related set of interfaces.</li>
+	<li>IDL files can be parsed at runtime to create interface
+	info.</li>
+	<li>If you connect to a server implemented with ORBit, pyorbit
+	can download the interface info from it.</li>
+      </ul>
+
+    
+</div>
+<div id="navfooter">
+<span id="slidenumber">Slide 11 / 21</span>
+<a id="prev" title="Introduction" href="slide10.html">Prev</a>
+<a id="next" title="Accessibility Data Model" href="slide12.html">Next</a>
+</div>
+</body>
+</html>

@@ -1,0 +1,14 @@
+
+UI Merging (continued)
+
+Orthogonal to actions
+some toolkits have the action concept without menu merging).
+Used to overlay a set of menu/tool items onto another set.
+and demerge them
+A tree of menus and toolbars is maintained, with names attached to nodes.
+Nodes map to actions
+if action is provided by multiple action groups, top action group wins
+Menu layouts described by XML files
+based on Bonobo UI format
+translatable strings kept out of the XML file
+

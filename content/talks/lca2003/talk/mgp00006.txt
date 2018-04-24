@@ -1,0 +1,10 @@
+
+The 1.x Platform
+
+Something that other people could develop against.
+Some cruft removed from platform libraries
+Keep stuff that was actually being used, and we would be able to maintain
+Maintained backward compatibility throughout 1.x series.
+most new features were implemented in new releases of the platform, but not all.
+(eg. some packages would require gnome-libs-1.2.3 because they used a 5 line function that was added in that release).
+

@@ -1,0 +1,56 @@
+<?xml version="1.0"?> <?emacs -*- mode: nxml -*- ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>What Does This Applet Do</title>
+  </head>
+  <body>
+    <h1>What Does This Applet Do</h1>
+    
+    <p>This set of applets are built on an extendable fractal engine.
+    It is capable of zooming in on the fractal, changing the
+    resolution, from within the applet, and switching between
+    Mandelbrot and Julia Set equivalents.</p>
+    
+    <p>It is so easily extendable, you can create another applet that
+    extends the original Mandelbrot applet to use a different formula,
+    without any loss in functionality, and by only writing about 10
+    lines of code.  Some examples are available on this site,
+    including the Mandel3, Mandel4 and Phoenix fratal types.  These
+    three include source code.</p>
+    
+    <p>In the box at the bottom of the applet, there are a number of
+    controls.  The first is a list box, which allows you to select the
+    resolution.  The last three are buttons; the first just redrawing the
+    set, the second allowing you to select a region with your mouse, and
+    the last alows you to switch between Mandelbrot and Julia Set
+    equivalents.  If you are switching to a Julia Set, it will prompt you
+    for a point, to use as <i>c</i>.</p>
+    
+    <p>The applet can take a number of parameters.  These are:</p>
+
+    <dl>
+      <dt><kbd>top, bottom, left, right</kbd></dt>
+        <dd>These parameters specify the window to use.</dd>
+      <dt><kbd>type</kbd></dt>
+        <dd>This specifies whether to do a Mandelbrot or Julia Set.  Its
+        value must be mandel or julia.</dd>
+      <dt><kbd>creal, cimag</kbd></dt>
+        <dd>Specifies the real and imaginary parts of <i>c</i>.  Only
+        effective if <kbd>type = julia</kbd>.</dd>
+      <dt><kbd>maxiter</kbd></dt>
+        <dd>Specifies the maximum number of iterations.</dd>
+      <dt><kbd>resolution</kbd></dt>
+        <dd>Specifies the initial resolution.  Must be 1, 2, 5 or 10.</dd>
+      <dt><kbd>nocontrols</kbd></dt>
+        <dd>If set to true, the controls are not displayed at the bottom of
+        the screen.</dd>
+    </dl>
+
+    <div class="navigation">
+      <a href="../">Contents</a>
+      | <a href="formula.html">Next &gt;&gt;&gt;</a>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,18 @@
+
+Merged UI
+
+Root
+  menu
+    submenu: FileMenu
+      menuitem: Open
+      separator
+      menuitem: Quit
+    placeholder: TestPlaceholder
+      submenu: EditMenu
+        menuitem: Cut
+    submenu: HelpMenu
+      menuitem: About
+  dockitem: toolbar1
+    toolitem: NewButton
+    toolitem: OpenButton
+

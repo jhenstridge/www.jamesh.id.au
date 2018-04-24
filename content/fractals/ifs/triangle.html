@@ -1,0 +1,48 @@
+<?xml version="1.0"?> <?emacs -*- mode: nxml -*- ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Sierpinski Triangle</title>
+    <meta name="description" content="This is an applet that draws a triangular Sierpinski Gasket.  Written by James Henstridge." />
+    <meta name="keywords" content="java, applet, fractal, iterated function system, IFS, sierpinski, gasket" />
+  </head>
+  <body>
+    <h1>Sierpinski triangle (default)</h1>
+
+    <div class="fractal">
+      <applet code="ifs.class" height="300" width="400">
+        <param name="bgcolour" value="ffffff" />
+        <param name="fgcolour" value="3000ff" />
+        <hr />
+        <p>If your browser supported Java, You would see a nice
+        fractal here.</p>
+        <hr />
+      </applet>
+    </div>
+
+    <p>This is a Sierpinski Gasket drawn using an <dfn>Iterated
+    Function System</dfn>.  This fractal was originally thought up by
+    W. Sierpinski and predates the Mandelbrot Set.  It was originally
+    produced by starting with a triangle, cutting out the middle, and
+    repeating the process infinitely.</p>
+
+    <p>In this way, you can see that at each iteration, one quater of
+    the original triangle is removed.  That is, three quaters of the
+    area of the original triangle is left after the first iteration.
+    From this observation, it is not hard to infer that after n
+    iterations, the area of the gasket would be (0.75)<sup>n</sup>
+    times the area of the original triangle.  So after an infinite
+    number of iterations, you would find there was no area at all.</p>
+
+    <p>Of course, this generator uses an IFS system instead of the
+    above mentioned method, because it gives a beter picture quicker,
+    and this is a demonstration of my IFS applet.</p>
+
+    <div class="navigation">
+      <a href="javaifs.html">&lt;&lt;&lt; Previous</a>
+      | <a href="../">Contents</a>
+      | <a href="fern.html">Next &gt;&gt;&gt;</a>
+    </div>
+  </body>
+</html>

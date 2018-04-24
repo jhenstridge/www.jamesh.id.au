@@ -1,0 +1,63 @@
+<?xml version="1.0"?> <?emacs -*- mode: nxml -*- ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>My Java IFS Fractal Generator</title>
+  </head>
+  <body>
+    <h1>My Java IFS Fractal Generator</h1>
+
+    <p>This is my IFS fractal generator.  It is a simple single class
+    java applet, and is only 3 kilobytes.  I have written it in such a
+    way that it can easily be extended to do other IFS fractals, other
+    than the default Sierpinski Triangular Gasket.  It does this
+    through <code>&lt;param&gt;</code> tags passed to the applet.  As
+    an example of the extensibility, I have included a number of extra
+    fractals which use non-default IFS rules.</p>
+    
+    <p>The IFS rules are defined through <code>&lt;param&gt;</code>
+    tags as well and have the same format as those in fractint
+    <kbd>.IFS</kbd> files.</p>
+    
+    <p>For those who wish to include this applet on their own pages, here is
+    a summary of the parameters that can be passed to the applet:</p>
+
+    <dl>
+      <dt><kbd>lines</kbd></dt>
+        <dd>The number of IFS rules.</dd>
+      <dt><kbd>line<i>n</i></kbd></dt>
+        <dd>Defines of IFS rule <i>n</i>.</dd>
+      <dt><kbd>top</kbd></dt>
+        <dd>Defines top bound of window.</dd>
+      <dt><kbd>bottom</kbd></dt>
+        <dd>Defines bottom bound of window.</dd>
+      <dt><kbd>left</kbd></dt>
+        <dd>Defines left bound of window.</dd>
+      <dt><kbd>right</kbd></dt>
+        <dd>Defines right bound of window.</dd>
+      <dt><kbd>dots</kbd></dt>
+        <dd>Defines the number of dots to draw.  This is also the number of
+        iterations.</dd>
+      <dt><kbd>fgcolor, fgcolour</kbd></dt>
+        <dd>Defines the foreground colour.  It's value is of the same format
+        of colour definitions in <cite>html</cite>.</dd>
+      <dt><kbd>bgcolor, bgcolour</kbd></dt>
+        <dd>Defines the background colour.  These tags can be used to make
+        the applet's colour scheme fit in with the page.</dd>
+    </dl>
+    
+    <p>I don't mind this applet being used on other people's pages
+    provided that credit is given to me, and preferably a mail link to
+    me at <a
+    href="mailto:james@daa.com.au">&lt;james@daa.com.au&gt;</a>, and
+    it would be nice if you tell me.</p>
+
+    <div class="navigation">
+      <a href="intro.html">&lt;&lt;&lt; Previous</a>
+      | <a href="../">Contents</a>
+      | <a href="triangle.html">Next &gt;&gt;&gt;</a>
+    </div>
+
+  </body>
+</html>

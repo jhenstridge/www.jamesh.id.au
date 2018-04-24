@@ -1,0 +1,42 @@
+<?xml version="1.0"?> <?emacs -*- mode: nxml -*- ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Hopalong Orbit Fractal</title>
+    <meta name="description" content="This is an applet that draws the hopalong orbit fractal.  Written by James Henstridge." />
+    <meta name="keywords" content="java, applet, fractal, orbit, hopalong" />
+  </head>
+  <body>
+    <h1>Hopalong Orbit Fractal</h1>
+
+    <div class="fractal">
+      <applet code="hopalong.class" height="300" width="400">
+	<param name="bgcolour" value="ffffff" />
+        <hr />
+        <p>If your browser supported Java, You would see a nice
+        fractal here.</p>
+        <hr />
+      </applet>
+    </div>
+
+    <p>This fractal's applet is just an extension of gingerbread's
+    applet.  It was originally discovered by Barry Martin of Aston
+    University.  It basically just replaces the formulas with
+    these:</p>
+
+    <div class="equation">x<sub>n + 1</sub> = y<sub>n</sub> -
+    sg(x<sub>n</sub>)*sqrt|b*x<sub>n</sub> - c|<br /> y<sub>n + 1</sub>
+    = a - x<sub>n</sub></div>
+
+    <p>In this fractal, a, b and c are constants which, by default are
+    initialised to -55, -1 and -42 respectively, although these can be
+    changed with <var>&lt;param&gt;</var> tags.</p>
+    
+    <div class="navigation">
+      <a href="gingerbread.html">&lt;&lt;&lt; Previous</a>
+      | <a href="../">Contents</a>
+      | <a href="threeply.html">Next &gt;&gt;&gt;</a>
+    </div>
+  </body>
+</html>
