@@ -1,9 +1,0 @@
-
-GObject and PyGTK
-
-base object wrapper code separated out into the gobject module
-can be used independently of the gtk module
-Will support creation of new C level GObject types in the future.
-
-Currently does not interract with python threading model
-

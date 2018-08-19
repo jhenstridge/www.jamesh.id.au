@@ -1,9 +1,0 @@
-
-Future
-
-API for adding dynamic menu items
-something better than bonobo's API
-Get more apps to test EggMenu API
-and fix problems.
-prepare for GEP process
-

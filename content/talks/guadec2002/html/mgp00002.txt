@@ -1,8 +1,0 @@
-
-Overview
-
-Why you should use PyGTK.
-Differences compared to PyGTK 0.6.x.
-New features in PyGTK.
-What is left to do for PyGTK 2.0?
-

@@ -1,8 +1,0 @@
-
-Python bindings Features
-
-Provide an object oriented python interface to GTK+ and related libraries.
-Takes care of reference counting and typecasting
-Complete enough to write full featured applications
-Used in several non trivial apps.
-

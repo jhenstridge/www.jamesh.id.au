@@ -1,0 +1,210 @@
+<html>
+  <head>
+    <title>dia: Title page</title>
+    <link rel="StyleSheet" href="dia.css" type="text/css">
+  </head>
+  <body>
+    <div class="slide">
+    <p align="center">
+      <br><br>
+      <img src="dia_logo.gif"><br><br>
+      James Henstridge -
+      <a href="mailto:james@daa.com.au">james@daa.com.au</a><br>
+      Perth, Western Australia
+    </p>
+    </div>
+    <div class="slide">
+    <h1>What is Dia?</h1>
+    <ul>
+      <li>Dia was originally written by Alexander Larsson.
+      <li>Dia is a structured drawing editor
+      <li>Structured diagrams are:
+        <ul>
+	  <li>Usually composed of from a set of standard drawing elements.
+	  <li>Elements of diagram usually represent something.
+	</ul>
+    </ul>
+    </div>
+    <div class="slide">
+    <h1>Supported Diagram Types</h1>
+    <ul>
+      <li>UML
+      <li>Entity-Relationship
+      <li>Network Diagrams
+      <li>Flowcharts
+      <li>Circuit diagrams
+      <li>and more ...
+    </ul>
+    </div>
+    <div class="slide">
+    <h1>Diagram Concepts</h1>
+    <ul>
+      <li>Dia provides a number of concepts to support the different
+        diagram types:
+	<ul>
+	  <li>`Objects' (eg. a shape or line)
+	  <li>Connection points
+	  <li>Handles -- a connected handle will stick to its connection point
+	  <li>Base classes for commonly used objects (eg. orthogonal lines)
+	</ul>
+    </ul>
+    </div>
+    <div class="slide">
+    <h1>The Toolbox</h1>
+    <ul>
+      <li>For each diagram type, a number of objects (shapes and lines) are
+        written.
+      <li>Objects are organised into sheets in the toolbox.
+      <li>Contents of each sheet is determined by an XML file stored in
+        <tt>$(prefix)/share/dia/sheets</tt> or <tt>~/.dia/sheets</tt>.
+    </ul>
+    </div>
+    <div class="slide">
+    <h1>The Diagram Display</h1>
+    <ul>
+      <li>User interface patterned after the GIMP.
+      <li>Don't forget the right mouse button <tt>:)</tt>
+      <li>Can have multiple views of the one diagram.  Updates on one view
+        are reflected in other views.
+      <li>Can zoom in and out from the view submenu of the right mouse
+        button menu.
+      <li>Has a support for a grid, including a snap to grid feature.
+      <li>Can do anti aliased rendering (using Raph's libart library)
+    </ul>
+    </div>
+    <div class="slide">
+    <h1>Objects</H2>
+    <ul>
+      <li>Objects are placed by selecting the appropriate tool from the
+        toolbox and clicking, or clicking and dragging, on the diagram
+	display.
+      <li>If you prefer the selected tool to reset to the arrow when an
+        object is placed, set the "Reset tools after create" option in
+	the preferences.
+      <li>Double clicking on an object will bring up its properties dialog.
+      <li>Middle clicking on an object will bring up an object specific
+        menu.
+    </ul>
+    </div>
+    <div class="slide">
+    <h1>Loading and Saving Diagrams</h1>
+    <ul>
+      <li>Dia uses XML as its native format.  By default, it also gzips the
+        output.  This gives us the readability benefits of text without the
+	size problems.
+      <li>Dia can also export diagrams to a number of formats:
+        <ul>
+	  <li>EPS (Encapsulated Postscript)
+	  <li>CGM (Computer Graphics Metafile)
+	  <li>SVG (Scalable Vector Graphics)
+	  <li>PNG -- uses the anti-aliased renderer
+	</ul>
+      <li>Currently, Dia can only read its own native format.
+    </ul>
+    </div>
+    <div class="slide">
+    <h1>Adding New Diagram Types</h1>
+    <ul>
+      <li>First work out what objects make up the diagram.
+      <li>For each object, write an implementation in C.  This involves:
+        <ul>
+	  <li>Writing code to render the object.  This is done in terms of
+	    an abstract Renderer object, which may render to the screen,
+	    postscript or something else.
+	  <li>Write code to react to movement of its handles
+	  <li>Implement a properties dialog and optionally an object menu.
+	</ul>
+    </ul>
+    </div>
+    <div class="slide">
+    <h1>New Diagram Types (continued)</h1>
+    <ul>
+        <ul>
+	  <li>Implement a distance function
+	  <li>Implement loading and saving for the object.
+	  <li>implement a few other house keeping functions
+	</ul>
+      <li>Write a sheet file which contains all the new objects.
+    </ul>
+    </div>
+    <div class="slide">
+    <h1>Custom shapes</h1>
+    <ul>
+      <li>There is an easier way of adding new shape type objects, which
+        doesn't require any knowledge of C.
+      <li>Custom shapes plugin provides a way of adding new objects whose
+        behaviour is controlled through a simple XML file.
+      <li>A custom shape XML file consists of:
+        <ul>
+	  <li>The name of the object type.
+	  <li>the icon to use in the toolbox.
+	</ul>
+    </ul>
+    </div>
+    <div class="slide">
+    <h1>Custom shapes (continued)</h1>
+    <ul>
+        <ul>
+	  <li>A description of how to draw the object.  This is done using
+	    a subset of the SVG specification.
+	  <li>Positions of connection points for the object.
+	  <li>Constraints on how the object may be scaled.
+	</ul>
+      <li>The custom shape code is suitable for any shape that scales affinely
+      <li>Does not help with adding new line types.
+      <li>Most of the flowchart shapes use the custom shape code.
+    </ul>
+    </div>
+    <div class="slide">
+    <h1>Properties Interfaces</h1>
+    <ul>
+      <li>Before Dia-0.84, there is no way to programatically get or set
+        the value of an arbitrary object in a diagram.
+      <li>With the properties API, each object provides
+        <tt>describe_props</tt>, <tt>get_props</tt> and <tt>set_props</tt>
+	methods.  By providing a standard way to modify the properties of
+	an object, the following is possible:
+	<ul>
+	  <li>Automatically generating a properties dialog
+	  <li>Generate a properties dialog for a group of selected objects.
+	</ul>
+    </ul>
+    </div>
+    <div class="slide">
+    <h1>Properties Interfaces (continued)</h1>
+    <ul>
+        <ul>
+	  <li>Automatically load and save properties when loading/saving a
+	    diagram.
+	</ul>
+      <li>Dia-0.84 contains a partially complete implementation of these APIs.
+      <li>The standard objects, custom shapes and groups have properties
+        implementations.
+      <li>I am planning to add the ability to specify extra properties for
+        custom shapes (eg. resistance value for a resistor shape).
+    </ul> 
+    </div>
+    <div class="slide">
+    <h1>The Future</h1>
+    <ul>
+      <li>A python scripting interface is currently being developped.
+        This will allow programatic manipulation of diagrams, and with
+        the properties interface should be powerful enough to generate
+        XMI from Dia UML diagrams, for instance.
+      <li>Bonobo support is planned for the future.  This will allow
+        embedding Dia diagrams in other Gnome Office applications, and
+	make it easier to embed Dia in other applications (such as a
+	CASE tool).
+    </div>
+    <div class="slide">
+    <h1>Links</h1>
+    <ul>
+      <li>Dia web site:
+      <menu><a href="http://www.lysator.liu.se/~alla/dia/">http://www.lysator.liu.se/~alla/dia/</a></menu>
+      <li>Dia mailing list subscription address:
+      <menu><a href="mailto:dia-list-request@lysator.liu.se">dia-list-request@lysator.liu.se</a></menu>
+      (put <tt>subscribe</tt> in the subject).
+    </ul>
+    </div>
+  </body>
+</html>

@@ -1,9 +1,0 @@
-
-Why Python?
-
-A simple, readable language
-Comprehensive standard library
-Many extensions -- a good "glue" language
-Garbage collection
-Much nicer to program than Perl
-

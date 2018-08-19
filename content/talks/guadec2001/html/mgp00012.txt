@@ -1,8 +1,0 @@
-
-GSignal and GClosures
-
-New signal system uses closure objects which wrap up a function, user data and marshallers.
-gobject module allows connecting handlers to signals, and adding signals to GObject classes.
-Signal system lets us set a closure as the class handler for a signal type
-signals defined in python can do just as much as ones defined in C code.
-

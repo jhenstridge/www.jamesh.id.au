@@ -1,0 +1,333 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-AU" xml:lang="en-AU">
+<head><meta http-equiv="Content-Type" content="text/html; charset=US-ASCII" />
+<title>PyORBit</title>
+<script type="text/javascript" src="slides.js"></script>
+<link rel="stylesheet" type="text/css" href="slides.css" /><link rel="stylesheet" type="text/css" href="custom.css" />
+</head>
+<body>
+<div id="titlepage">
+<h1>PyORBit</h1>
+<p class="subtitle">an ORBit2 binding for Python</p>
+<div class="confgroup">
+<div class="conftitle">GUADEC 2003</div><div class="address">Dublin, Ireland</div></div><div class="authorgroup">
+<div class="author">
+<span class="givenname">James</span>
+<span class="familyname">Henstridge</span>
+<span class="email">&lt;james<!-- foo -->@<!-- bar -->daa.com.au&gt;</span>
+</div>
+
+</div></div>
+<div class="slide">
+<h1>Introduction</h1>
+
+      <p xmlns:s="http://www.oscom.org/2003/SlideML/1.0/">PyORBit is a Python binding for ORBit2</p>
+
+      <ul xmlns:s="http://www.oscom.org/2003/SlideML/1.0/">
+	<li>Was written for use by the Python bindings for Gnome.</li>
+	<ul>
+	  <li>Should be useful on its own too though.</li>
+	</ul>
+	<li>Aims to follow the standard Python Language Mapping for
+	CORBA.</li>
+	<li>Uses ORBit2 type information to generate client stubs and
+	server skeletons.</li>
+      </ul>
+    
+</div>
+<div class="slide">
+<h1>History</h1>
+
+      <p xmlns:s="http://www.oscom.org/2003/SlideML/1.0/">ORBit 0.5.x bindings:</p>
+      <ul xmlns:s="http://www.oscom.org/2003/SlideML/1.0/">
+	<li>orbit-python</li>
+	<ul>
+	  <li>Written by Jason Tackaberry</li>
+	  <li>Took ideas from Owen Taylor's Perl bindings</li>
+	  <li>Generated stubs and skeletons at runtime by parsing
+	  IDL</li>
+	  <li>Was the basis for Johan Dahlin's 1.x Bonobo bindings</li>
+	</ul>
+      </ul>
+      <p xmlns:s="http://www.oscom.org/2003/SlideML/1.0/">ORBit2 bindings:</p>
+      <ul xmlns:s="http://www.oscom.org/2003/SlideML/1.0/">
+	<li>orbit2-python</li>
+	<ul>
+	  <li>A minimal port of orbit-python by Johan.</li>
+	  <li>Used by earlier releases of the Gnome 2 Python
+	  bindings.</li>
+	  <li>Did not take advantage of many of ORBit2's newer
+	  features.</li>
+	  <li>Manually marshaled data to and from GIOP buffers.</li>
+	</ul>
+      </ul>
+    
+</div>
+<div class="slide">
+<h1>PyORBit</h1>
+
+      <p xmlns:s="http://www.oscom.org/2003/SlideML/1.0/">Due to a number of shortcomings in orbit2-python, I started
+      looking at doing a new binding that better suited the needs of
+      the Gnome Python bindings.  Some features include:</p>
+      <ul xmlns:s="http://www.oscom.org/2003/SlideML/1.0/">
+	<li>Make use of ORBit2 type-code information.</li>
+	<li>Can generate stubs from ORBit2 type-libs, parsing IDL or by
+	introspection.</li>
+	<li>Can marshal from Python representation to and from C
+	representation.</li>
+	<ul>
+	  <li>C code can invoke methods on in-process Python
+	  objects.</li>
+	  <li>Python code can invoke methods on in-process C
+	  objects.</li>
+	</ul>
+	<li>Makes use of new features in Python 2.2.</li>
+	<li>About 33% smaller than orbit-python.</li>
+      </ul>
+    
+</div>
+<div class="slide">
+<h1>Type Codes</h1>
+
+      <p xmlns:s="http://www.oscom.org/2003/SlideML/1.0/">In the CORBA framework, type codes are used to represent the
+      various types of data that that can be transmitted.  They hold
+      all the information the ORB needs to marshal and transmit data
+      over the wire plus some metadata.</p>
+      <p xmlns:s="http://www.oscom.org/2003/SlideML/1.0/">This includes most of the information that a language binding
+      needs to marshal data:</p>
+      <ul xmlns:s="http://www.oscom.org/2003/SlideML/1.0/">
+	<li>fundamental type of data</li>
+	<li>for enumerations, the list of value names.</li>
+	<li>for structures and unions, the list of field names and types.</li>
+	<li>for sequences and arrays, the type of the items.</li>
+      </ul>
+      <p xmlns:s="http://www.oscom.org/2003/SlideML/1.0/">Unfortunately, type codes do not provide much information
+      about interfaces.</p>
+    
+</div>
+<div class="slide">
+<h1>ORBit2 Interface Information</h1>
+
+      <p xmlns:s="http://www.oscom.org/2003/SlideML/1.0/">ORBit2 introduces a new way to represent information about
+      interfaces through the use of the <tt>IInterface</tt> type:</p>
+
+      <pre xmlns:s="http://www.oscom.org/2003/SlideML/1.0/" class="programlisting">struct IInterface {
+  TypeCode tc;
+  sequence&lt;IMethod&gt; methods;
+  sequence&lt;string&gt; base_interfaces;
+};</pre>
+
+      <p xmlns:s="http://www.oscom.org/2003/SlideML/1.0/">The fields are:</p>
+      <ul xmlns:s="http://www.oscom.org/2003/SlideML/1.0/">
+	<li>The type code for this interface.</li>
+	<li>a sequence of structures describing the interface's
+	methods.</li>
+	<li>a sequence of base interface names.</li>
+      </ul>
+    
+</div>
+<div class="slide">
+<h1>ORBit2 Interface Information</h1>
+
+      <p xmlns:s="http://www.oscom.org/2003/SlideML/1.0/">IMethod structures contain the following:</p>
+      <ul xmlns:s="http://www.oscom.org/2003/SlideML/1.0/">
+	<li>name of method</li>
+	<li>names and types of arguments, along with flags (in, out,
+	inout).</li>
+	<li>The type code for the return type.</li>
+      </ul>
+    
+</div>
+<div class="slide">
+<h1>How to Get Interface Information</h1>
+
+      <p xmlns:s="http://www.oscom.org/2003/SlideML/1.0/">ORBit2 provides a number of ways to obtain interface
+      information:</p>
+      <ul xmlns:s="http://www.oscom.org/2003/SlideML/1.0/">
+	<li><b>Type libraries:</b> these are shared libraries containing the
+	IInterface structures for a set of interfaces as static data.
+	Can be loaded with the <tt>ORBit_small_get_iinterface()</tt>
+	function.</li>
+	<li><b>IDL files:</b> ORBit2 provides an API to read in an IDL
+	file and return interface information in the
+	<tt>IInterface</tt> format.</li>
+	<li><b>Introspection:</b> servers implemented using ORBit2
+	automatically provide an <tt>ORBit_get_iinterface</tt>
+	method.  This can be invoked to retrieve interface information
+	about a particular server.</li>
+      </ul>
+      <p xmlns:s="http://www.oscom.org/2003/SlideML/1.0/">PyORBit can use any of these methods to get interface
+      information.</p>
+    
+</div>
+<div class="slide">
+<h1>Method Invocation</h1>
+
+      <ul xmlns:s="http://www.oscom.org/2003/SlideML/1.0/">
+	<li>Method invocation goes through the
+	<tt>ORBit_small_invoke_stub()</tt> function.</li>
+	<ul>
+	  <li>Takes an <tt>IMethod</tt> structure that describes how
+	  to perform the method invocation.</li>
+	  <li>Is responsible for marshaling the argument vector from
+	  C layout to a GIOP buffer for remote invocations.</li>
+	  <li>For local invocations, no marshaling required.</li>
+	</ul>
+	<li>For language bindings, it is only necessary to implement
+	functions to marshal to and from the language's native format
+	and C format.</li>
+	<ul>
+	  <li>For local calls to C servers, ORBit2 can pass the values
+	  directly to the server.</li>
+	  <li>For remote calls, there are two translations, but this
+	  gets lost in the noise.</li>
+	</ul>
+      </ul>
+    
+</div>
+<div class="slide">
+<h1>Comparison with Interface Repository</h1>
+
+      <p xmlns:s="http://www.oscom.org/2003/SlideML/1.0/">CORBA standard defines an interface repository
+      service.</p>
+      <ul xmlns:s="http://www.oscom.org/2003/SlideML/1.0/">
+	<li>Never supported well by ORBit</li>
+      </ul>
+      <p xmlns:s="http://www.oscom.org/2003/SlideML/1.0/">Some benefits of ORBit's approach include:</p>
+      <ul xmlns:s="http://www.oscom.org/2003/SlideML/1.0/">
+	<li>No need for a separate server to hold interface info.</li>
+	<li>No need to prime the interface repository with IDL before
+	use.</li>
+	<li>Interface information can be retrieved directly from
+	servers.</li>
+      </ul>
+      <p xmlns:s="http://www.oscom.org/2003/SlideML/1.0/">If interface repository support is desired, it should be
+      possible to implement as a bridge that generates
+      <tt>IInterface</tt> structures from the information in the
+      repository.</p>
+    
+</div>
+<div class="slide">
+<h1>PyORBit Stubs and Skeletons</h1>
+
+      <ul xmlns:s="http://www.oscom.org/2003/SlideML/1.0/">
+	<li>Like its predecessor, PyORBit generates stubs and skeletons
+        at runtime.</li>
+	<li>However, PyORBit doesn't hook <tt>__import__</tt>.</li>
+	<ul>
+	  <li>You must manually load type-libs or IDL.</li>
+	  <li>Some modules may automatically load up type-libs, such as
+	  <tt>bonobo</tt>.</li>
+	</ul>
+      </ul>
+    
+</div>
+<div class="slide">
+<h1>PyORBit Stubs</h1>
+
+      <ul xmlns:s="http://www.oscom.org/2003/SlideML/1.0/">
+	<li>Stubs are new style Python classes.</li>
+	<li>CORBA methods are represented by a "CORBA method"
+	type.</li>
+	<ul>
+	  <li>wraps a <tt>IMethod</tt>.</li>
+	  <li>Acts as a descriptor, as with standard methods.</li>
+	</ul>
+	<li>Provides automatically generated doc strings, so that
+	<tt>help()</tt> works.</li>
+      </ul>
+    
+</div>
+<div class="slide">
+<h1>PyORBit Skeletons</h1>
+
+      <ul xmlns:s="http://www.oscom.org/2003/SlideML/1.0/">
+	<li>Follows the standard Python mapping.</li>
+	<li>Like the client side stubs, skeletons are generated at
+	runtime.</li>
+	<ul>
+	  <li>As with stubs, <tt>IInterface</tt> data is used to generate
+	  the skeleton</li>
+	</ul>
+	<li>ORBit2 allows a servant to provide an "implementation
+	finder" function responsible for finding the implementation of
+	a method.</li>
+	<li>ORBit2 passes arguments to the servant in the same format
+	given to <tt>ORBit_small_invoke_stub()</tt>, so we can reuse
+	the same marshaling code.</li>
+      </ul>
+    
+</div>
+<div class="slide">
+<h1>Simple Scripting Example</h1>
+
+      <p xmlns:s="http://www.oscom.org/2003/SlideML/1.0/">In this example, we will use PyORBit to tell the running
+      Nautilus process to open a window at a particular location.</p>
+
+      <p xmlns:s="http://www.oscom.org/2003/SlideML/1.0/">First we need to get the IOR of the Nautilus shell.  We could
+      use the Gnome Python bindings for this, but to reduce the amount
+      of magic, I'll use the standard <tt>activation-client</tt>
+      program.</p>
+
+      <pre xmlns:s="http://www.oscom.org/2003/SlideML/1.0/" class="programlisting"><b>$</b> activation-client -s "iid == 'OAFIID:Nautilus_Shell'"
+Query spec is "iid == 'OAFIID:Nautilus_Shell'"
+Activation ID "OAFAID:[OAFIID:Nautilus_Factory,james,example.net]" RESULT_OBJECT
+IOR:01daffbf17000000...
+<b>$</b></pre>
+    
+</div>
+<div class="slide">
+<h1>Simple Scripting Example</h1>
+
+      <p xmlns:s="http://www.oscom.org/2003/SlideML/1.0/">First we start Python:</p>
+
+      <pre xmlns:s="http://www.oscom.org/2003/SlideML/1.0/" class="programlisting">
+<b>&gt;&gt;&gt;</b> import ORBit
+<b>&gt;&gt;&gt;</b> import CORBA
+<b>&gt;&gt;&gt;</b> orb = CORBA.ORB_init()</pre>
+
+      <p xmlns:s="http://www.oscom.org/2003/SlideML/1.0/">Now we create an object reference from the IOR (which will
+      also generate a stub for the Nautilus::Shell interface):</p>
+
+      <pre xmlns:s="http://www.oscom.org/2003/SlideML/1.0/" class="programlisting"><b>&gt;&gt;&gt;</b> shell = orb.string_to_object('IOR:01daffbf17000000...')</pre>
+
+      <p xmlns:s="http://www.oscom.org/2003/SlideML/1.0/">Now we can call methods on the object reference:</p>
+
+      <pre xmlns:s="http://www.oscom.org/2003/SlideML/1.0/" class="programlisting"><b>&gt;&gt;&gt;</b> shell.open_windows(['fonts:///'], '')</pre>
+
+    
+</div>
+<div class="slide">
+<h1>More Advanced Scripting Example</h1>
+
+      <p xmlns:s="http://www.oscom.org/2003/SlideML/1.0/">Nautilus metadata monitoring: <a href="metadata-demo.py">metadata-demo.py</a>.</p>
+      <ul xmlns:s="http://www.oscom.org/2003/SlideML/1.0/">
+	<li>Uses the <tt>Nautilus::MetafileFactory</tt>
+	interface.</li>
+	<ul>
+	  <li>This is a private interface, subject to change</li>
+	</ul>
+	<li>Loading interface data from typelibs or from IDL
+	files.</li>
+	<li>Implements the Nautilus::MetafileMonitor interface.</li>
+	<li>Asks for metadata change notification for files in the
+	home directory.</li>
+	<li>Prints the list of emblems for files that change.</li>
+      </ul>
+    
+</div>
+<div class="slide">
+<h1>Future</h1>
+
+      <ul xmlns:s="http://www.oscom.org/2003/SlideML/1.0/">
+	<li>Further development of the CORBA related Gnome bindings.</li>
+	<li>Custom interfaces on Bonobo components.</li>
+	<li>Integrate better with threaded applications.</li>
+	<ul>
+	  <li>Looking at the new Python 2.3 threading APIs.</li>
+	</ul>
+      </ul>
+    
+</div>
+</body>
+</html>

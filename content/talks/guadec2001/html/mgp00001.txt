@@ -1,7 +1,0 @@
-
-
-Future of Python Bindings
-
-James Henstridge
-james@daa.com.au
-

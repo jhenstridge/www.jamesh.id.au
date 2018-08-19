@@ -1,9 +1,0 @@
-
-The Evil Hack
-
-makes sure that only a single wrapper will be used for a particular object for the lifetime of that object
-If some python code holds a reference to the wrapper, then the underlying object will not be freed
-Evil hack in destructor for wrapper that sometimes resurrects wrapper.
-gets round circular reference problem
-Possible can make hack less evil using Python 2.1 weak references
-

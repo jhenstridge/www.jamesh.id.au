@@ -1,0 +1,72 @@
+<html>
+  <head>
+    <title>python: Title page</title>
+    <link rel="StyleSheet" href="python.css" type="text/css">
+  </head>
+  <body>
+    <div class="slide">
+    <p align="center">
+      <br><br>
+      <img src="pygtk_logo.jpeg"><br>
+      <b>and Gnome-Python</b><br><br>
+      James Henstridge -
+      <a href="mailto:james@daa.com.au">james@daa.com.au</a><br>
+      Perth, Western Australia
+    </p>
+    </div>
+    <div class="slide">
+    <h1>What is PyGTK and gnome-python?</h1>
+    <ul>
+      <li>PyGTK is a set of Python bindings for the GTK+ widget set.
+      <li>Gnome-python is an extended version of PyGTK that also covers
+        the GNOME libraries.
+      <li>More information about Python can be found at
+        <a href="http://www.python.org">www.python.org</a>.
+    </ul>
+    </div>
+    <div class="slide">
+    <h1>Benefits</h1>
+    <ul>
+      <li>Provides an object oriented interface to the Gtk and GNOME widgets.
+      <li>No explicit reference counting necessary for the Python programmer.
+      <li>No explicit type casting is necessary -- the bindings do this for
+        you.
+      <li>If you are already familiar with python, using it to program GNOME
+        apps will probably be easier.
+      <li>Programs are generally shorter and easier to read.
+      <li>Fits easily into systems already written in Python.
+    </ul>
+    </div>
+    <div class="slide">
+    <h1>Projects using PyGTK or Gnome-Python</h1>
+    <ul>
+      <li>The development version of Sketch (a free form vector drawing
+        program)
+      <li>Anaconda (Red Hat's graphical install program)
+      <li>Loki (see <a href="http://www.bioinformatics.org/loci/">http://www.bioinformatics.org/loci/</a>).
+      <li>And others ...
+    </ul>
+    </div>
+    <div class="slide">
+    <h1>Differences when using Python</h1>
+    <ul>
+      <li>One of the nice things about Python is its ability to use it
+        interactively.  With PyGTK you can use these features to try out
+	the features.  This is particularly apparent with the
+	<tt>gtkcons.py</tt> example program.
+      <li>Easier to write throw away code.
+      <li>Combined with libglade, PyGTK provides a useful rapid application
+        development platform.
+    </ul>
+    </div>
+    <div class="slide">
+    <h1>The future</h1>
+    <ul>
+      <li>Rewrite to use ExtensionClass.  This will make pygtk easier to
+        maintain, and remove a few of its quirks.  It will probably also
+	make it easier to write new wrappers for add on widget libraries.
+      <li>Add support for more GNOME libraries.
+    </ul>
+    </div>
+  </body>
+</html>

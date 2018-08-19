@@ -1,7 +1,0 @@
-
-Conclusions
-
-Gnome Enhancement Proposals
-http://developer.gnome.org/gep/
-Code available in Gnome CVS
-libegg module, libegg/menu subdirectory

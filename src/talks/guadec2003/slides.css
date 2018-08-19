@@ -1,0 +1,58 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+#titlepage, .slide {
+    height: 100%;
+    page-break-after: always;
+}
+
+@media screen, projection {
+    html {
+        font-size: 24pt;
+    }
+}
+@media print {
+    html {
+        font-size: 180%;
+    }
+}
+
+h1 {
+    font-size: 150%;
+    border-bottom: 3pt solid black;
+    padding: 0.05em;
+    margin: 0 0 0.5em 0;
+}
+
+#titlepage {
+  text-align: center;
+}
+
+#titlepage h1 {
+  border: none;
+  font-size: 200%;
+  padding-top: 4em;
+}
+
+#titlepage .confgroup {
+  position: absolute;
+  bottom: 0.5em;
+  left: 0.5em;
+
+  text-align: left;
+  /*padding: 0.5em;*/
+}
+#titlepage .authorgroup {
+  position: absolute;
+  bottom: 0.5em;
+  right: 0.5em;
+
+  text-align: right;
+  /*padding: 0.5em;*/
+}

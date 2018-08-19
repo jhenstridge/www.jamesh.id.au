@@ -1,0 +1,16 @@
+baseURL = "http://www.jamesh.id.au/"
+languageCode = "en-au"
+title = "James Henstridge"
+theme = "ananke"
+
+[params]
+facebook = "https://www.facebook.com/james.henstridge"
+twitter = "https://twitter.com/jameshenstridge"
+linkedin = "https://www.linkedin.com/in/jameshenstridge/"
+github = "https://github.com/jhenstridge"
+
+[[menu.main]]
+identifier = "blog"
+name = "Blog"
+url = "https://blogs.gnome.org/jamesh/"
+weight = 1

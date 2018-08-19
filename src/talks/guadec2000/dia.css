@@ -1,0 +1,36 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+
+  background-color: #e8e5e8;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+}
+
+.slide {
+  font-size: 150%;
+  page-break-after: always;
+}
+
+a, a:link, a:visited {
+  color: #770000;
+}
+
+h1 {
+  font-size: 250%;
+  padding: 35px 35px 35px 80px;
+  font-weight: bold;
+  background-image: url(dia_gnome_icon.gif);
+  background-position: 10px 35px;
+  background-repeat: no-repeat;
+}
+
+h2 {
+  font-size: 200%;
+  font-weight: bold;
+}
+
+tt {
+  font-family: Courier;
+}
