@@ -2,6 +2,9 @@
 title: "Linux.conf.au 2003: EggMenu"
 date: 2003-01-25T00:00:00+08:00
 draft: false
+resources:
+ - src: paper.pdf
+ - src: talk.pdf
 keywords: ["linux.conf.au", "libegg"]
 ---
 

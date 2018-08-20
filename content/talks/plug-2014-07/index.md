@@ -2,6 +2,8 @@
 title: "PLUG July 2014: Ubuntu Phone"
 date: 2014-07-08T19:00:00+08:00
 draft: false
+resources:
+ - src: plug-ubuntu-phone.pdf
 keywords: ["plug"]
 ---
 

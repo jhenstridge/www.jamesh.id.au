@@ -2,6 +2,8 @@
 title: "PLUG September 2016: Talking to Chromecasts"
 date: 2016-09-13T19:00:00+08:00
 draft: false
+resources:
+ - src: chromecast-slides.pdf
 keywords: ["plug"]
 ---
 

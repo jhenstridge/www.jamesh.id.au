@@ -2,6 +2,10 @@
 title: "GUADEC 2003: Libegg and PyORBit"
 date: 2003-06-16T00:00:00+08:00
 draft: false
+resources:
+ - src: libegg-slides.pdf
+ - src: pyorbit-slides.pdf
+ - src: metadata-demo.py
 keywords: ["guadec", "libegg", "pyorbit"]
 ---
 
@@ -20,3 +24,10 @@ runtime.
 
 * [EggToolbar and EggMenu (slides)](libegg-slides.pdf)
 * [PyORBit (slides)](pyorbit-slides.pdf)
+
+## Example Code
+
+The PyORBit slides reference the following example program:
+
+[`metadata-demo.py`](metadata-demo.py)
+: monitor Nautilus metadata via CORBA
