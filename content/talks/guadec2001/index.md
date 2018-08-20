@@ -5,6 +5,7 @@ draft: false
 resources:
  - src: python.pdf
 keywords: ["guadec", "pygtk"]
+aliases: ["/talks/guadec2001/html/"]
 ---
 
 At GUADEC 2001 in Copenhagen, I gave a talk about the work I'd been

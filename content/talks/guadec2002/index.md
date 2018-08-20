@@ -5,6 +5,7 @@ draft: false
 resources:
  - src: python.pdf
 keywords: ["guadec", "pygtk"]
+aliases: ["/talks/guadec2002/html/"]
 ---
 
 At GUADEC 2002 in Seville I gave a talk about the state of the Python

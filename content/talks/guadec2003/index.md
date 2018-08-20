@@ -7,6 +7,7 @@ resources:
  - src: pyorbit-slides.pdf
  - src: metadata-demo.py
 keywords: ["guadec", "libegg", "pyorbit"]
+aliases: ["/talks/guadec2003/libegg/", "/talks/guadec2003/pyorbit/"]
 ---
 
 At GUADEC 2003 in Dublin, I gave talks about Libegg and PyORBit.

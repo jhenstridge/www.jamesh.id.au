@@ -6,6 +6,7 @@ resources:
  - src: dia-slides.pdf
  - src: python-slides.pdf
 keywords: ["guadec", "pygtk", "dia"]
+aliases: ["/talks/guadec2000/dia-0.html", "/talks/guadec2000/python-0.html"]
 ---
 
 At GUADEC 2000 in Paris, I gave talks about the [Dia diagram
