@@ -2,12 +2,15 @@ baseURL = "http://www.jamesh.id.au/"
 languageCode = "en-au"
 title = "James Henstridge"
 theme = "ananke"
+pygmentsStyle = "solarized-light"
 
 [params]
 facebook = "https://www.facebook.com/james.henstridge"
 twitter = "https://twitter.com/jameshenstridge"
 linkedin = "https://www.linkedin.com/in/jameshenstridge/"
 github = "https://github.com/jhenstridge"
+
+mainSections = ["post"]
 
 [[menu.main]]
 identifier = "blog"

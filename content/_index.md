@@ -1,7 +1,7 @@
 ---
 title: ""
 date: 2018-08-19T12:22:56+08:00
-draft: true
+draft: false
 ---
 
 Hello.  My name is James Henstridge, and I work for [Canonical
