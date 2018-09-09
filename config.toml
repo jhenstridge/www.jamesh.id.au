@@ -4,20 +4,19 @@ title = "James Henstridge"
 theme = "ananke"
 paginate = 100
 pygmentsStyle = "solarized-light"
+disablePathToLower = true
 
 [params]
 facebook = "https://www.facebook.com/james.henstridge"
 twitter = "https://twitter.com/jameshenstridge"
 linkedin = "https://www.linkedin.com/in/jameshenstridge/"
 github = "https://github.com/jhenstridge"
-
 mainSections = ["post"]
 
 [related]
 threshold = 80
 includeNewer = true
 toLower = false
-
 [[related.indices]]
 name = "keywords"
 weight = 100
