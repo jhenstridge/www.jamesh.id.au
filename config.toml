@@ -1,4 +1,5 @@
-baseURL = "http://www.jamesh.id.au/"
+#baseURL = "http://www.jamesh.id.au/"
+baseURL = "https://jamesh.netlify.com/"
 languageCode = "en-au"
 title = "James Henstridge"
 theme = "ananke"
