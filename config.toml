@@ -12,6 +12,7 @@ twitter = "https://twitter.com/jameshenstridge"
 linkedin = "https://www.linkedin.com/in/jameshenstridge/"
 github = "https://github.com/jhenstridge"
 mainSections = ["post"]
+featured_image = "/images/featured-image.jpg"
 
 [related]
 threshold = 80
