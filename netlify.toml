@@ -8,3 +8,16 @@ TZ = "Australia/Perth"
 
 [context.production.environment]
 HUGO_ENV = "production"
+
+[context.deploy-preview]
+command = "hugo --buildFuture -b $DEPLOY_PRIME_URL"
+
+[context.branch-deploy]
+command = "hugo -b $DEPLOY_PRIME_URL"
+
+# Redirect Netlify URL to the main site
+[[redirects]]
+from = "https://jamesh.netlify.app/*"
+to = "https://www.jamesh.id.au/:splat"
+status = 301
+force = true
