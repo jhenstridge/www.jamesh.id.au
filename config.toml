@@ -10,6 +10,7 @@ enableRobotsTXT = true
 
 [params]
 mainSections = ["post"]
+disable_share = true
 
 [[params.ananke_socials]]
 name = "facebook"
