@@ -1,7 +1,6 @@
 ---
 title: "GUADEC 2001: PyGTK"
 date: 2001-04-06T00:00:00+08:00
-draft: false
 resources:
  - src: python.pdf
 keywords: ["guadec", "pygtk"]

@@ -1,7 +1,6 @@
 ---
 title: "Using the SAX Interface of LibXML"
 date: 1999-08-10T00:00:00+08:00
-draft: false
 type: article
 toc: true
 aliases: ["/articles/libxml-sax/libxml-sax.html"]

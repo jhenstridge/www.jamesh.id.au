@@ -1,7 +1,6 @@
 ---
 title: "Software"
 date: 2018-08-12T22:13:32+08:00
-draft: false
 menu:
   main:
     weight: 2

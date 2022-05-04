@@ -1,7 +1,6 @@
 ---
 title: "GUADEC 2000: Dia and PyGTK"
 date: 2000-03-16T00:00:00+08:00
-draft: false
 resources:
  - src: dia-slides.pdf
  - src: python-slides.pdf

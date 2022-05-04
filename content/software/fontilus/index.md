@@ -1,7 +1,6 @@
 ---
 title: "Fontilus"
 date: 2003-02-15T00:00:00+08:00
-draft: false
 ---
 
 Fontilus was a set of extensions for the Nautilus file manager,

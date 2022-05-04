@@ -1,7 +1,6 @@
 ---
 title: "PLUG May 2021: GStreamer Editing Services"
 date: 2021-05-11T19:00:00+08:00
-draft: false
 resources:
  - src: ges-slides.pdf
 keywords: ["plug"]

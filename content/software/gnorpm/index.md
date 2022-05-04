@@ -1,7 +1,6 @@
 ---
 title: "GnoRPM"
 date: 1999-07-16T00:00:00+08:00
-draft: false
 ---
 
 GnoRPM is a graphical front end to the [RPM package management

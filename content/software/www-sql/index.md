@@ -1,7 +1,6 @@
 ---
 title: "WWW-SQL"
 date: 1998-11-17T00:00:00+08:00
-draft: false
 ---
 
 WWW-SQL is one of the first pieces of free software I wrote, back when

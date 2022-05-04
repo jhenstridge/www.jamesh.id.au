@@ -1,7 +1,6 @@
 ---
 title: "UWA Honours Thesis"
 date: 2000-10-19T00:00:00+08:00
-draft: false
 resources:
  - src: thesis.pdf
  - src: gasp.tar.gz

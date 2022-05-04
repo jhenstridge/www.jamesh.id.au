@@ -1,7 +1,6 @@
 ---
 title: "GUADEC 2003: Libegg and PyORBit"
 date: 2003-06-16T00:00:00+08:00
-draft: false
 resources:
  - src: libegg-slides.pdf
  - src: pyorbit-slides.pdf

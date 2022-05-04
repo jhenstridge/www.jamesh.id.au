@@ -1,7 +1,6 @@
 ---
 title: "Launchpad"
 date: 2008-07-24T09:43:37+08:00
-draft: false
 keywords: ["launchpad", "ubuntu"]
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: "PLUG October 2015: Ubuntu Snappy"
 date: 2015-10-13T19:00:00+08:00
-draft: false
 resources:
  - src: plug-ubuntu-snappy.pdf
 keywords: ["plug"]

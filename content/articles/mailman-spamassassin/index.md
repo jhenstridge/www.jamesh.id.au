@@ -1,7 +1,6 @@
 ---
 title: "Integrating SpamAssassin with Mailman"
 date: 2003-04-14T00:00:00+08:00
-draft: false
 type: article
 toc: true
 ---

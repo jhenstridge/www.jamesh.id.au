@@ -1,7 +1,6 @@
 ---
 title: "Nautilus RPM"
 date: 2003-01-07T00:00:00+08:00
-draft: false
 ---
 
 Nautilus RPM was a set of extensions for the Nautilus file manager to

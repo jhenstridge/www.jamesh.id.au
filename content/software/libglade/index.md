@@ -1,7 +1,6 @@
 ---
 title: "Libglade"
 date: 2005-02-11T00:00:00+08:00
-draft: false
 ---
 
 Libglade was a library that took user interfaces designed with the

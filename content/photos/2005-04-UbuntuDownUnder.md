@@ -1,7 +1,6 @@
 ---
 title: "Ubuntu Down Under, April 2005"
 date: 2005-05-01T00:00:00+08:00
-draft: false
 album:
   url: https://photos.app.goo.gl/bkqF6c7adcozzzQi6
   fullSize: 1280

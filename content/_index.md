@@ -1,7 +1,6 @@
 ---
 title: ""
 date: 2018-08-19T12:22:56+08:00
-draft: false
 cascade:
   featured_image: "/images/featured-image.jpg"
 ---

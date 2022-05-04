@@ -1,7 +1,6 @@
 ---
 title: Cape Town, February 2005
 date: 2005-02-22T00:00:00+08:00
-draft: false
 album:
   url: https://photos.app.goo.gl/8uMLxbL5UUapZvb97
   fullSize: 1280

@@ -1,7 +1,6 @@
 ---
 title: "Gimp-Python"
 date: 2002-08-31T00:00:00+08:00
-draft: false
 ---
 
 ![](gimp-python.jpeg)

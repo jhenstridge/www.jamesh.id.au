@@ -1,7 +1,6 @@
 ---
 title: "PLUG July 2020: Github Actions"
 date: 2020-07-14T19:00:00+08:00
-draft: false
 resources:
  - src: github-actions.pdf
 keywords: ["plug"]

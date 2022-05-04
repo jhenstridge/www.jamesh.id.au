@@ -1,7 +1,6 @@
 ---
 title: "Ubuntu Desktop"
 date: 2018-09-08T21:03:44+08:00
-draft: false
 keywords: ["ubuntu", "gnome"]
 ---
 

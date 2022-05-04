@@ -1,7 +1,6 @@
 ---
 title: "JHBuild"
 date: 2006-07-07T00:00:00+08:00
-draft: false
 ---
 
 JHBuild is a build script for building [GNOME](https://www.gnome.org/)
