@@ -6,7 +6,7 @@ cascade:
   featured_image: "/images/featured-image.jpg"
 ---
 
-My name is James Henstridge, and this is my personal website.  I work
+This is the personal website of James Henstridge.  I work
 for [Canonical Ltd](https://www.canonical.com), currently as a member
 of the [Ubuntu](https://www.ubuntu.com) Desktop Team.
 
