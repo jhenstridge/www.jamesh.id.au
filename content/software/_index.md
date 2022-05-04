@@ -9,3 +9,6 @@ menu:
 Here, you will find various pieces of software I have written over the
 years.  Much of the older stuff is unmaintained, and mainly here for
 historical interest.
+
+Other work can be found on [my Github
+profile](https://github.com/jhenstridge).
