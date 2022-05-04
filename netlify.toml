@@ -4,6 +4,7 @@ command = "hugo"
 
 [build.environment]
 HUGO_VERSION = "0.96.0"
+TZ = "Australia/Perth"
 
 [context.production.environment]
 HUGO_ENV = "production"
