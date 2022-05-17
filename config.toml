@@ -4,7 +4,6 @@ title = "James Henstridge"
 theme = "ananke"
 paginate = 100
 pygmentsStyle = "solarized-light"
-disablePathToLower = true
 enableGitInfo = true
 enableRobotsTXT = true
 
