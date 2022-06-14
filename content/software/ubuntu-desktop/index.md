@@ -4,6 +4,8 @@ date: 2018-09-08T21:03:44+08:00
 keywords: ["ubuntu", "gnome"]
 ---
 
+BLAH blah blah
+
 When the Ubuntu Phone project was cancelled, I moved to the desktop
 team.  The initial goal for team was to bring up a GNOME 3 based
 desktop for the Ubuntu 17.10 release that would be familiar to both
