@@ -8,12 +8,11 @@ tags: ['Bazaar', 'Gnome']
 **Travels**
 
 I\'ve put some of the photos from my [trip to
-Mataró](http://www.jamesh.id.au/photos/2004-12-Mataro/), and the [short
-stop over in Japan on the way
-back](http://www.jamesh.id.au/photos/2004-12-Narita/). The Mataró set
-includes a fair number taken around La Sagrida Familia, and the Japan
-set is mostly of things around the Naritasan temple (I didn\'t have
-enough time to get into Tokyo).
+Mataró](/photos/2004-12-mataro.md), and the [short stop over in Japan
+on the way back](/photos/2004-12-narita.md). The Mataró set includes a
+fair number taken around La Sagrida Familia, and the Japan set is
+mostly of things around the Naritasan temple (I didn\'t have enough
+time to get into Tokyo).
 
 **Multi-head**
 

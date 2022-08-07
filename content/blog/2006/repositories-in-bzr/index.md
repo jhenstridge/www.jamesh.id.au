@@ -52,7 +52,7 @@ data is located. This is quite useful when combined with a central
 shared repository.
 
 So how big is this space saving? When I converted
-[JHBuild](http://www.jamesh.id.au/software/jhbuild/) to bzr, the
+[JHBuild](/software/jhbuild/index.md) to bzr, the
 repository data totals to 10MB, the branch data totals 100KB and a
 checkout is 1.4MB.
 

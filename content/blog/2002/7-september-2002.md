@@ -15,7 +15,7 @@ toolbar works quite well now, and I brought the merge code for toolbars
 in EggMenu into parity with the menu merge code (now supports
 placeholders, etc).
 
-**[PyGIMP](http://www.daa.com.au/~james/pygimp/)**
+**[PyGIMP](/software/pygimp/index.md)**
 
 [Yosh](/person/yosh/) added a little bit of magic to the autogen script
 for [GIMP](http://www.gimp.org/) so that if you have automake-1.6, it
