@@ -41,9 +41,3 @@ weight = 50
 name  = "date"
 weight = 10
 pattern = "2006"
-
-[[menu.main]]
-identifier = "blog"
-name = "Blog"
-url = "https://blogs.gnome.org/jamesh/"
-weight = 1
