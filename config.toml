@@ -11,6 +11,9 @@ enableRobotsTXT = true
 mainSections = ["post"]
 disable_share = true
 
+[permalinks]
+blog = "/blog/:year/:month/:slug/"
+
 [[params.ananke_socials]]
 name = "twitter"
 url = "https://twitter.com/jameshenstridge"
@@ -31,6 +34,9 @@ toLower = false
 [[related.indices]]
 name = "keywords"
 weight = 100
+[[related.indices]]
+name = "tags"
+weight = 50
 [[related.indices]]
 name  = "date"
 weight = 10
