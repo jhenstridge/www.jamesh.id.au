@@ -1,0 +1,28 @@
+digraph G {
+  bgcolor="white";
+  rankdir="LR";
+  nodesep=0.5;
+  fontsize=11;
+
+  node [shape="ellipse", style="filled"];
+
+  {
+    node [fillcolor="cyan"];
+    b1_0 [label="base-0"];
+    b1_1 [label="patch-1"];
+    b1_2 [label="patch-2"];
+    b1_3 [label="patch-3"];
+    b1_4 [label="patch-4"];
+  }
+  {
+    node [fillcolor="magenta"];
+    b2_1 [label="patch-1"];
+    b2_2 [label="patch-2"];
+  }
+
+  b1_0 -> b1_1 -> b1_2 -> b1_3 -> b1_4;
+
+  b1_1 -> b2_1 -> b2_2;
+
+  b2_2 -> b1_4;
+}
