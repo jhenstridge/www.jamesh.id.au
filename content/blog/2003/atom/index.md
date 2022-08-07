@@ -1,6 +1,6 @@
 ---
 title: 'Atom'
-slug: atom-2
+slug: atom
 date: 2003-11-03T16:27:51+08:00
 tags: ['XML']
 ---
@@ -22,12 +22,10 @@ scratching I realised that libxml can already do this kind of
 normalisation without much trouble as it already has an HTML parser that
 produces a DOM tree compatible with its XML parser/dumper APIs.
 
-I did some simple test programs in
-[Python](http://www.daa.com.au/~james/files/normalise_html.py) and
-[C](http://www.daa.com.au/~james/files/normalise_html.c). I wonder
-whether code like this could be used directly in the diary posting code?
-With some small extensions, it would be pretty easy to implement
-tag/attribute sanitisation, and double new line to new paragraph
-conversion (the current implementation of this is quite annoying \-- it
-still adds extra \<p\> tags for new lines that are clearly outside of a
-paragraph).
+I did some simple test programs in [Python](normalise_html.py) and
+[C](normalise_html.c). I wonder whether code like this could be used
+directly in the diary posting code?  With some small extensions, it
+would be pretty easy to implement tag/attribute sanitisation, and
+double new line to new paragraph conversion (the current
+implementation of this is quite annoying \-- it still adds extra \<p\>
+tags for new lines that are clearly outside of a paragraph).

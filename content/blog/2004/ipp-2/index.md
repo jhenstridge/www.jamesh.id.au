@@ -9,11 +9,10 @@ Did a little more hacking on my IPP client library, and wrote a small
 management tasks (view all print queues/classes, view queued and
 completed jobs for printers, stop and start print queues, etc).
 
-If you want to try it out, grab
-[ipplib.py](http://www.daa.com.au/~james/files/ipplib.py) and
-[printerlist.py](http://www.daa.com.au/~james/files/printerlist.py). Put
-them in the same directory and run \"`python printerlist.py`\". Seems to
-work pretty well for less than a thousand lines of code.
+If you want to try it out, grab [ipplib.py](ipplib.py) and
+[printerlist.py](printerlist.py). Put them in the same directory and
+run \"`python printerlist.py`\". Seems to work pretty well for less
+than a thousand lines of code.
 
 To get things working with CUPS\'s authentication, I do the following
 for operations like `Pause-Printer`:

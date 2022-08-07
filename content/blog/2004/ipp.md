@@ -7,7 +7,7 @@ date: 2004-03-12T10:49:01+08:00
 Out of curiosity, I decided to write a little
 [IPP](http://www.pwg.org/ipp/) client library in Python. An\
 in-progress version can be found
-[here](http://www.daa.com.au/~james/files/ipplib.py).
+[here](../ipp-2/ipplib.py).
 
 In less than 500 lines of Python, I have an IPP message\
 encoder/decoder, and some higher level classes to perform a few\
