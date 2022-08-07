@@ -38,7 +38,7 @@ quick points to help with the transition:
     If you only have a binary package name, you can use the following
     command to find the source package name:\
 
-    > [apt-cache show \$packagename \| grep \^Source:]{.kbd}
+    > `apt-cache show $packagename | grep ^Source:`
 
     We\'ll make it easier to enter bugs when you only know the binary
     package name in the future.

@@ -38,14 +38,14 @@ is the area that OAuth targets.
 While it has different applications, it is possible to compare some of
 the choices made in the protocol:
 
-1.  The secrets for request and access tokens are sent to the client in
-    the clear. So at a minimum, a service provider\'s request token URL
-    and access token URL should be served over SSL. OpenID nominally
-    avoids this by using [[Diffie-Hellman Key
+1.  The secrets for request and access tokens are sent to the client
+    in the clear. So at a minimum, a service provider\'s request token
+    URL and access token URL should be served over SSL. OpenID
+    nominally avoids this by using [Diffie-Hellman Key
     Exchange](http://en.wikipedia.org/wiki/Diffie-Hellman_key_exchange)
     to avoid evesdropping, but ended up needing it to avoid man in the
     middle attacks. So sending them in the clear is probably a more
-    honest approach.]{.info}
+    honest approach.
 2.  Actual web service methods can be authenticated over plain HTTP in a
     fairly secure means using the HMAC-SHA1 or RSA-SHA1 signature
     methods. Although if you\'re using SSL anyway, the PLAINTEXT
@@ -55,13 +55,13 @@ the choices made in the protocol:
     secrets is invalidated for desktop applications, since anyone with a
     copy of the application will necessarily have access to the secrets.
     A few other points follow on from this:
-    -   [The RSA-SHA1 signature method is not appropriate for use by
-        desktop applications. The signature is based only on information
-        available in the web service request and the RSA key associated
-        with the consumer, and the private key will need to be
-        distributed as part of the application. So if an attacker
-        discovers an access token (not access token secret), they can
-        authenticate.]{.info}
+    -   The RSA-SHA1 signature method is not appropriate for use by
+        desktop applications. The signature is based only on
+        information available in the web service request and the RSA
+        key associated with the consumer, and the private key will
+        need to be distributed as part of the application. So if an
+        attacker discovers an access token (not access token secret),
+        they can authenticate.
     -   The other two authentication methods --- HMAC-SHA1 and
         PLAINTEXT --- depend on an access token secret. Along with the
         access token, this is essentially a proxy for the user name and

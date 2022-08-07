@@ -8,7 +8,7 @@ tags: ['Bazaar', 'Gnome']
 Over the weekend, I released [gnome-gpg
 0.5.0](http://mail.gnome.org/archives/gnome-announce-list/2006-September/msg00002.html).
 The main features in this release is support for running without
-[gnome-keyring-daemon]{.kbd} (of course, you can\'t save the passphrase
+`gnome-keyring-daemon` (of course, you can\'t save the passphrase
 in this mode), and to use the same keyring item name for the passphrase
 as [Seahorse](http://seahorse.sourceforge.net/). The release can be
 downloaded here:
@@ -17,7 +17,7 @@ downloaded here:
 
 I also switched over from [Arch](http://www.gnuarch.org/) to
 [Bazaar](http://www.bazaar-vcs.org/). The conversion was fairly painless
-using [bzr baz-import-branch]{.kbd}, and means that I have both my
+using `bzr baz-import-branch`, and means that I have both my
 revisions and Colins revisions in a single tree. The branch can be
 pulled from:
 
@@ -30,9 +30,9 @@ Bazaar are for particular tree states rather than changes between two
 tree states, so it doesn\'t affect the trust of the current revisions.
 
 While I was at it, I also converted the other branches I had in my
-[www.gnome.org]{.kbd} Arch archive over to bzr. The only other branch
-that people might find useful is the [http-resource]{.kbd} code, which
-I\'ve updated to compile with the latest [libsoup]{.kbd}.
+`www.gnome.org` Arch archive over to bzr. The only other branch
+that people might find useful is the `http-resource` code, which
+I\'ve updated to compile with the latest `libsoup`.
 
 ---
 ### Comments:

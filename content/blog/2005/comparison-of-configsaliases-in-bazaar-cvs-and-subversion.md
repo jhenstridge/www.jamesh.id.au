@@ -20,15 +20,15 @@ different way, so I\'ll go over each one in turn and then compare them.
 
 **CVS**
 
-When you run the \"[cvs checkout `module`{.variable}]{.kbd}\" command,
+When you run the \"`cvs checkout $module`\" command,
 CVS will look in the `CVSROOT/modules` file for the repository. For
 example, the file might contain the following:
 
     module foobar
 
 This would tell CVS to check out the foobar directory from the
-repository into a directory named `module`{.variable} when the user asks
-for `module`{.variable}. If no entry is found for a particular name, the
+repository into a directory named `module` when the user asks
+for `module`. If no entry is found for a particular name, the
 directory by that name is checked out from the repository.
 
 To compose multiple modules into a single working copy, the ampersand
@@ -37,24 +37,14 @@ syntax can be used:
     module foo &bar &baz
     bar othermodule/bar
 
-With this modules file, \"[cvs checkout module]{.kbd}\" would give the
+With this modules file, \"`cvs checkout module`\" would give the
 following working copy:
 
-> Working Copy
-
-Repository
-
-module
-
-foo
-
-module/bar
-
-othermodule/bar
-
-module/baz
-
-baz
+| Working Copy | Repository      |
+| ------------ | --------------- |
+| module       | foo             |
+| module/bar   | othermodule/bar |
+| module/baz   | baz             |
 
 Operations like `tag`, `commit`, `update`, etc will descend into
 included modules, so for the most part a user can treat the resulting
@@ -62,7 +52,7 @@ working copy as a single tree. If a particular branch tag exists on all
 the included modules, you can even check out a branch of the combined
 working copy. There are some problems with the support though:
 
--   While \"[cvs update]{.kbd}\" will update the working copy, it won\'t
+-   While \"`cvs update`\" will update the working copy, it won\'t
     take into account any changes in `CVSROOT/modules`.
 -   If you\'ve only got write access to part of the repository, and
     can\'t write to `CVSROOT/modules`, then you can\'t change
@@ -70,7 +60,7 @@ working copy. There are some problems with the support though:
 -   While CVS lets you check out old versions of code, you still use the
     latest version of `CVSROOT/modules`. This can make it difficult to
     check out historical versions of the tree.
--   Since \"[cvs tag]{.kbd}\" descends into included modules, you can
+-   Since \"`cvs tag`\" descends into included modules, you can
     end up with many branch tags on some modules. For instance, the
     `gnome-common/macros` directory in Gnome CVS has 282 branch tags,
     which makes it almost impossible to feed fixes to all those
@@ -89,9 +79,8 @@ property is of the form:
     subdir [-rrevnum] absolute-uri-of-tree-to-include
 
 This will check out each the given tree at the given sub dir when ever
-\"[svn checkout]{.kbd}\" or \"[svn update]{.kbd}\" are used. However
-unlike CVS, \"[svn commit]{.kbd}\" will not descend into the included
-modules.
+\"`svn checkout`\" or \"`svn update`\" are used. However unlike CVS,
+\"`svn commit`\" will not descend into the included modules.
 
 Some of the benefits of this approach include:
 
@@ -99,8 +88,8 @@ Some of the benefits of this approach include:
 -   It reduces the permissions problems: if you can commit to the
     directory where the inclusion will occur, you can add the inclusion.
 -   Can include modules from other repositories. In this case, it is
-    actually useful that \"[svn commit]{.kbd}\" doesn\'t descend into
-    the included module because it is likely that the user won\'t have
+    actually useful that \"`svn commit`\" doesn\'t descend into the
+    included module because it is likely that the user won\'t have
     write access to the external modules.
 -   When checking out a historic version of the module, the historic
     version of the `svn:externals` properties get used.
@@ -149,9 +138,9 @@ commands:
     baz update
     baz build-config -u file-name
 
-(the [-u]{.kbd} flag is only available in the 1.5 prereleases.
-Previously you needed a command like \"[baz cat-config
-`file-name`{.variable} \| xargs -n2 baz update -d]{.kbd}\").
+(the `-u` flag is only available in the 1.5 prereleases.
+Previously you needed a command like \"`baz cat-config
+$filename | xargs -n2 baz update -d`\").
 
 The name of the configuration file is not special, and it is possible to
 have multiple configurations stored in a single branch. In fact it is
@@ -190,78 +179,16 @@ Some of the down sides of the approach include:
 Here is a summary of how the three systems stand up against each other
 in this respect:
 
- 
-
-CVS
-
-Subversion
-
-Bazaar
-
-Who can change configs?
-
-Committers to `CVSROOT`
-
-Committers
-
-Anyone
-
-Build historic configs?
-
-No
-
-Yes
-
-Sort of (snapshot configs)
-
-Supports multiple parallel configurations of same code?
-
-Yes
-
-Yes
-
-Yes
-
-`commit` command crosses module inclusion boundaries?
-
-Yes
-
-No
-
-No
-
-Configs built by `checkout` command?
-
-Yes
-
-Yes
-
-No
-
-Configs built by `update` command?
-
-No
-
-Yes
-
-No
-
-Resistant to project hosting changes?
-
-Yes
-
-No
-
-Yes
-
-Same config usable for committers and read-only users?
-
-Yes
-
-Yes for DAV access\
-No for `svn+ssh://` access
-
-Yes
+|  | CVS | Subversion | Bazaar |
+|--| --- | --- | --- |
+| Who can change configs? | Committers to `CVSROOT` | Committers | Anyone |
+| Build historic configs? | No | Yes | Sort of (snapshot configs) |
+| Supports multiple parallel configurations of same code? | Yes | Yes | Yes |
+| `commit` command crosses module inclusion boundaries? | Yes | No | No |
+| Configs built by `checkout` command? | Yes | Yes | No |
+| Configs built by `update` command? | No | Yes | No |
+| Resistant to project hosting changes? | Yes | No | Yes |
+| Same config usable for committers and read-only users? | Yes | Yes for DAV access, No for `svn+ssh://` access | Yes |
 
 Each system is slightly different with its benefits and problems. It
 isn\'t particularly surprising then that configs are not handled well by
