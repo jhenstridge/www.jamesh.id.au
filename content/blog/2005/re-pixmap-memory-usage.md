@@ -2,7 +2,6 @@
 title: 'Re: Pixmap Memory Usage'
 slug: re-pixmap-memory-usage
 date: 2005-12-08T06:38:53+08:00
-draft: false
 tags: ['Gnome']
 ---
 

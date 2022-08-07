@@ -2,7 +2,6 @@
 title: '7 August 2000'
 slug: 7-august-2000
 date: 2000-08-08T06:25:49+08:00
-draft: false
 ---
 
 I released a new version of dia on sunday. Didn\'t get\

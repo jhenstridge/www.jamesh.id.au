@@ -2,7 +2,6 @@
 title: '11 October 2004'
 slug: 11-october-2004
 date: 2004-10-11T09:54:43+08:00
-draft: false
 tags: ['Gnome']
 ---
 

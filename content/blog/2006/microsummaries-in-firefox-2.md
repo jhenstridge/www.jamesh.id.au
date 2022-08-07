@@ -2,7 +2,6 @@
 title: 'Microsummaries in Firefox 2'
 slug: microsummaries-in-firefox-2
 date: 2006-09-08T17:27:16+08:00
-draft: false
 tags: ['Launchpad']
 ---
 

@@ -2,7 +2,6 @@
 title: 'Launchpad code scanned by Ohloh'
 slug: launchpad-ohloh
 date: 2009-10-27T16:48:18+08:00
-draft: false
 tags: ['Bazaar', 'Launchpad', 'Ubuntu']
 ---
 

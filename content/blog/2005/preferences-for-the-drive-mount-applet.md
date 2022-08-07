@@ -2,7 +2,6 @@
 title: 'Preferences for the Drive Mount Applet'
 slug: preferences-for-the-drive-mount-applet
 date: 2005-12-16T13:39:52+08:00
-draft: false
 tags: ['Gnome']
 ---
 

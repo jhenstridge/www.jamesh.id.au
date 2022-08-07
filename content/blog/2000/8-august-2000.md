@@ -2,7 +2,6 @@
 title: '8 August 2000'
 slug: 8-august-2000
 date: 2000-08-09T07:53:15+08:00
-draft: false
 ---
 
 On IRC:

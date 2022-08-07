@@ -2,7 +2,6 @@
 title: 'Streaming Vorbis files from Ubuntu to a PS3'
 slug: upnp-ps3
 date: 2008-10-30T11:35:40+09:00
-draft: false
 tags: ['DLNA', 'PlayStation 3', 'Ubuntu', 'UPnP']
 ---
 

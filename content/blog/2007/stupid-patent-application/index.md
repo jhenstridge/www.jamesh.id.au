@@ -2,7 +2,6 @@
 title: 'Stupid Patent Application'
 slug: stupid-patent-application
 date: 2007-05-31T15:50:44+08:00
-draft: false
 tags: ['Gnome', 'XML']
 ---
 

@@ -2,7 +2,6 @@
 title: 'Weird GNOME Power Manager error message'
 slug: weird-gnome-power-manager-error-message
 date: 2007-11-19T08:08:39+09:00
-draft: false
 tags: ['Gnome', 'gnome-power-manager', 'Ubuntu']
 ---
 

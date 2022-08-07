@@ -2,7 +2,6 @@
 title: 'New Default Branch Format in Bzr'
 slug: new-default-branch-format-in-bzr
 date: 2006-04-27T16:47:34+08:00
-draft: false
 tags: ['Bazaar']
 ---
 

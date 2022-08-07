@@ -2,7 +2,6 @@
 title: 'Watching iView with Rygel'
 slug: watching-iview-with-rygel
 date: 2009-07-06T16:50:45+08:00
-draft: false
 tags: ['Gnome', 'Python', 'UPnP']
 ---
 

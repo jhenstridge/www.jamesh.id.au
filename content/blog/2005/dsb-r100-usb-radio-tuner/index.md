@@ -2,7 +2,6 @@
 title: 'DSB-R100 USB Radio Tuner'
 slug: dsb-r100-usb-radio-tuner
 date: 2005-10-18T09:26:54+08:00
-draft: false
 tags: ['Gnome', 'Ubuntu']
 ---
 

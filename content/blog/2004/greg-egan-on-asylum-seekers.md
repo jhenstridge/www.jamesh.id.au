@@ -2,7 +2,6 @@
 title: 'Greg Egan on Asylum Seekers'
 slug: greg-egan-on-asylum-seekers
 date: 2004-05-03T09:34:21+08:00
-draft: false
 ---
 
 An [interesting essay on asylum

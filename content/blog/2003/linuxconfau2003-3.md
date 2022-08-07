@@ -2,7 +2,6 @@
 title: 'linux.conf.au:2003'
 slug: linuxconfau2003-3
 date: 2003-01-28T02:38:07+08:00
-draft: false
 ---
 
 The second day of talks went well. That night we had the conference

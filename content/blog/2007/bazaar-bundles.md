@@ -2,7 +2,6 @@
 title: 'Bazaar Bundles'
 slug: bazaar-bundles
 date: 2007-07-31T13:51:51+08:00
-draft: false
 tags: ['Bazaar', 'Launchpad']
 ---
 

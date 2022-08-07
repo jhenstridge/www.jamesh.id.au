@@ -2,7 +2,6 @@
 title: 'urlparse considered harmful'
 slug: urlparse-considered-harmful
 date: 2007-12-10T15:57:20+09:00
-draft: false
 tags: ['Python']
 ---
 

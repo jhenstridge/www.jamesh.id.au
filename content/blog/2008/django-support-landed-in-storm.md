@@ -2,7 +2,6 @@
 title: 'Django support landed in Storm'
 slug: django-support-landed-in-storm
 date: 2008-09-19T14:23:51+08:00
-draft: false
 tags: ['Django', 'Python', 'Storm']
 ---
 

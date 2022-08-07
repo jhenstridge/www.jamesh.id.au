@@ -2,7 +2,6 @@
 title: 'Upgrading to Ubuntu Gutsy'
 slug: gutsy-upgrade
 date: 2007-09-24T16:59:23+08:00
-draft: false
 tags: ['Ubuntu']
 ---
 

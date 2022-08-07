@@ -2,7 +2,6 @@
 title: 'UTC+9'
 slug: utc9
 date: 2006-12-04T11:46:35+09:00
-draft: false
 tags: ['Gnome', 'Launchpad', 'Python', 'Ubuntu']
 ---
 

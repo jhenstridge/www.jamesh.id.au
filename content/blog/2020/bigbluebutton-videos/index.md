@@ -2,7 +2,6 @@
 title: 'Converting BigBlueButton recordings to self-contained videos'
 slug: bigbluebutton-videos
 date: 2020-07-25T20:12:38+08:00
-draft: false
 tags: ['Gnome', 'GStreamer', 'GUADEC', 'Python']
 ---
 

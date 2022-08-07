@@ -2,7 +2,6 @@
 title: '29 November 2001'
 slug: 29-november-2001
 date: 2001-11-29T09:44:01+08:00
-draft: false
 ---
 
 Assuming that the initial count is correct, /me is on the\

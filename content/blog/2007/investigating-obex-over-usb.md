@@ -2,7 +2,6 @@
 title: 'Investigating OBEX over USB'
 slug: investigating-obex-over-usb
 date: 2007-06-18T10:14:44+08:00
-draft: false
 tags: ['Gnome', 'Ubuntu']
 ---
 

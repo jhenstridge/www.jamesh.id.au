@@ -2,7 +2,6 @@
 title: 'Chilli Beer'
 slug: chilli-beer
 date: 2006-12-12T04:03:22+09:00
-draft: false
 tags: ['Beer']
 ---
 

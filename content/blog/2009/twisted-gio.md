@@ -2,7 +2,6 @@
 title: 'Using Twisted Deferred objects with gio'
 slug: twisted-gio
 date: 2009-01-06T10:18:53+09:00
-draft: false
 tags: ['Gnome', 'Python', 'Twisted']
 ---
 

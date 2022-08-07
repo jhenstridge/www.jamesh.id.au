@@ -2,7 +2,6 @@
 title: 'pkg-config patches'
 slug: pkg-config-patches
 date: 2005-06-21T19:56:18+08:00
-draft: false
 tags: ['Gnome']
 ---
 

@@ -2,7 +2,6 @@
 title: 'Lamb on Australia Day'
 slug: lamb-on-australia-day
 date: 2006-01-16T18:01:46+08:00
-draft: false
 ---
 
 There is a new \"[We Love Our Lamb on Australia

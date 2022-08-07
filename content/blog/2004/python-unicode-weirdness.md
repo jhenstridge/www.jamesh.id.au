@@ -2,7 +2,6 @@
 title: 'Python Unicode Weirdness'
 slug: python-unicode-weirdness
 date: 2004-08-17T22:34:34+08:00
-draft: false
 tags: ['Python']
 ---
 

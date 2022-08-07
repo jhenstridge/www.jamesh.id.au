@@ -2,7 +2,6 @@
 title: 'Performing mounts securely on user owned directories'
 slug: secure-mounts
 date: 2018-04-19T18:47:14+08:00
-draft: false
 tags: ['Linux', 'Ubuntu']
 ---
 

@@ -2,7 +2,6 @@
 title: 'New pkg-config'
 slug: new-pkg-config
 date: 2005-04-14T07:43:09+08:00
-draft: false
 ---
 
 I recently pointed jhbuild\'s bootstrap module-set at the new releases

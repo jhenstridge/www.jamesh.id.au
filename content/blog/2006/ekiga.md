@@ -2,7 +2,6 @@
 title: 'Ekiga'
 slug: ekiga
 date: 2006-04-11T06:30:06+08:00
-draft: false
 tags: ['Gnome', 'Ubuntu']
 ---
 

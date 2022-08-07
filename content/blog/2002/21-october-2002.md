@@ -2,7 +2,6 @@
 title: '21 October 2002'
 slug: 21-october-2002
 date: 2002-10-22T02:43:53+08:00
-draft: false
 ---
 
 **Jury Duty (almost)**

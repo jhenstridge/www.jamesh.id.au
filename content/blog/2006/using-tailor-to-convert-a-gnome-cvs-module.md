@@ -2,7 +2,6 @@
 title: 'Using Tailor to Convert a Gnome CVS Module'
 slug: using-tailor-to-convert-a-gnome-cvs-module
 date: 2006-02-20T09:53:45+08:00
-draft: false
 tags: ['Bazaar', 'Gnome', 'JHBuild']
 ---
 

@@ -2,7 +2,6 @@
 title: 'Ubuntu Bugzilla Migration Comment Cleanup'
 slug: ubuntu-bugzilla-migration-comment-cleanup
 date: 2006-09-05T07:07:41+08:00
-draft: false
 tags: ['Launchpad', 'Ubuntu']
 ---
 

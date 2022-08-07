@@ -2,7 +2,6 @@
 title: 'FM Radio in Rhythmbox – The Code'
 slug: fm-radio-in-rhythmbox-–-the-code
 date: 2007-05-21T21:08:41+08:00
-draft: false
 tags: ['Bazaar', 'Gnome', 'Ubuntu']
 ---
 

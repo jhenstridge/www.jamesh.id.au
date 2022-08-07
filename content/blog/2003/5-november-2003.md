@@ -2,7 +2,6 @@
 title: '5 November 2003'
 slug: 5-november-2003
 date: 2003-11-06T03:47:32+08:00
-draft: false
 tags: ['JHBuild']
 ---
 

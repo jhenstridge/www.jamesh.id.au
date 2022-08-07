@@ -2,7 +2,6 @@
 title: 'po/LINGUAS'
 slug: polinguas
 date: 2006-04-12T06:13:14+08:00
-draft: false
 ---
 
 One issue that was meantioned as a [Gnome

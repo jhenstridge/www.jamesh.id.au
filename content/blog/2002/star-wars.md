@@ -2,7 +2,6 @@
 title: 'Star Wars'
 slug: star-wars
 date: 2002-05-19T10:44:16+08:00
-draft: false
 ---
 
 Went to see AOTC today. It was a lot better than Episode\

@@ -2,7 +2,6 @@
 title: 'States in Version Control Systems'
 slug: vcs-states
 date: 2007-12-04T18:32:05+09:00
-draft: false
 tags: ['Bazaar']
 ---
 

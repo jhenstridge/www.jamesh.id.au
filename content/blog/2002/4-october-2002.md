@@ -2,7 +2,6 @@
 title: '4 October 2002'
 slug: 4-october-2002
 date: 2002-10-05T07:53:23+08:00
-draft: false
 ---
 
 **[linux.conf.au](http://linux.conf.au/)**

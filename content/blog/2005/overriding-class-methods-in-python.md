@@ -2,7 +2,6 @@
 title: 'Overriding Class Methods in Python'
 slug: overriding-class-methods-in-python
 date: 2005-06-23T13:28:38+08:00
-draft: false
 tags: ['Python']
 ---
 

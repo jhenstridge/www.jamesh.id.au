@@ -2,7 +2,6 @@
 title: 'Hosting bzr branches on Launchpad'
 slug: hosting-bzr-branches-on-launchpad
 date: 2006-06-18T05:26:33+08:00
-draft: false
 tags: ['Bazaar', 'Launchpad']
 ---
 

@@ -2,7 +2,6 @@
 title: 'Launchpad 1.0 Public Beta'
 slug: launchpad-10-public-beta
 date: 2007-04-02T20:01:53+08:00
-draft: false
 tags: ['Launchpad', 'Ubuntu']
 ---
 

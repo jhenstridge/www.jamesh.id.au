@@ -2,7 +2,6 @@
 title: 'Using Mozmill to Test Firefox Extensions'
 slug: mozmill
 date: 2011-02-20T09:30:01+08:00
-draft: false
 tags: ['firefox', 'mozilla', 'testing', 'Ubuntu One']
 ---
 

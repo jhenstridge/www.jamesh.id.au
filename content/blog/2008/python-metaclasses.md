@@ -2,7 +2,6 @@
 title: 'Re: Python factory-like type instances'
 slug: python-metaclasses
 date: 2008-02-12T14:54:44+09:00
-draft: false
 tags: ['Python']
 ---
 

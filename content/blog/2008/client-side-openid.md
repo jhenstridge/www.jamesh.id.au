@@ -2,7 +2,6 @@
 title: 'Client Side OpenID'
 slug: client-side-openid
 date: 2008-02-18T14:13:13+09:00
-draft: false
 tags: ['OpenID']
 ---
 

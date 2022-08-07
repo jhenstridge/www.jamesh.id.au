@@ -2,7 +2,6 @@
 title: 'Applets vs. Notification Icons'
 slug: applets-vs-notification-icons
 date: 2004-09-17T11:21:47+08:00
-draft: false
 tags: ['Gnome']
 ---
 

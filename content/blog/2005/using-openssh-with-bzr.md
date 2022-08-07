@@ -2,7 +2,6 @@
 title: 'Using OpenSSH with bzr'
 slug: using-openssh-with-bzr
 date: 2005-11-17T09:19:18+08:00
-draft: false
 tags: ['Bazaar']
 ---
 

@@ -2,7 +2,6 @@
 title: '25 December 1999'
 slug: 25-december-1999
 date: 1999-12-26T03:56:19+08:00
-draft: false
 ---
 
 I made another release of [Dia](http://www.lysator.liu.se/~alla/dia/).

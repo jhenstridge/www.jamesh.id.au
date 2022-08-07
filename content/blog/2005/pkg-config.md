@@ -2,7 +2,6 @@
 title: 'pkg-config'
 slug: pkg-config
 date: 2005-04-26T07:04:17+08:00
-draft: false
 ---
 
 One of the changes in the recent

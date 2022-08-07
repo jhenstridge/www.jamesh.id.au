@@ -2,7 +2,6 @@
 title: 'Anonymous voting'
 slug: anonymous-voting
 date: 2005-06-16T09:38:46+08:00
-draft: false
 tags: ['Gnome']
 ---
 

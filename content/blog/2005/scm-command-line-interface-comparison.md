@@ -2,7 +2,6 @@
 title: 'SCM Command Line Interface Comparison'
 slug: scm-command-line-interface-comparison
 date: 2005-05-12T08:01:03+08:00
-draft: false
 tags: ['Bazaar']
 ---
 

@@ -2,7 +2,6 @@
 title: 'Storm Released'
 slug: storm-released
 date: 2007-07-15T22:24:17+08:00
-draft: false
 tags: ['Launchpad', 'Python', 'Storm']
 ---
 

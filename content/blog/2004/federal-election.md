@@ -2,7 +2,6 @@
 title: 'Federal Election'
 slug: federal-election
 date: 2004-08-30T16:38:46+08:00
-draft: false
 ---
 
 So the [Federal election](http://www.aec.gov.au/election2004/index.htm)

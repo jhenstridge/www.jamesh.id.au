@@ -2,7 +2,6 @@
 title: '15 December 2002'
 slug: 15-december-2002
 date: 2002-12-15T13:41:33+08:00
-draft: false
 ---
 
 Haven\'t posed here for a while \...

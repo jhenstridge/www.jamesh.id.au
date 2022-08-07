@@ -2,7 +2,6 @@
 title: '23 December 2001'
 slug: 23-december-2001
 date: 2001-12-23T10:38:17+08:00
-draft: false
 ---
 
 More investigation of the slow processing speed for my\

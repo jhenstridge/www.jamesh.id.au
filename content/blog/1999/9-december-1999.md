@@ -2,7 +2,6 @@
 title: '9 December 1999'
 slug: 9-december-1999
 date: 1999-12-10T02:57:45+08:00
-draft: false
 ---
 
 I got my uni results yesterday. I got good marks in both\

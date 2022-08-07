@@ -2,7 +2,6 @@
 title: 'Back from London'
 slug: back-from-london
 date: 2006-08-17T11:34:36+08:00
-draft: false
 ---
 
 I got back from London on Sunday from the

@@ -2,7 +2,6 @@
 title: 'PSP'
 slug: psp
 date: 2005-11-28T12:51:52+08:00
-draft: false
 ---
 
 On my way to UBZ, I bought a PlayStation Portable at the airport duty

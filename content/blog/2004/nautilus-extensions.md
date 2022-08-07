@@ -2,7 +2,6 @@
 title: 'Nautilus Extensions'
 slug: nautilus-extensions
 date: 2004-12-03T12:26:49+08:00
-draft: false
 tags: ['Gnome']
 ---
 

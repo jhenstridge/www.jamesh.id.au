@@ -2,7 +2,6 @@
 title: '26 November 2001'
 slug: 26-november-2001
 date: 2001-11-26T12:19:46+08:00
-draft: false
 ---
 
 Working at ActiveState was a lot of fun. It was\

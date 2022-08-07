@@ -2,7 +2,6 @@
 title: 'Ubuntu Bugzilla Migration'
 slug: ubuntu-bugzilla-migration
 date: 2006-01-11T15:01:04+08:00
-draft: false
 tags: ['Launchpad', 'Ubuntu']
 ---
 

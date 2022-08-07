@@ -2,7 +2,6 @@
 title: 'OpenID 2.0'
 slug: openid-20
 date: 2007-10-23T14:24:23+08:00
-draft: false
 tags: ['OpenID']
 ---
 

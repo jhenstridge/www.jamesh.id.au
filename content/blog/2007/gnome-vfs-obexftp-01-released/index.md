@@ -2,7 +2,6 @@
 title: 'gnome-vfs-obexftp 0.1 released'
 slug: gnome-vfs-obexftp-01-released
 date: 2007-01-03T14:52:36+09:00
-draft: false
 tags: ['Gnome']
 ---
 

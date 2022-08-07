@@ -2,7 +2,6 @@
 title: 'Comparison of Configs/Aliases in Bazaar, CVS and  Subversion'
 slug: comparison-of-configsaliases-in-bazaar-cvs-and-subversion
 date: 2005-08-29T20:15:36+08:00
-draft: false
 tags: ['Bazaar']
 ---
 

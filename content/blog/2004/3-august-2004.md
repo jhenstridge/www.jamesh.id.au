@@ -2,7 +2,6 @@
 title: '3 August 2004'
 slug: 3-august-2004
 date: 2004-08-04T04:16:19+08:00
-draft: false
 ---
 
 **Fahrenheit 9/11**

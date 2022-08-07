@@ -2,7 +2,6 @@
 title: 'More Icon Theme stuff'
 slug: more-icon-theme-stuff
 date: 2004-10-05T12:09:41+08:00
-draft: false
 ---
 
 In an email, [Jonathan](http://jrb.webwynk.net/) pointed out that simply

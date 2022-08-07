@@ -2,7 +2,6 @@
 title: 'Gnome Logo on Slashdot'
 slug: gnome-logo-on-slashdot
 date: 2006-03-21T02:47:36+08:00
-draft: false
 tags: ['Gnome']
 ---
 

@@ -2,7 +2,6 @@
 title: 'Two‐Phase Commit in Python''s DB‐API'
 slug: python-tpc
 date: 2008-03-04T15:19:31+09:00
-draft: false
 tags: ['PostgreSQL', 'Python', 'Storm']
 ---
 

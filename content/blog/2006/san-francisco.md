@@ -2,7 +2,6 @@
 title: 'San Francisco'
 slug: san-francisco
 date: 2006-11-13T05:26:26+08:00
-draft: false
 tags: ['Ubuntu']
 ---
 

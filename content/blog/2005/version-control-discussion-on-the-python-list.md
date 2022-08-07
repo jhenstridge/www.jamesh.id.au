@@ -2,7 +2,6 @@
 title: 'Version control discussion on the Python list'
 slug: version-control-discussion-on-the-python-list
 date: 2005-08-15T12:29:35+08:00
-draft: false
 tags: ['Bazaar', 'Launchpad', 'Python']
 ---
 

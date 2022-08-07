@@ -2,7 +2,6 @@
 title: '14 September 2004'
 slug: 14-september-2004
 date: 2004-09-15T06:54:12+08:00
-draft: false
 tags: ['Gnome']
 ---
 

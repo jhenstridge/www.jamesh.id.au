@@ -2,7 +2,6 @@
 title: 'Moving from Bugzilla to Launchpad'
 slug: moving-from-bugzilla-to-launchpad
 date: 2005-11-09T07:46:25+08:00
-draft: false
 tags: ['Launchpad', 'Ubuntu']
 ---
 

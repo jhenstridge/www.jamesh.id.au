@@ -2,7 +2,6 @@
 title: '17 December 2003'
 slug: 17-december-2003
 date: 2003-12-17T09:25:07+08:00
-draft: false
 ---
 
 [**Callum**](http://www.advogato.org/person/Spooky/diary.html?start=24):

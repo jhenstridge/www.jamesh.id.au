@@ -2,7 +2,6 @@
 title: 'linux.conf.au:2003'
 slug: linuxconfau2003-2
 date: 2003-01-23T15:25:08+08:00
-draft: false
 ---
 
 Things have been going very well so far. Registration was a breeze

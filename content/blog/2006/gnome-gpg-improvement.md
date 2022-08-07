@@ -2,7 +2,6 @@
 title: 'gnome-gpg improvement'
 slug: gnome-gpg-improvement
 date: 2006-01-13T05:54:49+08:00
-draft: false
 tags: ['Gnome']
 ---
 

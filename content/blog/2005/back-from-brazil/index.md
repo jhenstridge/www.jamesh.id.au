@@ -2,7 +2,6 @@
 title: 'Back from Brazil'
 slug: back-from-brazil
 date: 2005-08-04T14:27:51+08:00
-draft: false
 tags: ['Launchpad']
 ---
 

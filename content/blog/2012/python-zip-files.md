@@ -2,7 +2,6 @@
 title: 'Packaging Python programs as runnable ZIP files'
 slug: python-zip-files
 date: 2012-05-21T15:31:05+08:00
-draft: false
 tags: ['Python']
 ---
 

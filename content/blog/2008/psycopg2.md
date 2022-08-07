@@ -2,7 +2,6 @@
 title: 'Psycopg2 2.0.7 Released'
 slug: psycopg2
 date: 2008-04-15T14:55:50+08:00
-draft: false
 tags: ['PostgreSQL', 'Python']
 ---
 

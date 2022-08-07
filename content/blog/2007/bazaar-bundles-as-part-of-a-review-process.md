@@ -2,7 +2,6 @@
 title: 'Bazaar bundles as part of a review process'
 slug: bazaar-bundles-as-part-of-a-review-process
 date: 2007-08-16T13:36:08+08:00
-draft: false
 tags: ['Bazaar']
 ---
 

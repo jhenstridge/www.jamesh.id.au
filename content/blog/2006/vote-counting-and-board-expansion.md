@@ -2,7 +2,6 @@
 title: 'Vote Counting and Board Expansion'
 slug: vote-counting-and-board-expansion
 date: 2006-06-06T19:51:06+08:00
-draft: false
 tags: ['Gnome']
 ---
 

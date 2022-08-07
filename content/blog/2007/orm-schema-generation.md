@@ -2,7 +2,6 @@
 title: 'Schema Generation in ORMs'
 slug: orm-schema-generation
 date: 2007-09-28T18:05:04+08:00
-draft: false
 tags: ['Launchpad', 'Storm', 'Ubuntu']
 ---
 

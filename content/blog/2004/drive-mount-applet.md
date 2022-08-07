@@ -2,7 +2,6 @@
 title: 'Drive Mount Applet'
 slug: drive-mount-applet
 date: 2004-10-14T09:28:27+08:00
-draft: false
 tags: ['Gnome']
 ---
 

@@ -2,7 +2,6 @@
 title: 'bzr-dbus hacking'
 slug: bzr-dbus-hacking
 date: 2008-03-27T23:45:17+09:00
-draft: false
 tags: ['Bazaar', 'D-Bus']
 ---
 

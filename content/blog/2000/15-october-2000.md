@@ -2,7 +2,6 @@
 title: '15 October 2000'
 slug: 15-october-2000
 date: 2000-10-15T14:55:53+08:00
-draft: false
 ---
 
 Wrote some code to convert arbitrary elliptic arcs to\

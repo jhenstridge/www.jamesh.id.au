@@ -2,7 +2,6 @@
 title: 'Psycopg migrated to Bazaar'
 slug: psycopg-migrated-to-bazaar
 date: 2008-04-28T22:07:50+08:00
-draft: false
 tags: ['Bazaar', 'Launchpad', 'PostgreSQL', 'Python']
 ---
 

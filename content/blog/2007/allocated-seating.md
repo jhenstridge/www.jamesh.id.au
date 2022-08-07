@@ -2,7 +2,6 @@
 title: 'Allocated Seating at Greater Union'
 slug: allocated-seating
 date: 2007-12-17T14:48:42+09:00
-draft: false
 ---
 
 On the weekend, I had my first encounter with allocated seating at the

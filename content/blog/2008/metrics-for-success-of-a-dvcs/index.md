@@ -2,7 +2,6 @@
 title: 'Metrics for success of a DVCS'
 slug: metrics-for-success-of-a-dvcs
 date: 2008-07-31T17:40:32+08:00
-draft: false
 tags: ['Bazaar', 'Gnome']
 ---
 

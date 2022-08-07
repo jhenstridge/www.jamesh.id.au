@@ -2,7 +2,6 @@
 title: 'Transaction Management in Django'
 slug: transaction-management-in-django
 date: 2008-09-01T15:42:39+08:00
-draft: false
 tags: ['Django', 'Python', 'Storm']
 ---
 

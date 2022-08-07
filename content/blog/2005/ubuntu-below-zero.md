@@ -2,7 +2,6 @@
 title: 'Ubuntu Below Zero'
 slug: ubuntu-below-zero
 date: 2005-10-31T01:58:09+08:00
-draft: false
 tags: ['Ubuntu']
 ---
 

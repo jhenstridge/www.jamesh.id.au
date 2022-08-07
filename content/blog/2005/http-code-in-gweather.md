@@ -2,7 +2,6 @@
 title: 'HTTP code in GWeather'
 slug: http-code-in-gweather
 date: 2005-06-30T09:19:18+08:00
-draft: false
 tags: ['Gnome']
 ---
 

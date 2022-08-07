@@ -2,7 +2,6 @@
 title: '1 October 2003'
 slug: 1-october-2003
 date: 2003-10-01T15:53:42+08:00
-draft: false
 ---
 
 **[linux.conf.au](http://lca2004.linux.org.au/)**

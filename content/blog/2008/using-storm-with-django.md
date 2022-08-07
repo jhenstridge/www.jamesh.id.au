@@ -2,7 +2,6 @@
 title: 'Using Storm with Django'
 slug: using-storm-with-django
 date: 2008-08-01T17:23:16+08:00
-draft: false
 tags: ['Django', 'Python', 'Storm', 'Zope']
 ---
 

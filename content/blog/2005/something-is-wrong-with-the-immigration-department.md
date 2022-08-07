@@ -2,7 +2,6 @@
 title: 'Something is wrong with the Immigration Department'
 slug: something-is-wrong-with-the-immigration-department
 date: 2005-05-11T12:31:51+08:00
-draft: false
 ---
 
 Shortly after the scandal over Cornelia Rau (a mentally ill Australian

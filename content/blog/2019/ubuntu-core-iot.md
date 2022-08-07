@@ -2,7 +2,6 @@
 title: 'Building IoT projects with Ubuntu Core talk'
 slug: ubuntu-core-iot
 date: 2019-03-20T10:38:53+08:00
-draft: false
 tags: ['Linux', 'PLUG', 'snapd', 'Ubuntu']
 ---
 

@@ -2,7 +2,6 @@
 title: 'Cairo'
 slug: cairo
 date: 2003-09-24T07:35:39+08:00
-draft: false
 ---
 
 Did some more hacking on my [Python bindings for

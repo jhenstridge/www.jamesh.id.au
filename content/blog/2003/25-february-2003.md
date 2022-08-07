@@ -2,7 +2,6 @@
 title: '25 February 2003'
 slug: 25-february-2003
 date: 2003-02-25T15:05:47+08:00
-draft: false
 ---
 
 **website**

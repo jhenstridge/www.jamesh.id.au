@@ -2,7 +2,6 @@
 title: '14 September 2001'
 slug: 14-september-2001
 date: 2001-09-14T17:27:33+08:00
-draft: false
 ---
 
 It is really sad hearing so many people in the US out for\

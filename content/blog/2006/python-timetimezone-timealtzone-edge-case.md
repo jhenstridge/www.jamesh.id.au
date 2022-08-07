@@ -2,7 +2,6 @@
 title: 'Python time.timezone / time.altzone edge case'
 slug: python-timetimezone-timealtzone-edge-case
 date: 2006-12-31T13:22:42+09:00
-draft: false
 tags: ['Bazaar', 'Python']
 ---
 

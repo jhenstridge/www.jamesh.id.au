@@ -2,7 +2,6 @@
 title: 'Playing with Google Maps API'
 slug: playing-with-google-maps-api
 date: 2005-09-21T15:43:05+08:00
-draft: false
 tags: ['Gnome']
 ---
 

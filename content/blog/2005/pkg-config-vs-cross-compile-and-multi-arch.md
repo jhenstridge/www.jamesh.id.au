@@ -2,7 +2,6 @@
 title: 'pkg-config vs. Cross Compile and Multi-arch'
 slug: pkg-config-vs-cross-compile-and-multi-arch
 date: 2005-07-05T04:27:05+08:00
-draft: false
 ---
 
 One of the areas where [`pkg-config`](http://pkgconfig.freedesktop.org/)

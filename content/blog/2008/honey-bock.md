@@ -2,7 +2,6 @@
 title: 'Honey Bock'
 slug: honey-bock
 date: 2008-03-06T12:12:49+09:00
-draft: false
 tags: ['Beer']
 ---
 

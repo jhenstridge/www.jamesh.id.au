@@ -2,7 +2,6 @@
 title: '6 January 2005'
 slug: 6-january-2005
 date: 2005-01-07T05:13:32+08:00
-draft: false
 tags: ['Bazaar', 'Gnome']
 ---
 

@@ -2,7 +2,6 @@
 title: '19 February 2000'
 slug: 19-february-2000
 date: 2000-02-19T13:57:16+08:00
-draft: false
 ---
 
 The river is still toxic. There were hardly any boats\

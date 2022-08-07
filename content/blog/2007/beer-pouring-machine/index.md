@@ -2,7 +2,6 @@
 title: 'Beer Pouring Machine'
 slug: beer-pouring-machine
 date: 2007-10-27T13:58:15+08:00
-draft: false
 tags: ['Beer', 'Japan', 'Narita']
 ---
 

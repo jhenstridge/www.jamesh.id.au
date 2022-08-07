@@ -2,7 +2,6 @@
 title: '13 October 2000'
 slug: 13-october-2000
 date: 2000-10-14T03:48:05+08:00
-draft: false
 ---
 
 I went to see [The Dish](http://us.imdb.com/Title?0205873) at the\

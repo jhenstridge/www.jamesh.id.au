@@ -2,7 +2,6 @@
 title: 'Python'
 slug: python
 date: 2003-10-21T02:20:46+08:00
-draft: false
 ---
 
 Been reading over Ulrich Drepper\'s [paper on how to write shared

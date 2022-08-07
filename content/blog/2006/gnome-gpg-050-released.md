@@ -2,7 +2,6 @@
 title: 'Gnome-gpg 0.5.0 Released'
 slug: gnome-gpg-050-released
 date: 2006-09-04T11:36:41+08:00
-draft: false
 tags: ['Bazaar', 'Gnome']
 ---
 

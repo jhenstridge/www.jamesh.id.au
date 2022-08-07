@@ -2,7 +2,6 @@
 title: 'Re: Lazy loading'
 slug: re-lazy-loading
 date: 2006-03-31T13:56:43+08:00
-draft: false
 tags: ['Gnome', 'Python']
 ---
 

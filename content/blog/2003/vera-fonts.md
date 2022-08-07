@@ -2,7 +2,6 @@
 title: 'Vera Fonts'
 slug: vera-fonts
 date: 2003-01-31T15:15:03+08:00
-draft: false
 ---
 
 [freetype](http://www.advogato.org/person/freetype/): I have a \"beta\"

@@ -2,7 +2,6 @@
 title: 'DVCS talks at GUADEC'
 slug: dvcs-guadec
 date: 2008-07-09T05:04:01+08:00
-draft: false
 tags: ['Bazaar', 'Gnome', 'GUADEC']
 ---
 

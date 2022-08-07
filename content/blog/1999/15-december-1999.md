@@ -2,7 +2,6 @@
 title: '15 December 1999'
 slug: 15-december-1999
 date: 1999-12-15T10:02:09+08:00
-draft: false
 ---
 
 I made my first release of dia as its new maintainer. It\

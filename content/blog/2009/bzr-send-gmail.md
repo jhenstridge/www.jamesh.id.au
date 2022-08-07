@@ -2,7 +2,6 @@
 title: 'Getting "bzr send" to work with GMail'
 slug: bzr-send-gmail
 date: 2009-01-16T18:19:31+09:00
-draft: false
 tags: ['Bazaar', 'Python']
 ---
 

@@ -2,7 +2,6 @@
 title: 'More Rygel testing'
 slug: more-rygel-testing
 date: 2009-06-19T00:06:19+08:00
-draft: false
 tags: ['Gnome', 'PlayStation 3', 'Ubuntu', 'UPnP']
 ---
 

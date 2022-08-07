@@ -2,7 +2,6 @@
 title: 'Playing Around With the Bluez D-BUS Interface'
 slug: playing-around-with-the-bluez-d-bus-interface
 date: 2006-10-19T12:13:34+08:00
-draft: false
 tags: ['Gnome', 'Python', 'Ubuntu']
 ---
 

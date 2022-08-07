@@ -2,7 +2,6 @@
 title: 'Bugzilla to Malone Migration'
 slug: bugzilla-to-malone-migration
 date: 2006-01-16T13:01:20+08:00
-draft: false
 tags: ['Launchpad', 'Ubuntu']
 ---
 

@@ -2,7 +2,6 @@
 title: 'Yeah! You were on fire! Awesome!'
 slug: yeah-you-were-on-fire-awesome
 date: 2006-11-15T22:34:02+08:00
-draft: false
 ---
 
 On Monday, I was exposed to US-style motivational speaking and team

@@ -2,7 +2,6 @@
 title: 'Using email addresses as OpenID identities (almost)'
 slug: openid-email
 date: 2008-04-02T16:25:46+08:00
-draft: false
 tags: ['OpenID']
 ---
 

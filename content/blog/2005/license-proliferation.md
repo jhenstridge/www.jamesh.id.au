@@ -2,7 +2,6 @@
 title: 'License Proliferation'
 slug: license-proliferation
 date: 2005-10-13T09:24:41+08:00
-draft: false
 ---
 
 [Glynn](http://www.gnome.org/~gman/blog/13102005): you say that the CDDL

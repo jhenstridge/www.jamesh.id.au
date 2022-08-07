@@ -2,7 +2,6 @@
 title: '27 November 2001'
 slug: 27-november-2001
 date: 2001-11-27T11:59:58+08:00
-draft: false
 ---
 
 My arms are still a bit sore when I straighten them from\

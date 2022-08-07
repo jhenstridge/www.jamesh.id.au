@@ -2,7 +2,6 @@
 title: 'Prague'
 slug: prague
 date: 2008-05-19T23:14:05+08:00
-draft: false
 tags: ['Gnome', 'Ubuntu']
 ---
 

@@ -2,7 +2,6 @@
 title: 'Storm 0.13'
 slug: storm-013
 date: 2008-08-29T16:21:20+08:00
-draft: false
 tags: ['Launchpad', 'Python', 'Storm', 'Zope']
 ---
 

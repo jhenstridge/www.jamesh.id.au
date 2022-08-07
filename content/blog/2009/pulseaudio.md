@@ -2,7 +2,6 @@
 title: 'PulseAudio'
 slug: pulseaudio
 date: 2009-02-25T21:24:58+09:00
-draft: false
 tags: ['Gnome']
 ---
 

@@ -2,7 +2,6 @@
 title: 'OpenID Attribute Exchange'
 slug: openid-ax
 date: 2007-11-26T17:18:03+09:00
-draft: false
 tags: ['OpenID', 'openid.ax']
 ---
 

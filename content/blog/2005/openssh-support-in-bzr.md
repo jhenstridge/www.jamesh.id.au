@@ -2,7 +2,6 @@
 title: 'OpenSSH support in bzr'
 slug: openssh-support-in-bzr
 date: 2005-11-30T14:29:12+08:00
-draft: false
 tags: ['Bazaar']
 ---
 

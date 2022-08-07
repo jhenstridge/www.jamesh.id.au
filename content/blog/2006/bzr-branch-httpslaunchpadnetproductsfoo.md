@@ -2,7 +2,6 @@
 title: 'bzr branch https://launchpad.net/products/foo'
 slug: bzr-branch-httpslaunchpadnetproductsfoo
 date: 2006-10-10T15:29:09+08:00
-draft: false
 tags: ['Bazaar', 'Launchpad']
 ---
 

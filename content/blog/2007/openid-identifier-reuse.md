@@ -2,7 +2,6 @@
 title: 'Identifier Reuse in OpenID 2.0'
 slug: openid-identifier-reuse
 date: 2007-11-11T23:15:41+09:00
-draft: false
 tags: ['OpenID']
 ---
 

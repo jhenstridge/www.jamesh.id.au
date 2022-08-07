@@ -2,7 +2,6 @@
 title: 'HTTP resource watcher'
 slug: http-resource-watcher
 date: 2005-07-11T14:13:00+08:00
-draft: false
 tags: ['Gnome']
 ---
 

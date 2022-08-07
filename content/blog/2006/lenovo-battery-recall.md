@@ -2,7 +2,6 @@
 title: 'Lenovo Battery Recall'
 slug: lenovo-battery-recall
 date: 2006-09-29T07:14:38+08:00
-draft: false
 ---
 
 So it seems that [Lenovo](http://www.lenovo.com/) has decided to [join

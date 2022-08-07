@@ -2,7 +2,6 @@
 title: 'Launchpad featured on ELER'
 slug: launchpad-featured-on-eler
 date: 2006-02-23T17:29:38+08:00
-draft: false
 tags: ['Launchpad', 'Ubuntu']
 ---
 

@@ -2,7 +2,6 @@
 title: '5 September 2003'
 slug: 5-september-2003
 date: 2003-09-05T15:22:33+08:00
-draft: false
 ---
 
 **PyGTK**

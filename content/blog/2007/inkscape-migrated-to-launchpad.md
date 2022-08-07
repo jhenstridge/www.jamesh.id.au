@@ -2,7 +2,6 @@
 title: 'Inkscape Migrated to Launchpad'
 slug: inkscape-migrated-to-launchpad
 date: 2007-11-28T14:13:32+09:00
-draft: false
 tags: ['Gnome', 'Inkscape', 'Launchpad']
 ---
 

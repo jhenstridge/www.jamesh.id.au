@@ -2,7 +2,6 @@
 title: 'bzr commit --author'
 slug: bzr-commit-author
 date: 2008-05-12T17:19:59+08:00
-draft: false
 tags: ['Bazaar']
 ---
 

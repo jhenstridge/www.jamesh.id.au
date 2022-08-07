@@ -2,7 +2,6 @@
 title: 'Google''s Australian Election Tools'
 slug: googles-australian-election-tools
 date: 2007-10-04T20:08:14+08:00
-draft: false
 ---
 
 It is probably old news to some, but Google have put up an [information

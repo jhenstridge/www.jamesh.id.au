@@ -2,7 +2,6 @@
 title: '8 December 2004'
 slug: 8-december-2004
 date: 2004-12-08T18:25:53+08:00
-draft: false
 tags: ['Gnome', 'JHBuild']
 ---
 

@@ -2,7 +2,6 @@
 title: '1 November 2004'
 slug: 1-november-2004
 date: 2004-11-01T10:43:57+08:00
-draft: false
 tags: ['Bazaar']
 ---
 

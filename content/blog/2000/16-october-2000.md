@@ -2,7 +2,6 @@
 title: '16 October 2000'
 slug: 16-october-2000
 date: 2000-11-16T14:48:48+08:00
-draft: false
 ---
 
 Haven\'t posted anything here in over a month. I just\

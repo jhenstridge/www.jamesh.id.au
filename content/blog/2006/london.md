@@ -2,7 +2,6 @@
 title: 'London'
 slug: london
 date: 2006-03-22T01:23:07+08:00
-draft: false
 tags: ['Launchpad', 'Ubuntu']
 ---
 

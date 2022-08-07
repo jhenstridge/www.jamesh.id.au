@@ -2,7 +2,6 @@
 title: '4 February 2000'
 slug: 4-february-2000
 date: 2000-02-04T15:07:48+08:00
-draft: false
 ---
 
 Been working on the property code for dia I proposed a\

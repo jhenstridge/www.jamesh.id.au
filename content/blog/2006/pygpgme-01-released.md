@@ -2,7 +2,6 @@
 title: 'pygpgme 0.1 released'
 slug: pygpgme-01-released
 date: 2006-03-29T09:30:22+08:00
-draft: false
 tags: ['Launchpad', 'Python']
 ---
 

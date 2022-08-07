@@ -2,7 +2,6 @@
 title: 'Extracting BIOS images and tools from ThinkPad update ISOs'
 slug: extracting-thinkpad-bios-image
 date: 2012-11-13T16:58:00+08:00
-draft: false
 tags: ['Python']
 ---
 

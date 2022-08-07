@@ -2,7 +2,6 @@
 title: 'Clipboard Handling'
 slug: clipboard-handling
 date: 2005-06-20T15:40:39+08:00
-draft: false
 tags: ['Gnome']
 ---
 

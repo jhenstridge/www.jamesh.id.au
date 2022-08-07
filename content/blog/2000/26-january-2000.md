@@ -2,7 +2,6 @@
 title: '26 January 2000'
 slug: 26-january-2000
 date: 2000-01-27T02:09:56+08:00
-draft: false
 ---
 
 Have not posted anything here for a while. I got back\

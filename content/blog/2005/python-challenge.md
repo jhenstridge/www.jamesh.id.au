@@ -2,7 +2,6 @@
 title: 'Python Challenge'
 slug: python-challenge
 date: 2005-05-31T11:14:00+08:00
-draft: false
 tags: ['Python']
 ---
 

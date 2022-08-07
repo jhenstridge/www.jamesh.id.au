@@ -2,7 +2,6 @@
 title: 'Gnome Website'
 slug: gnome-website
 date: 2003-07-20T08:19:53+08:00
-draft: false
 ---
 
 Jeff moved the main Gnome website over to the new design yesterday.

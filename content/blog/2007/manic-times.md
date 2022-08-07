@@ -2,7 +2,6 @@
 title: 'Manic Times'
 slug: manic-times
 date: 2007-09-10T19:08:22+08:00
-draft: false
 ---
 
 When I got back from Florida, I found a copy of the [Manic

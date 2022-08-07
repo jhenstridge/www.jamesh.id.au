@@ -2,7 +2,6 @@
 title: 'ViewCVS'
 slug: viewcvs
 date: 2004-04-19T03:03:03+08:00
-draft: false
 ---
 
 Made a few more changes to the Gnome

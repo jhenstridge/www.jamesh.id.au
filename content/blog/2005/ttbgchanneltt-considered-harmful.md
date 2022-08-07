@@ -2,7 +2,6 @@
 title: '&lt;tt&gt;bgchannel://&lt;/tt&gt; Considered Harmful?'
 slug: ttbgchanneltt-considered-harmful
 date: 2005-05-10T06:31:42+08:00
-draft: false
 tags: ['Gnome']
 ---
 

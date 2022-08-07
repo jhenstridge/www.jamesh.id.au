@@ -2,7 +2,6 @@
 title: 'Python class advisors'
 slug: python-class-advisors
 date: 2005-09-08T16:48:52+08:00
-draft: false
 tags: ['Python']
 ---
 

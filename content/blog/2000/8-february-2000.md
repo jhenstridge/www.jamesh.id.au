@@ -2,7 +2,6 @@
 title: '8 February 2000'
 slug: 8-february-2000
 date: 2000-02-09T02:38:19+08:00
-draft: false
 ---
 
 I hate the heat at this time of year. I got up to around\

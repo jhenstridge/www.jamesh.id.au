@@ -2,7 +2,6 @@
 title: 'Running Valgrind on Python Extensions'
 slug: python-valgrind
 date: 2008-03-24T08:47:29+09:00
-draft: false
 tags: ['Python', 'Valgrind']
 ---
 

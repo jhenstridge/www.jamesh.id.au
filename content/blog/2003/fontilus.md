@@ -2,7 +2,6 @@
 title: 'fontilus'
 slug: fontilus
 date: 2003-02-19T11:05:36+08:00
-draft: false
 ---
 
 Put out a new release of fontilus, which increased the number of

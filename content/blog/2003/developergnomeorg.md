@@ -2,7 +2,6 @@
 title: 'developer.gnome.org'
 slug: developergnomeorg
 date: 2003-07-09T15:07:11+08:00
-draft: false
 ---
 
 Got a bit tired of the ancient site design of the Gnome developer

@@ -2,7 +2,6 @@
 title: '14 January 2001'
 slug: 14-january-2001
 date: 2001-01-15T01:48:17+08:00
-draft: false
 ---
 
 First entry for 2001. A lot of things have happened.

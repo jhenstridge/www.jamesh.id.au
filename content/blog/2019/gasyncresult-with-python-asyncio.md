@@ -2,7 +2,6 @@
 title: 'Using GAsyncResult APIs with Python''s asyncio'
 slug: gasyncresult-with-python-asyncio
 date: 2019-10-07T23:08:17+08:00
-draft: false
 tags: ['asyncio', 'glib', 'Python']
 ---
 

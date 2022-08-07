@@ -2,7 +2,6 @@
 title: 'The Colour Purple'
 slug: the-colour-purple
 date: 2005-04-20T13:00:21+08:00
-draft: false
 ---
 
 If you look at the bottom of [Cadbury\'s

@@ -2,7 +2,6 @@
 title: 'Clipboard Manager'
 slug: clipboard-manager
 date: 2005-05-25T18:33:02+08:00
-draft: false
 tags: ['Gnome']
 ---
 

@@ -2,7 +2,6 @@
 title: '14 February 2000'
 slug: 14-february-2000
 date: 2000-02-15T05:52:38+08:00
-draft: false
 ---
 
 Went for a dive on saturday, around 7pm. Since the river\

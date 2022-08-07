@@ -2,7 +2,6 @@
 title: 'Bush fire'
 slug: bush-fire
 date: 2005-01-19T04:16:43+08:00
-draft: false
 ---
 
 When I woke up this morning, there was a lot of smoke in the air from

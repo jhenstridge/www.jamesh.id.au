@@ -2,7 +2,6 @@
 title: 'Libtool Problem (continued)'
 slug: libtool-problem-continued
 date: 2004-10-27T05:32:35+08:00
-draft: false
 ---
 
 Shortly after posting the last entry about the libtool problem I sent a

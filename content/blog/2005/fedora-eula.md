@@ -2,7 +2,6 @@
 title: 'Fedora EULA'
 slug: fedora-eula
 date: 2005-03-18T15:32:54+08:00
-draft: false
 ---
 
 [roozbeh](http://www.advogato.org/person/roozbeh/diary.html?start=8):

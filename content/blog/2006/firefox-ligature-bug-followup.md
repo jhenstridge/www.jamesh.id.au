@@ -2,7 +2,6 @@
 title: 'Firefox Ligature Bug Followup'
 slug: firefox-ligature-bug-followup
 date: 2006-04-06T20:16:39+08:00
-draft: false
 tags: ['Ubuntu']
 ---
 

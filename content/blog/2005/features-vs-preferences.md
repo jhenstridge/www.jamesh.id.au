@@ -2,7 +2,6 @@
 title: 'Features vs. Preferences'
 slug: features-vs-preferences
 date: 2005-12-16T04:52:29+08:00
-draft: false
 tags: ['Gnome']
 ---
 

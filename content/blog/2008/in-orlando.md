@@ -2,7 +2,6 @@
 title: 'In Orlando'
 slug: in-orlando
 date: 2008-08-05T09:42:14+08:00
-draft: false
 ---
 
 I\'ve just finished the first day of the Ubuntu online services sprint

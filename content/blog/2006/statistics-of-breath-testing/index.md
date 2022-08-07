@@ -2,7 +2,6 @@
 title: 'Statistics of Breath Testing'
 slug: statistics-of-breath-testing
 date: 2006-05-16T14:29:29+08:00
-draft: false
 ---
 
 Yesterday there were some

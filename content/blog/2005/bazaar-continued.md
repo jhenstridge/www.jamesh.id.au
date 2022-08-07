@@ -2,7 +2,6 @@
 title: 'Bazaar (continued)'
 slug: bazaar-continued
 date: 2005-05-13T10:37:22+08:00
-draft: false
 tags: ['Bazaar']
 ---
 

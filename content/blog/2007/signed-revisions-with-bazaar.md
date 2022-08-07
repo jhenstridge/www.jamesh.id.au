@@ -2,7 +2,6 @@
 title: 'Signed Revisions with Bazaar'
 slug: signed-revisions-with-bazaar
 date: 2007-10-04T00:26:19+08:00
-draft: false
 tags: ['Bazaar']
 ---
 

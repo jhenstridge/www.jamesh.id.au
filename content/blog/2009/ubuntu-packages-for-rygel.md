@@ -2,7 +2,6 @@
 title: 'Ubuntu packages for Rygel'
 slug: ubuntu-packages-for-rygel
 date: 2009-06-17T12:17:58+08:00
-draft: false
 tags: ['Gnome', 'Launchpad', 'PlayStation 3', 'Ubuntu', 'UPnP']
 ---
 

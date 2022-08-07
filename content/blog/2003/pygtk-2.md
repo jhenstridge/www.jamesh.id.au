@@ -2,7 +2,6 @@
 title: 'PyGTK'
 slug: pygtk-2
 date: 2003-09-03T11:12:21+08:00
-draft: false
 ---
 
 Finally got version 2.0 of PyGTK, PyORBit and Gnome-Python out. I sent

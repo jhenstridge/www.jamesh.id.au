@@ -2,7 +2,6 @@
 title: 'linux.conf.au 2011'
 slug: linux-conf-au-2011
 date: 2011-01-25T11:06:08+08:00
-draft: false
 tags: ['lca2011', 'linux.conf.au']
 ---
 

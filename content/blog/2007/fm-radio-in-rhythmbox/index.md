@@ -2,7 +2,6 @@
 title: 'FM Radio in Rhythmbox'
 slug: fm-radio-in-rhythmbox
 date: 2007-05-04T10:12:29+08:00
-draft: false
 tags: ['Gnome', 'Ubuntu']
 ---
 

@@ -2,7 +2,6 @@
 title: '3 August 2002'
 slug: 3-august-2002
 date: 2002-08-03T15:38:59+08:00
-draft: false
 ---
 
 Got the nautilus view up and running. A number of pictures of an early

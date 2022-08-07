@@ -2,7 +2,6 @@
 title: 'jhbuild'
 slug: jhbuild
 date: 2004-02-05T05:37:10+08:00
-draft: false
 tags: ['JHBuild']
 ---
 

@@ -2,7 +2,6 @@
 title: 'OpenID 2.0 Specification Approved'
 slug: openid-20-specification-approved
 date: 2007-12-10T13:38:39+09:00
-draft: false
 tags: ['OpenID']
 ---
 

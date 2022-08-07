@@ -2,7 +2,6 @@
 title: 'XSLT'
 slug: xslt
 date: 2002-06-02T16:31:24+08:00
-draft: false
 ---
 
 Been playing with XSLT a bit recently. It is quite a\

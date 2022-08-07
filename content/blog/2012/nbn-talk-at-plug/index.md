@@ -2,7 +2,6 @@
 title: 'NBN talk at PLUG'
 slug: nbn-talk-at-plug
 date: 2012-03-17T22:47:37+08:00
-draft: false
 ---
 
 Earlier in the week, I attended a [PLUG](http://www.plug.org.au/)

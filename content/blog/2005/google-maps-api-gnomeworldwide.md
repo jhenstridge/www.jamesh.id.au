@@ -2,7 +2,6 @@
 title: 'Google Maps API + GnomeWorldWide?'
 slug: google-maps-api-gnomeworldwide
 date: 2005-07-14T18:10:10+08:00
-draft: false
 ---
 
 I was looking at the [Google Maps API](http://www.google.com/apis/maps/)

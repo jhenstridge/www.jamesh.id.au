@@ -2,7 +2,6 @@
 title: 'Javascript Mandelbrot Set Fractal Renderer'
 slug: javascript-fractal
 date: 2011-03-08T22:15:27+08:00
-draft: false
 tags: ['firefox', 'JavaScript', 'lca2011']
 ---
 

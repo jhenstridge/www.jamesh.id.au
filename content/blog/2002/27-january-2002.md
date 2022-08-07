@@ -2,7 +2,6 @@
 title: '27 January 2002'
 slug: 27-january-2002
 date: 2002-01-28T04:00:39+08:00
-draft: false
 ---
 
 **Skyshow**

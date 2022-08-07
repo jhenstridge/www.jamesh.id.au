@@ -2,7 +2,6 @@
 title: 'GLib integration for the Python asyncio event loop'
 slug: glib-integration-for-python-asyncio
 date: 2019-08-05T12:33:51+08:00
-draft: false
 tags: ['asyncio', 'glib', 'GStreamer', 'Python']
 ---
 

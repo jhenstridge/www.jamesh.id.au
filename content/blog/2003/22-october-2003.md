@@ -2,7 +2,6 @@
 title: '22 October 2003'
 slug: 22-october-2003
 date: 2003-10-23T02:47:35+08:00
-draft: false
 ---
 
 **Laptop**

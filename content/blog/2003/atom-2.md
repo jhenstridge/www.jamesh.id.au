@@ -2,7 +2,6 @@
 title: 'Atom'
 slug: atom-2
 date: 2003-11-03T16:27:51+08:00
-draft: false
 tags: ['XML']
 ---
 

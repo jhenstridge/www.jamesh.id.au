@@ -2,7 +2,6 @@
 title: 'London Airports'
 slug: london-airports
 date: 2006-08-11T01:52:40+08:00
-draft: false
 ---
 
 So the airports in the UK went crazy today after a [terror

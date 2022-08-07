@@ -2,7 +2,6 @@
 title: '--create-prefix not needed with bazaar.launchpad.net'
 slug: create-prefix-not-needed-with-bazaarlaunchpadnet
 date: 2006-09-06T08:08:27+08:00
-draft: false
 tags: ['Bazaar', 'Launchpad']
 ---
 

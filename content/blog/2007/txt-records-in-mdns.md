@@ -2,7 +2,6 @@
 title: 'TXT records in mDNS'
 slug: txt-records-in-mdns
 date: 2007-06-15T13:27:54+08:00
-draft: false
 tags: ['Gnome']
 ---
 

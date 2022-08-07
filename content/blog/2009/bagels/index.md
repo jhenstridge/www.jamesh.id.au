@@ -2,7 +2,6 @@
 title: 'Bagels'
 slug: bagels
 date: 2009-12-04T12:01:20+08:00
-draft: false
 ---
 
 I made some bagels last night.  It was my second time using the recipe,

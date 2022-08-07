@@ -2,7 +2,6 @@
 title: 'American Hoax'
 slug: american-hoax
 date: 2007-01-09T05:48:47+09:00
-draft: false
 ---
 
 One of the books I read over the holidays was [American

@@ -2,7 +2,6 @@
 title: 'Exploring Github Actions'
 slug: exploring-github-actions
 date: 2019-09-06T13:17:08+08:00
-draft: false
 tags: ['Continuous Integration', 'Gnome', 'Python', 'Ubuntu']
 ---
 

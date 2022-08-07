@@ -2,7 +2,6 @@
 title: 'OBEX in Nautilus'
 slug: obex-in-nautilus
 date: 2006-10-05T09:22:22+08:00
-draft: false
 tags: ['Gnome', 'Ubuntu']
 ---
 

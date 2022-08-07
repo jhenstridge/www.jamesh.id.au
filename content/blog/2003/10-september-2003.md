@@ -2,7 +2,6 @@
 title: '10 September 2003'
 slug: 10-september-2003
 date: 2003-09-10T10:21:11+08:00
-draft: false
 ---
 
 **Cairo**

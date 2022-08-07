@@ -2,7 +2,6 @@
 title: 'Experimenting with C++ Reflection'
 slug: experimenting-with-c-reflection
 date: 2017-01-17T19:33:45+08:00
-draft: false
 ---
 
 For a number of projects I\'ve worked on at Canonical have involved

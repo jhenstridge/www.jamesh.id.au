@@ -2,7 +2,6 @@
 title: '4 September 2002'
 slug: 4-september-2002
 date: 2002-09-05T03:20:48+08:00
-draft: false
 ---
 
 [malcolm](http://www.advogato.org/person/malcolm/): I believe

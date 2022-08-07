@@ -2,7 +2,6 @@
 title: 'Back from Dunedin'
 slug: dunedin
 date: 2007-10-18T12:14:07+08:00
-draft: false
 ---
 
 Last week I was in sunny Dunedin for a Launchpad/Bazaar integration

@@ -2,7 +2,6 @@
 title: '8 September 2003'
 slug: 8-september-2003
 date: 2003-09-08T14:53:14+08:00
-draft: false
 ---
 
 There was a really weird interview on Lateline last friday. They now

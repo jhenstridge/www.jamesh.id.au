@@ -2,7 +2,6 @@
 title: 'Version Control Workflow'
 slug: version-control-workflow
 date: 2005-08-11T12:34:06+08:00
-draft: false
 tags: ['Bazaar', 'Launchpad']
 ---
 

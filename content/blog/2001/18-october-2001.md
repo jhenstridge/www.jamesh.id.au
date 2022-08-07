@@ -2,7 +2,6 @@
 title: '18 October 2001'
 slug: 18-october-2001
 date: 2001-10-18T09:05:50+08:00
-draft: false
 ---
 
 In Melbourne for a month working for

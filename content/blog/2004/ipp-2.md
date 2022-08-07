@@ -2,7 +2,6 @@
 title: 'IPP'
 slug: ipp-2
 date: 2004-03-18T06:20:50+08:00
-draft: false
 ---
 
 Did a little more hacking on my IPP client library, and wrote a small

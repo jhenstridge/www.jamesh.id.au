@@ -2,7 +2,6 @@
 title: 'Kenny'
 slug: kenny
 date: 2006-08-21T09:03:02+08:00
-draft: false
 ---
 
 Went to see [Kenny](http://www.imdb.com/title/tt0822389/) at the cinema

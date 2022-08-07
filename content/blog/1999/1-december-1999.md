@@ -2,7 +2,6 @@
 title: '1 December 1999'
 slug: 1-december-1999
 date: 1999-12-01T10:25:19+08:00
-draft: false
 ---
 
 Alexander Larsson handed over the job of maintainer of\

@@ -2,7 +2,6 @@
 title: 'Seeking in Transcoded Streams with Rygel'
 slug: dlna-time-seek
 date: 2009-07-24T16:46:18+08:00
-draft: false
 tags: ['DLNA', 'Gnome', 'PlayStation 3', 'UPnP']
 ---
 

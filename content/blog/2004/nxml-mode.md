@@ -2,7 +2,6 @@
 title: 'nxml-mode'
 slug: nxml-mode
 date: 2004-05-04T09:30:36+08:00
-draft: false
 tags: ['XML']
 ---
 

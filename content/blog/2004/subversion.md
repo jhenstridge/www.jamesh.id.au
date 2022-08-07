@@ -2,7 +2,6 @@
 title: 'Subversion'
 slug: subversion
 date: 2004-07-29T16:47:12+08:00
-draft: false
 ---
 
 Have been looking at the [Subversion 1.1 release

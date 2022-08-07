@@ -2,7 +2,6 @@
 title: 'Avahi on Breezy followup'
 slug: avahi-on-breezy-followup
 date: 2005-11-03T01:23:31+08:00
-draft: false
 tags: ['Avahi', 'Ubuntu']
 ---
 

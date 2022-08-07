@@ -2,7 +2,6 @@
 title: 'Launchpad enterered into Python bug tracker competition'
 slug: launchpad-enterered-into-python-bug-tracker-competition
 date: 2006-07-28T01:41:53+08:00
-draft: false
 tags: ['Launchpad', 'Python']
 ---
 

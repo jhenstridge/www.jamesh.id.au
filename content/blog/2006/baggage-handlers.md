@@ -2,7 +2,6 @@
 title: 'Baggage Handlers'
 slug: baggage-handlers
 date: 2006-08-11T20:52:41+08:00
-draft: false
 ---
 
 One of the other guys here joked that the baggage handlers at the

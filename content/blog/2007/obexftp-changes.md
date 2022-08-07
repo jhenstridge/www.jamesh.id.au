@@ -2,7 +2,6 @@
 title: 'New stuff in gnome-vfs-obexftp'
 slug: obexftp-changes
 date: 2007-06-11T16:03:49+08:00
-draft: false
 ---
 
 Recently, [Bastien](http://www.hadess.net/) has been doing [a bit of

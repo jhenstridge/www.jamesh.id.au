@@ -2,7 +2,6 @@
 title: 'PyGIMP'
 slug: pygimp
 date: 2002-08-31T05:47:14+08:00
-draft: false
 ---
 
 Started working on the python bindings for gimp 1.3. It has been a long

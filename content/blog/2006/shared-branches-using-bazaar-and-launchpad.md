@@ -2,7 +2,6 @@
 title: 'Shared Branches using Bazaar and Launchpad'
 slug: shared-branches-using-bazaar-and-launchpad
 date: 2006-08-17T20:20:46+08:00
-draft: false
 tags: ['Bazaar', 'Launchpad']
 ---
 

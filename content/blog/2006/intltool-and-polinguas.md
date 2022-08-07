@@ -2,7 +2,6 @@
 title: 'intltool and po/LINGUAS'
 slug: intltool-and-polinguas
 date: 2006-04-15T08:41:52+08:00
-draft: false
 tags: ['Gnome']
 ---
 

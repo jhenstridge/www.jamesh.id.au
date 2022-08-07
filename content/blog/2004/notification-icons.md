@@ -2,7 +2,6 @@
 title: 'Notification Icons'
 slug: notification-icons
 date: 2004-09-17T07:05:19+08:00
-draft: false
 tags: ['Gnome']
 ---
 

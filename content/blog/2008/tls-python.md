@@ -2,7 +2,6 @@
 title: 'How not to do thread local storage with Python'
 slug: tls-python
 date: 2008-06-11T18:00:21+08:00
-draft: false
 tags: ['Python']
 ---
 

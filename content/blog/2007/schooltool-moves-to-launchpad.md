@@ -2,7 +2,6 @@
 title: 'SchoolTool Moves to Launchpad'
 slug: schooltool-moves-to-launchpad
 date: 2007-01-18T13:26:35+09:00
-draft: false
 tags: ['Launchpad']
 ---
 

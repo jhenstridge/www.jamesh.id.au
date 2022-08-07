@@ -2,7 +2,6 @@
 title: 'Annoying Firefox Bug'
 slug: annoying-firefox-bug
 date: 2006-04-03T13:38:26+08:00
-draft: false
 tags: ['Gnome', 'Ubuntu']
 ---
 

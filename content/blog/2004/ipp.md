@@ -2,7 +2,6 @@
 title: 'IPP'
 slug: ipp
 date: 2004-03-12T10:49:01+08:00
-draft: false
 ---
 
 Out of curiosity, I decided to write a little

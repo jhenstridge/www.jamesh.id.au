@@ -2,7 +2,6 @@
 title: '21 December 2001'
 slug: 21-december-2001
 date: 2001-12-22T00:24:31+08:00
-draft: false
 ---
 
 I was updating my documentation generator for pygtk (the\

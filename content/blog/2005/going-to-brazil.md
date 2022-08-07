@@ -2,7 +2,6 @@
 title: 'Going to Brazil'
 slug: going-to-brazil
 date: 2005-07-11T12:01:52+08:00
-draft: false
 ---
 
 On Sunday I will be going to be travelling to São Carlos, Brazil for two

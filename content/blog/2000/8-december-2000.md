@@ -2,7 +2,6 @@
 title: '8 December 2000'
 slug: 8-december-2000
 date: 2000-12-09T05:50:56+08:00
-draft: false
 ---
 
 Have been hacking on pygtk recently, and a small amount\

@@ -2,7 +2,6 @@
 title: 'Re: Pushing a bzr branch with rsync'
 slug: re-pushing-a-bzr-branch-with-rsync
 date: 2006-12-15T10:10:19+09:00
-draft: false
 tags: ['Bazaar']
 ---
 

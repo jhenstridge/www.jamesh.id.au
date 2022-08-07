@@ -2,7 +2,6 @@
 title: 'Zeroconf Branch Sharing with Bazaar'
 slug: bzr-avahi
 date: 2008-02-19T16:36:43+09:00
-draft: false
 tags: ['Avahi', 'Bazaar', 'Bonjour', 'Hackathon', 'Python', 'Sprint', 'Zeroconf']
 ---
 

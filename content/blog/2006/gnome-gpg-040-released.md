@@ -2,7 +2,6 @@
 title: 'Gnome-gpg 0.4.0 Released'
 slug: gnome-gpg-040-released
 date: 2006-03-02T12:08:20+08:00
-draft: false
 tags: ['Gnome']
 ---
 

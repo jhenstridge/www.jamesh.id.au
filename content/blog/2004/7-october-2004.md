@@ -2,7 +2,6 @@
 title: '7 October 2004'
 slug: 7-october-2004
 date: 2004-10-08T05:21:35+08:00
-draft: false
 ---
 
 **Elections**

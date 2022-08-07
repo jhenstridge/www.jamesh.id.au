@@ -2,7 +2,6 @@
 title: '23 February 2004'
 slug: 23-february-2004
 date: 2004-02-23T11:25:25+08:00
-draft: false
 ---
 
 **[louie](http://www.advogato.org/person/louie/)**: doesn\'t the fact

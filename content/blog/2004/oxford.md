@@ -2,7 +2,6 @@
 title: 'Oxford'
 slug: oxford
 date: 2004-08-15T18:05:36+08:00
-draft: false
 ---
 
 I\'ve been in Oxford for the past week at the Canonical conference.

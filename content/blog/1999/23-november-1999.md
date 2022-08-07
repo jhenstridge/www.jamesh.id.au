@@ -2,7 +2,6 @@
 title: '23 November 1999'
 slug: 23-november-1999
 date: 1999-11-23T13:48:02+08:00
-draft: false
 ---
 
 -   Working on gnorpm again. I am converting the rpmfind\

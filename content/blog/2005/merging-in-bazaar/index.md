@@ -2,7 +2,6 @@
 title: 'Merging In Bazaar'
 slug: merging-in-bazaar
 date: 2005-05-24T11:33:03+08:00
-draft: false
 tags: ['Bazaar']
 ---
 

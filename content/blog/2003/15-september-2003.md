@@ -2,7 +2,6 @@
 title: '15 September 2003'
 slug: 15-september-2003
 date: 2003-09-15T15:59:22+08:00
-draft: false
 ---
 
 **PyCairo**

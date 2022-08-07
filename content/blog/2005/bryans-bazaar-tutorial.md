@@ -2,7 +2,6 @@
 title: 'Bryan''s Bazaar Tutorial'
 slug: bryans-bazaar-tutorial
 date: 2005-07-08T10:22:00+08:00
-draft: false
 tags: ['Bazaar', 'Gnome']
 ---
 

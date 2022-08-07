@@ -2,7 +2,6 @@
 title: 'Repositories in Bzr'
 slug: repositories-in-bzr
 date: 2006-04-24T06:28:48+08:00
-draft: false
 tags: ['Bazaar']
 ---
 

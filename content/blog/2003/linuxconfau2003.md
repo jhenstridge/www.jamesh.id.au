@@ -2,7 +2,6 @@
 title: 'linux.conf.au:2003'
 slug: linuxconfau2003
 date: 2003-01-20T13:40:56+08:00
-draft: false
 ---
 
 The mini-conferences started today, and have been going pretty well.

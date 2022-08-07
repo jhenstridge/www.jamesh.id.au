@@ -2,7 +2,6 @@
 title: '30 September 2002'
 slug: 30-september-2002
 date: 2002-10-01T06:38:00+08:00
-draft: false
 ---
 
 [**PyORBit**](http://cvs.gnome.org/lxr/source/gnome-python/pyorbit/)

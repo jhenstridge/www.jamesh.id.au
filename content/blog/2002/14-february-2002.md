@@ -2,7 +2,6 @@
 title: '14 February 2002'
 slug: 14-february-2002
 date: 2002-02-14T15:23:05+08:00
-draft: false
 ---
 
 **linux.conf.au**

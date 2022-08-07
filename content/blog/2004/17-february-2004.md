@@ -2,7 +2,6 @@
 title: '17 February 2004'
 slug: 17-february-2004
 date: 2004-02-18T01:24:20+08:00
-draft: false
 tags: ['JHBuild']
 ---
 

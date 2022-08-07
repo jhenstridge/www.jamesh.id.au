@@ -2,7 +2,6 @@
 title: '7 September 2002'
 slug: 7-september-2002
 date: 2002-09-07T09:30:02+08:00
-draft: false
 ---
 
 **Egg**

@@ -2,7 +2,6 @@
 title: 'Recovering a Branch From a Bazaar Repository'
 slug: recovering-a-branch-from-a-bazaar-repository
 date: 2006-12-19T05:42:10+09:00
-draft: false
 tags: ['Bazaar', 'Python']
 ---
 

@@ -2,7 +2,6 @@
 title: 'FM Radio Tuners in Feisty'
 slug: fm-radio-tuners-in-feisty
 date: 2007-04-17T15:32:44+08:00
-draft: false
 tags: ['Gnome', 'Ubuntu']
 ---
 

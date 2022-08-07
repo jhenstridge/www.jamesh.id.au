@@ -2,7 +2,6 @@
 title: 'Thoughts on OAuth'
 slug: thoughts-on-oauth
 date: 2008-10-23T11:46:53+08:00
-draft: false
 tags: ['OAuth', 'OpenID', 'Python']
 ---
 

@@ -2,7 +2,6 @@
 title: 'Re: Continuing to Not Quite Get It at Google...'
 slug: google-openi
 date: 2008-10-30T17:30:02+09:00
-draft: false
 tags: ['OpenID']
 ---
 

@@ -2,7 +2,6 @@
 title: 'In Montreal'
 slug: in-montreal
 date: 2009-02-25T04:12:16+09:00
-draft: false
 tags: ['Sprint']
 ---
 

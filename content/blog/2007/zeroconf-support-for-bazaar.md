@@ -2,7 +2,6 @@
 title: 'ZeroConf support for Bazaar'
 slug: zeroconf-support-for-bazaar
 date: 2007-03-25T18:05:58+08:00
-draft: false
 tags: ['Avahi', 'Bazaar', 'Gnome', 'Python']
 ---
 

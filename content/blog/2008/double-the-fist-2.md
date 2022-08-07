@@ -2,7 +2,6 @@
 title: 'Double the Fist'
 slug: double-the-fist-2
 date: 2008-08-14T16:32:19+08:00
-draft: false
 ---
 
 For anyone that cares, the new series of [Double the

@@ -2,7 +2,6 @@
 title: 'End Of Fashion'
 slug: end-of-fashion
 date: 2005-08-20T20:17:34+08:00
-draft: false
 ---
 
 I went to see End of Fashion upstairs at [78s](www.78records.com.au)

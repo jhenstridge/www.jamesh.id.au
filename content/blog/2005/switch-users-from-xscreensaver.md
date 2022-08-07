@@ -2,7 +2,6 @@
 title: 'Switch users from XScreenSaver'
 slug: switch-users-from-xscreensaver
 date: 2005-12-05T10:49:43+08:00
-draft: false
 tags: ['Gnome', 'Ubuntu']
 ---
 

@@ -2,7 +2,6 @@
 title: 'JHBuild Improvements'
 slug: jhbuild-improvements
 date: 2006-05-01T10:39:45+08:00
-draft: false
 tags: ['Bazaar', 'Gnome', 'JHBuild']
 ---
 

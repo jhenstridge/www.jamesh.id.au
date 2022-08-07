@@ -2,7 +2,6 @@
 title: 'Pemberton'
 slug: pemberton
 date: 2005-09-01T11:55:00+08:00
-draft: false
 ---
 
 One of the nice things about living in Perth is the forrests down south.

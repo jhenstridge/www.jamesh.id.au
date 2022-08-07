@@ -2,7 +2,6 @@
 title: 'Building obex-method'
 slug: building-obex-method
 date: 2006-10-21T07:11:55+08:00
-draft: false
 tags: ['Gnome', 'Ubuntu']
 ---
 

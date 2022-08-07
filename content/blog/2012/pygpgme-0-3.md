@@ -2,7 +2,6 @@
 title: 'pygpgme 0.3'
 slug: pygpgme-0-3
 date: 2012-03-11T23:04:20+08:00
-draft: false
 tags: ['Python']
 ---
 

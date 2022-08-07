@@ -2,7 +2,6 @@
 title: 'Sansa Fuze'
 slug: sansa-fuze
 date: 2009-03-24T19:21:05+09:00
-draft: false
 tags: ['Gnome', 'Rhythmbox', 'Sansa']
 ---
 

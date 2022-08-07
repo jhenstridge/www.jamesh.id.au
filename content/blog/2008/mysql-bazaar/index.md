@@ -2,7 +2,6 @@
 title: 'MySQL Announces Move to Bazaar'
 slug: mysql-bazaar
 date: 2008-06-20T17:31:11+08:00
-draft: false
 tags: ['Bazaar', 'Launchpad']
 ---
 

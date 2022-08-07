@@ -2,7 +2,6 @@
 title: 'Revision Control Migration and History Corruption'
 slug: revision-control-migration-and-history-corruption
 date: 2006-02-16T15:04:13+08:00
-draft: false
 tags: ['Bazaar', 'Gnome', 'JHBuild']
 ---
 

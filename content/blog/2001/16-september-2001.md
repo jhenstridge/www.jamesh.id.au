@@ -2,7 +2,6 @@
 title: '16 September 2001'
 slug: 16-september-2001
 date: 2001-09-17T02:32:05+08:00
-draft: false
 ---
 
 From what has been happening, it sounds like Air New\

@@ -2,7 +2,6 @@
 title: 'Double the Fist'
 slug: double-the-fist
 date: 2005-12-12T15:19:43+08:00
-draft: false
 ---
 
 The excellent show [Double the

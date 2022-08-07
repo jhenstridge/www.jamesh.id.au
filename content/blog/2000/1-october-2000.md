@@ -2,7 +2,6 @@
 title: '1 October 2000'
 slug: 1-october-2000
 date: 2000-10-01T10:11:24+08:00
-draft: false
 ---
 
 As I have been pretty much house bound for the past two\

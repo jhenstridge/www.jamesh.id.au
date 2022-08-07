@@ -2,7 +2,6 @@
 title: 'Canonical Shop Open'
 slug: canonical-shop-open
 date: 2007-08-22T15:32:32+08:00
-draft: false
 tags: ['Launchpad', 'OpenID', 'Ubuntu']
 ---
 

@@ -2,7 +2,6 @@
 title: 'In Hobart'
 slug: in-hobart
 date: 2009-01-19T22:01:21+09:00
-draft: false
 tags: ['lca2009', 'linux.conf.au']
 ---
 

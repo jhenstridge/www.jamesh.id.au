@@ -2,7 +2,6 @@
 title: '7 August 2004'
 slug: 7-august-2004
 date: 2004-08-08T06:54:19+08:00
-draft: false
 ---
 
 **Bushisms**

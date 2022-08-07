@@ -2,7 +2,6 @@
 title: 'PyGTK'
 slug: pygtk
 date: 2003-08-25T07:06:06+08:00
-draft: false
 ---
 
 Over the weekend, I did a set of releases for pygtk, pyorbit and

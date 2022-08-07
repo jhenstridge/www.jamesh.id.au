@@ -2,7 +2,6 @@
 title: 'In Florida'
 slug: in-florida
 date: 2007-08-29T12:02:23+08:00
-draft: false
 tags: ['Launchpad']
 ---
 

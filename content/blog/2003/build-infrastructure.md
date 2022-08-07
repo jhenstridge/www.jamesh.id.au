@@ -2,7 +2,6 @@
 title: 'Build Infrastructure'
 slug: build-infrastructure
 date: 2003-03-01T15:08:27+08:00
-draft: false
 ---
 
 For the past few weeks, I have been working on improving the

@@ -2,7 +2,6 @@
 title: 'Red Bull Air Race'
 slug: red-bull-air-race
 date: 2008-11-03T16:42:56+09:00
-draft: false
 ---
 
 Yesterday, I went to see the finals of the [Red Bull Air

@@ -2,7 +2,6 @@
 title: 'Daylight Saving in Western Australia'
 slug: daylight-saving-in-western-australia
 date: 2006-11-03T07:19:39+08:00
-draft: false
 tags: ['Ubuntu']
 ---
 

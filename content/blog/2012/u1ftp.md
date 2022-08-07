@@ -2,7 +2,6 @@
 title: 'u1ftp: a demonstration of the Ubuntu One API'
 slug: u1ftp
 date: 2012-07-05T16:19:00+08:00
-draft: false
 tags: ['Launchpad', 'OAuth', 'Python', 'Ubuntu', 'Ubuntu One']
 ---
 

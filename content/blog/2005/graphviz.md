@@ -2,7 +2,6 @@
 title: 'GraphViz'
 slug: graphviz
 date: 2005-01-18T06:39:27+08:00
-draft: false
 tags: ['JHBuild']
 ---
 

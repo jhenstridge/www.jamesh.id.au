@@ -2,7 +2,6 @@
 title: '16 September 2003'
 slug: 16-september-2003
 date: 2003-09-16T12:54:17+08:00
-draft: false
 ---
 
 ha ha: [Java Desktop

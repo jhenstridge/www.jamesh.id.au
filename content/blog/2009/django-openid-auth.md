@@ -2,7 +2,6 @@
 title: 'django-openid-auth'
 slug: django-openid-auth
 date: 2009-04-14T16:25:56+08:00
-draft: false
 tags: ['Django', 'Launchpad', 'OpenID', 'Python', 'Ubuntu']
 ---
 

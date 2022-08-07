@@ -2,7 +2,6 @@
 title: 'Impossible Triangle Sculpture'
 slug: impossible-triangle-sculpture
 date: 2006-09-18T09:24:48+08:00
-draft: false
 ---
 
 Saw this interesting sculpture while cycling through East Perth:

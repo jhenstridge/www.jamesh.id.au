@@ -2,7 +2,6 @@
 title: 'JHBuild Updates'
 slug: jhbuild-updates
 date: 2006-06-05T06:53:11+08:00
-draft: false
 tags: ['Gnome', 'JHBuild']
 ---
 

@@ -2,7 +2,6 @@
 title: 'Looms Rock'
 slug: bzr-loom
 date: 2008-04-01T16:52:03+08:00
-draft: false
 tags: ['Bazaar', 'Loom']
 ---
 

@@ -2,7 +2,6 @@
 title: 'On the way to Boston'
 slug: on-the-way-to-boston
 date: 2007-10-27T11:43:55+08:00
-draft: false
 tags: ['Launchpad', 'Ubuntu']
 ---
 

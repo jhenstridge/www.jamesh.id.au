@@ -2,7 +2,6 @@
 title: '16 November 1999'
 slug: 16-november-1999
 date: 1999-11-16T10:42:20+08:00
-draft: false
 ---
 
 -   finished my exams at the end of last week. Hopefully I\

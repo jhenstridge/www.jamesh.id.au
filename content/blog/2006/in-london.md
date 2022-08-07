@@ -2,7 +2,6 @@
 title: 'In London'
 slug: in-london
 date: 2006-07-27T00:46:45+08:00
-draft: false
 tags: ['Launchpad']
 ---
 

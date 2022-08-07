@@ -2,7 +2,6 @@
 title: '16 February 2000'
 slug: 16-february-2000
 date: 2000-02-17T05:10:59+08:00
-draft: false
 ---
 
 I finished integrating Lars\'s properties patch into dia\

@@ -2,7 +2,6 @@
 title: 'What is in the SafeWA QR Codes?'
 slug: safewa-qr-codes
 date: 2020-12-23T11:23:43+08:00
-draft: false
 ---
 
 Earlier this month, the Western Australian government introduced the

@@ -2,7 +2,6 @@
 title: 'First Thoughts on NewsBruiser'
 slug: first-thoughts-on-newsbruiser
 date: 2005-05-19T06:36:30+08:00
-draft: false
 ---
 
 I\'ve moved my diary over to `blogs.gnome.org`, which offers a few extra

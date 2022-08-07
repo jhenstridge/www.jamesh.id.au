@@ -2,7 +2,6 @@
 title: 'gnome-vfs-obexftp 0.3'
 slug: gnome-vfs-obexftp-03
 date: 2007-06-13T11:37:21+08:00
-draft: false
 tags: ['Gnome', 'Launchpad', 'Ubuntu']
 ---
 

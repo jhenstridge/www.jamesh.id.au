@@ -2,7 +2,6 @@
 title: '15 December 2004'
 slug: 15-december-2004
 date: 2004-12-15T18:48:12+08:00
-draft: false
 tags: ['Bazaar']
 ---
 
