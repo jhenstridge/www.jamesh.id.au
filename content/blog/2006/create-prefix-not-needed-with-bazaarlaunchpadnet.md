@@ -6,14 +6,14 @@ tags: ['Bazaar', 'Launchpad']
 ---
 
 When [outlining the use of team branches on
-Launchpad](http://blogs.gnome.org/view/jamesh/2006/08/17/1) previously,
-I used the [\--create-prefix]{.kbd} option when pushing the branch to
-[sftp://bazaar.launchpad.net]{.kbd}. This was to make sure the initial
-push would succeed, even if the [/\~username/product]{.kbd} directory
+Launchpad](shared-branches-using-bazaar-and-launchpad.md) previously,
+I used the `--create-prefix` option when pushing the branch to
+`sftp://bazaar.launchpad.net`. This was to make sure the initial
+push would succeed, even if the `/\~username/product` directory
 the branch would be created in didn\'t exist.
 
 To simplify things for users, we made a change to the SFTP server in the
-latest release, so that [\--create-prefix]{.kbd} is no longer necessary.
+latest release, so that `--create-prefix` is no longer necessary.
 This does not affect the allowed branch directories though: the
 structure is used to associate the branches with products, and decide
 who can write to the branches.

@@ -9,9 +9,10 @@ I uploaded a few patches to the pkg-config bugzilla recently, which will
 hopefully make their way into the next release.
 
 The first is related to [bug
-3097](https://bugs.freedesktop.org/show_bug.cgi?id=3097 "dependent library elimination causing link problems with -zdefs"),
-which has to do with the [broken dependent library elimination
-code](http://blogs.gnome.org/view/jamesh/2005/04/25/0) added to 0.17.
+3097](https://bugs.freedesktop.org/show_bug.cgi?id=3097 "dependent
+library elimination causing link problems with -zdefs"), which has to
+do with the [broken dependent library elimination code](pkg-config.md)
+added to 0.17.
 
 The patch adds a `Requires.private` field to `.pc` files that contains a
 list of required packages like `Requires` currently does, which has the

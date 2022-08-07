@@ -64,7 +64,7 @@ keystrokes if you can stand the security implications.
 
 FYI, just found this entry from google:
 
-<http://blogs.gnome.org/view/jamesh/2005/08/29/0>
+[http://blogs.gnome.org/view/jamesh/2005/08/29/0](comparison-of-configsaliases-in-bazaar-cvs-and-subversion.md)
 
 Thanks so much, it was a big help!
 

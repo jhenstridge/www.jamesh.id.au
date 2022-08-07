@@ -6,11 +6,10 @@ tags: ['asyncio', 'glib', 'Python']
 ---
 
 With a [GLib implementation of the Python asyncio event
-loop](https://blogs.gnome.org/jamesh/2019/08/05/glib-integration-for-python-asyncio/),
-I can easily mix asyncio code with GLib/GTK code in the same thread. The
-next step is to see whether we can use this to make any APIs more
-convenient to use. A good candidate is APIs that make use of
-`GAsyncResult`.
+loop](glib-integration-for-python-asyncio.md), I can easily mix
+asyncio code with GLib/GTK code in the same thread. The next step is
+to see whether we can use this to make any APIs more convenient to
+use. A good candidate is APIs that make use of `GAsyncResult`.
 
 These APIs generally consist of one function call that initiates the
 asynchronous job and takes a callback. The callback will be invoked
@@ -24,24 +23,24 @@ in a future, and then have our coroutine await that future after
 initiating the job. For example, the following will asynchronously
 connect to the session bus:
 
-\[code lang=\"python\"\]\
-import asyncio\
+```python
+import asyncio
 from gi.repository import GLib, Gio
 
-async def session\_bus():\
-loop = asyncio.get\_running\_loop()\
-bus\_ready = loop.create\_future()\
-def ready\_callback(obj, result):\
-try:\
-bus = Gio.bus\_get\_finish(result)\
-except GLib.Error as exc:\
-loop.call\_soon\_threadsafe(bus\_ready.set\_exception, exc)\
-return\
-loop.call\_soon\_threadsafe(bus\_ready.set\_result, bus)
+async def session_bus():
+    loop = asyncio.get_running_loop()
+    bus_ready = loop.create_future()
+    def ready_callback(obj, result):
+        try:
+            bus = Gio.bus_get_finish(result)
+        except GLib.Error as exc:
+            loop.call_soon_threadsafe(bus_ready.set_exception, exc)
+            return
+        loop.call_soon_threadsafe(bus_ready.set_result, bus)
 
-Gio.bus\_get(Gio.BusType.SESSION, None, ready\_callback)\
-return await bus\_ready\
-\[/code\]
+    Gio.bus_get(Gio.BusType.SESSION, None, ready_callback)
+    return await bus_ready
+```
 
 We\'ve now got an API that is conceptually as simple to use as the
 synchronous `Gio.bus_get_sync` call, but won\'t block other work the
@@ -61,17 +60,17 @@ asynchronous job. On the GLib side, this is handled with the
 injecting an `asyncio.CancelledError` exception into the coroutine. We
 can propagate this cancellation to the GLib side fairly seamlessly:
 
-\[code language=\"python\"\]\
-async def session\_bus():\
-\...\
-cancellable = Gio.Cancellable()\
-Gio.bus\_get(Gio.BusType.SESSION, cancellable, ready\_callback)\
-try:\
-return await bus\_ready\
-except asyncio.CancelledError:\
-cancellable.cancel()\
-raise\
-\[/code\]
+```python
+async def session_bus():
+    ...
+    cancellable = Gio.Cancellable()
+    Gio.bus_get(Gio.BusType.SESSION, cancellable, ready_callback)
+    try:
+        return await bus_ready
+    except asyncio.CancelledError:
+        cancellable.cancel()
+        raise
+```
 
 It\'s important to re-raise the `CancelledError` exception, so that it
 will propagate up to any calling coroutines and let them perform their

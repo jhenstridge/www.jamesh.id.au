@@ -11,11 +11,11 @@ libraries expanded from the requested set of packages. As an example,\
 here is the output of `pkg-config --libs gtk+-2.0` with version\
 0.15:
 
-> `-lgtk-x11-2.0 -lgdk-x11-2.0 -latk-1.0 -lgdk_pixbuf-2.0 -lm -lpangoxft-1.0 -lpangox-1.0 -lpango-1.0 -lgobject-2.0 -lgmodule-2.0 -ldl -lglib-2.0`
+    -lgtk-x11-2.0 -lgdk-x11-2.0 -latk-1.0 -lgdk_pixbuf-2.0 -lm -lpangoxft-1.0 -lpangox-1.0 -lpango-1.0 -lgobject-2.0 -lgmodule-2.0 -ldl -lglib-2.0
 
 And with 0.17.1:
 
-> `-lgtk-x11-2.0`
+    -lgtk-x11-2.0
 
 If an application is compiled with the first set of `-l`\
 flags, it will include `DT_NEEDED` tag for each of those\

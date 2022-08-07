@@ -12,4 +12,4 @@ during [UDS](https://wiki.ubuntu.com/UDS-Boston). It\'ll be good to
 catch up with everyone again.
 
 Hopefully this trip won\'t be as eventful as the [previous one to
-Florida](http://blogs.gnome.org/jamesh/2007/08/29/in-florida/) :)
+Florida](in-florida.md) :)

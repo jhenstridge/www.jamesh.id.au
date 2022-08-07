@@ -1,15 +1,14 @@
 ---
 title: 'FM Radio in Rhythmbox – The Code'
-slug: fm-radio-in-rhythmbox-–-the-code
+slug: fm-radio-in-rhythmbox-the-code
 date: 2007-05-21T21:08:41+08:00
 tags: ['Bazaar', 'Gnome', 'Ubuntu']
 ---
 
-[Previously](http://blogs.gnome.org/view/jamesh/2007/05/04/0), I posted
-about the FM radio plugin I was working on. I just posted the code to
-[bug
-168735](http://bugzilla.gnome.org/show_bug.cgi?id=168735#c13 "Support for v4l radio in rhythmbox").
-A few notes about the implementation:
+[Previously](fm-radio-in-rhythmbox.md), I posted about the FM radio
+plugin I was working on. I just posted the code to [bug
+168735](http://bugzilla.gnome.org/show_bug.cgi?id=168735#c13 "Support
+for v4l radio in rhythmbox").  A few notes about the implementation:
 
 -   The code only supports [Video4Linux
     2](http://www.linuxtv.org/downloads/video4linux/API/V4L2_API/) radio

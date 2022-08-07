@@ -8,7 +8,7 @@ tags: ['Gnome']
 I put out [a new
 release](http://mail.gnome.org/archives/gnome-announce-list/2006-March/msg00000.html)
 of gnome-gpg containing the fixes I [mentioned
-previously](http://blogs.gnome.org/view/jamesh/2006/01/12/0).
+previously](gnome-gpg-improvement.md).
 
 The internal changes are fairly extensive, but the user interface
 remains pretty much the same. The main differences are:

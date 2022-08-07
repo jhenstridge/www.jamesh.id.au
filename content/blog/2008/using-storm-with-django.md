@@ -24,18 +24,16 @@ There were a few things that surprised me:
 -   The ORM appears to only support a single connection for a request. 
     While this is the most common case and should be easy to code with,
     allowing an application to expand past this limit seems prudent.
--   The tutorial promotes schema generation from Python models, which I
-    feel is the wrong choice for any application that is likely to
+-   The tutorial promotes schema generation from Python models, which
+    I feel is the wrong choice for any application that is likely to
     evolve over time (i.e. pretty much every application).  I\'ve
-    [written about this
-    previously](http://blogs.gnome.org/jamesh/2007/09/28/orm-schema-generation/)
-    and believe that migration based schema management is a more
-    workable solution.
--   It poorly [reinvents thread local
-    storage](http://blogs.gnome.org/jamesh/2008/06/11/tls-python/) in a
-    few places.  This isn\'t too surprising for things that existed
-    prior to Python 2.4, and probably isn\'t a problem for its default
-    mode of operation.
+    [written about this previously](orm-schema-generation.md) and
+    believe that migration based schema management is a more workable
+    solution.
+-   It poorly [reinvents thread local storage](tls-python.md) in a few
+    places.  This isn\'t too surprising for things that existed prior
+    to Python 2.4, and probably isn\'t a problem for its default mode
+    of operation.
 
 Other than these things I\'ve noticed so far, it looks like a nice
 framework.
@@ -112,7 +110,7 @@ development, integrating Storm with Django will help both projects,
 especially because both are excellent.
 
 ---
-#### [James Henstridge &raquo; Storm 0.13](http://blogs.gnome.org/jamesh/2008/08/29/storm-013/) - <time datetime="2008-08-29 16:21:35">5 Aug, 2008</time>
+#### [James Henstridge &raquo; Storm 0.13](storm-013.md) - <time datetime="2008-08-29 16:21:35">5 Aug, 2008</time>
 
 \[\...\] The minimum dependencies of the storm.zope.zstorm module have
 been reduced to just the zope.interface and transaction modules.  This

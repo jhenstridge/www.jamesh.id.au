@@ -5,9 +5,8 @@ date: 2008-09-01T15:42:39+08:00
 tags: ['Django', 'Python', 'Storm']
 ---
 
-In [my previous post about
-Django](http://blogs.gnome.org/jamesh/2008/08/01/using-storm-with-django/),
-I mentioned that I found the transaction handling strategy in
+In [my previous post about Django](using-storm-with-django.md), I
+mentioned that I found the transaction handling strategy in
 [Django](http://www.djangoproject.com/) to be a bit surprising.
 
 Like most [object relational
@@ -17,13 +16,13 @@ be constantly issuing SELECT queries for every attribute access.
 However, it defaults to commiting after saving changes to each object.
 So a single web request might end up issuing many transactions:
 
-  ----------------- ---------------
-  Change object 1   Transaction 1
-  Change object 2   Transaction 2
-  Change object 3   Transaction 3
-  Change object 4   Transaction 4
-  Change object 5   Transaction 5
-  ----------------- ---------------
+|                  |               |
+| -----------------|---------------|
+| Change object 1  |Transaction 1  |
+| Change object 2  |Transaction 2  |
+| Change object 3  |Transaction 3  |
+| Change object 4  |Transaction 4  |
+| Change object 5  |Transaction 5  |
 
 Unless no one else is accessing the database, there is a chance that
 other users could modify objects that the ORM has cached over the

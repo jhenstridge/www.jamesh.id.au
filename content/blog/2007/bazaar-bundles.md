@@ -170,7 +170,7 @@ In fact, git is the only popular DVCS I know of without support for this
 sort of operation\...
 
 ---
-#### [James Henstridge &raquo; Bazaar bundles as part of a review process](http://blogs.gnome.org/jamesh/2007/08/16/bazaar-bundles-as-part-of-a-review-process/) - <time datetime="2007-08-16 13:36:13">4 Aug, 2007</time>
+#### [James Henstridge &raquo; Bazaar bundles as part of a review process](bazaar-bundles-as-part-of-a-review-process.md) - <time datetime="2007-08-16 13:36:13">4 Aug, 2007</time>
 
 \[\...\] James Henstridge Random stuff Skip to content « Bazaar Bundles
 \[\...\]

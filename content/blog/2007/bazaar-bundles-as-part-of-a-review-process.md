@@ -6,7 +6,7 @@ tags: ['Bazaar']
 ---
 
 In [my previous
-article](http://blogs.gnome.org/jamesh/2007/07/31/bazaar-bundles/ "Bazaar Bundles"),
+article](bazaar-bundles.md "Bazaar Bundles"),
 I outlined [Bazaar](http://bazaar-vcs.org/)\'s bundle feature. This
 article describes how the Bazaar developers use bundles as part of their
 development and code review process.

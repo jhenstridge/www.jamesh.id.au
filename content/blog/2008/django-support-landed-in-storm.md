@@ -5,9 +5,8 @@ date: 2008-09-19T14:23:51+08:00
 tags: ['Django', 'Python', 'Storm']
 ---
 
-Since [my last
-article](http://blogs.gnome.org/jamesh/2008/08/01/using-storm-with-django/)
-on integrating [Storm](http://storm.canonical.com/) with
+Since [my last article](using-storm-with-django.md) on integrating
+[Storm](http://storm.canonical.com/) with
 [Django](http://www.djangoproject.com/), I\'ve merged my changes to
 Storm\'s trunk.  This missed the 0.13 release, so you\'ll need to use
 Bazaar to get the latest trunk or wait for 0.14.

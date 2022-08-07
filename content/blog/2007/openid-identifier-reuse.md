@@ -183,7 +183,7 @@ You\'d be better off asking an XRI expert about this though. I have not
 read much about the implementation details.
 
 ---
-#### [James Henstridge &raquo; OpenID 2.0 Specification Approved](http://blogs.gnome.org/jamesh/2007/12/10/openid-20-specification-approved/) - <time datetime="2007-12-10 12:38:57">1 Dec, 2007</time>
+#### [James Henstridge &raquo; OpenID 2.0 Specification Approved](openid-20-specification-approved.md) - <time datetime="2007-12-10 12:38:57">1 Dec, 2007</time>
 
 \[\...\] stated previously that I think the support for identifier reuse
 with respect to URL identifiers is a bit lacking.  \[\...\]

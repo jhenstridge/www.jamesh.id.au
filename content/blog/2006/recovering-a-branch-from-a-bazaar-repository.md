@@ -5,8 +5,8 @@ date: 2006-12-19T05:42:10+09:00
 tags: ['Bazaar', 'Python']
 ---
 
-In my [previous entry](http://blogs.gnome.org/view/jamesh/2006/12/15/0),
-I mentioned that Andrew was actually publishing the contents of all his
+In my [previous entry](re-pushing-a-bzr-branch-with-rsync.md), I
+mentioned that Andrew was actually publishing the contents of all his
 [Bazaar](http://bazaar-vcs.org/) branches with his rsync script, even
 though he was only advertising a single branch. Yesterday I had a need
 to actually do this, so I thought I\'d detail how to do it.

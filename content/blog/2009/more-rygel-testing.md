@@ -5,13 +5,12 @@ date: 2009-06-19T00:06:19+08:00
 tags: ['Gnome', 'PlayStation 3', 'Ubuntu', 'UPnP']
 ---
 
-In my [last
-post](http://blogs.gnome.org/jamesh/2009/06/17/ubuntu-packages-for-rygel/ "Ubuntu packages for Rygel"),
-I said I had trouble getting Rygel\'s tracker backend to function and
-assumed that it was expecting an older version of the API.  It turns out
-I was incorrect and the problem was due in part to Ubuntu specific
-changes to the Tracker package and the unusual way Rygel was trying to
-talk to Tracker.
+In my [last post](ubuntu-packages-for-rygel.md "Ubuntu packages for
+Rygel"), I said I had trouble getting Rygel\'s tracker backend to
+function and assumed that it was expecting an older version of the
+API.  It turns out I was incorrect and the problem was due in part to
+Ubuntu specific changes to the Tracker package and the unusual way
+Rygel was trying to talk to Tracker.
 
 The Tracker packages in Ubuntu remove the D-Bus service activation file
 for the \"org.freedesktop.Tracker\" bus name so that if the user has not

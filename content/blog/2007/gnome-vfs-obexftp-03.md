@@ -6,9 +6,8 @@ tags: ['Gnome', 'Launchpad', 'Ubuntu']
 ---
 
 I\'ve just released a new version of gnome-vfs-obexftp, which includes
-the features [discussed
-previously](http://blogs.gnome.org/jamesh/2007/06/11/obexftp-changes/).
-It can be downloaded from:
+the features [discussed previously](obexftp-changes.md).  It can be
+downloaded from:
 
 > <http://download.gnome.org/sources/gnome-vfs-obexftp/0.3/>
 

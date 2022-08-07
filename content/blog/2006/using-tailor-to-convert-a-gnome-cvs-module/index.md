@@ -5,7 +5,7 @@ date: 2006-02-20T09:53:45+08:00
 tags: ['Bazaar', 'Gnome', 'JHBuild']
 ---
 
-In my [previous post](http://blogs.gnome.org/view/jamesh/2006/02/16/0),
+In my [previous post](../revision-control-migration-and-history-corruption.md),
 I mentioned using [Tailor](http://www.darcs.net/DarcsWiki/Tailor) to
 import jhbuild into a Bazaar-NG branch. In case anyone else is
 interested in doing the same, here are the steps I used:
@@ -41,7 +41,7 @@ any danger of screwing things up.
 
 I wrote a small program to check an RCS file for such discontinuities:
 
-> <http://www.gnome.org/~jamesh/code/backward-time.py>
+> [`backward-time.py`](backward-time.py)
 
 When editing the dates in the RCS files, make sure that you change the
 dates in the different files in a consistent way. You want to make sure

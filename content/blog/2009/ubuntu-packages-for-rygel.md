@@ -79,7 +79,7 @@ your\'s is more advanced or how we can join the effort. I am guilty, I
 didn\'t send an ITP. No worries.
 
 ---
-#### [More Rygel testing - James Henstridge](http://blogs.gnome.org/jamesh/2009/06/19/more-rygel-testing/) - <time datetime="2009-06-19 00:06:45">5 Jun, 2009</time>
+#### [More Rygel testing - James Henstridge](more-rygel-testing.md) - <time datetime="2009-06-19 00:06:45">5 Jun, 2009</time>
 
 \[\...\] James Henstridge Random stuff Skip to content « Ubuntu packages
 for Rygel \[\...\]

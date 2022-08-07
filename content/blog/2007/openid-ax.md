@@ -5,12 +5,12 @@ date: 2007-11-26T17:18:03+09:00
 tags: ['OpenID', 'openid.ax']
 ---
 
-In my [previous article on OpenID
-2.0](http://blogs.gnome.org/jamesh/2007/10/23/openid-20/), I mentioned
-the new [Attribute
-Exchange](http://openid.net/specs/openid-attribute-exchange-1_0-08.html "OpenID Attribute Exchange 1.0 - Draft 08")
-extension. To me this is one of the more interesting benefits of moving
-to OpenID 2.0, so it deserves a more in depth look.
+In my [previous article on OpenID 2.0](openid-20.md), I mentioned the
+new [Attribute
+Exchange](http://openid.net/specs/openid-attribute-exchange-1_0-08.html
+"OpenID Attribute Exchange 1.0 - Draft 08") extension. To me this is
+one of the more interesting benefits of moving to OpenID 2.0, so it
+deserves a more in depth look.
 
 As mentioned previously, the extension is a way of transferring
 information about the user between the OpenID provider and relying

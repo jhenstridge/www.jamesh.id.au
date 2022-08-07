@@ -5,10 +5,9 @@ date: 2006-09-05T07:07:41+08:00
 tags: ['Launchpad', 'Ubuntu']
 ---
 
-Earlier in the year, we [migrated the bugs from
-[bugzilla.ubuntu.com]{.kbd} over to
-Launchpad](http://blogs.gnome.org/view/jamesh/2006/01/16/0). This
-process involved changes to the bug numbers, since the
+Earlier in the year, we [migrated the bugs from `bugzilla.ubuntu.com`
+over to Launchpad](bugzilla-to-malone-migration.md). This process
+involved changes to the bug numbers, since the
 [Launchpad](https://launchpad.net/) is used for more than just
 [Ubuntu](http://www.ubuntu.com/) and already had a number of bugs
 reported in the system.
@@ -22,7 +21,7 @@ A, then we wouldn\'t know what bug number it should be referring to.
 
 The solution we used was to just insert a link to the bug watch URL
 (e.g.
-[https://launchpad.net/malone/bugtrackers/ubuntu-bugzilla/\$BUGID]{.kbd}),
+`https://launchpad.net/malone/bugtrackers/ubuntu-bugzilla/$BUGID`),
 which allowed people to find the referenced bug, but was a bit ugly.
 
 Today we ran a fixup script to remove these bug watch URLs from comments

@@ -5,19 +5,18 @@ date: 2008-04-10T20:13:38+08:00
 tags: ['Beer']
 ---
 
-Since bottling the [honey
-bock](http://blogs.gnome.org/jamesh/2008/03/06/honey-bock/) last month,
-I\'ve tried a bottle last week and this week. While it is a very nice
-beer, the honey flavour is not very noticeable. That said, the second
-bottle I tried had a slightly stronger honey flavour than the first so
-it might just need to mature for another month or so.
+Since bottling the [honey bock](honey-bock.md) last month, I\'ve tried
+a bottle last week and this week. While it is a very nice beer, the
+honey flavour is not very noticeable. That said, the second bottle I
+tried had a slightly stronger honey flavour than the first so it might
+just need to mature for another month or so.
 
 If I was to do this beer again, it would make sense to use a stronger
 flavoured honey or just use more honey. Then again, perhaps it isn\'t
 worth trying honey flavoured dark beers.
 
 One beer I\'d like to make again is [Chilli
-Beer](http://blogs.gnome.org/jamesh/2006/12/11/chilli-beer/).  I
+Beer](../2006/chilli-beer.md).  I
 haven\'t seen any commercial equivalent to it, and it was great on a hot
 summer afternoon.  Since there were chilli pieces in the bottles of the
 last batch, it got hotter as it matured.  It is an interesting

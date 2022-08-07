@@ -5,11 +5,10 @@ date: 2005-11-30T14:29:12+08:00
 tags: ['Bazaar']
 ---
 
-I updated my [bzr openssh
-plugin](http://blogs.gnome.org/view/jamesh/2005/11/17/0) to be a proper
-patch against `bzr.dev`, and got it merged. So if you have
-`bzr-openssh-sftp.py` in your `~/.bazaar/plugins` directory, you should
-remove it when upgrading.
+I updated my [bzr openssh plugin](using-openssh-with-bzr.md) to be a
+proper patch against `bzr.dev`, and got it merged. So if you have
+`bzr-openssh-sftp.py` in your `~/.bazaar/plugins` directory, you
+should remove it when upgrading.
 
 Unfortunately there was a small problem resolving a conflict when
 merging it, which causes the path to get mangled a little inside

@@ -50,14 +50,13 @@ to handle this.
 **Trusted Attribute Exchange**
 
 As mentioned in my previous article on [OpenID Attribute
-Exchange](http://blogs.gnome.org/jamesh/2007/11/26/openid-ax/), I
-mentioned that attribute values provided by the OP should be treated as
-being self asserted. So if the RP receives an email address or Jabber ID
-via attribute exchange, there is no guarantee that the user actually
-owns them. This is a problem if the RP wants to start emailing or
-instant messaging the user (e.g. OpenID enabled mailing list management
-software). Assuming the RP doesn\'t want to get users to revalidate
-their email address, what can it do?
+Exchange](openid-ax.md), I mentioned that attribute values provided by
+the OP should be treated as being self asserted. So if the RP receives
+an email address or Jabber ID via attribute exchange, there is no
+guarantee that the user actually owns them. This is a problem if the
+RP wants to start emailing or instant messaging the user (e.g. OpenID
+enabled mailing list management software). Assuming the RP doesn\'t
+want to get users to revalidate their email address, what can it do?
 
 One of the simplest solutions is to use a trust relationship with the
 OP. If the RP knows that the OP will only transfer email addresses if
@@ -81,11 +80,10 @@ the \"approved\" OPs.
 
 **Canonical IDs for URL Identifiers**
 
-I\'ve [stated
-previously](http://blogs.gnome.org/jamesh/2007/11/11/openid-identifier-reuse/)
-that I think the support for identifier reuse with respect to URL
-identifiers is a bit lacking.  It\'d be nice to see it expanded in a
-future specification revision.
+I\'ve [stated previously](openid-identifier-reuse.md) that I think the
+support for identifier reuse with respect to URL identifiers is a bit
+lacking.  It\'d be nice to see it expanded in a future specification
+revision.
 
 ---
 ### Comments:

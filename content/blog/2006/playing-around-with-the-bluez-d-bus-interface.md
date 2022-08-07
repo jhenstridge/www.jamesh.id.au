@@ -5,9 +5,9 @@ date: 2006-10-19T12:13:34+08:00
 tags: ['Gnome', 'Python', 'Ubuntu']
 ---
 
-In my [previous entry](http://blogs.gnome.org/view/jamesh/2006/10/05/0)
-about using the Maemo `obex-module` on the desktop, Johan Hedberg
-mentioned that `bluez-utils` 3.7 included equivalent interfaces to the
+In my [previous entry](obex-in-nautilus/index.md) about using the
+Maemo `obex-module` on the desktop, Johan Hedberg mentioned that
+`bluez-utils` 3.7 included equivalent interfaces to the
 `osso-gwconnect` daemon used by the method. Since then, the copy of
 `bluez-utils` in Edgy has been updated to 3.7, and the necessary
 interfaces are enabled in `hcid` by default.

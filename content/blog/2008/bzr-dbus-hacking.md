@@ -6,7 +6,7 @@ tags: ['Bazaar', 'D-Bus']
 ---
 
 When working on my [bzr-avahi
-plugin](http://blogs.gnome.org/jamesh/2008/02/19/bzr-avahi/), Robert
+plugin](bzr-avahi/index.md), Robert
 asked me about how it should fit in with his
 [bzr-dbus](https://launchpad.net/bzr-dbus) plugin. The two plugins offer
 complementary features, and could share a fair bit of infrastructure

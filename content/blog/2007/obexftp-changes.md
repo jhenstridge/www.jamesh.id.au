@@ -81,7 +81,7 @@ functionality is in place, so there is just some testing and other
 administrative stuff to finish off.
 
 ---
-#### [James Henstridge &raquo; gnome-vfs-obexftp 0.3](http://blogs.gnome.org/jamesh/2007/06/13/gnome-vfs-obexftp-03/) - <time datetime="2007-06-13 11:37:25">3 Jun, 2007</time>
+#### [James Henstridge &raquo; gnome-vfs-obexftp 0.3](gnome-vfs-obexftp-03.md) - <time datetime="2007-06-13 11:37:25">3 Jun, 2007</time>
 
 \[\...\] James Henstridge Random stuff Skip to content « New stuff in
 gnome-vfs-obexftp \[\...\]

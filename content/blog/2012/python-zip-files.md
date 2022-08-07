@@ -72,7 +72,7 @@ Interesting discovery: if you just rename the .zip file to whatever.py,
 then it works and you can run it with \"python whatever.py\"\...
 
 ---
-#### [» u1ftp: a demonstration of the Ubuntu One API James Henstridge](http://blogs.gnome.org/jamesh/2012/07/05/u1ftp/) - <time datetime="2012-07-04 16:32:50">3 Jul, 2012</time>
+#### [» u1ftp: a demonstration of the Ubuntu One API James Henstridge](u1ftp.md) - <time datetime="2012-07-04 16:32:50">3 Jul, 2012</time>
 
 \[\...\] James Henstridge Random stuff Skip to content « Packaging
 Python programs as runnable ZIP files \[\...\]

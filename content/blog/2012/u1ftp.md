@@ -28,12 +28,11 @@ You can download the program from:
 
 <https://launchpad.net/u1ftp/trunk/0.1/+download/u1ftp-0.1.zip>
 
-To make it easy to run on as many systems as possible, I packaged it up
-as a [runnable zip
-file](http://blogs.gnome.org/jamesh/2012/05/21/python-zip-files/) so can
-be run directly by the [Python](http://www.python.org/) interpreter.  As
-well as a Python interpreter, you will need the following installed to
-run it:
+To make it easy to run on as many systems as possible, I packaged it
+up as a [runnable zip file](python-zip-files.md) so can be run
+directly by the [Python](http://www.python.org/) interpreter.  As well
+as a Python interpreter, you will need the following installed to run
+it:
 
 -   On Linux systems, either the gnomekeyring extension (if you are
     using a GNOME derived desktop), or PyKDE4 (if you have a KDE derived

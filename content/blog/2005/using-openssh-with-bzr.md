@@ -6,7 +6,7 @@ tags: ['Bazaar']
 ---
 
 One of the transports available in
-[[bzr]{.kbd}](http://www.bazaar-ng.org/) is [sftp]{.kbd}. This is
+[`bzr`](http://www.bazaar-ng.org/) is `sftp`. This is
 implemented using the [Paramiko](http://www.lag.net/paramiko/) SSH and
 SFTP library. Unfortunately there are a few issues I experienced with
 the code:
