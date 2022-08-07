@@ -26,8 +26,8 @@ to dump the dependency tree for a set of modules in the `.dot` format.
 So to visualise the dependencies for Gnome, you could run a command like
 this:
 
->     jhbuild dot meta-gnome-desktop | dot -Tps > gnome-2.10.eps
->
-> (of course, given the number of modules that are needed to build the
-> entire Gnome desktop, you might get a better picture by picking a
-> smaller number of modules).
+    jhbuild dot meta-gnome-desktop | dot -Tps > gnome-2.10.eps
+
+(of course, given the number of modules that are needed to build the
+entire Gnome desktop, you might get a better picture by picking a
+smaller number of modules).

@@ -16,18 +16,18 @@ as a one-shot notification icon where it exits when the icon is clicked
 on). The easiest way to use it from a bash script is to tie Zenity to a
 file descriptor like this:
 
-> `exec 3> >(zenity --notification --listen)`
+    exec 3> >(zenity --notification --listen)
 
 You can then feed commands to the notification icon by echoing things to
 that file descriptor. For example:
 
-> `echo "tooltip: a new tooltip" >&3`
+    echo "tooltip: a new tooltip" >&3
 
 The available commands are `icon`, `tooltip` and `visible`. When you\'ve
 finished and want to kill off the icon, you can simply close the file
 descriptor:
 
-> `exec 3>&-`
+    exec 3>&-
 
 Some things that would be good to add are message balloon support
 (although the Gnome system tray doesn\'t seem to support them right now)

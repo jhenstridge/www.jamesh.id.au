@@ -25,68 +25,68 @@ So I needed some way to extract that boot image from the ISO.  After a
 little reading of the spec, I put together the following Python script
 that does the trick:
 
->     import struct
->     import sys
->
->     SECTOR_SIZE = 2048
->
->     def find_image(fp):
->         # el-torito boot record descriptor
->         fp.seek(0x11 * SECTOR_SIZE)
->         data = fp.read(SECTOR_SIZE)
->         assert data[:0x47] == b'\x00CD001\x01EL TORITO SPECIFICATION' + b'\x0' * 41
->         boot_catalog_sector = struct.unpack('<L', data[0x47:0x4B])[0]
->
->         # check the validation entry in the catalog
->         fp.seek(boot_catalog_sector * SECTOR_SIZE)
->         data = fp.read(0x20)
->         assert data[0:1] == b'\x01'
->         assert data[0x1e:0x20] == b'\x55\xAA'
->         assert sum(struct.unpack('<16H', data)) % 0x10000 == 0
->
->         # Read the initial/default entry
->         data = fp.read(0x20)
->         (bootable, image_type, load_segment, system_type, sector_count,
->          image_sector) = struct.unpack('<BBHBxHL', data[:12])
->         image_offset = image_sector * SECTOR_SIZE
->         if image_type == 1:
->             # 1.2MB floppy
->             image_size = 1200 * 1024
->         elif image_type == 2:
->             # 1.44MB floppy
->             image_size = 1440 * 1024
->         elif image_type == 3:
->             # 2.88MB floppy
->             image_size = 2880 * 1024
->         elif image_type == 4:
->             # Hard disk image.  Read the MBR partition table to locate file system
->             fp.seek(image_offset)
->             data = fp.read(512)
->             # Read the first partition entry
->             (bootable, part_type, part_start, part_size) = struct.unpack_from(
->                 '<BxxxBxxxLL', data, 0x1BE)
->             assert bootable == 0x80 # is partition bootable?
->             image_offset += part_start * 512
->             image_size = part_size * 512
->         else:
->             raise AssertionError('unhandled image format: %d' % image_type)
->
->         fp.seek(image_offset)
->         return fp.read(image_size)
->
->     if __name__ == '__main__':
->         with open(sys.argv[1], 'rb') as iso, open(sys.argv[2], 'wb') as img:
->             img.write(find_image(iso))
->
-> It isn\'t particularly pretty, but does the job and spits out a 32MB
-> FAT disk image when run on the ThinkPad X230 update ISOs. It is then a
-> pretty easy task of copying those files onto the USB stick to run the
-> update as before. Hopefully owners of similar laptops find this
-> useful.
->
-> There appears to be an EFI executable in there too, so it is possible
-> that the firmware update could be run from the EFI system partition
-> too.  I haven\'t had the courage to try that though.
+    import struct
+    import sys
+
+    SECTOR_SIZE = 2048
+
+    def find_image(fp):
+        # el-torito boot record descriptor
+        fp.seek(0x11 * SECTOR_SIZE)
+        data = fp.read(SECTOR_SIZE)
+        assert data[:0x47] == b'\x00CD001\x01EL TORITO SPECIFICATION' + b'\x0' * 41
+        boot_catalog_sector = struct.unpack('<L', data[0x47:0x4B])[0]
+
+        # check the validation entry in the catalog
+        fp.seek(boot_catalog_sector * SECTOR_SIZE)
+        data = fp.read(0x20)
+        assert data[0:1] == b'\x01'
+        assert data[0x1e:0x20] == b'\x55\xAA'
+        assert sum(struct.unpack('<16H', data)) % 0x10000 == 0
+
+        # Read the initial/default entry
+        data = fp.read(0x20)
+        (bootable, image_type, load_segment, system_type, sector_count,
+         image_sector) = struct.unpack('<BBHBxHL', data[:12])
+        image_offset = image_sector * SECTOR_SIZE
+        if image_type == 1:
+            # 1.2MB floppy
+            image_size = 1200 * 1024
+        elif image_type == 2:
+            # 1.44MB floppy
+            image_size = 1440 * 1024
+        elif image_type == 3:
+            # 2.88MB floppy
+            image_size = 2880 * 1024
+        elif image_type == 4:
+            # Hard disk image.  Read the MBR partition table to locate file system
+            fp.seek(image_offset)
+            data = fp.read(512)
+            # Read the first partition entry
+            (bootable, part_type, part_start, part_size) = struct.unpack_from(
+                '<BxxxBxxxLL', data, 0x1BE)
+            assert bootable == 0x80 # is partition bootable?
+            image_offset += part_start * 512
+            image_size = part_size * 512
+        else:
+            raise AssertionError('unhandled image format: %d' % image_type)
+
+        fp.seek(image_offset)
+        return fp.read(image_size)
+
+    if __name__ == '__main__':
+        with open(sys.argv[1], 'rb') as iso, open(sys.argv[2], 'wb') as img:
+            img.write(find_image(iso))
+
+It isn\'t particularly pretty, but does the job and spits out a 32MB
+FAT disk image when run on the ThinkPad X230 update ISOs. It is then a
+pretty easy task of copying those files onto the USB stick to run the
+update as before. Hopefully owners of similar laptops find this
+useful.
+
+There appears to be an EFI executable in there too, so it is possible
+that the firmware update could be run from the EFI system partition
+!!too.  I haven\'t had the courage to try that though.
 
 ---
 ### Comments:

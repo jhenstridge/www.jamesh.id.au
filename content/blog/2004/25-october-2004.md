@@ -37,41 +37,41 @@ case, there are the following libraries:
 Let\'s say I then try to link an app that needs `libbar` and the new
 version of `libfoo`, and happen to use the following link line:
 
->     libtool --mode=link gcc -o main main.c -lbar -L/A -L/B -lfoo
->
-> In the absense of libtool, this would result in us linking against
-> `/B/libbar.so` and `/A/libfoo.so` (since `/A` comes before `/B` in the
-> search path).
->
-> However, libtool ends up doing something quite different. When it sees
-> `-lbar`, it notices that there is a `libbar.la` in `/B`, expands that
-> argument to the full path name of the actual library (`/B/libbar.so`),
-> *and prepends `/B` to the library search path*. This means that when
-> it gets round to processing `-lfoo`, it finds `/B/libfoo.la` instead
-> of `/A/libfoo.la`, and links to the wrong library.
->
-> If this sounds like an obscure bug, note that it also happens if we
-> replace `/B` with `/usr/lib`. In this case, we don\'t even need the
-> `-L/usr/lib` argument. So the following command results in linking
-> with `/usr/lib/libfoo.so` instead of `/A/libfoo.so`:
->
-> >     libtool --mode=link gcc -o main main.c -lbar -L/A -lfoo
-> >
-> > This sort of situation is quite common when trying to build some
-> > software into a separate prefix that is also provided by the OS,
-> > when you are relying on a few libraries installed in `/usr/lib` with
-> > .la files.
-> >
-> > After putting together the test case I tested it out in the latest
-> > development release (1.9f), and it appears that the problem has been
-> > fixed. Given that the libtool developers are so close to a 2.0
-> > release, I don\'t know whether they would bother putting out another
-> > 1.5.x release to fix the problem.
-> >
-> > So if you do run into the problem, some possible solutions are:
-> >
-> > 1.  Upgrade to libtool-1.9f. I\'m not sure how good an idea this is
-> >     if you are producing tarballs, since they will be packaged with
-> >     the development release too.
-> > 2.  Remove all the `.la` files in `/usr/lib`. Some distributors seem
-> >     to take this route (eg. Ximian/Novell and Red Hat).
+    libtool --mode=link gcc -o main main.c -lbar -L/A -L/B -lfoo
+
+In the absense of libtool, this would result in us linking against
+`/B/libbar.so` and `/A/libfoo.so` (since `/A` comes before `/B` in the
+search path).
+
+However, libtool ends up doing something quite different. When it sees
+`-lbar`, it notices that there is a `libbar.la` in `/B`, expands that
+argument to the full path name of the actual library (`/B/libbar.so`),
+*and prepends `/B` to the library search path*. This means that when
+it gets round to processing `-lfoo`, it finds `/B/libfoo.la` instead
+of `/A/libfoo.la`, and links to the wrong library.
+
+If this sounds like an obscure bug, note that it also happens if we
+replace `/B` with `/usr/lib`. In this case, we don\'t even need the
+`-L/usr/lib` argument. So the following command results in linking
+with `/usr/lib/libfoo.so` instead of `/A/libfoo.so`:
+
+    libtool --mode=link gcc -o main main.c -lbar -L/A -lfoo
+
+This sort of situation is quite common when trying to build some
+software into a separate prefix that is also provided by the OS, when
+you are relying on a few libraries installed in `/usr/lib` with .la
+files.
+
+After putting together the test case I tested it out in the latest
+development release (1.9f), and it appears that the problem has been
+fixed. Given that the libtool developers are so close to a 2.0
+release, I don\'t know whether they would bother putting out another
+1.5.x release to fix the problem.
+
+So if you do run into the problem, some possible solutions are:
+
+1.  Upgrade to libtool-1.9f. I\'m not sure how good an idea this is
+    if you are producing tarballs, since they will be packaged with
+    the development release too.
+2.  Remove all the `.la` files in `/usr/lib`. Some distributors seem
+    to take this route (eg. Ximian/Novell and Red Hat).

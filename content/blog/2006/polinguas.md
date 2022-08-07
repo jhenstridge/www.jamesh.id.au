@@ -29,60 +29,59 @@ want to check into CVS).
 
 Mark the m4 subdirectory as the macro dir in the `configure.ac` file:\
 
->     AC_CONFIG_MACRO_DIR([m4])
->
-> And make sure that the macro dir gets checked if the makefile reruns
-> aclocal:
->
-> >     AC_SUBST([ACLOCAL_AMFLAGS], ["-I $ac_macro_dir \${ACLOCAL_FLAGS}"])
-> >
-> > If you aren\'t using the `gnome-common` `autogen.sh` script, you
-> > will also need to make sure that aclocal is called with \"`-I m4`\".
-> > If you are using the `gnome-common` script, then this will happen
-> > automatically.
-> >
-> > Remove the `AM_GLIB_GNU_GETTEXT` call from `configure.ac` and
-> > replace it with:\
-> >
-> > >     AM_GNU_GETTEXT([external])
-> > >     AM_GNU_GETTEXT_VERSION([0.14.1])
-> > >
-> > > If you aren\'t using the `gnome-common` `autogen.sh` script,
-> > > change the call to `glib-gettextize` to `autopoint`, and make sure
-> > > it gets run before `aclocal` (again, unneeded if you are using the
-> > > `gnome-common` script).
-> > >
-> > > Now rerun `autogen.sh` so that `autopoint` gets run. This should
-> > > result in a number of files getting created under `m4`, and some
-> > > new files under `po`.
-> > >
-> > > Copy `po/Makevars.template` to `po/Makevars` and customise the
-> > > variables. You might want to set `DOMAIN` to `$(GETTEXT_PACKAGE)`
-> > > rather than `$(PACKAGE)`. Add this new file in CVS.
-> > >
-> > > Update `po/LINGUAS` from the `ALL_LINGUAS` variable in
-> > > `configure.ac`, and then remove the `ALL_LINGUAS` definition. Add
-> > > `po/LINGUAS` to CVS.
-> > >
-> > > Finally update `m4/.cvsignore` and `po/.cvsignore` to ignore the
-> > > new generated files.
-> > >
-> > > As I said at the start, this change is only appropriate for apps
-> > > not using `intltool`, since `intltool` overwrites the
-> > > `po/Makefile.in.in` file with an incomaptible version.
-> > >
-> > > To get things working with `intltool`, I believe it would make
-> > > most sense to modify intltool as follows:
-> > >
-> > > -   Make `intltool` provide some commands that are command line
-> > >     argument compatible with `xgettext` and `msgmerge`.
-> > > -   Make `IT_PROG_INTLTOOL` alter `XGETTEXT` and `MSGMERGE` with
-> > >     the appropriate intltool functions.
-> > > -   Don\'t overwrite `po/Makefile.in.in`.
-> > > -   If additional makefile rules are needed in the `po`
-> > >     subdirectory, install a `po/Rules-intltool` file containing
-> > >     them. The gettext M4 macros will include them into the
-> > >     resulting Makefile.
+    AC_CONFIG_MACRO_DIR([m4])
+
+And make sure that the macro dir gets checked if the makefile reruns
+aclocal:
+
+    AC_SUBST([ACLOCAL_AMFLAGS], ["-I $ac_macro_dir \${ACLOCAL_FLAGS}"])
+
+If you aren\'t using the `gnome-common` `autogen.sh` script, you will
+also need to make sure that aclocal is called with \"`-I m4`\".  If
+you are using the `gnome-common` script, then this will happen
+automatically.
+
+Remove the `AM_GLIB_GNU_GETTEXT` call from `configure.ac` and replace
+it with:
+
+    AM_GNU_GETTEXT([external])
+    AM_GNU_GETTEXT_VERSION([0.14.1])
+
+If you aren\'t using the `gnome-common` `autogen.sh` script, change
+the call to `glib-gettextize` to `autopoint`, and make sure it gets
+run before `aclocal` (again, unneeded if you are using the
+`gnome-common` script).
+
+Now rerun `autogen.sh` so that `autopoint` gets run. This should
+result in a number of files getting created under `m4`, and some new
+files under `po`.
+
+Copy `po/Makevars.template` to `po/Makevars` and customise the
+variables. You might want to set `DOMAIN` to `$(GETTEXT_PACKAGE)`
+rather than `$(PACKAGE)`. Add this new file in CVS.
+
+Update `po/LINGUAS` from the `ALL_LINGUAS` variable in `configure.ac`,
+and then remove the `ALL_LINGUAS` definition. Add `po/LINGUAS` to CVS.
+
+Finally update `m4/.cvsignore` and `po/.cvsignore` to ignore the new
+generated files.
+
+As I said at the start, this change is only appropriate for apps not
+using `intltool`, since `intltool` overwrites the `po/Makefile.in.in`
+file with an incomaptible version.
+
+To get things working with `intltool`, I believe it would make most
+sense to modify intltool as follows:
+
+-   Make `intltool` provide some commands that are command line
+    argument compatible with `xgettext` and `msgmerge`.
+-   Make `IT_PROG_INTLTOOL` alter `XGETTEXT` and `MSGMERGE` with
+    the appropriate intltool functions.
+-   Don\'t overwrite `po/Makefile.in.in`.
+-   If additional makefile rules are needed in the `po`
+    subdirectory, install a `po/Rules-intltool` file containing
+    them. The gettext M4 macros will include them into the
+    resulting Makefile.
 
 ---
 ### Comments:

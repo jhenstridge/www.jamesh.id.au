@@ -11,30 +11,30 @@ if you are using a language like [Python](http://www.python.org/), you
 can let the language keep track of your state machine for something like
 that:
 
->     def load_items(treeview, liststore, items):
->         for obj in items:
->             liststore.append((obj.get_foo(),
->                               obj.get_bar(),
->                               obj.get_baz()))
->             yield True
->         treeview.set_model(liststore)
->         yield False
->
->     def lazy_load_items(treeview, liststore, items):
->         gobject.idle_add(load_items(treeview, liststore, item).next)
->
-> Here, `load_items()` is a generator that will iterate over a sequence
-> like `[True, True, ..., True, False]`. The `next()` method is used to
-> get the next value from the iterator. When used as an idle function
-> with this particular generator, it results in one item being added to
-> the list store per idle call til we get to the end of the generator
-> body where the \"`yield False`\" statement results in the idle
-> function being removed.
->
-> For a lot of algorithms, this removes the need to design and debug a
-> state machine equivalent. Of course, it is
-> [possible](http://www.chiark.greenend.org.uk/~sgtatham/coroutines.html)
-> to do similar things in C but that\'s even more obscure `:)`.
+    def load_items(treeview, liststore, items):
+        for obj in items:
+            liststore.append((obj.get_foo(),
+                              obj.get_bar(),
+                              obj.get_baz()))
+            yield True
+        treeview.set_model(liststore)
+        yield False
+
+    def lazy_load_items(treeview, liststore, items):
+        gobject.idle_add(load_items(treeview, liststore, item).next)
+
+Here, `load_items()` is a generator that will iterate over a sequence
+like `[True, True, ..., True, False]`. The `next()` method is used to
+get the next value from the iterator. When used as an idle function
+with this particular generator, it results in one item being added to
+the list store per idle call til we get to the end of the generator
+body where the \"`yield False`\" statement results in the idle
+function being removed.
+
+For a lot of algorithms, this removes the need to design and debug a
+state machine equivalent. Of course, it is
+[possible](http://www.chiark.greenend.org.uk/~sgtatham/coroutines.html)
+to do similar things in C but that\'s even more obscure `:)`.
 
 ---
 ### Comments:

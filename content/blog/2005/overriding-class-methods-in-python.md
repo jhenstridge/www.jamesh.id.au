@@ -20,48 +20,48 @@ normal instance methods. One place that things differ is overriding a
 class method in a subclass. The following simple example demonstrates
 the problem:
 
->     class SubClass(ParentClass):
->         @classmethod
->         def create(cls, arg):
->             ret = ParentClass.create(cls, arg)
->             ret.dosomethingelse()
->             return ret
->
-> This code is broken because the `ParentClass.create()` call is calling
-> the version of `create()` method in the context of `ParentClass`,
-> rather than calling an unbound method like it would with a normal
-> instance method. The most likely outcome will be a `TypeError` due to
-> the method receiving too many arguments.
->
-> So how do you chain up to the parent class implementation? You use the
-> `super()` object, which was also added in Python 2.2 as an alternative
-> way to chain to the parent implementation of a method. The above code
-> rewritten as follows:
->
-> >     class SubClass(ParentClass):
-> >         @classmethod
-> >         def create(cls, arg):
-> >             ret = super(SubClass, cls).create(arg)
-> >             ret.dosomethingelse()
-> >             return ret
-> >
-> > If you haven\'t ever used the `super()` object, this is what it is
-> > doing in the above example:
-> >
-> > 1.  `SubClass` is looked up in the list `cls.__mro__` (a linearised
-> >     list of ancestor classes in the order used for method
-> >     resolution).
-> > 2.  The class dict for each ancestor class coming after `SubClass`
-> >     in `cls.__mro__` is checked to see if it contains \"`create`\".
-> > 3.  The `super()` object returns a version of \"`create`\" in the
-> >     context of `cls` using the `__get__(cls)` \"descriptor get\"
-> >     method.
-> > 4.  When this bound method gets called, `cls` will be passed in
-> >     instead of the parent class.
-> >
-> > Previously I\'d ignored `super()` for the most part, since I could
-> > use the old chaining syntax. This shows a place where the old-style
-> > syntax can\'t be applied.
+    class SubClass(ParentClass):
+        @classmethod
+        def create(cls, arg):
+            ret = ParentClass.create(cls, arg)
+            ret.dosomethingelse()
+            return ret
+
+This code is broken because the `ParentClass.create()` call is calling
+the version of `create()` method in the context of `ParentClass`,
+rather than calling an unbound method like it would with a normal
+instance method. The most likely outcome will be a `TypeError` due to
+the method receiving too many arguments.
+
+So how do you chain up to the parent class implementation? You use the
+`super()` object, which was also added in Python 2.2 as an alternative
+way to chain to the parent implementation of a method. The above code
+rewritten as follows:
+
+    class SubClass(ParentClass):
+        @classmethod
+        def create(cls, arg):
+            ret = super(SubClass, cls).create(arg)
+            ret.dosomethingelse()
+            return ret
+
+If you haven\'t ever used the `super()` object, this is what it is
+doing in the above example:
+
+1.  `SubClass` is looked up in the list `cls.__mro__` (a linearised
+    list of ancestor classes in the order used for method
+    resolution).
+2.  The class dict for each ancestor class coming after `SubClass`
+    in `cls.__mro__` is checked to see if it contains \"`create`\".
+3.  The `super()` object returns a version of \"`create`\" in the
+    context of `cls` using the `__get__(cls)` \"descriptor get\"
+    method.
+4.  When this bound method gets called, `cls` will be passed in
+    instead of the parent class.
+
+Previously I\'d ignored `super()` for the most part, since I could
+use the old chaining syntax. This shows a place where the old-style
+syntax can\'t be applied.
 
 ---
 ### Comments:

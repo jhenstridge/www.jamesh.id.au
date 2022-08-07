@@ -64,24 +64,16 @@ file can print a URL telling people where to find a newer version.
 Unfortunately, if you use this feature your `.pc` file won\'t work with
 `pkg-config` \<= 0.15.
 
-<div>
-
 A virtual \"`pkg-config`\" package is provided by `pkg-config`. It
 doesn\'t provide any `cflags` or `libs`, but does include the version
 number. So the following are equivalent:
 
-</div>
+    pkg-config --atleast-pkgconfig-version=0.17.1
+    pkg-config --exists pkg-config '>=' 0.17.1
 
->     pkg-config --atleast-pkgconfig-version=0.17.1
->     pkg-config --exists pkg-config '>=' 0.17.1
->
-> <div>
->
-> This may not sound useful at first, but you can also list the module
-> in the `Requires` line of another `.pc` file. As an example, if you
-> used some weird link flags that `pkg-config` used to mangle but has
-> since been fixed, you can encode that requirement in the `.pc` file.
-> Of course, this is only useful for checking for `pkg-config` versions
-> greater than 0.16.
->
-> </div>
+This may not sound useful at first, but you can also list the module
+in the `Requires` line of another `.pc` file. As an example, if you
+used some weird link flags that `pkg-config` used to mangle but has
+since been fixed, you can encode that requirement in the `.pc` file.
+Of course, this is only useful for checking for `pkg-config` versions
+greater than 0.16.
