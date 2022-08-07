@@ -27,8 +27,9 @@ If you view a site where these conditions are met with an affected
 Firefox build, you will see the bug: ligature glyphs will be used to
 render character sequences like \"`ffi`\", but only the advance of the
 first character\'s normal glyph is used before drawing the next glyph.
-This results in [overlapping
-glyphs](http://www.gnome.org/~jamesh/firefox-ligatures.png)
+This results in overlapping glyphs:
+
+![](firefox-ligatures.png)
 
 It also results in a weird effect when selecting text, since the
 ligatures get broken appart if the selection begins or ends in the

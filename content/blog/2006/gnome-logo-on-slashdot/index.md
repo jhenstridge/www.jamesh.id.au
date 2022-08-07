@@ -20,15 +20,11 @@ Slashdot\'s high standards. After all, if they were going to switch to
 the new logo, they would have done so when we first asked. The result is
 below:
 
-::: {align="center"}
-![](http://www.gnome.org/~jamesh/gnome-slashdot2.png){width="198"
-height="225"}
-:::
+![](gnome-slashdot2.png)
 
-This is based on an [earlier
-design](http://www.gnome.org/~jamesh/gnome-slashdot.png), but I think
-the drop shadow really completes the image. Iain managed to come up with
-[a variant](http://www.o-hand.com/~iain/gnome-games-slashdot.png)
+This is based on an [earlier design](gnome-slashdot.png), but I think
+the drop shadow really completes the image. Iain managed to come up
+with [a variant](http://www.o-hand.com/~iain/gnome-games-slashdot.png)
 suitable for use on the games sub-site.
 
 ---

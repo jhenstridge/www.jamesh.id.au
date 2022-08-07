@@ -11,8 +11,10 @@ The new drive mount applet is now checked into the HEAD branch of
 gnome-applets, so will be in Gnome 2.10. There are a few things left to
 do, such as making it possible to open the file manager as well as
 unmounting/ejecting it. I did up a
-[screenshot](http://www.gnome.org/~jamesh/images/drive-mount-applet.png)
+[screenshot](drive-mount-applet.png)
 showing what it looks like as an applet.
+
+![](drive-mount-applet.png)
 
 **Libtool**
 

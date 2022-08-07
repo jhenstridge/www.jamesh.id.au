@@ -51,8 +51,10 @@ to remove all the preferences:
     separate ones.
 
 My code is at the point where it produces [nice
-screenshots](http://www.gnome.org/~jamesh/images/drive-mount.png), and
-has the above features. The screenshot shows it as a separate window,
-but adding the applet wrapper stuff isn\'t too difficult (it is easier
-to test as a standalone app). It is less than half the size of the old
-applet too, which is promising.
+screenshots](drive-mount.png), and has the above features. The
+screenshot shows it as a separate window, but adding the applet
+wrapper stuff isn\'t too difficult (it is easier to test as a
+standalone app). It is less than half the size of the old applet too,
+which is promising.
+
+![](drive-mount.png)
