@@ -21,12 +21,9 @@ of tools to help manage fonts on
 GNOME 2.1.x and Red Hat 8.0). Here are a few screenshots of what it can
 do:
 
--   [List of fonts in icon
-    view](http://www.daa.com.au/~james/images/fontilus-thumb-icons.png)
--   [List of fonts in list
-    view](http://www.daa.com.au/~james/images/fontilus-thumb-list.png)
--   [Font
-    viewer](http://www.daa.com.au/~james/images/fontilus-font-viewer.png)
+-   [List of fonts in icon view](fontilus-thumb-icons.png)
+-   [List of fonts in list view](fontilus-thumb-list.png)
+-   [Font viewer](fontilus-font-viewer.png)
 
 The thumbnailing only works if you have Nautilus 2.1, but the rest works
 on vanila RH8. What the screenshots don\'t show is that the `fonts:///`

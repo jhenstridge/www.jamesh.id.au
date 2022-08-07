@@ -7,12 +7,9 @@ date: 2002-08-03T15:38:59+08:00
 Got the nautilus view up and running. A number of pictures of an early
 version are at:
 
--   [Information
-    page](http://www.daa.com.au/~james/images/nautilus-rpm/rpm-view-1.png)
--   [Files
-    page](http://www.daa.com.au/~james/images/nautilus-rpm/rpm-view-2.png)
--   [Provides and Requires
-    page](http://www.daa.com.au/~james/images/nautilus-rpm/rpm-view-3.png)
+-   [Information page](rpm-view-1.png)
+-   [Files page](rpm-view-2.png)
+-   [Provides and Requires page](rpm-view-3.png)
 
 In the current version, provides and requires have been split onto
 separate pages (and I added conflicts and obsoletes), and they are only

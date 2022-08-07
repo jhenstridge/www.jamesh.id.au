@@ -11,15 +11,13 @@ your abstracts soon.
 
 **GNOME**
 
-I started writing up some code to add [RPM](http://www.rpm.org/) support
-to Nautilus. At the moment, I just have a simple [GNOME
+I started writing up some code to add [RPM](http://www.rpm.org/)
+support to Nautilus. At the moment, I just have a simple [GNOME
 VFS](http://www.advogato.org/proj/GNOME%20VFS/) module that allows you
-to see what packages are on the system. You can see a sample of what it
-looks like
-[here](http://www.daa.com.au/~james/images/nautilus-rpm/rpmdb-vfs-2.png).
-The package sizes represent the installed size of the package (as
-reported in the RPM database), and the modification times are the
-installation times of the packages.
+to see what packages are on the system. You can see a sample of what
+it looks like [here](rpmdb-vfs-1.png).  The package sizes represent
+the installed size of the package (as reported in the RPM database),
+and the modification times are the installation times of the packages.
 
 I still need to write some code so that you can view information about
 the package (probably as a nautilus view), and some utilities for
