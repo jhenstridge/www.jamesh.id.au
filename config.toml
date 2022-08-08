@@ -2,10 +2,18 @@ baseURL = "https://www.jamesh.id.au/"
 languageCode = "en-au"
 title = "James Henstridge"
 theme = "ananke"
-paginate = 100
-pygmentsStyle = "solarized-light"
+paginate = 25
 enableGitInfo = true
 enableRobotsTXT = true
+
+[markup.goldmark.renderer]
+unsafe = true
+
+[markup.highlight]
+style = "monokai"
+
+[permalinks]
+blog = "/blog/:year/:month/:slug/"
 
 [params]
 mainSections = ["post"]
@@ -32,12 +40,9 @@ toLower = false
 name = "keywords"
 weight = 100
 [[related.indices]]
+name = "tags"
+weight = 50
+[[related.indices]]
 name  = "date"
 weight = 10
 pattern = "2006"
-
-[[menu.main]]
-identifier = "blog"
-name = "Blog"
-url = "https://blogs.gnome.org/jamesh/"
-weight = 1

@@ -2,7 +2,10 @@
 title: ""
 date: 2018-08-19T12:22:56+08:00
 cascade:
-  featured_image: "/images/featured-image.jpg"
+  - featured_image: "/images/featured-image.jpg"
+  - _target:
+      kind: page
+    omit_header_text: true
 ---
 
 This is the personal website of James Henstridge.  I work
