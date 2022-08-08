@@ -13,7 +13,7 @@ only on fire for a little while.
 
 ---
 ### Comments:
-#### John - <time datetime="2006-11-16 08:40:36">4 Nov, 2006</time>
+#### John - <time datetime="2006-11-16 08:40:36">16 Nov, 2006</time>
 
 Excellent, I am sure you will now be able to write better code, achieve
 higher availability figures all with your new flaming hands. I really do
@@ -22,7 +22,7 @@ employees want to know is that what they do is appreciated, fairly
 treated and paid accordingly.
 
 ---
-#### [CraigM](http://decafbad.net) - <time datetime="2006-11-16 09:38:06">4 Nov, 2006</time>
+#### [CraigM](http://decafbad.net) - <time datetime="2006-11-16 09:38:06">16 Nov, 2006</time>
 
 You might want to check out the Penn and Teller \"Bullsh\*t\" episode
 called \"Self Helpless\" about all the motivational speaker tricks (like
@@ -31,7 +31,7 @@ good way to deprogram from the hysteria. If you feel so inclined, you
 might want to share it with your corporate masters.
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh) - <time datetime="2006-11-16 13:12:50">4 Nov, 2006</time>
+#### [James Henstridge](http://blogs.gnome.org/jamesh) - <time datetime="2006-11-16 13:12:50">16 Nov, 2006</time>
 
 CraigM: there wasn\'t much of a trick to punching through the board. It
 was a simple pine board cut across the grain. If you hit one with enough
@@ -41,7 +41,7 @@ The fire was from some lighter fluid sprayed onto the wood beforehand,
 so the actual wood was not on fire.
 
 ---
-####  - <time datetime="2006-11-17 07:18:37">5 Nov, 2006</time>
+####  - <time datetime="2006-11-17 07:18:37">17 Nov, 2006</time>
 
 George Will once said that football incorporates the two worst elements
 of American society: violence punctuated by committee meetings.
@@ -53,7 +53,7 @@ Welcome to America, the greatest country on earth \... except for, you
 know, some of those other ones.
 
 ---
-#### SteveA - <time datetime="2006-11-20 08:16:15">1 Nov, 2006</time>
+#### SteveA - <time datetime="2006-11-20 08:16:15">20 Nov, 2006</time>
 
 I can confirm that one of the assistants really did say to jamesh
 \"Yeah! You were on fire! Awesome!\"

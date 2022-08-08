@@ -17,23 +17,23 @@ currently in place for the wikis.
 
 ---
 ### Comments:
-#### [sourcecode.de](http://www.sourcecode.de/node/906) - <time datetime="2007-08-22 16:09:34">3 Aug, 2007</time>
+#### [sourcecode.de](http://www.sourcecode.de/node/906) - <time datetime="2007-08-22 16:09:34">22 Aug, 2007</time>
 
 **Ubuntus Shop**
 
 ---
-#### [pvandewyngaerde](http://pvandewyngaerde.myopenid.com/) - <time datetime="2007-08-22 16:18:29">3 Aug, 2007</time>
+#### [pvandewyngaerde](http://pvandewyngaerde.myopenid.com/) - <time datetime="2007-08-22 16:18:29">22 Aug, 2007</time>
 
 why not openID authentication ??
 
 ---
-#### [Wolfger](http://wolfger.wordpress.com/) - <time datetime="2007-08-22 19:50:15">3 Aug, 2007</time>
+#### [Wolfger](http://wolfger.wordpress.com/) - <time datetime="2007-08-22 19:50:15">22 Aug, 2007</time>
 
 I second the \"why not OpenID?\" question. For an Open solution, it sure
 seems to be underutilized by FOSS websites.
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2007-08-22 21:13:09">3 Aug, 2007</time>
+#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2007-08-22 21:13:09">22 Aug, 2007</time>
 
 If you look closely, you\'ll see that OpenID is being used under the
 hood to authenticate to the shop. As for accepting external OpenIDs as a

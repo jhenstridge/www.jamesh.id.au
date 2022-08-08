@@ -64,7 +64,7 @@ features I\'d need to provide a good user experience:
 
 ---
 ### Comments:
-#### [davidz](http://blog.fubar.dk) - <time datetime="2007-06-18 11:46:15">1 Jun, 2007</time>
+#### [davidz](http://blog.fubar.dk) - <time datetime="2007-06-18 11:46:15">18 Jun, 2007</time>
 
 Someone posted a patch to HAL that I merged that exports the so-called
 \"USB Interface Decscription\" textual value
@@ -83,14 +83,14 @@ is given the mobile phone though. But it should be feasible.
 Hope this helps and keep on rocking on OBEX! Thanks!
 
 ---
-#### [davidz](http://blog.fubar.dk) - <time datetime="2007-06-18 11:47:22">1 Jun, 2007</time>
+#### [davidz](http://blog.fubar.dk) - <time datetime="2007-06-18 11:47:22">18 Jun, 2007</time>
 
 Btw, forgot to mention that one point of having it in HAL is that with
 the ACL-patch (that is also in 0.5.9) we\'d use this rather than udev
 rules to add ACL\'s to the device file.
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2007-06-18 12:10:27">1 Jun, 2007</time>
+#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2007-06-18 12:10:27">18 Jun, 2007</time>
 
 Hi David,
 
@@ -110,7 +110,7 @@ device I discover with HAL, but that is an OpenOBEX problem rather than
 a HAL problem.
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2007-06-18 13:48:38">1 Jun, 2007</time>
+#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2007-06-18 13:48:38">18 Jun, 2007</time>
 
 Actually, there is one area I wouldn\'t mind seeing HAL improve is to
 add Bluetooth device support. If I am going to add USB support, it\'d be
@@ -118,7 +118,7 @@ nice if I could share as much discovery code between the Bluetooth and
 USB cases as possible.
 
 ---
-#### [Olivier Berger](http://www.olivierberger.com/weblog/) - <time datetime="2007-06-19 14:32:32">2 Jun, 2007</time>
+#### [Olivier Berger](http://www.olivierberger.com/weblog/) - <time datetime="2007-06-19 14:32:32">19 Jun, 2007</time>
 
 Hi.
 

@@ -18,13 +18,13 @@ election?
 
 ---
 ### Comments:
-#### dra - <time datetime="2006-09-15 23:21:26">5 Sep, 2006</time>
+#### dra - <time datetime="2006-09-15 23:21:26">15 Sep, 2006</time>
 
 Hey, I\'m actually thinking about going to Australia for my PhD. Well, I
 do know the language though\... ;)
 
 ---
-#### bd - <time datetime="2006-10-07 17:24:53">6 Oct, 2006</time>
+#### bd - <time datetime="2006-10-07 17:24:53">7 Oct, 2006</time>
 
 You think Australia is bad? Every ten seconds we here in the good ol\'
 USA get to hear about \"them damned Mexicans\" leeching off our

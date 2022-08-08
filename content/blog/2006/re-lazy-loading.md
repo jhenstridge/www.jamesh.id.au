@@ -37,12 +37,12 @@ to do similar things in C but that\'s even more obscure `:)`.
 
 ---
 ### Comments:
-#### [Nikos Kouremenos](http://members.hellug.gr/nkour) - <time datetime="2006-03-31 23:12:02">5 Mar, 2006</time>
+#### [Nikos Kouremenos](http://members.hellug.gr/nkour) - <time datetime="2006-03-31 23:12:02">31 Mar, 2006</time>
 
 Yes this way of doing time-bound stuff, R O C K S
 
 ---
-#### anonymous - <time datetime="2006-04-01 01:43:21">6 Apr, 2006</time>
+#### anonymous - <time datetime="2006-04-01 01:43:21">1 Apr, 2006</time>
 
 I use that thechnique too, but if the obj.get\_\* functions in your
 example are not too expensive, the call overhead really slows things

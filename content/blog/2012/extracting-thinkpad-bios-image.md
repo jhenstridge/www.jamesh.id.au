@@ -89,7 +89,7 @@ that the firmware update could be run from the EFI system partition
 
 ---
 ### Comments:
-#### Kim - <time datetime="2012-11-13 18:08:34">2 Nov, 2012</time>
+#### Kim - <time datetime="2012-11-13 18:08:34">13 Nov, 2012</time>
 
 Hi James,
 
@@ -114,7 +114,7 @@ HTH,\
 Kim
 
 ---
-#### [Marius Gedminas](http://gedmin.as) - <time datetime="2012-11-13 21:13:36">2 Nov, 2012</time>
+#### [Marius Gedminas](http://gedmin.as) - <time datetime="2012-11-13 21:13:36">13 Nov, 2012</time>
 
 The genisoimage package in Ubuntu ships a /usr/bin/geteltorito, which
 can be used to achieve the same ends:
@@ -126,7 +126,7 @@ directly with grub and syslinux\'s memdisk, as described here:
 http://www.donarmstrong.com/posts/x200\_bios\_update/
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2012-11-14 10:42:23">3 Nov, 2012</time>
+#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2012-11-14 10:42:23">14 Nov, 2012</time>
 
 \@Marius Gedminas: that geteltorito script looks like it would have done
 what I wanted. It was still fun working out how to pull the image apart
@@ -138,7 +138,7 @@ isn\'t well tested though, since the installed copy of Windows was set
 to boot in legacy BIOS mode despite the machine having a UEFI BIOS.
 
 ---
-#### AirMaxVI - <time datetime="2012-12-20 00:10:21">4 Dec, 2012</time>
+#### AirMaxVI - <time datetime="2012-12-20 00:10:21">20 Dec, 2012</time>
 
 hi James,
 
@@ -149,7 +149,7 @@ terminal typing python script.py for instance.\
 Thanks
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2013-01-23 11:05:22">3 Jan, 2013</time>
+#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2013-01-23 11:05:22">23 Jan, 2013</time>
 
 \@AirMaxVI: that should work. Alternatively, you can use the existing
 geteltorito script Marius mentioned in an earlier comment.

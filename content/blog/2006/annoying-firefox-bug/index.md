@@ -40,27 +40,27 @@ distributions, or is an Ubuntu only problem?
 
 ---
 ### Comments:
-#### max - <time datetime="2006-04-03 19:57:51">1 Apr, 2006</time>
+#### max - <time datetime="2006-04-03 19:57:51">3 Apr, 2006</time>
 
 Yes I have the same thing on Debian.
 
 ---
-#### [niall](http://niall.evil.ie) - <time datetime="2006-04-03 20:02:28">1 Apr, 2006</time>
+#### [niall](http://niall.evil.ie) - <time datetime="2006-04-03 20:02:28">3 Apr, 2006</time>
 
 I\'ve seen it on OS-X as well
 
 ---
-#### obi - <time datetime="2006-04-03 20:28:34">1 Apr, 2006</time>
+#### obi - <time datetime="2006-04-03 20:28:34">3 Apr, 2006</time>
 
 Same thing on Debian with Epiphany here.
 
 ---
-#### Henrik - <time datetime="2006-04-03 20:49:23">1 Apr, 2006</time>
+#### Henrik - <time datetime="2006-04-03 20:49:23">3 Apr, 2006</time>
 
 I see this on FreeBSD too.
 
 ---
-#### [Simos](http://simos.info/blog/) - <time datetime="2006-04-03 21:07:39">1 Apr, 2006</time>
+#### [Simos](http://simos.info/blog/) - <time datetime="2006-04-03 21:07:39">3 Apr, 2006</time>
 
 Ubuntu Dapper (current updates) has DejaVu 2.3.\
 There is a bug (probably) in Pango that causes these issues. DejaVu
@@ -72,7 +72,7 @@ See\
 <https://launchpad.net/distros/ubuntu/>+source/ttf-dejavu/+bug/37565
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh) - <time datetime="2006-04-03 21:29:01">1 Apr, 2006</time>
+#### [James Henstridge](http://blogs.gnome.org/jamesh) - <time datetime="2006-04-03 21:29:01">3 Apr, 2006</time>
 
 Simos: I don\'t think that bug is related.
 
@@ -84,39 +84,39 @@ If it was a bug in the font, I\'d expect it to be visible in other
 applications and not just with justified text.
 
 ---
-#### [Ralph Aichinger](http://www.pangea.at/%7eralph/fil-kerningbug.png) - <time datetime="2006-04-03 22:19:21">1 Apr, 2006</time>
+#### [Ralph Aichinger](http://www.pangea.at/%7eralph/fil-kerningbug.png) - <time datetime="2006-04-03 22:19:21">3 Apr, 2006</time>
 
 Yes, same here in Debian unstable, see:\
 <http://www.pangea.at/%7eralph/fil-kerningbug.png>
 
 ---
-#### Gregor - <time datetime="2006-04-03 22:23:01">1 Apr, 2006</time>
+#### Gregor - <time datetime="2006-04-03 22:23:01">3 Apr, 2006</time>
 
 I have the same problem, Dapper Flight 6. Sorry, am no developer so I
 don\'t know what else information you need.
 
 ---
-#### [Reinout van Schouwen](http://www.vanschouwen.info/) - <time datetime="2006-04-03 22:55:34">1 Apr, 2006</time>
+#### [Reinout van Schouwen](http://www.vanschouwen.info/) - <time datetime="2006-04-03 22:55:34">3 Apr, 2006</time>
 
 Epiphany/Firefox and Yelp on Mandriva had a very similar problem that
 was solved when Firefox was no longer built with pango enabled.
 
 ---
-####  - <time datetime="2006-04-03 23:26:49">1 Apr, 2006</time>
+####  - <time datetime="2006-04-03 23:26:49">3 Apr, 2006</time>
 
 I have the same problem (albiet much less frequently - I use a different
 font altogether) on Gentoo, with Firefox compiled from source. I\'m
 pretty sure it\'s not a packaging bug.
 
 ---
-#### Mike Hearn - <time datetime="2006-04-04 00:50:52">2 Apr, 2006</time>
+#### Mike Hearn - <time datetime="2006-04-04 00:50:52">4 Apr, 2006</time>
 
 The Mozilla project makes generic Linux binaries available, you could
 use them to compare against. I don\'t remember if they are built with
 Pango by default or not.
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh) - <time datetime="2006-04-04 01:44:20">2 Apr, 2006</time>
+#### [James Henstridge](http://blogs.gnome.org/jamesh) - <time datetime="2006-04-04 01:44:20">4 Apr, 2006</time>
 
 Mike: you can switch to the non-Pango code in the Ubuntu packages (and
 any other builds with Pango enabled) by defining MOZ\_DISABLE\_PANGO=1
@@ -133,7 +133,7 @@ properly. With that aim in mind, the Pango backend seems like the one to
 promote and improve.
 
 ---
-#### [Hampus Wessman](http://hampus.vox.nu/) - <time datetime="2006-04-16 04:16:10">0 Apr, 2006</time>
+#### [Hampus Wessman](http://hampus.vox.nu/) - <time datetime="2006-04-16 04:16:10">16 Apr, 2006</time>
 
 I had some problems with this in Firefox 1.5 on Debian. All the Swedish
 charactes (åäö) caused this bug and it was really annoying! Changing the
@@ -146,7 +146,7 @@ It looked good both on screen and when I printed it out.\
 Your comments helped me alot - thanks!
 
 ---
-#### [Leatherwood](http://www.shadowcouncil.org/leatherwood/) - <time datetime="2006-05-23 10:36:09">2 May, 2006</time>
+#### [Leatherwood](http://www.shadowcouncil.org/leatherwood/) - <time datetime="2006-05-23 10:36:09">23 May, 2006</time>
 
 I have the same problem in Debian Unstable, though I first noticed it
 when using the FreeSerif, FreeSans, and FreeMono fonts. The most

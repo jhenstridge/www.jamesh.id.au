@@ -60,7 +60,7 @@ status accordingly.
 
 ---
 ### Comments:
-#### [Stewart Smith](http://www.flamingspork.com) - <time datetime="2007-08-17 07:44:59">5 Aug, 2007</time>
+#### [Stewart Smith](http://www.flamingspork.com) - <time datetime="2007-08-17 07:44:59">17 Aug, 2007</time>
 
 world of awesome
 

@@ -87,23 +87,23 @@ their protocols and file formats.
 
 ---
 ### Comments:
-#### Dom - <time datetime="2009-07-24 18:13:17">5 Jul, 2009</time>
+#### Dom - <time datetime="2009-07-24 18:13:17">24 Jul, 2009</time>
 
 Hey sounds great. Do you have a branch or an ETA when we might see the
 fixes in git://git.gnome.org/rygel ? :)
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2009-07-24 19:14:28">5 Jul, 2009</time>
+#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2009-07-24 19:14:28">24 Jul, 2009</time>
 
 \@Dom: should be merged soon (Zeeshan is reviewing/merging it).
 
 ---
-#### Zeeshan Ali - <time datetime="2009-07-24 20:18:22">5 Jul, 2009</time>
+#### Zeeshan Ali - <time datetime="2009-07-24 20:18:22">24 Jul, 2009</time>
 
 Already merged!
 
 ---
-#### [maxauthority](http://vimperator.org) - <time datetime="2009-07-28 21:25:31">2 Jul, 2009</time>
+#### [maxauthority](http://vimperator.org) - <time datetime="2009-07-28 21:25:31">28 Jul, 2009</time>
 
 Did you try the \"PS3 media server\" -
 http://ps3mediaserver.blogspot.com/? It\'s a java dlna server, but at
@@ -111,7 +111,7 @@ least in the 1.20betas it\'s just so pleasant to use, and even
 auto-transcodes most formats which the PS3 does not understand.
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2009-08-04 18:43:48">2 Aug, 2009</time>
+#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2009-08-04 18:43:48">4 Aug, 2009</time>
 
 \@maxauthority: I hadn\'t seen that package before I started hacking on
 this feature in Rygel. Given Rygel\'s integration with GNOME and

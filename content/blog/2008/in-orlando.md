@@ -14,7 +14,7 @@ it\'ll be interesting to see what we do over the next little while.
 
 ---
 ### Comments:
-#### neo - <time datetime="2008-08-06 02:55:44">3 Aug, 2008</time>
+#### neo - <time datetime="2008-08-06 02:55:44">6 Aug, 2008</time>
 
 Is any of the Ubuntu \"online services\" open source or are they all
 proprietary stuff you are advertising in Planet GNOME?

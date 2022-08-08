@@ -42,7 +42,7 @@ chance of the bug occurring.
 
 ---
 ### Comments:
-#### [Joachim Breitner](http://www.joachim-breitner.de/) - <time datetime="2006-04-07 03:08:53">5 Apr, 2006</time>
+#### [Joachim Breitner](http://www.joachim-breitner.de/) - <time datetime="2006-04-07 03:08:53">7 Apr, 2006</time>
 
 Another observervation is that the bug also appears in the galeon
 browser\...
@@ -50,7 +50,7 @@ browser\...
 BTW the word \"fix\" looks really cool this way\...
 
 ---
-#### michele - <time datetime="2006-04-07 03:27:01">5 Apr, 2006</time>
+#### michele - <time datetime="2006-04-07 03:27:01">7 Apr, 2006</time>
 
 Thanks for pointing this bug out James, I\'ve missed the your first
 post, this was really bugging me.
@@ -59,7 +59,7 @@ Yep, the word \"fix\" looks cool but I prefer it now that I\'ve switched
 to Bitstream Vera (thanks for providing a test case Joachim). :D
 
 ---
-#### Denis Jacquerye - <time datetime="2006-04-10 08:45:25">1 Apr, 2006</time>
+#### Denis Jacquerye - <time datetime="2006-04-10 08:45:25">10 Apr, 2006</time>
 
 The ligatures could also be disabled in free fonts like DejaVu fonts in
 distribs that display the bug. I think we even made such a release a few
@@ -70,7 +70,7 @@ OpenType so Pango does not perform the substitutions. If Pango starts
 doing so\...
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh) - <time datetime="2006-04-10 19:02:49">1 Apr, 2006</time>
+#### [James Henstridge](http://blogs.gnome.org/jamesh) - <time datetime="2006-04-10 19:02:49">10 Apr, 2006</time>
 
 Denis: yeah, I noticed that the Vera font contained a few ligature
 glyphs (although not as many as Deja Vu) while investigating the

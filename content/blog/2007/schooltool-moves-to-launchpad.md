@@ -29,7 +29,7 @@ available at some point for projects interested in moving to Launchpad.
 
 ---
 ### Comments:
-#### [Jelmer Vernooij](http://samba.org/~jelmer/) - <time datetime="2007-01-18 21:53:43">4 Jan, 2007</time>
+#### [Jelmer Vernooij](http://samba.org/~jelmer/) - <time datetime="2007-01-18 21:53:43">18 Jan, 2007</time>
 
 This sounds very nice. Is this intermediate format generic or
 launchpad-specific? It\'d be nice to have some sort of standardized
@@ -37,7 +37,7 @@ format that could be used to migrate between BTS\'es (Bugzilla -\> trac,
 Bugzilla -\> launchpad, launchpad -\> jitterbug, etc)
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh) - <time datetime="2007-01-18 22:06:54">4 Jan, 2007</time>
+#### [James Henstridge](http://blogs.gnome.org/jamesh) - <time datetime="2007-01-18 22:06:54">18 Jan, 2007</time>
 
 Jelmer: it is tailored to the kind of data that you can store in
 Launchpad, and uses the bug status and importance names from Launchpad,

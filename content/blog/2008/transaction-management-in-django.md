@@ -152,7 +152,7 @@ If anyone has other tips, I\'d be glad to hear them.
 
 ---
 ### Comments:
-#### Bob Haugen - <time datetime="2008-09-08 13:16:58">1 Sep, 2008</time>
+#### Bob Haugen - <time datetime="2008-09-08 13:16:58">8 Sep, 2008</time>
 
 What (if anything) do you think is wrong with Django\'s
 \@transaction.commit\_manually decorator?
@@ -161,7 +161,7 @@ If anything, would you please post a sample of the code you use to wrap
 transactions for managed transaction mode?
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2008-09-08 15:57:40">1 Sep, 2008</time>
+#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2008-09-08 15:57:40">8 Sep, 2008</time>
 
 The problem is with
 enter\_transaction\_managemnt/leave\_transaction\_management nesting

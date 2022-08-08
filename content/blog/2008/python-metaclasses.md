@@ -63,7 +63,7 @@ have it registered and ready to use.
 
 ---
 ### Comments:
-#### [John Stowers](http://www.johnstowers.co.nz) - <time datetime="2008-02-12 14:42:42">2 Feb, 2008</time>
+#### [John Stowers](http://www.johnstowers.co.nz) - <time datetime="2008-02-12 14:42:42">12 Feb, 2008</time>
 
 Nice post. You may have seen this, but FWIW, the following site expands
 on the idea of \'\...a metaclass could be used to make the registration
@@ -74,14 +74,14 @@ http://gulopine.gamemusic.org/2008/jan/10/simple-plugin-framework/
 John
 
 ---
-#### Snark - <time datetime="2008-02-12 15:50:06">2 Feb, 2008</time>
+#### Snark - <time datetime="2008-02-12 15:50:06">12 Feb, 2008</time>
 
 Nice post!
 
 I thought python was saner than C++ \-- you prove me wrong!
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2008-02-12 21:13:58">2 Feb, 2008</time>
+#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2008-02-12 21:13:58">12 Feb, 2008</time>
 
 John: that guy really should read up on Zope interfaces a bit more \--
 they handle a lot of the things he is doing.
@@ -90,7 +90,7 @@ Snark: if you think metaclasses are obscure, you should see what people
 do with sys.\_getframe().
 
 ---
-#### [john Stowers](http://www.johnstowers.co.nz) - <time datetime="2008-02-13 08:47:48">3 Feb, 2008</time>
+#### [john Stowers](http://www.johnstowers.co.nz) - <time datetime="2008-02-13 08:47:48">13 Feb, 2008</time>
 
 \@James,
 
@@ -100,7 +100,7 @@ that doesnt bring in zope.interface might be useful for those people who
 care about such things
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2008-02-13 10:39:14">3 Feb, 2008</time>
+#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2008-02-13 10:39:14">13 Feb, 2008</time>
 
 There isn\'t much point in reinventing zope.interface. With the effort
 the Zope 3 developers have put in to modularise everything, using
@@ -108,7 +108,7 @@ zope.interface does not imply pulling in the rest of Zope. There
 doesn\'t seem to be much reason not to use it where appropriate.
 
 ---
-#### [Python if/else in lambda &raquo; Ikke&#8217;s blog](http://eikke.com/python-ifelse-in-lambda/) - <time datetime="2008-02-17 05:47:24">0 Feb, 2008</time>
+#### [Python if/else in lambda &raquo; Ikke&#8217;s blog](http://eikke.com/python-ifelse-in-lambda/) - <time datetime="2008-02-17 05:47:24">17 Feb, 2008</time>
 
 \[\...\] James, obviously you're right... Stupid me didn't think about
 that. Your version won't work when a discriminator isn't known at import

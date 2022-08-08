@@ -113,12 +113,12 @@ entries back, the symptoms have returned. This is [bug
 
 ---
 ### Comments:
-#### Smarter - <time datetime="2007-09-24 18:29:38">1 Sep, 2007</time>
+#### Smarter - <time datetime="2007-09-24 18:29:38">24 Sep, 2007</time>
 
 Why didn\'t you just used displayconfig-gtk to configure your dual head?
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2007-09-24 19:24:09">1 Sep, 2007</time>
+#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2007-09-24 19:24:09">24 Sep, 2007</time>
 
 I just gave displayconfig-gtk a go, and ran into a few problems:
 
@@ -134,41 +134,41 @@ MergedFB). As an added bonus, I can reconfigure things at runtime if I
 want to.
 
 ---
-#### James - <time datetime="2007-09-24 22:32:57">1 Sep, 2007</time>
+#### James - <time datetime="2007-09-24 22:32:57">24 Sep, 2007</time>
 
 Does
 http://weblogs.mozillazine.org/roc/archives/2007/09/textalicious.html
 look like it\'ll fix the problem?
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2007-09-24 23:34:23">1 Sep, 2007</time>
+#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2007-09-24 23:34:23">24 Sep, 2007</time>
 
 According to the https://bugzilla.mozilla.org/show\_bug.cgi?id=331716,
 the firefox rendering problem should get fixed in Firefox 3.0 (and other
 Gecko 1.9 based applications). That is a little late for Gutsy though.
 
 ---
-#### [Tolero](http://tolero.org) - <time datetime="2007-09-25 17:13:58">2 Sep, 2007</time>
+#### [Tolero](http://tolero.org) - <time datetime="2007-09-25 17:13:58">25 Sep, 2007</time>
 
 I\'m impressed much how well did the [gutsy detected my
 card](http://tech.tolero.org/blog/en/linux/review-ubuntu-710-gutsy-features-changes).
 But I did a fresh install and I have nvidia card.
 
 ---
-#### justin - <time datetime="2007-10-18 01:11:22">4 Oct, 2007</time>
+#### justin - <time datetime="2007-10-18 01:11:22">18 Oct, 2007</time>
 
 I also tried displayconfig-gtk, and no joy. This procedure worked for
 me. Thanks for posting it.
 
 ---
-#### Jaakko - <time datetime="2007-10-18 20:06:47">4 Oct, 2007</time>
+#### Jaakko - <time datetime="2007-10-18 20:06:47">18 Oct, 2007</time>
 
 I know it\'s possible to use s-video tv-out with radeon(9000) & randr in
 Gutsy but does anyone know if overscan is possible with this approach?
 Is there a spesific parameter for randr to do this?
 
 ---
-#### hiredgoon - <time datetime="2007-10-23 08:40:18">2 Oct, 2007</time>
+#### hiredgoon - <time datetime="2007-10-23 08:40:18">23 Oct, 2007</time>
 
 James man I love you. Upgrading to Gutsy broke my fglrx dual-head
 display. This got me working again.

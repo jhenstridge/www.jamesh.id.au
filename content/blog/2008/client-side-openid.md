@@ -97,12 +97,12 @@ fail to activate the extension all together).
 
 ---
 ### Comments:
-#### Andrew - <time datetime="2008-02-18 14:02:12">1 Feb, 2008</time>
+#### Andrew - <time datetime="2008-02-18 14:02:12">18 Feb, 2008</time>
 
 I think you mean \"rogue\" RPs, not \"rouge\" :)
 
 ---
-#### [Raithmir](http://kulthea.net/id/) - <time datetime="2008-02-18 18:31:23">1 Feb, 2008</time>
+#### [Raithmir](http://kulthea.net/id/) - <time datetime="2008-02-18 18:31:23">18 Feb, 2008</time>
 
 Interesting article, it\'s certainly something that should be looked
 into IMO.
@@ -113,7 +113,7 @@ access to, posing as you. More needs to be done, and your suggestions go
 some way to alleviating that.
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2008-02-18 19:13:54">1 Feb, 2008</time>
+#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2008-02-18 19:13:54">18 Feb, 2008</time>
 
 Andrew: fixed.
 
@@ -126,7 +126,7 @@ credentials to someone, then they\'ve effectively got control of your
 account on all the sites you used that email address with.
 
 ---
-#### alex - <time datetime="2008-02-18 21:35:54">1 Feb, 2008</time>
+#### alex - <time datetime="2008-02-18 21:35:54">18 Feb, 2008</time>
 
 How about when you register to OpenID you upload a small picture. Then,
 the login page shows you this picture- say, your face.
@@ -136,7 +136,7 @@ It\'s a very visual way of avoiding phishing.
 Disclaimer: I only have some knowledge about how OpenID works.
 
 ---
-#### Christopher - <time datetime="2008-02-18 21:40:58">1 Feb, 2008</time>
+#### Christopher - <time datetime="2008-02-18 21:40:58">18 Feb, 2008</time>
 
 What I found interesting was the approach that MyOpenID uses, where I
 believe you can install an SSL certificate direct into your browser from
@@ -145,7 +145,7 @@ MyOpenID and it prompted you for your password (as opposed to doing the
 SSL magic), you\'d know you\'re on rogue site.
 
 ---
-#### Rob J. Caskey - <time datetime="2008-02-18 21:49:57">1 Feb, 2008</time>
+#### Rob J. Caskey - <time datetime="2008-02-18 21:49:57">18 Feb, 2008</time>
 
 Christopher:
 
@@ -164,7 +164,7 @@ to see it in Gnome proper. SSL certs wouldn\'t be bad either, but
 gnome-integration is a must.
 
 ---
-#### [Matthew](http://www.braintube.com) - <time datetime="2008-02-18 22:40:53">1 Feb, 2008</time>
+#### [Matthew](http://www.braintube.com) - <time datetime="2008-02-18 22:40:53">18 Feb, 2008</time>
 
 Folks are already using XMPP to do it:\
 http://openid.xmpp.za.net/\
@@ -172,7 +172,7 @@ http://sameplace.cc/wiki/openid-integration\
 for example.
 
 ---
-#### [Owen Taylor](http://fishsoup.net) - <time datetime="2008-02-19 02:02:02">2 Feb, 2008</time>
+#### [Owen Taylor](http://fishsoup.net) - <time datetime="2008-02-19 02:02:02">19 Feb, 2008</time>
 
 To me, reducing the threat of phishing boils down to to one or both of
 two things: change around the interaction so that the user never expects
@@ -195,14 +195,14 @@ interaction, but incompatible with both most OpenID RP\'s and with
 information card RP\'s.
 
 ---
-#### steve - <time datetime="2008-02-19 02:47:02">2 Feb, 2008</time>
+#### steve - <time datetime="2008-02-19 02:47:02">19 Feb, 2008</time>
 
 I was going to suggest the exact same as Alex above. Require the user to
 upload some picture(or text for accessibility) that they\'ll recognise
 and expect when they go to their genuine site.
 
 ---
-#### [John Drinkwater](http://ezri.nextraweb.com/) - <time datetime="2008-02-19 02:47:23">2 Feb, 2008</time>
+#### [John Drinkwater](http://ezri.nextraweb.com/) - <time datetime="2008-02-19 02:47:23">19 Feb, 2008</time>
 
 James, You can achieve this using http://openid.xmpp.za.net/ (this does
 over-XMPP openid auth like you said), and sameplace.cc, an XMPP firefox
@@ -216,7 +216,7 @@ ott and.. controlling, I'm quite happy using regular browser certs, the
 only thing needing improvement is the usability and awareness for newbs.
 
 ---
-#### Frej Soya - <time datetime="2008-02-19 06:19:37">2 Feb, 2008</time>
+#### Frej Soya - <time datetime="2008-02-19 06:19:37">19 Feb, 2008</time>
 
 I\'ve been thinking/trying to get openid in mugshot/online.gnome.org
 (only broken patch so far on local disk). Mugshot would improve if it
@@ -230,7 +230,7 @@ actually increased security, and I didn\'t stop to think about it.
 Motivating that other people believes it does :)
 
 ---
-#### [Dirk Gently](http://linuxtidbits.wordpress.com/) - <time datetime="2008-02-19 07:55:08">2 Feb, 2008</time>
+#### [Dirk Gently](http://linuxtidbits.wordpress.com/) - <time datetime="2008-02-19 07:55:08">19 Feb, 2008</time>
 
 Nice to hear someone is thinking about this. I\'ve heard of this kick
 and just can\'t seem to understand why it\'s catching on. The browser
@@ -241,7 +241,7 @@ form in alot of instances), I\'m not about to trade security for it.
 FF3b4!??? hmmm.
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2008-02-19 19:07:55">2 Feb, 2008</time>
+#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2008-02-19 19:07:55">19 Feb, 2008</time>
 
 alex, steve: the image/text customisation method is already in use at
 sites like myopenid. Note however that the image needs to be associated
@@ -256,7 +256,7 @@ haven\'t seen anything along the lines of the browser extension I
 outline, which I think could provide an interesting user experience.
 
 ---
-#### [James](http://trs80.ucc.asn.au/) - <time datetime="2008-02-19 20:18:13">2 Feb, 2008</time>
+#### [James](http://trs80.ucc.asn.au/) - <time datetime="2008-02-19 20:18:13">19 Feb, 2008</time>
 
 The [Simile Appalachian OpenID
 extension](http://simile.mit.edu/wiki/Appalachian) has some amount of
@@ -265,7 +265,7 @@ protection](http://simile.mit.edu/wiki/Appalachian_Anti-Phishing) in it,
 I haven\'t investigated how much though.
 
 ---
-#### [Kevin Turner](http://kevin.janrain.com/) - <time datetime="2008-02-20 02:34:15">3 Feb, 2008</time>
+#### [Kevin Turner](http://kevin.janrain.com/) - <time datetime="2008-02-20 02:34:15">20 Feb, 2008</time>
 
 [Seatbelt](https://pip.verisignlabs.com/seatbelt.do), Sxipper, and
 Information Cards are browser extensions that can all integrate with

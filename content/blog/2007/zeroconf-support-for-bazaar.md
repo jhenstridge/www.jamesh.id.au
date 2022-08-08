@@ -51,35 +51,35 @@ conference.
 
 ---
 ### Comments:
-#### [Pharao](http://blog.hopelesscom.de) - <time datetime="2007-03-26 03:38:28">1 Mar, 2007</time>
+#### [Pharao](http://blog.hopelesscom.de) - <time datetime="2007-03-26 03:38:28">26 Mar, 2007</time>
 
 just great - thanks :)
 
 ---
-#### Christopher - <time datetime="2007-03-26 04:42:50">1 Mar, 2007</time>
+#### Christopher - <time datetime="2007-03-26 04:42:50">26 Mar, 2007</time>
 
 Excellent idea!
 
 ---
-#### glatzor - <time datetime="2007-03-26 07:51:55">1 Mar, 2007</time>
+#### glatzor - <time datetime="2007-03-26 07:51:55">26 Mar, 2007</time>
 
 I already love your plugin!
 
 ---
-#### Michael Scherer - <time datetime="2007-03-26 17:57:58">1 Mar, 2007</time>
+#### Michael Scherer - <time datetime="2007-03-26 17:57:58">26 Mar, 2007</time>
 
 This seems like svl, a svk layer providing the same feature for svk. You
 should take a look to see if there is some interesting concept to
 implement. Too bad that svl developpement is stalled.
 
 ---
-#### Michael Scherer - <time datetime="2007-03-26 17:58:22">1 Mar, 2007</time>
+#### Michael Scherer - <time datetime="2007-03-26 17:58:22">26 Mar, 2007</time>
 
 Oups, forgot the url to svl :
 <http://search.cpan.org/~abergman/SVL-0.29/>
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh) - <time datetime="2007-03-26 18:25:39">1 Mar, 2007</time>
+#### [James Henstridge](http://blogs.gnome.org/jamesh) - <time datetime="2007-03-26 18:25:39">26 Mar, 2007</time>
 
 Michael: I think a lot of the SVL features are already part of the
 Bazaar core. My code basically just instantiates the existing Bazaar

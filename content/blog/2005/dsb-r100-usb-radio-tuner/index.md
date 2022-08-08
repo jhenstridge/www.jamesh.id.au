@@ -54,7 +54,7 @@ though, so I could probably use those scripts as a base.
 
 ---
 ### Comments:
-#### [Marcus](http://www.modmeup.net) - <time datetime="2005-10-18 18:39:15">2 Oct, 2005</time>
+#### [Marcus](http://www.modmeup.net) - <time datetime="2005-10-18 18:39:15">18 Oct, 2005</time>
 
 Very cool.. I remember having one of those years ago, I set it up with a
 shoutcast server so that the whole site (a mining operation in
@@ -62,14 +62,14 @@ Australia) could get radio.. even underground.I may have to buy another
 one I think.. thanks for the reminder :-)
 
 ---
-#### nate - <time datetime="2005-10-19 00:55:09">3 Oct, 2005</time>
+#### nate - <time datetime="2005-10-19 00:55:09">19 Oct, 2005</time>
 
 Did you get the recording feature to work? I have used gnomeradio for
 years, different hw platforms & different distros, and so far have never
 gotten it to function at all.
 
 ---
-#### Tobias - <time datetime="2005-10-19 05:17:41">3 Oct, 2005</time>
+#### Tobias - <time datetime="2005-10-19 05:17:41">19 Oct, 2005</time>
 
 Perhaps you can help with HAL Support for v4l hardware:\
 <https://bugs.freedesktop.org/show_bug.cgi?id=3527>
@@ -80,7 +80,7 @@ Or Support for v4l radio in rhythmbox:\
 Anyway, have a lot of fun.
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh) - <time datetime="2005-10-19 11:00:38">3 Oct, 2005</time>
+#### [James Henstridge](http://blogs.gnome.org/jamesh) - <time datetime="2005-10-19 11:00:38">19 Oct, 2005</time>
 
 nate: I just tried the recording function, and got a silent, mono
 44.1KHz wave file. I\'m not sure what the problem is.

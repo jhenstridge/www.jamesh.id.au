@@ -118,13 +118,13 @@ the VCS, so are worth investigating when comparing different systems.
 
 ---
 ### Comments:
-#### Jan Schmidt - <time datetime="2007-12-04 19:35:41">2 Dec, 2007</time>
+#### Jan Schmidt - <time datetime="2007-12-04 19:35:41">4 Dec, 2007</time>
 
 There are also questions of directory management parallel to the file
 management.
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2007-12-04 21:31:41">2 Dec, 2007</time>
+#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2007-12-04 21:31:41">4 Dec, 2007</time>
 
 In my defence, I will claim that directories are just a special type of
 file :)
@@ -133,7 +133,7 @@ Some version control systems may be better at managing changes to files
 than directories though.
 
 ---
-#### [Erigami](http://piepalace.ca/blog) - <time datetime="2007-12-05 00:26:36">3 Dec, 2007</time>
+#### [Erigami](http://piepalace.ca/blog) - <time datetime="2007-12-05 00:26:36">5 Dec, 2007</time>
 
 I like your categorization, but it\'s worth remembering that rename is a
 special type of move. Substitute \"move\" for \"rename\" throughout your

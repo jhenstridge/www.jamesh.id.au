@@ -45,7 +45,7 @@ of talking to friends/colleagues.
 
 ---
 ### Comments:
-#### Daniel Frey - <time datetime="2006-04-12 02:37:55">3 Apr, 2006</time>
+#### Daniel Frey - <time datetime="2006-04-12 02:37:55">12 Apr, 2006</time>
 
 I have a Logitech USB Headset, too, and the fact it doesn\'t work with
 Ekiga is not an Ekiga problem. Try plugging it into another USB port,
@@ -55,13 +55,13 @@ More info here: <http://bugzilla.gnome.org/show_bug.cgi?id=329609>
 Daniel\
 
 ---
-####  - <time datetime="2006-04-12 02:50:43">3 Apr, 2006</time>
+####  - <time datetime="2006-04-12 02:50:43">12 Apr, 2006</time>
 
 Sorry for the noise, I misread what you wrote. Obviously, you don\'t
 have the problem I had. Daniel
 
 ---
-#### [-](http://-) - <time datetime="2006-04-19 22:29:46">3 Apr, 2006</time>
+#### [-](http://-) - <time datetime="2006-04-19 22:29:46">19 Apr, 2006</time>
 
 The fact that incoming connections (such as sound) aren\'t let in
 through a Linux NAT is a feature. If you have a Linux firewall, you can
@@ -69,7 +69,7 @@ also try conntrack\_sip from Netfilter unstable. It works just like
 conntrack\_ftp, no configuration necessary.
 
 ---
-#### HENOKE - <time datetime="2006-04-25 06:14:22">2 Apr, 2006</time>
+#### HENOKE - <time datetime="2006-04-25 06:14:22">25 Apr, 2006</time>
 
 i am trying to get the source code for SIP based VOIP so it can guide me
 in my project\

@@ -49,7 +49,7 @@ so it is probably best to just do that.
 
 ---
 ### Comments:
-#### davide - <time datetime="2009-03-24 21:26:59">2 Mar, 2009</time>
+#### davide - <time datetime="2009-03-24 21:26:59">24 Mar, 2009</time>
 
 Hi, I\'ve the same player and I think it\'s a good one. I use it with
 Banshee without any problems, but I think I\'ll dig a little on bug
@@ -63,7 +63,7 @@ If I\'ll have time, I would like to try to track down this set and use
 on a linux machine with ffmpeg, mencoder or something we have\...
 
 ---
-#### [Fabian Rodriguez](https://wiki.ubuntu.com/MagicFab) - <time datetime="2009-03-24 21:46:55">2 Mar, 2009</time>
+#### [Fabian Rodriguez](https://wiki.ubuntu.com/MagicFab) - <time datetime="2009-03-24 21:46:55">24 Mar, 2009</time>
 
 Hi James,
 
@@ -88,13 +88,13 @@ It seems this would associate paths to audio formats which may help your
 issue.
 
 ---
-#### oliver - <time datetime="2009-03-24 22:51:57">2 Mar, 2009</time>
+#### oliver - <time datetime="2009-03-24 22:51:57">24 Mar, 2009</time>
 
 Hm\... so if Rhythmbox reencodes music from ogg to mp3, it doesn\'t add
 the original tagging information to the new mp3 files??
 
 ---
-#### [Vadim P.](http://vadi.myopenid.com) - <time datetime="2009-03-24 22:56:10">2 Mar, 2009</time>
+#### [Vadim P.](http://vadi.myopenid.com) - <time datetime="2009-03-24 22:56:10">24 Mar, 2009</time>
 
 Feh\... and I was just eyeing that player.
 
@@ -102,24 +102,24 @@ Is there none that supports linux okay besides that c-something (I
 forgot, but they explicitly mention linux support) company?
 
 ---
-#### Ilmari Vacklin - <time datetime="2009-03-24 23:40:51">2 Mar, 2009</time>
+#### Ilmari Vacklin - <time datetime="2009-03-24 23:40:51">24 Mar, 2009</time>
 
 Vadim: Cowon players generally work fine on Linux. (And, of course,
 support Vorbis and Flac).
 
 ---
-#### [vpv](http://vpv.kapsi.fi/blog/) - <time datetime="2009-03-25 00:03:36">3 Mar, 2009</time>
+#### [vpv](http://vpv.kapsi.fi/blog/) - <time datetime="2009-03-25 00:03:36">25 Mar, 2009</time>
 
 Thanks for getting the fix into hal, I have a Sansa Clip here :)
 
 ---
-#### [Dave Morley](http://www.davmor2.co.uk) - <time datetime="2009-03-25 00:30:03">3 Mar, 2009</time>
+#### [Dave Morley](http://www.davmor2.co.uk) - <time datetime="2009-03-25 00:30:03">25 Mar, 2009</time>
 
 Hi I\'m looking at getting one of these for xmas or birthday. Would you
 say they are worth the money and is the sound quality good?
 
 ---
-#### [Adam Williamson](http://www.happyassassin.net) - <time datetime="2009-03-25 02:26:18">3 Mar, 2009</time>
+#### [Adam Williamson](http://www.happyassassin.net) - <time datetime="2009-03-25 02:26:18">25 Mar, 2009</time>
 
 I\'ve seen several cases like this. Others to think about - what about
 something like a PSP or a smartphone, a device that\'s sophisticated
@@ -130,7 +130,7 @@ It would be nice if HAL / DeviceKit were flexible enough to handle
 this\...
 
 ---
-#### Mats Taraldsvik - <time datetime="2009-03-25 03:21:45">3 Mar, 2009</time>
+#### Mats Taraldsvik - <time datetime="2009-03-25 03:21:45">25 Mar, 2009</time>
 
 Hi!
 
@@ -148,7 +148,7 @@ renaming recursively, which I keep in the Clip\'s root directory.
 well (unless you meant officially supported - I have no idea ). :)
 
 ---
-#### Michael "Sansa" Howell - <time datetime="2009-03-25 08:13:15">3 Mar, 2009</time>
+#### Michael "Sansa" Howell - <time datetime="2009-03-25 08:13:15">25 Mar, 2009</time>
 
 \> Is there none that supports linux okay besides that c-something (I
 forgot, but they explicitly mention linux support) company?
@@ -159,7 +159,7 @@ Of course, if you can get an e200v1 (I own one), you can install RockBox
 or SansaLinux, but that doesn\'t count\...
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2009-03-25 08:28:55">3 Mar, 2009</time>
+#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2009-03-25 08:28:55">25 Mar, 2009</time>
 
 Fabian: creating an .is\_audio\_player file would make Rhythmbox work
 for me. Fixing the HAL FDI files fixes the problem for everyone. So
@@ -185,7 +185,7 @@ save. You might need to restart Rhythmbox or Sound Juicer for the change
 to stick.
 
 ---
-#### [Vadim P.](http://vadi.myopenid.com) - <time datetime="2009-03-25 09:06:28">3 Mar, 2009</time>
+#### [Vadim P.](http://vadi.myopenid.com) - <time datetime="2009-03-25 09:06:28">25 Mar, 2009</time>
 
 \@Ilmari: Yes, cowon! Thanks for reminding me.
 
@@ -195,7 +195,7 @@ receiving zero support (\"sorry, your platform isn\'t supported\") when
 something does not work ;)
 
 ---
-#### Mats Taraldsvik - <time datetime="2009-03-25 09:41:56">3 Mar, 2009</time>
+#### Mats Taraldsvik - <time datetime="2009-03-25 09:41:56">25 Mar, 2009</time>
 
 \@James: Ok, thanks. I have seen .ogv also, though\...
 
@@ -219,7 +219,7 @@ the player when I bought it, and still does, with the latest firmware. I
 Linux. :)
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2009-03-25 09:59:31">3 Mar, 2009</time>
+#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2009-03-25 09:59:31">25 Mar, 2009</time>
 
 Vadim: the original firmware on my player supported Vorbis audio. The
 short getting started guide just documents connecting the device and
@@ -239,7 +239,7 @@ still producing Vorbis I Profile data, which should still be using the
 .ogg extension. That bug has since been corrected.
 
 ---
-#### [Vadim P.](http://vadi.myopenid.com) - <time datetime="2009-03-25 10:19:35">3 Mar, 2009</time>
+#### [Vadim P.](http://vadi.myopenid.com) - <time datetime="2009-03-25 10:19:35">25 Mar, 2009</time>
 
 \@Mats: you still get support after you replaced the firmware?
 
@@ -256,7 +256,7 @@ proprietary drivers just fine. I am just logical in my purchasing
 power.)
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2009-03-25 16:18:31">3 Mar, 2009</time>
+#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2009-03-25 16:18:31">25 Mar, 2009</time>
 
 Vadim: why on earth would you lose support after installing an official
 firmware update by following the given installation steps? We aren\'t
@@ -276,7 +276,7 @@ happy with what I\'ve got, but I\'d be interested to know about other
 viable alternatives.
 
 ---
-#### davide - <time datetime="2009-03-25 20:27:43">3 Mar, 2009</time>
+#### davide - <time datetime="2009-03-25 20:27:43">25 Mar, 2009</time>
 
 \@James Henstridge: for the moment there is no way to use ffmpeg to
 transfer video to the fuze\... :-(\
@@ -284,7 +284,7 @@ the problem is track down every detail about the encode parameters in
 SMC \...
 
 ---
-#### [Vadim P.](http://vadi.myopenid.com) - <time datetime="2009-03-25 20:51:16">3 Mar, 2009</time>
+#### [Vadim P.](http://vadi.myopenid.com) - <time datetime="2009-03-25 20:51:16">25 Mar, 2009</time>
 
 No, I am talking about replacing the official firmware with someone
 else, which is what many people are implying to do to get better
@@ -303,7 +303,7 @@ a source of broadband internet but not a music player, so I have to take
 the internal card out. But I can\'t complain, I got it for free)
 
 ---
-#### Mats Taraldsvik - <time datetime="2009-03-25 23:17:26">3 Mar, 2009</time>
+#### Mats Taraldsvik - <time datetime="2009-03-25 23:17:26">25 Mar, 2009</time>
 
 \@Vladim: If you did read my earlier post, you\'d know:
 
@@ -319,12 +319,12 @@ I looked at the Cowon players also, though, but they are f\*cking
 expensive compared to the Fuze/Clip\...
 
 ---
-#### Mats Taraldsvik - <time datetime="2009-03-25 23:22:08">3 Mar, 2009</time>
+#### Mats Taraldsvik - <time datetime="2009-03-25 23:22:08">25 Mar, 2009</time>
 
 Ok, I didn\'t say explicitly that the firmware is official. It is.
 
 ---
-#### davide - <time datetime="2009-03-25 23:37:04">3 Mar, 2009</time>
+#### davide - <time datetime="2009-03-25 23:37:04">25 Mar, 2009</time>
 
 Vladim, yes, you just need the cp and zip utility to update the
 firmware\...\
@@ -337,7 +337,7 @@ hours\... (to recharge the battery, what you can actually do on linux
 too)
 
 ---
-#### Jon Pritchard - <time datetime="2009-03-27 04:46:31">5 Mar, 2009</time>
+#### Jon Pritchard - <time datetime="2009-03-27 04:46:31">27 Mar, 2009</time>
 
 They\'re a good little player for the money, in the UK you can get an
 8GB version including also an 8GB microSDHC card for \~£50 (Play.com).

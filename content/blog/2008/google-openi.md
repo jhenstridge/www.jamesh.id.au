@@ -50,7 +50,7 @@ over the page already \...
 
 ---
 ### Comments:
-#### [Lefty](http://opensourcetogo.blogspot.com/) - <time datetime="2008-10-30 16:48:07">4 Oct, 2008</time>
+#### [Lefty](http://opensourcetogo.blogspot.com/) - <time datetime="2008-10-30 16:48:07">30 Oct, 2008</time>
 
 Yeah, looks like it\'s (mostly) ((but not quite, yet)) OpenID, so it
 seems I might have jumped the gun a little.
@@ -66,7 +66,7 @@ wheels all over the place\--rather than actually working with the
 community\--with Android\...
 
 ---
-#### [Lefty](http://opensourcetogo.blogspot.com/) - <time datetime="2008-10-30 17:02:17">4 Oct, 2008</time>
+#### [Lefty](http://opensourcetogo.blogspot.com/) - <time datetime="2008-10-30 17:02:17">30 Oct, 2008</time>
 
 Oh, and for what it\'s worth, I\'d say the necessity to \"plaster
 another provider-specific radio buttons and entry boxes onto the login
@@ -74,7 +74,7 @@ page\" pretty much defeats the purpose of OpenID, but maybe that\'s just
 me\...
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2008-10-30 17:18:25">4 Oct, 2008</time>
+#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2008-10-30 17:18:25">30 Oct, 2008</time>
 
 As I said, the protocol examples they give look like correct OpenID
 messages (no \"mostly\" about it).
@@ -89,7 +89,7 @@ big deal while the white list is in place since such sites will probably
 be set up with a button.
 
 ---
-#### [Will Norris](http://will.norris.name/) - <time datetime="2008-10-31 03:03:56">5 Oct, 2008</time>
+#### [Will Norris](http://will.norris.name/) - <time datetime="2008-10-31 03:03:56">31 Oct, 2008</time>
 
 While there is a XRDS document [published on
 google.com](http://www.google.com/xrds/xrds.xml), my understanding after

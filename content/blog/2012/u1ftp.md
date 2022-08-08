@@ -70,26 +70,26 @@ upload your changes as a branch on Launchpad.
 
 ---
 ### Comments:
-#### jmaspons - <time datetime="2012-07-05 18:20:20">4 Jul, 2012</time>
+#### jmaspons - <time datetime="2012-07-05 18:20:20">5 Jul, 2012</time>
 
 This means that finally there is a Ubuntu One client for KDE?
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2012-07-05 21:48:35">4 Jul, 2012</time>
+#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2012-07-05 21:48:35">5 Jul, 2012</time>
 
 \@jmaspons: The standard Ubuntu One client should work with Kubuntu.
 This is more of a demonstration application rather than an official
 client, but if it is still useful to you then that\'s great.
 
 ---
-#### Flup - <time datetime="2012-07-07 02:11:52">6 Jul, 2012</time>
+#### Flup - <time datetime="2012-07-07 02:11:52">7 Jul, 2012</time>
 
 Hey, one question:\
 Will this new U1DB replace the DBUS API ??\
 Or will both stay avaiable?
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2012-07-07 08:29:24">6 Jul, 2012</time>
+#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2012-07-07 08:29:24">7 Jul, 2012</time>
 
 \@Flup: U1DB is not a replacement for the file storage \"syncdaemon\",
 if that is what you\'re asking. Instead, it is intended for use cases
@@ -97,7 +97,7 @@ similar to what we used to use DesktopCouch/CouchDB for where you want
 to store structured data (e.g. contacts, bookmarks, notes, etc).
 
 ---
-#### Marco Parillo - <time datetime="2012-07-09 01:20:28">1 Jul, 2012</time>
+#### Marco Parillo - <time datetime="2012-07-09 01:20:28">9 Jul, 2012</time>
 
 \> The standard Ubuntu One client should work with Kubuntu.
 
@@ -115,7 +115,7 @@ Maybe your FTP approach can be extended to be like the dropbox daemon
 approach?
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2012-07-09 12:50:10">1 Jul, 2012</time>
+#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2012-07-09 12:50:10">9 Jul, 2012</time>
 
 \@Marco Parillo: as you can see from further comments on that bug, not
 all of those are needed to run the file storage syncdaemon: some are for

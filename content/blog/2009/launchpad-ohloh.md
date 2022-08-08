@@ -15,27 +15,27 @@ producing an application like Launchpad, then it is worth a look.
 
 ---
 ### Comments:
-#### *e* - <time datetime="2009-10-27 20:41:29">2 Oct, 2009</time>
+#### *e* - <time datetime="2009-10-27 20:41:29">27 Oct, 2009</time>
 
 Have you seen the perl language?
 
 3 lines of code -\> 54 lines of comments :-D
 
 ---
-#### [Andy Wingo](http://wingolog.org/) - <time datetime="2009-10-28 03:22:51">3 Oct, 2009</time>
+#### [Andy Wingo](http://wingolog.org/) - <time datetime="2009-10-28 03:22:51">28 Oct, 2009</time>
 
 It\'s a bit belated, but congrats, James, for getting all this code, you
 and your colleagues\', out in the open. I\'m sure that was a relief :)
 
 ---
-#### [Juanjo](http://rambleon.usebox.net/) - <time datetime="2009-10-28 05:41:44">3 Oct, 2009</time>
+#### [Juanjo](http://rambleon.usebox.net/) - <time datetime="2009-10-28 05:41:44">28 Oct, 2009</time>
 
 Interesting\... I wonder, those 3,291 lines of SQL, where did they go?
 
 How awesome it\'s Launchpad that works without them :\'D
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2009-10-28 10:53:32">3 Oct, 2009</time>
+#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2009-10-28 10:53:32">28 Oct, 2009</time>
 
 \@Andy Wingo: thanks!
 

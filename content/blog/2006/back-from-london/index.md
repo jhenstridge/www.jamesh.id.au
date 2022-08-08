@@ -64,7 +64,7 @@ due to the UK restrictions.
 
 ---
 ### Comments:
-#### [Chris](http://blog.printf.net/) - <time datetime="2006-08-17 17:56:20">4 Aug, 2006</time>
+#### [Chris](http://blog.printf.net/) - <time datetime="2006-08-17 17:56:20">17 Aug, 2006</time>
 
 \> There were no nasty surprises on opening my luggage --- I assume the
 baggage handlers had been instructed to take special care of everyone\'s
@@ -77,7 +77,7 @@ large dent in it. :(
 \- Chris.
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh) - <time datetime="2006-08-18 19:01:31">5 Aug, 2006</time>
+#### [James Henstridge](http://blogs.gnome.org/jamesh) - <time datetime="2006-08-18 19:01:31">18 Aug, 2006</time>
 
 Chris: from what I read, people could carry laptops on as hand luggage
 in a small bag already (since Tuesday, I think). So he probably could

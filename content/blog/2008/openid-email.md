@@ -56,7 +56,7 @@ implement.
 
 ---
 ### Comments:
-#### [Kevin Turner](http://kevin.janrain.com/) - <time datetime="2008-04-03 02:47:42">4 Apr, 2008</time>
+#### [Kevin Turner](http://kevin.janrain.com/) - <time datetime="2008-04-03 02:47:42">3 Apr, 2008</time>
 
 The thing to keep in mind though is this is currently an accident, and
 not a supported use case. The HTTP-fetching code in many OpenID
@@ -67,13 +67,13 @@ it to parameters for basic auth, and it\'ll break.
 So you\'re better off just typing in \"yahoo.com\", really.
 
 ---
-#### [Armin Ronacher](http://lucumr.pocoo.org/) - <time datetime="2008-04-03 04:24:19">4 Apr, 2008</time>
+#### [Armin Ronacher](http://lucumr.pocoo.org/) - <time datetime="2008-04-03 04:24:19">3 Apr, 2008</time>
 
 That\'s against the spec though. HTTP URLs must not have a
 authentification part. That\'s reserved for FTP and some others.
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2008-04-03 12:10:02">4 Apr, 2008</time>
+#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2008-04-03 12:10:02">3 Apr, 2008</time>
 
 Kevin: I agree that typing \"yahoo.com\" is easier and what users should
 be directed to use. I just found it interesting that an approximation of
@@ -87,7 +87,7 @@ of thing that you\'d want to start relying on, but it is nice that it
 half works though.
 
 ---
-#### [Chris Cunningham](http://blondechris.com/) - <time datetime="2008-04-03 21:21:24">4 Apr, 2008</time>
+#### [Chris Cunningham](http://blondechris.com/) - <time datetime="2008-04-03 21:21:24">3 Apr, 2008</time>
 
 > I agree that this isn't the sort of thing that you'd want to start
 > relying on
@@ -97,7 +97,7 @@ That\'d be why you wouldn\'t be wanting to implicitly condone it.
 \- Chris
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2008-04-04 16:05:22">5 Apr, 2008</time>
+#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2008-04-04 16:05:22">4 Apr, 2008</time>
 
 Chris: I\'m not arguing that providers should tell their users to enter
 email addresses into OpenID forms: giving them a shorter constant string

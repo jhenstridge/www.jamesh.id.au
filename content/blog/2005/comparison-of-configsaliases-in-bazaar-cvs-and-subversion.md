@@ -199,7 +199,7 @@ versions migrated from CVS).
 
 ---
 ### Comments:
-#### [Erich Schubert](http://blog.drinsama.de/erich/) - <time datetime="2005-08-30 07:38:33">2 Aug, 2005</time>
+#### [Erich Schubert](http://blog.drinsama.de/erich/) - <time datetime="2005-08-30 07:38:33">30 Aug, 2005</time>
 
 Hi, since you apparently are quite an expert on revision management - do
 you have a hint for my \"CoW\" problem?\
@@ -219,7 +219,7 @@ Two blog entries, where I asked for advice for this usage:\
 <http://blog.drinsama.de/erich/en/linux/2005082501-revision-management.html>
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh) - <time datetime="2005-08-30 11:54:00">2 Aug, 2005</time>
+#### [James Henstridge](http://blogs.gnome.org/jamesh) - <time datetime="2005-08-30 11:54:00">30 Aug, 2005</time>
 
 With Bazaar, the way you\'d handle this would be by branching the
 upstream. Now rather than running \"update\", you\'d \"merge\" from the
@@ -235,7 +235,7 @@ some files from one version and other files from another version could
 easily cause problems.
 
 ---
-#### Sean Kelley - <time datetime="2005-08-30 15:15:59">2 Aug, 2005</time>
+#### Sean Kelley - <time datetime="2005-08-30 15:15:59">30 Aug, 2005</time>
 
 Very interesting. I\'ve not used CVS since University. I must confess
 that in my job I\'ve been using Borland\'s StarTeam and love it.It is
@@ -244,7 +244,7 @@ really hard to go back to the command line again.
 Sean
 
 ---
-#### [fraggle](http://www.soulsphere.org/) - <time datetime="2005-08-30 18:28:11">2 Aug, 2005</time>
+#### [fraggle](http://www.soulsphere.org/) - <time datetime="2005-08-30 18:28:11">30 Aug, 2005</time>
 
 Sounds like incredibly useless and confusing functionality and that a
 common shared library would be a much better solution.

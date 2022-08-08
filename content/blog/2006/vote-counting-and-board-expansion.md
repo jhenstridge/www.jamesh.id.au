@@ -49,7 +49,7 @@ might be worth considering for next time.
 
 ---
 ### Comments:
-#### [Dave neary](http://blogs.gnome.org/bolsh) - <time datetime="2006-06-07 02:33:39">3 Jun, 2006</time>
+#### [Dave neary](http://blogs.gnome.org/bolsh) - <time datetime="2006-06-07 02:33:39">7 Jun, 2006</time>
 
 \
 Hi jamesh,
@@ -74,7 +74,7 @@ limit the number of ballots people have to ensure that we get people
 voting for the candidates they really like.\
 
 ---
-#### [Quim](http://desdeamericaconamor.org) - <time datetime="2006-06-07 10:04:26">3 Jun, 2006</time>
+#### [Quim](http://desdeamericaconamor.org) - <time datetime="2006-06-07 10:04:26">7 Jun, 2006</time>
 
 It\'s easy to end up in endless debates about ways of voting (this
 proposal has been half-discussed before).
@@ -92,7 +92,7 @@ right one, based not only on theory but also in practical terms i.e.
 free software available, functional and stable.
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh) - <time datetime="2006-06-07 12:41:05">3 Jun, 2006</time>
+#### [James Henstridge](http://blogs.gnome.org/jamesh) - <time datetime="2006-06-07 12:41:05">7 Jun, 2006</time>
 
 David: reducing the number of votes each member gets while keeping the
 same voting system would only exacerbate the problem of picking a
@@ -105,13 +105,13 @@ Quim: you are right. I should get off my arse and follow through about
 this.
 
 ---
-#### mdgeorge - <time datetime="2006-06-08 03:38:41">4 Jun, 2006</time>
+#### mdgeorge - <time datetime="2006-06-08 03:38:41">8 Jun, 2006</time>
 
 You might be interested in the condorcet internet voting service:
 <http://www.cs.cornell.edu/andru/civs.html>
 
 ---
-#### Anonymous - <time datetime="2006-06-09 13:23:24">5 Jun, 2006</time>
+#### Anonymous - <time datetime="2006-06-09 13:23:24">9 Jun, 2006</time>
 
 Quim: Please don\'t recommend instant runoff voting; it has many
 undesirable properties compared to even plain plurality voting, let

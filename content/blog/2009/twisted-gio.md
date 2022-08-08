@@ -123,7 +123,7 @@ asynchronous calls where it makes sense.
 
 ---
 ### Comments:
-#### [davidz](http://blog.fubar.dk) - <time datetime="2009-01-06 09:57:47">2 Jan, 2009</time>
+#### [davidz](http://blog.fubar.dk) - <time datetime="2009-01-06 09:57:47">6 Jan, 2009</time>
 
 Note that for C, there\'s the GFiber proposal
 

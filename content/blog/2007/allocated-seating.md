@@ -40,7 +40,7 @@ cinemas have been closing down over the years :(
 
 ---
 ### Comments:
-#### Ryan - <time datetime="2007-12-18 02:31:55">2 Dec, 2007</time>
+#### Ryan - <time datetime="2007-12-18 02:31:55">18 Dec, 2007</time>
 
 I don\'t think it\'s a shame that cinemas are closing down. They charge
 you a ton of money to sit you in a room full of smelly noisy strangers.
@@ -55,7 +55,7 @@ It seems to me like a business model that is begging to fail. Good
 riddance to cinemas.
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2007-12-18 10:33:09">2 Dec, 2007</time>
+#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2007-12-18 10:33:09">18 Dec, 2007</time>
 
 Ryan: I haveWhile I\'ve certainly been to occasional films with noisy
 strangers, I haven\'t had problems with smelly strangers. While DVDs do
@@ -68,7 +68,7 @@ degrading the experience, since it probably will result in more of them
 closing down.
 
 ---
-#### Lorelei - <time datetime="2007-12-18 16:39:57">2 Dec, 2007</time>
+#### Lorelei - <time datetime="2007-12-18 16:39:57">18 Dec, 2007</time>
 
 Last night I went to Greater Union Innaloo and had the same experience.
 Was told where to sit, not given a choice \*at all\* and promptly

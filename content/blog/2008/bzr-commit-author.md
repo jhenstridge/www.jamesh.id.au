@@ -37,7 +37,7 @@ committer and the original committer as the author.
 
 ---
 ### Comments:
-#### [ovitters](http://blogs.gnome.org/ovitters/) - <time datetime="2008-05-13 04:04:28">2 May, 2008</time>
+#### [ovitters](http://blogs.gnome.org/ovitters/) - <time datetime="2008-05-13 04:04:28">13 May, 2008</time>
 
 Please post more BZR stuff. Especially issues/unique things regarding
 bzr vs other DVCS and SVN. This for preparation of the DVCS decision at

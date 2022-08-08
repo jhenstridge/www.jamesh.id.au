@@ -97,13 +97,13 @@ OpenID 1.1. If anyone else has ideas, I\'d be glad to hear them.
 
 ---
 ### Comments:
-#### [Tassos Bassoukos](http://tassos.blogentis.net) - <time datetime="2007-11-12 13:55:19">1 Nov, 2007</time>
+#### [Tassos Bassoukos](http://tassos.blogentis.net) - <time datetime="2007-11-12 13:55:19">12 Nov, 2007</time>
 
 Wouldn\'t your solution invalidate one of the major use-cases of OpenID,
 the \'you need only one identifier\' one?
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2007-11-13 06:15:55">2 Nov, 2007</time>
+#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2007-11-13 06:15:55">13 Nov, 2007</time>
 
 Tassos: I don\'t think anything I\'ve suggested breaks the \"single
 digital identity\" idea of OpenID.
@@ -114,7 +114,7 @@ systems that allow a user to change their human-friendly identifier, can
 the user maintain their identity?
 
 ---
-#### [Gary Krall](http://pip.verisignlabs.com) - <time datetime="2007-11-13 08:17:18">2 Nov, 2007</time>
+#### [Gary Krall](http://pip.verisignlabs.com) - <time datetime="2007-11-13 08:17:18">13 Nov, 2007</time>
 
 James: By way of introduction I am the technical director for the
 PiP/SeatBelt products here at Verisign. I read with interest your
@@ -126,7 +126,7 @@ the system.
 Just thought you\'d be interested.
 
 ---
-#### [atom](http://www.allentom.com) - <time datetime="2007-11-13 08:41:39">2 Nov, 2007</time>
+#### [atom](http://www.allentom.com) - <time datetime="2007-11-13 08:41:39">13 Nov, 2007</time>
 
 Identifier Recycling is an issue that all large identity providers face,
 and freeing up desirable usernames that aren\'t being actively used is
@@ -145,7 +145,7 @@ more info. I don\'t believe that using url fragments as generation
 identifiers will require an extra round trip.
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2007-11-13 21:14:32">2 Nov, 2007</time>
+#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2007-11-13 21:14:32">13 Nov, 2007</time>
 
 Garry: thanks for the info. That gets rid of the reuse problem, but does
 not address the renaming issue.
@@ -159,7 +159,7 @@ For instance, it requires no more round trips than the directed identity
 mode, and that is included in the specification.
 
 ---
-#### Roman Beslik - <time datetime="2007-11-15 09:45:26">4 Nov, 2007</time>
+#### Roman Beslik - <time datetime="2007-11-15 09:45:26">15 Nov, 2007</time>
 
 \>If the user registers another XRI pointing at the same persistent
 identifier, it will be considered equivalent.
@@ -168,7 +168,7 @@ Does it mean that I can write under someone's name? Assuming that I've
 registered an XRI pointing to someone's persistent identifier.
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2007-11-15 09:57:36">4 Nov, 2007</time>
+#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2007-11-15 09:57:36">15 Nov, 2007</time>
 
 Roman: my understanding is that there are a few things preventing this:
 
@@ -183,7 +183,7 @@ You\'d be better off asking an XRI expert about this though. I have not
 read much about the implementation details.
 
 ---
-#### [James Henstridge &raquo; OpenID 2.0 Specification Approved](openid-20-specification-approved.md) - <time datetime="2007-12-10 12:38:57">1 Dec, 2007</time>
+#### [James Henstridge &raquo; OpenID 2.0 Specification Approved](openid-20-specification-approved.md) - <time datetime="2007-12-10 12:38:57">10 Dec, 2007</time>
 
 \[\...\] stated previously that I think the support for identifier reuse
 with respect to URL identifiers is a bit lacking.  \[\...\]

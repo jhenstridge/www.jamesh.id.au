@@ -22,13 +22,13 @@ coin smaller than the \$1 coin though.
 
 ---
 ### Comments:
-#### [John Stowers](http://www.johnstowers.co.nz) - <time datetime="2007-10-18 13:44:05">4 Oct, 2007</time>
+#### [John Stowers](http://www.johnstowers.co.nz) - <time datetime="2007-10-18 13:44:05">18 Oct, 2007</time>
 
 Thats because Australia\'s system of having the \$2 smaller than the \$1
 is, retarded. I much prefer our system :-)
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2007-10-18 16:55:38">4 Oct, 2007</time>
+#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2007-10-18 16:55:38">18 Oct, 2007</time>
 
 Is it really that bad to have the \$2 coin being smaller than the \$1
 coin when the \$1 coin is smaller than the 50c coin though? :)

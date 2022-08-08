@@ -68,7 +68,7 @@ machine](http://bzr-playground.gnome.org/damned-lies/).
 
 ---
 ### Comments:
-#### [Kristian H](http://hoegsberg.blogspot.com/) - <time datetime="2008-07-09 05:46:08">3 Jul, 2008</time>
+#### [Kristian H](http://hoegsberg.blogspot.com/) - <time datetime="2008-07-09 05:46:08">9 Jul, 2008</time>
 
 Do we honestly think that at this point there\'s a killer
 feature/showstopper bug that\'s going to decide which DVCS GNOME goes
@@ -85,7 +85,7 @@ workshops, feature matrices, work flow analysis.
 Thank you. I like git, btw ;)
 
 ---
-#### Vadim P. - <time datetime="2008-07-09 06:57:43">3 Jul, 2008</time>
+#### Vadim P. - <time datetime="2008-07-09 06:57:43">9 Jul, 2008</time>
 
 Great, I\'d be interested to read what comes out of \'Support Win32\'.
 I\'ve started to use GTK for Windows for cross-platform, and while it\'s
@@ -93,7 +93,7 @@ dead easy to setup and use, it would be nice if there were official
 standards on this.
 
 ---
-#### Rob - <time datetime="2008-07-09 16:19:32">3 Jul, 2008</time>
+#### Rob - <time datetime="2008-07-09 16:19:32">9 Jul, 2008</time>
 
 Is it possible to publish bzr branches for experimental modules that are
 not yet in gnome svn? That\'d be great \...

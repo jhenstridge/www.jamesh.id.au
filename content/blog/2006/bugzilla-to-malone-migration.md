@@ -57,7 +57,7 @@ messages. These issues should get fixed shortly.
 
 ---
 ### Comments:
-#### [AdamW](http://www.happyassassin.net/) - <time datetime="2006-01-17 07:47:07">2 Jan, 2006</time>
+#### [AdamW](http://www.happyassassin.net/) - <time datetime="2006-01-17 07:47:07">17 Jan, 2006</time>
 
 \"Now that the migration is complete, there are more than 28000 bugs in
 the system.\"

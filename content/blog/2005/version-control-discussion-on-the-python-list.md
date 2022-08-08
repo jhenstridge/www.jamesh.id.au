@@ -23,14 +23,14 @@ very nice (and should require less typing than `baz` \...)
 
 ---
 ### Comments:
-####  - <time datetime="2005-08-15 18:56:36">1 Aug, 2005</time>
+####  - <time datetime="2005-08-15 18:56:36">15 Aug, 2005</time>
 
 Been on the Ubuntu site some mins ago and been readin\' about Bazaar. I
 wonder why Bazar if we have fine things like SVN. What\'s wrong with
 SVN? Because it\'s not written in Python?
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh) - <time datetime="2005-08-15 20:04:22">1 Aug, 2005</time>
+#### [James Henstridge](http://blogs.gnome.org/jamesh) - <time datetime="2005-08-15 20:04:22">15 Aug, 2005</time>
 
 Bazaar supports distributed development, while Subversion does not.
 

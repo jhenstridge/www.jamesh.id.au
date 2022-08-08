@@ -39,7 +39,7 @@ years.
 
 ---
 ### Comments:
-#### Andy Wingo - <time datetime="2011-03-08 14:38:53">2 Mar, 2011</time>
+#### Andy Wingo - <time datetime="2011-03-08 14:38:53">8 Mar, 2011</time>
 
 Pretty cool. I wonder how this performance compares to, say, Python.
 (Guile in my case; they are similar.)
@@ -48,7 +48,7 @@ I would be surprised if JS didn\'t roundly beat Python or Guile on this
 one.
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2011-03-08 15:04:02">2 Mar, 2011</time>
+#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2011-03-08 15:04:02">8 Mar, 2011</time>
 
 One thing I didn\'t measure (and don\'t really have a good way to
 measure) was the message passing overhead. The web worker specification
@@ -64,13 +64,13 @@ If an alternative language has more efficient message passing, then that
 might let it beat the JavaScript implementation.
 
 ---
-#### Roumano - <time datetime="2011-03-08 15:36:24">2 Mar, 2011</time>
+#### Roumano - <time datetime="2011-03-08 15:36:24">8 Mar, 2011</time>
 
 It\'s funny, but not seem\'s to be a real fractal as after some level of
 zoom (\~ 15) the picture is Pixelise \...
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2011-03-09 00:24:06">3 Mar, 2011</time>
+#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2011-03-09 00:24:06">9 Mar, 2011</time>
 
 \@Roumano: I think that is just a case of hitting the precision limit
 for the floating point type used by the interpreter. I\'m not using any
@@ -78,12 +78,12 @@ special high precision arithmetic library, so it isn\'t surprising that
 that happens.
 
 ---
-#### foo - <time datetime="2011-03-09 05:21:42">3 Mar, 2011</time>
+#### foo - <time datetime="2011-03-09 05:21:42">9 Mar, 2011</time>
 
 Hmm, if you implemented it more like Xaos it might be faster and nicer.
 
 ---
-#### Hans - <time datetime="2011-03-09 06:57:12">3 Mar, 2011</time>
+#### Hans - <time datetime="2011-03-09 06:57:12">9 Mar, 2011</time>
 
 Pretty neat, a minor enhancement would be to start drawing lines up and
 down starting from where the user clicked, so you can immediately
@@ -92,7 +92,7 @@ want to go next (instead of waiting for the whole thing to render). But
 I guess usuability wasnt the point of this demo :p
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2011-03-10 03:28:02">4 Mar, 2011</time>
+#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2011-03-10 03:28:02">10 Mar, 2011</time>
 
 \@foo: it isn\'t surprising that a native code implementation runs
 faster. I was doing this more as a way to practice parallel programming
@@ -103,14 +103,14 @@ probably only take a function to remap the value of the line counter
 when sending jobs to the workers.
 
 ---
-#### [Eric Freeman](http://www.ericfreeman.com) - <time datetime="2011-04-20 12:19:55">3 Apr, 2011</time>
+#### [Eric Freeman](http://www.ericfreeman.com) - <time datetime="2011-04-20 12:19:55">20 Apr, 2011</time>
 
 Looks great, and nice code. With safari I\'m maxing out 8 cores. Nice.
 
 Eric
 
 ---
-#### [Jake](http://www.jakebakermaths.org.uk) - <time datetime="2011-04-23 03:37:28">6 Apr, 2011</time>
+#### [Jake](http://www.jakebakermaths.org.uk) - <time datetime="2011-04-23 03:37:28">23 Apr, 2011</time>
 
 Hi, I really like your mandelbrot. I\'ve done one recently in javascript
 in xhtml with svg, which works on Chrome and IE9 but is too intensive
@@ -123,7 +123,7 @@ imposed more by the iteration max (I used 2000, I think you used 1024),
 and the consequent calculation speeds, than the depth of zoom. Jake.
 
 ---
-#### [Eric Freeman](http://www.ericfreeman.com) - <time datetime="2011-04-28 11:16:29">4 Apr, 2011</time>
+#### [Eric Freeman](http://www.ericfreeman.com) - <time datetime="2011-04-28 11:16:29">28 Apr, 2011</time>
 
 James can you contact me directly? I have a question for you (about
 publishing some of your code).
@@ -133,14 +133,14 @@ Thanks,
 Eric
 
 ---
-#### [Eric Freeman](http://www.ericfreeman.com) - <time datetime="2011-04-28 11:17:14">4 Apr, 2011</time>
+#### [Eric Freeman](http://www.ericfreeman.com) - <time datetime="2011-04-28 11:17:14">28 Apr, 2011</time>
 
 Jake, canvas is now widely supported by pretty much all modern browsers.
 
 Eric
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2011-04-28 11:37:38">4 Apr, 2011</time>
+#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2011-04-28 11:37:38">28 Apr, 2011</time>
 
 \@Jake: I\'d imagine the SVG method would be a fair bit slower and more
 memory hungry, since you\'re asking the browser to create a DOM node for
@@ -155,7 +155,7 @@ the floating point precision limit first and the image becomes blocky. I
 imagine you could find areas in your version that exhibit this.
 
 ---
-#### [Jake](http://jakebakermaths.org.uk) - <time datetime="2011-04-28 15:17:03">4 Apr, 2011</time>
+#### [Jake](http://jakebakermaths.org.uk) - <time datetime="2011-04-28 15:17:03">28 Apr, 2011</time>
 
 Thanks James and Eric for your comments, it\'s helpful to understand
 some of these speed issues. I\'ll get working on learning canvas.
@@ -163,7 +163,7 @@ some of these speed issues. I\'ll get working on learning canvas.
 Jake
 
 ---
-#### [Jake](http://www.jakebakermaths.org.uk) - <time datetime="2011-05-08 02:36:43">0 May, 2011</time>
+#### [Jake](http://www.jakebakermaths.org.uk) - <time datetime="2011-05-08 02:36:43">8 May, 2011</time>
 
 Hi James,
 
@@ -178,7 +178,7 @@ Opera.
 Jake.
 
 ---
-#### alex_mass - <time datetime="2011-05-17 20:23:37">2 May, 2011</time>
+#### alex_mass - <time datetime="2011-05-17 20:23:37">17 May, 2011</time>
 
 Hi James,
 

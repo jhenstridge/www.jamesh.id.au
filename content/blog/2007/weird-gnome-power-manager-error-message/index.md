@@ -37,7 +37,7 @@ This does bring up a few questions though:
 
 ---
 ### Comments:
-#### [Chris Cunningham](http://blondechris.com) - <time datetime="2007-11-19 18:26:27">1 Nov, 2007</time>
+#### [Chris Cunningham](http://blondechris.com) - <time datetime="2007-11-19 18:26:27">19 Nov, 2007</time>
 
 IIRC Richard Hughes has said in the past that warnings like this aren\'t
 really his forte and that he\'s open to suggestions of improvement. This
@@ -46,7 +46,7 @@ is pretty obviously not something which is optimal right now.
 \- Chris
 
 ---
-#### [mark](http://blog.markvdb.be) - <time datetime="2007-11-19 19:55:20">1 Nov, 2007</time>
+#### [mark](http://blog.markvdb.be) - <time datetime="2007-11-19 19:55:20">19 Nov, 2007</time>
 
 Hm, exactly this message is what I get about one time in five, and then
 my keyboard and mouse stop responding after about a second\...

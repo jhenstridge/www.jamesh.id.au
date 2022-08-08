@@ -67,14 +67,14 @@ some of these bits working in the near future.
 
 ---
 ### Comments:
-#### Raf - <time datetime="2008-08-01 23:26:38">5 Aug, 2008</time>
+#### Raf - <time datetime="2008-08-01 23:26:38">1 Aug, 2008</time>
 
 Storm looked alright until I found out that you need to type in the SQL
 manually even though you have a set of nice models to work with already
 defined :/
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2008-08-02 19:21:48">6 Aug, 2008</time>
+#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2008-08-02 19:21:48">2 Aug, 2008</time>
 
 Raf: I\'d agree that the current state of schema management in Storm is
 not that great (i.e. it is non-existent). However, I believe that schema
@@ -83,12 +83,12 @@ framework is what is needed for long lived applications (e.g. like Ruby
 on Rails).
 
 ---
-#### Torsten Bronger - <time datetime="2008-08-03 05:42:53">0 Aug, 2008</time>
+#### Torsten Bronger - <time datetime="2008-08-03 05:42:53">3 Aug, 2008</time>
 
 Maybe Django Evolution will improve the situation.
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2008-08-05 19:49:47">2 Aug, 2008</time>
+#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2008-08-05 19:49:47">5 Aug, 2008</time>
 
 Django Evolution looks interesting, but seems to keep some of the
 problems of schema generation: if you do two deployments of an
@@ -103,14 +103,14 @@ they were deployed with different base schemas and a different set of
 migrations, then it depends on how good Django Evolution is :)
 
 ---
-#### [Eduardo Willians](http://pycappuccino.blogspot.com/) - <time datetime="2008-08-16 23:40:30">6 Aug, 2008</time>
+#### [Eduardo Willians](http://pycappuccino.blogspot.com/) - <time datetime="2008-08-16 23:40:30">16 Aug, 2008</time>
 
 Awesome! Congrats, as Django is becoming the de facto option for web
 development, integrating Storm with Django will help both projects,
 especially because both are excellent.
 
 ---
-#### [James Henstridge &raquo; Storm 0.13](storm-013.md) - <time datetime="2008-08-29 16:21:35">5 Aug, 2008</time>
+#### [James Henstridge &raquo; Storm 0.13](storm-013.md) - <time datetime="2008-08-29 16:21:35">29 Aug, 2008</time>
 
 \[\...\] The minimum dependencies of the storm.zope.zstorm module have
 been reduced to just the zope.interface and transaction modules.  This

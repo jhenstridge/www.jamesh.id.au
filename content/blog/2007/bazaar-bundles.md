@@ -113,7 +113,7 @@ consider submitting a bundle instead.
 
 ---
 ### Comments:
-#### [Eric Florenzano](http://www.eflorenzano.com) - <time datetime="2007-07-31 15:00:48">2 Jul, 2007</time>
+#### [Eric Florenzano](http://www.eflorenzano.com) - <time datetime="2007-07-31 15:00:48">31 Jul, 2007</time>
 
 What is the recommended file extension for a bundle? In your example, it
 looks like you used .diff, but I imagine that using .diff could get
@@ -124,13 +124,13 @@ I think that I\'ve seen a few people using .bundle as the extension, but
 I am in no way sure if that\'s standardized in any way.
 
 ---
-#### [bzr bundles &raquo; Blog of Anders Rune Jensen](http://people.iola.dk/arj/2007/07/31/bzr-bundles/) - <time datetime="2007-07-31 19:16:17">2 Jul, 2007</time>
+#### [bzr bundles &raquo; Blog of Anders Rune Jensen](http://people.iola.dk/arj/2007/07/31/bzr-bundles/) - <time datetime="2007-07-31 19:16:17">31 Jul, 2007</time>
 
 \[\...\] upon this guide today for how to create better patches when the
 project in question is using bzr (such as MMS :)). \[\...\]
 
 ---
-#### [Daniel Lin](http://ephemient.livejournal.com/) - <time datetime="2007-07-31 21:57:54">2 Jul, 2007</time>
+#### [Daniel Lin](http://ephemient.livejournal.com/) - <time datetime="2007-07-31 21:57:54">31 Jul, 2007</time>
 
 Good advice that isn\'t specific to one revision control system.
 
@@ -141,7 +141,7 @@ target repository online
 darcs apply my-changes
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2007-07-31 23:33:23">2 Jul, 2007</time>
+#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2007-07-31 23:33:23">31 Jul, 2007</time>
 
 Eric: I know some of the Bazaar developers prefer that bundles sent to
 the Bazaar mailing list use \".patch\" or \".diff\" as extensions since
@@ -159,7 +159,7 @@ be used from a single branch or offline. I only described the use of
 recipient can\'t use.
 
 ---
-#### [Daniel Lin](http://ephemient.livejournal.com/) - <time datetime="2007-08-02 03:09:54">4 Aug, 2007</time>
+#### [Daniel Lin](http://ephemient.livejournal.com/) - <time datetime="2007-08-02 03:09:54">2 Aug, 2007</time>
 
 I\'m not trying to push Darcs \-- Mercurial has \"hg bundle\" as well
 \-- I just would like to let people stumbling across this post to come
@@ -170,7 +170,7 @@ In fact, git is the only popular DVCS I know of without support for this
 sort of operation\...
 
 ---
-#### [James Henstridge &raquo; Bazaar bundles as part of a review process](bazaar-bundles-as-part-of-a-review-process.md) - <time datetime="2007-08-16 13:36:13">4 Aug, 2007</time>
+#### [James Henstridge &raquo; Bazaar bundles as part of a review process](bazaar-bundles-as-part-of-a-review-process.md) - <time datetime="2007-08-16 13:36:13">16 Aug, 2007</time>
 
 \[\...\] James Henstridge Random stuff Skip to content « Bazaar Bundles
 \[\...\]

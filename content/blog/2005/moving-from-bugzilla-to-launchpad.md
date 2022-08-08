@@ -64,7 +64,7 @@ tomorrow some time.
 
 ---
 ### Comments:
-#### [Chris Samuel](http://www.csamuel.org/) - <time datetime="2005-11-27 21:01:59">0 Nov, 2005</time>
+#### [Chris Samuel](http://www.csamuel.org/) - <time datetime="2005-11-27 21:01:59">27 Nov, 2005</time>
 
 It\'s been a few weeks now - how\'s this going ?
 
@@ -72,7 +72,7 @@ cheers!\
 Chris
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh) - <time datetime="2005-11-28 18:43:52">1 Nov, 2005</time>
+#### [James Henstridge](http://blogs.gnome.org/jamesh) - <time datetime="2005-11-28 18:43:52">28 Nov, 2005</time>
 
 Things have progressed a little slower than anticipated. Performing the
 import on the production database depends on some other data being

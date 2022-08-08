@@ -31,14 +31,14 @@ more useful in Dapper, as more programs are built with mDNS support.
 
 ---
 ### Comments:
-#### lp - <time datetime="2005-11-02 02:02:48">3 Nov, 2005</time>
+#### lp - <time datetime="2005-11-02 02:02:48">2 Nov, 2005</time>
 
 avahi-browse is not able to show you a list of advertised \*hosts\*.
 This is a limitation of the mDNS protocol. Only services may be
 enumerated
 
 ---
-#### Ross - <time datetime="2005-11-02 03:17:04">3 Nov, 2005</time>
+#### Ross - <time datetime="2005-11-02 03:17:04">2 Nov, 2005</time>
 
 Assuming you run a SSH daemon, copy ssh.server from
 /usr/share/doc/avahi-daemon/examples/ to /etc/avahi/services (iirc) and
@@ -48,19 +48,19 @@ lp, avahi hacks around that fact by exporting a \"workstation\" service
 automatically. :)\
 
 ---
-#### lp - <time datetime="2005-11-02 07:35:43">3 Nov, 2005</time>
+#### lp - <time datetime="2005-11-02 07:35:43">2 Nov, 2005</time>
 
 It\'s not just avahi that does this. Apple does it too.
 
 ---
-#### ed__ - <time datetime="2005-11-02 15:42:36">3 Nov, 2005</time>
+#### ed__ - <time datetime="2005-11-02 15:42:36">2 Nov, 2005</time>
 
 you can also add \'local\' to the /etc/resolv.conf search line so that
 non-fqdn\'s are automatically queried against .local. saves a few
 keystrokes if you can stand the security implications.
 
 ---
-#### Chris Stankevitz - <time datetime="2005-11-03 11:21:25">4 Nov, 2005</time>
+#### Chris Stankevitz - <time datetime="2005-11-03 11:21:25">3 Nov, 2005</time>
 
 FYI, just found this entry from google:
 

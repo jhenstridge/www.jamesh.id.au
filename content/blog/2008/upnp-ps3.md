@@ -92,7 +92,7 @@ worth trying out at some point.
 
 ---
 ### Comments:
-#### zombiepig - <time datetime="2008-10-30 12:38:07">4 Oct, 2008</time>
+#### zombiepig - <time datetime="2008-10-30 12:38:07">30 Oct, 2008</time>
 
 Something that\'s always frustrated me with my ps3 playing back music
 from my mediatomb share is the massive gap it puts between songs. I\'m
@@ -100,13 +100,13 @@ really interested to know if this is a problem with the ps3 software, or
 something in mediatomb that\'s causing it.
 
 ---
-#### ethana2 - <time datetime="2008-10-30 13:18:12">4 Oct, 2008</time>
+#### ethana2 - <time datetime="2008-10-30 13:18:12">30 Oct, 2008</time>
 
 Dude, Ubuntu 8.10 runs /on/ the PS3. Why not just play the .ogg files
 from there?
 
 ---
-#### Steve H - <time datetime="2008-10-30 14:34:35">4 Oct, 2008</time>
+#### Steve H - <time datetime="2008-10-30 14:34:35">30 Oct, 2008</time>
 
 Thanks for the howto. I\'ve been having trouble getting my ogg and flac
 files streaming to my PS3 and this helped.
@@ -118,7 +118,7 @@ link.
 http://mediatomb.cc/pages/documentation\#id2537759
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2008-10-30 15:32:36">4 Oct, 2008</time>
+#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2008-10-30 15:32:36">30 Oct, 2008</time>
 
 ethana2: I haven\'t installed Linux on my PS3 at this point, and don\'t
 really have the disk space. Perhaps if I replace the hard disk at some
@@ -130,7 +130,7 @@ that some of the features I mentioned already exist in MediaTomb, but
 thought I\'d mention the ones that I find useful.
 
 ---
-#### Zeeshan Ali - <time datetime="2008-10-30 17:20:39">4 Oct, 2008</time>
+#### Zeeshan Ali - <time datetime="2008-10-30 17:20:39">30 Oct, 2008</time>
 
 *Perhaps Zeeshan's media server will be worth trying out at some point.*
 
@@ -178,7 +178,7 @@ config file), but they aren't cached so are slow to appear.
 Wasn\'t on my TODO list but now it is. :)
 
 ---
-#### [Jakub Steiner](http://jimmac.musichall.cz/) - <time datetime="2008-10-30 17:37:47">4 Oct, 2008</time>
+#### [Jakub Steiner](http://jimmac.musichall.cz/) - <time datetime="2008-10-30 17:37:47">30 Oct, 2008</time>
 
 When I was setting up mine, I was really surprised how much work had to
 be done to get the basics working. Mediatomb does a lot, but not having
@@ -186,7 +186,7 @@ template config files for major consoles like ps3 and xbox makes it the
 typical \'Linux experience\'. :/
 
 ---
-#### [Chris Lord](http://chrislord.net/) - <time datetime="2008-10-30 17:43:28">4 Oct, 2008</time>
+#### [Chris Lord](http://chrislord.net/) - <time datetime="2008-10-30 17:43:28">30 Oct, 2008</time>
 
 Sounds like Zeeshan\'s server is the way to go, I look forward to it :)
 In the meantime though, I find Fuppes to be a pretty capable server that
@@ -195,13 +195,13 @@ works very well (although no seeking in transcoded media, though it can
 pause) - I\'ve not tried with the PS3 yet though.
 
 ---
-#### Wouter - <time datetime="2008-10-30 18:34:52">4 Oct, 2008</time>
+#### Wouter - <time datetime="2008-10-30 18:34:52">30 Oct, 2008</time>
 
 Would it be possible too to stream and transcode video files to the
 iphone?
 
 ---
-#### Zeeshan Ali - <time datetime="2008-10-30 22:46:41">4 Oct, 2008</time>
+#### Zeeshan Ali - <time datetime="2008-10-30 22:46:41">30 Oct, 2008</time>
 
 *Would it be possible too to stream and transcode video files to the
 iphone?*
@@ -210,7 +210,7 @@ Unfortunately, no. :( Apple doesn\'t do UPnP. However, it should be
 possible to port GUPnP (and a control point) to iPhone?
 
 ---
-#### [Frank Scholz](http://coherence.beebits.net) - <time datetime="2008-10-31 02:23:41">5 Oct, 2008</time>
+#### [Frank Scholz](http://coherence.beebits.net) - <time datetime="2008-10-31 02:23:41">31 Oct, 2008</time>
 
 despite
 
@@ -229,7 +229,7 @@ had that in a prototype once, and the video thumbnails\
 would be an easy addition.
 
 ---
-#### smuv - <time datetime="2008-11-12 10:00:57">3 Nov, 2008</time>
+#### smuv - <time datetime="2008-11-12 10:00:57">12 Nov, 2008</time>
 
 Thanks for the setup tips.. works like a charm!
 

@@ -96,7 +96,7 @@ these are the ones that I think would have the most noticeable effects.
 
 ---
 ### Comments:
-#### [xclaesse](http://blogs.gnome.org/xclaesse/) - <time datetime="2008-07-31 18:35:42">4 Jul, 2008</time>
+#### [xclaesse](http://blogs.gnome.org/xclaesse/) - <time datetime="2008-07-31 18:35:42">31 Jul, 2008</time>
 
 In my opinion DVCS gives the exact same workflow than VCS, you can just
 use the diff command of your tool and attach the patch on bugzilla. DVCS
@@ -110,7 +110,7 @@ and make the move without asking what the community wants because the
 community will never agree.
 
 ---
-#### Hal - <time datetime="2008-07-31 19:41:50">4 Jul, 2008</time>
+#### Hal - <time datetime="2008-07-31 19:41:50">31 Jul, 2008</time>
 
 CVS vs SVN vs DVCS is really a non-issue for me as a \"patch
 contributor\"\
@@ -132,13 +132,13 @@ a proprietary software developer nowadays ends with a proper release
 under and OSI license. Maybe catch you for a beer at the next LCA.
 
 ---
-#### [jldugger](http://jldugger.livejournal.com) - <time datetime="2008-08-01 01:31:16">5 Aug, 2008</time>
+#### [jldugger](http://jldugger.livejournal.com) - <time datetime="2008-08-01 01:31:16">1 Aug, 2008</time>
 
 The question is, do we have any evidence that the VCS Users group has
 any members outside \"core devel\"?
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2008-08-02 19:26:49">6 Aug, 2008</time>
+#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2008-08-02 19:26:49">2 Aug, 2008</time>
 
 xclaesse: I agree that almost any use of DVCS is a gain. The question is
 how much gain the various tools give, which I think would be worth
@@ -154,7 +154,7 @@ jldugger: I don\'t have any evidence, but I believe that it should be
 possible to gather such evidence (either for or against).
 
 ---
-#### Hal - <time datetime="2008-08-03 01:13:08">0 Aug, 2008</time>
+#### Hal - <time datetime="2008-08-03 01:13:08">3 Aug, 2008</time>
 
 James, I have better things to do than contribute patches when they will
 be totally ignored, regardless of whether they fix actual bugs for which

@@ -75,7 +75,7 @@ player if you insert a DVD Video disc).
 
 ---
 ### Comments:
-#### [Philip Langdale](http://intr.overt.org/blog) - <time datetime="2005-12-16 14:30:30">5 Dec, 2005</time>
+#### [Philip Langdale](http://intr.overt.org/blog) - <time datetime="2005-12-16 14:30:30">16 Dec, 2005</time>
 
 The problem I have with the current drive mount applet (and the reason
 it no longer graces my panel) is that it\'s all or nothing - you can\'t
@@ -87,13 +87,13 @@ ignore the other 3, and vertical items make a lot more sense for my
 panel dimensions.
 
 ---
-#### Luca De Rugeriis - <time datetime="2005-12-16 14:40:39">5 Dec, 2005</time>
+#### Luca De Rugeriis - <time datetime="2005-12-16 14:40:39">16 Dec, 2005</time>
 
 Same here: it would be nice if it was possible to hide some of the
 buttons.
 
 ---
-#### [Davyd](http://www.davyd.id.au/) - <time datetime="2005-12-16 15:52:08">5 Dec, 2005</time>
+#### [Davyd](http://www.davyd.id.au/) - <time datetime="2005-12-16 15:52:08">16 Dec, 2005</time>
 
 James, you have provided us with a most wonderful example of our
 wonderfulness.
@@ -106,7 +106,7 @@ have never been seen before always appear, and could then be hidden by
 the user.
 
 ---
-#### [Daniel Borgmann](http://dborg.wordpress.com) - <time datetime="2005-12-16 17:31:33">5 Dec, 2005</time>
+#### [Daniel Borgmann](http://dborg.wordpress.com) - <time datetime="2005-12-16 17:31:33">16 Dec, 2005</time>
 
 Exactly, there is a huge difference between features and options. In the
 ideal case, the only choice a user \_ever\_ has to make should be \"what
@@ -118,7 +118,7 @@ the same as functionality. Functionality means to me \"the ability to do
 something\", not \"a specific method to do something\".
 
 ---
-#### [Stephane Chauveau](http://www.chauveau-central.net) - <time datetime="2005-12-16 18:49:42">5 Dec, 2005</time>
+#### [Stephane Chauveau](http://www.chauveau-central.net) - <time datetime="2005-12-16 18:49:42">16 Dec, 2005</time>
 
 I agree with the problem of having too many devices. The first thing to
 do would be insure that their order is somewhat predictable.
@@ -132,7 +132,7 @@ with the values \"always\", \"when-mountable\"\
 , \"when-mounted\" or \"never\"
 
 ---
-#### [Murray Cumming](http://www.murrayc.com) - <time datetime="2005-12-16 19:11:38">5 Dec, 2005</time>
+#### [Murray Cumming](http://www.murrayc.com) - <time datetime="2005-12-16 19:11:38">16 Dec, 2005</time>
 
 \> I only use 1 of the 4 flash slots, so I\'d rather ignore the other 3
 
@@ -141,7 +141,7 @@ couldn\'t be mounted, such as card slots with no cards in them? You
 don\'t want to see them because there\'s nothing you could do with them.
 
 ---
-#### [Ralph Wabel](http://ralph-wabel.net) - <time datetime="2005-12-16 19:42:12">5 Dec, 2005</time>
+#### [Ralph Wabel](http://ralph-wabel.net) - <time datetime="2005-12-16 19:42:12">16 Dec, 2005</time>
 
 it would be enough if people can select which drives he wants to display
 on the panel. Some people only want their cd/dvd drives, but the rest
@@ -149,7 +149,7 @@ they don\'t care about. I really hope such a highly requested feature
 will be implemented!
 
 ---
-#### Tomas Frydrych - <time datetime="2005-12-17 07:36:12">6 Dec, 2005</time>
+#### Tomas Frydrych - <time datetime="2005-12-17 07:36:12">17 Dec, 2005</time>
 
 Except \#4 is broken (see
 <http://bugs.gnome.org/show_bug.cgi?id=319208>), and without a
@@ -157,7 +157,7 @@ preference to turn this \'smart\' behaviour off you are stuck with
 broken and rather irritating behaviour.
 
 ---
-#### bu - <time datetime="2005-12-17 08:37:32">6 Dec, 2005</time>
+#### bu - <time datetime="2005-12-17 08:37:32">17 Dec, 2005</time>
 
 <http://gnomesupport.org/forums/viewtopic.php?t=8384&start=15>
 

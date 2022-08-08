@@ -25,7 +25,7 @@ starts heating up again once you swallow.
 
 ---
 ### Comments:
-#### [Rob Bradford](http://www.robster.org.uk/blog/) - <time datetime="2008-04-10 20:58:33">4 Apr, 2008</time>
+#### [Rob Bradford](http://www.robster.org.uk/blog/) - <time datetime="2008-04-10 20:58:33">10 Apr, 2008</time>
 
 Wow. Chilli beer does sound great. One of my favourite beers is
 [Badger](http://www.badgerdirect.com/) [Blandford
@@ -34,7 +34,7 @@ beer flavoured with ginger. The taste is so powerful it\'s difficult to
 consume a whole bottle but it\'s great to share.
 
 ---
-#### Sebastian Bengtsson - <time datetime="2008-04-10 21:43:11">4 Apr, 2008</time>
+#### Sebastian Bengtsson - <time datetime="2008-04-10 21:43:11">10 Apr, 2008</time>
 
 Well, honey can make really great imperial stouts. Check out this one:\
 http://www.ratebeer.com/beer/n%C3%A4rke-kaggen-stormaktsporter/58057/\
@@ -42,13 +42,13 @@ Amazing flavour. It is a very small bottle but I would suggest sharing
 it with one or more persons.
 
 ---
-#### Peter - <time datetime="2008-04-11 02:08:39">5 Apr, 2008</time>
+#### Peter - <time datetime="2008-04-11 02:08:39">11 Apr, 2008</time>
 
 The Sail and Anchor in Fremantle has done a chilli beer as a summer
 feature on a couple of occasions before.
 
 ---
-#### [jsled](http://asynchronous.org/jsled/) - <time datetime="2008-04-11 05:36:39">5 Apr, 2008</time>
+#### [jsled](http://asynchronous.org/jsled/) - <time datetime="2008-04-11 05:36:39">11 Apr, 2008</time>
 
 Check out Rogue\'s Chipotle Ale ...
 http://beeradvocate.com/beer/profile/132/354
@@ -56,7 +56,7 @@ http://beeradvocate.com/beer/profile/132/354
 Mix it with their Chocolate Stout to make \"the mole\". ;)
 
 ---
-#### [Jason](http://longstride.wordpress.com/) - <time datetime="2008-04-11 07:35:45">5 Apr, 2008</time>
+#### [Jason](http://longstride.wordpress.com/) - <time datetime="2008-04-11 07:35:45">11 Apr, 2008</time>
 
 That honey bock sounds great!
 
@@ -64,7 +64,7 @@ Here\'s a chili beer that I\'ve enjoyed:
 http://www.chilibeer.com/index2.htm (music on site)
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2008-04-11 09:38:27">5 Apr, 2008</time>
+#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2008-04-11 09:38:27">11 Apr, 2008</time>
 
 Rob: Sounds nice. I think the last ginger flavoured beer I had was
 Speight\'s Samradh Ale from Dunedin NZ. Maybe I\'ll try and find some

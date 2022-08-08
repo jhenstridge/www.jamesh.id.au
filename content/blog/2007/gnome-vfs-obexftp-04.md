@@ -68,13 +68,13 @@ brands other than than Nokia or Sony to see what info they provide.
 
 ---
 ### Comments:
-#### [Lasse Bigum](http://www.zenith.dk) - <time datetime="2007-06-19 16:13:36">2 Jun, 2007</time>
+#### [Lasse Bigum](http://www.zenith.dk) - <time datetime="2007-06-19 16:13:36">19 Jun, 2007</time>
 
 I have a Motorola RAZR V3 that I will try to remember to get the data
 from when I get the time.
 
 ---
-#### [Mikko Ohtamaa](http://www.redinnovation.com) - <time datetime="2007-06-20 23:26:17">3 Jun, 2007</time>
+#### [Mikko Ohtamaa](http://www.redinnovation.com) - <time datetime="2007-06-20 23:26:17">20 Jun, 2007</time>
 
 Obexftp does not work with my Nokia E70 phone very well. Version 0.2 was
 able to open the phone in Nautilus, but looks like version 0.4 doesn\'t
@@ -88,13 +88,13 @@ I think I can trace down the issue if you can provide me some hints how
 to start.
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2007-06-21 09:26:45">4 Jun, 2007</time>
+#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2007-06-21 09:26:45">21 Jun, 2007</time>
 
 Mikko: please file a bug, and I\'ll walk you through a few things you
 could do to help identify the problem.
 
 ---
-#### Joel - <time datetime="2007-06-24 20:09:21">0 Jun, 2007</time>
+#### Joel - <time datetime="2007-06-24 20:09:21">24 Jun, 2007</time>
 
 Hello,
 

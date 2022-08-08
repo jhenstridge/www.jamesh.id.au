@@ -15,7 +15,7 @@ Last year\'s ad seems to still be available
 
 ---
 ### Comments:
-#### Martin Sevior - <time datetime="2006-01-17 08:29:09">2 Jan, 2006</time>
+#### Martin Sevior - <time datetime="2006-01-17 08:29:09">17 Jan, 2006</time>
 
 Excellent James! Very funny :-)
 
@@ -24,7 +24,7 @@ Cheers
 Martin\
 
 ---
-#### Richard Kleeman - <time datetime="2006-01-19 01:46:29">4 Jan, 2006</time>
+#### Richard Kleeman - <time datetime="2006-01-19 01:46:29">19 Jan, 2006</time>
 
 Bloody ripper Jim!
 

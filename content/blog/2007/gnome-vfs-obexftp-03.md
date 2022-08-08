@@ -31,7 +31,7 @@ Any bug reports should be filed in Launchpad at:
 
 ---
 ### Comments:
-#### cruiseoveride - <time datetime="2007-06-16 10:59:49">6 Jun, 2007</time>
+#### cruiseoveride - <time datetime="2007-06-16 10:59:49">16 Jun, 2007</time>
 
 I needed a really quick and simple solution to obexftp, so in 3hrs i
 wrote my own bash like program that simply parses the xml output from
@@ -44,7 +44,7 @@ I dont know much about gnome-vfs or obex, but i can write any boiler
 plate code you need.
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2007-06-16 19:15:27">6 Jun, 2007</time>
+#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2007-06-16 19:15:27">16 Jun, 2007</time>
 
 cruiseoveride: I\'ve filed a bug to track the USB feature as [bug
 119801](https://bugs.launchpad.net/bugs/119801). I haven\'t managed to
@@ -56,7 +56,7 @@ data HAL discovers?), and how to establish the connection, that could be
 useful.
 
 ---
-#### cruiseoveride - <time datetime="2007-06-17 00:18:30">0 Jun, 2007</time>
+#### cruiseoveride - <time datetime="2007-06-17 00:18:30">17 Jun, 2007</time>
 
 OK, i just downloaded the obexftp source, let me see the \"happy path\"
 it takes when i connect over usb, and i\'ll give you what i find.
@@ -65,7 +65,7 @@ I\'m also thinking of intergrating my prompt into obexftp itself, so to
 make it a proper \"ftp\" client :)
 
 ---
-#### cruiseoveride - <time datetime="2007-06-17 00:52:29">0 Jun, 2007</time>
+#### cruiseoveride - <time datetime="2007-06-17 00:52:29">17 Jun, 2007</time>
 
 Stepping through a \"sudo ./obexftp -u 1 -c \'/C:/Data\' -l\" with ddd,
 reveals a few interesting things

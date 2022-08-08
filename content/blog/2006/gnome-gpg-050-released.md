@@ -36,7 +36,7 @@ I\'ve updated to compile with the latest `libsoup`.
 
 ---
 ### Comments:
-#### Ross Burton - <time datetime="2006-09-04 18:28:01">1 Sep, 2006</time>
+#### Ross Burton - <time datetime="2006-09-04 18:28:01">4 Sep, 2006</time>
 
 This is very cool, but I think the README should document how to switch
 applications over to gnome-gpg. For example, I\'d love to use it with:
@@ -45,7 +45,7 @@ applications over to gnome-gpg. For example, I\'d love to use it with:
 \* Evolution\
 
 ---
-#### Ross - <time datetime="2006-09-04 18:44:57">1 Sep, 2006</time>
+#### Ross - <time datetime="2006-09-04 18:44:57">4 Sep, 2006</time>
 
 For reference, the bzr-ng incantation is:
 

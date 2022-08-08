@@ -68,7 +68,7 @@ Some things you might want to do:
 
 ---
 ### Comments:
-####  - <time datetime="2005-07-09 01:56:47">6 Jul, 2005</time>
+####  - <time datetime="2005-07-09 01:56:47">9 Jul, 2005</time>
 
 Reverse the order of those last two revlib commands:\
 baz my-revision-library \~/.arch-revlib\

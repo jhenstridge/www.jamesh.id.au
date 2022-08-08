@@ -87,7 +87,7 @@ revision.
 
 ---
 ### Comments:
-#### [OpenID](http://vanirsystems.com/danielsblog/2007/12/11/openid/) - <time datetime="2007-12-12 02:54:51">3 Dec, 2007</time>
+#### [OpenID](http://vanirsystems.com/danielsblog/2007/12/11/openid/) - <time datetime="2007-12-12 02:54:51">12 Dec, 2007</time>
 
 \[\...\] James Henstridge gives an in depth account of the differences
 in his blog post titled "OpenID 2.0", with some additional information
@@ -95,7 +95,7 @@ in his more recent post titled "OpenID 2.0 Specification Approved".
 \[\...\]
 
 ---
-#### [PROGRAMAS LIVRES &raquo; OpenID 2.0 aprovado](http://www.programaslivres.net/2007/12/14/openid-20-aprovado/) - <time datetime="2007-12-15 05:20:25">6 Dec, 2007</time>
+#### [PROGRAMAS LIVRES &raquo; OpenID 2.0 aprovado](http://www.programaslivres.net/2007/12/14/openid-20-aprovado/) - <time datetime="2007-12-15 05:20:25">15 Dec, 2007</time>
 
 \[\...\] aprovadas as especificações do OpenID \[\...\]
 

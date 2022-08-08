@@ -16,7 +16,7 @@ Bugzilla and bugs in `universe` go in Malone).
 
 ---
 ### Comments:
-#### Keshav - <time datetime="2006-01-17 16:50:22">2 Jan, 2006</time>
+#### Keshav - <time datetime="2006-01-17 16:50:22">17 Jan, 2006</time>
 
 Hiiii,
 

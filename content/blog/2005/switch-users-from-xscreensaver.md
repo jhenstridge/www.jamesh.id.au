@@ -18,7 +18,7 @@ though, giving you a list of sessions you can switch to.
 
 ---
 ### Comments:
-#### [Mike](http://mike.polycat.net) - <time datetime="2005-12-05 23:00:12">1 Dec, 2005</time>
+#### [Mike](http://mike.polycat.net) - <time datetime="2005-12-05 23:00:12">5 Dec, 2005</time>
 
 Although it doesn\'t list sessions that are currently logged in, if you
 try to log in again with GDM, it brings up a prompt asking you if you
@@ -27,7 +27,7 @@ perhaps not as convenient as allowing you to see which users are logged
 in, you don\'t have to just guess the correct Fn key to press.
 
 ---
-#### Craig Ringer - <time datetime="2005-12-06 00:25:51">2 Dec, 2005</time>
+#### Craig Ringer - <time datetime="2005-12-06 00:25:51">6 Dec, 2005</time>
 
 For starting a new session from an existing one, you can always just
 make a launcher for gdmflexiserver. Fedora Core 4 has a precreated one
@@ -35,7 +35,7 @@ in Applications-\>System Tools-\>New Login in the GNOME menus; I don\'t
 know about Ubuntu.
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh) - <time datetime="2005-12-06 02:11:59">2 Dec, 2005</time>
+#### [James Henstridge](http://blogs.gnome.org/jamesh) - <time datetime="2005-12-06 02:11:59">6 Dec, 2005</time>
 
 Craig: I\'m aware that there is a menu item to run gdmflexiserver (jvic
 mentioned it too in the post this one replies to).
@@ -45,19 +45,19 @@ else has logged into and locked the screen on. This is where the
 \"switch users\" button comes in handy.
 
 ---
-####  - <time datetime="2005-12-06 06:16:20">2 Dec, 2005</time>
+####  - <time datetime="2005-12-06 06:16:20">6 Dec, 2005</time>
 
 I\'m fairly sure only gnome-screensaver has this switch user button, not
 XScreensaver. Or did Ubuntu patch XScreensaver?
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh) - <time datetime="2005-12-06 12:54:30">2 Dec, 2005</time>
+#### [James Henstridge](http://blogs.gnome.org/jamesh) - <time datetime="2005-12-06 12:54:30">6 Dec, 2005</time>
 
 anonymous: the feature has existed in xscreensaver since about March. It
 may not be turned on by default though.
 
 ---
-#### Andre - <time datetime="2005-12-11 02:29:14">0 Dec, 2005</time>
+#### Andre - <time datetime="2005-12-11 02:29:14">11 Dec, 2005</time>
 
 How can one activate this feature?\
 What does one need to configure?

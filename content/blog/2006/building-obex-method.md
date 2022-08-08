@@ -41,7 +41,7 @@ make it easier to show the device names to the user and get nice icons.
 
 ---
 ### Comments:
-#### pel - <time datetime="2006-10-21 21:41:03">6 Oct, 2006</time>
+#### pel - <time datetime="2006-10-21 21:41:03">21 Oct, 2006</time>
 
 Wow.\
 This is seriously wonderfull!
@@ -49,7 +49,7 @@ This is seriously wonderfull!
 Now I\'ll have to install edgy on a machine this weekend :)
 
 ---
-#### Johan Hedberg - <time datetime="2006-10-22 00:10:50">0 Oct, 2006</time>
+#### Johan Hedberg - <time datetime="2006-10-22 00:10:50">22 Oct, 2006</time>
 
 I took a look at the code and it looks good. One thing however:
 
@@ -65,7 +65,7 @@ limited in features on these phones while the other one supports full
 OBEX FTP (don\'t ask me why).\
 
 ---
-#### Wout - <time datetime="2006-10-23 23:17:11">1 Oct, 2006</time>
+#### Wout - <time datetime="2006-10-23 23:17:11">23 Oct, 2006</time>
 
 Thank you man. You\'re awsome\.... I\'ve installed the software
 succesfully and everything works. Great\.....
@@ -77,7 +77,7 @@ blog\.... )\
 GReat great great\....
 
 ---
-#### [Andrew Jorgensen](http://andrew.jorgensenfamily.us) - <time datetime="2006-10-24 07:53:10">2 Oct, 2006</time>
+#### [Andrew Jorgensen](http://andrew.jorgensenfamily.us) - <time datetime="2006-10-24 07:53:10">24 Oct, 2006</time>
 
 Thanks! This is awesome. I\'ve been thinking for some time now, though,
 that OBEX != bluetooth.
@@ -92,13 +92,13 @@ supported at all, probably doesn\'t need to be discoverable (unless of
 course it\'s advertised through mDNS).
 
 ---
-#### [Alex Kanavin](http://www.sensi.org/~ak/openobex-usb/) - <time datetime="2006-10-24 21:46:08">2 Oct, 2006</time>
+#### [Alex Kanavin](http://www.sensi.org/~ak/openobex-usb/) - <time datetime="2006-10-24 21:46:08">24 Oct, 2006</time>
 
 USB should use a different approach: mount it as a filesystem through
 FUSE/obexfs. I\'ll check out how it all works
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh) - <time datetime="2006-10-25 16:30:09">3 Oct, 2006</time>
+#### [James Henstridge](http://blogs.gnome.org/jamesh) - <time datetime="2006-10-25 16:30:09">25 Oct, 2006</time>
 
 Wout: yeah. I implemented that a bit after posting this article.
 
@@ -109,7 +109,7 @@ should be possible to support both: the only bluetooth specific code is
 for listing the paired devices and creating RFCOMM connections.
 
 ---
-#### clp - <time datetime="2006-10-26 00:36:35">4 Oct, 2006</time>
+#### clp - <time datetime="2006-10-26 00:36:35">26 Oct, 2006</time>
 
 I get this message in nautilus\...
 
@@ -123,7 +123,7 @@ How do I enable the gnome-vfs-2.0 modules?
 Salu2 clp ;)
 
 ---
-#### [Andrew Jorgensen](http://andrew.jorgensenfamily.us/) - <time datetime="2006-10-26 02:30:01">4 Oct, 2006</time>
+#### [Andrew Jorgensen](http://andrew.jorgensenfamily.us/) - <time datetime="2006-10-26 02:30:01">26 Oct, 2006</time>
 
 clp: I had the same problem at first. Trouble was that by default things
 get installed in /usr/local. Try the following:
@@ -131,7 +131,7 @@ get installed in /usr/local. Try the following:
 ./configure \--sysconfdir=/etc \--prefix=/usr
 
 ---
-#### clp - <time datetime="2006-10-26 17:24:59">4 Oct, 2006</time>
+#### clp - <time datetime="2006-10-26 17:24:59">26 Oct, 2006</time>
 
 A lot of thanks, Andrew!
 
@@ -140,7 +140,7 @@ A lot of thanks, Andrew!
 It\'s a great job!
 
 ---
-#### clp - <time datetime="2006-10-30 05:47:50">1 Oct, 2006</time>
+#### clp - <time datetime="2006-10-30 05:47:50">30 Oct, 2006</time>
 
 In amd64 architecture I get this problem in oss-gwobex compilation:
 
@@ -153,7 +153,7 @@ autoreconf2.50: /usr/bin/autoconf failed with exit status: 1
 Salu2 clp ;)
 
 ---
-#### Onkar Shinde - <time datetime="2006-11-07 06:07:07">2 Nov, 2006</time>
+#### Onkar Shinde - <time datetime="2006-11-07 06:07:07">7 Nov, 2006</time>
 
 Works really well. I could see name of my phone and a pretty icon. Did
 file transfers in both directions without problem.
@@ -167,7 +167,7 @@ Please note that I have not even looked into code. So pardon if my
 questions are redundant.
 
 ---
-#### Hans - <time datetime="2006-11-12 13:24:43">0 Nov, 2006</time>
+#### Hans - <time datetime="2006-11-12 13:24:43">12 Nov, 2006</time>
 
 I followed the instructions above. And obex method works fine until i
 try to transfer a file to the bluetooth device (sony ericsson K750i).
@@ -178,7 +178,7 @@ receiver (I know theres about 1Gb free, Nautilus says 0byes free).
 Someone know how to fix this?
 
 ---
-#### Onkar Shinde - <time datetime="2006-11-18 10:55:12">6 Nov, 2006</time>
+#### Onkar Shinde - <time datetime="2006-11-18 10:55:12">18 Nov, 2006</time>
 
 For those who are interested, packages are available for edgy, i386.
 Check Edgy+1 section of <https://wiki.ubuntu.com/Bluetooth/TODO>

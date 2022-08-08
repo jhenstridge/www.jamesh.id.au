@@ -36,7 +36,7 @@ improve further with time.
 
 ---
 ### Comments:
-#### [Michael R. Head](http://beer.subfire.org) - <time datetime="2006-12-12 12:34:50">2 Dec, 2006</time>
+#### [Michael R. Head](http://beer.subfire.org) - <time datetime="2006-12-12 12:34:50">12 Dec, 2006</time>
 
 I got into some brewing a while back, but stopped after I messed up a
 couple batches (mostly documented at <http://beer.subfire.org>).
@@ -45,7 +45,7 @@ Anyway, your recipe sounds interesting\... I may have to get back into
 the craft.
 
 ---
-#### [Simon Rumble](http://www.rumble.net/) - <time datetime="2006-12-12 14:21:34">2 Dec, 2006</time>
+#### [Simon Rumble](http://www.rumble.net/) - <time datetime="2006-12-12 14:21:34">12 Dec, 2006</time>
 
 Yummy that sounds good. I\'ve made chilli beer before but I think
 you\'ve just reminded me and encouraged me to have another go at it.
@@ -54,12 +54,12 @@ The way I\'ve done it is to just shove scored, lightly steamed whole
 chillis in the bottles, but I like your approach.
 
 ---
-#### [Davyd](http://www.davyd.id.au/) - <time datetime="2006-12-12 14:28:47">2 Dec, 2006</time>
+#### [Davyd](http://www.davyd.id.au/) - <time datetime="2006-12-12 14:28:47">12 Dec, 2006</time>
 
 Do you keep your Chilli-beers in your Chilli-bin?
 
 ---
-#### [mako](http://mako.cc) - <time datetime="2006-12-13 07:12:12">3 Dec, 2006</time>
+#### [mako](http://mako.cc) - <time datetime="2006-12-13 07:12:12">13 Dec, 2006</time>
 
 I know a cheesecake this might go well with:
 

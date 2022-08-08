@@ -170,7 +170,7 @@ tracking history.
 
 ---
 ### Comments:
-#### Alexander Larsson - <time datetime="2005-05-24 18:07:35">2 May, 2005</time>
+#### Alexander Larsson - <time datetime="2005-05-24 18:07:35">24 May, 2005</time>
 
 There are some problems with the form of three way merges you describe.
 Take a look at this thread from the monotone list:
@@ -181,7 +181,7 @@ Apparently there can be cases where its impossible to pick an ancestor
 so that the three-way merge doesn\'t silently corrupt code.\
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh) - <time datetime="2005-05-25 13:32:36">3 May, 2005</time>
+#### [James Henstridge](http://blogs.gnome.org/jamesh) - <time datetime="2005-05-25 13:32:36">25 May, 2005</time>
 
 As Arch uses persistent identifiers for files, it would be able to
 detect the problems mentioned in that mailing list post, and treat them
@@ -198,7 +198,7 @@ of some warts that are required for compatibility with the Arch
 protocol).
 
 ---
-#### H Duerer - <time datetime="2005-06-13 23:23:54">1 Jun, 2005</time>
+#### H Duerer - <time datetime="2005-06-13 23:23:54">13 Jun, 2005</time>
 
 I thought the real question was not whether to use Arch or Subversion
 but rather Arch or Darcs (or \... ).

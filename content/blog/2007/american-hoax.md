@@ -24,7 +24,7 @@ released outside of Australia yet, but is available from
 
 ---
 ### Comments:
-#### michael - <time datetime="2007-01-10 05:27:20">3 Jan, 2007</time>
+#### michael - <time datetime="2007-01-10 05:27:20">10 Jan, 2007</time>
 
 I went to the book webpage to see what possible connection this book
 could have regarding anything that I would want to know about Ubuntu. Of
@@ -40,7 +40,7 @@ Anyways, I don\'t read the planet Ubuntu pages to be insulted or made
 fun of. If you have so little to post, perhaps you shouldn\'t.
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh) - <time datetime="2007-01-10 13:22:45">3 Jan, 2007</time>
+#### [James Henstridge](http://blogs.gnome.org/jamesh) - <time datetime="2007-01-10 13:22:45">10 Jan, 2007</time>
 
 Michael: First of all, the Planet Ubuntu page says it is \"a window into
 the world, work and lives of Ubuntu developers and contributors.\" Given
@@ -57,7 +57,7 @@ differences between how the conservative and progressive movements
 appear to work.
 
 ---
-#### michael - <time datetime="2007-01-10 23:46:23">3 Jan, 2007</time>
+#### michael - <time datetime="2007-01-10 23:46:23">10 Jan, 2007</time>
 
 James,
 

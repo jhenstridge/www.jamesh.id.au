@@ -19,13 +19,13 @@ airing.
 
 ---
 ### Comments:
-#### [Pia Waugh](http://pipka.org/) - <time datetime="2008-08-16 15:57:43">6 Aug, 2008</time>
+#### [Pia Waugh](http://pipka.org/) - <time datetime="2008-08-16 15:57:43">16 Aug, 2008</time>
 
 I was so excited when I heard they were doing a second series, but
 fairly disappointed with the first episode. I hope it gets better :)
 
 ---
-#### Morpheus - <time datetime="2008-08-20 23:26:17">3 Aug, 2008</time>
+#### Morpheus - <time datetime="2008-08-20 23:26:17">20 Aug, 2008</time>
 
 Is any of Double the Fist free to modify and redistribute, or are they
 all proprietary stuff you are advertising?

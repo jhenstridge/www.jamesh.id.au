@@ -50,7 +50,7 @@ accurately.
 
 ---
 ### Comments:
-#### [Colin Walters](http://cgwalters.livejournal.com) - <time datetime="2007-06-01 00:09:31">5 Jun, 2007</time>
+#### [Colin Walters](http://cgwalters.livejournal.com) - <time datetime="2007-06-01 00:09:31">1 Jun, 2007</time>
 
 The first word in the title here is redundant =)
 

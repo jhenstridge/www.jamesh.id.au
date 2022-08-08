@@ -33,14 +33,14 @@ The code works roughly as follows:
 
 ---
 ### Comments:
-#### [Ralph](http://ralph-wabel.net) - <time datetime="2005-09-22 03:12:32">4 Sep, 2005</time>
+#### [Ralph](http://ralph-wabel.net) - <time datetime="2005-09-22 03:12:32">22 Sep, 2005</time>
 
 Nice stuff, how about implementing that to the ubuntu WorldWide section.
 It would make it much more fun. The german site ubuntuusers has it
 already: <http://www.ubuntuusers.de/map.php>
 
 ---
-#### fatal - <time datetime="2005-09-22 21:50:09">4 Sep, 2005</time>
+#### fatal - <time datetime="2005-09-22 21:50:09">22 Sep, 2005</time>
 
 Found a bug:
 
@@ -51,14 +51,14 @@ China (as far as I know) is not located in northern Sweden (next to the
 Finnish border). :)
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh) - <time datetime="2005-09-23 13:21:12">5 Sep, 2005</time>
+#### [James Henstridge](http://blogs.gnome.org/jamesh) - <time datetime="2005-09-23 13:21:12">23 Sep, 2005</time>
 
 My code doesn\'t attempt to correct invalid data. It looks like that
 person entered his details incorrectly on the wiki page (switching
 latitude and longitude by the looks of it).
 
 ---
-#### [antrix](http://www.antrix.net/) - <time datetime="2005-10-04 13:34:46">2 Oct, 2005</time>
+#### [antrix](http://www.antrix.net/) - <time datetime="2005-10-04 13:34:46">4 Oct, 2005</time>
 
 Well.. I made a map of my friends and sent out a link to all of them
 only to have them point out that the map doesn\'t work in Internet
@@ -68,7 +68,7 @@ Now I don\'t even know Javascript, leave alone browser specific js.. any
 idea what\'s going wrong?
 
 ---
-#### [xerxas](http://xerxas@gmail.com) - <time datetime="2005-11-08 05:33:21">2 Nov, 2005</time>
+#### [xerxas](http://xerxas@gmail.com) - <time datetime="2005-11-08 05:33:21">8 Nov, 2005</time>
 
 Something new on the IE issue ?
 

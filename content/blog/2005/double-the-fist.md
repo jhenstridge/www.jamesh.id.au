@@ -18,7 +18,7 @@ part way through when it was shown last.
 
 ---
 ### Comments:
-#### [David](http://www.demasijones.com) - <time datetime="2005-12-16 17:55:15">5 Dec, 2005</time>
+#### [David](http://www.demasijones.com) - <time datetime="2005-12-16 17:55:15">16 Dec, 2005</time>
 
 I had never seen this show before stumbling across it last night -
 myself and my son were rolling on the floor in stiches. according to the
@@ -26,7 +26,7 @@ website next weeks episode is a filler rather than the planned episode.
 ?
 
 ---
-####  - <time datetime="2005-12-18 13:12:29">0 Dec, 2005</time>
+####  - <time datetime="2005-12-18 13:12:29">18 Dec, 2005</time>
 
 Mephisto Knows \...
 
@@ -39,14 +39,14 @@ you can\'t be bothered. If it\'s any incentive, the HD decoders get you
 the ABC without the bloody watermark.
 
 ---
-####  - <time datetime="2006-01-20 05:07:41">5 Jan, 2006</time>
+####  - <time datetime="2006-01-20 05:07:41">20 Jan, 2006</time>
 
 Decoders are for the WEAK, and nobody actually buys them.. but this is
 the greatest show ever, they should give it more funding and move it to
 prime time, it seems like noone has even heard of it.. it is a sad world
 
 ---
-####  - <time datetime="2006-01-27 00:54:46">5 Jan, 2006</time>
+####  - <time datetime="2006-01-27 00:54:46">27 Jan, 2006</time>
 
 yeah, this show really deserves more publicity\....fuckn\' hilarious!
 wish i\'d found it sooner
@@ -54,7 +54,7 @@ wish i\'d found it sooner
 the guy two posts before me, you\'re a fuckwit
 
 ---
-#### Peter - <time datetime="2006-01-27 02:50:51">5 Jan, 2006</time>
+#### Peter - <time datetime="2006-01-27 02:50:51">27 Jan, 2006</time>
 
 I agree decoders are weak. If you don\'t live in an area where you can
 watch TV then you probably married your cousin and your children have

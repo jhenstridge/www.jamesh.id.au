@@ -31,13 +31,13 @@ better with the bugs entered directly into Launchpad.
 
 ---
 ### Comments:
-#### [Rudd-O](http://rudd-o.com/) - <time datetime="2006-09-05 14:33:07">2 Sep, 2006</time>
+#### [Rudd-O](http://rudd-o.com/) - <time datetime="2006-09-05 14:33:07">5 Sep, 2006</time>
 
 Wasn\'t it easier to perform a topological sort before doing the import?
 A bit of Python grease would have done it ;-)
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh) - <time datetime="2006-09-05 17:46:35">2 Sep, 2006</time>
+#### [James Henstridge](http://blogs.gnome.org/jamesh) - <time datetime="2006-09-05 17:46:35">5 Sep, 2006</time>
 
 Rudd-O: That wouldn\'t be possible with a one-bug-at-a-time conversion.
 Consider the following chain of events:

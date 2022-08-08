@@ -42,14 +42,14 @@ access via IMAP.
 
 ---
 ### Comments:
-#### [Jeremy](http://jeremy.visser.name/) - <time datetime="2009-01-16 19:50:18">5 Jan, 2009</time>
+#### [Jeremy](http://jeremy.visser.name/) - <time datetime="2009-01-16 19:50:18">16 Jan, 2009</time>
 
 I haven\'t used `bzr send` yet, but I gather that it doesn\'t use
 `sendmail` to send the mail. That would seem the logical choice, as you
 could then configure your MTA to send via Gmail\'s SMTP server.
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2009-01-16 20:59:20">5 Jan, 2009</time>
+#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2009-01-16 20:59:20">16 Jan, 2009</time>
 
 Bazaar does have support for sending to an SMTP server, and that is what
 the first solution on the wiki page I linked to describes.
@@ -61,7 +61,7 @@ plugin I wrote isn\'t obviously superior to those solutions, but it does
 have some benefits.
 
 ---
-#### LaserJock - <time datetime="2009-01-18 01:53:48">0 Jan, 2009</time>
+#### LaserJock - <time datetime="2009-01-18 01:53:48">18 Jan, 2009</time>
 
 Thanks for this James, I like it much better than a \"send via Gmail
 SMTP\" route. I really like the idea of it showing up as a draft in my
@@ -69,14 +69,14 @@ Gmail. In fact, I\'d love to get reportbug to do the same thing so I
 could do similar when reporting Debian bugs.
 
 ---
-#### [Chris Conway](http://procrastiblog.com/) - <time datetime="2009-01-18 02:35:48">0 Jan, 2009</time>
+#### [Chris Conway](http://procrastiblog.com/) - <time datetime="2009-01-18 02:35:48">18 Jan, 2009</time>
 
 Thanks! I beat my head against to wall trying to figure this out a while
 ago and finally gave up when I figured out you can\'t make an attachment
 through the GMail \"API\"\...
 
 ---
-#### [Tom Berger](http://intellectronica.net/) - <time datetime="2009-02-11 02:45:03">3 Feb, 2009</time>
+#### [Tom Berger](http://intellectronica.net/) - <time datetime="2009-02-11 02:45:03">11 Feb, 2009</time>
 
 Fantastic!
 

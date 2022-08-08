@@ -32,13 +32,13 @@ Valgrind is available.
 
 ---
 ### Comments:
-#### [Jelmer Vernooij](http://samba.org/~jelmer/) - <time datetime="2008-03-26 23:47:54">3 Mar, 2008</time>
+#### [Jelmer Vernooij](http://samba.org/~jelmer/) - <time datetime="2008-03-26 23:47:54">26 Mar, 2008</time>
 
 Thanks for this! I can\'t remember how many times I\'ve run valgrind on
 python only to find out I forgot to supply the suppressions file.
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2008-03-27 13:43:16">4 Mar, 2008</time>
+#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2008-03-27 13:43:16">27 Mar, 2008</time>
 
 Note that even with the suppressions file in effect, Valgrind will miss
 many leaks if pymalloc is active. The only difference is that you won\'t

@@ -84,14 +84,14 @@ sense to modify intltool as follows:
 
 ---
 ### Comments:
-#### jonner - <time datetime="2006-04-12 21:44:50">3 Apr, 2006</time>
+#### jonner - <time datetime="2006-04-12 21:44:50">12 Apr, 2006</time>
 
 Wait, is this different from dobey\'s desktop-devel post where he says
 all you need to do is use intltool from cvs and then remove ALL\_LINGUAS
 from configure.ac and add po/LINGUAS?
 
 ---
-#### al_shopov - <time datetime="2006-04-12 22:07:15">3 Apr, 2006</time>
+#### al_shopov - <time datetime="2006-04-12 22:07:15">12 Apr, 2006</time>
 
 Hi James,\
 Could you please post some more information about the whole

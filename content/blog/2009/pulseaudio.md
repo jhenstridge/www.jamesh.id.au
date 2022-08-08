@@ -50,7 +50,7 @@ channel mixers for the center and LFE channels.
 
 ---
 ### Comments:
-#### Jackflap - <time datetime="2009-02-25 23:42:58">3 Feb, 2009</time>
+#### Jackflap - <time datetime="2009-02-25 23:42:58">25 Feb, 2009</time>
 
 Well, I\'ve come across a couple of bugs where sound intermittently
 disappears when using PA, but setting to ALSA fixed those.
@@ -63,7 +63,7 @@ system here we come!
 Haven\'t tested yet tho, so it may be a pipe-dream :)
 
 ---
-#### Rob J. Caskey - <time datetime="2009-02-25 23:47:40">3 Feb, 2009</time>
+#### Rob J. Caskey - <time datetime="2009-02-25 23:47:40">25 Feb, 2009</time>
 
 I too use PA and am happy with it but I would like to note that \"edit
 the /etc/pulse/daemon.conf file and set default-sample-channels to 6\"
@@ -71,7 +71,7 @@ is considered special effort and not automatic by 99.99% of people on
 the earth, all of which would not be able to do it.
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2009-02-26 00:16:55">4 Feb, 2009</time>
+#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2009-02-26 00:16:55">26 Feb, 2009</time>
 
 Rob: right. I think a GUI would help a lot here.
 
@@ -82,7 +82,7 @@ connected. If it was possible to automatically configure, the Windows
 drivers wouldn\'t ask you how many speakers you had.
 
 ---
-#### Achim Frase - <time datetime="2009-02-26 00:40:56">4 Feb, 2009</time>
+#### Achim Frase - <time datetime="2009-02-26 00:40:56">26 Feb, 2009</time>
 
 I just would like to note, that you will be able to reconfigure your
 speaker setup without edition daemon.conf.\
@@ -101,7 +101,7 @@ On-the-fly Reconfiguration of Devices (aka \"S/PDIF Support\")\
 http://0pointer.de/blog/projects/oh-nine-fifteen.html
 
 ---
-#### Zink - <time datetime="2009-02-26 02:24:28">4 Feb, 2009</time>
+#### Zink - <time datetime="2009-02-26 02:24:28">26 Feb, 2009</time>
 
 Funnily enough I had the opposite experience. I have a similar feature
 exposed by alsa (the surround sound feature from the hda audio driver).

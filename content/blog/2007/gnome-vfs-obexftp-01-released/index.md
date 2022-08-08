@@ -212,14 +212,14 @@ re Ritesh\'s bug, this is the patch I\'m using:
 \
 
 ---
-#### Ritesh Khadgaray - <time datetime="2007-01-09 02:50:20">2 Jan, 2007</time>
+#### Ritesh Khadgaray - <time datetime="2007-01-09 02:50:20">9 Jan, 2007</time>
 
 additonally, for some reason the file below was never created :( . did
 the same manually.\
 /etc/gnome-vfs-2.0/modules/obex-modules.conf
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh) - <time datetime="2007-01-09 15:34:53">2 Jan, 2007</time>
+#### [James Henstridge](http://blogs.gnome.org/jamesh) - <time datetime="2007-01-09 15:34:53">9 Jan, 2007</time>
 
 Ritesh: the file probably got installed in
 \$prefix/etc/gnome-vfs-2.0/modules, since the default value of
@@ -229,12 +229,12 @@ If you pass \--sysconfdir=/etc to configure, that should solve the
 problem (this is the same sysconfdir that was configured for gnome-vfs).
 
 ---
-#### Ritesh Khadgaray - <time datetime="2007-01-10 00:34:12">3 Jan, 2007</time>
+#### Ritesh Khadgaray - <time datetime="2007-01-10 00:34:12">10 Jan, 2007</time>
 
 Duh ! thanks James.\
 
 ---
-#### Daniel - <time datetime="2007-01-13 11:46:48">6 Jan, 2007</time>
+#### Daniel - <time datetime="2007-01-13 11:46:48">13 Jan, 2007</time>
 
 There is something I must\'ve done wrong.
 
@@ -244,7 +244,7 @@ telephone asks me TWICE if I want to accept the connection which I do
 accept both times), and in the end, nothing happens at all.
 
 ---
-#### Daniel - <time datetime="2007-01-13 11:49:14">6 Jan, 2007</time>
+#### Daniel - <time datetime="2007-01-13 11:49:14">13 Jan, 2007</time>
 
 I typed the location of the phone (obex://\[00:16:4E:D0:06:D5\]/)
 directly into Nautilus, which said that it can\'t display the location,
@@ -253,7 +253,7 @@ and I should choose another viewer.
 I have a Nokia N70.
 
 ---
-#### Daniel - <time datetime="2007-01-13 23:05:30">6 Jan, 2007</time>
+#### Daniel - <time datetime="2007-01-13 23:05:30">13 Jan, 2007</time>
 
 Okay, problem partly understood. I managed to get a real access to my
 phone over obexftp - a Nokia N70 absolutely NEEDS to be accessed on
@@ -263,7 +263,7 @@ However, I have no idea how to tell vfs-obexftp about this. Where do I
 insert the channel number?
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh) - <time datetime="2007-01-14 02:02:08">0 Jan, 2007</time>
+#### [James Henstridge](http://blogs.gnome.org/jamesh) - <time datetime="2007-01-14 02:02:08">14 Jan, 2007</time>
 
 Daniel: there is already some special case code for Nokia smartphones in
 the code, since they export a crippled FTP implementation for the
@@ -275,7 +275,7 @@ have the hardware necessary to test this though (my 6230 doesn\'t
 implement this second service).
 
 ---
-#### Alex Kanavin - <time datetime="2007-01-14 16:08:43">0 Jan, 2007</time>
+#### Alex Kanavin - <time datetime="2007-01-14 16:08:43">14 Jan, 2007</time>
 
 Just did a quick testing on FC6 with the Nokia 6680 I have. It works
 nicely but there are some problems:\
@@ -295,7 +295,7 @@ I\'d be glad to do further testing. I\'ll also have a look at adding USB
 support.
 
 ---
-#### Alex Kanavin - <time datetime="2007-01-17 01:34:34">3 Jan, 2007</time>
+#### Alex Kanavin - <time datetime="2007-01-17 01:34:34">17 Jan, 2007</time>
 
 Some info from Marcel Holtmann, the OpenOBEX maintainer:\
 osso-gwobex should be replaced by OpenOBEX GLib bindings, but actually
@@ -304,7 +304,7 @@ directly into the bindings but\
 someone has to write it.
 
 ---
-#### Ritesh Khadgaray - <time datetime="2007-01-17 13:00:01">3 Jan, 2007</time>
+#### Ritesh Khadgaray - <time datetime="2007-01-17 13:00:01">17 Jan, 2007</time>
 
 Sounds stupid. But i have send obexftpd app on my motorola a1200, but
 strangely nothing seems to pop-up with obex:///
@@ -312,7 +312,7 @@ strangely nothing seems to pop-up with obex:///
 .
 
 ---
-#### [Mike Edwards](http://a.parsons.edu/~medwards) - <time datetime="2007-01-17 17:12:47">3 Jan, 2007</time>
+#### [Mike Edwards](http://a.parsons.edu/~medwards) - <time datetime="2007-01-17 17:12:47">17 Jan, 2007</time>
 
 I\'m having the almost the same trouble as Daniel with my Nokia N80,
 though mine is actually a bit worse. I can get files moved around using
@@ -329,14 +329,14 @@ bluetooth startup script to have hcid start with the -x flag. No joy,
 though. Any ideas?
 
 ---
-#### Alex Kanavin - <time datetime="2007-01-17 21:48:20">3 Jan, 2007</time>
+#### Alex Kanavin - <time datetime="2007-01-17 21:48:20">17 Jan, 2007</time>
 
 Mike: are your obex-modules.conf and \*.so libraries in the right
 places? By default they get installed in /usr/local and gnome won\'t
 pick them up.
 
 ---
-#### [Jonh Wendell](http://www.bani.com.br) - <time datetime="2007-01-18 03:27:27">4 Jan, 2007</time>
+#### [Jonh Wendell](http://www.bani.com.br) - <time datetime="2007-01-18 03:27:27">18 Jan, 2007</time>
 
 There is no support for USB connections? I\'m using latest version
 (0.2).
@@ -345,7 +345,7 @@ Thanks,\
 Wendell.
 
 ---
-#### [Mike Edwards](http://a.parsons.edu/~medwards) - <time datetime="2007-01-25 18:51:48">4 Jan, 2007</time>
+#### [Mike Edwards](http://a.parsons.edu/~medwards) - <time datetime="2007-01-25 18:51:48">25 Jan, 2007</time>
 
 Aha! That did it. I had copied the obex-module.conf file to the right
 directory before, but the .so file were still wrong. I re-built using
@@ -364,7 +364,7 @@ on Linux, and it\'s already looking like it will be a pretty helpful
 addition to Gnome.
 
 ---
-#### [klerik](http://linuxgames.cz) - <time datetime="2007-02-04 05:37:46">0 Feb, 2007</time>
+#### [klerik](http://linuxgames.cz) - <time datetime="2007-02-04 05:37:46">4 Feb, 2007</time>
 
 Hi,i have Arch Linux and Nokia 5500 Sport, i compile gnome-vfs-obexftp
 witch ./configure \--prefix=/opt/gnome \--sysconfdir=/etc. And i have

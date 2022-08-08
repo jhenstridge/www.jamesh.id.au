@@ -24,7 +24,7 @@ chaos!
 
 ---
 ### Comments:
-#### Jonathon - <time datetime="2006-11-04 00:21:56">6 Nov, 2006</time>
+#### Jonathon - <time datetime="2006-11-04 00:21:56">4 Nov, 2006</time>
 
 As one who has had to deal with daylight saving time in the US, here are
 my observations:\
@@ -37,13 +37,13 @@ up comming to the same conclusions then by all means try to prevent your
 local bill from being passed.
 
 ---
-####  - <time datetime="2006-11-05 10:19:12">0 Nov, 2006</time>
+####  - <time datetime="2006-11-05 10:19:12">5 Nov, 2006</time>
 
 Nowadays people consume more energy after work than in the morning. The
 savings are really dubious
 
 ---
-#### [Russell Coker](http://etbe.blogspot.com) - <time datetime="2006-11-10 14:04:56">5 Nov, 2006</time>
+#### [Russell Coker](http://etbe.blogspot.com) - <time datetime="2006-11-10 14:04:56">10 Nov, 2006</time>
 
 I think it would be best to abolish time zones and use UTC for the
 entire world. In Melbourne you would start work at 20:00 (in summer)
@@ -52,7 +52,7 @@ confusion when arranging meetings and tele-conferences with people in
 other countries.
 
 ---
-#### s cooper - <time datetime="2006-11-11 17:56:18">6 Nov, 2006</time>
+#### s cooper - <time datetime="2006-11-11 17:56:18">11 Nov, 2006</time>
 
 I have lived with day light savings most of my life.\
 I have never had any problem with curtain fade , I think to use silly
@@ -61,7 +61,7 @@ simply scared of change. I support both sides of the argument and can
 see the pros and cons of your side of the argument. all the best
 
 ---
-#### Salvatore F Guarino - <time datetime="2006-11-13 09:54:56">1 Nov, 2006</time>
+#### Salvatore F Guarino - <time datetime="2006-11-13 09:54:56">13 Nov, 2006</time>
 
 It\'s really a non issue. Most arguments against it are unfounded. Lots
 of people complain that they have to get up an hour earlier and so on.
@@ -72,14 +72,14 @@ after a three year trial they might even see its benifits and vote in a
 referendun in an unbiased way for or against
 
 ---
-#### daisy - <time datetime="2006-11-14 12:21:20">2 Nov, 2006</time>
+#### daisy - <time datetime="2006-11-14 12:21:20">14 Nov, 2006</time>
 
 get over the cows! i\'ve been talking to heaps of farmers and they
 don\'t have a problem with it and it doesn\'t affect the cows in any
 way!
 
 ---
-#### Lou De Vere - <time datetime="2006-11-15 09:52:26">3 Nov, 2006</time>
+#### Lou De Vere - <time datetime="2006-11-15 09:52:26">15 Nov, 2006</time>
 
 I was delighted to hear the news on the radio the other day that
 daylight saving could soon (very soon!) be implemented in W.A. Two key
@@ -93,19 +93,19 @@ being confused over milking time issues and various other hilarious
 arguments are nonsense so let\'s do it!
 
 ---
-#### Rebecca Hamilton - <time datetime="2006-11-15 13:13:55">3 Nov, 2006</time>
+#### Rebecca Hamilton - <time datetime="2006-11-15 13:13:55">15 Nov, 2006</time>
 
 How is the last three referendums to do with daylight savings were
 rejected, but this state will still go ahead with a trial of three years
 before asking the people what they want?
 
 ---
-####  - <time datetime="2006-11-15 15:29:07">3 Nov, 2006</time>
+####  - <time datetime="2006-11-15 15:29:07">15 Nov, 2006</time>
 
 you are all losers
 
 ---
-#### ella - <time datetime="2006-11-17 11:20:32">5 Nov, 2006</time>
+#### ella - <time datetime="2006-11-17 11:20:32">17 Nov, 2006</time>
 
 it is very interesting to read your points of view. could you please
 send me some information on DLS for a school debate. I am against
@@ -114,7 +114,7 @@ thank you,\
 EB
 
 ---
-#### Geez - <time datetime="2006-11-18 20:23:37">6 Nov, 2006</time>
+#### Geez - <time datetime="2006-11-18 20:23:37">18 Nov, 2006</time>
 
 This is ridiculous. I am so glad we are getting out of this backward
 state asap.
@@ -124,7 +124,7 @@ annoyingly call everyone but themselves, know that daylight saving is a
 great thing. This three hour difference in time is crazy.
 
 ---
-#### Lavadevil - <time datetime="2006-11-22 11:28:32">3 Nov, 2006</time>
+#### Lavadevil - <time datetime="2006-11-22 11:28:32">22 Nov, 2006</time>
 
 In repsonse to Geez, the three hour time difference is not crazy, it is
 what you expect living on completely different sides of a massive
@@ -139,7 +139,7 @@ some of the constant eastern states centric bias for everything and the
 attitude that nothing exists west of the Nullarbor!
 
 ---
-#### Mic - <time datetime="2006-11-22 11:42:51">3 Nov, 2006</time>
+#### Mic - <time datetime="2006-11-22 11:42:51">22 Nov, 2006</time>
 
 To only give 2 weeks notice shows the WA government hasn\'t done their
 research. All IT companies are going to be in a mad rush to update
@@ -152,7 +152,7 @@ companies won\'t be able to update their systems in time. 6 months
 notice would have been more appropriate.
 
 ---
-#### Dave Kennard - <time datetime="2006-11-22 17:46:01">3 Nov, 2006</time>
+#### Dave Kennard - <time datetime="2006-11-22 17:46:01">22 Nov, 2006</time>
 
 The windows resource kit (www.microsoft.com/windows/reskits/) has a
 utility called TIMEZONE.EXE where you can setup a custom DST.
@@ -160,7 +160,7 @@ utility called TIMEZONE.EXE where you can setup a custom DST.
 Its only for windows but will do for most folks.
 
 ---
-#### Scottish_Down_Under - <time datetime="2006-11-22 18:03:38">3 Nov, 2006</time>
+#### Scottish_Down_Under - <time datetime="2006-11-22 18:03:38">22 Nov, 2006</time>
 
 Ach, guys\...\
 It\'s only an hour, whether it means fabulous savings in electricity,
@@ -183,7 +183,7 @@ has ill effects on peoples sleeping patterns? After the first day,
 surely no one notices it? Hmmm\...
 
 ---
-#### Sue - <time datetime="2006-11-22 18:27:44">3 Nov, 2006</time>
+#### Sue - <time datetime="2006-11-22 18:27:44">22 Nov, 2006</time>
 
 Hey at school i am having a debate about daylight saving and i am
 against it and i cant find and info on it\
@@ -191,7 +191,7 @@ can u plz send me some arguments\
 thanx
 
 ---
-#### Mike - <time datetime="2006-11-23 12:29:55">4 Nov, 2006</time>
+#### Mike - <time datetime="2006-11-23 12:29:55">23 Nov, 2006</time>
 
 I agree with Lavadevil. It is completely logical why the south-eastern
 states have daylight savings, and the northern/western states don\'t
@@ -211,14 +211,14 @@ are sick of trying to get their kids inside and into bed when the sun is
 still up outside\...
 
 ---
-#### stu - <time datetime="2006-11-23 16:32:29">4 Nov, 2006</time>
+#### stu - <time datetime="2006-11-23 16:32:29">23 Nov, 2006</time>
 
 the only real reason for daylight sving is to bring us in line with
 other states the problem with this is that it is actually a reason for
 ather sates to get rid of daylight savings
 
 ---
-#### Scottish_Down_Under - <time datetime="2006-11-23 17:53:19">4 Nov, 2006</time>
+#### Scottish_Down_Under - <time datetime="2006-11-23 17:53:19">23 Nov, 2006</time>
 
 Mike - come on now! It\'s not changing the \'number\' of daylight hours
 we have - it\'s changing WHEN we have them\...\
@@ -234,7 +234,7 @@ It\'s in place now and in 3 years there\'s no way that a referendum will
 result in it being gotten rid of\...
 
 ---
-#### Rod Swift - <time datetime="2006-11-27 06:10:59">1 Nov, 2006</time>
+#### Rod Swift - <time datetime="2006-11-27 06:10:59">27 Nov, 2006</time>
 
 As for \'fixing the problem\' \-- Microsoft did it days after the bill
 succeeded and you can download an update to fix your computer to have
@@ -247,25 +247,25 @@ and\
 Enjoy.
 
 ---
-####  - <time datetime="2006-11-27 14:54:12">1 Nov, 2006</time>
+####  - <time datetime="2006-11-27 14:54:12">27 Nov, 2006</time>
 
 This web site and those who posted comments have turn my aganist
 daylight savings compeltly!
 
 ---
-#### RK - <time datetime="2006-11-27 15:04:53">1 Nov, 2006</time>
+#### RK - <time datetime="2006-11-27 15:04:53">27 Nov, 2006</time>
 
 I think that what the point of all this if none of the pubic get there
 way.Who is this excatly going benfit over all? What I have been taught
 is don\'t help peolpe unless they ask for it.Majority Rules hey!
 
 ---
-#### sassy - <time datetime="2006-11-27 15:11:04">1 Nov, 2006</time>
+#### sassy - <time datetime="2006-11-27 15:11:04">27 Nov, 2006</time>
 
 why would curtains fade?
 
 ---
-#### John Tylar - <time datetime="2006-11-27 15:55:17">1 Nov, 2006</time>
+#### John Tylar - <time datetime="2006-11-27 15:55:17">27 Nov, 2006</time>
 
 They give us no time and rush it in so they can have it as long as
 possible i think they should all go somewhere we they cant do this kind
@@ -273,7 +273,7 @@ of damage i refuse to go ahead with it what will they do huh nothing
 they can do i am not changing my clocks
 
 ---
-#### JJ - <time datetime="2006-11-27 23:59:54">1 Nov, 2006</time>
+#### JJ - <time datetime="2006-11-27 23:59:54">27 Nov, 2006</time>
 
 John Tylar you can keep your clocks as they are - see if anyone else
 cares. I won\'t.
@@ -301,7 +301,7 @@ sleep in the morning.
 Bring it on forever.
 
 ---
-#### me - <time datetime="2006-11-28 13:45:16">2 Nov, 2006</time>
+#### me - <time datetime="2006-11-28 13:45:16">28 Nov, 2006</time>
 
 i think A three year trial will give wa a tast of daylight savings befor
 they critisize it.
@@ -309,7 +309,7 @@ they critisize it.
 both sides will see all the pros and cons of daylight saving
 
 ---
-#### natasha - <time datetime="2006-11-28 13:46:22">2 Nov, 2006</time>
+#### natasha - <time datetime="2006-11-28 13:46:22">28 Nov, 2006</time>
 
 i believe the 3 year trial is good because it will give us a feel of the
 situation.
@@ -322,7 +322,7 @@ school starts and finishes earlier,\
 can speak to friends longer who live over the state.
 
 ---
-#### [Simon Shaw](http://www.micromine.com) - <time datetime="2006-11-28 14:17:31">2 Nov, 2006</time>
+#### [Simon Shaw](http://www.micromine.com) - <time datetime="2006-11-28 14:17:31">28 Nov, 2006</time>
 
 The short notice given is a pain in the ass from an IT point of view.The
 power savings are negative. Everyone will go home and power up their
@@ -334,12 +334,12 @@ on average every 10 years on this subject, how many times do we have to
 say no???
 
 ---
-#### andrew.mollan - <time datetime="2006-11-29 17:42:36">3 Nov, 2006</time>
+#### andrew.mollan - <time datetime="2006-11-29 17:42:36">29 Nov, 2006</time>
 
 can any one send me a bit of imformation agaist day light saving
 
 ---
-#### michael - <time datetime="2006-11-30 16:13:51">4 Nov, 2006</time>
+#### michael - <time datetime="2006-11-30 16:13:51">30 Nov, 2006</time>
 
 Scottish\_Down\_Under said \"as simple as giving everyone an extra 60
 minutes to enjoy the beach / park / beer garden after a long day at
@@ -353,7 +353,7 @@ otherwise) because lets face it\... its any extra hour we could all be
 at work being \"productive\"\...
 
 ---
-#### Scottish_Down_Under - <time datetime="2006-11-30 19:27:05">4 Nov, 2006</time>
+#### Scottish_Down_Under - <time datetime="2006-11-30 19:27:05">30 Nov, 2006</time>
 
 Simon Shaw thinks we get TOO MUCH sunshine? Well, firstly moving the
 clocks will sadly not change that mate, and if you really do want to
@@ -361,7 +361,7 @@ avoid sunny weather, I\'d recommend Dundee, Scotland - you\'ll love the
 grey skies, dour weather and you\'ll fit in well with the locals\...
 
 ---
-#### joe - <time datetime="2006-11-30 21:19:31">4 Nov, 2006</time>
+#### joe - <time datetime="2006-11-30 21:19:31">30 Nov, 2006</time>
 
 andrew mollan and todd caroll i have a good idea for you both reasons
 agianst day light savings are people need to get used to a different
@@ -369,7 +369,7 @@ time and differnent sleeping patternsi hope its enough need more plzz
 ask
 
 ---
-#### Martin - <time datetime="2006-11-30 21:23:38">4 Nov, 2006</time>
+#### Martin - <time datetime="2006-11-30 21:23:38">30 Nov, 2006</time>
 
 Daylight savings is a good thing. We don\'t get any more sunshine, just
 get the same amount at a better time of day. I don\'t think people
@@ -377,7 +377,7 @@ understand that not that much changes. Hopefully they\'ll use their
 heads and get over their fear of change.
 
 ---
-#### serge - <time datetime="2006-11-30 22:36:11">4 Nov, 2006</time>
+#### serge - <time datetime="2006-11-30 22:36:11">30 Nov, 2006</time>
 
 hey umm what are the good and bad things about daylight savings! you
 waste time instead of saving it dont you?
@@ -385,7 +385,7 @@ waste time instead of saving it dont you?
 \
 
 ---
-#### Ariaflame - <time datetime="2006-11-30 22:38:55">4 Nov, 2006</time>
+#### Ariaflame - <time datetime="2006-11-30 22:38:55">30 Nov, 2006</time>
 
 I grew up in Scotland so I have lived with Daylight Savings. I can\'t
 remember loving it, but I can\'t remember hating it either. The main
@@ -410,14 +410,14 @@ introduction which argues political expediencies rather than the good of
 the state is the main objective.
 
 ---
-#### dufus - <time datetime="2006-11-30 23:29:33">4 Nov, 2006</time>
+#### dufus - <time datetime="2006-11-30 23:29:33">30 Nov, 2006</time>
 
 I think DLS is just great. I mean who wouldn\'t want an extra hour every
 day. Wow, just imagine, 25 hours every day to do all kinds of neat stuff
 you want - surfing, sleeping, whatever.
 
 ---
-#### Runamuk - <time datetime="2006-12-01 13:31:29">5 Dec, 2006</time>
+#### Runamuk - <time datetime="2006-12-01 13:31:29">1 Dec, 2006</time>
 
 I\'ve just updated all our computer systems with the new daylight
 savings information. Easy as. I think daylight savings is great, means I
@@ -428,7 +428,7 @@ summer. Also, people near the Artic Circle seem to be able to live with
 contstant daylight in summer\...
 
 ---
-#### maria - <time datetime="2006-12-01 14:43:57">5 Dec, 2006</time>
+#### maria - <time datetime="2006-12-01 14:43:57">1 Dec, 2006</time>
 
 i cannot believe the crap I am reading. I grew up in Perth and did not
 have daylight saving, now living in Sydney for the past 11 years have
@@ -442,7 +442,7 @@ Computers, cows , curtains????? doesn\'t seem to have effected the rest
 of Australia.
 
 ---
-#### Bill Blogs - <time datetime="2006-12-03 16:02:12">0 Dec, 2006</time>
+#### Bill Blogs - <time datetime="2006-12-03 16:02:12">3 Dec, 2006</time>
 
 Enjoyed reading some WAers enthusiasm and broad minded approach to DST.
 WA was (is?) one of the few industrialised areas of the world not to
@@ -453,7 +453,7 @@ without glorious long evenings and DST. In Perth people will be able to
 go to the beach after school/work. =)
 
 ---
-#### Bazzil - <time datetime="2006-12-03 20:35:54">0 Dec, 2006</time>
+#### Bazzil - <time datetime="2006-12-03 20:35:54">3 Dec, 2006</time>
 
 To those who post (in favour of DLS) its just an extra hour, get over
 it. The same can be said by those of us against. The annoyance of having
@@ -476,7 +476,7 @@ house to read, and im fine with that. We have more than enough daylight,
 dont like it? get up earlier yourself\... leave the rest of us alone.
 
 ---
-#### mauvehaze - <time datetime="2006-12-03 22:08:57">0 Dec, 2006</time>
+#### mauvehaze - <time datetime="2006-12-03 22:08:57">3 Dec, 2006</time>
 
 Now it\'s in effect just change your time zone to \"Osaka, Sapporo,
 Tokyo\" and when it goes back in March change the time zone back to
@@ -488,7 +488,7 @@ more around the home, like mowing the lawn, in that time either!!!
 Cheers ;-)
 
 ---
-#### [Michael](http://www.pedrotski.com) - <time datetime="2006-12-04 12:27:15">1 Dec, 2006</time>
+#### [Michael](http://www.pedrotski.com) - <time datetime="2006-12-04 12:27:15">4 Dec, 2006</time>
 
 -I woke up feeling like shit. -Trading with ASIA (Was the same time zone
 as us) is now harder as we are out of line them. -Daylight savings was
@@ -511,7 +511,7 @@ anyone who wants daylight savings to stay, Please say somthing more than
 responses.
 
 ---
-#### Scottish_Down_Under - <time datetime="2006-12-04 13:39:04">1 Dec, 2006</time>
+#### Scottish_Down_Under - <time datetime="2006-12-04 13:39:04">4 Dec, 2006</time>
 
 Man, I love the controversy and more, the sad comments that this issue
 has raised\...\
@@ -534,7 +534,7 @@ we\'re facing, the skilled workforce shortage in WA or the ridiculous
 housing prices\... No?
 
 ---
-#### Mike - <time datetime="2006-12-04 16:44:03">1 Dec, 2006</time>
+#### Mike - <time datetime="2006-12-04 16:44:03">4 Dec, 2006</time>
 
 Scottish\_Down\_Under said: \"Mike - come on now! It\'s not changing the
 \'number\' of daylight hours we have - it\'s changing WHEN we have
@@ -552,7 +552,7 @@ important than rushing in daylight savings at the last minute to deflect
 attention from all their other screw ups\... ;)
 
 ---
-#### Katarina - <time datetime="2006-12-05 19:13:32">2 Dec, 2006</time>
+#### Katarina - <time datetime="2006-12-05 19:13:32">5 Dec, 2006</time>
 
 did daylight saving hurt your head? What was the problem? Was it that
 you could not work out how to change the clock on the oven? Or possibly
@@ -564,7 +564,7 @@ time before it gets dark.\
 I wonder though would daylight saving be better in Winter?
 
 ---
-#### Justine - <time datetime="2006-12-08 11:04:27">5 Dec, 2006</time>
+#### Justine - <time datetime="2006-12-08 11:04:27">8 Dec, 2006</time>
 
 The argument for extra family hours is simply hogwash. Day light savings
 was purely implemented for business purposes. If it was for people as a
@@ -575,7 +575,7 @@ unfortunately cant yes vote otherwise it will give permission for the
 pollys to completely run amok.
 
 ---
-#### Robyn - <time datetime="2006-12-12 01:34:53">2 Dec, 2006</time>
+#### Robyn - <time datetime="2006-12-12 01:34:53">12 Dec, 2006</time>
 
 I Have lived in W.A. for the past 20 years but am from Sydney I am a
 Grandmother of 13 and I have missed my daylight saving I Love daylight
@@ -593,7 +593,7 @@ back\...UNQUOTE\
 with attitudes like this what hope have we
 
 ---
-#### yam - <time datetime="2006-12-19 00:52:24">2 Dec, 2006</time>
+#### yam - <time datetime="2006-12-19 00:52:24">19 Dec, 2006</time>
 
 Is there any point in having DST over the entire state? I imagine that
 in the tropical north of WA, there\'s very little difference in daylight
@@ -604,7 +604,7 @@ Wouldn\'t putting the clocks forward in the north be purely for the sake
 of staying at the same time as the more populated south-west?
 
 ---
-#### John - <time datetime="2006-12-22 11:35:31">5 Dec, 2006</time>
+#### John - <time datetime="2006-12-22 11:35:31">22 Dec, 2006</time>
 
 I lived in the eastern states (Sydney) for a number of years. I hated
 DST there and I hate it in Perth. I particularly object to the way that

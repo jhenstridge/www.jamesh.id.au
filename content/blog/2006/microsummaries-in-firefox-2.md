@@ -44,7 +44,7 @@ resource intensive fashion.
 
 ---
 ### Comments:
-#### xxx - <time datetime="2006-09-09 08:37:38">6 Sep, 2006</time>
+#### xxx - <time datetime="2006-09-09 08:37:38">9 Sep, 2006</time>
 
 It\'s pity one cannot specify separate microsummary page (like you RSS
 channels - you don\'t create them using XSLT from the appropriate
@@ -52,7 +52,7 @@ page!), it would be very small compared with downloading each time the
 page and then extracting microsummaries from it.
 
 ---
-#### mk - <time datetime="2006-09-09 16:28:00">6 Sep, 2006</time>
+#### mk - <time datetime="2006-09-09 16:28:00">9 Sep, 2006</time>
 
 I don\'t know, this sounds like a rather useless feature to me. Most of
 the time, I give custom names to my bookmarks anyway; if they would
@@ -66,7 +66,7 @@ They should have focused on those features which increase, not decrease
 usability\...
 
 ---
-#### xxx - <time datetime="2006-09-09 23:35:39">6 Sep, 2006</time>
+#### xxx - <time datetime="2006-09-09 23:35:39">9 Sep, 2006</time>
 
 mk: well, it is because FF\'s concept of bookmark is somewhat broader
 than the normal one. You can put \"bookmarks\" onto special toolbar and
@@ -80,7 +80,7 @@ one-line text/plain with a summary. (I\'ve implemented this on
 <http://www.evangnet.cz/> and it works just fine).
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh) - <time datetime="2006-09-11 11:21:04">1 Sep, 2006</time>
+#### [James Henstridge](http://blogs.gnome.org/jamesh) - <time datetime="2006-09-11 11:21:04">11 Sep, 2006</time>
 
 xxx: that\'s interesting. The spec on wiki.mozilla.org only mentions
 using a \<link\> element to link to a microsummary generator.

@@ -40,13 +40,13 @@ entertaining.  Hopefully I\'ll be around for next year\'s race.
 
 ---
 ### Comments:
-#### [Luca Cavalli](http://loopback.wordpress.com/) - <time datetime="2008-11-03 21:40:15">1 Nov, 2008</time>
+#### [Luca Cavalli](http://loopback.wordpress.com/) - <time datetime="2008-11-03 21:40:15">3 Nov, 2008</time>
 
 I was there too :)\
 I\'m in Perth for business and last Sunday we saw the race. Great fun!
 
 ---
-#### [Christopher Blizzard](http://www.0xdeadbeef.com/weblog/) - <time datetime="2008-11-04 00:49:00">2 Nov, 2008</time>
+#### [Christopher Blizzard](http://www.0xdeadbeef.com/weblog/) - <time datetime="2008-11-04 00:49:00">4 Nov, 2008</time>
 
 Nice! I watched some of this on the internets from the comfort of my
 couch here in North America. Tail cams are awesome, but I\'m sure that

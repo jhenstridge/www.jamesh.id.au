@@ -94,14 +94,14 @@ next few months: it is only going to get faster.
 
 ---
 ### Comments:
-#### [Juri Pakaste](http://www.iki.fi/juri/blog/) - <time datetime="2006-12-15 17:54:20">5 Dec, 2006</time>
+#### [Juri Pakaste](http://www.iki.fi/juri/blog/) - <time datetime="2006-12-15 17:54:20">15 Dec, 2006</time>
 
 Are you sure about that Win32 and hard links bit? Windows XP and later
 ship with a tool called fsutil.exe which claims to create hard links and
 the stuff it creates looks exactly like hard links to me.\
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh) - <time datetime="2006-12-15 18:27:42">5 Dec, 2006</time>
+#### [James Henstridge](http://blogs.gnome.org/jamesh) - <time datetime="2006-12-15 18:27:42">15 Dec, 2006</time>
 
 Juri: thanks for pointing that out. I\'ve updated the text to reflect
 this.

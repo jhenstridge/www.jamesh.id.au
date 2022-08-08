@@ -46,7 +46,7 @@ error margins are lower.
 
 ---
 ### Comments:
-#### [Johannes](http://www.anjuta.org) - <time datetime="2006-05-16 22:54:57">2 May, 2006</time>
+#### [Johannes](http://www.anjuta.org) - <time datetime="2006-05-16 22:54:57">16 May, 2006</time>
 
 Hi!
 
@@ -59,7 +59,7 @@ Regards,\
 Johannes
 
 ---
-#### Olaf - <time datetime="2006-05-18 06:57:18">4 May, 2006</time>
+#### Olaf - <time datetime="2006-05-18 06:57:18">18 May, 2006</time>
 
 Hi James,
 

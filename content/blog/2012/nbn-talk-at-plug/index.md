@@ -89,13 +89,13 @@ same.
 
 ---
 ### Comments:
-#### Raphael - <time datetime="2012-03-19 15:00:44">1 Mar, 2012</time>
+#### Raphael - <time datetime="2012-03-19 15:00:44">19 Mar, 2012</time>
 
 What sort of technology is used on the optical side ? \*pon, ethernet
 \...?
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2012-03-19 15:14:28">1 Mar, 2012</time>
+#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2012-03-19 15:14:28">19 Mar, 2012</time>
 
 \@Raphael: as mentioned in the post, it is GPON.
 

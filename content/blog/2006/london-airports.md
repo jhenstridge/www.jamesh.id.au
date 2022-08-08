@@ -19,7 +19,7 @@ a broken laptop.
 
 ---
 ### Comments:
-#### [Eugenia](http://www.eugenia.co.uk) - <time datetime="2006-08-11 09:17:30">5 Aug, 2006</time>
+#### [Eugenia](http://www.eugenia.co.uk) - <time datetime="2006-08-11 09:17:30">11 Aug, 2006</time>
 
 I agree. After 9/11 new restrictions were added to plane flights in US
 too.
@@ -28,7 +28,7 @@ It sucks to take off your shoes each time you go through security for
 example\... This didn\'t used to be a requirement.
 
 ---
-#### [housetier](http://nrrd.de/) - <time datetime="2006-08-11 09:50:32">5 Aug, 2006</time>
+#### [housetier](http://nrrd.de/) - <time datetime="2006-08-11 09:50:32">11 Aug, 2006</time>
 
 One wonders how a \"bomb\" in the baggage area of the plane differs from
 a lapbomb in the passenger area. But it is difficult to get questions
@@ -42,7 +42,7 @@ and oxygen. Yes you make WATER, but the process can be rather explosive.
 I should stop giving them ideas\...
 
 ---
-#### [Mary](http://puzzling.org/) - <time datetime="2006-08-11 10:40:24">5 Aug, 2006</time>
+#### [Mary](http://puzzling.org/) - <time datetime="2006-08-11 10:40:24">11 Aug, 2006</time>
 
 The other problem is that a very common exclusion on travel insurance
 policies is \"electronic devices are not covered if carried in a cargo
@@ -54,7 +54,7 @@ Is there any chance of having it shipped (flown) home somehow by a
 proper freight company who know how to pack things?
 
 ---
-#### [Victor Bogado](http://www.bogado.net) - <time datetime="2006-08-11 10:43:33">5 Aug, 2006</time>
+#### [Victor Bogado](http://www.bogado.net) - <time datetime="2006-08-11 10:43:33">11 Aug, 2006</time>
 
 Yes housetier, there are bombs that go in the baggage area, I heard that
 the Israelly airports usually decompress all the baggages before
@@ -70,13 +70,13 @@ There is no end to this paranoia so in the meantime I would sugest James
 to use a ton of bubble plastic arround his laptop\... :-P
 
 ---
-#### [Mary](http://puzzling.org/) - <time datetime="2006-08-11 10:44:59">5 Aug, 2006</time>
+#### [Mary](http://puzzling.org/) - <time datetime="2006-08-11 10:44:59">11 Aug, 2006</time>
 
 And, for that matter, a proper freight company that will provide the
 ability to insure the shipment.
 
 ---
-#### Paul - <time datetime="2006-08-11 12:05:25">5 Aug, 2006</time>
+#### Paul - <time datetime="2006-08-11 12:05:25">11 Aug, 2006</time>
 
 One can\'t \"simply board the baggages and don\'t fly\", that hasn\'t
 been possible for a long time. Don\'t board and your baggages will be

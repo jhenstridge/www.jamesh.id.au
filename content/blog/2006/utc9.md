@@ -56,7 +56,7 @@ time zone database.
 
 ---
 ### Comments:
-#### [mathew](http://www.pobox.com/~meta/) - <time datetime="2006-12-05 02:22:06">2 Dec, 2006</time>
+#### [mathew](http://www.pobox.com/~meta/) - <time datetime="2006-12-05 02:22:06">5 Dec, 2006</time>
 
 Another example of the same problem being \"solved\" over and over again
 is locales. I created a locale definition for en-US\@ISO (ISO 8601),
@@ -64,7 +64,7 @@ only to discover that it only works for command line programs\--X
 software has its own locale system.
 
 ---
-#### Henri - <time datetime="2006-12-05 04:42:22">2 Dec, 2006</time>
+#### Henri - <time datetime="2006-12-05 04:42:22">5 Dec, 2006</time>
 
 Just out of curiosity, why doesn\'t Australia switch at the same time as
 most of the rest of the world? Most South American countries that observ
@@ -73,7 +73,7 @@ friends always has to be special of course, but that\'s just business as
 usual.
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh) - <time datetime="2006-12-05 11:12:40">2 Dec, 2006</time>
+#### [James Henstridge](http://blogs.gnome.org/jamesh) - <time datetime="2006-12-05 11:12:40">5 Dec, 2006</time>
 
 Henri: Looking at the time zone definitions from the tzdata package,
 there is a huge variation in the start/end dates for different countries

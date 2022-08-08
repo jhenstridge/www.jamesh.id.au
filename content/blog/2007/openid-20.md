@@ -158,12 +158,12 @@ each other, which should accelerate development of new features.
 
 ---
 ### Comments:
-#### [tenshu](http://www.tenshu.fr/) - <time datetime="2007-10-23 16:40:08">2 Oct, 2007</time>
+#### [tenshu](http://www.tenshu.fr/) - <time datetime="2007-10-23 16:40:08">23 Oct, 2007</time>
 
 Any news on openid support in and for launchpad?
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2007-10-23 17:23:20">2 Oct, 2007</time>
+#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2007-10-23 17:23:20">23 Oct, 2007</time>
 
 Tenshu: we are working on supporting Launchpad as an OP. In fact,
 http://shop.canonical.com/ is the first RP we set that makes use of it.
@@ -174,7 +174,7 @@ When there is something to announce, it\'ll be through official channels
 first though.
 
 ---
-#### TG - <time datetime="2007-10-24 01:37:57">3 Oct, 2007</time>
+#### TG - <time datetime="2007-10-24 01:37:57">24 Oct, 2007</time>
 
 Any word on when the inventors of openID (i.e. Livejournal) is actually
 going to implement the protocol themselves? For the past years they\'ve
@@ -186,7 +186,7 @@ Isn\'t it bad advertisement that the creators won\'t even use their own
 invention?
 
 ---
-#### [J.B. Nicholson-Owens](http://digitalcitizen.info/) - <time datetime="2007-10-24 01:55:48">3 Oct, 2007</time>
+#### [J.B. Nicholson-Owens](http://digitalcitizen.info/) - <time datetime="2007-10-24 01:55:48">24 Oct, 2007</time>
 
 I thought OpenID wasn\'t recommended to be used for sensitive
 information like authenticating yourself to your bank. Wouldn\'t using
@@ -194,7 +194,7 @@ it for authentication with other commercial activities (like shops) come
 under the same disrecommendation?
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2007-10-24 09:51:17">3 Oct, 2007</time>
+#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2007-10-24 09:51:17">24 Oct, 2007</time>
 
 TG: Perhaps you should direct questions like that to Livejournal. It
 doesn\'t seem accurate to say they don\'t implement the protocol though:
@@ -207,20 +207,20 @@ OpenID to authenticate. For the case of the Ubuntu shop, we are happy
 with how Launchpad authenticates users.
 
 ---
-#### Anonymous - <time datetime="2007-10-24 23:25:49">3 Oct, 2007</time>
+#### Anonymous - <time datetime="2007-10-24 23:25:49">24 Oct, 2007</time>
 
 I don\'t like the idea of i-names. Too centralized, and costs money.
 Which are, quite frankly, against the principle of OpenID: The whole
 idea of OpenID is that it\'s decentralized and easy to obtain.
 
 ---
-#### [OpenID is not a provisioning engine](http://willnorris.com/2007/10/openid-is-not-a-provisioning-engine) - <time datetime="2007-10-30 16:11:56">2 Oct, 2007</time>
+#### [OpenID is not a provisioning engine](http://willnorris.com/2007/10/openid-is-not-a-provisioning-engine) - <time datetime="2007-10-30 16:11:56">30 Oct, 2007</time>
 
 \[\...\] talking about the future possibilities of OpenID 2.0 and the
 Attribute Exchange extension, James Henstridge \[\...\]
 
 ---
-#### [Pushing String &raquo; Well-rounded identity for the whole person](http://www.xmlgrrl.com/blog/archives/2007/10/30/well-rounded-identity-for-the-whole-person/) - <time datetime="2007-10-30 22:52:36">2 Oct, 2007</time>
+#### [Pushing String &raquo; Well-rounded identity for the whole person](http://www.xmlgrrl.com/blog/archives/2007/10/30/well-rounded-identity-for-the-whole-person/) - <time datetime="2007-10-30 22:52:36">30 Oct, 2007</time>
 
 \[\...\] reading Will Norris's post OpenID is not a provisioning engine.
 He riffs on a scenario from James Henstridge where you can propagate a
@@ -228,7 +228,7 @@ new shipping address to every service that needs to know it. (Actually,
 I \[\...\]
 
 ---
-#### John Bäckstrand - <time datetime="2007-11-06 23:13:06">2 Nov, 2007</time>
+#### John Bäckstrand - <time datetime="2007-11-06 23:13:06">6 Nov, 2007</time>
 
 \"I don't like the idea of i-names. Too centralized, and costs money.
 Which are, quite frankly, against the principle of OpenID: The whole

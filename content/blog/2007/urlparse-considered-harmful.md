@@ -54,17 +54,17 @@ least until the underlying bug is fixed.
 
 ---
 ### Comments:
-#### [fraggle](http://www.soulsphere.org/) - <time datetime="2007-12-10 17:29:11">1 Dec, 2007</time>
+#### [fraggle](http://www.soulsphere.org/) - <time datetime="2007-12-10 17:29:11">10 Dec, 2007</time>
 
 Looks like a classic case of \"optimisation is the root of all evil\".
 
 ---
-#### ignacio - <time datetime="2007-12-10 18:50:25">1 Dec, 2007</time>
+#### ignacio - <time datetime="2007-12-10 18:50:25">10 Dec, 2007</time>
 
 Or you could consistently use unicode internally.
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2007-12-10 19:48:00">1 Dec, 2007</time>
+#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2007-12-10 19:48:00">10 Dec, 2007</time>
 
 ignacio: Not everything is defined in terms of unicode. The example I
 gave above is the HTTP protocol, which is defined in terms of octets
@@ -82,7 +82,7 @@ process the same URL, I may end up with my HTTP requests getting
 automatically promoted to unicode some of the time.
 
 ---
-#### [Armin Ronacher](http://lucumr.pocoo.org/) - <time datetime="2007-12-10 22:13:04">1 Dec, 2007</time>
+#### [Armin Ronacher](http://lucumr.pocoo.org/) - <time datetime="2007-12-10 22:13:04">10 Dec, 2007</time>
 
 Hoi. As URLs are encodingless you cannot use unicode objects on those.
 So \*always\* encode into a charset before using it. If you are passing
@@ -97,7 +97,7 @@ Regards,\
 Armin
 
 ---
-#### Stoffe - <time datetime="2007-12-11 21:43:24">2 Dec, 2007</time>
+#### Stoffe - <time datetime="2007-12-11 21:43:24">11 Dec, 2007</time>
 
 No Armin, that\'s looking at it from the wrong way (or making an
 unnecessary apology for the library). It shouldn\'t be a problem to use
@@ -115,7 +115,7 @@ incorrect results. Now it is not a poor library, just one with an
 unfortunate bug that should be fixed.
 
 ---
-#### Gavin Panella - <time datetime="2007-12-15 17:43:36">6 Dec, 2007</time>
+#### Gavin Panella - <time datetime="2007-12-15 17:43:36">15 Dec, 2007</time>
 
 James, do you know of an instance where the cache is actually worth it?
 Timings for me were \~3.5usec to urlparse the url for this page, with
@@ -135,7 +135,7 @@ but now it\'s keyed with a 5-tuple, having added the types of url and
 scheme to the 3-tuple from before.
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2007-12-17 14:38:21">1 Dec, 2007</time>
+#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2007-12-17 14:38:21">17 Dec, 2007</time>
 
 Gavin: yeah, I saw that. I was going to post a followup on that bug
 report but could not recover the password on my account :( An account

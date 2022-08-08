@@ -59,13 +59,13 @@ same licensing terms (2 clause BSD) as that project.
 
 ---
 ### Comments:
-#### [Daniel Watkins](http://blog.daniel-watkins.co.uk) - <time datetime="2009-04-14 20:37:33">2 Apr, 2009</time>
+#### [Daniel Watkins](http://blog.daniel-watkins.co.uk) - <time datetime="2009-04-14 20:37:33">14 Apr, 2009</time>
 
 Is Django used for Launchpad at all? Or is it just for other internal
 Canonical stuff?
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2009-04-14 22:35:47">2 Apr, 2009</time>
+#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2009-04-14 22:35:47">14 Apr, 2009</time>
 
 Launchpad is not a Django application \-- it is built on top of Zope 3
 and Storm.
@@ -74,12 +74,12 @@ Some of the non-internal projects we\'ve got using Django include
 summit.ubuntu.com and paste.ubuntu.com.
 
 ---
-#### [Marius Scurtescu](http://marius.scurtescu.com) - <time datetime="2009-04-14 23:10:43">2 Apr, 2009</time>
+#### [Marius Scurtescu](http://marius.scurtescu.com) - <time datetime="2009-04-14 23:10:43">14 Apr, 2009</time>
 
 Would this also work with Google App Engine?
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2009-04-14 23:47:51">2 Apr, 2009</time>
+#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2009-04-14 23:47:51">14 Apr, 2009</time>
 
 Marius: I don\'t think there is any code in django-openid-auth that
 would be a problem. However, it is built on top of Jan Rain\'s
@@ -90,7 +90,7 @@ uses the appengine HTTP API. It is possible that someone has already
 done this work though, so you might want to google it.
 
 ---
-#### Ivan - <time datetime="2009-04-15 15:18:32">3 Apr, 2009</time>
+#### Ivan - <time datetime="2009-04-15 15:18:32">15 Apr, 2009</time>
 
 Hi,
 
@@ -104,14 +104,14 @@ Creating table django\_openid\_auth\_useropenid
 \'claimed\_id\' used in key specification without a key length\")
 
 ---
-#### [Kevin Turner](http://keturn.net/) - <time datetime="2009-04-15 15:27:07">3 Apr, 2009</time>
+#### [Kevin Turner](http://keturn.net/) - <time datetime="2009-04-15 15:27:07">15 Apr, 2009</time>
 
 Looks like the known issues in the googleappengine relating to
 python-openid have been fixed in the last few months (i.e. issue \#404).
 So it should work!
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2009-04-15 17:47:11">3 Apr, 2009</time>
+#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2009-04-15 17:47:11">15 Apr, 2009</time>
 
 Ivan: I can\'t say I tested it on MySQL: the test suite is against
 SQLite, and the only other database we use it against is PostgreSQL.
@@ -121,7 +121,7 @@ claimed\_id definition to a CharField with a shorter maximum length. If
 that works for you, please file a bug report in Launchpad.
 
 ---
-#### [Faruk Akgul](http://faruk.akgul.org/) - <time datetime="2009-04-19 13:20:57">0 Apr, 2009</time>
+#### [Faruk Akgul](http://faruk.akgul.org/) - <time datetime="2009-04-19 13:20:57">19 Apr, 2009</time>
 
 \@Ivan: It\'s Django\'s fault actually. You need to open
 django\_openid\_auth/models.py file and remove unique=True from the
@@ -133,7 +133,7 @@ Cheers,\
 Faruk
 
 ---
-#### Aaron - <time datetime="2009-04-27 08:55:32">1 Apr, 2009</time>
+#### Aaron - <time datetime="2009-04-27 08:55:32">27 Apr, 2009</time>
 
 Thanks for the great app. I and was unclear what the best way is to deal
 with user information like a username, email address, etc for an openid
@@ -146,7 +146,7 @@ Also, is there a way to get extended information like a username from
 the openid provider?
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2009-04-28 18:09:45">2 Apr, 2009</time>
+#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2009-04-28 18:09:45">28 Apr, 2009</time>
 
 Faruk: that column should indeed be unique \-- each identity URL must
 only be associated with a single user. As I mentioned above, the column
@@ -160,7 +160,7 @@ django.contrib.auth User objects. As there is already space in the User
 object to store them, it doesn\'t use a profile model.
 
 ---
-#### [Peter Robinett](http://www.bubblefoundry.com) - <time datetime="2009-05-10 17:59:46">0 May, 2009</time>
+#### [Peter Robinett](http://www.bubblefoundry.com) - <time datetime="2009-05-10 17:59:46">10 May, 2009</time>
 
 Has anyone gotten this to work with App Engine and Django 1.0? I\'d love
 to use it for my project but I\'m getting the following error:\

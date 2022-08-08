@@ -45,7 +45,7 @@ is implemented.
 
 ---
 ### Comments:
-#### [Jay R. Wren](http://little.xmtp.net/blog/) - <time datetime="2005-11-18 04:52:58">5 Nov, 2005</time>
+#### [Jay R. Wren](http://little.xmtp.net/blog/) - <time datetime="2005-11-18 04:52:58">18 Nov, 2005</time>
 
 Another HUGE (IMO) benefit of your work is the benefits gained by using
 OpenSSH and its Connection Caching feature.
@@ -57,7 +57,7 @@ ssh connections to use that existing one. No connection build up or tear
 down. It is VERY fast.
 
 ---
-#### [Wouter Bolsterlee](http://uwstopia.nl/) - <time datetime="2005-11-19 01:35:37">6 Nov, 2005</time>
+#### [Wouter Bolsterlee](http://uwstopia.nl/) - <time datetime="2005-11-19 01:35:37">19 Nov, 2005</time>
 
 Debian Sarge does not include python-crypto and paramiko packages. These
 are needed for ssh/sftp support in bzr. I\'ve created backported

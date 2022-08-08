@@ -251,7 +251,7 @@ that happen to be using OpenID for single sign-on.
 
 ---
 ### Comments:
-#### [Will Norris](http://will.norris.name) - <time datetime="2007-11-27 02:17:22">2 Nov, 2007</time>
+#### [Will Norris](http://will.norris.name) - <time datetime="2007-11-27 02:17:22">27 Nov, 2007</time>
 
 Excellent explanation of AX, James. I\'m quite curious to see how RP
 will try to use attribute storage down the road\... I imagine there will
@@ -271,7 +271,7 @@ the attributes may as well be self-asserted because you simply don\'t
 know.
 
 ---
-#### Johnny Bufu - <time datetime="2007-11-27 03:29:16">2 Nov, 2007</time>
+#### Johnny Bufu - <time datetime="2007-11-27 03:29:16">27 Nov, 2007</time>
 
 James,
 
@@ -323,13 +323,13 @@ Exchange, which trusts Sxip with the verification process)
 Johnny
 
 ---
-#### LionsPhil - <time datetime="2007-11-27 06:16:23">2 Nov, 2007</time>
+#### LionsPhil - <time datetime="2007-11-27 06:16:23">27 Nov, 2007</time>
 
 I\'m not sure that 404 is the most applicable HTTP status code to use
 here. 403 might be clearer.
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2007-11-28 08:31:37">3 Nov, 2007</time>
+#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2007-11-28 08:31:37">28 Nov, 2007</time>
 
 Will: one thing to keep in mind is that some OPs may only have limited
 support for attribute exchange: they may support a set of well known

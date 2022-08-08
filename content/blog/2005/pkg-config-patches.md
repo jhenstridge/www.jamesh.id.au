@@ -69,7 +69,7 @@ incompatibilities in the recent releases.
 
 ---
 ### Comments:
-#### Alastair McKinstry - <time datetime="2005-06-23 05:55:34">4 Jun, 2005</time>
+#### Alastair McKinstry - <time datetime="2005-06-23 05:55:34">23 Jun, 2005</time>
 
 Hi, these changes look interesting and useful: I\'m fixing up packages
 in Debian at the moment that have unnecessary dependencies. Any idea
@@ -80,7 +80,7 @@ Regards\
 Alastair McKinstry
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh) - <time datetime="2005-06-23 15:09:19">4 Jun, 2005</time>
+#### [James Henstridge](http://blogs.gnome.org/jamesh) - <time datetime="2005-06-23 15:09:19">23 Jun, 2005</time>
 
 I\'m not sure. I haven\'t spoken with Tollef much recently (I\'d guess
 he\'s hard at work on breezy).

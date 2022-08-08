@@ -20,7 +20,7 @@ triangle going off in different directions.
 
 ---
 ### Comments:
-#### Martin Sevior - <time datetime="2006-09-18 16:12:17">1 Sep, 2006</time>
+#### Martin Sevior - <time datetime="2006-09-18 16:12:17">18 Sep, 2006</time>
 
 Way cool James!
 
@@ -28,14 +28,14 @@ The view from the other locations shows how you\'d need a 4th dimension
 to close the triangle in 3-D :-)\
 
 ---
-#### Tor Lillqvist - <time datetime="2006-09-18 16:21:53">1 Sep, 2006</time>
+#### Tor Lillqvist - <time datetime="2006-09-18 16:21:53">18 Sep, 2006</time>
 
 Odd that they didn\'t choose the orientation so that when viewed from
 the \"right\" location, there would be a less distracting background\...
 (Or does it look differently when viewed by eye?)
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh) - <time datetime="2006-09-18 16:54:51">1 Sep, 2006</time>
+#### [James Henstridge](http://blogs.gnome.org/jamesh) - <time datetime="2006-09-18 16:54:51">18 Sep, 2006</time>
 
 Tor: the sculpture is in the middle of the round about seen here:
 
@@ -46,18 +46,18 @@ you\'d get a nicer view if the sculpture was rotated 180°, you\'d only
 be able to appreciate it when standing by the side of the road.
 
 ---
-#### Tim Denholm - <time datetime="2006-09-18 19:53:24">1 Sep, 2006</time>
+#### Tim Denholm - <time datetime="2006-09-18 19:53:24">18 Sep, 2006</time>
 
 I saw that sculpture when I was in Perth last and thought nothing of it.
 Now I know what it is, thanks James!
 
 ---
-#### [Davyd](http://www.davyd.id.au/) - <time datetime="2006-09-18 22:37:33">1 Sep, 2006</time>
+#### [Davyd](http://www.davyd.id.au/) - <time datetime="2006-09-18 22:37:33">18 Sep, 2006</time>
 
 I love that thing.
 
 ---
-#### Jamie - <time datetime="2006-11-15 02:45:43">3 Nov, 2006</time>
+#### Jamie - <time datetime="2006-11-15 02:45:43">15 Nov, 2006</time>
 
 I think the original sculpture is in Escher\'s home town of Eindhoven
 (Netherlands. They\'ve put it on the central reservation of a dual

@@ -54,7 +54,7 @@ manager spec.
 
 ---
 ### Comments:
-#### [liljencrantz](http://roo.no-ip.org/fish) - <time datetime="2005-05-26 23:38:10">4 May, 2005</time>
+#### [liljencrantz](http://roo.no-ip.org/fish) - <time datetime="2005-05-26 23:38:10">26 May, 2005</time>
 
 I don\'t understand what the problem is with the current clipboard and
 console programs. Any program, including console based ones can just

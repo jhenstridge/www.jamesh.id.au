@@ -20,7 +20,7 @@ batteries](http://www.lenovo.com/batteryprogram).
 
 ---
 ### Comments:
-#### [curson](http://www.the-shrike.net) - <time datetime="2006-09-30 21:29:59">6 Sep, 2006</time>
+#### [curson](http://www.the-shrike.net) - <time datetime="2006-09-30 21:29:59">30 Sep, 2006</time>
 
 Thank you for this \"news\". I just checked and my x60s isn\'t affected
 by the problem, based on the serial number of its main battery.\

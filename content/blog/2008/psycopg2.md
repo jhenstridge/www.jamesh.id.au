@@ -54,7 +54,7 @@ commit extension, but I don\'t know when I\'ll have time to get to that.
 
 ---
 ### Comments:
-#### Glenn Williams - <time datetime="2008-04-15 23:59:42">2 Apr, 2008</time>
+#### Glenn Williams - <time datetime="2008-04-15 23:59:42">15 Apr, 2008</time>
 
 Thanks James,
 
@@ -64,7 +64,7 @@ Especially yours and Federico\'s.
 Glenn
 
 ---
-#### Nick - <time datetime="2008-04-18 08:40:45">5 Apr, 2008</time>
+#### Nick - <time datetime="2008-04-18 08:40:45">18 Apr, 2008</time>
 
 I\'m another happy user saying a big \"thanks!\". Keep up the good work
 :)

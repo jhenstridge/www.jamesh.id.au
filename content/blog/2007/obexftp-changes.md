@@ -43,7 +43,7 @@ memory card.
 
 ---
 ### Comments:
-#### [Stefano Costa](http://blog.linux.it/steko) - <time datetime="2007-06-11 18:23:51">1 Jun, 2007</time>
+#### [Stefano Costa](http://blog.linux.it/steko) - <time datetime="2007-06-11 18:23:51">11 Jun, 2007</time>
 
 Is cable support going into gnome-vfs-obexftp anytime soon? It would be
 really great to switch from tedious and repetitive CLI to Nautilus for
@@ -51,7 +51,7 @@ handling files on my N70 (the cable came for free in the package, I\'m
 not going to buy a BT adapter for my quite-old laptop). Thanks.
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2007-06-11 19:25:26">1 Jun, 2007</time>
+#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2007-06-11 19:25:26">11 Jun, 2007</time>
 
 Stefano: I\'ve [filed a bug](https://bugs.launchpad.net/bugs/119801) to
 track this feature, but don\'t have any immediate plans to implement it.
@@ -61,7 +61,7 @@ Nokia 6230) over USB, so I am not sure how I\'d test it. You are welcome
 to submit patches though.
 
 ---
-#### Frequent Traveller - <time datetime="2007-06-11 19:36:48">1 Jun, 2007</time>
+#### Frequent Traveller - <time datetime="2007-06-11 19:36:48">11 Jun, 2007</time>
 
 Great work! Any reason why it\'s not maintained in the GNOME SVN? Also,
 is there going to be a new release?
@@ -69,7 +69,7 @@ is there going to be a new release?
 Keep up!
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2007-06-11 19:55:02">1 Jun, 2007</time>
+#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2007-06-11 19:55:02">11 Jun, 2007</time>
 
 It isn\'t in Subversion because I prefer to use Bazaar for source code
 management. Launchpad is a convenient place to host said branches (GNOME
@@ -81,7 +81,7 @@ functionality is in place, so there is just some testing and other
 administrative stuff to finish off.
 
 ---
-#### [James Henstridge &raquo; gnome-vfs-obexftp 0.3](gnome-vfs-obexftp-03.md) - <time datetime="2007-06-13 11:37:25">3 Jun, 2007</time>
+#### [James Henstridge &raquo; gnome-vfs-obexftp 0.3](gnome-vfs-obexftp-03.md) - <time datetime="2007-06-13 11:37:25">13 Jun, 2007</time>
 
 \[\...\] James Henstridge Random stuff Skip to content « New stuff in
 gnome-vfs-obexftp \[\...\]

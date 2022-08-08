@@ -110,7 +110,7 @@ revisions and can proceed as described above.
 
 ---
 ### Comments:
-#### John Meinel - <time datetime="2006-12-19 13:27:53">2 Dec, 2006</time>
+#### John Meinel - <time datetime="2006-12-19 13:27:53">19 Dec, 2006</time>
 
 There is a \'heads\' plugin that lets you do a lot of this:
 <https://launchpad.net/products/heads>

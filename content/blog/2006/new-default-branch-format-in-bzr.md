@@ -45,7 +45,7 @@ network operations.
 
 ---
 ### Comments:
-#### Olaf Conradi - <time datetime="2006-04-28 00:33:24">5 Apr, 2006</time>
+#### Olaf Conradi - <time datetime="2006-04-28 00:33:24">28 Apr, 2006</time>
 
 Hi
 
@@ -61,7 +61,7 @@ Cheers\
 -Olaf
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh) - <time datetime="2006-04-28 01:21:53">5 Apr, 2006</time>
+#### [James Henstridge](http://blogs.gnome.org/jamesh) - <time datetime="2006-04-28 01:21:53">28 Apr, 2006</time>
 
 Olaf: I was comparing a repository created with \"bzr init-repo
 \--format=metadir\" with one created using \"bzr init-repo
@@ -73,7 +73,7 @@ I know that both repository types use the metadir bzr dir layout, but I
 decided to use the terminology used in the command line UI.
 
 ---
-#### Olaf Conradi - <time datetime="2006-04-28 04:48:53">5 Apr, 2006</time>
+#### Olaf Conradi - <time datetime="2006-04-28 04:48:53">28 Apr, 2006</time>
 
 In latest bzr.dev, the default repository format for metadir changed
 from weave to knit.
@@ -84,7 +84,7 @@ will create one using weave. The error should actually be a warning, it
 does create a valid weave repository.
 
 ---
-#### michele - <time datetime="2006-04-28 17:20:58">5 Apr, 2006</time>
+#### michele - <time datetime="2006-04-28 17:20:58">28 Apr, 2006</time>
 
 Hey guys, it would be nice to upload a egg of bzr 0.8 to the cheese shop
 \[1\] once released\... so it\'s easy\_installable. ;-)

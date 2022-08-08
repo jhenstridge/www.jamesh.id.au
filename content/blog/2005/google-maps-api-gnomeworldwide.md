@@ -15,38 +15,38 @@ back from [Brazil](http://www.imdb.com/title/tt0088846/)).
 
 ---
 ### Comments:
-#### Pierre - <time datetime="2005-07-15 00:29:29">5 Jul, 2005</time>
+#### Pierre - <time datetime="2005-07-15 00:29:29">15 Jul, 2005</time>
 
 We\'ve done something similar at Ubuntu-fr.org but we update the xml
 file by hand thaks to the wiki
 
 ---
-#### [Phil Hagelberg](http://philisha.net) - <time datetime="2005-07-15 00:49:38">5 Jul, 2005</time>
+#### [Phil Hagelberg](http://philisha.net) - <time datetime="2005-07-15 00:49:38">15 Jul, 2005</time>
 
 Let me know if you want some help with this. I think it would be
 super-cool. I\'ve played with the Google Maps API, but I want to do
 something a little more complex.
 
 ---
-#### [Armin Ronacher](http://www.active-4.com) - <time datetime="2005-07-15 03:23:31">5 Jul, 2005</time>
+#### [Armin Ronacher](http://www.active-4.com) - <time datetime="2005-07-15 03:23:31">15 Jul, 2005</time>
 
 I\'ve done a usermap for ubuntuusers.
 \[<http://www.ubuntu-de.org/map.php>\] :-)
 
 ---
-#### Dennis K. - <time datetime="2005-07-15 06:29:54">5 Jul, 2005</time>
+#### Dennis K. - <time datetime="2005-07-15 06:29:54">15 Jul, 2005</time>
 
 You mean something like Ross Burton did:
 
 <http://www.burtonini.com/blog/computers/gmaps-2005-07-14-16-40>
 
 ---
-#### Alan Pater - <time datetime="2005-07-15 06:34:57">5 Jul, 2005</time>
+#### Alan Pater - <time datetime="2005-07-15 06:34:57">15 Jul, 2005</time>
 
 Great movie, Brazil. Have you read the book it\'s based on?
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh) - <time datetime="2005-07-15 10:38:41">5 Jul, 2005</time>
+#### [James Henstridge](http://blogs.gnome.org/jamesh) - <time datetime="2005-07-15 10:38:41">15 Jul, 2005</time>
 
 Dennis: yeah. Ross did that after we talked about it on IRC. There is a
 lot more that could be done though, such as popping up some user info

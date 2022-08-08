@@ -21,19 +21,19 @@ want to switch away from SF.
 
 ---
 ### Comments:
-#### [Luis](http://tieguy.org/) - <time datetime="2006-07-28 08:07:38">5 Jul, 2006</time>
+#### [Luis](http://tieguy.org/) - <time datetime="2006-07-28 08:07:38">28 Jul, 2006</time>
 
 So does this mean launchpad will be GPL\'d soon? :)
 
 ---
-#### [Andy Fitzsimon](http://andy.brisgeek.com) - <time datetime="2006-07-28 08:28:04">5 Jul, 2006</time>
+#### [Andy Fitzsimon](http://andy.brisgeek.com) - <time datetime="2006-07-28 08:28:04">28 Jul, 2006</time>
 
 same here, how can we evaluate that which we cannot see or freely use.
 Actually I wanna know if devs will be able to use it away from
 launchpad.net ?
 
 ---
-#### Wade Mealing - <time datetime="2006-07-28 15:29:52">5 Jul, 2006</time>
+#### Wade Mealing - <time datetime="2006-07-28 15:29:52">28 Jul, 2006</time>
 
 Yes ! they can switch to a closed sourced system, undermining open
 source software, the exact product they are producing.
@@ -41,7 +41,7 @@ source software, the exact product they are producing.
 Ubuntu might be free, but its not freedom baby.\
 
 ---
-#### [Ploum](http://ploum.frimouvy.org) - <time datetime="2006-07-28 17:52:20">5 Jul, 2006</time>
+#### [Ploum](http://ploum.frimouvy.org) - <time datetime="2006-07-28 17:52:20">28 Jul, 2006</time>
 
 Well, I can maybe understand that launchpad.net is not opensource nor
 free and that Ubuntu use it.
@@ -56,7 +56,7 @@ So, I can see only one reason you make such announce on your blog : LP
 will soon be free ! Yehaa !
 
 ---
-#### anonymous - <time datetime="2006-07-28 18:09:31">5 Jul, 2006</time>
+#### anonymous - <time datetime="2006-07-28 18:09:31">28 Jul, 2006</time>
 
 and when can we easily make our own branded localized derivs of ubuntu?.
 Isn\'t open source is about levelling the playing field? Isnt it a level
@@ -64,7 +64,7 @@ playing field through open source that aided ubuntu\'s sponsor raisae so
 much capital?
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh) - <time datetime="2006-07-28 20:49:24">5 Jul, 2006</time>
+#### [James Henstridge](http://blogs.gnome.org/jamesh) - <time datetime="2006-07-28 20:49:24">28 Jul, 2006</time>
 
 Note that Python is currently using the SourceForge bug tracker.
 SourceForge is not free software either.
@@ -74,7 +74,7 @@ does get released, it will probably be in components rather than the
 entire thing in one go.
 
 ---
-#### [Martin Albisetti](http://www.kbglob.com/) - <time datetime="2006-07-29 06:30:36">6 Jul, 2006</time>
+#### [Martin Albisetti](http://www.kbglob.com/) - <time datetime="2006-07-29 06:30:36">29 Jul, 2006</time>
 
 I agree with everyone that I would like to see Launchpad open-sourced,
 but I do applaud the effort you have done to move python to launchpad. I

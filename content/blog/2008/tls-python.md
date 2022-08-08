@@ -44,21 +44,21 @@ combine code doing proper TLS with other code doing broken TLS.
 
 ---
 ### Comments:
-#### bash - <time datetime="2008-06-12 03:52:50">4 Jun, 2008</time>
+#### bash - <time datetime="2008-06-12 03:52:50">12 Jun, 2008</time>
 
 get\_ident() is the threading equivalent to fileno in filelike objects.
 None of them claim to be unique and both are implementation details
 which may be out of the contract, but are very useful.
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2008-06-12 08:30:05">4 Jun, 2008</time>
+#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2008-06-12 08:30:05">12 Jun, 2008</time>
 
 I don\'t dispute that the function has its uses -- just that this is not
 one of them. I spent a while tracking down a problem caused by this
 class of bug (<https://bugs.launchpad.net/zodb/+bug/239086>).
 
 ---
-#### Pierre - <time datetime="2008-06-13 16:18:32">5 Jun, 2008</time>
+#### Pierre - <time datetime="2008-06-13 16:18:32">13 Jun, 2008</time>
 
 Thanks for pointing this out.
 

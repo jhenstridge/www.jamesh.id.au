@@ -15,7 +15,7 @@ seeing the same city covered in snow.
 
 ---
 ### Comments:
-#### [Tester](http://www.tester.ca/) - <time datetime="2009-02-25 04:35:56">3 Feb, 2009</time>
+#### [Tester](http://www.tester.ca/) - <time datetime="2009-02-25 04:35:56">25 Feb, 2009</time>
 
 I hope you enjoy our nice, cool, snow covered city!
 

@@ -54,12 +54,12 @@ it is released.
 
 ---
 ### Comments:
-#### foo - <time datetime="2009-06-17 14:13:55">3 Jun, 2009</time>
+#### foo - <time datetime="2009-06-17 14:13:55">17 Jun, 2009</time>
 
 Could we get this in Debian too?
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2009-06-17 14:39:13">3 Jun, 2009</time>
+#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2009-06-17 14:39:13">17 Jun, 2009</time>
 
 It isn\'t even in Ubuntu yet. These are just personal packages. It
 shouldn\'t be much trouble rebuilding them on Debian though.
@@ -71,7 +71,7 @@ to be LGPL\'d. I reported that problem and it should be cleared up for
 the next release.
 
 ---
-#### Marc-Andre Lureau - <time datetime="2009-06-18 03:07:36">4 Jun, 2009</time>
+#### Marc-Andre Lureau - <time datetime="2009-06-18 03:07:36">18 Jun, 2009</time>
 
 James, I started a packaging for Debian,
 http://git.debian.org/?p=collab-maint/rygel.git;a=summary. Tell me if
@@ -79,13 +79,13 @@ your\'s is more advanced or how we can join the effort. I am guilty, I
 didn\'t send an ITP. No worries.
 
 ---
-#### [More Rygel testing - James Henstridge](more-rygel-testing.md) - <time datetime="2009-06-19 00:06:45">5 Jun, 2009</time>
+#### [More Rygel testing - James Henstridge](more-rygel-testing.md) - <time datetime="2009-06-19 00:06:45">19 Jun, 2009</time>
 
 \[\...\] James Henstridge Random stuff Skip to content « Ubuntu packages
 for Rygel \[\...\]
 
 ---
-#### stoffe - <time datetime="2009-09-27 18:27:48">0 Sep, 2009</time>
+#### stoffe - <time datetime="2009-09-27 18:27:48">27 Sep, 2009</time>
 
 Is it possible to get an update to 4.1? Please?
 

@@ -22,7 +22,7 @@ integration with the bzr branch management features in the future.
 
 ---
 ### Comments:
-#### [Matthew Henstridge](http://N/A) - <time datetime="2006-03-29 09:16:07">3 Mar, 2006</time>
+#### [Matthew Henstridge](http://N/A) - <time datetime="2006-03-29 09:16:07">29 Mar, 2006</time>
 
 HEY! howsit goin mate im cool down here in ADELAIDE AUSTRALIA just
 wondering what your background is where your side of the family came

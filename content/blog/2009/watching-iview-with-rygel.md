@@ -98,7 +98,7 @@ down to a smaller number of larger XML files.
 
 ---
 ### Comments:
-#### [Jeremy](http://jeremy.visser.name/) - <time datetime="2009-07-06 18:18:48">1 Jul, 2009</time>
+#### [Jeremy](http://jeremy.visser.name/) - <time datetime="2009-07-06 18:18:48">6 Jul, 2009</time>
 
 Totally agree with you about the XML files. I myself did a similar thing
 \-- found out about the whole XML file hierarchy, demixing the RTMP

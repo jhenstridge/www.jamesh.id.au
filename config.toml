@@ -7,12 +7,15 @@ pygmentsStyle = "solarized-light"
 enableGitInfo = true
 enableRobotsTXT = true
 
+[permalinks]
+blog = "/blog/:year/:month/:slug/"
+
+[markup.goldmark.renderer]
+unsafe = true
+
 [params]
 mainSections = ["post"]
 disable_share = true
-
-[permalinks]
-blog = "/blog/:year/:month/:slug/"
 
 [[params.ananke_socials]]
 name = "twitter"

@@ -66,13 +66,13 @@ There are still a few warts with this set up though:
 
 ---
 ### Comments:
-#### [sil](http://www.kryogenix.org/) - <time datetime="2012-06-04 22:28:54">1 Jun, 2012</time>
+#### [sil](http://www.kryogenix.org/) - <time datetime="2012-06-04 22:28:54">4 Jun, 2012</time>
 
 Interesting discovery: if you just rename the .zip file to whatever.py,
 then it works and you can run it with \"python whatever.py\"\...
 
 ---
-#### [» u1ftp: a demonstration of the Ubuntu One API James Henstridge](u1ftp.md) - <time datetime="2012-07-04 16:32:50">3 Jul, 2012</time>
+#### [» u1ftp: a demonstration of the Ubuntu One API James Henstridge](u1ftp.md) - <time datetime="2012-07-04 16:32:50">4 Jul, 2012</time>
 
 \[\...\] James Henstridge Random stuff Skip to content « Packaging
 Python programs as runnable ZIP files \[\...\]

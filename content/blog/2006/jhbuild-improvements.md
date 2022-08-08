@@ -120,14 +120,14 @@ Anonymous \#2: already committed, and being used for \"cairo\" in the
 gnome-2.16 module set.
 
 ---
-####  - <time datetime="2006-05-11 05:55:05">4 May, 2006</time>
+####  - <time datetime="2006-05-11 05:55:05">11 May, 2006</time>
 
 Since jhbuild supports Arch as a module source, is baz also supported?
 
 Also, is SCons supported as a module type?\
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh) - <time datetime="2006-05-11 18:52:16">4 May, 2006</time>
+#### [James Henstridge](http://blogs.gnome.org/jamesh) - <time datetime="2006-05-11 18:52:16">11 May, 2006</time>
 
 JHBuild supports modules that use Arch for version control by using the
 baz-1.x client.
@@ -143,7 +143,7 @@ darcs, git, arch and tarballs). Previously you\'d end up writing a fair
 bit of boilerplate to support all the VC backends.
 
 ---
-####  - <time datetime="2006-05-11 21:35:51">4 May, 2006</time>
+####  - <time datetime="2006-05-11 21:35:51">11 May, 2006</time>
 
 Thanks for the reply. (I did mean bzr \[not baz\] in my first question.)
 

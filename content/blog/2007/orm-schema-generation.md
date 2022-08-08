@@ -77,7 +77,7 @@ can\'t specify everything we want anyway.
 
 ---
 ### Comments:
-#### michele - <time datetime="2007-09-28 19:02:12">5 Sep, 2007</time>
+#### michele - <time datetime="2007-09-28 19:02:12">28 Sep, 2007</time>
 
 Hi James,
 
@@ -91,7 +91,7 @@ constructs, that way you could support different dbs within a single
 dsl.
 
 ---
-#### [riffraff](http://riffraff.blogsome.com) - <time datetime="2007-09-29 00:07:08">6 Sep, 2007</time>
+#### [riffraff](http://riffraff.blogsome.com) - <time datetime="2007-09-29 00:07:08">29 Sep, 2007</time>
 
 well \$ORM\_FOR\_FAMOUS\_RUBY\_FRAMEWORK has pure ruby migration scripts
 so that the schema can be evolved easily withouth touching SQL, and the
@@ -101,7 +101,7 @@ SQL, but it seems close to what michele is suggesting in the above
 comment.
 
 ---
-#### Björn - <time datetime="2007-09-29 06:33:20">6 Sep, 2007</time>
+#### Björn - <time datetime="2007-09-29 06:33:20">29 Sep, 2007</time>
 
 Interesting article. It would also be interesting to know why you wrote
 yet another Python ORM when there are already are so many other

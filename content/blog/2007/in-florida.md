@@ -36,7 +36,7 @@ it\'ll be interesting to see what happens then.
 
 ---
 ### Comments:
-#### jtin - <time datetime="2007-08-29 14:03:21">3 Aug, 2007</time>
+#### jtin - <time datetime="2007-08-29 14:03:21">29 Aug, 2007</time>
 
 The nice thing about SSSS, I find, is that you can get through security
 faster. Since you\'re not going through the normal security screening

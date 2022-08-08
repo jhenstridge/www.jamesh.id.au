@@ -99,7 +99,7 @@ bother using it. It should be quite useful at the next sprint I go to.
 
 ---
 ### Comments:
-#### [Stuart Colville](http://muffinresearch.co.uk/) - <time datetime="2008-02-19 17:28:55">2 Feb, 2008</time>
+#### [Stuart Colville](http://muffinresearch.co.uk/) - <time datetime="2008-02-19 17:28:55">19 Feb, 2008</time>
 
 This is such a brilliant way of taking full advantage of
 de-centralisation and perfect for sharing branches between localised
@@ -107,13 +107,13 @@ teams. The only downside is that Avahi is Linux only and a cross
 platform solution would be even better!
 
 ---
-#### [Mathieu Cadet](http://athrun.myopenid.com/) - <time datetime="2008-02-19 19:15:07">2 Feb, 2008</time>
+#### [Mathieu Cadet](http://athrun.myopenid.com/) - <time datetime="2008-02-19 19:15:07">19 Feb, 2008</time>
 
 Woa! Just tested it. That\'s really awesome. Great job here!\
 This should be included by default in bazaar.
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2008-02-19 19:29:59">2 Feb, 2008</time>
+#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2008-02-19 19:29:59">19 Feb, 2008</time>
 
 Stuart: Avahi is not Linux only, but I catch your meaning: this isn\'t
 going to work with the mDNS responder on MacOS X, and Avahi has not been
@@ -126,12 +126,12 @@ client library, but I am not sure how much code it would share
 (bzr-avahi is almost entirely glue code).
 
 ---
-#### [Antono Vasiljev](http://antono.info/) - <time datetime="2008-02-19 20:19:17">2 Feb, 2008</time>
+#### [Antono Vasiljev](http://antono.info/) - <time datetime="2008-02-19 20:19:17">19 Feb, 2008</time>
 
 Awesome idea! I\'ll try to make something similar for git.
 
 ---
-#### [Stuart Metcalfe](http://origa.me.uk/openid/) - <time datetime="2008-02-19 21:17:55">2 Feb, 2008</time>
+#### [Stuart Metcalfe](http://origa.me.uk/openid/) - <time datetime="2008-02-19 21:17:55">19 Feb, 2008</time>
 
 This is an great use of Zeroconf - well done! It\'s worth noting that
 Apple\'s mDNS responder has both Mac OSX and Windows versions which

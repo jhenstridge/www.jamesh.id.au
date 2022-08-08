@@ -27,12 +27,12 @@ remains pretty much the same. The main differences are:
 
 ---
 ### Comments:
-#### [Marius Gedminas](http://mg.b4net.lt/) - <time datetime="2006-03-02 23:07:57">4 Mar, 2006</time>
+#### [Marius Gedminas](http://mg.b4net.lt/) - <time datetime="2006-03-02 23:07:57">2 Mar, 2006</time>
 
 Any ideas how to use it with Mutt?
 
 ---
-#### [Marius Gedminas](http://mg.b4net.lt/) - <time datetime="2006-03-03 03:31:08">5 Mar, 2006</time>
+#### [Marius Gedminas](http://mg.b4net.lt/) - <time datetime="2006-03-03 03:31:08">3 Mar, 2006</time>
 
 I got gnome-gpg working with Mutt:
 
@@ -52,7 +52,7 @@ set pgp\_sign\_command=\"gnome-gpg \--no-verbose \--quiet \--output -
 comments?)
 
 ---
-#### Tony D - <time datetime="2006-03-19 22:40:44">0 Mar, 2006</time>
+#### Tony D - <time datetime="2006-03-19 22:40:44">19 Mar, 2006</time>
 
 Hey James.\
 Saw that great stuff you posted about Australia\'s number 1 show,

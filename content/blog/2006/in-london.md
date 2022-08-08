@@ -20,7 +20,7 @@ It is a nice change from winter weather in Perth.
 
 ---
 ### Comments:
-#### [Pupeno](http://pupeno.com) - <time datetime="2006-07-27 19:02:20">4 Jul, 2006</time>
+#### [Pupeno](http://pupeno.com) - <time datetime="2006-07-27 19:02:20">27 Jul, 2006</time>
 
 Hello,\
 Since you seem to be a developer of Rosetta; to where should I send an
@@ -31,7 +31,7 @@ feeding-back the translations to mainstream projects ?
 Reference: <http://www.ogmaciel.com/?p=282>
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh) - <time datetime="2006-07-28 08:05:22">5 Jul, 2006</time>
+#### [James Henstridge](http://blogs.gnome.org/jamesh) - <time datetime="2006-07-28 08:05:22">28 Jul, 2006</time>
 
 I am not a Rosetta developer, but you can submit feature requests at
 <https://launchpad.net/products/rosetta/>+filebug

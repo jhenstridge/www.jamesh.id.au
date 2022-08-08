@@ -48,14 +48,14 @@ be grabbed with the following command:
 
 ---
 ### Comments:
-#### dave - <time datetime="2007-05-21 22:58:33">1 May, 2007</time>
+#### dave - <time datetime="2007-05-21 22:58:33">21 May, 2007</time>
 
 Does this (and the other projects based on v4l) give you access to the
 radio stations broadcast alongside television channels via DVB-T or
 DVB-S (Freeview and Freesat in the UK)?
 
 ---
-#### bronxoni - <time datetime="2007-05-21 23:34:18">1 May, 2007</time>
+#### bronxoni - <time datetime="2007-05-21 23:34:18">21 May, 2007</time>
 
 Please \*DO NOT\* develop the V4L1 support. The reason is simple: V4L1
 is deprecated and getting seriously outdated. The problem is that some
@@ -64,7 +64,7 @@ worse to work with. They will never stop that idiocy before V4L1 support
 starts seriously get dropped from all the applications.
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh) - <time datetime="2007-05-22 01:05:16">2 May, 2007</time>
+#### [James Henstridge](http://blogs.gnome.org/jamesh) - <time datetime="2007-05-22 01:05:16">22 May, 2007</time>
 
 dave: I have no idea. I don\'t have a DVB-T tuner card in my desktop
 (the DSB-R100 only does FM radio).

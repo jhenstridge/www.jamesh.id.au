@@ -47,12 +47,12 @@ setting things up in MediaTomb\'s configuration file.
 
 ---
 ### Comments:
-#### Kevin - <time datetime="2009-06-19 00:41:51">5 Jun, 2009</time>
+#### Kevin - <time datetime="2009-06-19 00:41:51">19 Jun, 2009</time>
 
 Quick question: Are thumbnails seen when browsing via the PS3?
 
 ---
-#### Jerome Haltom - <time datetime="2009-06-19 01:13:35">5 Jun, 2009</time>
+#### Jerome Haltom - <time datetime="2009-06-19 01:13:35">19 Jun, 2009</time>
 
 Is your package set up to run as a system daemon or an instance that has
 to be started per-user? Seems tracker would not work in the case of the
@@ -60,7 +60,7 @@ former\... but all the other plugins that I can imagine writing would
 be. File backend, TV tuner scraper, etc.
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2009-06-19 09:47:07">5 Jun, 2009</time>
+#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2009-06-19 09:47:07">19 Jun, 2009</time>
 
 Kevin: no thumbnails yet.
 
@@ -68,7 +68,7 @@ Jerome: Rygel takes its preferences from GConf, so probably wouldn\'t
 work as a system daemon at present.
 
 ---
-#### Zeeshan Ali - <time datetime="2009-06-19 21:50:54">5 Jun, 2009</time>
+#### Zeeshan Ali - <time datetime="2009-06-19 21:50:54">19 Jun, 2009</time>
 
 Thumbnails: This is high on my TODO. I\'ll mostly probaly be using
 hildon-thumbnailer for thumbnails simply because it is already available
@@ -79,7 +79,7 @@ system-daemon but it does make it harder yes. I intend to replace gconf
 usage with .ini files soon. :)
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2009-06-19 22:18:30">5 Jun, 2009</time>
+#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2009-06-19 22:18:30">19 Jun, 2009</time>
 
 Zeeshan: for the non-Maemo case, gnome-desktop\'s thumbnailer might be
 worth a look. That way you\'d have thumbnails for everything Nautilus
@@ -87,7 +87,7 @@ can handle (and take advantage of any thumbnails it has already
 generated).
 
 ---
-#### Zeeshan Ali - <time datetime="2009-06-19 23:35:13">5 Jun, 2009</time>
+#### Zeeshan Ali - <time datetime="2009-06-19 23:35:13">19 Jun, 2009</time>
 
 Jim: Sure but isn\'t there a freedesktop spec that these both implement?
 If that is the case, we are all good whichever of them I use. :)

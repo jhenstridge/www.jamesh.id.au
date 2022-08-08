@@ -12,7 +12,7 @@ haven\'t visited.
 
 ---
 ### Comments:
-#### [xaccrocheur](http://halluci.net) - <time datetime="2005-07-12 18:49:44">2 Jul, 2005</time>
+#### [xaccrocheur](http://halluci.net) - <time datetime="2005-07-12 18:49:44">12 Jul, 2005</time>
 
 I\'m a little disappointed, I was expecting a \"going to brazil\"
 tutorial, how to get there, why, see also, these sort of things. Thank
@@ -21,7 +21,7 @@ you anyway
 pX
 
 ---
-#### [Dan Conklin](http://www.louddata.com) - <time datetime="2005-07-15 04:34:48">5 Jul, 2005</time>
+#### [Dan Conklin](http://www.louddata.com) - <time datetime="2005-07-15 04:34:48">15 Jul, 2005</time>
 
 Have fun in Brazil! I\'m going there in four weeks just for vacation.
 I\'ll be going to ForteLeza and Natal. The Brazilian ministry of

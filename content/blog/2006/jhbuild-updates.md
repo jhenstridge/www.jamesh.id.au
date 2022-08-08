@@ -68,12 +68,12 @@ or not, according to the chosen policy.
 
 ---
 ### Comments:
-#### [Thomas Thurman](http://marnanel.livejournal.com) - <time datetime="2006-06-05 13:37:20">1 Jun, 2006</time>
+#### [Thomas Thurman](http://marnanel.livejournal.com) - <time datetime="2006-06-05 13:37:20">5 Jun, 2006</time>
 
 The state identifiers idea sounds really exciting.
 
 ---
-#### Josh Triplett - <time datetime="2006-06-05 13:47:15">1 Jun, 2006</time>
+#### Josh Triplett - <time datetime="2006-06-05 13:47:15">5 Jun, 2006</time>
 
 For GIT, you can use the sha1sum for the commit or tag. Various GIT
 commands will give you this value; for example, git-rev-parse will give

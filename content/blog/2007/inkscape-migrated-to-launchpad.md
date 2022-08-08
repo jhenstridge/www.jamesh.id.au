@@ -31,7 +31,7 @@ rather than being redirected through SourceForge).
 
 ---
 ### Comments:
-#### Peteris Krisjanis - <time datetime="2007-11-28 14:13:56">3 Nov, 2007</time>
+#### Peteris Krisjanis - <time datetime="2007-11-28 14:13:56">28 Nov, 2007</time>
 
 Man, this is great that Inkscape will finally use Launchpad bug system.
 I used Inkscape in few serious projects this year and wanted to report
@@ -42,7 +42,7 @@ other way, are easiest system for this, at least for me.
 Keepin rocking!
 
 ---
-#### Wade Mealing - <time datetime="2007-11-28 17:26:18">3 Nov, 2007</time>
+#### Wade Mealing - <time datetime="2007-11-28 17:26:18">28 Nov, 2007</time>
 
 Man, this is horrible ! migrating to a closed source bug tracker. I\'ve
 used sourceforge to lodge bugs before and it wasn\'t too hard. But
@@ -62,7 +62,7 @@ doesn\'t cost inkscape contributions from other free software
 developers.
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2007-11-28 17:50:50">3 Nov, 2007</time>
+#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2007-11-28 17:50:50">28 Nov, 2007</time>
 
 Wade: the Inkscape developers were not interested in running their own
 bug tracker (see
@@ -85,7 +85,7 @@ developer perspective. I hope that you find Launchpad easy to use when
 filing bugs in the future.
 
 ---
-#### pinky - <time datetime="2007-11-28 18:17:48">3 Nov, 2007</time>
+#### pinky - <time datetime="2007-11-28 18:17:48">28 Nov, 2007</time>
 
 I\'m completely with Wade Mealing. It is very sad that a free software
 project migrates to a proprietary development/bug-tracking platform.
@@ -98,25 +98,25 @@ how developers and/or users can like sourceforge. But there are other
 options than non-free software. E.g. savannah, gnome,\....
 
 ---
-#### [nicu buculei](http://nicubunu.blogspot.com/) - <time datetime="2007-11-28 18:29:40">3 Nov, 2007</time>
+#### [nicu buculei](http://nicubunu.blogspot.com/) - <time datetime="2007-11-28 18:29:40">28 Nov, 2007</time>
 
 At this step Inkscape lost me as a bug reporter/triager (I used to do
 this on the sf.net tracker). I won\'t make a Launchpad account.
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2007-11-28 22:39:34">3 Nov, 2007</time>
+#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2007-11-28 22:39:34">28 Nov, 2007</time>
 
 pinky, nicu: out of interest, are there particular reasons you find it
 okay to work with SourceForge.net but not Launchpad?
 
 ---
-#### naisioxerloro - <time datetime="2007-11-28 22:58:56">3 Nov, 2007</time>
+#### naisioxerloro - <time datetime="2007-11-28 22:58:56">28 Nov, 2007</time>
 
 Hi.\
 Good design, who make it?
 
 ---
-#### pinky - <time datetime="2007-11-29 00:10:41">4 Nov, 2007</time>
+#### pinky - <time datetime="2007-11-29 00:10:41">29 Nov, 2007</time>
 
 \@James Henstridge:
 
@@ -143,7 +143,7 @@ And as time has shown he get even punished for it as the right holders
 decided that they doesn\'t want Linus to use it for free anymore.)
 
 ---
-#### [nicu buculei](http://nicubunu.blogspot.com/) - <time datetime="2007-11-29 00:26:21">4 Nov, 2007</time>
+#### [nicu buculei](http://nicubunu.blogspot.com/) - <time datetime="2007-11-29 00:26:21">29 Nov, 2007</time>
 
 When I joined Inkscape I already had a sf.net account. Long ago they
 were almost the only game in town.\

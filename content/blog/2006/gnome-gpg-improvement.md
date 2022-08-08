@@ -45,7 +45,7 @@ gpg, but it works quite well for the basics.
 
 ---
 ### Comments:
-#### Adam Schreiber - <time datetime="2006-01-14 00:34:33">6 Jan, 2006</time>
+#### Adam Schreiber - <time datetime="2006-01-14 00:34:33">14 Jan, 2006</time>
 
 James,
 
@@ -55,7 +55,7 @@ with Seahorse in some manner.
 Adam
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh) - <time datetime="2006-01-14 12:55:47">6 Jan, 2006</time>
+#### [James Henstridge](http://blogs.gnome.org/jamesh) - <time datetime="2006-01-14 12:55:47">14 Jan, 2006</time>
 
 Adam: gnome-gpg serves a fairly different purpose to Seahorse. It acts
 as a wrapper for gpg that lets you store your passphrase in the Gnome
@@ -71,7 +71,7 @@ they store in gnome-keyring. If those match, then the user would only
 need to type their passphrase in once for both uses.
 
 ---
-#### Anonymous - <time datetime="2006-01-15 09:09:00">0 Jan, 2006</time>
+#### Anonymous - <time datetime="2006-01-15 09:09:00">15 Jan, 2006</time>
 
 Any chance of making use of gpg-agent if available? I prefer to store my
 GPG passphrase in gpg-agent.

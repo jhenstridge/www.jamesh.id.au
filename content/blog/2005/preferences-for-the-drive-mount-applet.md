@@ -44,7 +44,7 @@ using apps, such as Nautilus.
 
 ---
 ### Comments:
-#### Stephane Chauveau - <time datetime="2005-12-16 23:41:51">5 Dec, 2005</time>
+#### Stephane Chauveau - <time datetime="2005-12-16 23:41:51">16 Dec, 2005</time>
 
 My feeling is that the applet could change the way it displays the
 drives.\
@@ -63,7 +63,7 @@ The button could provide some information (e.g. number of drives) and it
 could also \'flash\' when a drive is added or removed.
 
 ---
-#### Anders Olsson - <time datetime="2005-12-17 00:00:31">6 Dec, 2005</time>
+#### Anders Olsson - <time datetime="2005-12-17 00:00:31">17 Dec, 2005</time>
 
 I think that a common reason that people try the drive mount applet is
 because there\'s no fast and easy way to unmount/eject removable media
@@ -89,7 +89,7 @@ unmount, such as harddrive partitions that I don\'t want permanently
 mounted or network drives that are not always available.
 
 ---
-#### Stephane Chauveau - <time datetime="2005-12-17 00:58:11">6 Dec, 2005</time>
+#### Stephane Chauveau - <time datetime="2005-12-17 00:58:11">17 Dec, 2005</time>
 
 \> the only functionality that is normally needed in\
 \> regards to removable media is the ability to unmount it
@@ -113,7 +113,7 @@ any removable volume can be mounted.
 \
 
 ---
-#### Rob J. Caskey - <time datetime="2005-12-17 02:25:48">6 Dec, 2005</time>
+#### Rob J. Caskey - <time datetime="2005-12-17 02:25:48">17 Dec, 2005</time>
 
 I would suggest that if you could right click on the entry in the places
 side bar in Nautilus and select Eject most people could do without this
@@ -123,7 +123,7 @@ Sincerely,\
 \--Rob
 
 ---
-#### anon - <time datetime="2005-12-17 12:02:34">6 Dec, 2005</time>
+#### anon - <time datetime="2005-12-17 12:02:34">17 Dec, 2005</time>
 
 Interesting, I am glad to hear that work is put into this. I currently
 have 9 icons visible (4 x USB + 4 x NFS + 1 x DVD). I only wanted a way

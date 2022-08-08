@@ -20,7 +20,7 @@ fit three at a time into the pot.
 
 ---
 ### Comments:
-#### Mike - <time datetime="2009-12-04 12:59:02">5 Dec, 2009</time>
+#### Mike - <time datetime="2009-12-04 12:59:02">4 Dec, 2009</time>
 
 I found the bagels from this recipe came out really well with white
 whole wheat: http://www.sourdoughhome.com/sourdoughbagels.html
@@ -28,7 +28,7 @@ whole wheat: http://www.sourdoughhome.com/sourdoughbagels.html
 Once you go sourdough, it\'s tough to go back to dry yeast!
 
 ---
-#### Alessandro Delgado - <time datetime="2009-12-04 14:11:13">5 Dec, 2009</time>
+#### Alessandro Delgado - <time datetime="2009-12-04 14:11:13">4 Dec, 2009</time>
 
 Man, I SWEAR so badly I\'m not trying to be an SI-nazi or something, but
 I couldn\'t really get the proportions.
@@ -42,7 +42,7 @@ quite nice, I wanna cook it soon :-)
 Thank you in advance \^\^
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2009-12-04 14:45:07">5 Dec, 2009</time>
+#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2009-12-04 14:45:07">4 Dec, 2009</time>
 
 \@Mike: I haven\'t tried any sour dough baking yet. I guess it is about
 time I did so.
@@ -57,7 +57,7 @@ probably isn\'t so important: if you use less it\'ll just take longer to
 rise.
 
 ---
-#### [Michael Carden](http://michaelcarden.net) - <time datetime="2009-12-04 16:03:25">5 Dec, 2009</time>
+#### [Michael Carden](http://michaelcarden.net) - <time datetime="2009-12-04 16:03:25">4 Dec, 2009</time>
 
 James, maybe you can explain to me something I have never understood\...
 Bagels. I mean, I love a bread roll and I quite like a croissant. I just
@@ -72,7 +72,7 @@ I must be missing something.
 MC
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2009-12-04 17:26:42">5 Dec, 2009</time>
+#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2009-12-04 17:26:42">4 Dec, 2009</time>
 
 \@Michael Carden: I\'m not sure. It does increase the surface area
 compared to a traditional bread roll, which probably makes a difference
@@ -80,7 +80,7 @@ during the boiling stage. I guess you could get the same effect from a
 long thin roll, but that would likely be even less convenient.
 
 ---
-#### [Aria Stewart](http://dinhe.net/~aredridel/) - <time datetime="2009-12-05 01:37:12">6 Dec, 2009</time>
+#### [Aria Stewart](http://dinhe.net/~aredridel/) - <time datetime="2009-12-05 01:37:12">5 Dec, 2009</time>
 
 Excellent!
 
@@ -96,14 +96,14 @@ toppings of cream cheese and lox, or of plain butter, and eaten
 open-faced rather than sandwiched. No splat of toppings that way!
 
 ---
-#### Tobias - <time datetime="2009-12-05 03:33:09">6 Dec, 2009</time>
+#### Tobias - <time datetime="2009-12-05 03:33:09">5 Dec, 2009</time>
 
 The theory is that Jewish bakers could carry them around during shabbat
 without touching them, just poking a stick through the hole. Could be a
 retrofitted theory though.
 
 ---
-#### [Kevin Mark](http://mysite.verizon.net/kevin.mark) - <time datetime="2009-12-08 18:04:14">2 Dec, 2009</time>
+#### [Kevin Mark](http://mysite.verizon.net/kevin.mark) - <time datetime="2009-12-08 18:04:14">8 Dec, 2009</time>
 
 Interesting\... :) I live in the land of Bagels and Bialys. Those do not
 like look quite like the ones I have eaten. Maybe you can travel to
@@ -114,7 +114,7 @@ seeds, onion & garlic bits). And cream cheese & lox as fillings :)\
 Debconf 2010 will present such an opportunity.
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2009-12-10 15:09:10">4 Dec, 2009</time>
+#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2009-12-10 15:09:10">10 Dec, 2009</time>
 
 \@Kevin Mark: I\'ll agree that the bagels I made are more uneven/rough
 than the commercial variants I\'ve seen both here and in the US, but
@@ -123,7 +123,7 @@ they\'d probably come out even better if I did the whole cool second
 rise over night in the fridge thing). They tasted pretty good though :)
 
 ---
-#### Alessandro Delgado - <time datetime="2009-12-11 00:10:55">5 Dec, 2009</time>
+#### Alessandro Delgado - <time datetime="2009-12-11 00:10:55">11 Dec, 2009</time>
 
 \@James
 
