@@ -2,7 +2,7 @@ baseURL = "https://www.jamesh.id.au/"
 languageCode = "en-au"
 title = "James Henstridge"
 theme = "ananke"
-paginate = 100
+paginate = 25
 enableGitInfo = true
 enableRobotsTXT = true
 
