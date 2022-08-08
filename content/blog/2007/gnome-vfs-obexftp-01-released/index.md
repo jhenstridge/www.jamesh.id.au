@@ -219,7 +219,7 @@ the same manually.\
 /etc/gnome-vfs-2.0/modules/obex-modules.conf
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh) - <time datetime="2007-01-09 15:34:53">9 Jan, 2007</time>
+#### James Henstridge - <time datetime="2007-01-09 15:34:53">9 Jan, 2007</time>
 
 Ritesh: the file probably got installed in
 \$prefix/etc/gnome-vfs-2.0/modules, since the default value of
@@ -263,7 +263,7 @@ However, I have no idea how to tell vfs-obexftp about this. Where do I
 insert the channel number?
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh) - <time datetime="2007-01-14 02:02:08">14 Jan, 2007</time>
+#### James Henstridge - <time datetime="2007-01-14 02:02:08">14 Jan, 2007</time>
 
 Daniel: there is already some special case code for Nokia smartphones in
 the code, since they export a crippled FTP implementation for the

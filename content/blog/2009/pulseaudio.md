@@ -71,7 +71,7 @@ is considered special effort and not automatic by 99.99% of people on
 the earth, all of which would not be able to do it.
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2009-02-26 00:16:55">26 Feb, 2009</time>
+#### James Henstridge - <time datetime="2009-02-26 00:16:55">26 Feb, 2009</time>
 
 Rob: right. I think a GUI would help a lot here.
 

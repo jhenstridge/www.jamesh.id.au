@@ -64,7 +64,7 @@ worse to work with. They will never stop that idiocy before V4L1 support
 starts seriously get dropped from all the applications.
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh) - <time datetime="2007-05-22 01:05:16">22 May, 2007</time>
+#### James Henstridge - <time datetime="2007-05-22 01:05:16">22 May, 2007</time>
 
 dave: I have no idea. I don\'t have a DVB-T tuner card in my desktop
 (the DSB-R100 only does FM radio).

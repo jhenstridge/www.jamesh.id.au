@@ -74,7 +74,7 @@ manually even though you have a set of nice models to work with already
 defined :/
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2008-08-02 19:21:48">2 Aug, 2008</time>
+#### James Henstridge - <time datetime="2008-08-02 19:21:48">2 Aug, 2008</time>
 
 Raf: I\'d agree that the current state of schema management in Storm is
 not that great (i.e. it is non-existent). However, I believe that schema
@@ -88,7 +88,7 @@ on Rails).
 Maybe Django Evolution will improve the situation.
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2008-08-05 19:49:47">5 Aug, 2008</time>
+#### James Henstridge - <time datetime="2008-08-05 19:49:47">5 Aug, 2008</time>
 
 Django Evolution looks interesting, but seems to keep some of the
 problems of schema generation: if you do two deployments of an

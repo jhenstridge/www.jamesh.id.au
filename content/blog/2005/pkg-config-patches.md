@@ -80,7 +80,7 @@ Regards\
 Alastair McKinstry
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh) - <time datetime="2005-06-23 15:09:19">23 Jun, 2005</time>
+#### James Henstridge - <time datetime="2005-06-23 15:09:19">23 Jun, 2005</time>
 
 I\'m not sure. I haven\'t spoken with Tollef much recently (I\'d guess
 he\'s hard at work on breezy).

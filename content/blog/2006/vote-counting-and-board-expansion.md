@@ -92,7 +92,7 @@ right one, based not only on theory but also in practical terms i.e.
 free software available, functional and stable.
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh) - <time datetime="2006-06-07 12:41:05">7 Jun, 2006</time>
+#### James Henstridge - <time datetime="2006-06-07 12:41:05">7 Jun, 2006</time>
 
 David: reducing the number of votes each member gets while keeping the
 same voting system would only exacerbate the problem of picking a

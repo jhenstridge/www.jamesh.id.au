@@ -79,7 +79,7 @@ Oups, forgot the url to svl :
 <http://search.cpan.org/~abergman/SVL-0.29/>
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh) - <time datetime="2007-03-26 18:25:39">26 Mar, 2007</time>
+#### James Henstridge - <time datetime="2007-03-26 18:25:39">26 Mar, 2007</time>
 
 Michael: I think a lot of the SVL features are already part of the
 Bazaar core. My code basically just instantiates the existing Bazaar

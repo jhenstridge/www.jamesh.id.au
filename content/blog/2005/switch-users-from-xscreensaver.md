@@ -35,7 +35,7 @@ in Applications-\>System Tools-\>New Login in the GNOME menus; I don\'t
 know about Ubuntu.
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh) - <time datetime="2005-12-06 02:11:59">6 Dec, 2005</time>
+#### James Henstridge - <time datetime="2005-12-06 02:11:59">6 Dec, 2005</time>
 
 Craig: I\'m aware that there is a menu item to run gdmflexiserver (jvic
 mentioned it too in the post this one replies to).
@@ -51,7 +51,7 @@ I\'m fairly sure only gnome-screensaver has this switch user button, not
 XScreensaver. Or did Ubuntu patch XScreensaver?
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh) - <time datetime="2005-12-06 12:54:30">6 Dec, 2005</time>
+#### James Henstridge - <time datetime="2005-12-06 12:54:30">6 Dec, 2005</time>
 
 anonymous: the feature has existed in xscreensaver since about March. It
 may not be turned on by default though.

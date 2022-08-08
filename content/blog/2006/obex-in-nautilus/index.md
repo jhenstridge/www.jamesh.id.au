@@ -107,7 +107,7 @@ Seeing that feature in nautilus/gnomevfs is very cool!
 Will it in 2.16?
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh) - <time datetime="2006-10-05 22:24:12">5 Oct, 2006</time>
+#### James Henstridge - <time datetime="2006-10-05 22:24:12">5 Oct, 2006</time>
 
 Johan: great news!
 
@@ -148,7 +148,7 @@ simple to me. Sending files from the phone to the PC I do from, well,
 the phone, which also seems to make sense. What am I missing? :)
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh) - <time datetime="2006-10-06 16:52:25">6 Oct, 2006</time>
+#### James Henstridge - <time datetime="2006-10-06 16:52:25">6 Oct, 2006</time>
 
 AdamW: one simple reason is that this provides the same interface for
 copying files to/from my phone as I have for accessing my camera, PSP,

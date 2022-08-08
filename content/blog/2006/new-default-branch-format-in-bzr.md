@@ -61,7 +61,7 @@ Cheers\
 -Olaf
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh) - <time datetime="2006-04-28 01:21:53">28 Apr, 2006</time>
+#### James Henstridge - <time datetime="2006-04-28 01:21:53">28 Apr, 2006</time>
 
 Olaf: I was comparing a repository created with \"bzr init-repo
 \--format=metadir\" with one created using \"bzr init-repo

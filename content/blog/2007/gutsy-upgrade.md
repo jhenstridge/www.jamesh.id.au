@@ -118,7 +118,7 @@ entries back, the symptoms have returned. This is [bug
 Why didn\'t you just used displayconfig-gtk to configure your dual head?
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2007-09-24 19:24:09">24 Sep, 2007</time>
+#### James Henstridge - <time datetime="2007-09-24 19:24:09">24 Sep, 2007</time>
 
 I just gave displayconfig-gtk a go, and ran into a few problems:
 
@@ -141,7 +141,7 @@ http://weblogs.mozillazine.org/roc/archives/2007/09/textalicious.html
 look like it\'ll fix the problem?
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2007-09-24 23:34:23">24 Sep, 2007</time>
+#### James Henstridge - <time datetime="2007-09-24 23:34:23">24 Sep, 2007</time>
 
 According to the https://bugzilla.mozilla.org/show\_bug.cgi?id=331716,
 the firefox rendering problem should get fixed in Firefox 3.0 (and other

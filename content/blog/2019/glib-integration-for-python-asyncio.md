@@ -61,7 +61,7 @@ Nice! The one I\'m using in a project is glibcoro:
 https://github.com/ldo/glibcoro
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2019-08-23 22:10:20">23 Aug, 2019</time>
+#### James Henstridge - <time datetime="2019-08-23 22:10:20">23 Aug, 2019</time>
 
 I hadn\'t discovered glibcoro when looking for other implementations.
 From a quick look at the code, it only implements a subset of the

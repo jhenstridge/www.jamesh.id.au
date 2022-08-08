@@ -48,7 +48,7 @@ I would be surprised if JS didn\'t roundly beat Python or Guile on this
 one.
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2011-03-08 15:04:02">8 Mar, 2011</time>
+#### James Henstridge - <time datetime="2011-03-08 15:04:02">8 Mar, 2011</time>
 
 One thing I didn\'t measure (and don\'t really have a good way to
 measure) was the message passing overhead. The web worker specification
@@ -70,7 +70,7 @@ It\'s funny, but not seem\'s to be a real fractal as after some level of
 zoom (\~ 15) the picture is Pixelise \...
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2011-03-09 00:24:06">9 Mar, 2011</time>
+#### James Henstridge - <time datetime="2011-03-09 00:24:06">9 Mar, 2011</time>
 
 \@Roumano: I think that is just a case of hitting the precision limit
 for the floating point type used by the interpreter. I\'m not using any
@@ -92,7 +92,7 @@ want to go next (instead of waiting for the whole thing to render). But
 I guess usuability wasnt the point of this demo :p
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2011-03-10 03:28:02">10 Mar, 2011</time>
+#### James Henstridge - <time datetime="2011-03-10 03:28:02">10 Mar, 2011</time>
 
 \@foo: it isn\'t surprising that a native code implementation runs
 faster. I was doing this more as a way to practice parallel programming
@@ -140,7 +140,7 @@ Jake, canvas is now widely supported by pretty much all modern browsers.
 Eric
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2011-04-28 11:37:38">28 Apr, 2011</time>
+#### James Henstridge - <time datetime="2011-04-28 11:37:38">28 Apr, 2011</time>
 
 \@Jake: I\'d imagine the SVG method would be a fair bit slower and more
 memory hungry, since you\'re asking the browser to create a DOM node for

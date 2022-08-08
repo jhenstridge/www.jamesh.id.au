@@ -119,7 +119,7 @@ databases without flexible DDL ALTER statements. However, they take care
 of a lot of the issues you enumerated.
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2007-10-02 12:28:31">2 Oct, 2007</time>
+#### James Henstridge - <time datetime="2007-10-02 12:28:31">2 Oct, 2007</time>
 
 Note that this article was about why we hadn\'t implemented schema
 generation (as SQLObject has with SQLObject.createTable() and SQLAlchemy

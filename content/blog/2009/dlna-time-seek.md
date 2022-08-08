@@ -93,7 +93,7 @@ Hey sounds great. Do you have a branch or an ETA when we might see the
 fixes in git://git.gnome.org/rygel ? :)
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2009-07-24 19:14:28">24 Jul, 2009</time>
+#### James Henstridge - <time datetime="2009-07-24 19:14:28">24 Jul, 2009</time>
 
 \@Dom: should be merged soon (Zeeshan is reviewing/merging it).
 
@@ -111,7 +111,7 @@ least in the 1.20betas it\'s just so pleasant to use, and even
 auto-transcodes most formats which the PS3 does not understand.
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2009-08-04 18:43:48">4 Aug, 2009</time>
+#### James Henstridge - <time datetime="2009-08-04 18:43:48">4 Aug, 2009</time>
 
 \@maxauthority: I hadn\'t seen that package before I started hacking on
 this feature in Rygel. Given Rygel\'s integration with GNOME and

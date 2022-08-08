@@ -101,7 +101,7 @@ ship with a tool called fsutil.exe which claims to create hard links and
 the stuff it creates looks exactly like hard links to me.\
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh) - <time datetime="2006-12-15 18:27:42">15 Dec, 2006</time>
+#### James Henstridge - <time datetime="2006-12-15 18:27:42">15 Dec, 2006</time>
 
 Juri: thanks for pointing that out. I\'ve updated the text to reflect
 this.

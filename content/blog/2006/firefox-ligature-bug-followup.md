@@ -70,7 +70,7 @@ OpenType so Pango does not perform the substitutions. If Pango starts
 doing so\...
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh) - <time datetime="2006-04-10 19:02:49">10 Apr, 2006</time>
+#### James Henstridge - <time datetime="2006-04-10 19:02:49">10 Apr, 2006</time>
 
 Denis: yeah, I noticed that the Vera font contained a few ligature
 glyphs (although not as many as Deja Vu) while investigating the

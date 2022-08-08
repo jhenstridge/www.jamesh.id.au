@@ -141,7 +141,7 @@ target repository online
 darcs apply my-changes
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2007-07-31 23:33:23">31 Jul, 2007</time>
+#### James Henstridge - <time datetime="2007-07-31 23:33:23">31 Jul, 2007</time>
 
 Eric: I know some of the Bazaar developers prefer that bundles sent to
 the Bazaar mailing list use \".patch\" or \".diff\" as extensions since

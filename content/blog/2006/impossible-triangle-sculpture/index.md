@@ -35,7 +35,7 @@ the \"right\" location, there would be a less distracting background\...
 (Or does it look differently when viewed by eye?)
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh) - <time datetime="2006-09-18 16:54:51">18 Sep, 2006</time>
+#### James Henstridge - <time datetime="2006-09-18 16:54:51">18 Sep, 2006</time>
 
 Tor: the sculpture is in the middle of the round about seen here:
 

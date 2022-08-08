@@ -159,7 +159,7 @@ Of course, if you can get an e200v1 (I own one), you can install RockBox
 or SansaLinux, but that doesn\'t count\...
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2009-03-25 08:28:55">25 Mar, 2009</time>
+#### James Henstridge - <time datetime="2009-03-25 08:28:55">25 Mar, 2009</time>
 
 Fabian: creating an .is\_audio\_player file would make Rhythmbox work
 for me. Fixing the HAL FDI files fixes the problem for everyone. So
@@ -219,7 +219,7 @@ the player when I bought it, and still does, with the latest firmware. I
 Linux. :)
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2009-03-25 09:59:31">25 Mar, 2009</time>
+#### James Henstridge - <time datetime="2009-03-25 09:59:31">25 Mar, 2009</time>
 
 Vadim: the original firmware on my player supported Vorbis audio. The
 short getting started guide just documents connecting the device and
@@ -256,7 +256,7 @@ proprietary drivers just fine. I am just logical in my purchasing
 power.)
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2009-03-25 16:18:31">25 Mar, 2009</time>
+#### James Henstridge - <time datetime="2009-03-25 16:18:31">25 Mar, 2009</time>
 
 Vadim: why on earth would you lose support after installing an official
 firmware update by following the given installation steps? We aren\'t

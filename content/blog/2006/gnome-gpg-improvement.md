@@ -55,7 +55,7 @@ with Seahorse in some manner.
 Adam
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh) - <time datetime="2006-01-14 12:55:47">14 Jan, 2006</time>
+#### James Henstridge - <time datetime="2006-01-14 12:55:47">14 Jan, 2006</time>
 
 Adam: gnome-gpg serves a fairly different purpose to Seahorse. It acts
 as a wrapper for gpg that lets you store your passphrase in the Gnome

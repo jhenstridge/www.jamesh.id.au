@@ -37,7 +37,7 @@ format that could be used to migrate between BTS\'es (Bugzilla -\> trac,
 Bugzilla -\> launchpad, launchpad -\> jitterbug, etc)
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh) - <time datetime="2007-01-18 22:06:54">18 Jan, 2007</time>
+#### James Henstridge - <time datetime="2007-01-18 22:06:54">18 Jan, 2007</time>
 
 Jelmer: it is tailored to the kind of data that you can store in
 Launchpad, and uses the bug status and importance names from Launchpad,

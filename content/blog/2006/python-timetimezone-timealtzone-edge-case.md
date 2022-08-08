@@ -87,7 +87,7 @@ make converting to and from display format and display time zone be a
 client function.
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh) - <time datetime="2007-01-01 10:45:44">1 Jan, 2007</time>
+#### James Henstridge - <time datetime="2007-01-01 10:45:44">1 Jan, 2007</time>
 
 Matthew: I guess I was a bit ambiguous in the post above. Bazaar stores
 a \"seconds since epoch field\" plus a \"time zone offset field\". If

@@ -80,7 +80,7 @@ one-line text/plain with a summary. (I\'ve implemented this on
 <http://www.evangnet.cz/> and it works just fine).
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh) - <time datetime="2006-09-11 11:21:04">11 Sep, 2006</time>
+#### James Henstridge - <time datetime="2006-09-11 11:21:04">11 Sep, 2006</time>
 
 xxx: that\'s interesting. The spec on wiki.mozilla.org only mentions
 using a \<link\> element to link to a microsummary generator.

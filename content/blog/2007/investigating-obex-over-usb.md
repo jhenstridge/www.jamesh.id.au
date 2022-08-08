@@ -90,7 +90,7 @@ the ACL-patch (that is also in 0.5.9) we\'d use this rather than udev
 rules to add ACL\'s to the device file.
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2007-06-18 12:10:27">18 Jun, 2007</time>
+#### James Henstridge - <time datetime="2007-06-18 12:10:27">18 Jun, 2007</time>
 
 Hi David,
 
@@ -110,7 +110,7 @@ device I discover with HAL, but that is an OpenOBEX problem rather than
 a HAL problem.
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2007-06-18 13:48:38">18 Jun, 2007</time>
+#### James Henstridge - <time datetime="2007-06-18 13:48:38">18 Jun, 2007</time>
 
 Actually, there is one area I wouldn\'t mind seeing HAL improve is to
 add Bluetooth device support. If I am going to add USB support, it\'d be

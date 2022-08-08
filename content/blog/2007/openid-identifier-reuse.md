@@ -103,7 +103,7 @@ Wouldn\'t your solution invalidate one of the major use-cases of OpenID,
 the \'you need only one identifier\' one?
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2007-11-13 06:15:55">13 Nov, 2007</time>
+#### James Henstridge - <time datetime="2007-11-13 06:15:55">13 Nov, 2007</time>
 
 Tassos: I don\'t think anything I\'ve suggested breaks the \"single
 digital identity\" idea of OpenID.
@@ -145,7 +145,7 @@ more info. I don\'t believe that using url fragments as generation
 identifiers will require an extra round trip.
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2007-11-13 21:14:32">13 Nov, 2007</time>
+#### James Henstridge - <time datetime="2007-11-13 21:14:32">13 Nov, 2007</time>
 
 Garry: thanks for the info. That gets rid of the reuse problem, but does
 not address the renaming issue.
@@ -168,7 +168,7 @@ Does it mean that I can write under someone's name? Assuming that I've
 registered an XRI pointing to someone's persistent identifier.
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2007-11-15 09:57:36">15 Nov, 2007</time>
+#### James Henstridge - <time datetime="2007-11-15 09:57:36">15 Nov, 2007</time>
 
 Roman: my understanding is that there are a few things preventing this:
 

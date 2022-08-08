@@ -44,7 +44,7 @@ I dont know much about gnome-vfs or obex, but i can write any boiler
 plate code you need.
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2007-06-16 19:15:27">16 Jun, 2007</time>
+#### James Henstridge - <time datetime="2007-06-16 19:15:27">16 Jun, 2007</time>
 
 cruiseoveride: I\'ve filed a bug to track the USB feature as [bug
 119801](https://bugs.launchpad.net/bugs/119801). I haven\'t managed to

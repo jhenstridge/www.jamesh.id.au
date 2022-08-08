@@ -72,7 +72,7 @@ cheers!\
 Chris
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh) - <time datetime="2005-11-28 18:43:52">28 Nov, 2005</time>
+#### James Henstridge - <time datetime="2005-11-28 18:43:52">28 Nov, 2005</time>
 
 Things have progressed a little slower than anticipated. Performing the
 import on the production database depends on some other data being

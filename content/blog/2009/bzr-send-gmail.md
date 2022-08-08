@@ -49,7 +49,7 @@ I haven\'t used `bzr send` yet, but I gather that it doesn\'t use
 could then configure your MTA to send via Gmail\'s SMTP server.
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2009-01-16 20:59:20">16 Jan, 2009</time>
+#### James Henstridge - <time datetime="2009-01-16 20:59:20">16 Jan, 2009</time>
 
 Bazaar does have support for sending to an SMTP server, and that is what
 the first solution on the wiki page I linked to describes.

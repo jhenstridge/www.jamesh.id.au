@@ -161,7 +161,7 @@ If anything, would you please post a sample of the code you use to wrap
 transactions for managed transaction mode?
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2008-09-08 15:57:40">8 Sep, 2008</time>
+#### James Henstridge - <time datetime="2008-09-08 15:57:40">8 Sep, 2008</time>
 
 The problem is with
 enter\_transaction\_managemnt/leave\_transaction\_management nesting

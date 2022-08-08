@@ -56,7 +56,7 @@ using a grid of telephone-style keys is insane.
 And yeah, dasher would be more useful; perhaps you should port it. :)
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh) - <time datetime="2005-11-30 01:58:10">30 Nov, 2005</time>
+#### James Henstridge - <time datetime="2005-11-30 01:58:10">30 Nov, 2005</time>
 
 Damon: my sample size was pretty small: the only game I\'ve played that
 required text entry so far was Ridge Racer, which used the horrible

@@ -98,7 +98,7 @@ USB should use a different approach: mount it as a filesystem through
 FUSE/obexfs. I\'ll check out how it all works
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh) - <time datetime="2006-10-25 16:30:09">25 Oct, 2006</time>
+#### James Henstridge - <time datetime="2006-10-25 16:30:09">25 Oct, 2006</time>
 
 Wout: yeah. I implemented that a bit after posting this article.
 

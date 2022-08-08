@@ -31,7 +31,7 @@ good way to deprogram from the hysteria. If you feel so inclined, you
 might want to share it with your corporate masters.
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh) - <time datetime="2006-11-16 13:12:50">16 Nov, 2006</time>
+#### James Henstridge - <time datetime="2006-11-16 13:12:50">16 Nov, 2006</time>
 
 CraigM: there wasn\'t much of a trick to punching through the board. It
 was a simple pine board cut across the grain. If you hit one with enough

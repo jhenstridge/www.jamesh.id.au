@@ -5,13 +5,12 @@ date: 2005-05-24T11:33:03+08:00
 tags: ['Bazaar']
 ---
 
-This posting follows on from my [previous
-postings](http://blogs.gnome.org/nb.cgi/category/jamesh/Bazaar) about
-[Bazaar](http://bazaar.canonical.com/), but is a bit more advanced. In
-most cases you don\'t need to worry about this, since the tools should
-just work. However if problems occur (or if you\'re just curious about
-how things work), it can be useful to know a bit about what\'s going on
-inside.
+This posting follows on from my [previous postings](/tags/bazaar)
+about [Bazaar](http://bazaar.canonical.com/), but is a bit more
+advanced. In most cases you don\'t need to worry about this, since the
+tools should just work. However if problems occur (or if you\'re just
+curious about how things work), it can be useful to know a bit about
+what\'s going on inside.
 
 **Changesets vs. Tree Snapshots**
 
@@ -181,7 +180,7 @@ Apparently there can be cases where its impossible to pick an ancestor
 so that the three-way merge doesn\'t silently corrupt code.\
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh) - <time datetime="2005-05-25 13:32:36">25 May, 2005</time>
+#### James Henstridge - <time datetime="2005-05-25 13:32:36">25 May, 2005</time>
 
 As Arch uses persistent identifiers for files, it would be able to
 detect the problems mentioned in that mailing list post, and treat them

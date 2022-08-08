@@ -74,7 +74,7 @@ page\" pretty much defeats the purpose of OpenID, but maybe that\'s just
 me\...
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2008-10-30 17:18:25">30 Oct, 2008</time>
+#### James Henstridge - <time datetime="2008-10-30 17:18:25">30 Oct, 2008</time>
 
 As I said, the protocol examples they give look like correct OpenID
 messages (no \"mostly\" about it).

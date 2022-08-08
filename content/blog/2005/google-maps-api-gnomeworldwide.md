@@ -46,7 +46,7 @@ You mean something like Ross Burton did:
 Great movie, Brazil. Have you read the book it\'s based on?
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh) - <time datetime="2005-07-15 10:38:41">15 Jul, 2005</time>
+#### James Henstridge - <time datetime="2005-07-15 10:38:41">15 Jul, 2005</time>
 
 Dennis: yeah. Ross did that after we talked about it on IRC. There is a
 lot more that could be done though, such as popping up some user info

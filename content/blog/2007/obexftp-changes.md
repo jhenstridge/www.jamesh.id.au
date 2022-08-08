@@ -51,7 +51,7 @@ handling files on my N70 (the cable came for free in the package, I\'m
 not going to buy a BT adapter for my quite-old laptop). Thanks.
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2007-06-11 19:25:26">11 Jun, 2007</time>
+#### James Henstridge - <time datetime="2007-06-11 19:25:26">11 Jun, 2007</time>
 
 Stefano: I\'ve [filed a bug](https://bugs.launchpad.net/bugs/119801) to
 track this feature, but don\'t have any immediate plans to implement it.
@@ -69,7 +69,7 @@ is there going to be a new release?
 Keep up!
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2007-06-11 19:55:02">11 Jun, 2007</time>
+#### James Henstridge - <time datetime="2007-06-11 19:55:02">11 Jun, 2007</time>
 
 It isn\'t in Subversion because I prefer to use Bazaar for source code
 management. Launchpad is a convenient place to host said branches (GNOME

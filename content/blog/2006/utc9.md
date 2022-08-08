@@ -73,7 +73,7 @@ friends always has to be special of course, but that\'s just business as
 usual.
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh) - <time datetime="2006-12-05 11:12:40">5 Dec, 2006</time>
+#### James Henstridge - <time datetime="2006-12-05 11:12:40">5 Dec, 2006</time>
 
 Henri: Looking at the time zone definitions from the tzdata package,
 there is a huge variation in the start/end dates for different countries

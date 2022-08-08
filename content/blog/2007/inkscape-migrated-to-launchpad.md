@@ -62,7 +62,7 @@ doesn\'t cost inkscape contributions from other free software
 developers.
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2007-11-28 17:50:50">28 Nov, 2007</time>
+#### James Henstridge - <time datetime="2007-11-28 17:50:50">28 Nov, 2007</time>
 
 Wade: the Inkscape developers were not interested in running their own
 bug tracker (see
@@ -104,7 +104,7 @@ At this step Inkscape lost me as a bug reporter/triager (I used to do
 this on the sf.net tracker). I won\'t make a Launchpad account.
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2007-11-28 22:39:34">28 Nov, 2007</time>
+#### James Henstridge - <time datetime="2007-11-28 22:39:34">28 Nov, 2007</time>
 
 pinky, nicu: out of interest, are there particular reasons you find it
 okay to work with SourceForge.net but not Launchpad?

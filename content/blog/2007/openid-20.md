@@ -163,7 +163,7 @@ each other, which should accelerate development of new features.
 Any news on openid support in and for launchpad?
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2007-10-23 17:23:20">23 Oct, 2007</time>
+#### James Henstridge - <time datetime="2007-10-23 17:23:20">23 Oct, 2007</time>
 
 Tenshu: we are working on supporting Launchpad as an OP. In fact,
 http://shop.canonical.com/ is the first RP we set that makes use of it.
@@ -194,7 +194,7 @@ it for authentication with other commercial activities (like shops) come
 under the same disrecommendation?
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2007-10-24 09:51:17">24 Oct, 2007</time>
+#### James Henstridge - <time datetime="2007-10-24 09:51:17">24 Oct, 2007</time>
 
 TG: Perhaps you should direct questions like that to Livejournal. It
 doesn\'t seem accurate to say they don\'t implement the protocol though:

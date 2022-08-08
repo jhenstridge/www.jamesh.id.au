@@ -42,7 +42,7 @@ quite nice, I wanna cook it soon :-)
 Thank you in advance \^\^
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2009-12-04 14:45:07">4 Dec, 2009</time>
+#### James Henstridge - <time datetime="2009-12-04 14:45:07">4 Dec, 2009</time>
 
 \@Mike: I haven\'t tried any sour dough baking yet. I guess it is about
 time I did so.
@@ -72,7 +72,7 @@ I must be missing something.
 MC
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2009-12-04 17:26:42">4 Dec, 2009</time>
+#### James Henstridge - <time datetime="2009-12-04 17:26:42">4 Dec, 2009</time>
 
 \@Michael Carden: I\'m not sure. It does increase the surface area
 compared to a traditional bread roll, which probably makes a difference
@@ -114,7 +114,7 @@ seeds, onion & garlic bits). And cream cheese & lox as fillings :)\
 Debconf 2010 will present such an opportunity.
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2009-12-10 15:09:10">10 Dec, 2009</time>
+#### James Henstridge - <time datetime="2009-12-10 15:09:10">10 Dec, 2009</time>
 
 \@Kevin Mark: I\'ll agree that the bagels I made are more uneven/rough
 than the commercial variants I\'ve seen both here and in the US, but

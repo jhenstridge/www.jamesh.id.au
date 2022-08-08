@@ -219,7 +219,7 @@ Two blog entries, where I asked for advice for this usage:\
 <http://blog.drinsama.de/erich/en/linux/2005082501-revision-management.html>
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh) - <time datetime="2005-08-30 11:54:00">30 Aug, 2005</time>
+#### James Henstridge - <time datetime="2005-08-30 11:54:00">30 Aug, 2005</time>
 
 With Bazaar, the way you\'d handle this would be by branching the
 upstream. Now rather than running \"update\", you\'d \"merge\" from the

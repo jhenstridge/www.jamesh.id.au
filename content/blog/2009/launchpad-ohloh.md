@@ -35,7 +35,7 @@ Interesting\... I wonder, those 3,291 lines of SQL, where did they go?
 How awesome it\'s Launchpad that works without them :\'D
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2009-10-28 10:53:32">28 Oct, 2009</time>
+#### James Henstridge - <time datetime="2009-10-28 10:53:32">28 Oct, 2009</time>
 
 \@Andy Wingo: thanks!
 

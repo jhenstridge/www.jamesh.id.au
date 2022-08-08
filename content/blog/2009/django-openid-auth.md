@@ -65,7 +65,7 @@ Is Django used for Launchpad at all? Or is it just for other internal
 Canonical stuff?
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2009-04-14 22:35:47">14 Apr, 2009</time>
+#### James Henstridge - <time datetime="2009-04-14 22:35:47">14 Apr, 2009</time>
 
 Launchpad is not a Django application \-- it is built on top of Zope 3
 and Storm.
@@ -79,7 +79,7 @@ summit.ubuntu.com and paste.ubuntu.com.
 Would this also work with Google App Engine?
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2009-04-14 23:47:51">14 Apr, 2009</time>
+#### James Henstridge - <time datetime="2009-04-14 23:47:51">14 Apr, 2009</time>
 
 Marius: I don\'t think there is any code in django-openid-auth that
 would be a problem. However, it is built on top of Jan Rain\'s
@@ -111,7 +111,7 @@ python-openid have been fixed in the last few months (i.e. issue \#404).
 So it should work!
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2009-04-15 17:47:11">15 Apr, 2009</time>
+#### James Henstridge - <time datetime="2009-04-15 17:47:11">15 Apr, 2009</time>
 
 Ivan: I can\'t say I tested it on MySQL: the test suite is against
 SQLite, and the only other database we use it against is PostgreSQL.
@@ -146,7 +146,7 @@ Also, is there a way to get extended information like a username from
 the openid provider?
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2009-04-28 18:09:45">28 Apr, 2009</time>
+#### James Henstridge - <time datetime="2009-04-28 18:09:45">28 Apr, 2009</time>
 
 Faruk: that column should indeed be unique \-- each identity URL must
 only be associated with a single user. As I mentioned above, the column

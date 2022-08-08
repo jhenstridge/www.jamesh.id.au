@@ -31,7 +31,7 @@ RDS (Radio Data System) support would be great, since no other linux
 radio program support it yet.
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh) - <time datetime="2007-05-04 14:19:53">4 May, 2007</time>
+#### James Henstridge - <time datetime="2007-05-04 14:19:53">4 May, 2007</time>
 
 Adam: two things that make that a bit difficult: (1) my tuner device
 doesn\'t have RDS capabilities, and (2) hardly any stations transmit RDS

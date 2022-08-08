@@ -113,7 +113,7 @@ access to, posing as you. More needs to be done, and your suggestions go
 some way to alleviating that.
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2008-02-18 19:13:54">18 Feb, 2008</time>
+#### James Henstridge - <time datetime="2008-02-18 19:13:54">18 Feb, 2008</time>
 
 Andrew: fixed.
 
@@ -241,7 +241,7 @@ form in alot of instances), I\'m not about to trade security for it.
 FF3b4!??? hmmm.
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2008-02-19 19:07:55">19 Feb, 2008</time>
+#### James Henstridge - <time datetime="2008-02-19 19:07:55">19 Feb, 2008</time>
 
 alex, steve: the image/text customisation method is already in use at
 sites like myopenid. Note however that the image needs to be associated

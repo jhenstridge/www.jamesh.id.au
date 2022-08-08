@@ -51,7 +51,7 @@ None of them claim to be unique and both are implementation details
 which may be out of the contract, but are very useful.
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2008-06-12 08:30:05">12 Jun, 2008</time>
+#### James Henstridge - <time datetime="2008-06-12 08:30:05">12 Jun, 2008</time>
 
 I don\'t dispute that the function has its uses -- just that this is not
 one of them. I spent a while tracking down a problem caused by this

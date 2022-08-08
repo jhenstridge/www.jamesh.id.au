@@ -64,7 +64,7 @@ Here\'s a chili beer that I\'ve enjoyed:
 http://www.chilibeer.com/index2.htm (music on site)
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2008-04-11 09:38:27">11 Apr, 2008</time>
+#### James Henstridge - <time datetime="2008-04-11 09:38:27">11 Apr, 2008</time>
 
 Rob: Sounds nice. I think the last ginger flavoured beer I had was
 Speight\'s Samradh Ale from Dunedin NZ. Maybe I\'ll try and find some

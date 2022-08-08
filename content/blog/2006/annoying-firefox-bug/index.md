@@ -72,7 +72,7 @@ See\
 <https://launchpad.net/distros/ubuntu/>+source/ttf-dejavu/+bug/37565
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh) - <time datetime="2006-04-03 21:29:01">3 Apr, 2006</time>
+#### James Henstridge - <time datetime="2006-04-03 21:29:01">3 Apr, 2006</time>
 
 Simos: I don\'t think that bug is related.
 
@@ -116,7 +116,7 @@ use them to compare against. I don\'t remember if they are built with
 Pango by default or not.
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh) - <time datetime="2006-04-04 01:44:20">4 Apr, 2006</time>
+#### James Henstridge - <time datetime="2006-04-04 01:44:20">4 Apr, 2006</time>
 
 Mike: you can switch to the non-Pango code in the Ubuntu packages (and
 any other builds with Pango enabled) by defining MOZ\_DISABLE\_PANGO=1

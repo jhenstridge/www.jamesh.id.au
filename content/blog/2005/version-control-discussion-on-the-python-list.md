@@ -30,7 +30,7 @@ wonder why Bazar if we have fine things like SVN. What\'s wrong with
 SVN? Because it\'s not written in Python?
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh) - <time datetime="2005-08-15 20:04:22">15 Aug, 2005</time>
+#### James Henstridge - <time datetime="2005-08-15 20:04:22">15 Aug, 2005</time>
 
 Bazaar supports distributed development, while Subversion does not.
 

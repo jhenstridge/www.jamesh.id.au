@@ -138,7 +138,7 @@ The question is, do we have any evidence that the VCS Users group has
 any members outside \"core devel\"?
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2008-08-02 19:26:49">2 Aug, 2008</time>
+#### James Henstridge - <time datetime="2008-08-02 19:26:49">2 Aug, 2008</time>
 
 xclaesse: I agree that almost any use of DVCS is a gain. The question is
 how much gain the various tools give, which I think would be worth

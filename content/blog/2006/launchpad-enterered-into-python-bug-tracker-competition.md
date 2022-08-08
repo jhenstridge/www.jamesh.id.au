@@ -64,7 +64,7 @@ playing field through open source that aided ubuntu\'s sponsor raisae so
 much capital?
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh) - <time datetime="2006-07-28 20:49:24">28 Jul, 2006</time>
+#### James Henstridge - <time datetime="2006-07-28 20:49:24">28 Jul, 2006</time>
 
 Note that Python is currently using the SourceForge bug tracker.
 SourceForge is not free software either.

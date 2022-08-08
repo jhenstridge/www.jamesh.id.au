@@ -35,7 +35,7 @@ APIs, using V4L2 if both are supported.
 Argg, we need V4L and V4L2 Support in Gstreamer\...
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh) - <time datetime="2007-04-17 19:21:17">17 Apr, 2007</time>
+#### James Henstridge - <time datetime="2007-04-17 19:21:17">17 Apr, 2007</time>
 
 Max: there are v4lsrc and v4l2src elements in Gstreamer already.
 However, they don\'t really handle V4L/V4l2 radio devices, where you\'ve
@@ -53,7 +53,7 @@ I may be mistaken).
 Out of raw, unabashed curiosity \-- which USB FM radio tuner do you use?
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh) - <time datetime="2007-04-18 10:35:13">18 Apr, 2007</time>
+#### James Henstridge - <time datetime="2007-04-18 10:35:13">18 Apr, 2007</time>
 
 n8: it is a D-Link DSB-R100 USB tuner. It does all the basic things, but
 doesn\'t report signal strength (which means that apps can\'t scan
@@ -68,7 +68,7 @@ I could use gnomeradio on dapper, but I cant use it on Fiesty\...
 can anyone suggest me anything?
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh) - <time datetime="2007-04-24 23:59:56">24 Apr, 2007</time>
+#### James Henstridge - <time datetime="2007-04-24 23:59:56">24 Apr, 2007</time>
 
 gizmo: have you tried the patch attached to the bug report I mentioned
 in the main article? The gnomeradio in feisty is incapable of tuning my

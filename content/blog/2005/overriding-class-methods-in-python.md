@@ -69,7 +69,7 @@ syntax can\'t be applied.
 Looks a lot like Ruby.
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh) - <time datetime="2005-06-24 00:43:34">24 Jun, 2005</time>
+#### James Henstridge - <time datetime="2005-06-24 00:43:34">24 Jun, 2005</time>
 
 From my quick reading of some Ruby documentation, it says that \"super\"
 is a keyword.
@@ -87,7 +87,7 @@ SubClass and Subclass are mixed throughout the code examples. That\'s
 not intentional is it?
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh) - <time datetime="2005-06-24 10:47:04">24 Jun, 2005</time>
+#### James Henstridge - <time datetime="2005-06-24 10:47:04">24 Jun, 2005</time>
 
 Thanks for pointing that out. I was adapting a real example, and made
 some mistakes when transcribing it.

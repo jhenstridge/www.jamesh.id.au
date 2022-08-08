@@ -124,7 +124,7 @@ There are also questions of directory management parallel to the file
 management.
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2007-12-04 21:31:41">4 Dec, 2007</time>
+#### James Henstridge - <time datetime="2007-12-04 21:31:41">4 Dec, 2007</time>
 
 In my defence, I will claim that directories are just a special type of
 file :)

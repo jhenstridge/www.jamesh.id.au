@@ -73,7 +73,7 @@ That\'s against the spec though. HTTP URLs must not have a
 authentification part. That\'s reserved for FTP and some others.
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2008-04-03 12:10:02">3 Apr, 2008</time>
+#### James Henstridge - <time datetime="2008-04-03 12:10:02">3 Apr, 2008</time>
 
 Kevin: I agree that typing \"yahoo.com\" is easier and what users should
 be directed to use. I just found it interesting that an approximation of
@@ -97,7 +97,7 @@ That\'d be why you wouldn\'t be wanting to implicitly condone it.
 \- Chris
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2008-04-04 16:05:22">4 Apr, 2008</time>
+#### James Henstridge - <time datetime="2008-04-04 16:05:22">4 Apr, 2008</time>
 
 Chris: I\'m not arguing that providers should tell their users to enter
 email addresses into OpenID forms: giving them a shorter constant string

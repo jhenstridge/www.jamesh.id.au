@@ -75,7 +75,7 @@ upload your changes as a branch on Launchpad.
 This means that finally there is a Ubuntu One client for KDE?
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2012-07-05 21:48:35">5 Jul, 2012</time>
+#### James Henstridge - <time datetime="2012-07-05 21:48:35">5 Jul, 2012</time>
 
 \@jmaspons: The standard Ubuntu One client should work with Kubuntu.
 This is more of a demonstration application rather than an official
@@ -89,7 +89,7 @@ Will this new U1DB replace the DBUS API ??\
 Or will both stay avaiable?
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2012-07-07 08:29:24">7 Jul, 2012</time>
+#### James Henstridge - <time datetime="2012-07-07 08:29:24">7 Jul, 2012</time>
 
 \@Flup: U1DB is not a replacement for the file storage \"syncdaemon\",
 if that is what you\'re asking. Instead, it is intended for use cases
@@ -115,7 +115,7 @@ Maybe your FTP approach can be extended to be like the dropbox daemon
 approach?
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2012-07-09 12:50:10">9 Jul, 2012</time>
+#### James Henstridge - <time datetime="2012-07-09 12:50:10">9 Jul, 2012</time>
 
 \@Marco Parillo: as you can see from further comments on that bug, not
 all of those are needed to run the file storage syncdaemon: some are for

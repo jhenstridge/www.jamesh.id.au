@@ -81,7 +81,7 @@ Nice post!
 I thought python was saner than C++ \-- you prove me wrong!
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2008-02-12 21:13:58">12 Feb, 2008</time>
+#### James Henstridge - <time datetime="2008-02-12 21:13:58">12 Feb, 2008</time>
 
 John: that guy really should read up on Zope interfaces a bit more \--
 they handle a lot of the things he is doing.
@@ -100,7 +100,7 @@ that doesnt bring in zope.interface might be useful for those people who
 care about such things
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2008-02-13 10:39:14">13 Feb, 2008</time>
+#### James Henstridge - <time datetime="2008-02-13 10:39:14">13 Feb, 2008</time>
 
 There isn\'t much point in reinventing zope.interface. With the effort
 the Zope 3 developers have put in to modularise everything, using

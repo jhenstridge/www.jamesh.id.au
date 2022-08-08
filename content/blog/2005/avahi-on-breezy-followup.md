@@ -44,7 +44,7 @@ HEAD is, no released build is. Certainly not the current Ubuntu package.
 \- Chris\
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh) - <time datetime="2005-11-03 12:56:52">3 Nov, 2005</time>
+#### James Henstridge - <time datetime="2005-11-03 12:56:52">3 Nov, 2005</time>
 
 torkel: yes, I think that is what was happenning. It looks like there is
 an updated version of the zeroconf package that fixes this, but it
@@ -88,7 +88,7 @@ recommended packages (default for e.g. aptitude) - that\'s why it was
 installed.
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh) - <time datetime="2005-11-04 02:31:53">4 Nov, 2005</time>
+#### James Henstridge - <time datetime="2005-11-04 02:31:53">4 Nov, 2005</time>
 
 Hi Anand,
 

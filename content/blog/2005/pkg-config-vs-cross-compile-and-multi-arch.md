@@ -61,7 +61,7 @@ This scheme probably doesn\'t help at all with bi-arch though.
 Ian.
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh) - <time datetime="2005-07-05 23:02:41">5 Jul, 2005</time>
+#### James Henstridge - <time datetime="2005-07-05 23:02:41">5 Jul, 2005</time>
 
 Ian: with these changes, you should be able to use the system\'s default
 pkg-config binary. It will just skip the system configured search paths,

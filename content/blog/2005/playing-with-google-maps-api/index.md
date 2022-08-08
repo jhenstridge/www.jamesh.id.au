@@ -51,7 +51,7 @@ China (as far as I know) is not located in northern Sweden (next to the
 Finnish border). :)
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh) - <time datetime="2005-09-23 13:21:12">23 Sep, 2005</time>
+#### James Henstridge - <time datetime="2005-09-23 13:21:12">23 Sep, 2005</time>
 
 My code doesn\'t attempt to correct invalid data. It looks like that
 person entered his details incorrectly on the wiki page (switching

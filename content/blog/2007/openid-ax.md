@@ -329,7 +329,7 @@ I\'m not sure that 404 is the most applicable HTTP status code to use
 here. 403 might be clearer.
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2007-11-28 08:31:37">28 Nov, 2007</time>
+#### James Henstridge - <time datetime="2007-11-28 08:31:37">28 Nov, 2007</time>
 
 Will: one thing to keep in mind is that some OPs may only have limited
 support for attribute exchange: they may support a set of well known

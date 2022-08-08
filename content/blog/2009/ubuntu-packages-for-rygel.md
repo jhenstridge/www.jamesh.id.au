@@ -59,7 +59,7 @@ it is released.
 Could we get this in Debian too?
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2009-06-17 14:39:13">17 Jun, 2009</time>
+#### James Henstridge - <time datetime="2009-06-17 14:39:13">17 Jun, 2009</time>
 
 It isn\'t even in Ubuntu yet. These are just personal packages. It
 shouldn\'t be much trouble rebuilding them on Debian though.

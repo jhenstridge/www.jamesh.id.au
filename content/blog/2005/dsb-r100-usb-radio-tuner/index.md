@@ -80,7 +80,7 @@ Or Support for v4l radio in rhythmbox:\
 Anyway, have a lot of fun.
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh) - <time datetime="2005-10-19 11:00:38">19 Oct, 2005</time>
+#### James Henstridge - <time datetime="2005-10-19 11:00:38">19 Oct, 2005</time>
 
 nate: I just tried the recording function, and got a silent, mono
 44.1KHz wave file. I\'m not sure what the problem is.

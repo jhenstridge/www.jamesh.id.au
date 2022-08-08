@@ -118,7 +118,7 @@ link.
 http://mediatomb.cc/pages/documentation\#id2537759
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2008-10-30 15:32:36">30 Oct, 2008</time>
+#### James Henstridge - <time datetime="2008-10-30 15:32:36">30 Oct, 2008</time>
 
 ethana2: I haven\'t installed Linux on my PS3 at this point, and don\'t
 really have the disk space. Perhaps if I replace the hard disk at some

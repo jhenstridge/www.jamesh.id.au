@@ -34,7 +34,7 @@ Interesting, I haven\'t had a honey-flavored beer. I\'ll have to keep an
 eye out for Beez Neez.
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2008-03-06 13:06:48">6 Mar, 2008</time>
+#### James Henstridge - <time datetime="2008-03-06 13:06:48">6 Mar, 2008</time>
 
 Shane: you might have trouble finding the beer outside of Australia \--
 while Matilda Bay is owned by one of the major brewers (Fosters Group)
@@ -53,7 +53,7 @@ Are they generally a lighter colored beer? I now recall having
 Leinenkugal\'s Honey Weiss, but was not much of a fan.
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2008-03-06 23:23:54">6 Mar, 2008</time>
+#### James Henstridge - <time datetime="2008-03-06 23:23:54">6 Mar, 2008</time>
 
 If anything, the honey beers I\'ve made have been darker than the plain
 beer kits since I\'m replacing sugar (which doesn\'t add any colour)

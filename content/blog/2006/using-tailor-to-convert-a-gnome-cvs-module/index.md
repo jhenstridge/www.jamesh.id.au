@@ -117,7 +117,7 @@ I have some vague memories that tailor wasn\'t able to deal with CVS
 branches. Has that been fixed?
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh) - <time datetime="2006-02-21 11:10:43">21 Feb, 2006</time>
+#### James Henstridge - <time datetime="2006-02-21 11:10:43">21 Feb, 2006</time>
 
 From what I can tell, it has no automatic support for branches. If you
 wanted to convert a branch as well as the mainline, it would be

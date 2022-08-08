@@ -55,7 +55,7 @@ It seems to me like a business model that is begging to fail. Good
 riddance to cinemas.
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2007-12-18 10:33:09">18 Dec, 2007</time>
+#### James Henstridge - <time datetime="2007-12-18 10:33:09">18 Dec, 2007</time>
 
 Ryan: I haveWhile I\'ve certainly been to occasional films with noisy
 strangers, I haven\'t had problems with smelly strangers. While DVDs do

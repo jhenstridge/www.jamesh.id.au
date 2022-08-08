@@ -88,7 +88,7 @@ I think I can trace down the issue if you can provide me some hints how
 to start.
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2007-06-21 09:26:45">21 Jun, 2007</time>
+#### James Henstridge - <time datetime="2007-06-21 09:26:45">21 Jun, 2007</time>
 
 Mikko: please file a bug, and I\'ll walk you through a few things you
 could do to help identify the problem.

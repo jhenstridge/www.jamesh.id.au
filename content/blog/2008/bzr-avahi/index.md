@@ -113,7 +113,7 @@ Woa! Just tested it. That\'s really awesome. Great job here!\
 This should be included by default in bazaar.
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2008-02-19 19:29:59">19 Feb, 2008</time>
+#### James Henstridge - <time datetime="2008-02-19 19:29:59">19 Feb, 2008</time>
 
 Stuart: Avahi is not Linux only, but I catch your meaning: this isn\'t
 going to work with the mDNS responder on MacOS X, and Avahi has not been

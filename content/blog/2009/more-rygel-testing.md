@@ -60,7 +60,7 @@ former\... but all the other plugins that I can imagine writing would
 be. File backend, TV tuner scraper, etc.
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2009-06-19 09:47:07">19 Jun, 2009</time>
+#### James Henstridge - <time datetime="2009-06-19 09:47:07">19 Jun, 2009</time>
 
 Kevin: no thumbnails yet.
 
@@ -79,7 +79,7 @@ system-daemon but it does make it harder yes. I intend to replace gconf
 usage with .ini files soon. :)
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2009-06-19 22:18:30">19 Jun, 2009</time>
+#### James Henstridge - <time datetime="2009-06-19 22:18:30">19 Jun, 2009</time>
 
 Zeeshan: for the non-Maemo case, gnome-desktop\'s thumbnailer might be
 worth a look. That way you\'d have thumbnails for everything Nautilus

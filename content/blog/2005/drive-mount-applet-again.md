@@ -33,7 +33,7 @@ I\'m not sure how GNOME could figure out that the floppy drive doesn\'t
 exist, since even the kernel thinks it is there.
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh) - <time datetime="2005-12-18 00:25:38">18 Dec, 2005</time>
+#### James Henstridge - <time datetime="2005-12-18 00:25:38">18 Dec, 2005</time>
 
 Marius: do you happen to have an entry in /etc/fstab for the floppy
 drive mount point? If you remove it, Gnome will probably stop thinking

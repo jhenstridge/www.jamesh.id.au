@@ -64,7 +64,7 @@ Looks like a classic case of \"optimisation is the root of all evil\".
 Or you could consistently use unicode internally.
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2007-12-10 19:48:00">10 Dec, 2007</time>
+#### James Henstridge - <time datetime="2007-12-10 19:48:00">10 Dec, 2007</time>
 
 ignacio: Not everything is defined in terms of unicode. The example I
 gave above is the HTTP protocol, which is defined in terms of octets
@@ -135,7 +135,7 @@ but now it\'s keyed with a 5-tuple, having added the types of url and
 scheme to the 3-tuple from before.
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2007-12-17 14:38:21">17 Dec, 2007</time>
+#### James Henstridge - <time datetime="2007-12-17 14:38:21">17 Dec, 2007</time>
 
 Gavin: yeah, I saw that. I was going to post a followup on that bug
 report but could not recover the password on my account :( An account

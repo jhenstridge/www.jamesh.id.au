@@ -33,7 +33,7 @@ I second the \"why not OpenID?\" question. For an Open solution, it sure
 seems to be underutilized by FOSS websites.
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2007-08-22 21:13:09">22 Aug, 2007</time>
+#### James Henstridge - <time datetime="2007-08-22 21:13:09">22 Aug, 2007</time>
 
 If you look closely, you\'ll see that OpenID is being used under the
 hood to authenticate to the shop. As for accepting external OpenIDs as a

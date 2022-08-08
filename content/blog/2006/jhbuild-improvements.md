@@ -110,7 +110,7 @@ debs.
 Also, do you have GIT support planned?
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh) - <time datetime="2006-05-03 11:36:43">3 May, 2006</time>
+#### James Henstridge - <time datetime="2006-05-03 11:36:43">3 May, 2006</time>
 
 Anonymous \#1: you could probably do up a module type in jhbuild to help
 with building debian packages. Hopefully the changes I\'m making should
@@ -127,7 +127,7 @@ Since jhbuild supports Arch as a module source, is baz also supported?
 Also, is SCons supported as a module type?\
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh) - <time datetime="2006-05-11 18:52:16">11 May, 2006</time>
+#### James Henstridge - <time datetime="2006-05-11 18:52:16">11 May, 2006</time>
 
 JHBuild supports modules that use Arch for version control by using the
 baz-1.x client.

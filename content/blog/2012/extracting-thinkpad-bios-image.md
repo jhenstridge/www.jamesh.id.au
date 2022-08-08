@@ -126,7 +126,7 @@ directly with grub and syslinux\'s memdisk, as described here:
 http://www.donarmstrong.com/posts/x200\_bios\_update/
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2012-11-14 10:42:23">14 Nov, 2012</time>
+#### James Henstridge - <time datetime="2012-11-14 10:42:23">14 Nov, 2012</time>
 
 \@Marius Gedminas: that geteltorito script looks like it would have done
 what I wanted. It was still fun working out how to pull the image apart
@@ -149,7 +149,7 @@ terminal typing python script.py for instance.\
 Thanks
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh/) - <time datetime="2013-01-23 11:05:22">23 Jan, 2013</time>
+#### James Henstridge - <time datetime="2013-01-23 11:05:22">23 Jan, 2013</time>
 
 \@AirMaxVI: that should work. Alternatively, you can use the existing
 geteltorito script Marius mentioned in an earlier comment.

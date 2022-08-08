@@ -31,7 +31,7 @@ feeding-back the translations to mainstream projects ?
 Reference: <http://www.ogmaciel.com/?p=282>
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh) - <time datetime="2006-07-28 08:05:22">28 Jul, 2006</time>
+#### James Henstridge - <time datetime="2006-07-28 08:05:22">28 Jul, 2006</time>
 
 I am not a Rosetta developer, but you can submit feature requests at
 <https://launchpad.net/products/rosetta/>+filebug

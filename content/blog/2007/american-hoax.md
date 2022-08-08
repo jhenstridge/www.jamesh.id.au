@@ -40,7 +40,7 @@ Anyways, I don\'t read the planet Ubuntu pages to be insulted or made
 fun of. If you have so little to post, perhaps you shouldn\'t.
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh) - <time datetime="2007-01-10 13:22:45">10 Jan, 2007</time>
+#### James Henstridge - <time datetime="2007-01-10 13:22:45">10 Jan, 2007</time>
 
 Michael: First of all, the Planet Ubuntu page says it is \"a window into
 the world, work and lives of Ubuntu developers and contributors.\" Given

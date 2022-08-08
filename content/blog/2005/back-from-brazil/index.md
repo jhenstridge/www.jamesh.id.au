@@ -88,7 +88,7 @@ The rest of the trip was fairly uneventful, which was nice.
 You went back to New Zealand through Buenos Aires?, which Airline?
 
 ---
-#### [James Henstridge](http://blogs.gnome.org/jamesh) - <time datetime="2005-08-08 19:04:00">8 Aug, 2005</time>
+#### James Henstridge - <time datetime="2005-08-08 19:04:00">8 Aug, 2005</time>
 
 Aerolineas Argentinas. Unsurprisingly, they use the capital of Argentina
 as a hub.
