@@ -1,7 +1,7 @@
 ---
 title: "Ubuntu Phone and Unity"
 date: 2017-04-05T00:00:00+08:00
-keywords: ["ubuntu"]
+tags: ["ubuntu"]
 ---
 
 At the end of 2012, I moved from Ubuntu One to the Unity API Team at

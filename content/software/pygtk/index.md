@@ -1,7 +1,7 @@
 ---
 title: "PyGTK"
 date: 2009-02-20T00:00:00+08:00
-keywords: ["pygtk"]
+tags: ["pygtk"]
 ---
 
 ![](pygtk.jpeg)

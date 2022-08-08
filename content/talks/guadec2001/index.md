@@ -3,7 +3,7 @@ title: "GUADEC 2001: PyGTK"
 date: 2001-04-06T00:00:00+08:00
 resources:
  - src: python.pdf
-keywords: ["guadec", "pygtk"]
+tags: ["guadec", "pygtk"]
 aliases: ["/talks/guadec2001/html/"]
 ---
 

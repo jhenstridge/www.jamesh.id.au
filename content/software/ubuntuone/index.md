@@ -1,7 +1,7 @@
 ---
 title: "Ubuntu One"
 date: 2012-11-01T00:00:00+08:00
-keywords: ["ubuntu"]
+tags: ["ubuntu"]
 ---
 
 [Ubuntu One](https://en.wikipedia.org/wiki/Ubuntu_One) was a set of

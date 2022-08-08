@@ -3,7 +3,7 @@ title: "Linux.conf.au 2014: Unity Scopes"
 date: 2014-01-09T00:00:00+08:00
 resources:
  - src: LCA2014-unity-scopes.pdf
-keywords: ["linux.conf.au"]
+tags: ["linux.conf.au"]
 ---
 
 At Linux.conf.au 2014 in Perth, I gave a talk about the "scopes"

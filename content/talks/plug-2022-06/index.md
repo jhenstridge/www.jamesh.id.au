@@ -3,7 +3,7 @@ title: "PLUG June 2022: Hugo"
 date: 2022-06-14T19:00:00+08:00
 resources:
  - src: hugo-slides.pdf
-keywords: ["plug", "hugo"]
+tags: ["plug", "hugo"]
 ---
 
 At the June 2022 Perth Linux Users Group meeting, I gave a talk about

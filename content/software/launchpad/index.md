@@ -1,7 +1,7 @@
 ---
 title: "Launchpad"
 date: 2008-07-24T09:43:37+08:00
-keywords: ["launchpad", "ubuntu"]
+tags: ["launchpad", "ubuntu"]
 ---
 
 From 2004 to 2008, I worked on the [Launchpad](https://launchpad.net)

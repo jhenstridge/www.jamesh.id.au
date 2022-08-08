@@ -1,7 +1,7 @@
 ---
 title: "Ubuntu Desktop"
 date: 2018-09-08T21:03:44+08:00
-keywords: ["ubuntu", "gnome"]
+tags: ["ubuntu", "gnome"]
 ---
 
 When the Ubuntu Phone project was cancelled, I moved to the desktop

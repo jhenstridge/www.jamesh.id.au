@@ -3,7 +3,7 @@ title: "PLUG May 2021: GStreamer Editing Services"
 date: 2021-05-11T19:00:00+08:00
 resources:
  - src: ges-slides.pdf
-keywords: ["plug"]
+tags: ["plug"]
 ---
 
 At the May 2021 Perth Linux Users Group meeting, I gave a talk about

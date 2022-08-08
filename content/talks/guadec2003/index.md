@@ -5,7 +5,7 @@ resources:
  - src: libegg-slides.pdf
  - src: pyorbit-slides.pdf
  - src: metadata-demo.py
-keywords: ["guadec", "libegg", "pyorbit"]
+tags: ["guadec", "libegg", "pyorbit"]
 aliases: ["/talks/guadec2003/libegg/", "/talks/guadec2003/pyorbit/"]
 ---
 

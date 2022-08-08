@@ -4,7 +4,7 @@ date: 2000-03-16T00:00:00+08:00
 resources:
  - src: dia-slides.pdf
  - src: python-slides.pdf
-keywords: ["guadec", "pygtk", "dia"]
+tags: ["guadec", "pygtk", "dia"]
 aliases: ["/talks/guadec2000/dia-0.html", "/talks/guadec2000/python-0.html"]
 ---
 

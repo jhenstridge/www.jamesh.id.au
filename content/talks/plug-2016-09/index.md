@@ -3,7 +3,7 @@ title: "PLUG September 2016: Talking to Chromecasts"
 date: 2016-09-13T19:00:00+08:00
 resources:
  - src: chromecast-slides.pdf
-keywords: ["plug"]
+tags: ["plug"]
 ---
 
 At the September 2016 Perth Linux Users Group meeting, I gave a talk

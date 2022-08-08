@@ -3,7 +3,7 @@ title: "PLUG April 2018: Confined Apps on the Ubuntu Desktop"
 date: 2018-04-10T17:00:00+08:00
 resources:
  - src: confined-apps-slides.pdf
-keywords: ["plug"]
+tags: ["plug"]
 ---
 
 At the April 2018 Perth Linux Users Group meeting, I gave a talk about

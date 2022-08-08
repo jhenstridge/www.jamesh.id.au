@@ -3,7 +3,7 @@ title: "PLUG July 2014: Ubuntu Phone"
 date: 2014-07-08T19:00:00+08:00
 resources:
  - src: plug-ubuntu-phone.pdf
-keywords: ["plug"]
+tags: ["plug"]
 ---
 
 At the July 2014 Perth Linux Users Group meeting, I gave a talk about
