@@ -8,7 +8,7 @@ tags: ['Gnome', 'Ubuntu']
 I\'ve been working on some FM radio support in Rhythmbox in my spare
 time. Below is screenshot
 
-![](rhythmbox-fmradio.png)
+{{< figure src="rhythmbox-fmradio.png" >}}
 
 At the moment, the basic tuning and mute/unmute works fine with my
 DSB-R100. I don\'t have any UI for adding/removing stations at the

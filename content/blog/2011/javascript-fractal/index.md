@@ -14,7 +14,8 @@ polish my JS skills.  In particular, I wanted to get to know the HTML5
 The results turned out pretty well.  Click on the image below to try it
 out:
 
-[![Mandelbrot Set Renderer](mandelbrot.jpeg "Mandelbrot Set")](http://people.canonical.com/~jamesh/fractal/mandelbrot.html)
+{{< figure src="mandelbrot.jpeg" alt="A render of the Mandelbrot Set"
+        link="http://people.canonical.com/~jamesh/fractal/mandelbrot.html" >}}
 
 Clicking anywhere on the fractal will zoom in.  You\'ll need to reload
 the page to zoom out.  Zooming in while the fractal is still being

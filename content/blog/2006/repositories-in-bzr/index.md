@@ -11,7 +11,9 @@ This provides a way to reduce disk space needed to store multiple
 related branches. To understand how repositories work, it helps to know
 a bit about how branches are stored by bzr.
 
-[![bzr repository diagram](bzr-repo.png)](bzr-repo.svg)
+{{< figure src="bzr-repo.png" width="100" height="193"
+        alt="bzr repository diagram"
+        link="bzr-repo.svg" >}}
 
 There are three concepts that make up a bzr branch:
 

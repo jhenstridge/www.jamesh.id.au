@@ -22,8 +22,11 @@ padded my bag with a few pillows and got the checkin lady to put
 \"fragile\" stickers over the bag, which was about as good as I could
 hope for.
 
-![Passengers queuing for checkin](heathrow-checkin.jpg)
-![My clear plastic bag of hand luggage](hand-luggage.jpg)
+{{< figure src="heathrow-checkin.jpg"
+        caption="Passengers queuing for checkin" >}}
+
+{{< figure src="hand-luggage.jpg"
+        caption="My clear plastic bag of hand luggage" >}}
 
 Now it was time to queue for passport control. This queue had now
 extended out the door of the terminal and round the corner. The queue
@@ -56,7 +59,8 @@ no nasty surprises on opening my luggage --- I assume the baggage
 handlers had been instructed to take special care of everyone\'s luggage
 due to the UK restrictions.
 
-![Royal Victoria Dock, a few days before my flight. The towers at Canary Warf is visible on the horizon.](royal-victoria-dock.jpg)
+{{< figure src="royal-victoria-dock.jpg"
+        caption="Royal Victoria Dock, a few days before my flight. The towers at Canary Warf is visible on the horizon." >}}
 
 ---
 ### Comments:

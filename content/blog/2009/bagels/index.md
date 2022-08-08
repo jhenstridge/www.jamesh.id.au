@@ -16,7 +16,7 @@ time a bit to compensate.  They weren\'t particularly difficult to make,
 but the boiling process was fairly time consuming, since I could only
 fit three at a time into the pot.
 
-![Bagels](bagels.jpg "Bagels")
+{{< figure src="bagels.jpg" >}}
 
 ---
 ### Comments:

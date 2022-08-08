@@ -94,7 +94,7 @@ for the video to encode.
 I can even load the project in [Pitivi](http://www.pitivi.org/), a video
 editor built on top of GES:
 
-[![screenshot of Pitivi video editor](pitivi-screenshot.png)](pitivi-screenshot.png)
+{{< figure src="pitivi-screenshot.png" alt="screenshot of Pitivi video editor" >}}
 
 This makes it very easy to scrub through the timeline to quickly verify
 that everything looks correct.

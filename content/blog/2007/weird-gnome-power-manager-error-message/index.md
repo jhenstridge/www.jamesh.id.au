@@ -9,7 +9,8 @@ Since upgrading to [Ubuntu Gutsy](https://wiki.ubuntu.com/GutsyGibbon)
 I\'ve occasionally been seeing the following notification from GNOME
 Power Manager:
 
-![GNOME Power Manager notification](gnome-power-manager-popup.png)
+{{< figure src="gnome-power-manager-popup.png"
+        alt="GNOME Power Manager notification" >}}
 
 I\'d usually trigger this error by unplugging the AC adapter and then
 picking suspend from GPM\'s left click menu.

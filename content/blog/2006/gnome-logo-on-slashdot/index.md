@@ -20,7 +20,7 @@ Slashdot\'s high standards. After all, if they were going to switch to
 the new logo, they would have done so when we first asked. The result is
 below:
 
-![](gnome-slashdot2.png)
+{{< figure src="gnome-slashdot2.png" width="198" height="225" >}}
 
 This is based on an [earlier design](gnome-slashdot.png), but I think
 the drop shadow really completes the image. Iain managed to come up

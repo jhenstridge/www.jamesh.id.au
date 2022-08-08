@@ -14,7 +14,7 @@ unmounting/ejecting it. I did up a
 [screenshot](drive-mount-applet.png)
 showing what it looks like as an applet.
 
-![](drive-mount-applet.png)
+{{< figure src="drive-mount-applet.png" width="200" height="240" >}}
 
 **Libtool**
 

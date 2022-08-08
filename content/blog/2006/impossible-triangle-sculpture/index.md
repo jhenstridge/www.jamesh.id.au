@@ -6,7 +6,7 @@ date: 2006-09-18T09:24:48+08:00
 
 Saw this interesting sculpture while cycling through East Perth:
 
-![](triangle.jpg)
+{{< figure src="triangle.jpg" >}}
 
 Of course, it can only be appreciated when standing in a particular
 location ([Here](triangle-angle.jpg) is what it looks like from

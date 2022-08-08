@@ -5,9 +5,10 @@ date: 2008-06-20T17:31:11+08:00
 tags: ['Bazaar', 'Launchpad']
 ---
 
-[![Bazaar logo](bazaar-logo.png)](http://bazaar-vcs.org/) It has been
-a while coming, but [MySQL](http://www.mysql.com/) has [announced
-their move to
+{{< figure src="bazaar-logo.png" width="94" height="96" class="fl"
+        link="http://bazaar-vcs.org/" >}}
+It has been a while coming, but [MySQL](http://www.mysql.com/) has
+[announced their move to
 Bazaar](http://blogs.mysql.com/kaj/2008/06/19/version-control-thanks-bitkeeper-welcome-bazaar/)
 for version control.  This has been a long time coming, and it is
 great to finally see it announced publicly.

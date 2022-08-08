@@ -19,26 +19,20 @@ it wasn\'t necessary for the series winner to win the Perth race.  This
 turned out to be the case, with Hans Arch coming third but winning the
 series.
 
-\[caption id=\"attachment\_385\" align=\"aligncenter\" width=\"525\"
-caption=\"Hannes Arch passing through one of the gates in front of the
-WACA\"\]![Hannes Arch passing through one of the gates in front of the
-WACA](hannes-arch.jpg "hannes-arch")\[/caption\]
+{{< figure src="hannes-arch.jpg"
+        caption="Hannes Arch passing through one of the gates in front of the WACA" >}}
 
 The Perth final ended up being between two English pilots: Nigel Lamb
 and Paul Bonhomme, with Bonhomme winning the race.
 
-\[caption id=\"attachment\_388\" align=\"aligncenter\" width=\"525\"
-caption=\"Paul Bonhomme passing through the finishing gate\"\]![Paul
-Bonhomme passing through the finishing
-pylons](paul-bonhomme.jpg "paul-bonhomme")\[/caption\]
+{{< figure src="paul-bonhomme.jpg"
+        caption="Paul Bonhomme passing through the finishing gate" >}}
 
 After the race, there was a display by the [RAAF
 Roulettes](http://en.wikipedia.org/wiki/Roulettes) formation flying
 team, and a fly over by an F/A-18 Hornet.
 
-\[caption id=\"attachment\_386\" align=\"aligncenter\" width=\"525\"
-caption=\"F/A-18 Hornet\"\]![F/A-18
-Hornet](hornet.jpg "hornet")\[/caption\]
+{{< figure src="hornet.jpg" caption="F/A-18 Hornet" >}}
 
 Overall, it was a pretty good day.  I don\'t know if I\'d have been up
 for watching the entire two days worth, but the finals were

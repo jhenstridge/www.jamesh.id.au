@@ -29,7 +29,7 @@ render character sequences like \"`ffi`\", but only the advance of the
 first character\'s normal glyph is used before drawing the next glyph.
 This results in overlapping glyphs:
 
-![](firefox-ligatures.png)
+{{< figure src="firefox-ligatures.png" >}}
 
 It also results in a weird effect when selecting text, since the
 ligatures get broken appart if the selection begins or ends in the

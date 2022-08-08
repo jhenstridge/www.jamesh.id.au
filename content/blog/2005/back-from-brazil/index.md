@@ -20,8 +20,8 @@ great (especially the ones made from native fruits like Açaí).
 At the end of the second week, Mark flew us up to Rio de Janeiro for the
 weekend on his jet:
 
-![Canonical One](canonical-one.jpg)
-![Inside Canonical One](canonical-one-inside.jpg)
+{{< figure src="canonical-one.jpg" caption="Canonical One" >}}
+{{< figure src="canonical-one-inside.jpg" caption="Inside Canonical One" >}}
 
 We took a cable car up [Corcovado
 mountain](http://maps.google.com/maps?q=rio+de+janeiro&ll=-22.952189,-43.211964&spn=0.003435,0.004811&t=k&hl=en)
@@ -29,8 +29,8 @@ to see the [Cristo
 Redentor](http://en.wikipedia.org/wiki/Cristo_Redentor) statue. There
 was a great view from the top.
 
-![Cristo Redentor](jesus.jpg)
-![Rio de Janeiro from Corcovado](rio.jpg)
+{{< figure src="jesus.jpg" caption="Cristo Redentor" >}}
+{{< figure src="rio.jpg" caption="Rio de Janeiro from Corcovado" >}}
 
 Since I was leaving that weekend, I didn\'t fly back to São Carlos with
 everyone else. Instead Kiko got a local travel agent to book me a flight

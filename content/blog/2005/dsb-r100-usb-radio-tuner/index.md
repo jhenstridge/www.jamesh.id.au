@@ -17,7 +17,7 @@ automatically, and a program to tune the radio
 available in the Ubuntu universe repository. I did need to change the
 radio device from `/dev/radio` to `/dev/radio0` though.
 
-![](gnomeradio.png)
+{{< figure src="gnomeradio.png" width="332" height="155" >}}
 
 One of the issues with the gnomeradio is the UI for tuning the radio.
 The following controls in the main window are used for this purpose:

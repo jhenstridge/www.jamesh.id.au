@@ -9,17 +9,20 @@ One of the novelties in the airport lounge at Narita was a beer pouring
 machine. It manages to consistently pour a good glass of beer every
 time. You start by placing the glass in the machine:
 
-![Beer machine (1)](beer1.jpg)
+{{< figure src="beer1.jpg"
+        alt="A glass placed in the beer machine" >}}
 
 When you press the start button, it tilts the glass and pours the beer
 down the side of the glass:
 
-![Beer machine (2)](beer2.jpg)
+{{< figure src="beer2.jpg"
+        alt="The beer machine filling the tilted glass" >}}
 
 After filling the glass the machine tilts the glass upright again and
 some extra foam comes out of the second nozzle:
 
-![Beer machine (3)](beer3.jpg)
+{{< figure src="beer3.jpg"
+        alt="The beer machine tops the glass with froth" >}}
 
 Not only was the machine fun to watch, but the beer was okay too.
 

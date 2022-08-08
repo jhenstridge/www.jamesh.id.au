@@ -16,10 +16,8 @@ Co](http://www.nbnco.com.au/), and was followed by a panel discussion
 with Gavin Tweedie from [iiNet](http://www.iinet.net.au/) and Warrick
 Mitchel from [AARNet](http://www.aarnet.edu.au/).
 
-\[caption id=\"attachment\_496\" align=\"aligncenter\" width=\"600\"
-caption=\"James Bromberger introducing the panel: Chris Roberts (NBN
-Co), Gavin Tweedie (iiNet) and Warrick Mitchel
-(AARNet)\"\]![](plug-nbn-panel.jpg)\[/caption\]
+{{< figure src="plug-nbn-panel.jpg"
+        caption="James Bromberger introducing the panel: Chris Roberts (NBN Co), Gavin Tweedie (iiNet) and Warrick Mitchel (AARNet)" >}}
 
 One question I had was when they\'ll get round to building out the
 network where I live.  There is a [rollout map on the NBN Co
@@ -46,9 +44,8 @@ Chris brought in some sample \"User Network Interface\" (UNI) boxes that
 would be used on premises with a fibre connection.  It provided 4
 gigabit Ethernet ports, and 2 telephony ports.
 
-\[caption id=\"attachment\_497\" align=\"aligncenter\" width=\"600\"
-caption=\"The inside of a current generation NBN interface
-box\"\]![](nbn-box.jpg)\[/caption\]
+{{< figure src="nbn-box.jpg"
+        caption="The inside of a current generation NBN interface box" >}}
 
 Rather than the 4 Ethernet ports being part of a single network as
 you\'d expect for similar looking routers, each port represents a

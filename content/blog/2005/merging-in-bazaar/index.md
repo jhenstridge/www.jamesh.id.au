@@ -45,9 +45,9 @@ last revision\'s tree and applying the relevant changeset.
 Alternatively, you can say that the tree for `patch-3` contains the
 changesets `base-0`, `patch-1`, `patch-2` and `patch-3`.
 
-[\
-![base-0 → patch-1 → patch-2 → patch-3](one-branch.png)\
-](one-branch.dot)
+{{< figure src="one-branch.png"
+        alt="base-0 → patch-1 → patch-2 → patch-3"
+        link="one-branch.dot" >}}
 
 Branching fits into this model pretty well. As with other systems, a
 particular revision can have multiple children. In the diagram below,
@@ -57,9 +57,9 @@ branch. Any apparent asymmetry is just in the naming and storage
 locations \-- both revisions are branches are just patches against the
 same parent revision.
 
-[\
-![base-0 → patch-1 → patch-2 → patch-3, patch-1 → patch-1 → patch-2](two-branches.png)\
-](two-branches.dot)
+{{< figure src="two-branches.png"
+        alt="base-0 → patch-1 → patch-2 → patch-3, patch-1 → patch-1 → patch-2"
+        link="two-branches.dot" >}}
 
 So far, there\'s no rocket science. Nothing that Subversion doesn\'t
 represent. Pretty much every version control system under the sun tracks
@@ -74,9 +74,9 @@ branching), a tree can have multiple parent revisions when merges occur.
 When you merge two revisions, the result should contain all the changes
 that exist in the parent revisions.
 
-[\
-![base-0 → patch-1 → patch-2 → patch-3 → patch-4, patch-1 → patch-1 → patch-2 →patch-4](merge.png)\
-](merge.dot)
+{{< figure src="merge.png"
+        alt="base-0 → patch-1 → patch-2 → patch-3 → patch-4, patch-1 → patch-1 → patch-2 →patch-4"
+        link="merge.dot" >}}
 
 In the above diagram, we want to merge the changes made on the second
 branch back into the original one. The usual way to merge changes goes
@@ -111,12 +111,9 @@ that isn\'t true for subsequent merges between the two branches.
 Consider the following merge that results in `patch-6` on the original
 branch:
 
-[\
-![base-0 → patch-1 → patch-2 → patch-3 → patch-4 → patch-5 → patch-6,
-patch-1 → patch-1 → patch-2 → patch-3 → patch 4 → patch-5, patch-2 →
-patch-5, patch-4 →
-patch-6](second-merge.png)\
-](second-merge.dot)
+{{< figure src="second-merge.png"
+        alt="base-0 → patch-1 → patch-2 → patch-3 → patch-4 → patch-5 → patch-6, patch-1 → patch-1 → patch-2 → patch-3 → patch 4 → patch-5, patch-2 → patch-5, patch-4 → patch-6"
+        link="second-merge.dot" >}}
 
 Here the best merge ancestor to use is `patch-2` on the second branch.
 However, without the record of the previous merge, the same ancestor as
@@ -134,13 +131,9 @@ changes have been merged from the third branch (yellow) into the
 original branch (cyan) and the second branch (magenta). Finally, there
 is a merge between the magenta and cyan branches.
 
-[\
-![base-0 → patch-1 → patch-2 → patch-3 → patch-4 → patch-5 → patch-6,
-patch-1 → patch-1 → patch-2 → patch-3 → patch 4 → patch-5, patch-1 →
-patch-1 → patch-2 → patch-3 → patch 4 → patch-5, patch-2 → patch-3,
-patch-3 → patch-5, patch-4 →
-patch-6](three-branches.png)\
-](three-branches.dot)
+{{< figure src="three-branches.png"
+        alt="base-0 → patch-1 → patch-2 → patch-3 → patch-4 → patch-5 → patch-6, patch-1 → patch-1 → patch-2 → patch-3 → patch 4 → patch-5, patch-1 → patch-1 → patch-2 → patch-3 → patch 4 → patch-5, patch-2 → patch-3, patch-3 → patch-5, patch-4 → patch-6"
+        link="three-branches.dot" >}}
 
 For this last merge, there are a number of possible merge ancestors. If
 we ignore the yellow branch, the latest common ancestor is the initial

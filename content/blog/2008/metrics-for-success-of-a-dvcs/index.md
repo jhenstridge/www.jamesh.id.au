@@ -18,7 +18,8 @@ used by Free Software projects like GNOME, there are effectively two
 classes of users that I will refer to as \"committers\" and \"patch
 contributors\":
 
-![Centralised VCS Users](centralised-vcs.png)
+{{< figure src="centralised-vcs.png" width="250" height="168"
+        alt="Centralised VCS Users" >}}
 
 Patch contributors are limited to read only access to the version
 control system.  They can check out a working copy to make changes, and
@@ -47,7 +48,8 @@ A DVCS allows anyone to commit to their own branches and provides the
 full feature set to all users.  This splits the \"committers\" class
 into two classes:
 
-![Distributed VCS Users](distributed-vcs.png)
+{{< figure src="distributed-vcs.png" width="239" height="170"
+        alt="Distributed VCS Users" >}}
 
 The social aspect of the \"committers\" group now becomes the group of
 people who can commit to the main line of the project -- the core

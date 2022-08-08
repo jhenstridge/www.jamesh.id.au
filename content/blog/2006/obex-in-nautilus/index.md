@@ -17,8 +17,8 @@ hard work of writing a gnome-vfs module that speaks the OBEX FTP
 protocol. I had a go at compiling it on my laptop (running Ubuntu Edgy),
 and you can see the result below:
 
-![](obex-nautilus.jpg)\
-*Browsing files and viewing images stored on my phone*
+{{< figure src="obex-nautilus.jpg"
+        caption="Browsing files and viewing images stored on my phone" >}}
 
 There are a few rough edges:
 

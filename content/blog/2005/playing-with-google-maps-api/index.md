@@ -13,9 +13,9 @@ Gnome](http://planet.gnome.org/) FOAF file (which now includes the
 nicknames and
 [hackergotchis](http://en.wikipedia.org/wiki/Hackergotchi)).
 
-[\
-![this Ubuntu guy at OSCON who just wouldn\'t stop talking](gnome-world-wide.jpg)\
-](http://www.gnome.org/~jamesh/maps/gnome.html)
+{{< figure src="gnome-world-wide.jpg"
+        alt="this Ubuntu guy at OSCON who just wouldn\'t stop talking"
+        link="http://www.gnome.org/~jamesh/maps/gnome.html" >}}
 
 The code is available
 [here](http://www.gnome.org/~jamesh/bzr/mapsworldwide/) (a BZR branch,

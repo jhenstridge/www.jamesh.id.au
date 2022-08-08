@@ -27,7 +27,7 @@ supports OBEX FTP `:)`
 
 Last but not least, a screenshot:
 
-![](gnome-vfs-obexftp.jpg)
+{{< figure src="gnome-vfs-obexftp.jpg" >}}
 
 **Update**
 

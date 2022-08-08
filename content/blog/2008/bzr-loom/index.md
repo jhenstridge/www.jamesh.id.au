@@ -26,7 +26,7 @@ manner. Each thread in the loom contains all the changes from the
 threads below it, so the revision graph ends up looking something like
 this:
 
-![Sample Loom Timeline](loom-timeline.png)
+{{< figure src="loom-timeline.png" >}}
 
 Once the plugin has been installed, a normal branch can be converted to
 a loom with the \"`bzr loomify`\" command. The \"`bzr create-thread`\"

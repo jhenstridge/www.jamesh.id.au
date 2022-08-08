@@ -16,10 +16,7 @@ walking distance of the conference, but the public transport is pretty
 good.  A bit more concerning was the following change to the wiki made
 between the time I left Perth and the time I checked in:
 
-\[caption id=\"attachment\_463\" align=\"aligncenter\" width=\"684\"
-caption=\"BYO Toilet
-Paper\"\]![](wiki-changes.jpeg "wiki-changes"){.size-full
-.wp-image-463 width="684" height="179"}\[/caption\]
+{{< figure src="wiki-changes.jpeg" caption="BYO Toilet Paper" >}}
 
 I\'ve been impressed with the conference talks I\'ve been to so far. In
 particular, I liked Silvia Pfeiffer\'s talk on audio/video processing

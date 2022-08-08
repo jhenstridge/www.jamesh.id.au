@@ -25,7 +25,7 @@ video4linux devices. Interestingly, the IR camera seems to be assigned
 `/dev/video0`, so generally gets picked by apps in preference to the
 colour camera. Unfortunately, the image it produces comes up garbled:
 
-![](2017-10-22-105539.jpg)
+{{< figure src="2017-10-22-105539.jpg" >}}
 
 So it wasn\'t going to be quite so easy to get things working. Looking
 at the advertised capture modes, the camera supports Motion-JPEG and
@@ -38,7 +38,7 @@ Unlike in raw mode, the red illumination LEDs started flashing when in
 JPEG mode, which resulted in frames having alternating exposures.
 Here\'s one of the better exposures:
 
-![](frame-04.jpg)
+{{< figure src="frame-04.jpg" >}}
 
 What is interesting is that the JPEG frames have a different aspect
 ratio to the raw version: a more normal 640x480 rather than 400x480. So
@@ -84,8 +84,8 @@ The following Python code can unpack the 10-bit pixel values:
 After adjusting the brightness while converting to 8-bit greyscale, I
 get a usable image. Compare a fake YUYV frame with the decoded version:
 
-![](test-05-yuv.jpg)
-![](test-05-norm.jpg)
+{{< figure src="test-05-yuv.jpg" >}}
+{{< figure src="test-05-norm.jpg" >}}
 
 I suppose this logic could be wrapped up in a GStreamer element to get
 usable infrared video capture.

@@ -21,7 +21,7 @@ adjustments gives a 0.05 BAC reading. We\'d expect the probability
 distribution for the real BAC reading to be a normal distribution with
 0.05 BAC as the mean:
 
-![](normal-50.png)
+{{< figure src="normal-50.png" width="196" height="150" >}}
 
 So the real BAC may be either above or below 0.05. Given that it is only
 an offence to have a BAC above 0.05, the test would only give even odds
@@ -33,7 +33,7 @@ If you automatically reduce the displayed reading on the breathalyzer by
 of 0.05, the real BAC will still be normally distributed but the mean
 will be offset:
 
-![](normal-97.png)
+{{< figure src="normal-97.png" width="196" height="150" >}}
 
 So this gives a 97.5% probability that the BAC is above 0.05. So while
 removing the automatic result reduction might catch more people over the

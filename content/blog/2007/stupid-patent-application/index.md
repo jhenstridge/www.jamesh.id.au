@@ -40,7 +40,8 @@ So Nokia is effectively trying to patent an XML attribute. I'd seen a
 lot of bad patents, but this seemed particularly weak. The patent
 application even comes with a useful diagram explaining the invention:
 
-![Figure 2](figure-2.png)
+{{< figure src="figure-2.png"
+        alt="Figure 2 from the patent" >}}
 
 As far as I can tell, using the information returned from the phone
 wouldn't be covered by the patent (if it gets issued, that is). So it

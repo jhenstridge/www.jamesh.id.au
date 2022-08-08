@@ -5,8 +5,9 @@ date: 2008-02-19T16:36:43+09:00
 tags: ['Avahi', 'Bazaar', 'Bonjour', 'Hackathon', 'Python', 'Sprint', 'Zeroconf']
 ---
 
-![Bazaar logo](bazaar-logo.png) At Canonical, one of the approaches
-taken to accelerate development is to hold [coding
+{{< figure src="bazaar-logo.png" width="94" height="96" class="fl" >}}
+At Canonical, one of the approaches taken to accelerate development is
+to hold [coding
 sprints](http://en.wikipedia.org/wiki/Hackathon#Sprints) (otherwise
 known as hackathons, hackfests or similar). Certain things get done a
 lot quicker face to face compared to mailing lists, IRC or VoIP.
@@ -38,13 +39,13 @@ the path to the branch on the server. Ideally they\'d just need to know
 the name of the my branch. As it happens, we\'ve got the technology to
 fix this.
 
-![Avahi logo](avahi-logo.png) [Avahi](http://avahi.org/) makes it
-trivial to advertise and browse for services on the local network
-without having to worry about what IP addresses have been assigned or
-what people name their computer.  So the solution is to hook Avahi and
-Bazaar together. This was fairly easy due to Avahi\'s DBus interface
-and the [dbus-python](http://dbus.freedesktop.org/doc/dbus-python/)
-bindings.
+{{< figure src="avahi-logo.png" width="90" height="67" class="fl" >}}
+[Avahi](http://avahi.org/) makes it trivial to advertise and browse
+for services on the local network without having to worry about what
+IP addresses have been assigned or what people name their computer.
+So the solution is to hook Avahi and Bazaar together. This was fairly
+easy due to Avahi\'s DBus interface and the
+[dbus-python](http://dbus.freedesktop.org/doc/dbus-python/) bindings.
 
 The result is my [bzr-avahi
 plugin](https://launchpad.net/bzr-avahi "Bazaar/Avahi mDNS Plugin"). You

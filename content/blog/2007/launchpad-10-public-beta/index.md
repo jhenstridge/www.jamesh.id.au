@@ -5,12 +5,14 @@ date: 2007-04-02T20:01:53+08:00
 tags: ['Launchpad', 'Ubuntu']
 ---
 
-![](launchpad-logo.png) Today we unveiled the [Launchpad 1.0 User
-Interface](http://www.ubuntu.com/news/LaunchpadRelease), which has been
-in private beta for the last few months. As well as the improved visual
-appearance, there are a number of new features such as the ability to
-add your own branding to Launchpad pages associated with your project
-(for example, [Ubuntu\'s pages](https://launchpad.net/ubuntu)).
+{{< figure src="launchpad-logo.png" width="64" height="64" class="fl" >}}
+Today we unveiled the [Launchpad 1.0 User
+Interface](http://www.ubuntu.com/news/LaunchpadRelease), which has
+been in private beta for the last few months. As well as the improved
+visual appearance, there are a number of new features such as the
+ability to add your own branding to Launchpad pages associated with
+your project (for example, [Ubuntu\'s
+pages](https://launchpad.net/ubuntu)).
 
 As mentioned in the press release, we\'ve got two new high profile
 projects using us for bug tracking: [The Zope 3
