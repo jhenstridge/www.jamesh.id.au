@@ -1,6 +1,6 @@
 ---
 title: 'PyGTK'
-slug: pygtk-2
+slug: pygtk
 date: 2003-09-03T11:12:21+08:00
 ---
 

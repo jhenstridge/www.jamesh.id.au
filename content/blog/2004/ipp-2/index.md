@@ -1,6 +1,6 @@
 ---
 title: 'IPP'
-slug: ipp-2
+slug: ipp
 date: 2004-03-18T06:20:50+08:00
 ---
 

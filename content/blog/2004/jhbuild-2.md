@@ -1,6 +1,6 @@
 ---
 title: 'jhbuild'
-slug: jhbuild-2
+slug: jhbuild
 date: 2004-03-23T10:26:57+08:00
 tags: ['JHBuild']
 ---

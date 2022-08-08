@@ -1,6 +1,6 @@
 ---
 title: 'linux.conf.au:2003'
-slug: linuxconfau2003-3
+slug: linuxconfau2003
 date: 2003-01-28T02:38:07+08:00
 ---
 
