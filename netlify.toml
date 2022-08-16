@@ -44,6 +44,10 @@ to = "/photos/2005-04-ubuntudownunder/"
 
 ## Redirect old slide decks
 [[redirects]]
+from = "/talks/guadec2000/index.html"
+to = "/talks/guadec2000/"
+force = true
+[[redirects]]
 from = "/talks/guadec2000/*"
 to = "/talks/guadec2000/index.html"
 [[redirects]]
