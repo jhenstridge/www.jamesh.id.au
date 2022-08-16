@@ -47,6 +47,9 @@ to = "/photos/2005-04-ubuntudownunder/"
 from = "/talks/guadec2000/*"
 to = "/talks/guadec2000/index.html"
 [[redirects]]
+from = "/talks/guadec2000/index.html"
+to = "/talks/guadec2000/"
+[[redirects]]
 from = "/talks/guadec2001/html/*"
 to = "/talks/guadec2001/python.pdf"
 [[redirects]]
