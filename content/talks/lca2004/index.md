@@ -43,5 +43,5 @@ The slides reference a number of example programs provided here:
 [`aspell.py`](aspell.py)
 : support module for `spell-check.py`.
 
-[`open-nautilus.py`](open-nautilus.py`)
+[`open-nautilus.py`](open-nautilus.py)
 : performs the "open" aciton on the first icon found.
