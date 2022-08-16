@@ -21,3 +21,46 @@ from = "https://jamesh.netlify.app/*"
 to = "https://www.jamesh.id.au/:splat"
 status = 301
 force = true
+
+## Redirect individual photo pages from old galleries
+[[redirects]]
+from = "/photos/2004-08-Oxford/*"
+to = "/photos/2004-08-oxford/"
+[[redirects]]
+from = "/photos/2004-12-Mataro/*"
+to = "/photos/2004-12-Mataro/"
+[[redirects]]
+from = "/photos/2004-12-Narita/*"
+to = "/photos/2004-12-narita/"
+#[[redirects]]
+#from = "/photos/2005-01-Skyshow/*"
+#to = "/photos/2005-01-skyshow/"
+[[redirects]]
+from = "/photos/2005-02-CapeTown/*"
+to = "/photos/2005-02-capetown/"
+[[redirects]]
+from = "/photos/2005-04-UbuntuDownUnder/*"
+to = "/photos/2005-04-ubuntudownunder/"
+
+## Redirect old slide decks
+[[redirects]]
+from = "/talks/guadec2000/*"
+to = "/talks/guadec2000/"
+[[redirects]]
+from = "/talks/guadec2001/html/*"
+to = "/talks/guadec2001/python.pdf"
+[[redirects]]
+from = "/talks/guadec2002/html/*"
+to = "/talks/guadec2002/python.pdf"
+[[redirects]]
+from = "/talks/guadec2003/libegg/*"
+to = "/talks/guadec2003/libegg-slides.pdf"
+[[redirects]]
+from = "/talks/guadec2003/pyorbit/*"
+to = "/talks/guadec2003/pyorbit-slides.pdf"
+[[redirects]]
+from = "/talks/lca2003/talk/*"
+to = "/talks/lca2003/talk.pdf"
+[[redirects]]
+from = "/talks/lca2004/*"
+to = "/talks/lca2004/slides.pdf"
