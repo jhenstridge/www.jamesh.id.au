@@ -4,7 +4,6 @@ date: 2001-04-06T00:00:00+08:00
 resources:
  - src: python.pdf
 tags: ["guadec", "pygtk"]
-aliases: ["/talks/guadec2001/html/"]
 ---
 
 At GUADEC 2001 in Copenhagen, I gave a talk about the work I'd been

@@ -4,7 +4,6 @@ date: 2002-04-06T00:00:00+08:00
 resources:
  - src: python.pdf
 tags: ["guadec", "pygtk"]
-aliases: ["/talks/guadec2002/html/"]
 ---
 
 At GUADEC 2002 in Seville I gave a talk about the state of the Python

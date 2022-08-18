@@ -5,7 +5,6 @@ resources:
  - src: paper.pdf
  - src: talk.pdf
 tags: ["linux.conf.au", "libegg"]
-aliases: ["/talks/lca2003/talk/"]
 ---
 
 I gave a talk at Linux.conf.au 2003 about the experimental "EggMenu"
