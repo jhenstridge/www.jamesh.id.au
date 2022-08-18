@@ -42,6 +42,10 @@ to = "/photos/2005-02-capetown/"
 from = "/photos/2005-04-UbuntuDownUnder/*"
 to = "/photos/2005-04-ubuntudownunder/"
 
+[[redirects]]
+from = "/articles/libxml-sax/libxml-sax.html"
+to = "/articles/libxml-sax/"
+
 ## Redirect old slide decks
 [[redirects]]
 from = "/talks/guadec2000/index.html"
