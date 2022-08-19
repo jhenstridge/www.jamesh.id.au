@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="256"
+   height="256"
+   viewBox="0 0 256 256"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   sodipodi:docname="favicon.svg"
+   inkscape:export-filename="/home/james/src/jamesh.id.au/src/favicon.png"
+   inkscape:export-xdpi="8"
+   inkscape:export-ydpi="8"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="true"
+     inkscape:document-units="px"
+     showgrid="false"
+     units="px"
+     width="192px"
+     showborder="true"
+     inkscape:zoom="3.2578125"
+     inkscape:cx="123.08873"
+     inkscape:cy="128.15348"
+     inkscape:window-width="1858"
+     inkscape:window-height="1016"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2">
+    <inkscape:path-effect
+       effect="fillet_chamfer"
+       id="path-effect1304"
+       is_visible="true"
+       lpeversion="1"
+       satellites_param="F,0,0,1,0,48,0,1 @ F,0,0,1,0,48,0,1 @ F,0,0,1,0,48,0,1 @ F,0,0,1,0,48,0,1"
+       unit="px"
+       method="auto"
+       mode="F"
+       radius="48"
+       chamfer_steps="1"
+       flexible="false"
+       use_knot_distance="true"
+       apply_no_radius="true"
+       apply_with_radius="true"
+       only_selected="false"
+       hide_knots="false" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       style="fill:#55aaff;fill-opacity:1;stroke:none;stroke-width:0"
+       id="rect65"
+       width="256"
+       height="256"
+       x="0"
+       y="6.5564354e-18"
+       inkscape:path-effect="#path-effect1304"
+       d="m 48,0 h 160 a 48,48 45 0 1 48,48 v 160 a 48,48 135 0 1 -48,48 H 48 A 48,48 45 0 1 0,208 V 48 A 48,48 135 0 1 48,0 Z"
+       sodipodi:type="rect" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:210.591px;line-height:1.25;font-family:Chewy;-inkscape-font-specification:'Chewy, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#eeeeee;fill-opacity:1;stroke:none;stroke-width:5.26482"
+       x="33.398571"
+       y="202.65286"
+       id="text5158"><tspan
+         sodipodi:role="line"
+         id="tspan5156"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:210.591px;font-family:Chewy;-inkscape-font-specification:'Chewy, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#eeeeee;fill-opacity:1;stroke-width:5.26482"
+         x="33.398571"
+         y="202.65286">JH</tspan></text>
+  </g>
+</svg>
