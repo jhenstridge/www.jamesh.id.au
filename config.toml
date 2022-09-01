@@ -13,7 +13,7 @@ unsafe = true
 style = "monokai"
 
 [permalinks]
-blog = "/blog/:year/:month/:day/:slug/"
+blog = "/blog/:year/:month/:day/:slugorfilename/"
 
 [params]
 mainSections = ["post"]
