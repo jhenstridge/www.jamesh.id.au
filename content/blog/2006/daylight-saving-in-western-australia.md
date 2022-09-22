@@ -27,9 +27,9 @@ chaos!
 #### Jonathon - <time datetime="2006-11-04 00:21:56">4 Nov, 2006</time>
 
 As one who has had to deal with daylight saving time in the US, here are
-my observations:\
--there are little energy savings, if any\
--altering sleep patterns has ill effects on people\
+my observations:
+-there are little energy savings, if any
+-altering sleep patterns has ill effects on people
 -agricultural communities hate it
 
 If I were you, I would do a little research on the subject. If you end
@@ -54,7 +54,7 @@ other countries.
 ---
 #### s cooper - <time datetime="2006-11-11 17:56:18">11 Nov, 2006</time>
 
-I have lived with day light savings most of my life.\
+I have lived with day light savings most of my life.
 I have never had any problem with curtain fade , I think to use silly
 arguments like that one makes your whole argument seem ill informed and
 simply scared of change. I support both sides of the argument and can
@@ -109,8 +109,8 @@ you are all losers
 
 it is very interesting to read your points of view. could you please
 send me some information on DLS for a school debate. I am against
-daylight savings in this topic,\
-thank you,\
+daylight savings in this topic,
+thank you,
 EB
 
 ---
@@ -162,22 +162,22 @@ Its only for windows but will do for most folks.
 ---
 #### Scottish_Down_Under - <time datetime="2006-11-22 18:03:38">22 Nov, 2006</time>
 
-Ach, guys\...\
+Ach, guys\...
 It\'s only an hour, whether it means fabulous savings in electricity,
 easier communication with the rest of Oz, faded curtains or (God
 forbid!) confused cows it\'s really as simple as giving everyone an
 extra 60 minutes to enjoy the beach / park / beer garden after a long
-day at work!\
-Enjoy - you know it makes sense.\
-PS Had to comment on some of the points - sorry!\
+day at work!
+Enjoy - you know it makes sense.
+PS Had to comment on some of the points - sorry!
 1. IT changes due to DST are bound to be minimal at best - although I do
 agree that simple software like phone time programs etc that won\'t
-really be updated is a tad annoying\...\
+really be updated is a tad annoying\...
 2. Time differences are dependant on longitude AND latitude - especially
-with Perth\'s location in Australia.\
+with Perth\'s location in Australia.
 3. Backward State? Mineral and Oil/Gas capital of Australasia, not to
 mention some of the best damn wines in the world\... (Oh, and Go
-Eagles!)\
+Eagles!)
 4. There must be a real lack of tolerance in the USA? A 1 hour change
 has ill effects on peoples sleeping patterns? After the first day,
 surely no one notices it? Hmmm\...
@@ -186,8 +186,8 @@ surely no one notices it? Hmmm\...
 #### Sue - <time datetime="2006-11-22 18:27:44">22 Nov, 2006</time>
 
 Hey at school i am having a debate about daylight saving and i am
-against it and i cant find and info on it\
-can u plz send me some arguments\
+against it and i cant find and info on it
+can u plz send me some arguments
 thanx
 
 ---
@@ -221,15 +221,15 @@ ather sates to get rid of daylight savings
 #### Scottish_Down_Under - <time datetime="2006-11-23 17:53:19">23 Nov, 2006</time>
 
 Mike - come on now! It\'s not changing the \'number\' of daylight hours
-we have - it\'s changing WHEN we have them\...\
+we have - it\'s changing WHEN we have them\...
 Daylight from 5am to 8pm is surely more intelligent than from 4am to
-7pm?\
+7pm?
 An hours difference isn\'t going to make the sun stay out until 10pm or
 11pm at night so parents \'dragging\' kids indoors is hardlt going to be
-a big problem, eh?\
+a big problem, eh?
 IT\"S AN HOUR!!! That\'s all! It brings us slightly more in line with
 the main cities of Melbourne and Sydney and it means we have more time
-in the evening to enjoy this beautiful State of ours\...\
+in the evening to enjoy this beautiful State of ours\...
 It\'s in place now and in 3 years there\'s no way that a referendum will
 result in it being gotten rid of\...
 
@@ -240,8 +240,8 @@ As for \'fixing the problem\' \-- Microsoft did it days after the bill
 succeeded and you can download an update to fix your computer to have
 the correct DST information for the three year trial.
 
-<http://www.microsoft.com/australia/technet/timezone/>\
-and\
+<http://www.microsoft.com/australia/technet/timezone/>
+and
 <http://www.microsoft.com/downloads/details.aspx?familyid=c6a2c8fe-abda-4051-a24f-3ec933089747&DisplayLang=en>
 
 Enjoy.
@@ -314,11 +314,11 @@ both sides will see all the pros and cons of daylight saving
 i believe the 3 year trial is good because it will give us a feel of the
 situation.
 
-im for daylight saving because:\
-save electricity,\
+im for daylight saving because:
+save electricity,
 workers can have more time with there family and friends in the
-daylight,\
-school starts and finishes earlier,\
+daylight,
+school starts and finishes earlier,
 can speak to friends longer who live over the state.
 
 ---
@@ -382,7 +382,7 @@ heads and get over their fear of change.
 hey umm what are the good and bad things about daylight savings! you
 waste time instead of saving it dont you?
 
-\
+
 
 ---
 #### Ariaflame - <time datetime="2006-11-30 22:38:55">30 Nov, 2006</time>
@@ -437,7 +437,7 @@ is. I used to be offended when \"eastern staters\' commented that people
 from WA were backward and small minded - now I see why !! Get with the
 programme - in a couple of days all you will notice is that there is
 more time at the end of the day to enjoy the day - are all WA people so
-opposed to moving with change ???? or just the ingrates on this site?\
+opposed to moving with change ???? or just the ingrates on this site?
 Computers, cows , curtains????? doesn\'t seem to have effected the rest
 of Australia.
 
@@ -469,7 +469,7 @@ who get up when its dark, so they dont dehydrate, get skin cancer, and
 generally have a crap time of it at work, because they\'re in 30-40
 degree heat all day. I guess they\'ll just have to get up at what
 \"was\" 2am, instead of 3am, to get their work done, without risking
-skin cancer.\
+skin cancer.
 I can only see White collar benefits, and minimal ones at that. And i am
 white collar, I get home, Go for A Ride, A Swim, have one light on in my
 house to read, and im fine with that. We have more than enough daylight,
@@ -514,20 +514,20 @@ responses.
 #### Scottish_Down_Under - <time datetime="2006-12-04 13:39:04">4 Dec, 2006</time>
 
 Man, I love the controversy and more, the sad comments that this issue
-has raised\...\
+has raised\...
 It\'s an hour, it\'s ONLY an hour, it\'s an hours sunlight we get at a
-time that MOST of WA can enjoy it instead of at 5am\...\
+time that MOST of WA can enjoy it instead of at 5am\...
 It doesn\'t matter that we\'re an hour out of synch with Asia, now 9
 hours out of synch with the UK or for that matter 14 - 17 hours out of
 synch from the U.S. The business world copes with this quite admirably
-elsewhere, I think WA can cope too.\
+elsewhere, I think WA can cope too.
 It\'s a trial of a time system that works for 95% of the rest of the
 world, it\'s a three year trial, and it\'s in place. Accept it, move on,
 and don\'t use 60 minutes of a time difference to explain how crap you
-feel etc.\
+feel etc.
 It\'s not about 1 person who can\'t face going to the beach after a big
 evening meal, or who thinks their kids have to be in bed by 7pm on the
-dot (?!?)\
+dot (?!?)
 It\'s time to end this and think about something that\'s actually
 important to the future of this great State like the water shortage
 we\'re facing, the skilled workforce shortage in WA or the ridiculous
@@ -557,10 +557,10 @@ attention from all their other screw ups\... ;)
 did daylight saving hurt your head? What was the problem? Was it that
 you could not work out how to change the clock on the oven? Or possibly
 that the kids have the run of the house\....what bed time but the sun is
-still up?\
+still up?
 It is all good - I haven\'t really noticed the differance other than
 after dinner I still feel like going for a walk as I feel I still have
-time before it gets dark.\
+time before it gets dark.
 I wonder though would daylight saving be better in Winter?
 
 ---
@@ -589,7 +589,7 @@ Goverment Has again shown that if something is not bolted down, it will
 tax it. Not happy with high Stamp-Duty taxes and double dipping with
 fuel tax, it has decided to take an hour off us and have the audcity to
 call it daylight saving, I am now wathching the shirt on my
-back\...UNQUOTE\
+back\...UNQUOTE
 with attitudes like this what hope have we
 
 ---

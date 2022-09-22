@@ -109,7 +109,7 @@ platform solution would be even better!
 ---
 #### [Mathieu Cadet](http://athrun.myopenid.com/) - <time datetime="2008-02-19 19:15:07">19 Feb, 2008</time>
 
-Woa! Just tested it. That\'s really awesome. Great job here!\
+Woa! Just tested it. That\'s really awesome. Great job here!
 This should be included by default in bazaar.
 
 ---

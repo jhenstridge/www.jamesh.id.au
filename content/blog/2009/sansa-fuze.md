@@ -6,43 +6,43 @@ tags: ['Gnome', 'Rhythmbox', 'Sansa']
 ---
 
 On my way back from Canada a few weeks ago, I picked up a SanDisk [Sansa
-Fuze](http://www.sansa.com/players/sansa_fuze) media player.  Overall, I
-like it.  It supports Vorbis and FLAC audio out of the box, has a decent
+Fuze](http://www.sansa.com/players/sansa_fuze) media player. Overall, I
+like it. It supports Vorbis and FLAC audio out of the box, has a decent
 amount of on board storage (8GB) and can be expanded with a MicroSDHC
-card.  It does use a proprietary dock connector for data transfer and
-charging, but that\'s about all I don\'t like about it.  The choice of
+card. It does use a proprietary dock connector for data transfer and
+charging, but that\'s about all I don\'t like about it. The choice of
 accessories for this connector is underwhelming, so a standard mini-USB
 connector would have been preferable since I wouldn\'t need as many
 cables.
 
 The first thing I tried was to copy some music to the device using
-[Rhythmbox](http://projects.gnome.org/rhythmbox/).  This appeared to
-work, but took longer than expected.  When I tried to play the music, it
-was listed as having an unknown artist and album name.  Looking at the
+[Rhythmbox](http://projects.gnome.org/rhythmbox/). This appeared to
+work, but took longer than expected. When I tried to play the music, it
+was listed as having an unknown artist and album name. Looking at the
 player\'s filesystem, the reason for this was obvious: Rhythmbox had
-transcoded the music to MP3 and lost the tags.  Copying the ogg files
+transcoded the music to MP3 and lost the tags. Copying the ogg files
 directly worked a lot better: it was quicker and preserved the metadata.
 
 Of course, getting Rhythmbox to do the right thing would be preferable
-to telling people not to use it.  Rhythmbox depends on information about
+to telling people not to use it. Rhythmbox depends on information about
 the device provided by
 [HAL](http://www.freedesktop.org/wiki/Software/hal), so I had a look at
-the relevant FDI files.  There was one section for Sansa Clip and Fuze
+the relevant FDI files. There was one section for Sansa Clip and Fuze
 players which didn\'t list Vorbis support, and another section for
-\"Sansa Clip version II\".  The second section was a much better match
-for the capabilities of my device.  As all Clip and Fuze devices support
+\"Sansa Clip version II\". The second section was a much better match
+for the capabilities of my device. As all Clip and Fuze devices support
 the extra formats when running the latest firmware, I merged the two
 sections ([hal bug
 20616](https://bugs.freedesktop.org/show_bug.cgi?id=20616), [ubuntu bug
-345249](https://bugs.edge.launchpad.net/ubuntu/+source/hal-info/+bug/345249)). 
+345249](https://bugs.edge.launchpad.net/ubuntu/+source/hal-info/+bug/345249)).
 With the updated FDI file in place, copying music with Rhythmbox worked
 as expected.
 
 The one downside to this change is that if you have a device with old
 firmware, Rhythmbox will no longer transcode music to a format the
-device can play.  There doesn\'t seem to be any obvious way to tell if a
+device can play. There doesn\'t seem to be any obvious way to tell if a
 device has a new enough firmware via USB IDs or similar, so I\'m not
-sure how to handle it automatically.  That said, it is pretty easy to
+sure how to handle it automatically. That said, it is pretty easy to
 upgrade the firmware [following the instructions from their
 forum](http://forums.sandisk.com/sansa/board/message?board.id=sansafuse&thread.id=9473),
 so it is probably best to just do that.
@@ -58,7 +58,7 @@ report to fix this stuff on (my) Debian too.
 I would like to know if you have dug a little on the video issue\... It
 seems impossible, as today, to transfer any video from a linux box to a
 sansa fuze player. SMC (the official tool) uses a very particular
-options set to encode a video before the transfert.\
+options set to encode a video before the transfert.
 If I\'ll have time, I would like to try to track down this set and use
 on a linux machine with ffmpeg, mencoder or something we have\...
 
@@ -76,8 +76,8 @@ http://live.gnome.org/Rhythmbox/FAQ
 Create a .is\_audio\_player file on the device. You can set a few fields
 in this file to override the HAL device information like this:
 
-audio\_folders=MUSIC/,RECORDINGS/\
-folder\_depth=2\
+audio\_folders=MUSIC/,RECORDINGS/
+folder\_depth=2
 output\_formats=application/ogg,audio/x-ms-wma,audio/mpeg
 
 but if the HAL information for your device is wrong, you should file a
@@ -154,7 +154,7 @@ well (unless you meant officially supported - I have no idea ). :)
 forgot, but they explicitly mention linux support) company?
 
 Be fair. Sandisk supporting OGG is unusual, and an improvement over
-previous support (I own an e200, which does not support OGG).\
+previous support (I own an e200, which does not support OGG).
 Of course, if you can get an e200v1 (I own one), you can install RockBox
 or SansaLinux, but that doesn\'t count\...
 
@@ -206,7 +206,7 @@ beats most players (after what I\'ve heard - in both senses ;) ).
 another point of view, though :
 
 \- The sansa team actually support their devices after they have been
-sold, adding new features and such.\
+sold, adding new features and such.
 - In the forums, they (that is both the sansa team and community)
 provide solutions for Windows, Mac AND Linux.
 
@@ -279,7 +279,7 @@ viable alternatives.
 #### davide - <time datetime="2009-03-25 20:27:43">25 Mar, 2009</time>
 
 \@James Henstridge: for the moment there is no way to use ffmpeg to
-transfer video to the fuze\... :-(\
+transfer video to the fuze\... :-(
 the problem is track down every detail about the encode parameters in
 SMC \...
 
@@ -307,7 +307,7 @@ the internal card out. But I can\'t complain, I got it for free)
 
 \@Vladim: If you did read my earlier post, you\'d know:
 
-\- that the .ogg and .flac support for the players is an official patch\
+\- that the .ogg and .flac support for the players is an official patch
 - there are descriptions on how to update the firmware for Windows, Mac
 and Linux
 
@@ -327,7 +327,7 @@ Ok, I didn\'t say explicitly that the firmware is official. It is.
 #### davide - <time datetime="2009-03-25 23:37:04">25 Mar, 2009</time>
 
 Vladim, yes, you just need the cp and zip utility to update the
-firmware\...\
+firmware\...
 ah, and not so old version of the kernel (you need fat and usb support).
 
 I think it\'s all.

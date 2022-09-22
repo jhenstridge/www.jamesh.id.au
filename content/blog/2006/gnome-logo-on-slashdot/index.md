@@ -43,10 +43,10 @@ original GNOME logo.
 #### [Simos](http://simos.info/blog/) - <time datetime="2006-03-21 11:39:39">21 Mar, 2006</time>
 
 I think you should start from the .svg file (Inkscape) and do the
-drop-shadow feature there.\
-As is,\
-1. it\'s pixelised\
-2. the shadow is badly cropped.\
+drop-shadow feature there.
+As is,
+1. it\'s pixelised
+2. the shadow is badly cropped.
 3. there is some blurring.
 
 Most importantly, there are some strong guidelines for the GNOME logo,
@@ -68,7 +68,7 @@ And, please, tell me you\'re being sarcastic?
 #### [Simos](http://simos.info/blog/) - <time datetime="2006-03-21 12:19:08">21 Mar, 2006</time>
 
 Just to re-iterate, any coloured GNOME foot will probably get shot down
-by\
+by
 <http://live.gnome.org/LogoGuidelines>
 
 ---
@@ -107,7 +107,7 @@ it through Slashdot\'s rigorous design process
 ---
 #### stripe4 - <time datetime="2006-03-21 18:16:46">21 Mar, 2006</time>
 
-Take a look at Slashdot topics <http://slashdot.org/topics.shtml>\
+Take a look at Slashdot topics <http://slashdot.org/topics.shtml>
 Can someone please explain me how is Sony\'s logo better than GNOME\'s
 official logo (not the current Slashdot one) judging by colors (B&W) and
 dullness?
@@ -115,10 +115,10 @@ dullness?
 ---
 #### [Murray Cumming](http://www.murrayc.com) - <time datetime="2006-03-21 20:01:35">21 Mar, 2006</time>
 
-Simon, at the moment the Logo Guidelines say\
+Simon, at the moment the Logo Guidelines say
 \"any single color may be used.\", right at the start.
 
-So, a simple colored logo would please Slashdot and the guidelines.\
+So, a simple colored logo would please Slashdot and the guidelines.
 
 ---
 #### [Anonymous Coward](http://theturner.deviantart.com) - <time datetime="2006-03-21 21:16:52">21 Mar, 2006</time>

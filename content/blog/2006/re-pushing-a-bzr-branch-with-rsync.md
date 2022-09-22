@@ -98,7 +98,7 @@ next few months: it is only going to get faster.
 
 Are you sure about that Win32 and hard links bit? Windows XP and later
 ship with a tool called fsutil.exe which claims to create hard links and
-the stuff it creates looks exactly like hard links to me.\
+the stuff it creates looks exactly like hard links to me.
 
 ---
 #### James Henstridge - <time datetime="2006-12-15 18:27:42">15 Dec, 2006</time>

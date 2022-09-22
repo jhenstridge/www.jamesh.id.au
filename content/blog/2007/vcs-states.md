@@ -94,21 +94,21 @@ but there are differences in how the categories are handled. Some of the
 areas where they differ are:
 
 -   **Are newly created files in the working copy counted as *added* or
-    *unknown*?**\
+    *unknown*?**<br/>
     Some VCS\'s (or configurations of VCS\'s) don\'t have a concept of
     unknown files. In such a system, newly created files will be treated
     as *added* rather than *unknown*.
 -   **Are *unknown* files allowed in the working copy when
-    committing?**\
+    committing?**<br/>
     One of the issues Elijah brought up was forgetting to add new files
     before commit. Some VCS\'s avoid this problem by not letting you
     commit a tree with *unknown* files.
 -   **When renaming a versioned file, does it count as a single
-    *modified* file, or a *removed* file and an *added* file?**\
+    *modified* file, or a *removed* file and an *added* file?**<br/>
     This one is a basic question of whether the VCS supports renames or
     not.
 -   **If I delete a versioned file, is it put in the *removed* category
-    automatically?**\
+    automatically?**<br/>
     With some VCS\'s you need to explicitly tell them that you are
     removing a file. With others it is enough to delete the file on
     disk.

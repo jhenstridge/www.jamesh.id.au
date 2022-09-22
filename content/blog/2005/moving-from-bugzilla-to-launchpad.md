@@ -68,7 +68,7 @@ tomorrow some time.
 
 It\'s been a few weeks now - how\'s this going ?
 
-cheers!\
+cheers!
 Chris
 
 ---

@@ -44,7 +44,7 @@ This isn\'t to say that someone else could do the work.
 
 I personaly have an RDS tuner card (and here /Hungary/ there are a lots
 of radio stations that sends RDS signals), so i would really like to
-help (without the coding part).\
+help (without the coding part).
 The only thing i know, is that the linux kernel does support RDS in some
 way.
 
@@ -64,7 +64,7 @@ FM tuner (now accessible only through a home page applet)?
 
 This looks awesome. If only I had a card that played FM audio\...
 
-Joes wrote:\
+Joes wrote:
 \> I\'m especially pleased it\'s being developed by a fellow Australian!
 (If the radio stations are any indication)
 
@@ -75,7 +75,7 @@ active contributors (moch and myself) are also both Australian.
 #### Onkar - <time datetime="2007-05-05 03:59:27">5 May, 2007</time>
 
 Will this be available as plugin so that user\'s who don\'t want to
-install newer version of Rhythmbox can use it.\
+install newer version of Rhythmbox can use it.
 I am currently on Feisty and I may go out and buy FM tuner soon if this
 will work on existing Rhythmbox version.
 

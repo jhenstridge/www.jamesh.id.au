@@ -6,21 +6,21 @@ tags: ['Python']
 ---
 
 With my old ThinkPad, Lenovo provided BIOS updates in the form of
-Windows executables or ISO images for a bootable CD.  Since I had wiped
-Windows partition, the first option wasn\'t an option.  The second
+Windows executables or ISO images for a bootable CD. Since I had wiped
+Windows partition, the first option wasn\'t an option. The second
 option didn\'t work either, since it expected me to be using the drive
-in the base I hadn\'t bought.  Luckily I was able to just copy the
+in the base I hadn\'t bought. Luckily I was able to just copy the
 needed files out of the ISO image to a USB stick that had been set up to
 boot DOS.
 
 When I got my new ThinkPad, I had hoped to do the same thing but found
-that the update ISO images appeared to be empty when mounted.  It seems
+that the update ISO images appeared to be empty when mounted. It seems
 that the update is handled entirely from an [El
 Torito](http://en.wikipedia.org/wiki/El_Torito_%28CD-ROM_standard%29 "El Torito (CD-ROM standard)")
 emulated hard disk image (as opposed to using the image only to
 bootstrap the drivers needed to access the CD).
 
-So I needed some way to extract that boot image from the ISO.  After a
+So I needed some way to extract that boot image from the ISO. After a
 little reading of the spec, I put together the following Python script
 that does the trick:
 
@@ -85,7 +85,7 @@ useful.
 
 There appears to be an EFI executable in there too, so it is possible
 that the firmware update could be run from the EFI system partition
-!!too.  I haven\'t had the courage to try that though.
+!!too. I haven\'t had the courage to try that though.
 
 ---
 ### Comments:
@@ -94,23 +94,23 @@ that the firmware update could be run from the EFI system partition
 Hi James,
 
 there is a much much simpler solution to boot this ISO image without a
-windows partition. I was in the same situation, since\
+windows partition. I was in the same situation, since
 I bought a lenovo x121 which only has an SSD and no optical drive. Space
-on the SSD being scarce, I promptly wiped the windows\
+on the SSD being scarce, I promptly wiped the windows
 partition. To boot on a bootable iso without optical drive:
 
-\(1\) install grub-imageboot\
-(2) copy your iso file in /boot/images/\
-(3) run update-grub2\
+\(1\) install grub-imageboot
+(2) copy your iso file in /boot/images/
+(3) run update-grub2
 (4) profit! (that is reboot and you will get a grub entry to boot your
 iso as-if it had been loaded from a CD).
 
-I updated my bios this way, worked flawlessly.\
+I updated my bios this way, worked flawlessly.
 You can put all sorts of images in that directory (e.g. bootable floppy
 images with the .img suffix are also recognized).
 
-HTH,\
-\--\
+HTH,
+\--
 Kim
 
 ---
@@ -142,10 +142,10 @@ to boot in legacy BIOS mode despite the machine having a UEFI BIOS.
 
 hi James,
 
-Can you give me some hints of how to execute this script on Linux.\
-I am complete newbie in programming, scripting and linux.\
+Can you give me some hints of how to execute this script on Linux.
+I am complete newbie in programming, scripting and linux.
 Can I copy the content in a file with extension .py and run it in
-terminal typing python script.py for instance.\
+terminal typing python script.py for instance.
 Thanks
 
 ---

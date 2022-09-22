@@ -21,7 +21,7 @@ Excellent James! Very funny :-)
 
 Cheers
 
-Martin\
+Martin
 
 ---
 #### Richard Kleeman - <time datetime="2006-01-19 01:46:29">19 Jan, 2006</time>

@@ -47,10 +47,10 @@ Yes this way of doing time-bound stuff, R O C K S
 I use that thechnique too, but if the obj.get\_\* functions in your
 example are not too expensive, the call overhead really slows things
 down. this can be fixed again by adding like 10 items or so in one go.
-replace \"yield True\" with something like:\
-i += 1\
-if not i % 10:\
-yield True\
+replace \"yield True\" with something like:
+i += 1
+if not i % 10:
+yield True
 and feel the difference.
 
 ---

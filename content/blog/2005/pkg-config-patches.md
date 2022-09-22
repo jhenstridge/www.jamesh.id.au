@@ -73,10 +73,10 @@ incompatibilities in the recent releases.
 
 Hi, these changes look interesting and useful: I\'m fixing up packages
 in Debian at the moment that have unnecessary dependencies. Any idea
-when pkg-config 0.18 might be\
+when pkg-config 0.18 might be
 released?
 
-Regards\
+Regards
 Alastair McKinstry
 
 ---

@@ -6,13 +6,13 @@ tags: ['Gnome', 'Python', 'Twisted']
 ---
 
 The gio library provides both synchronous and asynchronous interfaces
-for performing IO.  Unfortunately, the two APIs require quite different
+for performing IO. Unfortunately, the two APIs require quite different
 programming styles, making it difficult to convert code written to the
 simpler synchronous API to the asynchronous one.
 
 For C programs this is unavoidable, but for Python we should be able to
-do better.  And if you\'re doing asynchronous event driven code in
-Python, it makes sense to look at [Twisted](http://twistedmatrix.com/). 
+do better. And if you\'re doing asynchronous event driven code in
+Python, it makes sense to look at [Twisted](http://twistedmatrix.com/).
 In particular, Twisted\'s Deferred objects can be quite helpful.
 
 **Deferred**
@@ -20,7 +20,7 @@ In particular, Twisted\'s Deferred objects can be quite helpful.
 The [Twisted
 documentation](http://twistedmatrix.com/documents/8.2.0/api/twisted.internet.defer.Deferred.html)
 describes deferred objects as \"a callback which will be put off until
-later\".  The deferred will eventually be passed the result of some
+later\". The deferred will eventually be passed the result of some
 operation, or information about how it failed.
 
 From the consumer side, you can register one or more callbacks that will
@@ -51,7 +51,7 @@ complete before hand.
 **Using Deferred objects with gio**
 
 We can easily use gio\'s asynchronous API to implement a new API based
-on deferred objects.  For example:
+on deferred objects. For example:
 
     import gio
     from twisted.internet import defer
@@ -110,7 +110,7 @@ like this:
                 in_stream, 4096, cancellable=cancellable)
 
 Other than the use of the yield keyword, the above code looks quite
-similar to the equivalent synchronous implementation.  The only thing
+similar to the equivalent synchronous implementation. The only thing
 that would improve matters would be if these were real methods rather
 than helper functions.
 

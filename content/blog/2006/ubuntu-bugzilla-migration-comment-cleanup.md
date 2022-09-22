@@ -42,10 +42,10 @@ A bit of Python grease would have done it ;-)
 Rudd-O: That wouldn\'t be possible with a one-bug-at-a-time conversion.
 Consider the following chain of events:
 
-1\. Alice files bug 42\
-2. Bob files bug 43 about the same issue\
+1\. Alice files bug 42
+2. Bob files bug 43 about the same issue
 3. Charles adds a comment to bug 42 saying that bug 43 looks like a
-duplicate\
+duplicate
 4. Alice closes bug 43 making a comment that it is a duplicate of bug
 42.
 

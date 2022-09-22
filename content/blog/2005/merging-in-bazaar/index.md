@@ -5,18 +5,18 @@ date: 2005-05-24T11:33:03+08:00
 tags: ['Bazaar']
 ---
 
-This posting follows on from my [previous postings](/tags/bazaar)
+This posting follows on from my [previous postings](/tags/bazaar/)
 about [Bazaar](http://bazaar.canonical.com/), but is a bit more
-advanced. In most cases you don\'t need to worry about this, since the
-tools should just work. However if problems occur (or if you\'re just
+advanced. In most cases you don't need to worry about this, since the
+tools should just work. However if problems occur (or if you're just
 curious about how things work), it can be useful to know a bit about
-what\'s going on inside.
+what's going on inside.
 
 **Changesets vs. Tree Snapshots**
 
-A lot of the tutorials for Arch list \"changeset orientation\" as one of
+A lot of the tutorials for Arch list "changeset orientation" as one of
 its benefits over other systems such as Subversion, which were said to
-be based on \"tree snapshots\". At first this puzzled me, since from my
+be based on "tree snapshots". At first this puzzled me, since from my
 mathematical background the relationship between these two concepts
 seemed the same as the relationship between integrals and derivatives:
 
@@ -26,13 +26,13 @@ seemed the same as the relationship between integrals and derivatives:
     applying all changesets on the line of development made before that
     point.
 
-The distinction isn\'t clear cut in the existing tools either \--
+The distinction isn't clear cut in the existing tools either --
 Subversion uses changesets to store the data in the repository while
-providing a \"tree snapshot\" style view, and Bazaar generates tree
+providing a "tree snapshot" style view, and Bazaar generates tree
 snapshots in its revision library to increase performance of some
 operations.
 
-So the distinction people talk about isn\'t a simple matter of the
+So the distinction people talk about isn't a simple matter of the
 repository storage format. Instead the difference is in the metadata
 stored along with the changes that describes the ancestry of the code.
 
@@ -40,7 +40,7 @@ stored along with the changes that describes the ancestry of the code.
 
 In the simple case of a single branch, you end up with a simple series
 of changesets. The tree for each revision is constructed by taking the
-last revision\'s tree and applying the relevant changeset.
+last revision's tree and applying the relevant changeset.
 Alternatively, you can say that the tree for `patch-3` contains the
 changesets `base-0`, `patch-1`, `patch-2` and `patch-3`.
 
@@ -51,16 +51,16 @@ changesets `base-0`, `patch-1`, `patch-2` and `patch-3`.
 Branching fits into this model pretty well. As with other systems, a
 particular revision can have multiple children. In the diagram below,
 the trees for both `patch-2` from the original branch and `patch-1` from
-the new branch \"contain\" `base-0` and `patch-1` from the original
+the new branch "contain" `base-0` and `patch-1` from the original
 branch. Any apparent asymmetry is just in the naming and storage
-locations \-- both revisions are branches are just patches against the
+locations -- both revisions are branches are just patches against the
 same parent revision.
 
 {{< figure src="two-branches.png"
         alt="base-0 → patch-1 → patch-2 → patch-3, patch-1 → patch-1 → patch-2"
         link="two-branches.dot" >}}
 
-So far, there\'s no rocket science. Nothing that Subversion doesn\'t
+So far, there's no rocket science. Nothing that Subversion doesn't
 represent. Pretty much every version control system under the sun tracks
 this kind of linear revision ancestry (as can be seen using `svn log` or
 similar). The differences really only become apparent when merges are
@@ -106,7 +106,7 @@ important when performing future merges between the two branches.
 
 While it was possible to pick the correct merge ancestor in the previous
 example using just the linear revision ancestry of the two branches,
-that isn\'t true for subsequent merges between the two branches.
+that isn't true for subsequent merges between the two branches.
 Consider the following merge that results in `patch-6` on the original
 branch:
 
@@ -145,15 +145,15 @@ from the yellow branch, which are going to overlap.
 The better common ancestor ancestor to choose in this case is `patch-2`
 on the yellow branch, which avoids the common changes.
 
-Bazaar\'s `merge` command will handle this kind of merge ancestry just
-fine (something that isn\'t true for of the older `tla star-merge`
+Bazaar's `merge` command will handle this kind of merge ancestry just
+fine (something that isn't true for of the older `tla star-merge`
 algorithm).
 
 **Conclusion**
 
-This article doesn\'t cover all aspects of branching and merging with
-Bazaar. One aspect I have completely ignored is the concept of \"cherry
-picking\". This refers to applying a particular change to a tree,
+This article doesn't cover all aspects of branching and merging with
+Bazaar. One aspect I have completely ignored is the concept of "cherry
+picking". This refers to applying a particular change to a tree,
 without the other changesets that exist on that branch. Cherry picking
 is mostly orthogonal to standard merging --- in fact, one of the
 complications in merge ancestor selection is that it needs to ignore
@@ -177,7 +177,7 @@ Take a look at this thread from the monotone list:
 <http://lists.gnu.org/archive/html/monotone-devel/2005-05/msg00000.html>
 
 Apparently there can be cases where its impossible to pick an ancestor
-so that the three-way merge doesn\'t silently corrupt code.\
+so that the three-way merge doesn't silently corrupt code.
 
 ---
 #### James Henstridge - <time datetime="2005-05-25 13:32:36">25 May, 2005</time>
@@ -186,8 +186,8 @@ As Arch uses persistent identifiers for files, it would be able to
 detect the problems mentioned in that mailing list post, and treat them
 as conflicts.
 
-Yes, this may result in more conflicts than a \"perfect merge\", but I
-don\'t think it would lead to the silent corruption that you mention
+Yes, this may result in more conflicts than a "perfect merge", but I
+don't think it would lead to the silent corruption that you mention
 (i.e. some of the problems only occur when you move to non-persistent
 IDs).
 
@@ -200,7 +200,7 @@ protocol).
 #### H Duerer - <time datetime="2005-06-13 23:23:54">13 Jun, 2005</time>
 
 I thought the real question was not whether to use Arch or Subversion
-but rather Arch or Darcs (or \... ).
+but rather Arch or Darcs (or ... ).
 
 As many before me I have found Darcs easier to use and have not yet come
 across some newbie-suitable explanation why arch would be preferable.

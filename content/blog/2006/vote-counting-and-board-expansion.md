@@ -51,7 +51,7 @@ might be worth considering for next time.
 ### Comments:
 #### [Dave neary](http://blogs.gnome.org/bolsh) - <time datetime="2006-06-07 02:33:39">7 Jun, 2006</time>
 
-\
+
 Hi jamesh,
 
 I actually don\'t like the system \"N votes for N seats\" - it seems
@@ -71,7 +71,7 @@ STV would work well, IMHO, if we could automate counting properly. And
 if we Aussies and Irish could explain it to all the list-voters and
 first past the posters :) But in the absence of STV, it seems better to
 limit the number of ballots people have to ensure that we get people
-voting for the candidates they really like.\
+voting for the candidates they really like.
 
 ---
 #### [Quim](http://desdeamericaconamor.org) - <time datetime="2006-06-07 10:04:26">7 Jun, 2006</time>
@@ -84,7 +84,7 @@ Instead, we could:
 a\) Make sure that there is an interest leaving behing the current
 system
 
-b\) ask for alternatives i.e.\
+b\) ask for alternatives i.e.
 <http://en.wikipedia.org/wiki/Instant-runoff_voting>
 
 c\) in case we get more than one alternative, discuss and choose the

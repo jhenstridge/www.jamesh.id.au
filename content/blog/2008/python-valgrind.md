@@ -25,8 +25,8 @@ found attached to [bug 2422](http://bugs.python.org/issue2422) in the
 Python bug tracker.
 
 The patch still needs a bit of work before it will be mergeable with
-Python 2.6/3.0 (mainly autoconf foo).  I also need to do a bit more
-benchmarking on the patch.  If the overhead of turning on this patch is
+Python 2.6/3.0 (mainly autoconf foo). I also need to do a bit more
+benchmarking on the patch. If the overhead of turning on this patch is
 negligible, then it\'d be pretty cool to have it enabled by default when
 Valgrind is available.
 

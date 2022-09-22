@@ -37,7 +37,7 @@ don\'t have any hardware to test this. Perhaps this is something to work
 on in the next release if I can get some help debugging the problem.
 
 **Update:** looks like I spoke too soon about Nautilus not getting the
-correct free space value.  After restarting Nautilus again, it started
+correct free space value. After restarting Nautilus again, it started
 showing the free space correctly, and I can copy large files to my
 memory card.
 

@@ -62,7 +62,7 @@ forward for stations).
 ---
 #### gizmo - <time datetime="2007-04-22 06:41:21">22 Apr, 2007</time>
 
-I use avermedia GO 007 tv tuner card\
+I use avermedia GO 007 tv tuner card
 I could use gnomeradio on dapper, but I cant use it on Fiesty\...
 
 can anyone suggest me anything?

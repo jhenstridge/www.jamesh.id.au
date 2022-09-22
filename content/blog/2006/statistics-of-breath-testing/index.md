@@ -55,7 +55,7 @@ investigation. You can only be judged if a blood test also gives a
 positive result. And of course, if people are slightly below the limit
 in the breath test, they do a blood test, too!
 
-Regards,\
+Regards,
 Johannes
 
 ---

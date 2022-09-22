@@ -16,10 +16,10 @@ flavoured honey or just use more honey. Then again, perhaps it isn\'t
 worth trying honey flavoured dark beers.
 
 One beer I\'d like to make again is [Chilli
-Beer](../2006/chilli-beer.md).  I
+Beer](../2006/chilli-beer.md). I
 haven\'t seen any commercial equivalent to it, and it was great on a hot
-summer afternoon.  Since there were chilli pieces in the bottles of the
-last batch, it got hotter as it matured.  It is an interesting
+summer afternoon. Since there were chilli pieces in the bottles of the
+last batch, it got hotter as it matured. It is an interesting
 experience where taking a sip of the beer cools your moth down, but it
 starts heating up again once you swallow.
 
@@ -36,8 +36,8 @@ consume a whole bottle but it\'s great to share.
 ---
 #### Sebastian Bengtsson - <time datetime="2008-04-10 21:43:11">10 Apr, 2008</time>
 
-Well, honey can make really great imperial stouts. Check out this one:\
-http://www.ratebeer.com/beer/n%C3%A4rke-kaggen-stormaktsporter/58057/\
+Well, honey can make really great imperial stouts. Check out this one:
+http://www.ratebeer.com/beer/n%C3%A4rke-kaggen-stormaktsporter/58057/
 Amazing flavour. It is a very small bottle but I would suggest sharing
 it with one or more persons.
 

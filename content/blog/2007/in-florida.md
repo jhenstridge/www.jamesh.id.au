@@ -21,16 +21,16 @@ management to leave the desk unattended for an hour, particularly when
 they knew that there were people waiting.
 
 They had a bunch of check-in computers which were supposed to let you
-change your flight details, so I gave one of these a try. 
+change your flight details, so I gave one of these a try.
 Unfortunately, the computers directed me to pick up the phone to talk to
 a representative, and the representative ended up directing me to talk
-to someone at the customer service centre.  After waiting for the next
+to someone at the customer service centre. After waiting for the next
 shift, things got sorted out okay though, which was good.
 
 This was also my first experience with
 [SSSS](http://en.wikipedia.org/wiki/Secondary_Security_Screening_Selection)
-screening.  In fact I got to experience it twice: once when checking in
-for the flight I missed, and again for the later flight.  On my way back
+screening. In fact I got to experience it twice: once when checking in
+for the flight I missed, and again for the later flight. On my way back
 to Australia, I\'ll have two more flights leaving from US airports so
 it\'ll be interesting to see what happens then.
 

@@ -48,64 +48,64 @@ Thank you very much.
 ---
 #### Ritesh Khadgaray - <time datetime="2007-01-03 23:46:26">3 Jan, 2007</time>
 
-Error building\
-Using FC6\
-openobex-devel-1.3-3.1\
-openobex-apps-1.3-3.1\
-openobex-1.3-3.1\
-bluez-utils-cups-3.7-2\
-bluez-libs-3.7-1\
-bluez-hcidump-1.32-1\
-bluez-utils-3.7-2\
-bluez-gnome-0.6-1.fc6\
+Error building
+Using FC6
+openobex-devel-1.3-3.1
+openobex-apps-1.3-3.1
+openobex-1.3-3.1
+bluez-utils-cups-3.7-2
+bluez-libs-3.7-1
+bluez-hcidump-1.32-1
+bluez-utils-3.7-2
+bluez-gnome-0.6-1.fc6
 bluez-libs-devel-3.7-1
 
 gnome-vfs-obexftp-0.1 is not detecting the builtin osso-gwobex package.
 am i doing something wrong ?
 
-build log follows.\
+build log follows.
 \-\-\-\-\-\-\-\-\-\-\-\-\-\--
 
-\$ make\
-make all-recursive\
+\$ make
+make all-recursive
 make\[1\]: Entering directory
-\`/home/rkhadgar/share/gnome-vfs-obexftp-0.1\'\
-Making all in osso-gwobex\
+\`/home/rkhadgar/share/gnome-vfs-obexftp-0.1\'
+Making all in osso-gwobex
 make\[2\]: Entering directory
-\`/home/rkhadgar/share/gnome-vfs-obexftp-0.1/osso-gwobex\'\
-make all-recursive\
+\`/home/rkhadgar/share/gnome-vfs-obexftp-0.1/osso-gwobex\'
+make all-recursive
 make\[3\]: Entering directory
-\`/home/rkhadgar/share/gnome-vfs-obexftp-0.1/osso-gwobex\'\
-Making all in src\
+\`/home/rkhadgar/share/gnome-vfs-obexftp-0.1/osso-gwobex\'
+Making all in src
 make\[4\]: Entering directory
-\`/home/rkhadgar/share/gnome-vfs-obexftp-0.1/osso-gwobex/src\'\
-make\[4\]: Nothing to be done for \`all\'.\
+\`/home/rkhadgar/share/gnome-vfs-obexftp-0.1/osso-gwobex/src\'
+make\[4\]: Nothing to be done for \`all\'.
 make\[4\]: Leaving directory
-\`/home/rkhadgar/share/gnome-vfs-obexftp-0.1/osso-gwobex/src\'\
-Making all in test\
+\`/home/rkhadgar/share/gnome-vfs-obexftp-0.1/osso-gwobex/src\'
+Making all in test
 make\[4\]: Entering directory
-\`/home/rkhadgar/share/gnome-vfs-obexftp-0.1/osso-gwobex/test\'\
-make\[4\]: Nothing to be done for \`all\'.\
+\`/home/rkhadgar/share/gnome-vfs-obexftp-0.1/osso-gwobex/test\'
+make\[4\]: Nothing to be done for \`all\'.
 make\[4\]: Leaving directory
-\`/home/rkhadgar/share/gnome-vfs-obexftp-0.1/osso-gwobex/test\'\
+\`/home/rkhadgar/share/gnome-vfs-obexftp-0.1/osso-gwobex/test\'
 make\[4\]: Entering directory
-\`/home/rkhadgar/share/gnome-vfs-obexftp-0.1/osso-gwobex\'\
-make\[4\]: Nothing to be done for \`all-am\'.\
+\`/home/rkhadgar/share/gnome-vfs-obexftp-0.1/osso-gwobex\'
+make\[4\]: Nothing to be done for \`all-am\'.
 make\[4\]: Leaving directory
-\`/home/rkhadgar/share/gnome-vfs-obexftp-0.1/osso-gwobex\'\
+\`/home/rkhadgar/share/gnome-vfs-obexftp-0.1/osso-gwobex\'
 make\[3\]: Leaving directory
-\`/home/rkhadgar/share/gnome-vfs-obexftp-0.1/osso-gwobex\'\
+\`/home/rkhadgar/share/gnome-vfs-obexftp-0.1/osso-gwobex\'
 make\[2\]: Leaving directory
-\`/home/rkhadgar/share/gnome-vfs-obexftp-0.1/osso-gwobex\'\
-Making all in docs\
+\`/home/rkhadgar/share/gnome-vfs-obexftp-0.1/osso-gwobex\'
+Making all in docs
 make\[2\]: Entering directory
-\`/home/rkhadgar/share/gnome-vfs-obexftp-0.1/docs\'\
-make\[2\]: Nothing to be done for \`all\'.\
+\`/home/rkhadgar/share/gnome-vfs-obexftp-0.1/docs\'
+make\[2\]: Nothing to be done for \`all\'.
 make\[2\]: Leaving directory
-\`/home/rkhadgar/share/gnome-vfs-obexftp-0.1/docs\'\
-Making all in src\
+\`/home/rkhadgar/share/gnome-vfs-obexftp-0.1/docs\'
+Making all in src
 make\[2\]: Entering directory
-\`/home/rkhadgar/share/gnome-vfs-obexftp-0.1/src\'\
+\`/home/rkhadgar/share/gnome-vfs-obexftp-0.1/src\'
 if /bin/sh ../libtool \--tag=CC \--mode=compile gcc -DHAVE\_CONFIG\_H
 -I. -I. -I.. -D\_FILE\_OFFSET\_BITS=64 -D\_BSD\_SOURCE
 -D\_LARGEFILE64\_SOURCE -D\_POSIX\_PTHREAD\_SEMANTICS -pthread
@@ -118,9 +118,9 @@ if /bin/sh ../libtool \--tag=CC \--mode=compile gcc -DHAVE\_CONFIG\_H
 -Wmissing-declarations -Wmissing-prototypes -Wno-strict-aliasing
 -Wno-sign-compare -Wdeclaration-after-statement -MT obex-method.lo -MD
 -MP -MF \".deps/obex-method.Tpo\" -c -o obex-method.lo obex-method.c;
-\\\
+\\
 then mv -f \".deps/obex-method.Tpo\" \".deps/obex-method.Plo\"; else rm
--f \".deps/obex-method.Tpo\"; exit 1; fi\
+-f \".deps/obex-method.Tpo\"; exit 1; fi
 gcc -DHAVE\_CONFIG\_H -I. -I. -I.. -D\_FILE\_OFFSET\_BITS=64
 -D\_BSD\_SOURCE -D\_LARGEFILE64\_SOURCE -D\_POSIX\_PTHREAD\_SEMANTICS
 -pthread -DORBIT2=1 -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include
@@ -132,8 +132,8 @@ gcc -DHAVE\_CONFIG\_H -I. -I. -I.. -D\_FILE\_OFFSET\_BITS=64
 -Wmissing-declarations -Wmissing-prototypes -Wno-strict-aliasing
 -Wno-sign-compare -Wdeclaration-after-statement -MT obex-method.lo -MD
 -MP -MF .deps/obex-method.Tpo -c obex-method.c -fPIC -DPIC -o
-.libs/obex-method.o\
-obex-method.c:30:21: error: gw-obex.h: No such file or directory\
+.libs/obex-method.o
+obex-method.c:30:21: error: gw-obex.h: No such file or directory
 \....
 
 ---
@@ -146,18 +146,18 @@ Got it working thanks to the -x parameter to hcid :)
 
 Build fails here, Fedora Core 6:
 
-make all-recursive\
+make all-recursive
 make\[1\]: Entering directory
-\`/home/build/rpmbuild/BUILD/gnome-vfs-obexftp-0.1\'\
-Making all in osso-gwobex\
+\`/home/build/rpmbuild/BUILD/gnome-vfs-obexftp-0.1\'
+Making all in osso-gwobex
 make\[2\]: Entering directory
-\`/home/build/rpmbuild/BUILD/gnome-vfs-obexftp-0.1/osso-gwobex\'\
-make all-recursive\
+\`/home/build/rpmbuild/BUILD/gnome-vfs-obexftp-0.1/osso-gwobex\'
+make all-recursive
 make\[3\]: Entering directory
-\`/home/build/rpmbuild/BUILD/gnome-vfs-obexftp-0.1/osso-gwobex\'\
-Making all in src\
+\`/home/build/rpmbuild/BUILD/gnome-vfs-obexftp-0.1/osso-gwobex\'
+Making all in src
 make\[4\]: Entering directory
-\`/home/build/rpmbuild/BUILD/gnome-vfs-obexftp-0.1/osso-gwobex/src\'\
+\`/home/build/rpmbuild/BUILD/gnome-vfs-obexftp-0.1/osso-gwobex/src\'
 if /bin/sh ../libtool \--tag=CC \--mode=compile gcc -DHAVE\_CONFIG\_H
 -I. -I. -I.. -I. -pthread -I/usr/include/glib-2.0
 -I/usr/lib/glib-2.0/include -O2 -g -pipe -Wall -Wp,-D\_FORTIFY\_SOURCE=2
@@ -166,9 +166,9 @@ if /bin/sh ../libtool \--tag=CC \--mode=compile gcc -DHAVE\_CONFIG\_H
 -Wchar-subscripts -Wmissing-declarations -Wmissing-prototypes
 -Wnested-externs -Wpointer-arith -Wno-sign-compare -Werror -MT
 obex-priv.lo -MD -MP -MF \".deps/obex-priv.Tpo\" -c -o obex-priv.lo
-obex-priv.c; \\\
+obex-priv.c; \\
 then mv -f \".deps/obex-priv.Tpo\" \".deps/obex-priv.Plo\"; else rm -f
-\".deps/obex-priv.Tpo\"; exit 1; fi\
+\".deps/obex-priv.Tpo\"; exit 1; fi
 gcc -DHAVE\_CONFIG\_H -I. -I. -I.. -I. -pthread -I/usr/include/glib-2.0
 -I/usr/lib/glib-2.0/include -O2 -g -pipe -Wall -Wp,-D\_FORTIFY\_SOURCE=2
 -fexceptions -fstack-protector \--param=ssp-buffer-size=4 -m32
@@ -176,46 +176,46 @@ gcc -DHAVE\_CONFIG\_H -I. -I. -I.. -I. -pthread -I/usr/include/glib-2.0
 -Wchar-subscripts -Wmissing-declarations -Wmissing-prototypes
 -Wnested-externs -Wpointer-arith -Wno-sign-compare -Werror -MT
 obex-priv.lo -MD -MP -MF .deps/obex-priv.Tpo -c obex-priv.c -fPIC -DPIC
--o .libs/obex-priv.o\
-cc1: warnings being treated as errors\
-obex-priv.c: In function \'obex\_readstream\':\
+-o .libs/obex-priv.o
+cc1: warnings being treated as errors
+obex-priv.c: In function \'obex\_readstream\':
 obex-priv.c:384: warning: ignoring return value of \'write\', declared
-with attribute warn\_unused\_result\
-make\[4\]: \*\*\* \[obex-priv.lo\] Error 1\
+with attribute warn\_unused\_result
+make\[4\]: \*\*\* \[obex-priv.lo\] Error 1
 make\[4\]: Leaving directory
-\`/home/build/rpmbuild/BUILD/gnome-vfs-obexftp-0.1/osso-gwobex/src\'\
-make\[3\]: \*\*\* \[all-recursive\] Error 1\
+\`/home/build/rpmbuild/BUILD/gnome-vfs-obexftp-0.1/osso-gwobex/src\'
+make\[3\]: \*\*\* \[all-recursive\] Error 1
 make\[3\]: Leaving directory
-\`/home/build/rpmbuild/BUILD/gnome-vfs-obexftp-0.1/osso-gwobex\'\
-make\[2\]: \*\*\* \[all\] Error 2\
+\`/home/build/rpmbuild/BUILD/gnome-vfs-obexftp-0.1/osso-gwobex\'
+make\[2\]: \*\*\* \[all\] Error 2
 make\[2\]: Leaving directory
-\`/home/build/rpmbuild/BUILD/gnome-vfs-obexftp-0.1/osso-gwobex\'\
-make\[1\]: \*\*\* \[all-recursive\] Error 1\
+\`/home/build/rpmbuild/BUILD/gnome-vfs-obexftp-0.1/osso-gwobex\'
+make\[1\]: \*\*\* \[all-recursive\] Error 1
 make\[1\]: Leaving directory
-\`/home/build/rpmbuild/BUILD/gnome-vfs-obexftp-0.1\'\
-make: \*\*\* \[all\] Error 2\
+\`/home/build/rpmbuild/BUILD/gnome-vfs-obexftp-0.1\'
+make: \*\*\* \[all\] Error 2
 
 ---
 #### [Ed Catmur](http://ed.catmur.co.uk) - <time datetime="2007-01-04 12:54:14">4 Jan, 2007</time>
 
 re Ritesh\'s bug, this is the patch I\'m using:
 
-\-\-- src/Makefile.am 2007/01/04 01:52:34 1.1\
-+++ src/Makefile.am 2007/01/04 01:53:50\
-@@ -3,6 +3,7 @@ INCLUDES =\
--D\_BSD\_SOURCE \\\
--D\_LARGEFILE64\_SOURCE \\\
--D\_POSIX\_PTHREAD\_SEMANTICS \\\
-+ -I\$(top\_builddir)/osso-gwobex/src \\\
-\$(OBEX\_MODULE\_CFLAGS) \\\
-\$(XML\_CFLAGS)\
-\
+\-\-- src/Makefile.am 2007/01/04 01:52:34 1.1
++++ src/Makefile.am 2007/01/04 01:53:50
+@@ -3,6 +3,7 @@ INCLUDES =
+-D\_BSD\_SOURCE \\
+-D\_LARGEFILE64\_SOURCE \\
+-D\_POSIX\_PTHREAD\_SEMANTICS \\
++ -I\$(top\_builddir)/osso-gwobex/src \\
+\$(OBEX\_MODULE\_CFLAGS) \\
+\$(XML\_CFLAGS)
+
 
 ---
 #### Ritesh Khadgaray - <time datetime="2007-01-09 02:50:20">9 Jan, 2007</time>
 
 additonally, for some reason the file below was never created :( . did
-the same manually.\
+the same manually.
 /etc/gnome-vfs-2.0/modules/obex-modules.conf
 
 ---
@@ -231,7 +231,7 @@ problem (this is the same sysconfdir that was configured for gnome-vfs).
 ---
 #### Ritesh Khadgaray - <time datetime="2007-01-10 00:34:12">10 Jan, 2007</time>
 
-Duh ! thanks James.\
+Duh ! thanks James.
 
 ---
 #### Daniel - <time datetime="2007-01-13 11:46:48">13 Jan, 2007</time>
@@ -278,16 +278,16 @@ implement this second service).
 #### Alex Kanavin - <time datetime="2007-01-14 16:08:43">14 Jan, 2007</time>
 
 Just did a quick testing on FC6 with the Nokia 6680 I have. It works
-nicely but there are some problems:\
+nicely but there are some problems:
 1) The obex:/// list was initially empty. I explicitly opened the phone
 location (MAC address), then the pairing procedure happened and after
 that the phone icon showed up in obex:/// list. Shouldn\'t there be some
-sort of proximity scan?\
+sort of proximity scan?
 2) If I switch bluetooth off on the phone, the phone icon does not
-disappear. Again, the list should reflect the current proximity.\
+disappear. Again, the list should reflect the current proximity.
 3) Clicking on the phone icon is not very stable, sometimes it produces
 a dialog box with a generic \'can\'t open\' error. It might be the
-phone\'s problem though.\
+phone\'s problem though.
 4) phone\'s MAC address should only be visible through properties. Human
 friendly names should be used everywhere else.
 
@@ -297,10 +297,10 @@ support.
 ---
 #### Alex Kanavin - <time datetime="2007-01-17 01:34:34">17 Jan, 2007</time>
 
-Some info from Marcel Holtmann, the OpenOBEX maintainer:\
+Some info from Marcel Holtmann, the OpenOBEX maintainer:
 osso-gwobex should be replaced by OpenOBEX GLib bindings, but actually
 they are not ready yet. File transfer functionality can be included
-directly into the bindings but\
+directly into the bindings but
 someone has to write it.
 
 ---
@@ -318,7 +318,7 @@ I\'m having the almost the same trouble as Daniel with my Nokia N80,
 though mine is actually a bit worse. I can get files moved around using
 obexftp using channel 12 on Ubuntu 6.10 (Edgy Eft), but I keep getting:
 
-Nautilus cannot display obex:///\
+Nautilus cannot display obex:///
 Please select another viewer and try again.
 
 This happens no matter whether I type the MAC directly or just start
@@ -341,7 +341,7 @@ pick them up.
 There is no support for USB connections? I\'m using latest version
 (0.2).
 
-Thanks,\
+Thanks,
 Wendell.
 
 ---

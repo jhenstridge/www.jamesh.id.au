@@ -6,9 +6,9 @@ tags: ['Django', 'Launchpad', 'OpenID', 'Python', 'Ubuntu']
 ---
 
 Last week, we released the source code to
-[django-openid-auth](https://launchpad.net/django-openid-auth).  This is
+[django-openid-auth](https://launchpad.net/django-openid-auth). This is
 a small library that can add [OpenID](http://openid.net/) based
-authentication to [Django](http://www.djangoproject.com/) applications. 
+authentication to [Django](http://www.djangoproject.com/) applications.
 It has been used for a number of internal Canonical projects, including
 the sprint scheduler
 [Scott](http://www.netsplit.com/ "Scott James Remnant") wrote for the
@@ -19,15 +19,15 @@ Rather than trying to cover all possible use cases of OpenID, it focuses
 on providing OpenID Relying Party support to applications using
 Django\'s
 [django.contrib.auth](http://docs.djangoproject.com/en/dev/topics/auth/ "User authentication in Django")
-authentication system.  As such, it is usually enough to edit just two
+authentication system. As such, it is usually enough to edit just two
 files in an existing application to enable OpenID login.
 
 The library has a number of useful features:
 
 -   As well as the standard method of prompting the user for an identity
-    URL, you can configure a fixed OpenID server URL.  This is useful
+    URL, you can configure a fixed OpenID server URL. This is useful
     for deployments where OpenID is being used for single sign on, and
-    you always want users to log in using a particular OpenID provider. 
+    you always want users to log in using a particular OpenID provider.
     Rather than asking the user for their identity URL, they are sent
     directly to the provider.
 -   It can be configured to automatically create accounts when new
@@ -38,11 +38,11 @@ The library has a number of useful features:
     extension.
 -   Support for [Launchpad](https://launchpad.net/)\'s Teams OpenID
     extension, which lets you query membership of Launchpad teams when
-    authenticating against Launchpad\'s OpenID provider.  Team
+    authenticating against Launchpad\'s OpenID provider. Team
     memberships are mapped to Django group membership.
 
 While the code can be used for generic OpenID login, we\'ve mostly been
-using it for single sign on.  The hope is that it will help members of
+using it for single sign on. The hope is that it will help members of
 the Ubuntu and Launchpad communities reuse our authentication system in
 a secure fashion.
 
@@ -52,7 +52,7 @@ The source code can be downloaded using the following
     bzr branch lp:django-openid-auth
 
 Documentation on how to integrate the library is available in the
-`README.txt` file.  The library includes some code written by [Simon
+`README.txt` file. The library includes some code written by [Simon
 Willison](http://simonwillison.net/) for
 [django-openid](http://code.google.com/p/django-openid/), and uses the
 same licensing terms (2 clause BSD) as that project.
@@ -129,7 +129,7 @@ claim\_id which is in the UserOpenID class, then sync. After that you
 need ALTER TABLE to create the proper index, then add unique=True option
 again in the file. Hope this helps.
 
-Cheers,\
+Cheers,
 Faruk
 
 ---
@@ -163,7 +163,7 @@ object to store them, it doesn\'t use a profile model.
 #### [Peter Robinett](http://www.bubblefoundry.com) - <time datetime="2009-05-10 17:59:46">10 May, 2009</time>
 
 Has anyone gotten this to work with App Engine and Django 1.0? I\'d love
-to use it for my project but I\'m getting the following error:\
+to use it for my project but I\'m getting the following error:
 ViewDoesNotExist: Could not import django\_openid\_auth.views. Error
 was: No module named contenttypes.models
 

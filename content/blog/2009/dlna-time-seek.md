@@ -7,32 +7,32 @@ tags: ['DLNA', 'Gnome', 'PlayStation 3', 'UPnP']
 
 When looking at various UPnP media servers, one of the features I wanted
 was the ability to play back my music collection through my PlayStation
-3.  The complicating factor is that most of my collection is encoded in
+3. The complicating factor is that most of my collection is encoded in
 Vorbis format, which is not yet supported by the PS3 (at this point, it
 doesn\'t seem likely that it ever will).
 
 Both [MediaTomb](http://mediatomb.cc/) and
 [Rygel](http://live.gnome.org/Rygel) could handle this to an extent,
-transcoding the audio to raw LPCM data to send over the network.  This
+transcoding the audio to raw LPCM data to send over the network. This
 doesn\'t require much CPU power on the server side, and only requires
-1.4 Mbit/s of bandwidth, which is manageable on most home networks. 
+1.4 Mbit/s of bandwidth, which is manageable on most home networks.
 Unfortunately the only playback controls enabled in this mode are play
 and stop: if you want to pause, fast forward or rewind then you\'re out
 of luck.
 
 Given that Rygel has a fairly simple code base, I thought I\'d have a go
-at fixing this.  The first solution I tried was the one I\'ve mentioned
+at fixing this. The first solution I tried was the one I\'ve mentioned
 a few times before: with uncompressed PCM data file offsets can be
 easily converted to sample numbers, so if the source format allows time
 based seeking, we can easily satisfy byte range requests.
 
 I got a basic implementation of this working, but it was a little bit
-jumpy and not as stable as I\'d like.  Before fully debugging it, I
+jumpy and not as stable as I\'d like. Before fully debugging it, I
 started looking at the mysterious [DLNA](http://www.dlna.org/) options
-I\'d copied over to get things working.  One of those was the \"DLNA
-operation\", which was set to \"range\" mode.  Looking at the
+I\'d copied over to get things working. One of those was the \"DLNA
+operation\", which was set to \"range\" mode. Looking at the
 [GUPnP](http://www.gupnp.org/) header files, I noticed there was another
-value named \"timeseek\".  When I picked this option, the HTTP requests
+value named \"timeseek\". When I picked this option, the HTTP requests
 from the PS3 changed:
 
     GET /... HTTP/1.1
@@ -56,8 +56,8 @@ as though it was playing from the new point in the song.
 
 It wasn\'t much more work to update the GStreamer calls to seek to the
 requested offset before playback and things worked pretty much as well
-as for non-transcoded files.  And since this solution didn\'t involve
-byte offsets, it also worked for Rygel\'s other transcoders.  It even
+as for non-transcoded files. And since this solution didn\'t involve
+byte offsets, it also worked for Rygel\'s other transcoders. It even
 worked to an extent with video files, but the delay before playback was
 a bit too high to make it usable \-- fixing that would probably require
 caching the GStreamer pipeline between HTTP requests.
@@ -66,7 +66,7 @@ caching the GStreamer pipeline between HTTP requests.
 
 While it can be fun to reverse engineer things like this, it was a bit
 annoying to only be able to find out about the feature by reading header
-files written by people with access to the specification.  I can
+files written by people with access to the specification. I can
 understand having interoperability and certification requirements to use
 the DLNA logo, but that does not require that the specifications be
 private.
@@ -74,9 +74,9 @@ private.
 As well as keeping the specification private, it feels like some aspects
 have been intentionally obfuscated, using bit fields represented in both
 binary and hexadecimal string representations inside the resource\'s
-protocol info.  This might seem reasonable if it was designed for easy
+protocol info. This might seem reasonable if it was designed for easy
 parsing, but you need to go through two levels of XML processing (the
-SOAP envelope and then the DIDL payload) to get to these flags. 
+SOAP envelope and then the DIDL payload) to get to these flags.
 Furthermore, the attributes inherited from the [UPnP MediaServer
 specifications](http://www.upnp.org/specs/av/) are all human readable so
 it doesn\'t seem like an arbitrary choice.

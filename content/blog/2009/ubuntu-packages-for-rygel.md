@@ -7,7 +7,7 @@ tags: ['Gnome', 'Launchpad', 'PlayStation 3', 'Ubuntu', 'UPnP']
 
 I promised [Zeeshan](http://zee-nix.blogspot.com/) that I\'d have a look
 at his [Rygel UPnP Media Server](http://live.gnome.org/Rygel) a few
-months back, and finally got around to doing so.  For anyone else who
+months back, and finally got around to doing so. For anyone else who
 wants to give it a shot, I\'ve put together some Ubuntu packages for
 Jaunty and Karmic in a [PPA](https://help.launchpad.net/Packaging/PPA)
 here:
@@ -15,41 +15,41 @@ here:
 -   <https://launchpad.net/~jamesh/+archive/upnp>
 
 Most of the packages there are just rebuilds or version updates of
-existing packages, but the Rygel ones were done from scratch.  It is the
+existing packages, but the Rygel ones were done from scratch. It is the
 first Debian package I\'ve put together from scratch and it wasn\'t as
-difficult as I thought it might be.  The tips from the \"Teach me
+difficult as I thought it might be. The tips from the \"Teach me
 packaging\" workshop at the Canonical All Hands meeting last month were
 quite helpful.
 
 After installing the package, you can configure it by running the
-\"rygel-preferences\" program.  The first notebook page lets you
+\"rygel-preferences\" program. The first notebook page lets you
 configure the transcoding support, and the second page lets you
 configure the various media source plugins.
 
 I wasn\'t able to get the [Tracker](http://projects.gnome.org/tracker/)
 plugin working on my system, which I think is due to Rygel expecting the
-older Tracker D-Bus API.  I was able to get the folder plugin working
+older Tracker D-Bus API. I was able to get the folder plugin working
 pretty easily though.
 
 Once things were configured, I ran Rygel itself and an extra icon showed
-up on my PlayStation 3.  Getting folder listings was quite slow, but
+up on my PlayStation 3. Getting folder listings was quite slow, but
 apparently this is limited to the folder back end and is currently being
-worked on.  It\'s a shame I wasn\'t able to test the more mature Tracker
+worked on. It\'s a shame I wasn\'t able to test the more mature Tracker
 back end.
 
 With
 [LPCM](http://en.wikipedia.org/wiki/Linear_pulse_code_modulation "Linear pulse code modulation")
 transcoding enabled, I was able to successfully play a
-[Vorbis](http://xiph.org/vorbis/) file on the PS3.  With transcoding
+[Vorbis](http://xiph.org/vorbis/) file on the PS3. With transcoding
 disabled, I wasn\'t able to play any music \-- even files in formats the
-PS3 could handle natively.  This was apparently due to the folder
-backend not providing the necessary metadata.  I didn\'t have any luck
+PS3 could handle natively. This was apparently due to the folder
+backend not providing the necessary metadata. I didn\'t have any luck
 with MPEG2 transcoding for video.
 
 It looks like Rygel has promise, but is not yet at a stage where it
-could replace something like MediaTomb.  The [external D-Bus media
+could replace something like MediaTomb. The [external D-Bus media
 source](http://live.gnome.org/Rygel/MediaServerSpec) support looks
-particularly interesting.  I look forward to trying out version 0.4 when
+particularly interesting. I look forward to trying out version 0.4 when
 it is released.
 
 ---

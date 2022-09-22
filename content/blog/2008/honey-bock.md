@@ -23,7 +23,7 @@ I\'ve used honey in a few other brews over the years but had not tried
 it with a dark beer, so it will be interesting to see how it turns out.
 The previous beers had a stronger honey flavour than commercial beers
 like [Beez Neez](http://www.matildabay.com.au/ourbeers/beezneez.html),
-which is probably a good thing for a dark beer.  I guess I\'ll find out
+which is probably a good thing for a dark beer. I guess I\'ll find out
 after it matures for about a month.
 
 ---

@@ -99,15 +99,15 @@ process in user space.
 ### Comments:
 #### L - <time datetime="2017-12-20 18:46:50">20 Dec, 2017</time>
 
-Hey,=\
+Hey,=
 this is very interesting, I was wondering about this too - I am now
 using Ubuntu on Thinkpad P51s!
 
 Did you figure out how to tell apps to use the actual webcam instead of
-the IR?\
+the IR?
 Are you considering coding something up to make use of the IR?
 
-Best,\
+Best,
 L
 
 ---

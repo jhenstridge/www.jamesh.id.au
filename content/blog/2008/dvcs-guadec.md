@@ -6,12 +6,12 @@ tags: ['Bazaar', 'Gnome', 'GUADEC']
 ---
 
 Yesterday, a BoF was scheduled for discussion of distributed version
-control systems with GNOME.  The BoF session did not end up really
+control systems with GNOME. The BoF session did not end up really
 discussing the issues of what GNOME needs out of a revision control
 system, and some of the examples Federico used were a bit snarky.
 
 We had a more productive meeting in the session afterwards where we went
-over some of the concrete goals for the system.  The list from the
+over some of the concrete goals for the system. The list from the
 blackboard was:
 
 -   Contributor collaboration (i.e. let anyone use the tool rather than
@@ -43,26 +43,26 @@ all of the criteria.
 **The Playground**
 
 [John Carr](http://blogs.gnome.org/johncarr) did a great job setting up
-Bazaar mirrors of all the GNOME modules.  This provided an easy way for
-people to see play around with Bazaar.  However, it only gave you half
+Bazaar mirrors of all the GNOME modules. This provided an easy way for
+people to see play around with Bazaar. However, it only gave you half
 the experience since it didn\'t provide a way to publish code and
 collaborate.
 
 To aid in this, we have set up the `bzr-playground.gnome.org` machine,
 which any GNOME developer should be able to use to publish branches
-based on John\'s imports.  Instructions on getting set up can be found
-[on the wiki](http://live.gnome.org/Bazaar/DemoMachine).  I hope that we
+based on John\'s imports. Instructions on getting set up can be found
+[on the wiki](http://live.gnome.org/Bazaar/DemoMachine). I hope that we
 will get a lot of people trying out this infrastructure.
 
 We gave a presentation today on some of the things Bazaar provides that
-could be useful when hacking on GNOME.  Demoing `bzr-playground` was a
+could be useful when hacking on GNOME. Demoing `bzr-playground` was a
 bit problematic due to the internet connection problems at the venue,
 but I think we still showed some useful tools for local collaboration,
 searching and code review.
 
 Meanwhile, [Robert Collins](http://www.advogato.org/person/robertc/) has
 been working on some of the GNOME sysadmin features that Bazaar was
-lacking.  Among other things, he got Damned Lies working with both
+lacking. Among other things, he got Damned Lies working with both
 Subversion and Bazaar, with a test installation [on the playground
 machine](http://bzr-playground.gnome.org/damned-lies/).
 

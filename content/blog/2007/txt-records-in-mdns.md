@@ -27,5 +27,5 @@ In your example of including session and machine identifiers in TXT
 data, it would be enough to tell a client that two services belonged to
 the same machine or session, but it wouldn\'t let you do searches like
 \"find all the card game servers belonging to the same session as the
-guy I\'m chatting with\".  For that you\'d also need to advertise DNS
+guy I\'m chatting with\". For that you\'d also need to advertise DNS
 names that include the machine identifier or session identifier.

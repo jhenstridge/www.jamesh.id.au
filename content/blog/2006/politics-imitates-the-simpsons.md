@@ -5,8 +5,8 @@ date: 2006-09-15T06:02:19+08:00
 ---
 
   -------------------------------------------------------------------------- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-    [John Howard](http://www.abc.net.au/news/newsitems/200609/s1741675.htm): You know what really aggravazes me? It\'s them immigants. They wants all the benefits of living in ~~Springfield~~ Australia, but they ain\'t even bother to learn themselves the language.
-    [Kim Beazley](http://www.abc.net.au/news/newsitems/200609/s1739588.htm): Hey, those are exactly my sentimonies.
+    [JohnHoward](http://www.abc.net.au/news/newsitems/200609/s1741675.htm): You know what really aggravazes me? It\'s them immigants. They wants all the benefits of living in ~~Springfield~~ Australia, but they ain\'t even bother to learn themselves the language.
+    [KimBeazley](http://www.abc.net.au/news/newsitems/200609/s1739588.htm): Hey, those are exactly my sentimonies.
   -------------------------------------------------------------------------- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ::: {align="right"}

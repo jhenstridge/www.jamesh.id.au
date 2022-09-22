@@ -38,7 +38,7 @@ launchpad.net ?
 Yes ! they can switch to a closed sourced system, undermining open
 source software, the exact product they are producing.
 
-Ubuntu might be free, but its not freedom baby.\
+Ubuntu might be free, but its not freedom baby.
 
 ---
 #### [Ploum](http://ploum.frimouvy.org) - <time datetime="2006-07-28 17:52:20">28 Jul, 2006</time>

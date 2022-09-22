@@ -186,6 +186,6 @@ read much about the implementation details.
 #### [James Henstridge &raquo; OpenID 2.0 Specification Approved](openid-20-specification-approved.md) - <time datetime="2007-12-10 12:38:57">10 Dec, 2007</time>
 
 \[\...\] stated previously that I think the support for identifier reuse
-with respect to URL identifiers is a bit lacking.  \[\...\]
+with respect to URL identifiers is a bit lacking. \[\...\]
 
 ---

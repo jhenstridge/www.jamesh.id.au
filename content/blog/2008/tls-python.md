@@ -6,26 +6,28 @@ tags: ['Python']
 ---
 
 The [Python](http://www.python.org/) standard library contains a
-function called `thread.get_ident()`.  It will return an integer that
-uniquely identifies the current thread at that point in time.  On most
+function called `thread.get_ident()`. It will return an integer that
+uniquely identifies the current thread at that point in time. On most
 UNIX systems, this will be the `pthread_t` value returned by
 `pthread_self()`. At first look, this might seem like a good value to
-key a thread local storage dictionary with.  *Please* don\'t do that.
+key a thread local storage dictionary with. *Please* don\'t do that.
 
-The value uniquely identifies the thread only as long as it is running. 
-The value can be reused after the thread exits.  On my system, this
+The value uniquely identifies the thread only as long as it is running.
+The value can be reused after the thread exits. On my system, this
 happens quite reliably with the following sample program printing the
 same ID ten times:
 
-    import thread, threading
+```python
+import thread, threading
 
-    def foo():
-        print 'Thread ID:', thread.get_ident()
+def foo():
+    print 'Thread ID:', thread.get_ident()
 
-    for i in range(10):
-        t = threading.Thread(target=foo)
-        t.start()
-        t.join()
+for i in range(10):
+    t = threading.Thread(target=foo)
+    t.start()
+    t.join()
+```
 
 If the return value of `thread.get_ident()` was used to key thread local
 storage, all ten threads would share the same storage. This is not

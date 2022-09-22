@@ -4,15 +4,15 @@ slug: bagels
 date: 2009-12-04T12:01:20+08:00
 ---
 
-I made some bagels last night.  It was my second time using the recipe,
-so things went pretty well.  The boiling process gives the crust an
+I made some bagels last night. It was my second time using the recipe,
+so things went pretty well. The boiling process gives the crust an
 interesting chewy texture I haven\'t seen with other bread recipes I\'ve
 tried.
 
 I used [this recipe](http://www.reciperascal.com/bagel.html) (half
 wholemeal flour, half white), but made 12 slightly larger bagels rather
-than the 18 the recipe suggested.  I increased the boiling and baking
-time a bit to compensate.  They weren\'t particularly difficult to make,
+than the 18 the recipe suggested. I increased the boiling and baking
+time a bit to compensate. They weren\'t particularly difficult to make,
 but the boiling process was fairly time consuming, since I could only
 fit three at a time into the pot.
 
@@ -68,7 +68,7 @@ half of it falls out the hole in the middle when you eat the thing.
 
 I must be missing something.
 
-\--\
+\--
 MC
 
 ---
@@ -110,7 +110,7 @@ like look quite like the ones I have eaten. Maybe you can travel to
 Manhattan or Brooklyn and see how they are made in a commercial setting.
 I like mine with different outer coatings: large crystal salt (aka
 Kosher salt), toasted garlic bits, or the \'everything\' type (poppy
-seeds, onion & garlic bits). And cream cheese & lox as fillings :)\
+seeds, onion & garlic bits). And cream cheese & lox as fillings :)
 Debconf 2010 will present such an opportunity.
 
 ---

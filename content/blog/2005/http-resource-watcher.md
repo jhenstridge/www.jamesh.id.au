@@ -47,6 +47,6 @@ archive:
 Nice :-)
 
 Will Davyd let you commit it? It sounds pretty neat. It\'s a bit of a
-shame gnome-vfs is so gross :P\
+shame gnome-vfs is so gross :P
 
 ---

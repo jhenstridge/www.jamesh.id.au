@@ -18,7 +18,7 @@ there are a number of steps you can skip in your little tutorial:
 
 2.  If you have a directory which contains only the files you want to
     import into your Bazaar archive, the following command will add them
-    all, and convert the directory into a Bazaar working copy:\
+    all, and convert the directory into a Bazaar working copy:
 
         cd background-channels
         baz import -a bclark@redhat.com--gnomearchive/background-channels--dev--0.1
@@ -29,7 +29,7 @@ there are a number of steps you can skip in your little tutorial:
     archive, so doesn\'t need `my-default-archive` set.
 
 4.  Other people probably don\'t want to set your archive as their
-    default. Also, they can ommit the `register-archive` call entirely:\
+    default. Also, they can ommit the `register-archive` call entirely:
 
         baz get http://gnome.org/~clarkbw/arch/background-channels--dev--0.1
 
@@ -37,7 +37,7 @@ there are a number of steps you can skip in your little tutorial:
     effect.
 
 5.  If you want to find out what is inside an archive, the following
-    command is quite convenient:\
+    command is quite convenient:
 
         baz abrowse http://gnome.org/~clarkbw/arch
 
@@ -60,7 +60,7 @@ Some things you might want to do:
     archive name. This has the benefit that the branch name matches the
     last portion of the URL.
 
-4.  If you haven\'t set up a revision library, you should do so:\
+4.  If you haven\'t set up a revision library, you should do so:
 
         mkdir ~/.arch-revlib
         baz my-revision-library ~/.arch-revlib
@@ -70,8 +70,8 @@ Some things you might want to do:
 ### Comments:
 ####  - <time datetime="2005-07-09 01:56:47">9 Jul, 2005</time>
 
-Reverse the order of those last two revlib commands:\
-baz my-revision-library \~/.arch-revlib\
+Reverse the order of those last two revlib commands:
+baz my-revision-library \~/.arch-revlib
 baz library-config \--greedy \--sparse \~/.arch-revlib
 
 ---

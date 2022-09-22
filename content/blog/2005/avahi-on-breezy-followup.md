@@ -41,7 +41,7 @@ I heard Gaim is avahi-enabled
 
 HEAD is, no released build is. Certainly not the current Ubuntu package.
 
-\- Chris\
+\- Chris
 
 ---
 #### James Henstridge - <time datetime="2005-11-03 12:56:52">3 Nov, 2005</time>

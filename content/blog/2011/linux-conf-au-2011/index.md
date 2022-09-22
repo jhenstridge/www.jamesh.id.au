@@ -13,7 +13,7 @@ they have had to deal with.
 
 Due to the venue change the accommodation I booked is no longer within
 walking distance of the conference, but the public transport is pretty
-good.  A bit more concerning was the following change to the wiki made
+good. A bit more concerning was the following change to the wiki made
 between the time I left Perth and the time I checked in:
 
 {{< figure src="wiki-changes.jpeg" caption="BYO Toilet Paper" >}}

@@ -8,12 +8,12 @@ tags: ['Bazaar', 'Gnome']
 One thing that has been
 [mentioned](http://blogs.gnome.org/xclaesse/2008/07/14/back-from-istanbul/)
 in the GNOME DVCS debate was that it is as easy to do \"git diff\" as it
-is to do \"svn diff\" so the learning curve issue is moot.  I\'d have to
+is to do \"svn diff\" so the learning curve issue is moot. I\'d have to
 disagree here.
 
 **Traditional Centralised Version Control**
 
-With traditional version control systems  (e.g. CVS and Subversion) as
+With traditional version control systems (e.g. CVS and Subversion) as
 used by Free Software projects like GNOME, there are effectively two
 classes of users that I will refer to as \"committers\" and \"patch
 contributors\":
@@ -22,15 +22,15 @@ contributors\":
         alt="Centralised VCS Users" >}}
 
 Patch contributors are limited to read only access to the version
-control system.  They can check out a working copy to make changes, and
+control system. They can check out a working copy to make changes, and
 then produce a patch with the \"diff\" command to submit to a bug
-tracker or send to a mailing list.  This is where new contributors
+tracker or send to a mailing list. This is where new contributors
 start, so it is important that it be easy to get started in this mode.
 
 Once a contributor is trusted enough, they may be given write access to
 the repository moving them to the committers group. They now have access
 to more functionality from the VCS, including the ability to checkpoint
-changes into focused commits, possibly on branches.  The contributor may
+changes into focused commits, possibly on branches. The contributor may
 still be required to go through patch review before committing, or may
 be given free reign to commit changes as they see fit.
 
@@ -45,7 +45,7 @@ Some problems with this arrangement include:
 **Distributed Workflow**
 
 A DVCS allows anyone to commit to their own branches and provides the
-full feature set to all users.  This splits the \"committers\" class
+full feature set to all users. This splits the \"committers\" class
 into two classes:
 
 {{< figure src="distributed-vcs.png" width="239" height="170"
@@ -59,7 +59,7 @@ to the main line: their changes must be reviewed and merged by a core
 developer.
 
 I\'ve left the \"patch contributor\" class in the above diagram because
-not all contributors will bother learning the details of the VCS.  For
+not all contributors will bother learning the details of the VCS. For
 projects I\'ve worked on that used a DVCS, I\'ve still seen people send
 simple patches (either from the \"xxx diff\" command, or as diffs
 against a tarball release) and I don\'t think that is likely to change.
@@ -68,8 +68,8 @@ against a tarball release) and I don\'t think that is likely to change.
 
 Making the lives of core developers better is often brought up as a
 reason to switch to a DVCS (e.g. through features like offline commits,
-local cache of history, etc).  I\'d argue that making life easier for
-non core contributors is at least as important.  One way we can measure
+local cache of history, etc). I\'d argue that making life easier for
+non core contributors is at least as important. One way we can measure
 this is by looking at whether such contributors are actually using VCS
 features beyond what they could with a traditional centralised setup.
 
@@ -78,16 +78,16 @@ patches and those that either publish branches or submit changesets we
 can get an idea of how much of the VCS they have used.
 
 It\'d be interesting to see the results of a study based on
-contributions to various projects that have already adopted DVCS. 
+contributions to various projects that have already adopted DVCS.
 Although I don\'t have any reliable numbers, I can guess at two things
 that might affect the results:
 
-1.  Familiarity for existing developers.  There is a lot of cross
+1.  Familiarity for existing developers. There is a lot of cross
     pollination in Free Software, so it isn\'t uncommon for a new
-    contributor to have worked on another project before hand.  Using a
+    contributor to have worked on another project before hand. Using a
     VCS with a familiar command set can help here (or using the same
     VCS).
-2.  A gradual learning curve.  New contributors should be able to get
+2.  A gradual learning curve. New contributors should be able to get
     going with a small command set, and easily learn more features as
     they need them.
 
@@ -113,7 +113,7 @@ community will never agree.
 #### Hal - <time datetime="2008-07-31 19:41:50">31 Jul, 2008</time>
 
 CVS vs SVN vs DVCS is really a non-issue for me as a \"patch
-contributor\"\
+contributor\"
 The big win would be if maintainers of GNOME packages actually opened
 bugzilla, reviewed and then either rejected with reasons or applied the
 multitude of patches there. Patches that represent rather a lot of work
@@ -162,10 +162,10 @@ bugzilla entries existed prior to my attaching a patch. Now I don\'t
 mind if after review the maintainer says this isn\'t the way forward,
 but why should I spend 5 or 6 hours coming to grips with some part of a
 codebase to fix a known bug in GNOME if GNOME maintainers can\'t be
-bothered to look at bugzilla then apply or reject the patch?\
+bothered to look at bugzilla then apply or reject the patch?
 Seriously how on earth does the choice of revision control system used
 affect me in this situation? It would be the same with source tarballs
-as with the funkiest DVCS imaginable. Ignored work is ignored.\
+as with the funkiest DVCS imaginable. Ignored work is ignored.
 So please don\'t use \"patch contributor\" efficiency as an argument for
 anything unless you\'re going to actually do something about getting the
 patches, whatever method is used to generate them, reviewed. Reviewing

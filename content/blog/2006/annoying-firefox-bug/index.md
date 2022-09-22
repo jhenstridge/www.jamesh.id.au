@@ -62,13 +62,13 @@ I see this on FreeBSD too.
 ---
 #### [Simos](http://simos.info/blog/) - <time datetime="2006-04-03 21:07:39">3 Apr, 2006</time>
 
-Ubuntu Dapper (current updates) has DejaVu 2.3.\
+Ubuntu Dapper (current updates) has DejaVu 2.3.
 There is a bug (probably) in Pango that causes these issues. DejaVu
-2.4.1+ has a workaround to get to work.\
+2.4.1+ has a workaround to get to work.
 If you have the time, you can try to install 2.4.1 to try out. There is
-a process to update DejaVu as found in Dapper to get this issue solved.\
-See\
-<https://launchpad.net/distros/ubuntu/>+source/ttf-dejavu/+bug/35470\
+a process to update DejaVu as found in Dapper to get this issue solved.
+See
+<https://launchpad.net/distros/ubuntu/>+source/ttf-dejavu/+bug/35470
 <https://launchpad.net/distros/ubuntu/>+source/ttf-dejavu/+bug/37565
 
 ---
@@ -86,7 +86,7 @@ applications and not just with justified text.
 ---
 #### [Ralph Aichinger](http://www.pangea.at/%7eralph/fil-kerningbug.png) - <time datetime="2006-04-03 22:19:21">3 Apr, 2006</time>
 
-Yes, same here in Debian unstable, see:\
+Yes, same here in Debian unstable, see:
 <http://www.pangea.at/%7eralph/fil-kerningbug.png>
 
 ---
@@ -139,10 +139,10 @@ I had some problems with this in Firefox 1.5 on Debian. All the Swedish
 charactes (åäö) caused this bug and it was really annoying! Changing the
 font from DejaVu to Bitstream solved all problems though. Don\'t know if
 it is DejaVu\'s or Pango\'s fault, but it works well with Bitstream for
-now\...\
+now\...
 The very same font works excellent in OpenOffice by the way, because I
 just wrote a text spanning 26 pages, in Swedish, without any problems.
-It looked good both on screen and when I printed it out.\
+It looked good both on screen and when I printed it out.
 Your comments helped me alot - thanks!
 
 ---

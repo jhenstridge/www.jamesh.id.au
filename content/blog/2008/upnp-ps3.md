@@ -7,15 +7,15 @@ tags: ['DLNA', 'PlayStation 3', 'Ubuntu', 'UPnP']
 
 One of the nice features of the PlayStation 3 is the
 [UPNP](http://www.upnp.org/)/[DLNA](http://www.dlna.org/) media
-renderer.  Unfortunately, the set of codecs is pretty limited, which is
-a problem since most of my music is encoded as Vorbis. 
+renderer. Unfortunately, the set of codecs is pretty limited, which is
+a problem since most of my music is encoded as Vorbis.
 [MediaTomb](http://mediatomb.cc/) was suggested to me as a server that
 could transcode the files to a format the PS3 could understand.
 
-Unfortunately, I didn\'t have much luck with the version included with
+Unfortunately, I didn't have much luck with the version included with
 Ubuntu 8.10 (Intrepid), and after a bit of investigation it seems that
-there isn\'t a released version of MediaTomb that can send PCM audio to
-the PS3.  So I put together a package of a subversion snapshot in [my
+there isn't a released version of MediaTomb that can send PCM audio to
+the PS3. So I put together a package of a subversion snapshot in [my
 PPA](https://launchpad.net/~jamesh/+archive) which should work on
 Intrepid.
 
@@ -26,15 +26,15 @@ With the newer package, it was pretty easy to get things working:
     changes:
     -   Change the `<protocolInfo/>` line to set `extend="yes"`.
     -   In the `<extension-mimetype>` section, uncomment the line to map
-        \"avi\" to \"video/divx\".  This will get a lot of videos to
+        "avi" to "video/divx".  This will get a lot of videos to
         play without problem.
     -   In the `<mimetype-upnpclass>` section, add a line to map
-        \"application/ogg\" to \"object.item.audioItem.musicTrack\". 
+        "application/ogg" to "object.item.audioItem.musicTrack".
         This is needed for the vorbis files to be recognised as music.
     -   In the `<mimetype-contenttype>` section add a line to map
-        \"audio/L16\" to \"pcm\".
+        "audio/L16" to "pcm".
     -   On the `<transcoding>` element, change the `enabled` attribute
-        to \"yes\".
+        to "yes".
     -   Add the settings from
         [here](http://mediatomb.cc/dokuwiki/transcoding:transcoding#play_station_3_pcm_support)
         to the `<transcoding>` section.
@@ -45,17 +45,17 @@ With the newer package, it was pretty easy to get things working:
     a web browser), and add the directories you want to export.
 6.  Test things on the PS3.
 
-Things aren\'t perfect though.  As MediaTomb is simply piping the
-transcoded audio to the PS3, it doesn\'t implement seeking on such
-files, and it seems that the PS3 won\'t even let you pause a stream that
-doesn\'t allow seeking.  With a less generalised transcoding backend, it
+Things aren't perfect though. As MediaTomb is simply piping the
+transcoded audio to the PS3, it doesn't implement seeking on such
+files, and it seems that the PS3 won't even let you pause a stream that
+doesn't allow seeking. With a less generalised transcoding backend, it
 seems like it should be trivial to support seeking in an uncompressed
 PCM stream though, since the byte offsets can be trivially mapped to
 sample numbers.
 
-The other problem I found was that none of the recent music I\'d ripped
-showed up.  It seems that they\'d been ripped with the `.oga` file
-extension rather than `.ogg`.  This change appears to have been made in
+The other problem I found was that none of the recent music I'd ripped
+showed up. It seems that they'd been ripped with the `.oga` file
+extension rather than `.ogg`. This change appears to have been made in
 [bug
 543306](http://bugzilla.gnome.org/show_bug.cgi?id=543306 "Bug 543306 – Use oga (Ogg Vorbis, audio) as the default extension extension for adding music to collection"),
 but the reasoning seems suspect: the [guidelines from
@@ -69,25 +69,25 @@ rename them and fix the encoding profile locally.
 
 **A Perfect Media Server**
 
-While MediaTomb mostly works for me, it doesn\'t do everything I\'d
-like.  A few of the things I\'d like out of a media server include:
+While MediaTomb mostly works for me, it doesn't do everything I'd
+like. A few of the things I'd like out of a media server include:
 
-1.  No need to configure things via a web UI.  In fact, I could do
+1.  No need to configure things via a web UI. In fact, I could do
     without a web UI all together -- something nicely integrated into
     the desktop would be nice.
-2.  No need to set model specific settings in the configuration file. 
+2.  No need to set model specific settings in the configuration file.
     Ideally it would know how to talk to common players by default.
-3.  Supports transcoding and seeking within transcoded files. 
+3.  Supports transcoding and seeking within transcoded files.
     Preferably knows what needs transcoding for common players.
-4.  Picks up new files in real time.  So something inotify based rather
+4.  Picks up new files in real time. So something inotify based rather
     than periodic reindexing.
 5.  A virtual folder tree for music based on artist/album metadata. A
     plain folder tree for other media would be fine.
-6.  Cached video thumbnails would be nice too.  The build of MediaTomb
+6.  Cached video thumbnails would be nice too. The build of MediaTomb
     in my PPA includes support for thumbnails (needs to be enabled in
-    the config file), but they aren\'t cached so are slow to appear.
+    the config file), but they aren't cached so are slow to appear.
 
-Perhaps [Zeeshan](http://zee-nix.blogspot.com/)\'s media server will be
+Perhaps [Zeeshan](http://zee-nix.blogspot.com/)'s media server will be
 worth trying out at some point.
 
 ---
@@ -95,9 +95,9 @@ worth trying out at some point.
 #### zombiepig - <time datetime="2008-10-30 12:38:07">30 Oct, 2008</time>
 
 Something that\'s always frustrated me with my ps3 playing back music
-from my mediatomb share is the massive gap it puts between songs. I\'m
+from my mediatomb share is the massive gap it puts between songs. I'm
 really interested to know if this is a problem with the ps3 software, or
-something in mediatomb that\'s causing it.
+something in mediatomb that's causing it.
 
 ---
 #### ethana2 - <time datetime="2008-10-30 13:18:12">30 Oct, 2008</time>
@@ -108,26 +108,26 @@ from there?
 ---
 #### Steve H - <time datetime="2008-10-30 14:34:35">30 Oct, 2008</time>
 
-Thanks for the howto. I\'ve been having trouble getting my ogg and flac
+Thanks for the howto. I've been having trouble getting my ogg and flac
 files streaming to my PS3 and this helped.
 
 You can use inotify to automatically add and remove files in real time
-by editing your config file. Search for \"autoscan\" in the following
+by editing your config file. Search for "autoscan" in the following
 link.
 
-http://mediatomb.cc/pages/documentation\#id2537759
+http://mediatomb.cc/pages/documentation#id2537759
 
 ---
 #### James Henstridge - <time datetime="2008-10-30 15:32:36">30 Oct, 2008</time>
 
-ethana2: I haven\'t installed Linux on my PS3 at this point, and don\'t
+ethana2: I haven't installed Linux on my PS3 at this point, and don't
 really have the disk space. Perhaps if I replace the hard disk at some
-point I\'ll consider it (it isn\'t clear that this would be any easier,
+point I'll consider it (it isn't clear that this would be any easier,
 all things considered).
 
 Steve H: I am using an inotify scanned folder at the moment. I realise
 that some of the features I mentioned already exist in MediaTomb, but
-thought I\'d mention the ones that I find useful.
+thought I'd mention the ones that I find useful.
 
 ---
 #### Zeeshan Ali - <time datetime="2008-10-30 17:20:39">30 Oct, 2008</time>
@@ -141,15 +141,15 @@ plan. Lets check:
 without a web UI all together -- something nicely integrated into the
 desktop would be nice.
 
-Check. Infact I\'ve only thought of a nice preference dialog that will
-appear in your \"Preferences\" menu in the panel, if you\'ve Rygel
+Check. Infact I've only thought of a nice preference dialog that will
+appear in your "Preferences" menu in the panel, if you've Rygel
 installed.
 
 2\. No need to set model specific settings in the configuration file.
 Ideally it would know how to talk to common players by default.
 
-Almost Check. With control points like PS3 that don\'t deviate
-completely from standards, you shouldn\'t need to configure anything.
+Almost Check. With control points like PS3 that don't deviate
+completely from standards, you shouldn't need to configure anything.
 However, CPs like Xbox would definitely need some tweaking (i am hoping
 more like a checkbox that enables/disables the support) in the config
 UI.
@@ -162,20 +162,20 @@ Check. On the fly transcoding is a definite feature.
 4\. Picks up new files in real time. So something inotify based rather
 than periodic reindexing.
 
-Check. Although currently I\'ve only Tracker backend but a backend like
+Check. Although currently I've only Tracker backend but a backend like
 the one you wish is definitely in the plan.
 
 5\. A virtual folder tree for music based on artist/album metadata. A
 plain folder tree for other media would be fine.
 
-If you are implying that it be directly under root folder, it\'s not on
+If you are implying that it be directly under root folder, it's not on
 my TODO list but I could give it a thought. :)
 
 6\. Cached video thumbnails would be nice too. The build of MediaTomb in
 my PPA includes support for thumbnails (needs to be enabled in the
 config file), but they aren't cached so are slow to appear.
 
-Wasn\'t on my TODO list but now it is. :)
+Wasn't on my TODO list but now it is. :)
 
 ---
 #### [Jakub Steiner](http://jimmac.musichall.cz/) - <time datetime="2008-10-30 17:37:47">30 Oct, 2008</time>
@@ -183,16 +183,16 @@ Wasn\'t on my TODO list but now it is. :)
 When I was setting up mine, I was really surprised how much work had to
 be done to get the basics working. Mediatomb does a lot, but not having
 template config files for major consoles like ps3 and xbox makes it the
-typical \'Linux experience\'. :/
+typical 'Linux experience'. :/
 
 ---
 #### [Chris Lord](http://chrislord.net/) - <time datetime="2008-10-30 17:43:28">30 Oct, 2008</time>
 
-Sounds like Zeeshan\'s server is the way to go, I look forward to it :)
+Sounds like Zeeshan's server is the way to go, I look forward to it :)
 In the meantime though, I find Fuppes to be a pretty capable server that
 supports audio and video transcoding. I use it with the Xbox 360 and it
 works very well (although no seeking in transcoded media, though it can
-pause) - I\'ve not tried with the PS3 yet though.
+pause) - I've not tried with the PS3 yet though.
 
 ---
 #### Wouter - <time datetime="2008-10-30 18:34:52">30 Oct, 2008</time>
@@ -206,7 +206,7 @@ iphone?
 *Would it be possible too to stream and transcode video files to the
 iphone?*
 
-Unfortunately, no. :( Apple doesn\'t do UPnP. However, it should be
+Unfortunately, no. :( Apple doesn't do UPnP. However, it should be
 possible to port GUPnP (and a control point) to iPhone?
 
 ---
@@ -224,8 +224,8 @@ the Coherence MediaServers -
 http://coherence.beebits.net/wiki/MediaServer - do already provide
 everything you want.
 
-Transcoding is on the todo list - if it is only for ogg,\
-had that in a prototype once, and the video thumbnails\
+Transcoding is on the todo list - if it is only for ogg,
+had that in a prototype once, and the video thumbnails
 would be an easy addition.
 
 ---

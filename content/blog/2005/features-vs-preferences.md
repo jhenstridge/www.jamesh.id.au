@@ -128,7 +128,7 @@ I have in mind would be something like having a user preference file for
 libhal where keys could be specified for known devices.
 
 For example, a removable device could have the key \".user\_pref.show\"
-with the values \"always\", \"when-mountable\"\
+with the values \"always\", \"when-mountable\"
 , \"when-mounted\" or \"never\"
 
 ---

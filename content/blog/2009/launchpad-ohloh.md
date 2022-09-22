@@ -7,10 +7,10 @@ tags: ['Bazaar', 'Launchpad', 'Ubuntu']
 
 Today [Ohloh](http://www.ohloh.net/) finished importing the Launchpad
 source code and produced the first [source code analysis
-report](https://www.ohloh.net/p/launchpad/analyses/latest "Launchpad.net Code Analysis"). 
+report](https://www.ohloh.net/p/launchpad/analyses/latest "Launchpad.net Code Analysis").
 There seems to be something fishy about the reported line counts (e.g.
 -3,291 lines of SQL), but the commit counts and contributor list look
-about right.  If you\'re interested in what sort of effort goes into
+about right. If you\'re interested in what sort of effort goes into
 producing an application like Launchpad, then it is worth a look.
 
 ---

@@ -41,8 +41,8 @@ I\'ve updated to compile with the latest `libsoup`.
 This is very cool, but I think the README should document how to switch
 applications over to gnome-gpg. For example, I\'d love to use it with:
 
-\* bazaar/bzr\
-\* Evolution\
+\* bazaar/bzr
+\* Evolution
 
 ---
 #### Ross - <time datetime="2006-09-04 18:44:57">4 Sep, 2006</time>
@@ -51,11 +51,11 @@ For reference, the bzr-ng incantation is:
 
 \~/.bazaar/bazaar.conf:
 
-\[DEFAULT\]\
-create\_signatures = (always when-required)\
+\[DEFAULT\]
+create\_signatures = (always when-required)
 gpg\_signing\_command = gnome-gpg
 
 I don\'t know how to make a branch require signed revisions, so I\'m
-using always.\
+using always.
 
 ---

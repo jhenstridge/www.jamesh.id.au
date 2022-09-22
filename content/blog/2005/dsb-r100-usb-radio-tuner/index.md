@@ -71,10 +71,10 @@ gotten it to function at all.
 ---
 #### Tobias - <time datetime="2005-10-19 05:17:41">19 Oct, 2005</time>
 
-Perhaps you can help with HAL Support for v4l hardware:\
+Perhaps you can help with HAL Support for v4l hardware:
 <https://bugs.freedesktop.org/show_bug.cgi?id=3527>
 
-Or Support for v4l radio in rhythmbox:\
+Or Support for v4l radio in rhythmbox:
 <http://bugzilla.gnome.org/show_bug.cgi?id=314160>
 
 Anyway, have a lot of fun.

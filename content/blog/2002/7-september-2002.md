@@ -17,8 +17,8 @@ placeholders, etc).
 
 **[PyGIMP](/software/pygimp/index.md)**
 
-[Yosh](/person/yosh/) added a little bit of magic to the autogen script
-for [GIMP](http://www.gimp.org/) so that if you have automake-1.6, it
-will optionally build PyGIMP. So it should be as simple as running
-\"`./configure --enable-python`\" on the gimp-1.3.9 tarball to install
-PyGIMP.
+[Yosh](http://www.advogato.org/person/yosh/) added a little bit of
+magic to the autogen script for [GIMP](http://www.gimp.org/) so that
+if you have automake-1.6, it will optionally build PyGIMP. So it
+should be as simple as running "`./configure --enable-python`" on the
+gimp-1.3.9 tarball to install PyGIMP.

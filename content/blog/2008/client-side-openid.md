@@ -166,9 +166,9 @@ gnome-integration is a must.
 ---
 #### [Matthew](http://www.braintube.com) - <time datetime="2008-02-18 22:40:53">18 Feb, 2008</time>
 
-Folks are already using XMPP to do it:\
-http://openid.xmpp.za.net/\
-http://sameplace.cc/wiki/openid-integration\
+Folks are already using XMPP to do it:
+http://openid.xmpp.za.net/
+http://sameplace.cc/wiki/openid-integration
 for example.
 
 ---

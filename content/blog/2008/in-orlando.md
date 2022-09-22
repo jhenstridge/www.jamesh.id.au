@@ -5,7 +5,7 @@ date: 2008-08-05T09:42:14+08:00
 ---
 
 I\'ve just finished the first day of the Ubuntu online services sprint
-in Orlando, Florida.  I didn\'t repeat [last year\'s trick of falling
+in Orlando, Florida. I didn\'t repeat [last year\'s trick of falling
 asleep at the airport](in-florida.md), so the trip was only about 29
 hours all up.
 

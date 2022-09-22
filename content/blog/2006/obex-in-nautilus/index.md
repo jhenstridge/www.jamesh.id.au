@@ -171,7 +171,7 @@ Thanks
 ---
 #### matt - <time datetime="2006-10-17 07:49:39">17 Oct, 2006</time>
 
-You just can mount the phone filesystem into any directory.\
+You just can mount the phone filesystem into any directory.
 <http://openobex.triq.net/obexfs>
 
 But only the user who mounts it can access the mount directory, even
@@ -179,9 +179,9 @@ root isn\'t allowed to do that! :-/
 
 here\'s my script:
 
-\#!/bin/bash\
-obexfs -b 00:12:EE:9A:19:39 -B 6 /mnt/k750i/\
-nautilus \--no-desktop \--browser /mnt/k750i\
+\#!/bin/bash
+obexfs -b 00:12:EE:9A:19:39 -B 6 /mnt/k750i/
+nautilus \--no-desktop \--browser /mnt/k750i
 
 ---
 #### Wout - <time datetime="2006-10-17 23:07:47">17 Oct, 2006</time>

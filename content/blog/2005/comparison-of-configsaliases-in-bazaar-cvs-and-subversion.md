@@ -202,8 +202,8 @@ versions migrated from CVS).
 #### [Erich Schubert](http://blog.drinsama.de/erich/) - <time datetime="2005-08-30 07:38:33">30 Aug, 2005</time>
 
 Hi, since you apparently are quite an expert on revision management - do
-you have a hint for my \"CoW\" problem?\
-Basically I\'d like to have copy-on-write branches.\
+you have a hint for my \"CoW\" problem?
+Basically I\'d like to have copy-on-write branches.
 Meaning that I want files by default to follow the trunk branch, only if
 I modify the file it gets \"locked\" to the current branch. So that by
 running \"foo update\" I get all the updates, except for where I decided
@@ -214,8 +214,8 @@ need it on a per-file basis. And I\'d like to have it automatically, so
 I can just commit my changes and they\'ll end up in my \"overlay\"
 repository by default\...
 
-Two blog entries, where I asked for advice for this usage:\
-<http://blog.drinsama.de/erich/en/linux/2005082601-server-management.html>\
+Two blog entries, where I asked for advice for this usage:
+<http://blog.drinsama.de/erich/en/linux/2005082601-server-management.html>
 <http://blog.drinsama.de/erich/en/linux/2005082501-revision-management.html>
 
 ---

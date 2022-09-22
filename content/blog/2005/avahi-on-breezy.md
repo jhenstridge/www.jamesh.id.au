@@ -45,7 +45,7 @@ Assuming you run a SSH daemon, copy ssh.server from
 Avahi will advertise your SSH server.
 
 lp, avahi hacks around that fact by exporting a \"workstation\" service
-automatically. :)\
+automatically. :)
 
 ---
 #### lp - <time datetime="2005-11-02 07:35:43">2 Nov, 2005</time>

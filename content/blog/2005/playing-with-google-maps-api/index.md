@@ -44,7 +44,7 @@ already: <http://www.ubuntuusers.de/map.php>
 
 Found a bug:
 
-ChenYu (jcome)\
+ChenYu (jcome)
 Foshan, China
 
 China (as far as I know) is not located in northern Sweden (next to the

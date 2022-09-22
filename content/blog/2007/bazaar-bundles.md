@@ -134,7 +134,7 @@ project in question is using bzr (such as MMS :)). \[\...\]
 
 Good advice that isn\'t specific to one revision control system.
 
-darcs send -o my-changes\
+darcs send -o my-changes
 darcs send -o my-changes \--context ctx \# even if you can\'t see the
 target repository online
 

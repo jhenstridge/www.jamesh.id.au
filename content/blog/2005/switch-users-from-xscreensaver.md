@@ -59,7 +59,7 @@ may not be turned on by default though.
 ---
 #### Andre - <time datetime="2005-12-11 02:29:14">11 Dec, 2005</time>
 
-How can one activate this feature?\
+How can one activate this feature?
 What does one need to configure?
 
 ---

@@ -282,20 +282,20 @@ Re: unsolicited positive assertion
 
 They are mentioned in the spec in a couple of places:
 
-10\. Responding to Authentication Requests\
+10\. Responding to Authentication Requests
 \"Relying Parties SHOULD accept and verify assertions about Identifiers
 for which they have not requested authentication. OPs SHOULD use private
-associations for signing unsolicited positive assertions.\"\
+associations for signing unsolicited positive assertions.\"
 http://openid.net/specs/openid-authentication-2\_0-12.html\#responding\_to\_authentication
 
-11.2. Verifying Discovered Information\
+11.2. Verifying Discovered Information
 \"If the Claimed Identifier was not previously discovered by the Relying
 Party (the \"openid.identity\" in the request was
 \"http://specs.openid.net/auth/2.0/identifier\_select\" or a different
 Identifier, or if the OP is sending an unsolicited positive assertion),
 the Relying Party MUST perform discovery on the Claimed Identifier in
 the response to make sure that the OP is authorized to make assertions
-about the Claimed Identifier.\"\
+about the Claimed Identifier.\"
 (this clarification was added after draft12, so it\'s only in SVN, not
 yet published)
 
@@ -306,17 +306,17 @@ with their content, acquisition, source, trust. There\'s a separate
 extension proposal that deals exactly with the trust issue for
 attributes:
 
-OpenID Signed Assertions\
+OpenID Signed Assertions
 http://www.mail-archive.com/specs\@openid.net/msg00907.html
 
 A demonstrative implementation of this (using verification of emails as
 the example) is available at:
 
-https://verify.sxip.com/email/\
+https://verify.sxip.com/email/
 (retrieve a signed assertion saying that Sxip has verified your email
 address)
 
-https://verify.sxip.com/demorp/\
+https://verify.sxip.com/demorp/
 (present the signed assertion to an OpenID 2.0 RP using Attribute
 Exchange, which trusts Sxip with the verification process)
 

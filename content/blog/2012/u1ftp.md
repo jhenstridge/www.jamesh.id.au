@@ -7,7 +7,7 @@ tags: ['Launchpad', 'OAuth', 'Python', 'Ubuntu', 'Ubuntu One']
 
 One of the projects I\'ve been working on has been to improve aspects of
 the [Ubuntu One Developer
-Documentation](https://one.ubuntu.com/developer/) web site.  While there
+Documentation](https://one.ubuntu.com/developer/) web site. While there
 are still some layout problems we are working on, it is now in a state
 where it is a lot easier for us to update.
 
@@ -15,11 +15,11 @@ I have been working on updating our
 [authentication/authorisation](https://one.ubuntu.com/developer/account_admin/auth/index)
 documentation and revising some of the [file
 storage](https://one.ubuntu.com/developer/files/store_files/cloud)
-documentation (the API used by the mobile Ubuntu One clients).  To help
+documentation (the API used by the mobile Ubuntu One clients). To help
 verify that the documentation was useful, I wrote a small program to
-exercise those APIs.  The result is
+exercise those APIs. The result is
 [u1ftp](https://launchpad.net/u1ftp): a program that exposes a user\'s
-files via an FTP daemon running on localhost.  In conjunction with the
+files via an FTP daemon running on localhost. In conjunction with the
 OS file manager or a dedicated FTP client, this can be used to
 conveniently access your files on a system without the full Ubuntu One
 client installed.
@@ -30,7 +30,7 @@ You can download the program from:
 
 To make it easy to run on as many systems as possible, I packaged it
 up as a [runnable zip file](python-zip-files.md) so can be run
-directly by the [Python](http://www.python.org/) interpreter.  As well
+directly by the [Python](http://www.python.org/) interpreter. As well
 as a Python interpreter, you will need the following installed to run
 it:
 
@@ -49,18 +49,18 @@ command:
 
     python u1ftp-0.1.zip
 
-This will start the FTP server listening at `ftp://localhost:2121/`. 
+This will start the FTP server listening at `ftp://localhost:2121/`.
 Pointing a file manager at that URL should prompt you to log in, where
 you can use your standard Ubuntu One credentials and start browsing your
-files.  It will verify the credentials against the Ubuntu SSO service
+files. It will verify the credentials against the Ubuntu SSO service
 and issue an [OAuth](http://oauth.net/) token that it stores in the
-keyring.  The OAuth token is then used to authenticate requests to the
+keyring. The OAuth token is then used to authenticate requests to the
 file storage REST API.
 
 While I expect this program to be useful on its own, it was also
-intended to act as an example of how the Ubuntu One API can be used. 
+intended to act as an example of how the Ubuntu One API can be used.
 One way to browse the source is to simply unzip the package and poke
-around.  Alternatively, you can check out the source directly from
+around. Alternatively, you can check out the source directly from
 Launchpad:
 
     bzr branch lp:u1ftp
@@ -84,8 +84,8 @@ client, but if it is still useful to you then that\'s great.
 ---
 #### Flup - <time datetime="2012-07-07 02:11:52">7 Jul, 2012</time>
 
-Hey, one question:\
-Will this new U1DB replace the DBUS API ??\
+Hey, one question:
+Will this new U1DB replace the DBUS API ??
 Or will both stay avaiable?
 
 ---
@@ -102,12 +102,12 @@ to store structured data (e.g. contacts, bookmarks, notes, etc).
 \> The standard Ubuntu One client should work with Kubuntu.
 
 Yes it does. But if this is your first Gnome app, you bring in a whole
-ton of dependencies.\
+ton of dependencies.
 https://bugs.launchpad.net/ubuntuone-client/+bug/375145/comments/114
 
 For some KDE users, if they cannot get a KDE app, they would prefer a
-bare-bones approach, like:\
-\~/.dropbox-dist/dropboxd\
+bare-bones approach, like:
+\~/.dropbox-dist/dropboxd
 A daemon that \'just works\', albiet with some limitations not present
 in the fat client.
 

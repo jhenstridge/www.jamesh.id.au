@@ -7,31 +7,31 @@ tags: ['Django', 'Python', 'Storm', 'Zope']
 
 I\'ve been playing around with [Django](http://www.djangoproject.com/) a
 bit for work recently, which has been interesting to see what choices
-they\'ve made differently to [Zope 3](http://wiki.zope.org/zope3/). 
+they\'ve made differently to [Zope 3](http://wiki.zope.org/zope3/).
 There were a few things that surprised me:
 
 -   The ORM and database layer defaults to autocommit mode rather than
-    using transactions.  This seems like an odd choice given that all
-    the major free databases support transactions these days.  While
+    using transactions. This seems like an odd choice given that all
+    the major free databases support transactions these days. While
     autocommit might work fine when a web application is under light
-    use, it is a recipe for problems at higher loads.  By using
+    use, it is a recipe for problems at higher loads. By using
     transactions that last for the duration of the request, the testing
     you do is more likely to help with the high load situations.
 -   While there is a middleware class to enable request-duration
-    transactions, it only covers the database connection.  There is no
+    transactions, it only covers the database connection. There is no
     global transaction manager to coordinate multiple DB connections or
     other resources.
--   The ORM appears to only support a single connection for a request. 
+-   The ORM appears to only support a single connection for a request.
     While this is the most common case and should be easy to code with,
     allowing an application to expand past this limit seems prudent.
 -   The tutorial promotes schema generation from Python models, which
     I feel is the wrong choice for any application that is likely to
-    evolve over time (i.e. pretty much every application).  I\'ve
+    evolve over time (i.e. pretty much every application). I\'ve
     [written about this previously](orm-schema-generation.md) and
     believe that migration based schema management is a more workable
     solution.
 -   It poorly [reinvents thread local storage](tls-python.md) in a few
-    places.  This isn\'t too surprising for things that existed prior
+    places. This isn\'t too surprising for things that existed prior
     to Python 2.4, and probably isn\'t a problem for its default mode
     of operation.
 
@@ -41,19 +41,19 @@ framework.
 **Integrating Storm**
 
 I\'ve been doing a bit of work to make it easy to use
-[Storm](http://storm.canonical.com/) with Django.  I posted some initial
+[Storm](http://storm.canonical.com/) with Django. I posted some initial
 details [on the mailing
-list](http://thread.gmane.org/gmane.comp.python.storm/673).  The initial
+list](http://thread.gmane.org/gmane.comp.python.storm/673). The initial
 code has been [published on
 Launchpad](https://code.launchpad.net/~jamesh/storm/django-support) but
 is not yet ready to merge. Some of the main details include:
 
 -   A middleware class that integrates the Zope global transaction
     manager (which requires just the zope.interface and transaction
-    packages).  There doesn\'t appear to be any equivalent functionality
+    packages). There doesn\'t appear to be any equivalent functionality
     in Django, and this made it possible to reuse the existing
     integration code (an approach that has been taken to use Storm with
-    [Pylons](http://pylonshq.com/)).  It will also make it easier to
+    [Pylons](http://pylonshq.com/)). It will also make it easier to
     take advantage of other future improvements (e.g. only committing
     stores that are used in a transaction, two phase commit).
 -   Stores can be configured through the application\'s Django settings
@@ -62,7 +62,7 @@ is not yet ready to merge. Some of the main details include:
     per-thread stores within view code.
 
 What this doesn\'t do yet is provide much integration with existing
-Django functionality (e.g. django.contrib.admin).  I plan to try and get
+Django functionality (e.g. django.contrib.admin). I plan to try and get
 some of these bits working in the near future.
 
 ---
@@ -113,7 +113,7 @@ especially because both are excellent.
 #### [James Henstridge &raquo; Storm 0.13](storm-013.md) - <time datetime="2008-08-29 16:21:35">29 Aug, 2008</time>
 
 \[\...\] The minimum dependencies of the storm.zope.zstorm module have
-been reduced to just the zope.interface and transaction modules.  This
+been reduced to just the zope.interface and transaction modules. This
 makes it easier to use the per-thread store management code and global
 transaction management outside of Zope apps (e.g. for integrating with
 Django). \[\...\]

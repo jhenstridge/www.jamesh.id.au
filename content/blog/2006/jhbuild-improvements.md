@@ -124,7 +124,7 @@ gnome-2.16 module set.
 
 Since jhbuild supports Arch as a module source, is baz also supported?
 
-Also, is SCons supported as a module type?\
+Also, is SCons supported as a module type?
 
 ---
 #### James Henstridge - <time datetime="2006-05-11 18:52:16">11 May, 2006</time>

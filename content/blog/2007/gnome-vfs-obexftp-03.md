@@ -39,7 +39,7 @@ obexftp commands using libxml and lets me, so far, \"ls\",\"cd\".\"cp\"
 haha, what a silly stupid program.
 
 I wish i knew how to use gnome-vfs, i really need usb support, can i
-help you?\
+help you?
 I dont know much about gnome-vfs or obex, but i can write any boiler
 plate code you need.
 

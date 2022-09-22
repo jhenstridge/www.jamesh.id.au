@@ -61,7 +61,7 @@ down. It is VERY fast.
 
 Debian Sarge does not include python-crypto and paramiko packages. These
 are needed for ssh/sftp support in bzr. I\'ve created backported
-packages for Debian Sarge. See this blog posting for more information:\
+packages for Debian Sarge. See this blog posting for more information:
 <http://uwstopia.nl/blog/2005/11/open-ssh-bazaar-ng-debian-sarge>
 
 ---

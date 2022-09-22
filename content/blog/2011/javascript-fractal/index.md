@@ -7,31 +7,31 @@ tags: ['firefox', 'JavaScript', 'lca2011']
 
 While at linux.conf.au earlier this year, I started hacking on a
 Mandelbrot Set fractal renderer implemented in JavaScript as a way to
-polish my JS skills.  In particular, I wanted to get to know the HTML5
+polish my JS skills. In particular, I wanted to get to know the HTML5
 [Canvas](http://en.wikipedia.org/wiki/Canvas_element) and
 [Worker](http://en.wikipedia.org/wiki/Web_Workers) APIs.
 
-The results turned out pretty well.  Click on the image below to try it
+The results turned out pretty well. Click on the image below to try it
 out:
 
 {{< figure src="mandelbrot.jpeg" alt="A render of the Mandelbrot Set"
         link="mandelbrot.html" >}}
 
-Clicking anywhere on the fractal will zoom in.  You\'ll need to reload
-the page to zoom out.  Zooming in while the fractal is still being
+Clicking anywhere on the fractal will zoom in. You\'ll need to reload
+the page to zoom out. Zooming in while the fractal is still being
 rendered will interrupt the previous rendering job.
 
 All the calculations are done via web workers, so should not block the
-UI.  The algorithms used to calculate these types of fractals are easy
+UI. The algorithms used to calculate these types of fractals are easy
 to parallelise, so it was not particularly difficult to add more
-workers.  One side effect of this is that the lines of the fractal
+workers. One side effect of this is that the lines of the fractal
 don\'t always get rendered in order.
 
 With [Chromium](http://www.chromium.org/Home), this maxes out all six
-cores on my desktop system.  In contrast,
-[Firefox](http://www.mozilla.com/firefox/) only keeps three cores busy. 
+cores on my desktop system. In contrast,
+[Firefox](http://www.mozilla.com/firefox/) only keeps three cores busy.
 As workers are not directly tied to operating system threads, this may
-just mean that Firefox allocates fewer threads for running workers.  I
+just mean that Firefox allocates fewer threads for running workers. I
 haven\'t tested any other browsers.
 
 Browser technology certainly has progressed quite a bit in the last few
@@ -182,7 +182,7 @@ Jake.
 
 Hi James,
 
-thanks for the post\
+thanks for the post
 I slightly derived your code to try to make it more \"education ready\".
 
 http://www.framexpeditions.com/\~alex2/teaching/mandelbrot/

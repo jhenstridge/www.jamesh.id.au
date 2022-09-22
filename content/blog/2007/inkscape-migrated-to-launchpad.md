@@ -112,7 +112,7 @@ okay to work with SourceForge.net but not Launchpad?
 ---
 #### naisioxerloro - <time datetime="2007-11-28 22:58:56">28 Nov, 2007</time>
 
-Hi.\
+Hi.
 Good design, who make it?
 
 ---
@@ -146,7 +146,7 @@ decided that they doesn\'t want Linus to use it for free anymore.)
 #### [nicu buculei](http://nicubunu.blogspot.com/) - <time datetime="2007-11-29 00:26:21">29 Nov, 2007</time>
 
 When I joined Inkscape I already had a sf.net account. Long ago they
-were almost the only game in town.\
+were almost the only game in town.
 And for a particular reason: sf.net is not tied with any distro.
 
 ---

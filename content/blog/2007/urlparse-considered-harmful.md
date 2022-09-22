@@ -93,7 +93,7 @@ to bytestrings automatically)
 
 The solution is called IRI btw and not that supported so far.
 
-Regards,\
+Regards,
 Armin
 
 ---

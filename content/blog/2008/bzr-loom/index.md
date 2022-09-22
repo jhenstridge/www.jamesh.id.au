@@ -63,4 +63,4 @@ There are a few warts in the UI that I\'ve encountered though:
     needed to submit them for review on a mailing list.
 
 Despite the quirks in the interface, it does make the relevant work
-flows easier.  It will be interesting to see how the plugin develops.
+flows easier. It will be interesting to see how the plugin develops.

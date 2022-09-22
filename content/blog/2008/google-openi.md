@@ -8,11 +8,11 @@ tags: ['OpenID']
 [David](http://opensourcetogo.blogspot.com/2008/10/continuing-to-not-quite-get-it-at.html):
 taking a quick look at [Google\'s
 documentation](http://code.google.com/apis/accounts/docs/OpenID.html),
-it sure looks like OpenID to me.  The main items of note are:
+it sure looks like OpenID to me. The main items of note are:
 
-1.  It documents the use of OpenID 2.0\'s directed identity mode.  Yes
+1.  It documents the use of OpenID 2.0\'s directed identity mode. Yes
     this is \"a departure from the process outlined in OpenID 1.0\", but
-    that could be considered true of all new features found in 2.0. 
+    that could be considered true of all new features found in 2.0.
     Google certainly isn\'t the first to implement this feature:
 
     -   [Yahoo\'s OpenID page](http://openid.yahoo.com/) recommends
@@ -28,14 +28,14 @@ it sure looks like OpenID to me.  The main items of note are:
 
 2.  The identity URLs returned by the OpenID provider do not directly
     reveal information about the user, containing a long random string
-    to differentiate between users.  If the relying party wants any user
+    to differentiate between users. If the relying party wants any user
     details, they must request them via the standard OpenID Attribute
     Exchange protocol.
 
 3.  They are performing access control based on the OpenID realm of the
-    relying party.  I can understand doing this in the short term, as it
+    relying party. I can understand doing this in the short term, as it
     gives them a way to handle a migration should they make an
-    incompatible change during the beta.  If they continue to restrict
+    incompatible change during the beta. If they continue to restrict
     access after the beta, you might have a valid concern.
 
 It looks like there would be no problem talking to their provider using
@@ -43,7 +43,7 @@ existing off the shelf OpenID libraries (like the ones from JanRain).
 
 If you have an existing site using OpenID for login, chances are that
 after registering the realm with Google you\'d be able to log in by
-entering Google\'s OP server URL.  At that point, it\'d be fairly
+entering Google\'s OP server URL. At that point, it\'d be fairly
 trivial to add another button to the login page -- sites seem pretty
 happy to plaster provider-specific radio buttons and entry boxes all
 over the page already \...

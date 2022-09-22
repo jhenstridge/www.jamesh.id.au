@@ -5,7 +5,7 @@ date: 2009-02-25T04:12:16+09:00
 tags: ['Sprint']
 ---
 
-I\'m in Montreal through to the end of next week.  The sub-zero
+I\'m in Montreal through to the end of next week. The sub-zero
 temperatures are quite a change from Perth, where it got up to 39°C on
 the day I left.
 

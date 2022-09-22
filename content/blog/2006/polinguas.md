@@ -26,7 +26,7 @@ in CVS and then create and add a `m4/.cvsignore` file (there are a
 number of files that will get created here by gettext that you don\'t
 want to check into CVS).
 
-Mark the m4 subdirectory as the macro dir in the `configure.ac` file:\
+Mark the m4 subdirectory as the macro dir in the `configure.ac` file:
 
     AC_CONFIG_MACRO_DIR([m4])
 
@@ -93,18 +93,18 @@ from configure.ac and add po/LINGUAS?
 ---
 #### al_shopov - <time datetime="2006-04-12 22:07:15">12 Apr, 2006</time>
 
-Hi James,\
+Hi James,
 Could you please post some more information about the whole
-libtool/autoconf/automake (LT/AC/AM) stuff.\
+libtool/autoconf/automake (LT/AC/AM) stuff.
 I have tried to find information - how-to\'s, general help etc. but I
 have found it too diffucult to grasp. Do you know some docs that I could
 use to bootstrap myself out of my coplete newbishness concerning
-(LT/AC/AM)?\
-An additional source with docs for M4 would be even more helpful.\
+(LT/AC/AM)?
+An additional source with docs for M4 would be even more helpful.
 I am sorry to bother you personally, but you seem to have passed the
 levels I want to achieve. How didi you do it?
 
-Kind regards:\
+Kind regards:
 al\_shopov
 
 ---

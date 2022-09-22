@@ -52,7 +52,7 @@ Ekiga is not an Ekiga problem. Try plugging it into another USB port,
 probably leaving out a HUB and trying a port at the computer itself.
 More info here: <http://bugzilla.gnome.org/show_bug.cgi?id=329609>
 
-Daniel\
+Daniel
 
 ---
 ####  - <time datetime="2006-04-12 02:50:43">12 Apr, 2006</time>
@@ -72,7 +72,7 @@ conntrack\_ftp, no configuration necessary.
 #### HENOKE - <time datetime="2006-04-25 06:14:22">25 Apr, 2006</time>
 
 i am trying to get the source code for SIP based VOIP so it can guide me
-in my project\
-can u help me please\
+in my project
+can u help me please
 
 ---

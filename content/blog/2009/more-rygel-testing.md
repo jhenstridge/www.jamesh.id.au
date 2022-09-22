@@ -8,28 +8,28 @@ tags: ['Gnome', 'PlayStation 3', 'Ubuntu', 'UPnP']
 In my [last post](ubuntu-packages-for-rygel.md "Ubuntu packages for
 Rygel"), I said I had trouble getting Rygel\'s tracker backend to
 function and assumed that it was expecting an older version of the
-API.  It turns out I was incorrect and the problem was due in part to
+API. It turns out I was incorrect and the problem was due in part to
 Ubuntu specific changes to the Tracker package and the unusual way
 Rygel was trying to talk to Tracker.
 
 The Tracker packages in Ubuntu remove the D-Bus service activation file
 for the \"org.freedesktop.Tracker\" bus name so that if the user has not
 chosen to run the service (or has killed it), it won\'t be automatically
-activated.  Unfortunately, instead of just calling a Tracker D-Bus
+activated. Unfortunately, instead of just calling a Tracker D-Bus
 method, Rygel was trying to manually activate Tracker via a
-StartServiceByName() call.  This would fail even if Tracker was running,
+StartServiceByName() call. This would fail even if Tracker was running,
 hence my assumption that it was a tracker API version problem.
 
 This problem will be fixed in the next Rygel release: it will call a
-method on Tracker directly to see if it is available.  With that problem
-out of the way, I was able to try out the backend.  It was providing a
+method on Tracker directly to see if it is available. With that problem
+out of the way, I was able to try out the backend. It was providing a
 lot more metadata to the PS3 so more files were playable, which was
-good.  Browsing folders was also much quicker than the folder back end. 
+good. Browsing folders was also much quicker than the folder back end.
 There were a few problems though:
 
 1.  Files are exposed in one of three folders: \"All Images\", \"All
-    Music\" or \"All Videos\".  With even a moderate sized music
-    collection, this is unmangeable.  It wasn\'t clear what order the
+    Music\" or \"All Videos\". With even a moderate sized music
+    collection, this is unmangeable. It wasn\'t clear what order the
     files were being displayed in either.
 2.  There was quite a long delay before video playback starts.
 
@@ -40,9 +40,9 @@ inclined to use it over the tracker back end.
 
 Getting video transcoding working turned out to require a newer
 GStreamer (0.10.23), the \"unstripped\" ffmpeg libraries and the \"bad\"
-GStreamer plugins package from multiverse.  With those installed, things
-worked pretty well.  With these dependencies encoded in the packaging,
-it\'d be pretty painless to get it set up.  Certainly much easier than
+GStreamer plugins package from multiverse. With those installed, things
+worked pretty well. With these dependencies encoded in the packaging,
+it\'d be pretty painless to get it set up. Certainly much easier than
 setting things up in MediaTomb\'s configuration file.
 
 ---

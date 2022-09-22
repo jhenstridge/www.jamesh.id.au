@@ -25,7 +25,7 @@ quick points to help with the transition:
         <https://launchpad.net/people/+requestmerge>.
 
 -   If you have a `bugzilla.ubuntu.com` bug number, you can find the
-    corresponding Launchpad bug number with the following URL:\
+    corresponding Launchpad bug number with the following URL:
 
     > `http://launchpad.net/malone/bugtrackers/ubuntu-bugzilla/$BUGZILLA_ID`
 
@@ -36,7 +36,7 @@ quick points to help with the transition:
     <https://launchpad.net/distros/ubuntu/+filebug>. Note that the form
     expects a *source* package name rather than a *binary* package name.
     If you only have a binary package name, you can use the following
-    command to find the source package name:\
+    command to find the source package name:
 
     > `apt-cache show $packagename | grep ^Source:`
 

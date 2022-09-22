@@ -123,11 +123,11 @@ is to do:
 
 bzr init my-copy (this can be in a repo, but doesn\'t have to be)
 
-cd my-copy\
+cd my-copy
 bzr pull -r revid: <http://their/branch>
 
 \"their/branch\" needs to be in the repository. But I don\'t think it
 actually needs to be in the history of the branch. It just needs to be
-searchable from there.\
+searchable from there.
 
 ---

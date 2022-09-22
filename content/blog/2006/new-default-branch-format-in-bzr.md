@@ -57,7 +57,7 @@ formats.
 Your comparison was between the weave and knit repository formats. They
 both reside in a metadir.
 
-Cheers\
+Cheers
 -Olaf
 
 ---

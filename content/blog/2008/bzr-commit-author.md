@@ -7,26 +7,26 @@ tags: ['Bazaar']
 
 One of the features I recently discovered in
 [Bazaar](http://bazaar-vcs.org/) is the `--author` option for
-\"`bzr commit`\".  This lets you make commits to a Bazaar branch on
-behalf of another person.  When used, the new revision credits two
+\"`bzr commit`\". This lets you make commits to a Bazaar branch on
+behalf of another person. When used, the new revision credits two
 people: you as the committer and the other person as the author.
 
 While Bazaar does make it easy for non-core contributors to send changes
 in a form that correctly attributes them (e.g. by publishing a branch or
-sending a bundle), I doubt we\'ll ever see the end of pure patches. 
+sending a bundle), I doubt we\'ll ever see the end of pure patches.
 Some cases include:
 
--   Patches based on a tarball release.   In these cases the contributor
+-   Patches based on a tarball release.  In these cases the contributor
     likely hasn\'t even used the VCS.
 -   People send simple diffs from e.g. \"`bzr diff`\" since that is
     sometimes the easiest solution (or what they do by default due to
     having transferred their knowledge from another VCS).
 -   Some people use a VCS bridge so they can work with their favourite
-    VCS.  They might not be able to provide their changes as Bazaar
+    VCS. They might not be able to provide their changes as Bazaar
     commits due to this.
 
 The `--author` option lets you commit these changes in a way that
-credits the contributor for their work.  The author of the change will
+credits the contributor for their work. The author of the change will
 then be displayed in \"`bzr annotate`\" output and credited along with
 the you in the \"`bzr log`\" output.
 

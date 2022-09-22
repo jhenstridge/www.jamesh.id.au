@@ -22,12 +22,12 @@ It is a nice change from winter weather in Perth.
 ### Comments:
 #### [Pupeno](http://pupeno.com) - <time datetime="2006-07-27 19:02:20">27 Jul, 2006</time>
 
-Hello,\
+Hello,
 Since you seem to be a developer of Rosetta; to where should I send an
 \'official\' feature request for having an easy or even automatic way of
 feeding-back the translations to mainstream projects ?
 
-\
+
 Reference: <http://www.ogmaciel.com/?p=282>
 
 ---

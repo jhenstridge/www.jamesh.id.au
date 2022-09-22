@@ -8,9 +8,9 @@ tags: ['PostgreSQL', 'Python']
 Yesterday Federico [released version 2.0.7 of
 psycopg2](http://lists.initd.org/pipermail/psycopg/2008-April/006013.html)
 (a [Python](http://www.python.org/) database adapter for
-[PostgreSQL](http://www.postgresql.org/)).  I made a fair number of the
+[PostgreSQL](http://www.postgresql.org/)). I made a fair number of the
 changes in this release to make it more usable for some of
-[Canonical](http://www.canonical.com/)\'s applications.  The new release
+[Canonical](http://www.canonical.com/)\'s applications. The new release
 should work with the development version of Storm, and shouldn\'t be too
 difficult to get everything working with other frameworks.
 
@@ -18,9 +18,9 @@ Some of the improvements include:
 
 -   Better selection of exceptions based on the
     [SQLSTATE](http://www.postgresql.org/docs/current/static/errcodes-appendix.html)
-    result field.  This causes a number of errors that were reported as
+    result field. This causes a number of errors that were reported as
     ProgrammingError to use a more appropriate exception (e.g.
-    DataError, OperationalError, InternalError).  This was the change
+    DataError, OperationalError, InternalError). This was the change
     that broke Storm\'s test suite as it was checking for
     ProgrammingError on some queries that were clearly not programming
     errors.
@@ -30,11 +30,11 @@ Some of the improvements include:
     than OperationalError.
 -   The compile-time switch that controls whether the display\_size
     member of Cursor.description is calculated is now turned off by
-    default.  The code was quite expensive and the field is of limited
+    default. The code was quite expensive and the field is of limited
     use (and not provided by a number of other database adapters).
--   New QueryCanceledError and TransactionRollbackError exceptions.  The
+-   New QueryCanceledError and TransactionRollbackError exceptions. The
     first is useful for handling queries that are canceled by
-    [statement\_timeout](http://www.postgresql.org/docs/8.3/static/runtime-config-client.html#GUC-STATEMENT-TIMEOUT). 
+    [statement\_timeout](http://www.postgresql.org/docs/8.3/static/runtime-config-client.html#GUC-STATEMENT-TIMEOUT).
     The second provides a convenient way to catch serialisation failures
     and deadlocks: errors that indicate the transaction should be
     retried.
@@ -42,7 +42,7 @@ Some of the improvements include:
     in the notice processing code that could be particularly problematic
     for long-running daemon processes.
 -   Better test coverage and a driver script to run the entire test
-    suite in one go.  The tests should all pass too, provided your
+    suite in one go. The tests should all pass too, provided your
     database cluster uses unicode (there was a report just before the
     release of one test failing for a LATIN1 cluster).
 

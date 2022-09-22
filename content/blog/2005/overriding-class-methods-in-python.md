@@ -75,7 +75,7 @@ From my quick reading of some Ruby documentation, it says that \"super\"
 is a keyword.
 
 In Python, it is just another object. In fact, it could easily be
-rewritten in Python as seen here:\
+rewritten in Python as seen here:
 <http://www.python.org/2.2/descrintro.html#superexample>
 
 It is just an application of the descriptor features added back then.

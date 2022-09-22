@@ -25,7 +25,7 @@ triangle going off in different directions.
 Way cool James!
 
 The view from the other locations shows how you\'d need a 4th dimension
-to close the triangle in 3-D :-)\
+to close the triangle in 3-D :-)
 
 ---
 #### Tor Lillqvist - <time datetime="2006-09-18 16:21:53">18 Sep, 2006</time>

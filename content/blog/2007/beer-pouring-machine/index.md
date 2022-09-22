@@ -43,7 +43,7 @@ But will it pull a decent pint of Guinness?
 ---
 #### [Kevin Mark](http://mysite.verizon.net/kevin.mark) - <time datetime="2007-10-28 11:20:54">28 Oct, 2007</time>
 
-http://robotgossip.blogspot.com/2006/09/asahi-beer-robot-video.html\
+http://robotgossip.blogspot.com/2006/09/asahi-beer-robot-video.html
 Beer pouring robot!
 
 ---

@@ -15,14 +15,14 @@ rather than requiring the `btcond` daemon from
 
 Some simple instructions on building it:
 
-1.  Download and build the `osso-gwobex` library:\
+1.  Download and build the `osso-gwobex` library:
 
     > `svn checkout https://stage.maemo.org/svn/maemo/projects/connectivity/osso-gwobex/trunk osso-gwobex`
 
     The debian/ directory should work fine to build a package using
     `debuild`.
 
-2.  Download and build the obex module:\
+2.  Download and build the obex module:
 
     > `bzr branch http://bazaar.launchpad.net/~jamesh/+junk/gnome-vfs-obexftp`
 
@@ -43,7 +43,7 @@ make it easier to show the device names to the user and get nice icons.
 ### Comments:
 #### pel - <time datetime="2006-10-21 21:41:03">21 Oct, 2006</time>
 
-Wow.\
+Wow.
 This is seriously wonderfull!
 
 Now I\'ll have to install edgy on a machine this weekend :)
@@ -55,14 +55,14 @@ I took a look at the code and it looks good. One thing however:
 
 About the \"NFTP\" service identifier, that\'s actually something that
 btcond supported but hcid doesn\'t. You\'ll have to give the exact
-UUID-128 to hcid instead as\
+UUID-128 to hcid instead as
 \"00005005-0000-1000-8000-0002ee000001\" (I hope that\'s correct).
 
 What it\'s about: some Nokia Symbian phones have two OBEX FTP services:
 one identified with the normal UUID and another with a Nokia specific
 128 bit UUID. The service found behind the normal identifier is very
 limited in features on these phones while the other one supports full
-OBEX FTP (don\'t ask me why).\
+OBEX FTP (don\'t ask me why).
 
 ---
 #### Wout - <time datetime="2006-10-23 23:17:11">23 Oct, 2006</time>
@@ -71,9 +71,9 @@ Thank you man. You\'re awsome\.... I\'ve installed the software
 succesfully and everything works. Great\.....
 
 B.t.w. mine gives me the full name after a while\... and it\'s fully
-useable in nautilus. (Pretty stable\...)\
+useable in nautilus. (Pretty stable\...)
 I\'f you wan\'t some testers just let me know\....(just say so on your
-blog\.... )\
+blog\.... )
 GReat great great\....
 
 ---
@@ -115,7 +115,7 @@ I get this message in nautilus\...
 
 obex:///\" is not a valid location.
 
-\
+
 what\'s wrong?
 
 How do I enable the gnome-vfs-2.0 modules?
@@ -144,10 +144,10 @@ It\'s a great job!
 
 In amd64 architecture I get this problem in oss-gwobex compilation:
 
-autoreconf2.50: running: /usr/bin/autoconf\
-configure.ac:11: error: possibly undefined macro: AC\_PROG\_LIBTOOL\
-If this token and others are legitimate, please use m4\_pattern\_allow.\
-See the Autoconf documentation.\
+autoreconf2.50: running: /usr/bin/autoconf
+configure.ac:11: error: possibly undefined macro: AC\_PROG\_LIBTOOL
+If this token and others are legitimate, please use m4\_pattern\_allow.
+See the Autoconf documentation.
 autoreconf2.50: /usr/bin/autoconf failed with exit status: 1
 
 Salu2 clp ;)

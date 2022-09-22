@@ -82,7 +82,7 @@ the \"approved\" OPs.
 
 I\'ve [stated previously](openid-identifier-reuse.md) that I think the
 support for identifier reuse with respect to URL identifiers is a bit
-lacking.  It\'d be nice to see it expanded in a future specification
+lacking. It\'d be nice to see it expanded in a future specification
 revision.
 
 ---

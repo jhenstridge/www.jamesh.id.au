@@ -6,28 +6,28 @@ tags: ['Bazaar', 'Python']
 ---
 
 One of the nice features of [Bazaar](http://bazaar-vcs.org/) is the
-ability to send a bundle of changes to someone via email.  If you use a
+ability to send a bundle of changes to someone via email. If you use a
 supported mail client, it will even open the composer with the changes
-attached.  If your client isn\'t supported, then it\'ll let you compose
+attached. If your client isn\'t supported, then it\'ll let you compose
 a message in your editor and then send it to an SMTP server.
 
 GMail is not a supported mail client, but there are a few work arounds
-[listed on the wiki](http://bazaar-vcs.org/BzrSendWithGmail).  Those
+[listed on the wiki](http://bazaar-vcs.org/BzrSendWithGmail). Those
 really come down to using an alternative mail client (either the editor
-or Mutt) and sending the mails through the GMail SMTP server.  Neither
-solution really appealed to me.  There doesn\'t seem to be a programatic
+or Mutt) and sending the mails through the GMail SMTP server. Neither
+solution really appealed to me. There doesn\'t seem to be a programatic
 way of opening up GMail\'s compose window and adding an attachment (not
 too surprising for a web app).
 
 What is possible though is connecting via IMAP and adding messages to
-the drafts folder (assuming IMAP support is enabled).  So I wrote a
-small plugin to do just that.  It can be installed with the following
+the drafts folder (assuming IMAP support is enabled). So I wrote a
+small plugin to do just that. It can be installed with the following
 command:
 
     bzr branch lp:~jamesh/+junk/bzr-imapclient ~/.bazaar/plugins/imapclient
 
 And then configure the IMAP server, username and mailbox according to
-the instructions in the README file.  You can then use \"bzr send\" as
+the instructions in the README file. You can then use \"bzr send\" as
 normal and then complete and send the draft at your leisure.
 
 One nice thing about the plugin implementation is that it didn\'t need
@@ -36,7 +36,7 @@ their drafts folder stored on an IMAP server and uses an unsupported
 mail client.
 
 The main area where this could be improved would be to open up the
-compose screen in the web browser.  However, this would require knowing
+compose screen in the web browser. However, this would require knowing
 the internal message ID for the new message, which I can\'t see how to
 access via IMAP.
 

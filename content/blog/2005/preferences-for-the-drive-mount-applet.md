@@ -47,7 +47,7 @@ using apps, such as Nautilus.
 #### Stephane Chauveau - <time datetime="2005-12-16 23:41:51">16 Dec, 2005</time>
 
 My feeling is that the applet could change the way it displays the
-drives.\
+drives.
 The alternative way could be a single button/icon that opens a popup
 window displaying all drives (a bit like the calendar window obtained by
 clicking on the clock applet).
@@ -91,7 +91,7 @@ mounted or network drives that are not always available.
 ---
 #### Stephane Chauveau - <time datetime="2005-12-17 00:58:11">17 Dec, 2005</time>
 
-\> the only functionality that is normally needed in\
+\> the only functionality that is normally needed in
 \> regards to removable media is the ability to unmount it
 
 Well\... unplugging a memory card without unmounting it first is unsafe
@@ -110,7 +110,7 @@ way, Gnome should have a (non-user controled) option to enforce some
 kinds of authentification (password, GPG key, device ID, \...) before
 any removable volume can be mounted.
 
-\
+
 
 ---
 #### Rob J. Caskey - <time datetime="2005-12-17 02:25:48">17 Dec, 2005</time>
@@ -119,7 +119,7 @@ I would suggest that if you could right click on the entry in the places
 side bar in Nautilus and select Eject most people could do without this
 applet.
 
-Sincerely,\
+Sincerely,
 \--Rob
 
 ---

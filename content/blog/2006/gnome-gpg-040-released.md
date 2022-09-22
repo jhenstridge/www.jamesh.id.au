@@ -36,34 +36,34 @@ Any ideas how to use it with Mutt?
 
 I got gnome-gpg working with Mutt:
 
-\
+
 \" tell Mutt not to ask for a passphrase (it appears that you need to
-have Mutt 1.5.11 for this to work)\
+have Mutt 1.5.11 for this to work)
 set pgp\_use\_gpg\_agent
 
 \" tell Mutt to use gnome-gpg: I copied the default gpg command, removed
-\--batch, and replaced gpg with gnome-gpg\
+\--batch, and replaced gpg with gnome-gpg
 set pgp\_sign\_command=\"gnome-gpg \--no-verbose \--quiet \--output -
 %?p?\--passphrase-fd 0? \--armor \--detach-sign \--textmode %?a?-u %a?
 %f\"
 
-\
+
 (Um, where\'s the preview button? What sort of markup can I use in
 comments?)
 
 ---
 #### Tony D - <time datetime="2006-03-19 22:40:44">19 Mar, 2006</time>
 
-Hey James.\
+Hey James.
 Saw that great stuff you posted about Australia\'s number 1 show,
-\"Double the Fist\".\
+\"Double the Fist\".
 I just thought you\'d like to know that I\'ve started an online petition
 to the ABC to bring the show back. Here\'s the link:
 
 <http://www.petitiononline.com/FullFist/petition.html>
 
 Tell as many people as possible. The more signiatures, the better our
-chances.\
+chances.
 Full Fist.
 
 ---

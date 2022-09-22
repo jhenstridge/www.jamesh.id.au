@@ -95,7 +95,7 @@ dsl.
 
 well \$ORM\_FOR\_FAMOUS\_RUBY\_FRAMEWORK has pure ruby migration scripts
 so that the schema can be evolved easily withouth touching SQL, and the
-definition of the initial schema is just the first migration.\
+definition of the initial schema is just the first migration.
 I don\'t think that there is anything wrong with defining the schema in
 SQL, but it seems close to what michele is suggesting in the above
 comment.

@@ -66,26 +66,26 @@ the choices made in the protocol:
         PLAINTEXT --- depend on an access token secret. Along with the
         access token, this is essentially a proxy for the user name and
         password, so should be protected as such (e.g. via the [GNOME
-        keyring](http://live.gnome.org/GnomeKeyring)).  It still sounds
+        keyring](http://live.gnome.org/GnomeKeyring)). It still sounds
         better than storing passwords directly, since the token won\'t
         give access to unrelated sites the user happened to use the same
         password on, and can be revoked independently of changing the
         password.
 4.  While the OpenID folks found a need for a formal extension mechanism
     for version 2.0 of that protocol, nothing like that seems to have
-    been added to OAuth.  There are now a number of proposed extensions
-    for OAuth, so it probably would have been a good idea.  Perhaps it
+    been added to OAuth. There are now a number of proposed extensions
+    for OAuth, so it probably would have been a good idea. Perhaps it
     isn\'t as big a deal, due to tigher coupling of service providers
     and consumers, but I could imagine it being useful as the two
     parties evolve over time.
 
 So the standard seems decent enough, and better than trying to design
-such a system yourself.  Like OpenID, it\'ll probably take until the
+such a system yourself. Like OpenID, it\'ll probably take until the
 second release of the specification for some of the ambiguities to be
 taken care of and for wider adoption.
 
-From the Python programmer point of view, things could be better.  The
+From the Python programmer point of view, things could be better. The
 library available from the OAuth site seems quite immature and lacks
-support for a few aspects of the protocol.  It looks okay for simpler
+support for a few aspects of the protocol. It looks okay for simpler
 uses, but may be difficult to extend for use in more complicated
 projects.

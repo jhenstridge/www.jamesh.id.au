@@ -4,7 +4,7 @@ slug: end-of-fashion
 date: 2005-08-20T20:17:34+08:00
 ---
 
-I went to see End of Fashion upstairs at [78s](www.78records.com.au)
+I went to see End of Fashion upstairs at [78s](http://www.78records.com.au)
 today for their in-store appearance. The tickets were included with the
 band\'s single which was pretty nice.
 
@@ -47,14 +47,14 @@ singed his arm, we wrote on the desk and got photos with justen!!!
 #### Dandi - <time datetime="2005-09-01 09:54:41">1 Sep, 2005</time>
 
 i am so jealous of all of u!!! goddammmit i wanted to b there but fate
-had other plans for me\...\
+had other plans for me\...
 so pls be EXTREMELY descriptive in ur opinions about the EoF 78\'s
 thingy cos i wanna hear all about it!!!
 
 ---
 #### stevie - <time datetime="2005-09-06 10:28:51">6 Sep, 2005</time>
 
-i luv end of fashion esspecially their song \"ohyea\"\
+i luv end of fashion esspecially their song \"ohyea\"
 
 ---
 #### Katie - <time datetime="2005-09-11 20:28:59">11 Sep, 2005</time>
