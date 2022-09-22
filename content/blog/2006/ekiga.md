@@ -9,7 +9,7 @@ I\'ve been testing out [Ekiga](http://www.ekiga.org/) recently, and so
 far the experience has been a bit hit and miss.
 
 -   Firewall traversal has been unreliable. Some numbers (like the
-    [SIPPhone echo test](17474743246@proxy01.sipphone.com)) work great.
+    [SIPPhone echo test](sip:17474743246@proxy01.sipphone.com)) work great.
     In some cases, no traffic has gotten through (where both parties
     were behind Linux firewalls). In other cases, voice gets through in
     one direction but not the other. [Robert
