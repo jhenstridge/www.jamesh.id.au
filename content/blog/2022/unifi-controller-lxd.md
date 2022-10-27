@@ -12,6 +12,8 @@ A while back I bought some UniFi access points. I hadn't gotten round
 to setting up the Network Controller software to properly manage them
 though, so thought I'd dig into setting that up.
 
+<!--more-->
+
 It's nice that Ubiquiti provides the controller software through an
 apt repository, but it turns out to depend on MongoDB which is [no
 longer packaged][1] in the latest Ubuntu LTS release due to the SSPL
