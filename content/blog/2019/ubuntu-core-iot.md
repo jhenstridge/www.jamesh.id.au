@@ -11,8 +11,7 @@ Core and Snapcraft. The video is now available online. Unfortunately
 there were some problems with the audio setup leading to some background
 noise in the video, but it is still intelligible:
 
-\[embed width=\"640\"
-height=\"480\"\]https://www.youtube.com/watch?v=phMWrcGOGJE\[/embed\]
+{{< youtube "phMWrcGOGJE" >}}
 
 The slides used in the talk can be found
 [here](https://docs.google.com/presentation/d/1-obX63OoVCuFBCs3SXhwEk2_BOcGTT8uENFKfrmxanE).
