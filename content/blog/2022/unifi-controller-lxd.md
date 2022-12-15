@@ -120,7 +120,7 @@ At this point, the controller is running, so the rest is configured
 through the web interface at (substituting in the container's IP
 address):
 
-`https://NNN.NNN.NNN.NNN:8433/`
+`https://NNN.NNN.NNN.NNN:8443/`
 
 After providing my UniFi account credentials to the setup wizard, I
 could set up the network. The controller was able to discover and
