@@ -28,7 +28,7 @@ from = "/photos/2004-08-Oxford/*"
 to = "/photos/2004-08-oxford/"
 [[redirects]]
 from = "/photos/2004-12-Mataro/*"
-to = "/photos/2004-12-Mataro/"
+to = "/photos/2004-12-mataro/"
 [[redirects]]
 from = "/photos/2004-12-Narita/*"
 to = "/photos/2004-12-narita/"
