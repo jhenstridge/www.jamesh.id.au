@@ -1,6 +1,10 @@
 ---
 title: "Setting up a guest network with Unifi APs"
 date: 2023-08-29T20:51:48+08:00
+tags:
+  - Linux
+  - Networking
+  - UniFi
 ---
 
 I've been pretty happy with the Unifi wifi access points I picked up a
