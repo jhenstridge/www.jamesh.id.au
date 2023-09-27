@@ -23,12 +23,12 @@ disable_share = true
 name = "mastodon"
 url = "https://aus.social/@jamesh"
 rel = "me noopener"
-[[params.ananke_socials]]
-name = "twitter"
-url = "https://twitter.com/jameshenstridge"
-[[params.ananke_socials]]
-name = "facebook"
-url = "https://www.facebook.com/james.henstridge"
+#[[params.ananke_socials]]
+#name = "twitter"
+#url = "https://twitter.com/jameshenstridge"
+#[[params.ananke_socials]]
+#name = "facebook"
+#url = "https://www.facebook.com/james.henstridge"
 [[params.ananke_socials]]
 name = "linkedin"
 url = "https://www.linkedin.com/in/jameshenstridge/"
