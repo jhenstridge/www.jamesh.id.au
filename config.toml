@@ -17,24 +17,26 @@ blog = "/blog/:year/:month/:day/:slugorfilename/"
 
 [params]
 mainSections = ["post"]
-disable_share = true
 
-[[params.ananke_socials]]
-name = "mastodon"
-url = "https://aus.social/@jamesh"
-rel = "me noopener"
-#[[params.ananke_socials]]
-#name = "twitter"
-#url = "https://twitter.com/jameshenstridge"
-#[[params.ananke_socials]]
-#name = "facebook"
-#url = "https://www.facebook.com/james.henstridge"
-[[params.ananke_socials]]
-name = "linkedin"
-url = "https://www.linkedin.com/in/jameshenstridge/"
-[[params.ananke_socials]]
-name = "github"
-url = "https://github.com/jhenstridge"
+[params.ananke.social.follow]
+networks = ["mastodon", "linkedin", "github"]
+
+[params.ananke.social.share]
+networks = []
+
+[params.ananke.social.mastodon]
+username = "@jamesh@aus.social"
+profilelink = "https://aus.social/@jamesh"
+rel = "me"
+[params.ananke.social.twitter]
+username = "jameshenstridge"
+[params.ananke.social.facebook]
+username = "james.henstridge"
+[params.ananke.social.linkedin]
+username = "jameshenstridge"
+profilelink = "https://www.linkedin.com/in/jameshenstridge/"
+[params.ananke.social.github]
+username = "jhenstridge"
 
 [related]
 threshold = 80
