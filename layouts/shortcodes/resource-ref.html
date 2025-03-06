@@ -1,0 +1,5 @@
+{{- $resource := .Get 0 }}
+{{- $path := printf "%s%s" (.Page.RelPermalink) $resource }}
+{{- with .Page.Resources.Get $resource }}
+{{- (.Content | resources.FromString $path).RelPermalink}}
+{{- end -}}

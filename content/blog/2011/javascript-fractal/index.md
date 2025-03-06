@@ -16,6 +16,7 @@ out:
 
 {{< figure src="mandelbrot.jpeg" alt="A render of the Mandelbrot Set"
         link="mandelbrot.html" >}}
+<!-- {{< resource-ref "mandelbrot.html" >}} -->
 
 Clicking anywhere on the fractal will zoom in. You\'ll need to reload
 the page to zoom out. Zooming in while the fractal is still being

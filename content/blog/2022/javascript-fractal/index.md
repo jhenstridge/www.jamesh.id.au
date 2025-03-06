@@ -15,7 +15,7 @@ Recently I decided to see how much I could improve it with
 improvements to the web stack that have happened since then. The
 result was much faster than what I'd managed previously:
 
-<iframe src="mandelbrot.html"
+<iframe src="{{< resource-ref "mandelbrot.html" >}}"
   width="640" height="480" class="mw-100" allowfullscreen></iframe>
 
 The main improvements came from the use of [typed

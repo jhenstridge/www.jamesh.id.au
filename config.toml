@@ -2,7 +2,6 @@ baseURL = "https://www.jamesh.id.au/"
 languageCode = "en-au"
 title = "James Henstridge"
 theme = "ananke"
-paginate = 25
 enableGitInfo = true
 enableRobotsTXT = true
 
@@ -11,6 +10,9 @@ unsafe = true
 
 [markup.highlight]
 style = "monokai"
+
+[pagination]
+pagerSize = 25
 
 [permalinks]
 blog = "/blog/:year/:month/:day/:slugorfilename/"
