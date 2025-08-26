@@ -15,7 +15,7 @@ style = "monokai"
 pagerSize = 25
 
 [permalinks]
-blog = "/blog/:year/:month/:day/:slugorfilename/"
+blog = "/blog/:year/:month/:day/:slugorcontentbasename/"
 
 [params]
 mainSections = ["post"]
